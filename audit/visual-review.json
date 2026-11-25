@@ -1,0 +1,98 @@
+{
+  "originals": {
+    "V": {
+      "name": "고유 차량 수집 별책.pdf",
+      "url": "https://drive.google.com/file/d/1MMPUaLqSNxzMkUps56HHnkHxbbNqEE0q/view"
+    },
+    "P02": {
+      "name": "고유 무기 및 장비 도감.pdf",
+      "url": "https://drive.google.com/file/d/1EjzRTd9BgwiI0COMt-KxZ_AHph0nsGhu/view"
+    },
+    "P06": {
+      "name": "수집품 도감.pdf",
+      "url": "https://drive.google.com/file/d/131O0oqdL3RLmzg9fl164U2qxnIVC-OJl/view"
+    },
+    "P09": {
+      "name": "서브미션 및 랜덤 이벤트.pdf",
+      "url": "https://drive.google.com/file/d/1SAMU6bu_21D04FTFLH5K9uWkCB5UrrZM/view"
+    },
+    "P03": {
+      "name": "돈벌이 및 경제.pdf",
+      "url": "https://drive.google.com/file/d/1TZKwCYxkkWZk0qyA5RydN8KcDsJGwF-m/view"
+    },
+    "P04": {
+      "name": "갱단과 적대 세력 거점.pdf",
+      "url": "https://drive.google.com/file/d/1Uf_CGDVvvVErvK9ItFJGt8SpQaQ6bDQl/view"
+    },
+    "P08": {
+      "name": "전투 및 캐릭터 성장.pdf",
+      "url": "https://drive.google.com/file/d/1sCIgRMXXTKcPH2pk6SiWLIfuu_-Mu26u/view"
+    },
+    "P07": {
+      "name": "부동산 및 은신처.pdf",
+      "url": "https://drive.google.com/file/d/1fhQrR3awNo2vw2QDO_zX-Xzj-8rU3t44/view"
+    },
+    "P05": {
+      "name": "레오니다 비밀 탐험 아틀라스.pdf",
+      "url": "https://drive.google.com/file/d/1ZqJ19MKwmGJlP3idPyA5Xv-vq8w-yDbp/view"
+    },
+    "P01": {
+      "name": "전 챕터 진행 가이드.pdf",
+      "url": "https://drive.google.com/file/d/1rTkeD4lt1TKNipyjnW80wep7LRNMm3vh/view"
+    },
+    "P10": {
+      "name": "숨겨진 게임 메커니즘.pdf",
+      "url": "https://drive.google.com/file/d/1mKP2QQqfITHiD8KoveGds7RieFMbCg1_/view"
+    },
+    "index": {
+      "name": "통합 목차와 인덱스.pdf",
+      "url": "https://drive.google.com/file/d/1X6cH6xKMniDLe1UzZMxCPCzaxzlzj9F1/view"
+    }
+  },
+  "method": "Compare the rendered original and deployed reader. Record only specific checks performed. Page routing alone does not confirm transcription, photographs or gameplay accuracy. Use individual page-and-section scopes when continuing; retain older results.",
+  "reviews": [
+    {
+      "book": "P07",
+      "page": 3,
+      "entry": "p07-first-garage",
+      "checked": [
+        "Original table and published desktop table compared visually. All three pairs of normal and discounted prices match.",
+        "The original also explicitly gives the total saving of $40,000. Added that amount and the omitted ownership and income distinction."
+      ],
+      "scope": "price table and purchase decision",
+      "status": "reviewed-in-scope"
+    },
+    {
+      "book": "P02",
+      "page": 89,
+      "entry": "p02-collection-check",
+      "checked": [
+        "Source page opened alongside the edited limited-equipment guide; chapter conditions transcribed."
+      ],
+      "scope": "chapter timing only",
+      "status": "partial"
+    }
+  ],
+  "responsive": {
+    "widths": [
+      390,
+      1365
+    ],
+    "routes": [
+      "/",
+      "/guide/v",
+      "/entry/v-01",
+      "/guide/p02",
+      "/entry/p02-collection-check",
+      "/entry/l07",
+      "/guide/p01",
+      "/map",
+      "/entry/p07-first-garage"
+    ],
+    "checks": [
+      "Main heading resolved on the public deployment",
+      "No document-level horizontal overflow at either width",
+      "Weapon photograph filter returned 22 results and visible thumbnails loaded"
+    ]
+  }
+}
