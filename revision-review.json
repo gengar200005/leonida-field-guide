@@ -1,0 +1,2378 @@
+[
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 1,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 5,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "수동 저장의 복구 순서, 챕터별 한정 아이템과 지급 조건은 최신 진행 가이드로 대체.",
+    "latest_page": 5
+  },
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 8,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "수동 저장의 복구 순서, 챕터별 한정 아이템과 지급 조건은 최신 진행 가이드로 대체.",
+    "latest_page": 8
+  },
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 11,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "수동 저장의 복구 순서, 챕터별 한정 아이템과 지급 조건은 최신 진행 가이드로 대체.",
+    "latest_page": 11
+  },
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 14,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "수동 저장의 복구 순서, 챕터별 한정 아이템과 지급 조건은 최신 진행 가이드로 대체.",
+    "latest_page": 14
+  },
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 17,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "수동 저장의 복구 순서, 챕터별 한정 아이템과 지급 조건은 최신 진행 가이드로 대체.",
+    "latest_page": 17
+  },
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 19,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "수동 저장의 복구 순서, 챕터별 한정 아이템과 지급 조건은 최신 진행 가이드로 대체.",
+    "latest_page": 19
+  },
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 20,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "수동 저장의 복구 순서, 챕터별 한정 아이템과 지급 조건은 최신 진행 가이드로 대체.",
+    "latest_page": 20
+  },
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 27,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "수동 저장의 복구 순서, 챕터별 한정 아이템과 지급 조건은 최신 진행 가이드로 대체.",
+    "latest_page": 27
+  },
+  {
+    "source": "GTA_VI_P01_S01R1_All_Chapters_KR.pdf",
+    "page": 28,
+    "part": "p01",
+    "action": "latest edition",
+    "basis": "수동 저장의 복구 순서, 챕터별 한정 아이템과 지급 조건은 최신 진행 가이드로 대체.",
+    "latest_page": 28
+  },
+  {
+    "source": "GTA_VI_S01_Chapter_02_KR.pdf",
+    "page": 1,
+    "part": "p01",
+    "action": "prior volume reviewed",
+    "basis": "실내에서 카드·책을 얻는 순서, 주차장·담보·전환 전 보존은 챕터 2 안내에 반영. 후속 근거와 상충하는 절대 손실 주장은 유보.",
+    "target": "P01-C02-MOTEL"
+  },
+  {
+    "source": "GTA_VI_S01_Chapter_02_KR.pdf",
+    "page": 2,
+    "part": "p01",
+    "action": "prior volume reviewed",
+    "basis": "실내에서 카드·책을 얻는 순서, 주차장·담보·전환 전 보존은 챕터 2 안내에 반영. 후속 근거와 상충하는 절대 손실 주장은 유보.",
+    "target": "P01-C02-MOTEL"
+  },
+  {
+    "source": "GTA_VI_S01_Chapter_02_KR.pdf",
+    "page": 3,
+    "part": "p01",
+    "action": "prior volume reviewed",
+    "basis": "실내에서 카드·책을 얻는 순서, 주차장·담보·전환 전 보존은 챕터 2 안내에 반영. 후속 근거와 상충하는 절대 손실 주장은 유보.",
+    "target": "P01-C02-MOTEL"
+  },
+  {
+    "source": "GTA_VI_S01_Chapter_02_KR.pdf",
+    "page": 4,
+    "part": "p01",
+    "action": "prior volume reviewed",
+    "basis": "실내에서 카드·책을 얻는 순서, 주차장·담보·전환 전 보존은 챕터 2 안내에 반영. 후속 근거와 상충하는 절대 손실 주장은 유보.",
+    "target": "P01-C02-MOTEL"
+  },
+  {
+    "source": "GTA_VI_S01_Chapter_02_KR.pdf",
+    "page": 5,
+    "part": "p01",
+    "action": "prior volume reviewed",
+    "basis": "실내에서 카드·책을 얻는 순서, 주차장·담보·전환 전 보존은 챕터 2 안내에 반영. 후속 근거와 상충하는 절대 손실 주장은 유보.",
+    "target": "P01-C02-MOTEL"
+  },
+  {
+    "source": "GTA_VI_S01_Chapter_02_KR.pdf",
+    "page": 6,
+    "part": "p01",
+    "action": "prior volume reviewed",
+    "basis": "실내에서 카드·책을 얻는 순서, 주차장·담보·전환 전 보존은 챕터 2 안내에 반영. 후속 근거와 상충하는 절대 손실 주장은 유보.",
+    "target": "P01-C02-MOTEL"
+  },
+  {
+    "source": "GTA_VI_S01_Chapter_02_KR.pdf",
+    "page": 7,
+    "part": "p01",
+    "action": "prior volume reviewed",
+    "basis": "실내에서 카드·책을 얻는 순서, 주차장·담보·전환 전 보존은 챕터 2 안내에 반영. 후속 근거와 상충하는 절대 손실 주장은 유보.",
+    "target": "P01-C02-MOTEL"
+  },
+  {
+    "source": "GTA_VI_S01_Chapter_02_KR.pdf",
+    "page": 8,
+    "part": "p01",
+    "action": "prior volume reviewed",
+    "basis": "실내에서 카드·책을 얻는 순서, 주차장·담보·전환 전 보존은 챕터 2 안내에 반영. 후속 근거와 상충하는 절대 손실 주장은 유보.",
+    "target": "P01-C02-MOTEL"
+  },
+  {
+    "source": "GTA_VI_S01_Chapter_02_KR.pdf",
+    "page": 9,
+    "part": "p01",
+    "action": "prior volume reviewed",
+    "basis": "실내에서 카드·책을 얻는 순서, 주차장·담보·전환 전 보존은 챕터 2 안내에 반영. 후속 근거와 상충하는 절대 손실 주장은 유보.",
+    "target": "P01-C02-MOTEL"
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 1,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 2,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "원래 행동 설명은 보존. 추가판의 보관·시한표로 이어지는 인쇄 이동 버튼을 웹 링크로 대체.",
+    "latest_page": 2
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 3,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "원래 행동 설명은 보존. 추가판의 보관·시한표로 이어지는 인쇄 이동 버튼을 웹 링크로 대체.",
+    "latest_page": 3
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 11,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "원래 행동 설명은 보존. 추가판의 보관·시한표로 이어지는 인쇄 이동 버튼을 웹 링크로 대체.",
+    "latest_page": 11
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 16,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "W-042·059는 챕터 4 완료 보상. 미션 중 임시 소지와 보관함 등록은 별도로 판정.",
+    "latest_page": 16
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 17,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "W-042·059는 챕터 4 완료 보상. 미션 중 임시 소지와 보관함 등록은 별도로 판정.",
+    "latest_page": 17
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 27,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "원래 행동 설명은 보존. 추가판의 보관·시한표로 이어지는 인쇄 이동 버튼을 웹 링크로 대체.",
+    "latest_page": 27
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 28,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "원래 행동 설명은 보존. 추가판의 보관·시한표로 이어지는 인쇄 이동 버튼을 웹 링크로 대체.",
+    "latest_page": 28
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 33,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "원래 행동 설명은 보존. 추가판의 보관·시한표로 이어지는 인쇄 이동 버튼을 웹 링크로 대체.",
+    "latest_page": 33
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 36,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "W-042·059는 챕터 4 완료 보상. 미션 중 임시 소지와 보관함 등록은 별도로 판정.",
+    "latest_page": 36
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 38,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "원래 행동 설명은 보존. 추가판의 보관·시한표로 이어지는 인쇄 이동 버튼을 웹 링크로 대체.",
+    "latest_page": 38
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 40,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "W-042·059는 챕터 4 완료 보상. 미션 중 임시 소지와 보관함 등록은 별도로 판정.",
+    "latest_page": 40
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 50,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "원래 행동 설명은 보존. 추가판의 보관·시한표로 이어지는 인쇄 이동 버튼을 웹 링크로 대체.",
+    "latest_page": 50
+  },
+  {
+    "source": "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf",
+    "page": 57,
+    "part": "p02",
+    "action": "latest edition",
+    "basis": "원래 행동 설명은 보존. 추가판의 보관·시한표로 이어지는 인쇄 이동 버튼을 웹 링크로 대체.",
+    "latest_page": 57
+  },
+  {
+    "source": "GTA6_15_weapons_map_guide.pdf",
+    "page": 1,
+    "part": "p02",
+    "action": "prior volume reviewed",
+    "basis": "영상 순서의 권역·물건·진입 방법·타임코드와 퍼즐 숫자를 경로 단위로 회수.",
+    "target": "P02-FIELD-ROUTE"
+  },
+  {
+    "source": "GTA6_15_weapons_map_guide.pdf",
+    "page": 2,
+    "part": "p02",
+    "action": "prior volume reviewed",
+    "basis": "영상 순서의 권역·물건·진입 방법·타임코드와 퍼즐 숫자를 경로 단위로 회수.",
+    "target": "P02-FIELD-ROUTE"
+  },
+  {
+    "source": "GTA6_15_weapons_map_guide.pdf",
+    "page": 3,
+    "part": "p02",
+    "action": "prior volume reviewed",
+    "basis": "영상 순서의 권역·물건·진입 방법·타임코드와 퍼즐 숫자를 경로 단위로 회수.",
+    "target": "P02-FIELD-ROUTE"
+  },
+  {
+    "source": "GTA6_15_weapons_map_guide.pdf",
+    "page": 4,
+    "part": "p02",
+    "action": "prior volume reviewed",
+    "basis": "영상 순서의 권역·물건·진입 방법·타임코드와 퍼즐 숫자를 경로 단위로 회수.",
+    "target": "P02-FIELD-ROUTE"
+  },
+  {
+    "source": "GTA6_15_weapons_map_guide.pdf",
+    "page": 5,
+    "part": "p02",
+    "action": "prior volume reviewed",
+    "basis": "영상 순서의 권역·물건·진입 방법·타임코드와 퍼즐 숫자를 경로 단위로 회수.",
+    "target": "P02-FIELD-ROUTE"
+  },
+  {
+    "source": "GTA6_15_weapons_map_guide.pdf",
+    "page": 6,
+    "part": "p02",
+    "action": "prior volume reviewed",
+    "basis": "영상 순서의 권역·물건·진입 방법·타임코드와 퍼즐 숫자를 경로 단위로 회수.",
+    "target": "P02-FIELD-ROUTE"
+  },
+  {
+    "source": "GTA6_15_weapons_map_guide.pdf",
+    "page": 7,
+    "part": "p02",
+    "action": "prior volume reviewed",
+    "basis": "영상 순서의 권역·물건·진입 방법·타임코드와 퍼즐 숫자를 경로 단위로 회수.",
+    "target": "P02-FIELD-ROUTE"
+  },
+  {
+    "source": "GTA6_15_weapons_map_guide.pdf",
+    "page": 8,
+    "part": "p02",
+    "action": "prior volume reviewed",
+    "basis": "영상 순서의 권역·물건·진입 방법·타임코드와 퍼즐 숫자를 경로 단위로 회수.",
+    "target": "P02-FIELD-ROUTE"
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 1,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 3,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 3
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 5,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 5
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 10,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 10
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 13,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 13
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 14,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 14
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 15,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 15
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 16,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 16
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 21,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 21
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 22,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 22
+  },
+  {
+    "source": "GTA_VI_P03_S04-R1_Economy_Integration_KR.pdf",
+    "page": 35,
+    "part": "p03",
+    "action": "latest edition",
+    "basis": "차고 정가/Gold 할인, 실제 입금/지도 예상액과 최초/반복 획득을 분리.",
+    "latest_page": 35
+  },
+  {
+    "source": "GTA_VI_S04_Chapter_02_Economy_KR.pdf",
+    "page": 1,
+    "part": "p03",
+    "action": "prior volume reviewed",
+    "basis": "초반 실제 입금, 매입처, 초기 계좌와 비상금을 정리. 일회성 지급과 검증되지 않은 반복 기대값 구분.",
+    "target": "P03-C02-MONEY"
+  },
+  {
+    "source": "GTA_VI_S04_Chapter_02_Economy_KR.pdf",
+    "page": 2,
+    "part": "p03",
+    "action": "prior volume reviewed",
+    "basis": "초반 실제 입금, 매입처, 초기 계좌와 비상금을 정리. 일회성 지급과 검증되지 않은 반복 기대값 구분.",
+    "target": "P03-C02-MONEY"
+  },
+  {
+    "source": "GTA_VI_S04_Chapter_02_Economy_KR.pdf",
+    "page": 3,
+    "part": "p03",
+    "action": "prior volume reviewed",
+    "basis": "초반 실제 입금, 매입처, 초기 계좌와 비상금을 정리. 일회성 지급과 검증되지 않은 반복 기대값 구분.",
+    "target": "P03-C02-MONEY"
+  },
+  {
+    "source": "GTA_VI_S04_Chapter_02_Economy_KR.pdf",
+    "page": 4,
+    "part": "p03",
+    "action": "prior volume reviewed",
+    "basis": "초반 실제 입금, 매입처, 초기 계좌와 비상금을 정리. 일회성 지급과 검증되지 않은 반복 기대값 구분.",
+    "target": "P03-C02-MONEY"
+  },
+  {
+    "source": "GTA_VI_S04_Chapter_02_Economy_KR.pdf",
+    "page": 5,
+    "part": "p03",
+    "action": "prior volume reviewed",
+    "basis": "초반 실제 입금, 매입처, 초기 계좌와 비상금을 정리. 일회성 지급과 검증되지 않은 반복 기대값 구분.",
+    "target": "P03-C02-MONEY"
+  },
+  {
+    "source": "GTA_VI_S04_Chapter_02_Economy_KR.pdf",
+    "page": 6,
+    "part": "p03",
+    "action": "prior volume reviewed",
+    "basis": "초반 실제 입금, 매입처, 초기 계좌와 비상금을 정리. 일회성 지급과 검증되지 않은 반복 기대값 구분.",
+    "target": "P03-C02-MONEY"
+  },
+  {
+    "source": "GTA_VI_S04_Chapter_02_Economy_KR.pdf",
+    "page": 7,
+    "part": "p03",
+    "action": "prior volume reviewed",
+    "basis": "초반 실제 입금, 매입처, 초기 계좌와 비상금을 정리. 일회성 지급과 검증되지 않은 반복 기대값 구분.",
+    "target": "P03-C02-MONEY"
+  },
+  {
+    "source": "GTA_VI_S04_Chapter_02_Economy_KR.pdf",
+    "page": 8,
+    "part": "p03",
+    "action": "prior volume reviewed",
+    "basis": "초반 실제 입금, 매입처, 초기 계좌와 비상금을 정리. 일회성 지급과 검증되지 않은 반복 기대값 구분.",
+    "target": "P03-C02-MONEY"
+  },
+  {
+    "source": "GTA_VI_S04_Chapter_02_Economy_KR.pdf",
+    "page": 9,
+    "part": "p03",
+    "action": "prior volume reviewed",
+    "basis": "초반 실제 입금, 매입처, 초기 계좌와 비상금을 정리. 일회성 지급과 검증되지 않은 반복 기대값 구분.",
+    "target": "P03-C02-MONEY"
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 1,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 2,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 2
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 3,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 3
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 4,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 4
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 5,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 5
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 6,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 6
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 7,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 7
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 8,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 8
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 9,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 9
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 10,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 10
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 11,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 11
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 12,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 12
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 13,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 13
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 14,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 14
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 15,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 15
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 16,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 16
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 17,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 17
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 18,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 18
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 19,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 19
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 20,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 20
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 21,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 21
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 22,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 22
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 23,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 23
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 24,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 24
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 25,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 25
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 26,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 26
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 27,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 27
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 28,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 28
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 29,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 29
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 30,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 30
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 31,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 31
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 32,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 32
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 33,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 33
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 34,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 34
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 35,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 35
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 36,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 36
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 37,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 37
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 38,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 38
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 39,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 39
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 40,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 40
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 41,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 41
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 42,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 42
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 43,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 43
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 44,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 44
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 45,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 45
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 46,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 46
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 47,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 47
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 48,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 48
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 49,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 49
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 50,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 50
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 51,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 51
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 52,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 52
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 53,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 53
+  },
+  {
+    "source": "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf",
+    "page": 54,
+    "part": "p04",
+    "action": "latest edition",
+    "basis": "개별 거점의 접근·금고·지급 정보는 최신 현장 카드 우선. 구판 전리품 및 현금 리필 추정은 복구하지 않음.",
+    "latest_page": 54
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 1,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 2,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 3,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 4,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 5,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-07"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 6,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-06"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 7,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-04"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 8,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-05"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 9,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-08"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 10,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-38"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 11,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-11"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 12,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-01"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 13,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-27"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 14,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-02"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 15,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-03"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 16,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-09"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 17,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04-29"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 18,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04"
+  },
+  {
+    "source": "GTA_VI_S03_Chapter_02_Gang_Operations_KR.pdf",
+    "page": 19,
+    "part": "p04",
+    "action": "prior volume reviewed",
+    "basis": "초기 13곳을 전 게임 기본/특전 40곳으로 교차. 실제 획득과 최초 누락품의 재방문 회수는 분리. 정산액은 R2 우선.",
+    "target": "P04"
+  },
+  {
+    "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+    "page": 1,
+    "part": "p05",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+    "page": 2,
+    "part": "p05",
+    "action": "latest edition",
+    "basis": "L19 주간 구매, L23 두 번의 진입, 권역별 경로와 수중 등록은 최신 카드 우선.",
+    "latest_page": 2
+  },
+  {
+    "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+    "page": 6,
+    "part": "p05",
+    "action": "latest edition",
+    "basis": "L19 주간 구매, L23 두 번의 진입, 권역별 경로와 수중 등록은 최신 카드 우선.",
+    "latest_page": 6
+  },
+  {
+    "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+    "page": 8,
+    "part": "p05",
+    "action": "latest edition",
+    "basis": "L19 주간 구매, L23 두 번의 진입, 권역별 경로와 수중 등록은 최신 카드 우선.",
+    "latest_page": 8
+  },
+  {
+    "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+    "page": 9,
+    "part": "p05",
+    "action": "latest edition",
+    "basis": "L19 주간 구매, L23 두 번의 진입, 권역별 경로와 수중 등록은 최신 카드 우선.",
+    "latest_page": 9
+  },
+  {
+    "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+    "page": 28,
+    "part": "p05",
+    "action": "latest edition",
+    "basis": "L19 주간 구매, L23 두 번의 진입, 권역별 경로와 수중 등록은 최신 카드 우선.",
+    "latest_page": 28
+  },
+  {
+    "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+    "page": 32,
+    "part": "p05",
+    "action": "latest edition",
+    "basis": "L19 주간 구매, L23 두 번의 진입, 권역별 경로와 수중 등록은 최신 카드 우선.",
+    "latest_page": 32
+  },
+  {
+    "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+    "page": 41,
+    "part": "p05",
+    "action": "latest edition",
+    "basis": "L19 주간 구매, L23 두 번의 진입, 권역별 경로와 수중 등록은 최신 카드 우선.",
+    "latest_page": 41
+  },
+  {
+    "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+    "page": 61,
+    "part": "p05",
+    "action": "latest edition",
+    "basis": "L19 주간 구매, L23 두 번의 진입, 권역별 경로와 수중 등록은 최신 카드 우선.",
+    "latest_page": 61
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 1,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판의 표지·대략 힌트·종합 평가는 최신 권역/히든 장소 목록에 통합.",
+    "target": "P05"
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 2,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판의 표지·대략 힌트·종합 평가는 최신 권역/히든 장소 목록에 통합.",
+    "target": "P05"
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 3,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판의 표지·대략 힌트·종합 평가는 최신 권역/히든 장소 목록에 통합.",
+    "target": "P05"
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 4,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판의 표지·대략 힌트·종합 평가는 최신 권역/히든 장소 목록에 통합.",
+    "target": "P05"
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 5,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판 5곳의 찾아가는 순서를 대응 탐험 카드에 보존.",
+    "target": "P05-L01"
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 6,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판 5곳의 찾아가는 순서를 대응 탐험 카드에 보존.",
+    "target": "P05-L02"
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 7,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판 5곳의 찾아가는 순서를 대응 탐험 카드에 보존.",
+    "target": "P05-W06"
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 8,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판 5곳의 찾아가는 순서를 대응 탐험 카드에 보존.",
+    "target": "P05-L03"
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 9,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판 5곳의 찾아가는 순서를 대응 탐험 카드에 보존.",
+    "target": "P05-L04"
+  },
+  {
+    "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+    "page": 10,
+    "part": "p05",
+    "action": "prior volume reviewed",
+    "basis": "초판의 표지·대략 힌트·종합 평가는 최신 권역/히든 장소 목록에 통합.",
+    "target": "P05"
+  },
+  {
+    "source": "GTA_VI_P06_S07R1_Collection_Atlas_KR.pdf",
+    "page": 1,
+    "part": "p06",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P06_S07R1_Collection_Atlas_KR.pdf",
+    "page": 2,
+    "part": "p06",
+    "action": "latest edition",
+    "basis": "실제 카운터와 열리는 지도 링크의 단위를 따로 판정. 장소마다 직접/근사 위치를 구분.",
+    "latest_page": 2
+  },
+  {
+    "source": "GTA_VI_P06_S07R1_Collection_Atlas_KR.pdf",
+    "page": 6,
+    "part": "p06",
+    "action": "latest edition",
+    "basis": "실제 카운터와 열리는 지도 링크의 단위를 따로 판정. 장소마다 직접/근사 위치를 구분.",
+    "latest_page": 6
+  },
+  {
+    "source": "GTA_VI_P06_S07R1_Collection_Atlas_KR.pdf",
+    "page": 7,
+    "part": "p06",
+    "action": "latest edition",
+    "basis": "실제 카운터와 열리는 지도 링크의 단위를 따로 판정. 장소마다 직접/근사 위치를 구분.",
+    "latest_page": 7
+  },
+  {
+    "source": "GTA_VI_P06_S07R1_Collection_Atlas_KR.pdf",
+    "page": 13,
+    "part": "p06",
+    "action": "latest edition",
+    "basis": "실제 카운터와 열리는 지도 링크의 단위를 따로 판정. 장소마다 직접/근사 위치를 구분.",
+    "latest_page": 13
+  },
+  {
+    "source": "GTA_VI_P06_S07R1_Collection_Atlas_KR.pdf",
+    "page": 22,
+    "part": "p06",
+    "action": "latest edition",
+    "basis": "실제 카운터와 열리는 지도 링크의 단위를 따로 판정. 장소마다 직접/근사 위치를 구분.",
+    "latest_page": 22
+  },
+  {
+    "source": "GTA_VI_P06_S07R1_Collection_Atlas_KR.pdf",
+    "page": 23,
+    "part": "p06",
+    "action": "latest edition",
+    "basis": "실제 카운터와 열리는 지도 링크의 단위를 따로 판정. 장소마다 직접/근사 위치를 구분.",
+    "latest_page": 23
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 1,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 2,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 2
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 8,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 8
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 9,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 9
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 12,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 12
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 13,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 13
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 14,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 14
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 15,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 15
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 16,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 16
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 17,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 17
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 18,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 18
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 21,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 21
+  },
+  {
+    "source": "GTA_VI_P07_Properties_Safehouses_R1_KR.pdf",
+    "page": 24,
+    "part": "p07",
+    "action": "latest edition",
+    "basis": "C3 무료 차량과 차고, 특전 만료, 등록·회수 절차는 최신 보존 조건 우선.",
+    "latest_page": 24
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 1,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 2,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 2
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 3,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 3
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 4,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 4
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 5,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 5
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 6,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "PS5 수동 장전·빠른 교체·파트너 호출과 프로파일의 항복 조건은 수정판 우선.",
+    "latest_page": 6
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 7,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 7
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 8,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 8
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 9,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 9
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 10,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 10
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 11,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 11
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 12,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 12
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 13,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 13
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 14,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 14
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 15,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 15
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 16,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "PS5 수동 장전·빠른 교체·파트너 호출과 프로파일의 항복 조건은 수정판 우선.",
+    "latest_page": 16
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 17,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 17
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 18,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 18
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 19,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 19
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 20,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 20
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 21,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "PS5 수동 장전·빠른 교체·파트너 호출과 프로파일의 항복 조건은 수정판 우선.",
+    "latest_page": 21
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 22,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "PS5 수동 장전·빠른 교체·파트너 호출과 프로파일의 항복 조건은 수정판 우선.",
+    "latest_page": 22
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 23,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "PS5 수동 장전·빠른 교체·파트너 호출과 프로파일의 항복 조건은 수정판 우선.",
+    "latest_page": 23
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 24,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 24
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 25,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 25
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 26,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "PS5 수동 장전·빠른 교체·파트너 호출과 프로파일의 항복 조건은 수정판 우선.",
+    "latest_page": 26
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 27,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 27
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 28,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 28
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 29,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 29
+  },
+  {
+    "source": "GTA_VI_P08_Combat_and_Character_Growth_R1_KR.pdf",
+    "page": 30,
+    "part": "p08",
+    "action": "latest edition",
+    "basis": "인쇄판의 판명·바닥글 변경. 공략 본문 유지.",
+    "latest_page": 30
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 1,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 2,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 2
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 4,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 4
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 5,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 5
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 9,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 9
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 10,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 10
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 13,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 13
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 14,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 14
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 15,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 15
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 16,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 16
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 17,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 17
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 19,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 19
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 20,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 20
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 21,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 21
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 22,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 22
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 23,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 23
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 26,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 26
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 30,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 30
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 31,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 31
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 32,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 32
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 33,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 33
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 37,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 37
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 40,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 40
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 60,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "의뢰의 챕터 종료 전 조기 마감, 모래시계·전화, 보상 종류 및 재시도는 최신 마스터 우선.",
+    "latest_page": 60
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 61,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 61
+  },
+  {
+    "source": "GTA_VI_P09_S08R1_Side_Missions_Events_KR.pdf",
+    "page": 62,
+    "part": "p09",
+    "action": "latest edition",
+    "basis": "게임 내 항목은 유지. 인쇄판 이동 링크·외부 스포일러 경고 추가.",
+    "latest_page": 62
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 1,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 2,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 2
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 6,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 6
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 8,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 8
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 13,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 13
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 14,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 14
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 19,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 19
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 20,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 20
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 21,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 21
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 22,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 22
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 23,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 23
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 24,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 24
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 25,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 25
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 26,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 26
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 28,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 28
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 31,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 31
+  },
+  {
+    "source": "GTA_VI_P10_Glitches_and_Hidden_Mechanics_R1_KR.pdf",
+    "page": 32,
+    "part": "p10",
+    "action": "latest edition",
+    "basis": "미션 중 직접 획득→등록/보관함→재로드를 분리하고, 예전 반복 현금·조기 획득 보고는 재현 보장으로 간주하지 않음.",
+    "latest_page": 32
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 1,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "표지와 판명 교체. 구판 표지는 플레이 항목에서 제외.",
+    "latest_page": 1
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 2,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "차고 주차와 등록·호출을 분리. 차고가 열리는 시한과 특전 여부는 최신 판정 우선.",
+    "latest_page": 2
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 18,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "차고 주차와 등록·호출을 분리. 차고가 열리는 시한과 특전 여부는 최신 판정 우선.",
+    "latest_page": 18
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 30,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "차고 주차와 등록·호출을 분리. 차고가 열리는 시한과 특전 여부는 최신 판정 우선.",
+    "latest_page": 30
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 46,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "차고 주차와 등록·호출을 분리. 차고가 열리는 시한과 특전 여부는 최신 판정 우선.",
+    "latest_page": 46
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 52,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "차고 주차와 등록·호출을 분리. 차고가 열리는 시한과 특전 여부는 최신 판정 우선.",
+    "latest_page": 52
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 60,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "차고 주차와 등록·호출을 분리. 차고가 열리는 시한과 특전 여부는 최신 판정 우선.",
+    "latest_page": 60
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 61,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "차고 주차와 등록·호출을 분리. 차고가 열리는 시한과 특전 여부는 최신 판정 우선.",
+    "latest_page": 61
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 62,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "차고 주차와 등록·호출을 분리. 차고가 열리는 시한과 특전 여부는 최신 판정 우선.",
+    "latest_page": 62
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_42_KR.pdf",
+    "page": 63,
+    "part": "v",
+    "action": "latest edition",
+    "basis": "차고 주차와 등록·호출을 분리. 차고가 열리는 시한과 특전 여부는 최신 판정 우선.",
+    "latest_page": 63
+  },
+  {
+    "source": "GTA6_Chapter2_Priority_Vehicles_KR.pdf",
+    "page": 1,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "V-06 Firebug와 V-04 Nightlight의 두 초기 추천 경로는 차량명과 장소 기준으로 최신 42대와 매칭.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Chapter2_Priority_Vehicles_KR.pdf",
+    "page": 2,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "V-06 Firebug와 V-04 Nightlight의 두 초기 추천 경로는 차량명과 장소 기준으로 최신 42대와 매칭.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Chapter2_Priority_Vehicles_KR.pdf",
+    "page": 3,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "V-06 Firebug와 V-04 Nightlight의 두 초기 추천 경로는 차량명과 장소 기준으로 최신 42대와 매칭.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf",
+    "page": 1,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf",
+    "page": 2,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf",
+    "page": 3,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf",
+    "page": 4,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf",
+    "page": 5,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf",
+    "page": 6,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf",
+    "page": 7,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 1,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 2,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 3,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 4,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 5,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 6,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 7,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 8,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 9,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 10,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 11,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 12,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 13,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 14,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 15,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 16,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 17,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 18,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 19,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 20,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 21,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "A/B 도로 지표를 이름별로 옮김. 지도 좌표와 접근 조건은 최신 차량 카드 우선.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf",
+    "page": 22,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "무료 보상차 2대의 진입 시한·등록을 최신 카드에서 대조.",
+    "target": "V-ROAD-LANDMARKS"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Map_Guide_KR.pdf",
+    "page": 1,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Map_Guide_KR.pdf",
+    "page": 2,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Map_Guide_KR.pdf",
+    "page": 3,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Map_Guide_KR.pdf",
+    "page": 4,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Map_Guide_KR.pdf",
+    "page": 5,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Map_Guide_KR.pdf",
+    "page": 6,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Map_Guide_KR.pdf",
+    "page": 7,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Map_Guide_KR.pdf",
+    "page": 8,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  },
+  {
+    "source": "GTA6_Standout_Vehicles_Map_Guide_KR.pdf",
+    "page": 9,
+    "part": "v",
+    "action": "prior volume reviewed",
+    "basis": "기존 42대의 광역 좌표·영상 링크 색인. 같은 이름의 최신 차량 자료가 목적지. 점도형과 인쇄 쪽수 제외.",
+    "target": "V"
+  }
+]
