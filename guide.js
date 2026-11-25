@@ -17,7 +17,8 @@ const link=(src,label)=>url(src)?'<a target="_blank" rel="noopener noreferrer" h
 const entry=id=>"#/entry/"+encodeURIComponent(id);
 const group=cat=>"#/guide/"+cat.toLowerCase();
 const catName=cat=>categories[cat]?.[0]||"공략";
-const categoryItems=c=>items.filter(v=>v.category===c);
+const readerItems=items.filter(v=>!(v.status==="reference"&&v.summary==="–"));
+const categoryItems=c=>readerItems.filter(v=>v.category===c);
 const opt=(v,label,sel)=>'<option value="'+esc(v)+'"'+(String(v)===String(sel)?" selected":"")+'>'+esc(label)+'</option>';
 const photo=v=>media[cleanId(v?.id)];
 const norm=v=>String(v??"").normalize("NFKC").toLocaleLowerCase().replace(/[\s·'’.-]/g,"");
@@ -88,7 +89,7 @@ function listPage(page,id,p){
 }
 const searchCache=new Map();
 function searchItems(q){const terms=q.split(/\s+/).map(norm).filter(Boolean);if(!terms.length)return [];
- const hits=[];for(const v of items){if(!searchCache.has(v.id))searchCache.set(v.id,[norm([v.title,...(v.aliases||[])].join("|")),norm([v.region,v.summary,catName(v.category),...v.sections.filter(s=>!s.reveal).flatMap(s=>[s.title,...(s.paragraphs||[]),...(s.steps||[]),...(s.table?.rows||[]).flat()])].join("|"))]);
+ const hits=[];for(const v of readerItems){if(!searchCache.has(v.id))searchCache.set(v.id,[norm([v.title,...(v.aliases||[])].join("|")),norm([v.region,v.summary,catName(v.category),...v.sections.filter(s=>!s.reveal).flatMap(s=>[s.title,...(s.paragraphs||[]),...(s.steps||[]),...(s.table?.rows||[]).flat()])].join("|"))]);
  const [title,body]=searchCache.get(v.id);if(terms.every(t=>title.includes(t)||body.includes(t)))hits.push([v,terms.filter(t=>title.includes(t)).length+(norm(v.title)===norm(q)?5:0)])}
  return hits.sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
 }
@@ -111,7 +112,7 @@ function videoSection(links){
   try{const u=new URL(ref.url),id=u.hostname==="youtu.be"?u.pathname.slice(1):["www.youtube.com","youtube.com","m.youtube.com"].includes(u.hostname)?u.searchParams.get("v"):null;
    if(!id||!/^[A-Za-z0-9_-]{11}$/.test(id))continue;
    const t=u.searchParams.get("t")||u.searchParams.get("start")||"0";
-   const parts=t.match(/^(?:(\\d+)h)?(?:(\\d+)m)?(\\d+)s?$/);
+   const parts=t.match(/^(?:(\d+)h)?(?:(\d+)m)?(\d+)s?$/);
    seconds=parts?Number(parts[1]||0)*3600+Number(parts[2]||0)*60+Number(parts[3]):0;
    video=id;label=ref.label||"영상";break;
   }catch{}
@@ -121,7 +122,7 @@ function videoSection(links){
 }
 function sourceLink(ref){
  const href=url(ref.url);if(!href)return "";
- const domain=new URL(ref.url).hostname.replace(/^www\\./,"");
+ const domain=new URL(ref.url).hostname.replace(/^www\./,"");
  const names={"gtabase.com":"GTABase","metaforge.app":"MetaForge","gamesdb.gg":"GamesDB","gta6gps.com":"GTA 6 GPS","youtube.com":"YouTube","youtu.be":"YouTube"};
  const host=names[domain]||domain,label=ref.label||"출처";
  return link(ref.url,["원문 출처","지도 열기","이미지 출처"].includes(label)?label+" · "+host:label);
@@ -155,7 +156,7 @@ function mapPage(p){
 function credits(){return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>레오니다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map(fbritoferreira)의 위치별 사진은 CC BY 4.0 표기에 따라 크기를 조정하고 WebP로 제공했습니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6","Open GTA 6 Map")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'}
 function render(reset=false){
  const r=route();let title="레오니다 필드 가이드",html;
- if(r.page==="home")html=home();else if(r.page==="guides")html=guides();else if(r.page==="entry"){const v=findItem(r.id);if(!v&&/^(p\\d\\d|v|index)-p\\d{3}$/.test(r.id)){const part=r.id.split("-")[0];html=part==="index"?guides():listPage("guide",part,r.params)}else html=detail(v);title=v?.title||title}
+ if(r.page==="home")html=home();else if(r.page==="guides")html=guides();else if(r.page==="entry"){const v=findItem(r.id);if(!v&&/^(p\d\d|v|index)-p\d{3}$/.test(r.id)){const part=r.id.split("-")[0];html=part==="index"?guides():listPage("guide",part,r.params)}else html=detail(v);title=v?.title||title}
  else if(["guide","mine","search"].includes(r.page))html=listPage(r.page,r.id,r.params);
  else if(r.page==="map")html=mapPage(r.params);else if(["credits","sources"].includes(r.page))html=credits();else html=missing();
  main.innerHTML=html+'<span id="feedback" role="status"></span>';document.title=title+" · GTA VI";
