@@ -26,3 +26,6 @@ main{min-height:70vh;padding-top:28px;padding-bottom:64px}main:focus{outline:non
 .discovery-row a{display:flex;align-items:center;gap:.7rem;min-height:44px;font-weight:600}
 .discovery-row small{font-variant-numeric:tabular-nums}
 .discovery-row button{min-height:44px;flex:none}
+
+#map-search input{font:inherit;padding:8px;max-width:100%;width:min(50vw,22rem);border:1px solid var(--line);border-radius:4px}
+.region-map{width:100%;height:auto;max-height:400px;background:#e7ebe5;border-radius:6px;display:block}.route-places li{padding-block:3px}.route-places a{text-underline-offset:3px}

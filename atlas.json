@@ -6690,6 +6690,16 @@
     "y": -413.6
   },
   {
+    "id": "p06-c-del-18/card-delights-002",
+    "item": "p06-c-del-18",
+    "name": "Vicki · 스탈릿 모텔 관리실",
+    "category": "P06",
+    "region": "Port Gellhorn",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=card-delights#card-delights-002",
+    "x": -5343.0,
+    "y": 3507.0
+  },
+  {
     "id": "p06-c-del-18/collectible-card-076",
     "item": "p06-c-del-18",
     "name": "Delights card: Vicki (Standard)",
@@ -6698,16 +6708,6 @@
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-delights#collectible-card-076",
     "x": -1836.0,
     "y": -2044.1
-  },
-  {
-    "id": "p06-c-del-18/card-delights-002",
-    "item": "p06-c-del-18",
-    "name": "Delights card: Vicki (Standard)",
-    "category": "P06",
-    "region": "Port Gellhorn",
-    "url": "https://www.gtabase.com/gta-6/map/?feature=card-delights#card-delights-002",
-    "x": -5343.0,
-    "y": 3507.0
   },
   {
     "id": "p06-c-del-18/card-delights-005",
@@ -17838,5 +17838,775 @@
     "url": "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1159,ig.jpg",
     "x": -5316.823130973123,
     "y": 3471.6402053899656
+  },
+  {
+    "id": "p06-ah03-03/ahol-street-art-001",
+    "item": "p06-ah03-03",
+    "name": "Ahol Street Art: Wheel 379",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=ahol-street-art#ahol-street-art-001",
+    "x": -592,
+    "y": -70
+  },
+  {
+    "id": "p06-fl-019/hidden-package-019",
+    "item": "p06-fl-019",
+    "name": "코튼마우스호 남쪽 긴 모래톱 섬 서쪽 해변",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-019",
+    "x": -3879,
+    "y": -4971
+  },
+  {
+    "id": "p06-fl-020/hidden-package-020",
+    "item": "p06-fl-020",
+    "name": "구스 키 동쪽 좁은 섬 해변 파티 장소",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-020",
+    "x": -5918,
+    "y": -6176
+  },
+  {
+    "id": "p06-fl-024/hidden-package-024",
+    "item": "p06-fl-024",
+    "name": "핀의 현장 설명 확인",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-024",
+    "x": -7904,
+    "y": -6711
+  },
+  {
+    "id": "p06-fl-029/hidden-package-029",
+    "item": "p06-fl-029",
+    "name": "키 렌토 동쪽 주택 앞마당",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-029",
+    "x": -2183,
+    "y": -5797
+  },
+  {
+    "id": "p06-fl-032/hidden-package-032",
+    "item": "p06-fl-032",
+    "name": "햄릿 북쪽 판잣집 옆 쓰레기",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-032",
+    "x": -2753,
+    "y": -3077
+  },
+  {
+    "id": "p06-fl-034/hidden-package-034",
+    "item": "p06-fl-034",
+    "name": "포트 겔혼 서쪽 작은 집 정원",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-034",
+    "x": -6762,
+    "y": 3937
+  },
+  {
+    "id": "p06-fl-035/hidden-package-035",
+    "item": "p06-fl-035",
+    "name": "왓슨 베이 동쪽 모텔 남서 모서리의 쓰레기 더미",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-035",
+    "x": -3994,
+    "y": -3077
+  },
+  {
+    "id": "p06-fl-036/hidden-package-036",
+    "item": "p06-fl-036",
+    "name": "남서쪽 장식을 많이 단 집의 현관 데크",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-036",
+    "x": -2899,
+    "y": -6539
+  },
+  {
+    "id": "p06-fl-041/hidden-package-041",
+    "item": "p06-fl-041",
+    "name": "마일 제로 동쪽 다리 진입부 작은 건물 내부 탁자",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-041",
+    "x": -6161,
+    "y": -6978
+  },
+  {
+    "id": "p06-fl-042/hidden-package-042",
+    "item": "p06-fl-042",
+    "name": "북쪽 소화전 옆 두 나무 사이",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-042",
+    "x": -2124,
+    "y": -5194
+  },
+  {
+    "id": "p06-fl-044/hidden-package-044",
+    "item": "p06-fl-044",
+    "name": "포트 겔혼 서쪽 섬, 쓰레기 더미 위 버려진 냉장고 아래",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-044",
+    "x": -8032,
+    "y": 4300
+  },
+  {
+    "id": "p06-fl-050/hidden-package-050",
+    "item": "p06-fl-050",
+    "name": "벨포인트 내측 해안의 난파선 옆",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-050",
+    "x": -8353,
+    "y": -315
+  },
+  {
+    "id": "p06-fl-051/hidden-package-051",
+    "item": "p06-fl-051",
+    "name": "부두",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-051",
+    "x": -7990,
+    "y": -530
+  },
+  {
+    "id": "p06-fl-054/hidden-package-054",
+    "item": "p06-fl-054",
+    "name": "벨포인트 북쪽 부두 아래",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-054",
+    "x": -8752,
+    "y": 495
+  },
+  {
+    "id": "p06-fl-055/hidden-package-055",
+    "item": "p06-fl-055",
+    "name": "키 렌토 서쪽 물가 주택 정원",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-055",
+    "x": -2760,
+    "y": -6099
+  },
+  {
+    "id": "p06-fl-057/hidden-package-057",
+    "item": "p06-fl-057",
+    "name": "아비스모 다리 남쪽 해변 장식 사이",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-057",
+    "x": -4150,
+    "y": -7423
+  },
+  {
+    "id": "p06-fl-060/hidden-package-060",
+    "item": "p06-fl-060",
+    "name": "같은 건물 밖 부서진 벽 오른쪽 끝",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-060",
+    "x": -6175,
+    "y": -6991
+  },
+  {
+    "id": "p06-fl-062/hidden-package-062",
+    "item": "p06-fl-062",
+    "name": "록리지 상가 내부 재고 보관실",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-062",
+    "x": -1196,
+    "y": 698
+  },
+  {
+    "id": "p06-fl-063/hidden-package-063",
+    "item": "p06-fl-063",
+    "name": "포트 겔혼 중앙 주택가 순환로",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-063",
+    "x": -6520,
+    "y": 3718
+  },
+  {
+    "id": "p06-fl-065/hidden-package-065",
+    "item": "p06-fl-065",
+    "name": "포트 겔혼 남쪽 집 앞마당",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-065",
+    "x": -6450,
+    "y": 2831
+  },
+  {
+    "id": "p06-fl-068/hidden-package-068",
+    "item": "p06-fl-068",
+    "name": "카프리 북서쪽 물가 주택 그릴 뒤",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-068",
+    "x": -7206,
+    "y": 635
+  },
+  {
+    "id": "p06-fl-069/hidden-package-069",
+    "item": "p06-fl-069",
+    "name": "포트 겔혼 북부 표시 건물 옥상",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-069",
+    "x": -6309,
+    "y": 4435
+  },
+  {
+    "id": "p06-fl-070/hidden-package-070",
+    "item": "p06-fl-070",
+    "name": "왓슨 베이 북쪽 도로 옆 작은 동굴",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-070",
+    "x": -4760,
+    "y": -2408
+  },
+  {
+    "id": "p06-fl-071/hidden-package-071",
+    "item": "p06-fl-071",
+    "name": "핀의 현장 설명 확인",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-071",
+    "x": -8642,
+    "y": -358
+  },
+  {
+    "id": "p06-fl-073/hidden-package-073",
+    "item": "p06-fl-073",
+    "name": "토터스호 남쪽 포르투나가 할로윈 집 앞마당",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-073",
+    "x": -6652,
+    "y": 49
+  },
+  {
+    "id": "p06-fl-074/hidden-package-074",
+    "item": "p06-fl-074",
+    "name": "포트 겔혼 고속도로 옆 주택 앞마당",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-074",
+    "x": -6475,
+    "y": 3356
+  },
+  {
+    "id": "p06-fl-081/hidden-package-081",
+    "item": "p06-fl-081",
+    "name": "사우스사이드 북부 하트 장식 흰 벽돌집 앞마당",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-081",
+    "x": -1715,
+    "y": -1917
+  },
+  {
+    "id": "p06-fl-084/hidden-package-084",
+    "item": "p06-fl-084",
+    "name": "햄릿 중앙 안뜰",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-084",
+    "x": -2704,
+    "y": -3562
+  },
+  {
+    "id": "p06-fl-092/hidden-package-092",
+    "item": "p06-fl-092",
+    "name": "남서쪽 큰 레이돔 섬 건물들 · 방 미확인",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-092",
+    "x": -8048,
+    "y": -6794
+  },
+  {
+    "id": "p06-fl-094/hidden-package-094",
+    "item": "p06-fl-094",
+    "name": "포트 겔혼 북부 주택 뒤뜰의 여러 장식 중 하나",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-094",
+    "x": -6455,
+    "y": 4179
+  },
+  {
+    "id": "p06-fl-096/hidden-package-096",
+    "item": "p06-fl-096",
+    "name": "벅스킨 습지 수로에 떠 있는 장식",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-096",
+    "x": -3909,
+    "y": 1384
+  },
+  {
+    "id": "p06-fl-100/hidden-package-100",
+    "item": "p06-fl-100",
+    "name": "라 페를 C자 건물의 지상 안뜰",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-100",
+    "x": -879,
+    "y": 1473
+  },
+  {
+    "id": "p06-fl-102/hidden-package-102",
+    "item": "p06-fl-102",
+    "name": "카프리 남서쪽 호텔 입구 정원",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-102",
+    "x": -7040,
+    "y": 116
+  },
+  {
+    "id": "p06-fl-103/hidden-package-103",
+    "item": "p06-fl-103",
+    "name": "포트 겔혼 동쪽 고속도로 옆 집에 장식 두 개 중 하나",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-103",
+    "x": -6290,
+    "y": 3625
+  },
+  {
+    "id": "p06-fl-108/hidden-package-108",
+    "item": "p06-fl-108",
+    "name": "포트 겔혼 북부 표시 부지 중앙 건물",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-108",
+    "x": -6418,
+    "y": 4045
+  },
+  {
+    "id": "p06-fl-110/hidden-package-110",
+    "item": "p06-fl-110",
+    "name": "상자 · 실내",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-110",
+    "x": -5230,
+    "y": 8117
+  },
+  {
+    "id": "p06-fl-111/hidden-package-111",
+    "item": "p06-fl-111",
+    "name": "키 렌토 북동쪽 해안, 실제 새 사이",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-111",
+    "x": -1637,
+    "y": -4853
+  },
+  {
+    "id": "p06-fl-113/hidden-package-113",
+    "item": "p06-fl-113",
+    "name": "키 렌토 남서 해안, 떠 있는 장식 곁에 세워진 개체",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-113",
+    "x": -2996,
+    "y": -6319
+  },
+  {
+    "id": "p06-fl-114/hidden-package-114",
+    "item": "p06-fl-114",
+    "name": "킹스턴 로드 Chip 카드 집 옆집의 뒤쪽 정원",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-114",
+    "x": -4937,
+    "y": -2976
+  },
+  {
+    "id": "p06-fl-120/hidden-package-120",
+    "item": "p06-fl-120",
+    "name": "벨포인트 등대 사다리 위 상단 플랫폼",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-120",
+    "x": -7975,
+    "y": -498
+  },
+  {
+    "id": "p06-fl-121/hidden-package-121",
+    "item": "p06-fl-121",
+    "name": "남동쪽 해변 주택군 옆 부두",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-121",
+    "x": -7860,
+    "y": -494
+  },
+  {
+    "id": "p06-fl-125/hidden-package-125",
+    "item": "p06-fl-125",
+    "name": "볼케이노 커피 서쪽 파란 집, 정원 장식 가운데",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-125",
+    "x": -7122,
+    "y": 444
+  },
+  {
+    "id": "p06-fl-133/hidden-package-133",
+    "item": "p06-fl-133",
+    "name": "웨이닝 샌즈 남쪽 해안 주택 차고, 주차한 차 뒤",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-133",
+    "x": 812,
+    "y": 3508
+  },
+  {
+    "id": "p06-fl-135/hidden-package-135",
+    "item": "p06-fl-135",
+    "name": "핀의 현장 설명 확인",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-135",
+    "x": -4228,
+    "y": 9407
+  },
+  {
+    "id": "p06-fl-137/hidden-package-137",
+    "item": "p06-fl-137",
+    "name": "노란 상자 · 상자",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-137",
+    "x": -5431,
+    "y": 8213
+  },
+  {
+    "id": "p06-fl-142/hidden-package-142",
+    "item": "p06-fl-142",
+    "name": "부리 색과 지도 기준점 확인",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-142",
+    "x": -83,
+    "y": 5723
+  },
+  {
+    "id": "p06-fl-143/hidden-package-143",
+    "item": "p06-fl-143",
+    "name": "배·선체",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-143",
+    "x": -5283,
+    "y": 8124
+  },
+  {
+    "id": "p06-fl-149/hidden-package-149",
+    "item": "p06-fl-149",
+    "name": "게시판·벽면",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-149",
+    "x": 5,
+    "y": 57
+  },
+  {
+    "id": "p06-fl-150/hidden-package-150",
+    "item": "p06-fl-150",
+    "name": "핀의 현장 설명 확인",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-150",
+    "x": -1314,
+    "y": 2989
+  },
+  {
+    "id": "p06-fl-155/hidden-package-155",
+    "item": "p06-fl-155",
+    "name": "북쪽 섬 남쪽 해변",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-155",
+    "x": -5472,
+    "y": 8214
+  },
+  {
+    "id": "p06-fl-156/hidden-package-156",
+    "item": "p06-fl-156",
+    "name": "해안·모래톱",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-156",
+    "x": -5444,
+    "y": 8323
+  },
+  {
+    "id": "p06-fl-157/hidden-package-157",
+    "item": "p06-fl-157",
+    "name": "수로",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-157",
+    "x": -3812,
+    "y": 7442
+  },
+  {
+    "id": "p06-fl-162/hidden-package-162",
+    "item": "p06-fl-162",
+    "name": "핀의 현장 설명 확인",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-162",
+    "x": -2324,
+    "y": 3812
+  },
+  {
+    "id": "p06-fl-163/hidden-package-163",
+    "item": "p06-fl-163",
+    "name": "핀의 현장 설명 확인",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-163",
+    "x": 663,
+    "y": 1050
+  },
+  {
+    "id": "p06-fl-164/hidden-package-164",
+    "item": "p06-fl-164",
+    "name": "핀의 현장 설명 확인",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-164",
+    "x": -5502,
+    "y": 6976
+  },
+  {
+    "id": "p06-fl-165/hidden-package-165",
+    "item": "p06-fl-165",
+    "name": "다리 아래·주변",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-165",
+    "x": -7118,
+    "y": 582
+  },
+  {
+    "id": "p06-fl-166/hidden-package-166",
+    "item": "p06-fl-166",
+    "name": "부리 색과 지도 기준점 확인",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-166",
+    "x": -3301,
+    "y": 4011
+  },
+  {
+    "id": "p06-fl-173/hidden-package-173",
+    "item": "p06-fl-173",
+    "name": "배·선체",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=cocaine-flamingos#hidden-package-173",
+    "x": -2053,
+    "y": 5099
+  },
+  {
+    "id": "p06-md-01/meditation-002",
+    "item": "p06-md-01",
+    "name": "Jason's House Meditation",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-002",
+    "x": -2354,
+    "y": -5532
+  },
+  {
+    "id": "p06-md-02/meditation-003",
+    "item": "p06-md-02",
+    "name": "Smooth Sand Meditation",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-003",
+    "x": -8707,
+    "y": 1087
+  },
+  {
+    "id": "p06-md-03/meditation-001",
+    "item": "p06-md-03",
+    "name": "Swamp Meditation",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-001",
+    "x": -3807,
+    "y": 1637
+  },
+  {
+    "id": "p06-md-04/meditation-004",
+    "item": "p06-md-04",
+    "name": "Worn Stone Meditation",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-004",
+    "x": -4344,
+    "y": 1977
+  },
+  {
+    "id": "p06-md-05/meditation-005",
+    "item": "p06-md-05",
+    "name": "Red Rocks Meditation",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-005",
+    "x": -5159,
+    "y": 5107
+  },
+  {
+    "id": "p06-md-06/meditation-006",
+    "item": "p06-md-06",
+    "name": "Water Wheel Meditation",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-006",
+    "x": -4064,
+    "y": 7410
+  },
+  {
+    "id": "p06-md-07/meditation-007",
+    "item": "p06-md-07",
+    "name": "Jutting Cliff Meditation",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-007",
+    "x": -3061,
+    "y": 7147
+  },
+  {
+    "id": "p06-md-08/meditation-008",
+    "item": "p06-md-08",
+    "name": "Waterfall Meditation",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-008",
+    "x": -2254,
+    "y": 7647
+  },
+  {
+    "id": "p06-md-09/meditation-009",
+    "item": "p06-md-09",
+    "name": "Seaside Meditation",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-009",
+    "x": 400,
+    "y": 4890
+  },
+  {
+    "id": "p06-md-10/meditation-010",
+    "item": "p06-md-10",
+    "name": "Ascent Meditation",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=meditation#meditation-010",
+    "x": -3401,
+    "y": 6330
+  },
+  {
+    "id": "p06-pl-01/playlist-001",
+    "item": "p06-pl-01",
+    "name": "The Sniper of La Perle 4",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=playlist#playlist-001",
+    "x": -1003.7,
+    "y": 1493.3
+  },
+  {
+    "id": "p06-pl-01/playlist-002",
+    "item": "p06-pl-01",
+    "name": "The Sniper of La Perle 3",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=playlist#playlist-002",
+    "x": -1048.9,
+    "y": 1393.2
+  },
+  {
+    "id": "p06-pl-01/playlist-003",
+    "item": "p06-pl-01",
+    "name": "The Sniper of La Perle 2",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=playlist#playlist-003",
+    "x": -932.9,
+    "y": 1309.2
+  },
+  {
+    "id": "p06-pl-01/playlist-004",
+    "item": "p06-pl-01",
+    "name": "The Sniper of La Perle 1",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=playlist#playlist-004",
+    "x": -677.4,
+    "y": 1200.3
+  },
+  {
+    "id": "p06-st3-02/luxury-watch-006",
+    "item": "p06-st3-02",
+    "name": "Crowex Octane 'Orca'",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=luxury-watch#luxury-watch-006",
+    "x": -6373,
+    "y": 3203
+  },
+  {
+    "id": "p06-ho-002/basketball-002",
+    "item": "p06-ho-002",
+    "name": "Hoop 99 - Lummox County",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-002",
+    "x": -1178,
+    "y": 7135
+  },
+  {
+    "id": "p06-ho-093/basketball-093",
+    "item": "p06-ho-093",
+    "name": "Hoop 7 - Mariana County",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-093",
+    "x": -1970.3,
+    "y": -5596.7
+  },
+  {
+    "id": "p06-ho-096/basketball-096",
+    "item": "p06-ho-096",
+    "name": "Hoop 4 - Mariana County",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-096",
+    "x": -2322.4,
+    "y": -5931.4
   }
 ]

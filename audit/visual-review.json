@@ -374,11 +374,182 @@
         "p06-windows"
       ],
       "scope": "스탈릿 모텔 카드 3장·서적 2권",
-      "status": "pending-visual-verification",
+      "status": "reviewed-in-scope",
       "checked": [
-        "PDF 본문과 인쇄본 외부 링크, 수정 전 웹 본문 대조. 빠진 Vicki 연결과 Children of Wizard Wang 정식 제목, 두 책의 Examine 조작을 수정안에 반영."
+        "PDF 본문과 인쇄본 외부 링크, 수정 전 웹 본문 대조. 빠진 Vicki 연결과 Children of Wizard Wang 정식 제목, 두 책의 Examine 조작을 수정안에 반영.",
+        "수정 전 공개 화면, 최신 PDF 지도·사진과 수정 후 390×844 / 1365×900 상세를 대조. 사진 3장, 모텔 접근 지도, 가구 위치와 세트, 카드 3장·책 2권 이동을 확인. Vicki가 다른 도시 사본으로 열리던 기본 핀을 모텔 핀으로 수정. 서적 2권은 건물 진입점과 실내 설명을 분리."
+      ]
+    },
+    {
+      "book": "P06",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        13,
+        22,
+        23,
+        24,
+        25,
+        26
       ],
-      "remaining": "수정 후 PC·모바일 사진과 상세 이동을 실화면에서 대조한 뒤 main에 반영. 이 세 쪽은 시각 검수 완료 집계에서 제외."
+      "entries": [
+        "p06-collection-targets",
+        "p06-card-sets"
+      ],
+      "scope": "표지·탐색, 진행 수량·트로피·보상, 18세트 지도 범위와 근사 위치, 체크리스트·출처",
+      "checked": [
+        "부가 활동 목표와 18행 표, 트로피명, 개별/근사/미확보/공용 입구를 대조. 표지는 독립 공략에서 제외. 사진·영상 외부 출처의 현재 재생은 전수 확인하지 않음."
+      ],
+      "status": "reviewed-in-scope",
+      "viewports": [
+        [
+          390,
+          844
+        ],
+        [
+          1365,
+          900
+        ]
+      ]
+    },
+    {
+      "book": "P06",
+      "pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "entries": [
+        "p06-regional-collecting",
+        "p06-wl-014",
+        "p06-sj-036",
+        "p06-br-052",
+        "p06-sj-031",
+        "p06-br-056",
+        "p06-sj-063",
+        "p06-bj-006",
+        "p06-ws-013",
+        "p06-sj-090",
+        "p06-bj-022",
+        "p06-sj-102",
+        "p06-br-179",
+        "p06-br-197",
+        "p06-ho-093",
+        "p06-ho-096",
+        "p06-sj-038",
+        "p06-sj-032",
+        "p06-br-033",
+        "p06-md-09",
+        "p06-wl-007",
+        "p06-br-019",
+        "p06-md-06",
+        "p06-wl-001",
+        "p06-md-08",
+        "p06-ho-002"
+      ],
+      "scope": "5개 권역과 방문 지점 25곳",
+      "checked": [
+        "원본의 각 번호와 PDF 직접 위치 주소를 위치 교차표의 같은 ID와 맞춰 번호 지도와 상세 연결로 복원. 빠진 농구 골대 세 곳을 복원."
+      ],
+      "status": "reviewed-in-scope",
+      "viewports": [
+        [
+          390,
+          844
+        ],
+        [
+          1365,
+          900
+        ]
+      ]
+    },
+    {
+      "book": "P06",
+      "pages": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "entries": [
+        "p06-sj-036",
+        "p06-br-052",
+        "p06-kf-010",
+        "p06-bj-004",
+        "p06-wl-002",
+        "p06-ah03-03",
+        "p06-fl-019",
+        "p06-md-03",
+        "p06-pl-01",
+        "p06-st3-02"
+      ],
+      "scope": "스턴트·미술·명상·플라밍고·재생 목록·시계 대표 10항목",
+      "checked": [
+        "접근 방향·착지·스캔·캐릭터별 등록과 사진 출처를 대조. 원본 재사용 허가를 확인하지 못한 화면은 출처의 직접 사진 링크로 제공. 휠 379·포스터 4곳·시계 핀을 복원."
+      ],
+      "status": "reviewed-in-scope",
+      "viewports": [
+        [
+          390,
+          844
+        ],
+        [
+          1365,
+          900
+        ]
+      ]
+    },
+    {
+      "book": "P06",
+      "pages": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "entries": [
+        "p06-flamingo-routes",
+        "p06-stunt-starts",
+        "p06-windows",
+        "p06-meditation"
+      ],
+      "scope": "플라밍고 58핀, 스턴트 시작 순서, 한정 사본 14행, 명상 10곳",
+      "checked": [
+        "두 권역의 링크 목록에서 빠진 FL-054·162·166 복구. 10개 권역의 58개 좌표를 위치표에 대조. 스턴트는 수단별 시작 순서, 명상은 원본 10곳과 인물 조건을 표시."
+      ],
+      "status": "reviewed-in-scope",
+      "viewports": [
+        [
+          390,
+          844
+        ],
+        [
+          1365,
+          900
+        ]
+      ],
+      "priorEdition": {
+        "source": "GTA_VI_P06_S07R1_Collection_Atlas_KR.pdf",
+        "pages": [
+          1,
+          2,
+          6,
+          7,
+          13,
+          22,
+          23
+        ],
+        "retained": "구판 6쪽의 세 번째 24장 세트 선택법과 15세트 최소 372장을 복원. 구판 핀 총계는 최신 개별·근사·공용·미확보 수로 교체. 구판 23쪽의 조사 행 수는 완료 수에서 제외."
+      }
     }
   ],
   "responsive": {
@@ -404,9 +575,9 @@
     ]
   },
   "lastRun": {
-    "date": "2026-11-25",
-    "focus": "P05 remaining latest pages; R1 changes and 10-page chapter 2 edition",
-    "result": "Every page of the 71-page P05 volume now has an in-scope review, including 10–17 from the preceding run. Reviewed its nine changed R1 pages and the ten-page chapter 2 edition. P05 only; this does not establish completion of the full guide.",
-    "remaining": "Continue P06 pending pages against public screens, then outstanding vehicle, weapon and chapter-transition ranges and other books. Retain inaccessible image-origin caveats."
+    "date": "2026-11-26",
+    "focus": "P06 최신판 1–31쪽, 변경된 구판 7쪽",
+    "result": "P06의 페이지별 플레이 정보·지역 지도와 대표 현장 대조. 실제 콘솔에서 수집 카운터·재방문·영상 재생까지 검증한 기록은 아님.",
+    "remaining": "P02는 89쪽 진행 시점만 기존 부분 대조. V·P01 미검수 범위와 기타 권의 잔여 페이지 및 구판 변경 검토 필요. P05 검수 이력 유지."
   }
 }

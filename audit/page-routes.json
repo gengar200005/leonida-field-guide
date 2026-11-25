@@ -1,9 +1,9 @@
 {
   "scope": "Page-to-guide navigation and editorial provenance. Name and index matches identify candidate destinations. No match establishes visual or semantic sign-off. Separate visual checks are required.",
   "counts": {
-    "cover-index-or-editorial": 29,
-    "edited": 64,
-    "linked": 461,
+    "cover-index-or-editorial": 28,
+    "edited": 81,
+    "linked": 445,
     "navigation": 13
   },
   "pages": [
@@ -4550,6 +4550,9 @@
       "routes": {
         "재편집 본문": [
           "p06-collection-targets"
+        ],
+        "플레이 공략": [
+          "p06-collection-targets"
         ]
       },
       "status": "edited"
@@ -4559,6 +4562,9 @@
       "page": 3,
       "routes": {
         "재편집 본문": [
+          "p06-collection-targets"
+        ],
+        "플레이 공략": [
           "p06-collection-targets"
         ]
       },
@@ -4570,6 +4576,9 @@
       "routes": {
         "재편집 본문": [
           "p06-collection-targets"
+        ],
+        "플레이 공략": [
+          "p06-collection-targets"
         ]
       },
       "status": "edited"
@@ -4579,6 +4588,9 @@
       "page": 5,
       "routes": {
         "재편집 본문": [
+          "p06-collection-targets"
+        ],
+        "플레이 공략": [
           "p06-collection-targets"
         ]
       },
@@ -4590,9 +4602,12 @@
       "routes": {
         "편집 본문": [
           "p06-card-sets"
+        ],
+        "플레이 공략": [
+          "p06-card-sets"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4600,6 +4615,9 @@
       "routes": {
         "재편집 본문": [
           "p06-collection-targets"
+        ],
+        "플레이 공략": [
+          "p06-regional-collecting"
         ]
       },
       "status": "edited"
@@ -4621,9 +4639,17 @@
           "p06-sj-031",
           "p06-sj-036",
           "p06-wl-014"
+        ],
+        "플레이 공략": [
+          "p06-regional-collecting",
+          "p06-wl-014",
+          "p06-sj-036",
+          "p06-br-052",
+          "p06-sj-031",
+          "p06-br-056"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4642,9 +4668,17 @@
           "p06-sj-063",
           "p06-sj-090",
           "p06-ws-013"
+        ],
+        "플레이 공략": [
+          "p06-regional-collecting",
+          "p06-sj-063",
+          "p06-bj-006",
+          "p06-ws-013",
+          "p06-sj-090",
+          "p06-bj-022"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4659,9 +4693,17 @@
           "p06-br-179",
           "p06-br-197",
           "p06-sj-102"
+        ],
+        "플레이 공략": [
+          "p06-regional-collecting",
+          "p06-sj-102",
+          "p06-br-179",
+          "p06-br-197",
+          "p06-ho-093",
+          "p06-ho-096"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4680,9 +4722,17 @@
           "p06-sj-032",
           "p06-sj-038",
           "p06-wl-007"
+        ],
+        "플레이 공략": [
+          "p06-regional-collecting",
+          "p06-sj-038",
+          "p06-sj-032",
+          "p06-br-033",
+          "p06-md-09",
+          "p06-wl-007"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4699,15 +4749,26 @@
           "p06-md-06",
           "p06-md-08",
           "p06-wl-001"
+        ],
+        "플레이 공략": [
+          "p06-regional-collecting",
+          "p06-br-019",
+          "p06-md-06",
+          "p06-wl-001",
+          "p06-md-08",
+          "p06-ho-002"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
       "page": 13,
       "routes": {
         "재편집 본문": [
+          "p06-collection-targets"
+        ],
+        "플레이 공략": [
           "p06-collection-targets"
         ]
       },
@@ -4774,9 +4835,13 @@
         "항목 번호": [
           "p06-br-052",
           "p06-sj-036"
+        ],
+        "플레이 공략": [
+          "p06-sj-036",
+          "p06-br-052"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4785,9 +4850,13 @@
         "항목 번호": [
           "p06-bj-004",
           "p06-kf-010"
+        ],
+        "플레이 공략": [
+          "p06-kf-010",
+          "p06-bj-004"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4795,9 +4864,13 @@
       "routes": {
         "항목 번호": [
           "p06-wl-002"
+        ],
+        "플레이 공략": [
+          "p06-wl-002",
+          "p06-ah03-03"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4806,9 +4879,13 @@
         "항목 번호": [
           "p06-fl-019",
           "p06-md-03"
+        ],
+        "플레이 공략": [
+          "p06-fl-019",
+          "p06-md-03"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4816,6 +4893,10 @@
       "routes": {
         "재편집 본문": [
           "p06-poster-watch"
+        ],
+        "플레이 공략": [
+          "p06-pl-01",
+          "p06-st3-02"
         ]
       },
       "status": "edited"
@@ -4825,6 +4906,9 @@
       "page": 22,
       "routes": {
         "재편집 본문": [
+          "p06-collection-targets"
+        ],
+        "플레이 공략": [
           "p06-collection-targets"
         ]
       },
@@ -4836,6 +4920,9 @@
       "routes": {
         "재편집 본문": [
           "p06-collection-targets"
+        ],
+        "플레이 공략": [
+          "p06-collection-targets"
         ]
       },
       "status": "edited"
@@ -4846,6 +4933,9 @@
       "routes": {
         "재편집 본문": [
           "p06-collection-targets"
+        ],
+        "플레이 공략": [
+          "p06-collection-targets"
         ]
       },
       "status": "edited"
@@ -4853,8 +4943,12 @@
     {
       "book": "P06",
       "page": 25,
-      "routes": {},
-      "status": "cover-index-or-editorial"
+      "routes": {
+        "플레이 공략": [
+          "p06-collection-targets"
+        ]
+      },
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4862,9 +4956,12 @@
       "routes": {
         "편집 본문": [
           "p06-card-sets"
+        ],
+        "플레이 공략": [
+          "p06-card-sets"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4892,9 +4989,12 @@
           "p06-fl-111",
           "p06-fl-113",
           "p06-fl-114"
+        ],
+        "플레이 공략": [
+          "p06-flamingo-routes"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4944,9 +5044,12 @@
           "p06-fl-165",
           "p06-fl-166",
           "p06-fl-173"
+        ],
+        "플레이 공략": [
+          "p06-flamingo-routes"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -4980,9 +5083,12 @@
           "p06-sj-084",
           "p06-sj-127",
           "p06-sj-129"
+        ],
+        "플레이 공략": [
+          "p06-stunt-starts"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -5018,9 +5124,12 @@
           "p06-rd-11",
           "p06-rd-12",
           "p06-rd-18"
+        ],
+        "플레이 공략": [
+          "p06-windows"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P06",
@@ -5040,9 +5149,12 @@
           "p06-md-08",
           "p06-md-09",
           "p06-md-10"
+        ],
+        "플레이 공략": [
+          "p06-meditation"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
