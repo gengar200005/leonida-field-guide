@@ -115,6 +115,78 @@
       ],
       "scope": "land and surface exploration L05-L08; source pages 14-17",
       "status": "reviewed-in-scope"
+    },
+    {
+      "book": "P05",
+      "pages": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "entries": [
+        "l09",
+        "l10",
+        "l11",
+        "l12",
+        "l13",
+        "l14",
+        "l15",
+        "l16",
+        "l17",
+        "l18",
+        "l19",
+        "l20",
+        "l21",
+        "l22",
+        "l23",
+        "l24",
+        "l25",
+        "l26",
+        "l27",
+        "l28",
+        "l29",
+        "l30",
+        "l31"
+      ],
+      "scope": "육상·수면 탐험 L09–L31. 실제 Drive PDF 지도·사진·조건·보상, 공개 페이지의 단계별 본문과 390/1365px 레이아웃 대조.",
+      "checked": [
+        "22개 원본 지도와 16개 현장 이미지의 원본 URL 응답과 실제 그림을 PDF와 대조. L12 왓슨 베이 사진과 햄릿 위치 핀, L13 돌 배열 사진과 충돌구를 구분.",
+        "L23의 VGC 지도·사진 파일은 403 응답. 원본 32쪽을 연결하고 두 차례 접근과 선택 보상은 상세 화면에 수록. 수록 영상의 정확한 시점과 직접 지도 핀은 미확인.",
+        "L20은 결말 장면 생략. L25와 L28–L31은 원본에 현장 사진이 없어 지도만 제공. L25에서 별도 시설 L34로 연결.",
+        "중복 보상과 자료 URL 정리. L09·L10·L14·L30의 코드와 조작 순서를 접근 힌트와 분리. 구매 확인, 재방문, 저장 파일별 차이와 미확인 보상 유지."
+      ],
+      "oldEdition": {
+        "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+        "pages": [
+          28,
+          32
+        ],
+        "result": [
+          "L19 구판에서 구매 후 의상 목록 확인 절차 복원. 최신판의 낮 방문 조건 및 후기 재개장 불확실성 유지.",
+          "L23 구판의 차량 보존 도감 연결을 선택 보상 안에 복원. 최신판의 두 진입 경로 및 지급 조건 유지."
+        ]
+      },
+      "status": "reviewed-in-scope"
     }
   ],
   "responsive": {
@@ -141,8 +213,8 @@
   },
   "lastRun": {
     "date": "2026-11-25",
-    "focus": "P05 pages 10-17",
-    "result": "Eight source pages and eight deployed entries compared; duplicate sections removed from L02 and L06; unsupported completion claims were not added.",
-    "remaining": "Continue P05 from page 18, then P06 and the remaining priority volumes. The 567-page corpus is not visually complete."
+    "focus": "P05 pp. 18–40 / old P05 pp. 28, 32",
+    "result": "23 land/surface entries compared; 22 direct map images and 16 field-image originals matched. Entry-specific fixes checked at 390 and 1365 CSS pixels.",
+    "remaining": "Continue P05 p.41, including underwater discovery counter versus treasure sets. Remaining P05 and other volumes, and older changed pages outside the recorded reviews, still require visual comparison."
   }
 }
