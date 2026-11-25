@@ -46,7 +46,12 @@ function statusText(v){
  const text=[v.status==="unconfirmed"?"획득 조건 미확인":"",Number.isInteger(v.chapter)?"관련 진행 · "+chapters[v.chapter]:""].filter(Boolean).join(" · ");
  return text?'<p class="statusnote">'+esc(text)+'</p>':"";
 }
-function card(v){return '<a class="card" href="'+entry(v.id)+'">'+mediaArt(v)+'<div class="cardbody"><span class="kicker">'+esc([catName(v.category),v.region].filter(Boolean).join(" · "))+'</span><h3>'+esc(v.title)+'</h3><p>'+esc(v.summary)+'</p>'+statusText(v)+(flags(v).done?'<small class="label">✓ 완료</small>':'')+'</div></a>'}
+function card(v){
+ const body=mediaArt(v)+'<div class="cardbody"><span class="kicker">'+esc([catName(v.category),v.region].filter(Boolean).join(" · "))+'</span><h3>'+esc(v.title)+'</h3><p>'+esc(v.summary)+'</p>'+statusText(v)+(flags(v).done?'<small class="label">✓ 완료</small>':'')+'</div>';
+ const appearance=weaponAppearance(v);
+ if(!appearance)return '<a class="card" href="'+entry(v.id)+'">'+body+'</a>';
+ return '<article class="card"><a class="card-guide" href="'+entry(v.id)+'">'+body+'</a><div class="card-photo">'+link(appearance.url,'외형 원본 보기')+'</div></article>';
+}
 function cards(vs){return vs.length?'<div class="cards">'+vs.map(card).join("")+'</div>':'<p class="empty">조건에 맞는 공략이 없습니다.</p>'}
 function chapterSelect(){return '<label>현재 진행 <select class="chapterselect" data-change="chapter">'+chapters.map((c,i)=>opt(i,c,state.chapter)).join("")+'</select></label>'}
 function chapterGuide(){return categoryItems("P01").find(v=>v.chapter===state.chapter&&/^p01-(c|endgame|prologue)/i.test(v.id))}
@@ -101,7 +106,14 @@ function section(s,index){
 function basePhotoFigure(v){const m=photo(v);if(!m?.src)return "";return '<figure><button data-action="image" data-id="'+esc(v.id)+'" aria-label="사진 확대"><img src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"></button><figcaption class="caption">'+esc(m.caption||v.title)+' · '+link(m.source,m.credit||"원본")+(m.license?' · '+link(m.license,"이용 조건"):'')+'</figcaption></figure>'}
 function photoFigure(v){
  const m=photo(v),html=basePhotoFigure(v);
- return m?.reveal?'<details class="panel"><summary>'+esc(m.reveal)+' 사진 보기</summary>'+html+'</details>':html;
+ const figure=m?.reveal?'<details class="panel"><summary>'+esc(m.reveal)+' 사진 보기</summary>'+html+'</details>':html;
+ const appearance=weaponAppearance(v);
+ if(!appearance)return figure;
+ return figure+'<div class="links">'+link(appearance.url,'무기 외형 원본 보기 · MetaForge')+'</div>';
+}
+function weaponAppearance(v){
+ if(v.category!=="P02"||!/^p02-w-\d+$/.test(v.id))return null;
+ return (v.sources||[]).find(ref=>/^https:\/\/static\.metaforge\.app\/(?:gta-6\/progress\/weapons\/[\w-]+\.webp|posts\/gta-6\/img-[\w-]+)$/.test(ref.url));
 }
 function localMap(p){if(!p)return "";const x=(p.x+12288)/8,y=(12288-p.y)/8;
  return '<a class="inset" href="#/map?item='+encodeURIComponent(p.item)+'"><svg role="img" aria-label="현장 주변의 지형과 위치" viewBox="'+(x-140)+' '+(y-80)+' 280 160"><image href="media/leonida-map.webp" width="2304" height="2816"/><circle cx="'+x+'" cy="'+y+'" r="7" fill="#e45a30" stroke="white" stroke-width="2"/></svg><span>통합 지도에서 확대 ↗</span></a>';
