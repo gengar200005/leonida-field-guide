@@ -356,6 +356,29 @@
         }
       ],
       "status": "reviewed-in-scope"
+    },
+    {
+      "book": "P06",
+      "pages": [
+        14,
+        15,
+        16
+      ],
+      "entries": [
+        "p01-c02-motel",
+        "p06-c-lco-23",
+        "p06-c-del-18",
+        "p06-c-vna-07",
+        "p06-rd-07",
+        "p06-rd-08",
+        "p06-windows"
+      ],
+      "scope": "스탈릿 모텔 카드 3장·서적 2권",
+      "status": "pending-visual-verification",
+      "checked": [
+        "PDF 본문과 인쇄본 외부 링크, 수정 전 웹 본문 대조. 빠진 Vicki 연결과 Children of Wizard Wang 정식 제목, 두 책의 Examine 조작을 수정안에 반영."
+      ],
+      "remaining": "수정 후 PC·모바일 사진과 상세 이동을 실화면에서 대조한 뒤 main에 반영. 이 세 쪽은 시각 검수 완료 집계에서 제외."
     }
   ],
   "responsive": {
