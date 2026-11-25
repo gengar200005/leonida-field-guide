@@ -136,7 +136,10 @@ function section(s,index){
  const t=s.table,tm=t?.rows?.length?'<div class="tablewrap" role="region" aria-label="'+esc(s.title)+'" tabindex="0"><table><thead><tr>'+(t.headers||[]).map(v=>'<th scope="col">'+esc(v)+'</th>').join("")+'</tr></thead><tbody>'+t.rows.map(row=>'<tr>'+row.map(v=>'<td>'+esc(v)+'</td>').join("")+'</tr>').join("")+'</tbody></table></div>':"";
  const body=(s.paragraphs||[]).map(v=>'<p>'+esc(v)+'</p>').join("")+((s.steps||[]).length?'<ol>'+s.steps.map(v=>'<li>'+esc(v)+'</li>').join("")+'</ol>':'')+tm;
  const related=s.relatedGuide&&findItem(s.relatedGuide);
- const content=body+(s.checklist?discoveryList(s.checklist):'')+(related?'<div class="links">'+relatedLink(related)+'</div>':'');
+ const stops=(s.places||[]).map(findItem).filter(Boolean);
+ const places=stops.length?'<div class="links">'+stops.map(relatedLink).join("")+'</div>':'';
+ const hints=s.hints?'<ul class="field-hints">'+s.hints.map(findItem).filter(Boolean).map(v=>'<li>'+relatedLink(v)+'<p>'+esc(v.summary)+'</p></li>').join("")+'</ul>':'';
+ const content=body+places+hints+(s.checklist?discoveryList(s.checklist):'')+(related?'<div class="links">'+relatedLink(related)+'</div>':'');
  return s.reveal?'<details class="panel" id="s'+index+'"><summary>'+esc(s.title)+' · 펼치기</summary>'+content+'</details>':'<section class="panel" id="s'+index+'"><h2>'+esc(s.title)+'</h2>'+content+'</section>';
 }
 function basePhotoFigure(v){const m=photo(v);if(!m?.src)return "";return '<figure><button data-action="image" data-id="'+esc(v.id)+'" aria-label="사진 확대"><img src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"></button><figcaption class="caption">'+esc(m.caption||v.title)+' · '+link(m.source,m.credit||"원본")+(m.license?' · '+link(m.license,"이용 조건"):'')+'</figcaption></figure>'}
@@ -191,6 +194,7 @@ function fieldReferences(v){
  if(!refs)return "";
  const buttons=[];
  if(refs.map)buttons.push(link(refs.map,"원본 위치 지도"));
+ if(refs.candidate)buttons.push(link(refs.candidate,"시설 인근 후보 핀"));
  if(refs.areaMap)buttons.push(link(refs.areaMap,"해안선과 출항 권역 지도"));
  if(refs.photo)buttons.push(link(refs.photo,refs.caption+" · 원본 사진"));
  if(refs.printUrl)buttons.push(link(refs.printUrl,"공략집 열기 · "+refs.printPage+"쪽"));

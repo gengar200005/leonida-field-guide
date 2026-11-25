@@ -257,6 +257,105 @@
         "result": "초판의 게임 내 카운터 경로와 지도 판독 지침을 최신판 41쪽과 대조."
       },
       "status": "reviewed-in-scope"
+    },
+    {
+      "book": "P05",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ],
+      "entries": [
+        "p05-region-exploration",
+        "p05-power-circuit",
+        "r00",
+        "r01",
+        "r02",
+        "r03",
+        "r04",
+        "r05",
+        "r06",
+        "r07",
+        "r08",
+        "r09",
+        "r10",
+        "r11",
+        "r12",
+        "r13",
+        "l32",
+        "l33",
+        "l34",
+        "l35",
+        "l36",
+        "l37"
+      ],
+      "scope": "도입·힌트·진행 시점, 전력 퍼즐 14지점, 추가 장소 6곳, 권역별 추천 동선, 편집용 부록",
+      "checked": [
+        "종이책의 다섯 권역 동선을 실제 상세 링크로 연결. 37개 장소를 제목과 짧은 힌트로 탐색. 전력 시설 12개 패널의 정답을 제목에서 선택 열람으로 이동. R00~R13의 도착지·단서·시한은 유지.",
+        "L32/33 지도와 사진, L34 지도 원본을 실제 이미지와 눈으로 비교. L35–37 원본에 없는 현장 사진은 생성하지 않음. VGC의 전력 시설 스크린샷은 직접 파일 제공 실패. 공략집 해당 쪽과 기존 외부 안내를 연결하고 GPS 후보 핀은 정확한 건물 인증과 구분.",
+        "초판의 현장 소요시간 5개, 경험 평가표, 창고 복귀와 영상 구간, 현장 재방문 정보와 라 노체 보물 확인을 반영. 61·62쪽 제작·검증 대장은 독자 본문에서 제외."
+      ],
+      "oldEditions": [
+        {
+          "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+          "pages": [
+            1,
+            2,
+            6,
+            8,
+            9,
+            61
+          ],
+          "result": "표지·색인과 변경된 구매 시간·챕터 안내·구판 커버리지 표 구분. 28·32·41쪽은 앞선 검수 기록 참조."
+        },
+        {
+          "source": "GTA_VI_S05_Leonida_Exploration_C02_KR.pdf",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ],
+          "entries": [
+            "l01",
+            "l02",
+            "w06",
+            "l03",
+            "l04",
+            "p05-region-exploration"
+          ],
+          "result": "5개 장소의 진행, 사진, 소요 시간, 추천도와 평가표, 시작 전 수동 저장 및 순회 방향 확인. 최신판에서 바뀐 진입 조건은 최신판을 우선."
+        }
+      ],
+      "status": "reviewed-in-scope"
     }
   ],
   "responsive": {
@@ -283,8 +382,8 @@
   },
   "lastRun": {
     "date": "2026-11-25",
-    "focus": "P05 pp. 41–54 and 65; old P05 p.41",
-    "result": "33 underwater discoveries and their checklist compared. Land entries L09–L31 confirmed on the deployed release.",
-    "remaining": "Next: P05 pp.55–64 and 66–71; check earlier unreviewed front matter separately. Other volumes and older changed pages outside the recorded scopes remain open."
+    "focus": "P05 remaining latest pages; R1 changes and 10-page chapter 2 edition",
+    "result": "Every page of the 71-page P05 volume now has an in-scope review, including 10–17 from the preceding run. Reviewed its nine changed R1 pages and the ten-page chapter 2 edition. P05 only; this does not establish completion of the full guide.",
+    "remaining": "Continue P06 pending pages against public screens, then outstanding vehicle, weapon and chapter-transition ranges and other books. Retain inaccessible image-origin caveats."
   }
 }
