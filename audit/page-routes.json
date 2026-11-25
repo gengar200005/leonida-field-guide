@@ -2,8 +2,8 @@
   "scope": "Page-to-guide navigation and editorial provenance. Name and index matches identify candidate destinations. No match establishes visual or semantic sign-off. Separate visual checks are required.",
   "counts": {
     "cover-index-or-editorial": 28,
-    "edited": 81,
-    "linked": 445,
+    "edited": 87,
+    "linked": 439,
     "navigation": 13
   },
   "pages": [
@@ -137,7 +137,7 @@
           "p01-c03-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -167,7 +167,7 @@
           "p01-c04-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -187,7 +187,7 @@
           "p01-c05-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -8531,9 +8531,12 @@
           "v-12",
           "v-13",
           "v-14"
+        ],
+        "등록과 추천 동선": [
+          "v-registration"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8550,9 +8553,12 @@
           "v-56",
           "v-57",
           "v-58"
+        ],
+        "등록과 추천 동선": [
+          "v-registration"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8561,15 +8567,23 @@
         "명칭 대조": [
           "v-35",
           "v-36"
+        ],
+        "등록과 추천 동선": [
+          "v-registration",
+          "v-35",
+          "v-36"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
       "page": 63,
       "routes": {
         "재편집 본문": [
+          "v-registration"
+        ],
+        "등록과 추천 동선": [
           "v-registration"
         ]
       },
