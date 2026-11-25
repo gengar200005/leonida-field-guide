@@ -68,8 +68,10 @@ function statusText(v){
 function card(v){
  const body=mediaArt(v)+'<div class="cardbody"><span class="kicker">'+esc([catName(v.category),v.region].filter(Boolean).join(" · "))+'</span><h3>'+esc(v.title)+'</h3><p>'+esc(v.summary)+'</p>'+statusText(v)+(flags(v).done?'<small class="label">✓ 완료</small>':'')+'</div>';
  const appearance=appearanceSource(v);
- if(!appearance)return '<a class="card" href="'+entry(v.id)+'">'+body+'</a>';
- return '<article class="card"><a class="card-guide" href="'+entry(v.id)+'">'+body+'</a><div class="card-photo">'+link(appearance.url,'외형 원본 보기')+'</div></article>';
+ const original=photo(v);
+ const photoLink=original?.originalPhoto&&!original.reveal?link(original.originalPhoto,"현장 사진 원본"):"";
+ if(!appearance&&!photoLink)return '<a class="card" href="'+entry(v.id)+'">'+body+'</a>';
+ return '<article class="card"><a class="card-guide" href="'+entry(v.id)+'">'+body+'</a><div class="card-photo">'+photoLink+(appearance?link(appearance.url,'외형 원본 보기'):"")+'</div></article>';
 }
 function cards(vs){return vs.length?'<div class="cards">'+vs.map(card).join("")+'</div>':'<p class="empty">조건에 맞는 공략이 없습니다.</p>'}
 function chapterSelect(){return '<label>현재 진행 <select class="chapterselect" data-change="chapter">'+chapters.map((c,i)=>opt(i,c,state.chapter)).join("")+'</select></label>'}
@@ -103,8 +105,8 @@ function listPage(page,id,p){
  if(filter)all=all.filter(v=>v.region===filter);
  const mediaFilter=p.get("media")||"";
  const visual=!mine&&!search&&["V","P02","P05","P06","P07"].includes(cat);
- if(visual&&mediaFilter==="photo")all=all.filter(v=>photo(v)?.src&&!photo(v)?.reveal);
- const photoControl=visual?'<label>보기 <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("photo","사진이 있는 항목",mediaFilter)+'</select></label>':"";
+ if(visual&&mediaFilter==="photo")all=all.filter(v=>!photo(v)?.reveal&&(photo(v)?.src||photo(v)?.originalPhoto||appearanceSource(v)));
+ const photoControl=visual?'<label>보기 <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("photo","사진·외형 원본 제공",mediaFilter)+'</select></label>':"";
  const reading={V:"v-registration",P02:"p02-collection-check",P01:"p01-save-slots",P06:"p06-collection-targets",P09:"p09-region-routes",P08:"p08-range-medals",P04:"p04-first-visit",P05:"p05-region-exploration",P07:"p07-first-garage"};
  const firstGuide=!mine&&!search?findItem(reading[cat]):null;
  const shortcut=firstGuide?'<div class="guide-shortcut"><a href="'+entry(firstGuide.id)+'">'+esc(firstGuide.title)+' →</a></div>':"";
@@ -160,7 +162,7 @@ function section(s,index){
 }
 function basePhotoFigure(v){const m=photo(v);if(!m?.src)return "";return '<figure><button data-action="image" data-id="'+esc(v.id)+'" aria-label="사진 확대"><img src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"></button><figcaption class="caption">'+esc(m.caption||v.title)+' · '+link(m.source,m.credit||"원본")+(m.license?' · '+link(m.license,"이용 조건"):'')+'</figcaption></figure>'}
 function photoFigure(v){
- const m=photo(v),html=basePhotoFigure(v);
+ const m=photo(v),html=basePhotoFigure(v)+(m?.originalPhoto?'<div class="links">'+link(m.originalPhoto,m.caption+" · 원본 사진")+'</div>':"");
  const figure=m?.reveal?'<details class="panel"><summary>'+esc(m.reveal)+' 사진 보기</summary>'+html+'</details>':html;
  const appearance=appearanceSource(v);
  if(!appearance)return figure;
@@ -265,7 +267,7 @@ document.addEventListener("submit",event=>{
  event.preventDefault();
  setParam("q",new FormData(event.target).get("q").trim());
 });
-function credits(){return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>레오니다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map(fbritoferreira)의 위치별 사진은 CC BY 4.0 표기에 따라 크기를 조정하고 WebP로 제공했습니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6","Open GTA 6 Map")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'}
+function credits(){return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>레오니다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map의 CC BY 4.0은 기여자가 만든 지도 데이터에 적용됩니다. 게임 화면은 원본 사진 링크로 제공합니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6/blob/main/LICENSE","Open GTA 6 Map 이용 조건")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'}
 function render(reset=false){
  const r=route();let title="레오니다 필드 가이드",html;
  if(r.page==="home")html=home();else if(r.page==="guides")html=guides();else if(r.page==="entry"){const v=findItem(r.id);if(!v&&/^(p\d\d|v|index)-p\d{3}$/.test(r.id)){const part=r.id.split("-")[0];html=part==="index"?guides():listPage("guide",part,r.params)}else html=detail(v);title=v?.title||title}

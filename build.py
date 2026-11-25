@@ -33,7 +33,7 @@ def build():
                     raise ValueError(f"Invalid media member: {name}")
                 (media_dir / name).write_bytes(archive.read(record))
     for photo in data["media"].values():
-        if not (SITE / photo["src"]).is_file():
+        if photo.get("src") and not (SITE / photo["src"]).is_file():
             raise ValueError(f"Missing media: {photo['src']}")
     (SITE / "guide-data.js").write_text("window.FIELD_GUIDE=" + json.dumps(data,ensure_ascii=False,separators=(",",":")) + ";\n", encoding="utf-8")
     for filename in ("index.html","style.css","guide.js"):

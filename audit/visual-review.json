@@ -770,6 +770,38 @@
         "각 필터와 카운터, 5종 대표 핀 → 상세 → 현장 지도, 5개 권역의 번호 지도 이동을 390×844와 1365×900에서 열었다. 모든 위치를 콘솔에서 방문한 검수는 아니다.",
         "Wizard Wang은 모텔 내 제목·지명·좌표가 일치하는 핀을 사용. 리셉션 책은 비교 자료에 다른 제목의 핀이 연결되어 있어 모텔 진입 지도만 제공한다."
       ]
+    },
+    {
+      "book": "P06",
+      "pages": [
+        14,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "entries": [
+        "p06-c-lco-23",
+        "p06-c-del-18",
+        "p06-c-vna-07",
+        "p06-wl-022",
+        "p06-wl-019",
+        "p06-wl-017",
+        "p06-wl-018"
+      ],
+      "scope": "현장 이미지 재배포 조건 재확인 및 출처별 표시 정책 교정",
+      "status": "reviewed-in-scope",
+      "checked": [
+        "Open GTA 6 Map LICENSE가 인게임 스크린샷을 명시적으로 제외한다. 앞선 검수 당시 본문에 표시됐던 이 출처 417개 사진 배정은 원본 링크로 전환하고 배포 파일에서 해당 사본을 제외했다. 제목·위치·비서사적 정보는 유지한다.",
+        "재사용을 명시한 GTADB 자료에서 Vice City Sign, Dock Ring, Fleeca Field, Sahara Arena를 기존 수집 항목의 위치·이름 및 실제 사진과 대조해 추가했다.",
+        "17~21쪽의 외부 CDN 사진 10장이 이 환경에서 403을 반환해 출판본 해당 면도 사진 대체 경로로 추가했다. 해당 CDN의 일반 사용자 접속 여부는 미확인."
+      ],
+      "sources": [
+        "https://github.com/fbritoferreira/gta6/blob/main/LICENSE",
+        "https://github.com/rolux/gtadb.org/blob/main/readme.md"
+      ]
     }
   ],
   "responsive": {
