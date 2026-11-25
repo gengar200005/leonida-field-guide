@@ -71,6 +71,50 @@
       ],
       "scope": "chapter timing only",
       "status": "partial"
+    },
+    {
+      "book": "P05",
+      "pages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "entries": [
+        "l01",
+        "l02",
+        "l03",
+        "l04"
+      ],
+      "checked": [
+        "Rendered source pages were inspected side-by-side with deployed entry content.",
+        "Titles, location conditions, source-page reward notes and uncertainty labels were compared.",
+        "L02 duplicate editorial sections were consolidated; its source boundary (first investigation only, later chain in P09) and video interval were restored."
+      ],
+      "scope": "land and surface exploration L01-L04; source pages 10-13",
+      "status": "reviewed-in-scope"
+    },
+    {
+      "book": "P05",
+      "pages": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "entries": [
+        "l05",
+        "l06",
+        "l07",
+        "l08"
+      ],
+      "checked": [
+        "Rendered source pages were inspected against the eight deployed detail structures.",
+        "Location, unlock status, reward uncertainty, safe codes and replay caveats in the source were preserved.",
+        "L06 duplicate reward sections were consolidated while retaining the original map-and-field-image note."
+      ],
+      "scope": "land and surface exploration L05-L08; source pages 14-17",
+      "status": "reviewed-in-scope"
     }
   ],
   "responsive": {
@@ -94,5 +138,11 @@
       "No document-level horizontal overflow at either width",
       "Weapon photograph filter returned 22 results and visible thumbnails loaded"
     ]
+  },
+  "lastRun": {
+    "date": "2026-11-25",
+    "focus": "P05 pages 10-17",
+    "result": "Eight source pages and eight deployed entries compared; duplicate sections removed from L02 and L06; unsupported completion claims were not added.",
+    "remaining": "Continue P05 from page 18, then P06 and the remaining priority volumes. The 567-page corpus is not visually complete."
   }
 }
