@@ -22,3 +22,7 @@ main{min-height:70vh;padding-top:28px;padding-bottom:64px}main:focus{outline:non
 .maplayout>*{min-width:0}.bar label{max-width:100%}.bar select{max-width:min(68vw,340px)}@media(max-width:850px){.maplayout{grid-template-columns:minmax(0,1fr)}}
 .card-guide{display:block;flex:1}.card-photo{border-top:1px solid var(--line)}.card-photo a{display:flex;align-items:center;min-height:44px;padding:0 16px;color:var(--sea);text-decoration:underline;text-underline-offset:3px;font-size:14px}
 .terrain-thumb{display:block;width:100%;aspect-ratio:16/9;background:#d6d9cb}.guide-shortcut a{display:inline-flex;align-items:center;min-height:44px;padding:5px 0;font-weight:700;color:var(--sea)}@media(max-width:620px){.terrain-thumb{aspect-ratio:2.1}}
+.discovery-row{display:flex;align-items:center;gap:.75rem;justify-content:space-between;border-top:1px solid var(--line);padding:.35rem 0}
+.discovery-row a{display:flex;align-items:center;gap:.7rem;min-height:44px;font-weight:600}
+.discovery-row small{font-variant-numeric:tabular-nums}
+.discovery-row button{min-height:44px;flex:none}

@@ -187,6 +187,76 @@
         ]
       },
       "status": "reviewed-in-scope"
+    },
+    {
+      "book": "P05",
+      "pages": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        65
+      ],
+      "entries": [
+        "p05-dive-route",
+        "w01",
+        "w02",
+        "w03",
+        "w04",
+        "w05",
+        "w06",
+        "w07",
+        "w08",
+        "w09",
+        "w10",
+        "w11",
+        "w12",
+        "w13",
+        "w14",
+        "w15",
+        "w16",
+        "w17",
+        "w18",
+        "w19",
+        "w20",
+        "w21",
+        "w22",
+        "w23",
+        "w24",
+        "w25",
+        "w26",
+        "w27",
+        "w28",
+        "w29",
+        "w30",
+        "w31",
+        "w32",
+        "w33"
+      ],
+      "scope": "수중 발견 33곳·출항 권역·켄턴 세트",
+      "checked": [
+        "실제 PDF의 확대 지도 33개, 권역 지도 22개를 원본 그림과 시각 대조. 라 노체 현장 사진 1개를 확인. 나머지 현장 사진 10개는 출처의 이미지 직접 열기가 403이므로 공략집 해당 쪽을 제공.",
+        "게임 내 발견 카운터 경로, 출항 권역 및 켄턴 보물 추적표 8행 복원. 33개 체크 버튼은 기존 장소별 완료 기록과 공유. 새로고침 후 보존 및 취소를 390/1365px에서 확인.",
+        "W07/W15, W18/W20의 서로 다른 핀과 W27/K08의 별도 집계, W22 동전 10개와 100% 목표 7세트 중 5세트를 구분. 각 상세 안내의 접근 조건과 개별 보상 불확실성 유지."
+      ],
+      "oldEdition": {
+        "source": "GTA_VI_P05_S05R1_Leonida_Atlas_KR.pdf",
+        "pages": [
+          41
+        ],
+        "result": "초판의 게임 내 카운터 경로와 지도 판독 지침을 최신판 41쪽과 대조."
+      },
+      "status": "reviewed-in-scope"
     }
   ],
   "responsive": {
@@ -213,8 +283,8 @@
   },
   "lastRun": {
     "date": "2026-11-25",
-    "focus": "P05 pp. 18–40 / old P05 pp. 28, 32",
-    "result": "23 land/surface entries compared; 22 direct map images and 16 field-image originals matched. Entry-specific fixes checked at 390 and 1365 CSS pixels.",
-    "remaining": "Continue P05 p.41, including underwater discovery counter versus treasure sets. Remaining P05 and other volumes, and older changed pages outside the recorded reviews, still require visual comparison."
+    "focus": "P05 pp. 41–54 and 65; old P05 p.41",
+    "result": "33 underwater discoveries and their checklist compared. Land entries L09–L31 confirmed on the deployed release.",
+    "remaining": "Next: P05 pp.55–64 and 66–71; check earlier unreviewed front matter separately. Other volumes and older changed pages outside the recorded scopes remain open."
   }
 }

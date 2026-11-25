@@ -124,11 +124,19 @@ function searchItems(q){const terms=q.split(/\s+/).map(norm).filter(Boolean);if(
  const [title,body]=searchCache.get(v.id);if(terms.every(t=>title.includes(t)||body.includes(t)))hits.push([v,terms.filter(t=>title.includes(t)).length+(norm(v.title)===norm(q)?5:0)])}
  return hits.sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
 }
+function discoveryList(ids){
+ const places=ids.map(findItem).filter(Boolean);
+ const finished=places.filter(v=>flags(v).done).length;
+ return '<div class="discovery-checklist"><p role="status">발견 완료 <b data-count>'+finished+'</b> / '+places.length+'곳</p>'+places.map(v=>{
+   const done=Boolean(flags(v).done);
+   return '<div class="discovery-row"><a href="'+entry(v.id)+'"><small>'+esc(v.id.toUpperCase())+'</small> '+esc(v.title.split(" / ")[0])+'</a><button data-flag="done" data-id="'+esc(v.id)+'" aria-label="'+esc(v.title.split(" / ")[0])+' 완료" aria-pressed="'+done+'">'+(done?'✓ 완료':'완료')+'</button></div>';
+ }).join("")+'</div>';
+}
 function section(s,index){
  const t=s.table,tm=t?.rows?.length?'<div class="tablewrap" role="region" aria-label="'+esc(s.title)+'" tabindex="0"><table><thead><tr>'+(t.headers||[]).map(v=>'<th scope="col">'+esc(v)+'</th>').join("")+'</tr></thead><tbody>'+t.rows.map(row=>'<tr>'+row.map(v=>'<td>'+esc(v)+'</td>').join("")+'</tr>').join("")+'</tbody></table></div>':"";
  const body=(s.paragraphs||[]).map(v=>'<p>'+esc(v)+'</p>').join("")+((s.steps||[]).length?'<ol>'+s.steps.map(v=>'<li>'+esc(v)+'</li>').join("")+'</ol>':'')+tm;
  const related=s.relatedGuide&&findItem(s.relatedGuide);
- const content=body+(related?'<div class="links">'+relatedLink(related)+'</div>':'');
+ const content=body+(s.checklist?discoveryList(s.checklist):'')+(related?'<div class="links">'+relatedLink(related)+'</div>':'');
  return s.reveal?'<details class="panel" id="s'+index+'"><summary>'+esc(s.title)+' · 펼치기</summary>'+content+'</details>':'<section class="panel" id="s'+index+'"><h2>'+esc(s.title)+'</h2>'+content+'</section>';
 }
 function basePhotoFigure(v){const m=photo(v);if(!m?.src)return "";return '<figure><button data-action="image" data-id="'+esc(v.id)+'" aria-label="사진 확대"><img src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"></button><figcaption class="caption">'+esc(m.caption||v.title)+' · '+link(m.source,m.credit||"원본")+(m.license?' · '+link(m.license,"이용 조건"):'')+'</figcaption></figure>'}
@@ -183,6 +191,7 @@ function fieldReferences(v){
  if(!refs)return "";
  const buttons=[];
  if(refs.map)buttons.push(link(refs.map,"원본 위치 지도"));
+ if(refs.areaMap)buttons.push(link(refs.areaMap,"해안선과 출항 권역 지도"));
  if(refs.photo)buttons.push(link(refs.photo,refs.caption+" · 원본 사진"));
  if(refs.printUrl)buttons.push(link(refs.printUrl,"공략집 열기 · "+refs.printPage+"쪽"));
  return '<details class="panel field-references"><summary>현장 지도'+(refs.photo||refs.printUrl?'와 사진':'')+' 보기</summary>'+
@@ -237,7 +246,10 @@ const dialog=document.querySelector("#lightbox");dialog.querySelector("button").
 main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)return;
  if(el.dataset.video){const frame=document.createElement("iframe");frame.title="공략 영상";frame.src="https://www.youtube-nocookie.com/embed/"+el.dataset.video+"?start="+Number(el.dataset.time)+"&autoplay=1";frame.allow="autoplay; encrypted-media; fullscreen";frame.allowFullscreen=true;frame.referrerPolicy="strict-origin-when-cross-origin";frame.className="video";el.replaceWith(frame);return}
  if(el.dataset.scroll!==undefined){e.preventDefault();document.getElementById("s"+el.dataset.scroll)?.scrollIntoView();return}
- if(el.dataset.flag){const key=cleanId(el.dataset.id),flag=el.dataset.flag;const current=state.items[key]??={};current[flag]=!current[flag];save();el.setAttribute("aria-pressed",String(current[flag]));el.textContent=(current[flag]?"✓ ":"")+({done:"완료",favorite:"즐겨찾기",later:"나중에"}[flag]);return}
+ if(el.dataset.flag){const key=cleanId(el.dataset.id),flag=el.dataset.flag;const current=state.items[key]??={};current[flag]=!current[flag];save();el.setAttribute("aria-pressed",String(current[flag]));el.textContent=(current[flag]?"✓ ":"")+({done:"완료",favorite:"즐겨찾기",later:"나중에"}[flag]);
+   const checklist=el.closest(".discovery-checklist");
+   if(checklist)checklist.querySelector("[data-count]").textContent=checklist.querySelectorAll('button[aria-pressed="true"]').length;
+   return}
  if(el.dataset.cluster){selected=el.dataset.cluster;zoom=Math.min(8,zoom*2);render();centerPin();return}
  if(el.dataset.pin){selected=el.dataset.pin;const listScroll=document.querySelector(".pinlist").scrollTop;render();document.querySelector(".pinlist").scrollTop=listScroll;centerPin();return}
  const action=el.dataset.action;
