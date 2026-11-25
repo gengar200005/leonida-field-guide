@@ -1,4 +1,5 @@
 """Build the static guide. Requires only the Python standard library."""
+import hashlib
 import json
 import shutil
 import zipfile
@@ -37,6 +38,12 @@ def build():
     (SITE / "guide-data.js").write_text("window.FIELD_GUIDE=" + json.dumps(data,ensure_ascii=False,separators=(",",":")) + ";\n", encoding="utf-8")
     for filename in ("index.html","style.css","guide.js"):
         shutil.copyfile(ROOT / filename, SITE / filename)
+    index = SITE / "index.html"
+    html = index.read_text(encoding="utf-8")
+    for filename in ("style.css", "guide-data.js", "guide.js"):
+        digest = hashlib.sha256((SITE / filename).read_bytes()).hexdigest()[:12]
+        html = html.replace(f'"{filename}"', f'"{filename}?v={digest}"')
+    index.write_text(html, encoding="utf-8")
     print(f"{len(ids)} guides, {len(data['pins'])} positions, {len(data['media'])} photo assignments")
 
 if __name__ == "__main__":
