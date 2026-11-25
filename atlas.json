@@ -18582,7 +18582,7 @@
   {
     "id": "p06-ho-002/basketball-002",
     "item": "p06-ho-002",
-    "name": "Hoop 99 - Lummox County",
+    "name": "럼목스 · 99번 농구 골대",
     "category": "P06",
     "region": "Lummox County",
     "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-002",
@@ -18592,7 +18592,7 @@
   {
     "id": "p06-ho-093/basketball-093",
     "item": "p06-ho-093",
-    "name": "Hoop 7 - Mariana County",
+    "name": "마리아나 · 7번 농구 골대",
     "category": "P06",
     "region": "Mariana County",
     "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-093",
@@ -18602,11 +18602,1481 @@
   {
     "id": "p06-ho-096/basketball-096",
     "item": "p06-ho-096",
-    "name": "Hoop 4 - Mariana County",
+    "name": "마리아나 · 4번 농구 골대",
     "category": "P06",
     "region": "Mariana County",
     "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-096",
     "x": -2322.4,
     "y": -5931.4
+  },
+  {
+    "item": "p06-bs-01",
+    "id": "p06-bs-01/book-swap-007",
+    "name": "Book Swap 1",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=book-swap#book-swap-007",
+    "x": -1935,
+    "y": -5485.4
+  },
+  {
+    "item": "p06-bs-02",
+    "id": "p06-bs-02/book-swap-005",
+    "name": "Book Swap 2",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=book-swap#book-swap-005",
+    "x": -1963.7,
+    "y": -2018
+  },
+  {
+    "item": "p06-bs-03",
+    "id": "p06-bs-03/book-swap-006",
+    "name": "Book Swap 3",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=book-swap#book-swap-006",
+    "x": -5030.5,
+    "y": -3157.9
+  },
+  {
+    "item": "p06-bs-04",
+    "id": "p06-bs-04/book-swap-004",
+    "name": "Book Swap 4",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=book-swap#book-swap-004",
+    "x": -6658.6,
+    "y": 54.8
+  },
+  {
+    "item": "p06-bs-05",
+    "id": "p06-bs-05/book-swap-003",
+    "name": "Book Swap 5",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=book-swap#book-swap-003",
+    "x": 579.7,
+    "y": 1249.7
+  },
+  {
+    "item": "p06-bs-06",
+    "id": "p06-bs-06/book-swap-002",
+    "name": "Book Swap 6",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=book-swap#book-swap-002",
+    "x": 70.2,
+    "y": 3690.6
+  },
+  {
+    "item": "p06-bs-07",
+    "id": "p06-bs-07/book-swap-001",
+    "name": "Book Swap 7",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=book-swap#book-swap-001",
+    "x": -2678.5,
+    "y": 4399.7
+  },
+  {
+    "item": "p06-ho-001",
+    "id": "p06-ho-001/basketball-001",
+    "name": "럼목스 · 98번 농구 골대",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-001",
+    "x": -1243,
+    "y": 7623.1
+  },
+  {
+    "item": "p06-ho-003",
+    "id": "p06-ho-003/basketball-003",
+    "name": "럼목스 · 97번 농구 골대",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-003",
+    "x": -3746,
+    "y": 7074.2
+  },
+  {
+    "item": "p06-ho-004",
+    "id": "p06-ho-004/basketball-004",
+    "name": "럼목스 · 96번 농구 골대",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-004",
+    "x": -4060.8,
+    "y": 6909.7
+  },
+  {
+    "item": "p06-ho-005",
+    "id": "p06-ho-005/basketball-005",
+    "name": "럼목스 · 100번 농구 골대",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-005",
+    "x": -960.7,
+    "y": 6235.3
+  },
+  {
+    "item": "p06-ho-006",
+    "id": "p06-ho-006/basketball-006",
+    "name": "켈리 · 95번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-006",
+    "x": -4338.3,
+    "y": 5596.5
+  },
+  {
+    "item": "p06-ho-007",
+    "id": "p06-ho-007/basketball-007",
+    "name": "레너드 · 74번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-007",
+    "x": -332.3,
+    "y": 4442.7
+  },
+  {
+    "item": "p06-ho-008",
+    "id": "p06-ho-008/basketball-008",
+    "name": "켈리 · 85번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-008",
+    "x": -2941.9,
+    "y": 4365.5
+  },
+  {
+    "item": "p06-ho-009",
+    "id": "p06-ho-009/basketball-009",
+    "name": "켈리 · 86번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-009",
+    "x": -2967.4,
+    "y": 4351.7
+  },
+  {
+    "item": "p06-ho-010",
+    "id": "p06-ho-010/basketball-010",
+    "name": "켈리 · 92번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-010",
+    "x": -6423.1,
+    "y": 4245.4
+  },
+  {
+    "item": "p06-ho-011",
+    "id": "p06-ho-011/basketball-011",
+    "name": "레너드 · 73번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-011",
+    "x": -434.5,
+    "y": 4234.1
+  },
+  {
+    "item": "p06-ho-012",
+    "id": "p06-ho-012/basketball-012",
+    "name": "켈리 · 84번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-012",
+    "x": -2578.8,
+    "y": 4231.1
+  },
+  {
+    "item": "p06-ho-013",
+    "id": "p06-ho-013/basketball-013",
+    "name": "켈리 · 89번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-013",
+    "x": -6403.2,
+    "y": 4229.6
+  },
+  {
+    "item": "p06-ho-014",
+    "id": "p06-ho-014/basketball-014",
+    "name": "켈리 · 91번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-014",
+    "x": -6436.4,
+    "y": 4228.6
+  },
+  {
+    "item": "p06-ho-015",
+    "id": "p06-ho-015/basketball-015",
+    "name": "켈리 · 90번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-015",
+    "x": -6413.5,
+    "y": 4213.6
+  },
+  {
+    "item": "p06-ho-016",
+    "id": "p06-ho-016/basketball-016",
+    "name": "켈리 · 88번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-016",
+    "x": -3413.8,
+    "y": 4182.8
+  },
+  {
+    "item": "p06-ho-017",
+    "id": "p06-ho-017/basketball-017",
+    "name": "켈리 · 83번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-017",
+    "x": -2587.6,
+    "y": 4123.6
+  },
+  {
+    "item": "p06-ho-018",
+    "id": "p06-ho-018/basketball-018",
+    "name": "켈리 · 87번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-018",
+    "x": -3202,
+    "y": 4062.3
+  },
+  {
+    "item": "p06-ho-019",
+    "id": "p06-ho-019/basketball-019",
+    "name": "레너드 · 72번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-019",
+    "x": -39.5,
+    "y": 4013.1
+  },
+  {
+    "item": "p06-ho-020",
+    "id": "p06-ho-020/basketball-020",
+    "name": "레너드 · 71번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-020",
+    "x": 261.4,
+    "y": 3922.5
+  },
+  {
+    "item": "p06-ho-021",
+    "id": "p06-ho-021/basketball-021",
+    "name": "켈리 · 93번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-021",
+    "x": -6552.3,
+    "y": 3717.6
+  },
+  {
+    "item": "p06-ho-022",
+    "id": "p06-ho-022/basketball-022",
+    "name": "레너드 · 70번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-022",
+    "x": 38,
+    "y": 3706.5
+  },
+  {
+    "item": "p06-ho-023",
+    "id": "p06-ho-023/basketball-023",
+    "name": "레너드 · 82번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-023",
+    "x": -1642.1,
+    "y": 3515.6
+  },
+  {
+    "item": "p06-ho-024",
+    "id": "p06-ho-024/basketball-024",
+    "name": "레너드 · 75번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-024",
+    "x": 816.9,
+    "y": 3497.3
+  },
+  {
+    "item": "p06-ho-025",
+    "id": "p06-ho-025/basketball-025",
+    "name": "레너드 · 69번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-025",
+    "x": 114,
+    "y": 3461.9
+  },
+  {
+    "item": "p06-ho-026",
+    "id": "p06-ho-026/basketball-026",
+    "name": "레너드 · 77번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-026",
+    "x": -1278.7,
+    "y": 3184
+  },
+  {
+    "item": "p06-ho-027",
+    "id": "p06-ho-027/basketball-027",
+    "name": "레너드 · 76번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-027",
+    "x": -1261.6,
+    "y": 3184
+  },
+  {
+    "item": "p06-ho-028",
+    "id": "p06-ho-028/basketball-028",
+    "name": "레너드 · 78번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-028",
+    "x": -1278.5,
+    "y": 3154.3
+  },
+  {
+    "item": "p06-ho-029",
+    "id": "p06-ho-029/basketball-029",
+    "name": "레너드 · 79번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-029",
+    "x": -1261.5,
+    "y": 3154.3
+  },
+  {
+    "item": "p06-ho-030",
+    "id": "p06-ho-030/basketball-030",
+    "name": "레너드 · 80번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-030",
+    "x": -1319.6,
+    "y": 2950.4
+  },
+  {
+    "item": "p06-ho-031",
+    "id": "p06-ho-031/basketball-031",
+    "name": "켈리 · 94번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-031",
+    "x": -6519.3,
+    "y": 2925.8
+  },
+  {
+    "item": "p06-ho-032",
+    "id": "p06-ho-032/basketball-032",
+    "name": "레너드 · 81번 농구 골대",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-032",
+    "x": -1500.4,
+    "y": 2762.3
+  },
+  {
+    "item": "p06-ho-033",
+    "id": "p06-ho-033/basketball-033",
+    "name": "바이스데일 · 68번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-033",
+    "x": 343.8,
+    "y": 2672.5
+  },
+  {
+    "item": "p06-ho-034",
+    "id": "p06-ho-034/basketball-034",
+    "name": "바이스데일 · 67번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-034",
+    "x": 862.2,
+    "y": 2400.7
+  },
+  {
+    "item": "p06-ho-035",
+    "id": "p06-ho-035/basketball-035",
+    "name": "바이스데일 · 66번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-035",
+    "x": 875.3,
+    "y": 2394
+  },
+  {
+    "item": "p06-ho-036",
+    "id": "p06-ho-036/basketball-036",
+    "name": "바이스데일 · 65번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-036",
+    "x": 2065.5,
+    "y": 1878.8
+  },
+  {
+    "item": "p06-ho-037",
+    "id": "p06-ho-037/basketball-037",
+    "name": "켈리 · 48번 농구 골대",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-037",
+    "x": -5190.8,
+    "y": 1715.4
+  },
+  {
+    "item": "p06-ho-038",
+    "id": "p06-ho-038/basketball-038",
+    "name": "바이스데일 · 63번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-038",
+    "x": 1929,
+    "y": 1617.8
+  },
+  {
+    "item": "p06-ho-039",
+    "id": "p06-ho-039/basketball-039",
+    "name": "바이스데일 · 64번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-039",
+    "x": 1950.8,
+    "y": 1617.3
+  },
+  {
+    "item": "p06-ho-040",
+    "id": "p06-ho-040/basketball-040",
+    "name": "바이스데일 · 55번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-040",
+    "x": 566.2,
+    "y": 1404.4
+  },
+  {
+    "item": "p06-ho-041",
+    "id": "p06-ho-041/basketball-041",
+    "name": "바이스데일 · 54번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-041",
+    "x": 519.1,
+    "y": 1347.6
+  },
+  {
+    "item": "p06-ho-042",
+    "id": "p06-ho-042/basketball-042",
+    "name": "바이스데일 · 53번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-042",
+    "x": 111.1,
+    "y": 1211.3
+  },
+  {
+    "item": "p06-ho-043",
+    "id": "p06-ho-043/basketball-043",
+    "name": "바이스데일 · 56번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-043",
+    "x": 1259.1,
+    "y": 1061.6
+  },
+  {
+    "item": "p06-ho-044",
+    "id": "p06-ho-044/basketball-044",
+    "name": "바이스데일 · 57번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-044",
+    "x": 1283.1,
+    "y": 1061.1
+  },
+  {
+    "item": "p06-ho-045",
+    "id": "p06-ho-045/basketball-045",
+    "name": "바이스데일 · 58번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-045",
+    "x": 1297.7,
+    "y": 1060.9
+  },
+  {
+    "item": "p06-ho-046",
+    "id": "p06-ho-046/basketball-046",
+    "name": "바이스데일 · 59번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-046",
+    "x": 1492.6,
+    "y": 834.9
+  },
+  {
+    "item": "p06-ho-047",
+    "id": "p06-ho-047/basketball-047",
+    "name": "바이스데일 · 46번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-047",
+    "x": -1999,
+    "y": 801
+  },
+  {
+    "item": "p06-ho-048",
+    "id": "p06-ho-048/basketball-048",
+    "name": "바이스데일 · 45번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-048",
+    "x": -1162.8,
+    "y": 705.3
+  },
+  {
+    "item": "p06-ho-049",
+    "id": "p06-ho-049/basketball-049",
+    "name": "바이스데일 · 60번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-049",
+    "x": 783.2,
+    "y": 555.8
+  },
+  {
+    "item": "p06-ho-050",
+    "id": "p06-ho-050/basketball-050",
+    "name": "마리아나 · 51번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-050",
+    "x": -7339.8,
+    "y": 525.7
+  },
+  {
+    "item": "p06-ho-051",
+    "id": "p06-ho-051/basketball-051",
+    "name": "바이스데일 · 61번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-051",
+    "x": 673.2,
+    "y": 503.4
+  },
+  {
+    "item": "p06-ho-052",
+    "id": "p06-ho-052/basketball-052",
+    "name": "바이스데일 · 42번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-052",
+    "x": -1296.1,
+    "y": 494
+  },
+  {
+    "item": "p06-ho-053",
+    "id": "p06-ho-053/basketball-053",
+    "name": "마리아나 · 50번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-053",
+    "x": -7075.2,
+    "y": 486.7
+  },
+  {
+    "item": "p06-ho-054",
+    "id": "p06-ho-054/basketball-054",
+    "name": "바이스데일 · 43번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-054",
+    "x": -1326.3,
+    "y": 484.2
+  },
+  {
+    "item": "p06-ho-055",
+    "id": "p06-ho-055/basketball-055",
+    "name": "바이스데일 · 41번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-055",
+    "x": -1286.7,
+    "y": 472.3
+  },
+  {
+    "item": "p06-ho-056",
+    "id": "p06-ho-056/basketball-056",
+    "name": "바이스데일 · 44번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-056",
+    "x": -1318.2,
+    "y": 463.4
+  },
+  {
+    "item": "p06-ho-057",
+    "id": "p06-ho-057/basketball-057",
+    "name": "바이스데일 · 47번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-057",
+    "x": -2719.7,
+    "y": 428.8
+  },
+  {
+    "item": "p06-ho-058",
+    "id": "p06-ho-058/basketball-058",
+    "name": "바이스데일 · 39번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-058",
+    "x": -215.6,
+    "y": 411.2
+  },
+  {
+    "item": "p06-ho-059",
+    "id": "p06-ho-059/basketball-059",
+    "name": "바이스데일 · 40번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-059",
+    "x": -853.6,
+    "y": 385
+  },
+  {
+    "item": "p06-ho-060",
+    "id": "p06-ho-060/basketball-060",
+    "name": "바이스데일 · 62번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-060",
+    "x": 644,
+    "y": 333.7
+  },
+  {
+    "item": "p06-ho-061",
+    "id": "p06-ho-061/basketball-061",
+    "name": "마리아나 · 52번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-061",
+    "x": -7290.6,
+    "y": 243
+  },
+  {
+    "item": "p06-ho-062",
+    "id": "p06-ho-062/basketball-062",
+    "name": "바이스데일 · 33번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-062",
+    "x": -1298.3,
+    "y": 125.6
+  },
+  {
+    "item": "p06-ho-063",
+    "id": "p06-ho-063/basketball-063",
+    "name": "바이스데일 · 32번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-063",
+    "x": -1279.3,
+    "y": -54.5
+  },
+  {
+    "item": "p06-ho-064",
+    "id": "p06-ho-064/basketball-064",
+    "name": "마리아나 · 49번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-064",
+    "x": -6451.2,
+    "y": -136.8
+  },
+  {
+    "item": "p06-ho-065",
+    "id": "p06-ho-065/basketball-065",
+    "name": "바이스데일 · 31번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-065",
+    "x": -1277.3,
+    "y": -483.2
+  },
+  {
+    "item": "p06-ho-066",
+    "id": "p06-ho-066/basketball-066",
+    "name": "바이스데일 · 35번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-066",
+    "x": 496.7,
+    "y": -551.7
+  },
+  {
+    "item": "p06-ho-067",
+    "id": "p06-ho-067/basketball-067",
+    "name": "바이스데일 · 34번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-067",
+    "x": 470.6,
+    "y": -557.7
+  },
+  {
+    "item": "p06-ho-068",
+    "id": "p06-ho-068/basketball-068",
+    "name": "바이스데일 · 36번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-068",
+    "x": 567.3,
+    "y": -559.8
+  },
+  {
+    "item": "p06-ho-069",
+    "id": "p06-ho-069/basketball-069",
+    "name": "바이스데일 · 26번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-069",
+    "x": -1344.7,
+    "y": -727.7
+  },
+  {
+    "item": "p06-ho-070",
+    "id": "p06-ho-070/basketball-070",
+    "name": "바이스데일 · 28번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-070",
+    "x": -1139.4,
+    "y": -754.4
+  },
+  {
+    "item": "p06-ho-071",
+    "id": "p06-ho-071/basketball-071",
+    "name": "바이스데일 · 29번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-071",
+    "x": -1117.8,
+    "y": -764.2
+  },
+  {
+    "item": "p06-ho-072",
+    "id": "p06-ho-072/basketball-072",
+    "name": "바이스데일 · 27번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-072",
+    "x": -1146.1,
+    "y": -774.6
+  },
+  {
+    "item": "p06-ho-073",
+    "id": "p06-ho-073/basketball-073",
+    "name": "바이스데일 · 30번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-073",
+    "x": -1125.1,
+    "y": -784
+  },
+  {
+    "item": "p06-ho-074",
+    "id": "p06-ho-074/basketball-074",
+    "name": "바이스데일 · 25번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-074",
+    "x": -1423.5,
+    "y": -1345.4
+  },
+  {
+    "item": "p06-ho-075",
+    "id": "p06-ho-075/basketball-075",
+    "name": "바이스데일 · 24번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-075",
+    "x": -1250.2,
+    "y": -1546.4
+  },
+  {
+    "item": "p06-ho-076",
+    "id": "p06-ho-076/basketball-076",
+    "name": "바이스데일 · 38번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-076",
+    "x": -16.3,
+    "y": -1753.4
+  },
+  {
+    "item": "p06-ho-077",
+    "id": "p06-ho-077/basketball-077",
+    "name": "바이스데일 · 37번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-077",
+    "x": 715.1,
+    "y": -1827.7
+  },
+  {
+    "item": "p06-ho-078",
+    "id": "p06-ho-078/basketball-078",
+    "name": "바이스데일 · 23번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-078",
+    "x": -1706.8,
+    "y": -1954.3
+  },
+  {
+    "item": "p06-ho-079",
+    "id": "p06-ho-079/basketball-079",
+    "name": "바이스데일 · 20번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-079",
+    "x": -1371.4,
+    "y": -2480.5
+  },
+  {
+    "item": "p06-ho-080",
+    "id": "p06-ho-080/basketball-080",
+    "name": "바이스데일 · 21번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-080",
+    "x": -1186.8,
+    "y": -2652.9
+  },
+  {
+    "item": "p06-ho-081",
+    "id": "p06-ho-081/basketball-081",
+    "name": "바이스데일 · 22번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-081",
+    "x": -1096.4,
+    "y": -2824.3
+  },
+  {
+    "item": "p06-ho-082",
+    "id": "p06-ho-082/basketball-082",
+    "name": "바이스데일 · 16번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-082",
+    "x": -3000.4,
+    "y": -2826.6
+  },
+  {
+    "item": "p06-ho-083",
+    "id": "p06-ho-083/basketball-083",
+    "name": "바이스데일 · 15번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-083",
+    "x": -3015.6,
+    "y": -2853.3
+  },
+  {
+    "item": "p06-ho-084",
+    "id": "p06-ho-084/basketball-084",
+    "name": "바이스데일 · 17번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-084",
+    "x": -2774.4,
+    "y": -2884.6
+  },
+  {
+    "item": "p06-ho-085",
+    "id": "p06-ho-085/basketball-085",
+    "name": "바이스데일 · 18번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-085",
+    "x": -2751.5,
+    "y": -2885.1
+  },
+  {
+    "item": "p06-ho-086",
+    "id": "p06-ho-086/basketball-086",
+    "name": "마리아나 · 14번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-086",
+    "x": -3911.5,
+    "y": -3039
+  },
+  {
+    "item": "p06-ho-087",
+    "id": "p06-ho-087/basketball-087",
+    "name": "마리아나 · 12번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-087",
+    "x": -4794.4,
+    "y": -3157
+  },
+  {
+    "item": "p06-ho-088",
+    "id": "p06-ho-088/basketball-088",
+    "name": "마리아나 · 13번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-088",
+    "x": -4495.8,
+    "y": -3282.1
+  },
+  {
+    "item": "p06-ho-089",
+    "id": "p06-ho-089/basketball-089",
+    "name": "바이스데일 · 19번 농구 골대",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-089",
+    "x": -2691.3,
+    "y": -3442.2
+  },
+  {
+    "item": "p06-ho-090",
+    "id": "p06-ho-090/basketball-090",
+    "name": "마리아나 · 9번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-090",
+    "x": -1878.7,
+    "y": -5278.8
+  },
+  {
+    "item": "p06-ho-091",
+    "id": "p06-ho-091/basketball-091",
+    "name": "마리아나 · 8번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-091",
+    "x": -1926.8,
+    "y": -5456.8
+  },
+  {
+    "item": "p06-ho-092",
+    "id": "p06-ho-092/basketball-092",
+    "name": "마리아나 · 6번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-092",
+    "x": -2342.2,
+    "y": -5529.9
+  },
+  {
+    "item": "p06-ho-094",
+    "id": "p06-ho-094/basketball-094",
+    "name": "마리아나 · 5번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-094",
+    "x": -2383.9,
+    "y": -5634.5
+  },
+  {
+    "item": "p06-ho-095",
+    "id": "p06-ho-095/basketball-095",
+    "name": "마리아나 · 3번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-095",
+    "x": -2641.9,
+    "y": -5903.7
+  },
+  {
+    "item": "p06-ho-097",
+    "id": "p06-ho-097/basketball-097",
+    "name": "마리아나 · 11번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-097",
+    "x": -6354.3,
+    "y": -6344.9
+  },
+  {
+    "item": "p06-ho-098",
+    "id": "p06-ho-098/basketball-098",
+    "name": "마리아나 · 10번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-098",
+    "x": -6298.5,
+    "y": -6414
+  },
+  {
+    "item": "p06-ho-099",
+    "id": "p06-ho-099/basketball-099",
+    "name": "마리아나 · 2번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-099",
+    "x": -2768,
+    "y": -6449.9
+  },
+  {
+    "item": "p06-ho-100",
+    "id": "p06-ho-100/basketball-100",
+    "name": "마리아나 · 1번 농구 골대",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=basketball#basketball-100",
+    "x": -3220.9,
+    "y": -6738.3
+  },
+  {
+    "item": "p06-dr-001",
+    "id": "p06-dr-001/drone-race-001",
+    "name": "Top Fun Drones - Abandoned Mining Pit",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-001",
+    "x": -3520.2,
+    "y": 7561.4
+  },
+  {
+    "item": "p06-dr-002",
+    "id": "p06-dr-002/drone-race-002",
+    "name": "Top Fun Drones - Adler Creek",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-002",
+    "x": -3517.2,
+    "y": 7560.2
+  },
+  {
+    "item": "p06-dr-003",
+    "id": "p06-dr-003/drone-race-003",
+    "name": "Top Fun Drones - MacAlister Gold Mine",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-003",
+    "x": -3514.2,
+    "y": 7558.8
+  },
+  {
+    "item": "p06-dr-004",
+    "id": "p06-dr-004/drone-race-004",
+    "name": "Top Fun Drones - Tallaloko Lakeside Resort",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-004",
+    "x": -735.3,
+    "y": 6169.7
+  },
+  {
+    "item": "p06-dr-005",
+    "id": "p06-dr-005/drone-race-005",
+    "name": "Top Fun Drones - Rushwood Logging",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-005",
+    "x": -732.2,
+    "y": 6166.4
+  },
+  {
+    "item": "p06-dr-006",
+    "id": "p06-dr-006/drone-race-006",
+    "name": "Top Fun Drones - Millport",
+    "category": "P06",
+    "region": "Lummox County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-006",
+    "x": -729.3,
+    "y": 6163
+  },
+  {
+    "item": "p06-dr-007",
+    "id": "p06-dr-007/drone-race-007",
+    "name": "Top Fun Drones - Draper Refinery West",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-007",
+    "x": -7405.5,
+    "y": 5075.9
+  },
+  {
+    "item": "p06-dr-008",
+    "id": "p06-dr-008/drone-race-008",
+    "name": "Top Fun Drones - Draper Refinery East",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-008",
+    "x": -7412.5,
+    "y": 5072.7
+  },
+  {
+    "item": "p06-dr-009",
+    "id": "p06-dr-009/drone-race-009",
+    "name": "Top Fun Drones - Draper Island Terminal",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-009",
+    "x": -7418.9,
+    "y": 5069.6
+  },
+  {
+    "item": "p06-dr-010",
+    "id": "p06-dr-010/drone-race-010",
+    "name": "Top Fun Drones - Port Gellhorn",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-010",
+    "x": -5606.7,
+    "y": 5045.6
+  },
+  {
+    "item": "p06-dr-011",
+    "id": "p06-dr-011/drone-race-011",
+    "name": "Top Fun Drones - Red Apple Orchard",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-011",
+    "x": -5609.6,
+    "y": 5045.2
+  },
+  {
+    "item": "p06-dr-012",
+    "id": "p06-dr-012/drone-race-012",
+    "name": "Top Fun Drones - Manifest Canyon",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-012",
+    "x": -5612.4,
+    "y": 5044.7
+  },
+  {
+    "item": "p06-dr-013",
+    "id": "p06-dr-013/drone-race-013",
+    "name": "Top Fun Drones - Evergreen Mall",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-013",
+    "x": -277.5,
+    "y": 3655.5
+  },
+  {
+    "item": "p06-dr-014",
+    "id": "p06-dr-014/drone-race-014",
+    "name": "Top Fun Drones - Thundergolf",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-014",
+    "x": -282.4,
+    "y": 3654.4
+  },
+  {
+    "item": "p06-dr-015",
+    "id": "p06-dr-015/drone-race-015",
+    "name": "Top Fun Drones - Hot Skidz",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-015",
+    "x": -287.4,
+    "y": 3653.3
+  },
+  {
+    "item": "p06-dr-016",
+    "id": "p06-dr-016/drone-race-016",
+    "name": "Top Fun Drones - Waste Transfer Services",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-016",
+    "x": -2667.3,
+    "y": 3252.7
+  },
+  {
+    "item": "p06-dr-017",
+    "id": "p06-dr-017/drone-race-017",
+    "name": "Top Fun Drones - Allied Crystal",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-017",
+    "x": -2670.3,
+    "y": 3251.2
+  },
+  {
+    "item": "p06-dr-018",
+    "id": "p06-dr-018/drone-race-018",
+    "name": "Top Fun Drones - Captain O'Malley Marina",
+    "category": "P06",
+    "region": "Leonard County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-018",
+    "x": -2673.2,
+    "y": 3249.7
+  },
+  {
+    "item": "p06-dr-019",
+    "id": "p06-dr-019/drone-race-019",
+    "name": "Top Fun Drones - St. Vitus Medical Center",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-019",
+    "x": 1365.1,
+    "y": 2247.8
+  },
+  {
+    "item": "p06-dr-020",
+    "id": "p06-dr-020/drone-race-020",
+    "name": "Top Fun Drones - Vice Regal Hotel",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-020",
+    "x": 1362.8,
+    "y": 2247.1
+  },
+  {
+    "item": "p06-dr-021",
+    "id": "p06-dr-021/drone-race-021",
+    "name": "Top Fun Drones - Leaf Links",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-021",
+    "x": 1360.5,
+    "y": 2246.5
+  },
+  {
+    "item": "p06-dr-022",
+    "id": "p06-dr-022/drone-race-022",
+    "name": "Top Fun Drones - Camp Moonflower",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-022",
+    "x": -4211.2,
+    "y": 922
+  },
+  {
+    "item": "p06-dr-023",
+    "id": "p06-dr-023/drone-race-023",
+    "name": "Top Fun Drones - Swampy Sal's Safari Park",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-023",
+    "x": -4217.4,
+    "y": 921.7
+  },
+  {
+    "item": "p06-dr-024",
+    "id": "p06-dr-024/drone-race-024",
+    "name": "Top Fun Drones - Kowaachobee Village",
+    "category": "P06",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-024",
+    "x": -4224.2,
+    "y": 921.2
+  },
+  {
+    "item": "p06-dr-025",
+    "id": "p06-dr-025/drone-race-025",
+    "name": "Top Fun Drones - Tisha-Wocka Flea Market",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-025",
+    "x": -2854.3,
+    "y": 783.1
+  },
+  {
+    "item": "p06-dr-026",
+    "id": "p06-dr-026/drone-race-026",
+    "name": "Top Fun Drones - Apollo Aggregates",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-026",
+    "x": -2856.9,
+    "y": 782.4
+  },
+  {
+    "item": "p06-dr-027",
+    "id": "p06-dr-027/drone-race-027",
+    "name": "Top Fun Drones - Navitrak",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-027",
+    "x": -2859.9,
+    "y": 781.8
+  },
+  {
+    "item": "p06-dr-028",
+    "id": "p06-dr-028/drone-race-028",
+    "name": "Top Fun Drones - Capri Lake",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-028",
+    "x": -6466.2,
+    "y": 489.1
+  },
+  {
+    "item": "p06-dr-029",
+    "id": "p06-dr-029/drone-race-029",
+    "name": "Top Fun Drones - Ravella Drive",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-029",
+    "x": -6471.7,
+    "y": 488.8
+  },
+  {
+    "item": "p06-dr-030",
+    "id": "p06-dr-030/drone-race-030",
+    "name": "Top Fun Drones - Capri Train Station",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-030",
+    "x": -6477.7,
+    "y": 488.3
+  },
+  {
+    "item": "p06-dr-031",
+    "id": "p06-dr-031/drone-race-031",
+    "name": "Top Fun Drones - Wildland Zoo",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-031",
+    "x": 53.6,
+    "y": 144.8
+  },
+  {
+    "item": "p06-dr-032",
+    "id": "p06-dr-032/drone-race-032",
+    "name": "Top Fun Drones - Shoreline Market",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-032",
+    "x": 48.4,
+    "y": 140.5
+  },
+  {
+    "item": "p06-dr-033",
+    "id": "p06-dr-033/drone-race-033",
+    "name": "Top Fun Drones - Future Leonida Art Museum",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-033",
+    "x": 43.8,
+    "y": 135.9
+  },
+  {
+    "item": "p06-dr-034",
+    "id": "p06-dr-034/drone-race-034",
+    "name": "Top Fun Drones - Ivory Tower",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-034",
+    "x": 1788,
+    "y": -887.8
+  },
+  {
+    "item": "p06-dr-035",
+    "id": "p06-dr-035/drone-race-035",
+    "name": "Top Fun Drones - The Jamaica",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-035",
+    "x": 1783.3,
+    "y": -889.3
+  },
+  {
+    "item": "p06-dr-036",
+    "id": "p06-dr-036/drone-race-036",
+    "name": "Top Fun Drones - Avarice Petroleum",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-036",
+    "x": 1778.7,
+    "y": -890.3
+  },
+  {
+    "item": "p06-dr-037",
+    "id": "p06-dr-037/drone-race-037",
+    "name": "Top Fun Drones - Marshland Animal Park",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-037",
+    "x": -4035.2,
+    "y": -2922.5
+  },
+  {
+    "item": "p06-dr-038",
+    "id": "p06-dr-038/drone-race-038",
+    "name": "Top Fun Drones - Watson Bay",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-038",
+    "x": -4038.4,
+    "y": -2923.4
+  },
+  {
+    "item": "p06-dr-039",
+    "id": "p06-dr-039/drone-race-039",
+    "name": "Top Fun Drones - Leonida RC Raceway",
+    "category": "P06",
+    "region": "Mariana County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-039",
+    "x": -4041.5,
+    "y": -2924.2
+  },
+  {
+    "item": "p06-dr-040",
+    "id": "p06-dr-040/drone-race-040",
+    "name": "Top Fun Drones - Deep Roots",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-040",
+    "x": -2234.7,
+    "y": -3333.6
+  },
+  {
+    "item": "p06-dr-041",
+    "id": "p06-dr-041/drone-race-041",
+    "name": "Top Fun Drones - Power Station South",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-041",
+    "x": -2229.7,
+    "y": -3333.6
+  },
+  {
+    "item": "p06-dr-042",
+    "id": "p06-dr-042/drone-race-042",
+    "name": "Top Fun Drones - Power Station North",
+    "category": "P06",
+    "region": "Vice-Dale County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=drone-race#drone-race-042",
+    "x": -2224.7,
+    "y": -3333.6
+  },
+  {
+    "id": "p06-rd-08/book-swap-009",
+    "item": "p06-rd-08",
+    "category": "P06",
+    "name": "Children of Wizard Wang · 모텔 식사 공간",
+    "region": "Kelly County",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=magazine#book-swap-009",
+    "x": -5344,
+    "y": 3432
   }
 ]
