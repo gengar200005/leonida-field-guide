@@ -1717,6 +1717,16 @@
     "y": 4323.2
   },
   {
+    "id": "p04-08/gang-operation-008",
+    "item": "p04-08",
+    "name": "포트 겔혼 은닉처",
+    "category": "P04",
+    "region": "Port Gellhorn",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-008",
+    "x": -6361.6,
+    "y": 4323.2
+  },
+  {
     "id": "p03-gx09/gang-operation-010",
     "item": "p03-gx09",
     "name": "Robbery Opportunity - M7",
@@ -20117,5 +20127,269 @@
     "url": "https://www.gtabase.com/gta-6/map/?feature=magazine#book-swap-009",
     "x": -5344,
     "y": 3432
+  },
+  {
+    "id": "p08-gym-prices/gym-001",
+    "item": "p08-gym-prices",
+    "name": "아약스 헬스장",
+    "originalName": "Ajax Gym",
+    "category": "P08",
+    "region": "Vice Beach",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gym#gym-001",
+    "x": 1420.8,
+    "y": 1766.4
+  },
+  {
+    "id": "p08-gym-prices/gym-002",
+    "item": "p08-gym-prices",
+    "name": "머슬 샌즈 · 무료 야외 체육관",
+    "originalName": "Vice Beach Outdoor Gym",
+    "category": "P08",
+    "region": "Vice Beach",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gym#gym-002",
+    "x": 2025.6,
+    "y": 403.2
+  },
+  {
+    "id": "p08-gym-prices/gym-004",
+    "item": "p08-gym-prices",
+    "name": "아이치 콘도 야외 체육관",
+    "originalName": "Aichi Condominiums Outdoor Gym",
+    "category": "P08",
+    "region": "Vice Beach",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gym#gym-004",
+    "x": 1488.0,
+    "y": 2643.2
+  },
+  {
+    "id": "p08-gym-prices/gym-005",
+    "item": "p08-gym-prices",
+    "name": "Y 호텔 피트니스 클럽",
+    "originalName": "Y Hotel Fitness Club",
+    "category": "P08",
+    "region": "Vice Beach",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gym#gym-005",
+    "x": 1900.8,
+    "y": 1603.2
+  },
+  {
+    "id": "p08-gym-prices/gym-006",
+    "item": "p08-gym-prices",
+    "name": "다이나믹스 피트니스",
+    "originalName": "Dynamix Fitness",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gym#gym-006",
+    "x": -358.4,
+    "y": 1510.4
+  },
+  {
+    "id": "p08-gym-prices/gym-007",
+    "item": "p08-gym-prices",
+    "name": "비너스 피트니스",
+    "originalName": "Venus Fitness",
+    "category": "P08",
+    "region": "Vice Beach",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gym#gym-007",
+    "x": 1606.4,
+    "y": 368.0
+  },
+  {
+    "id": "p08-gym-prices/gym-008",
+    "item": "p08-gym-prices",
+    "name": "제니스",
+    "originalName": "Zenith",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gym#gym-008",
+    "x": -812.8,
+    "y": -563.2
+  },
+  {
+    "id": "p08-gym-prices/gym-009",
+    "item": "p08-gym-prices",
+    "name": "바이스 세븐 콘도 체육관",
+    "originalName": "Vice Seven Condominiums Gym",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gym#gym-009",
+    "x": -1011.2,
+    "y": -998.4
+  },
+  {
+    "id": "p08-gym-prices/gym-010",
+    "item": "p08-gym-prices",
+    "name": "그랜드 머제스틱 체육관",
+    "originalName": "Grand Majestic Gym",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gym#gym-010",
+    "x": -1033.6,
+    "y": -1257.6
+  },
+  {
+    "id": "p08-range-medals/shooting-range-001",
+    "item": "p08-range-medals",
+    "name": "로저스 랜치 Alien",
+    "originalName": "Rodgers Ranch Alien Range",
+    "category": "P08",
+    "region": "Port Gellhorn",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-001",
+    "x": -5942.4,
+    "y": 4611.2
+  },
+  {
+    "id": "p08-range-medals/shooting-range-002",
+    "item": "p08-range-medals",
+    "name": "로저스 랜치 Market",
+    "originalName": "Rodgers Ranch Market Range",
+    "category": "P08",
+    "region": "Port Gellhorn",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-002",
+    "x": -5996.8,
+    "y": 4560.0
+  },
+  {
+    "id": "p08-range-medals/shooting-range-003",
+    "item": "p08-range-medals",
+    "name": "로저스 랜치 Cops & Robbers",
+    "originalName": "Rodgers Ranch Cops & Robbers Range",
+    "category": "P08",
+    "region": "Port Gellhorn",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-003",
+    "x": -5932.8,
+    "y": 4556.8
+  },
+  {
+    "id": "p08-range-medals/shooting-range-004",
+    "item": "p08-range-medals",
+    "name": "로저스 랜치 · 접수",
+    "originalName": "Rodgers Ranch & Shooting Range",
+    "category": "P08",
+    "region": "Port Gellhorn",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-004",
+    "x": -5964.8,
+    "y": 4550.4
+  },
+  {
+    "id": "p08-range-medals/shooting-range-005",
+    "item": "p08-range-medals",
+    "name": "로저스 랜치 Zombie",
+    "originalName": "Rodgers Ranch Zombie Range",
+    "category": "P08",
+    "region": "Port Gellhorn",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-005",
+    "x": -5948.8,
+    "y": 4531.2
+  },
+  {
+    "id": "p08-range-medals/shooting-range-006",
+    "item": "p08-range-medals",
+    "name": "로저스 랜치 Hunting",
+    "originalName": "Rodgers Ranch Hunting Range",
+    "category": "P08",
+    "region": "Port Gellhorn",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-006",
+    "x": -5961.6,
+    "y": 4508.8
+  },
+  {
+    "id": "p08-range-medals/shooting-range-007",
+    "item": "p08-range-medals",
+    "name": "로저스 랜치 Saloon",
+    "originalName": "Rodgers Ranch Saloon Range",
+    "category": "P08",
+    "region": "Port Gellhorn",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-007",
+    "x": -5984,
+    "y": 4483.2
+  },
+  {
+    "id": "p08-range-medals/shooting-range-008",
+    "item": "p08-range-medals",
+    "name": "그리핀 Villa",
+    "originalName": "Griffin Villa Range",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-008",
+    "x": -2505.6,
+    "y": 1459.2
+  },
+  {
+    "id": "p08-range-medals/shooting-range-009",
+    "item": "p08-range-medals",
+    "name": "그리핀 Compound",
+    "originalName": "Griffin Compound Range",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-009",
+    "x": -2428.8,
+    "y": 1408
+  },
+  {
+    "id": "p08-range-medals/shooting-range-010",
+    "item": "p08-range-medals",
+    "name": "그리핀 Maze",
+    "originalName": "Griffin Maze Range",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-010",
+    "x": -2384.0,
+    "y": 1366.4
+  },
+  {
+    "id": "p08-range-medals/shooting-range-011",
+    "item": "p08-range-medals",
+    "name": "그리핀 Loop",
+    "originalName": "Griffin Loop Range",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-011",
+    "x": -2352.0,
+    "y": 1344
+  },
+  {
+    "id": "p08-range-medals/shooting-range-012",
+    "item": "p08-range-medals",
+    "name": "그리핀 Hook",
+    "originalName": "Griffin Hook Range",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-012",
+    "x": -2329.6,
+    "y": 1331.2
+  },
+  {
+    "id": "p08-range-medals/shooting-range-013",
+    "item": "p08-range-medals",
+    "name": "그리핀 3-Point",
+    "originalName": "Griffin 3-Point Range",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-013",
+    "x": -2332.8,
+    "y": 1286.4
+  },
+  {
+    "id": "p08-range-medals/shooting-range-014",
+    "item": "p08-range-medals",
+    "name": "그리핀 · 접수",
+    "originalName": "Griffin Shooting Range",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-014",
+    "x": -2316.8,
+    "y": 1248
+  },
+  {
+    "id": "p08-range-medals/shooting-range-015",
+    "item": "p08-range-medals",
+    "name": "그리핀 · 자유 사격",
+    "originalName": "Griffin Free Fire Range",
+    "category": "P08",
+    "region": "Vice City",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-015",
+    "x": -2297.6,
+    "y": 1241.6
   }
 ]
