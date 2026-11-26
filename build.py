@@ -120,6 +120,41 @@ def prepare_map_titles(data):
         pin["mapTitle"] = labels.get(pin["id"], pin.get("mapTitle", fallback))
 
 
+def assign_thumbnails(data, selected, protected_aliases):
+    """Resolve the approved card/hero frame once. Gallery indices survive the build."""
+    indexed = {item["id"].lower(): item for item in data["items"]}
+    selections = {}
+    for old_id, record in sorted(selected.items(), key=lambda pair: pair[0] not in indexed):
+        key = data["redirects"].get(old_id, old_id)
+        if old_id in protected_aliases:
+            record = {**record, "reveal": "발견과 보상", "originalReveal": True}
+        gallery = indexed[key].setdefault("gallery", [])
+        selections.setdefault(key, []).append(record)
+        if record not in gallery:
+            gallery.append(record)
+
+    for item in indexed.values():
+        key = item["id"].lower()
+        primary = data["media"].get(key, {})
+        frames = [primary, *item.get("gallery", [])]
+        protected = {m["src"] for m in frames if m.get("src") and m.get("reveal")}
+        protected.update(m["originalPhoto"] for m in frames if m.get("originalPhoto") and m.get("originalReveal"))
+        # Hide every copy of a protected frame, including duplicates inherited through redirects.
+        for frame in frames:
+            if frame.get("src") in protected:
+                frame.setdefault("reveal", "발견과 보상")
+            if frame.get("originalPhoto") in protected:
+                frame["originalReveal"] = True
+        ordered = [*selections.get(key, []), *frames]
+        for frame in ordered:
+            src = frame.get("src")
+            if (not src or src in protected or frame.get("contextOnly") or
+                    (item["category"] == "P09" and src == "media/mission-landmark-l304.webp")):
+                continue
+            item["thumbnailIndex"] = frames.index(frame) - 1
+            break
+
+
 def home_markup(data):
     categories = data["categories"]
 
@@ -144,6 +179,8 @@ def home_markup(data):
                             if ref["label"] in {"차량 외형 원본", "무기 외형 원본"} and ref["url"].startswith("https://")), None)
             alt = item["title"] + " 외형"
         else:
+            index = item.get("thumbnailIndex")
+            photo = (photo if index == -1 else item["gallery"][index]) if index is not None else {}
             src, alt = photo.get("src"), photo.get("caption", "")
         image = (f'<img class="art home-art" loading="lazy" decoding="async" src="{escape(src)}" alt="{escape(alt)}">'
                  if src and not photo.get("reveal") else "")
@@ -184,13 +221,15 @@ def apply_editorial_guides(data, guides):
                 raise ValueError(f"Unexpected editorial field on {key}: {field}")
 
 
-def apply_editorial_photos(data, photographs):
+def apply_editorial_photos(data, photographs, protected_aliases):
     items = {item["id"].lower(): item for item in data["items"]}
     grouped = {}
     # Prefer the editor's selection on the representative. Former entries may
     # contribute further scene photos even after their old URLs become redirects.
     for old_key, images in sorted(photographs.items(), key=lambda pair: pair[0] not in items):
         key = data["redirects"].get(old_key, old_key)
+        if old_key in protected_aliases:
+            images = [{**image, "reveal": "발견과 보상", "originalReveal": True} for image in images]
         grouped.setdefault(key, []).extend(images)
     for key, images in grouped.items():
         item = items[key]
@@ -254,12 +293,15 @@ def build():
     prepare_map_titles(data)
     prepare_reader_names(data, read("reader-names.json"))
     apply_editorial_guides(data, read("editorial-guides.json"))
-    apply_merges(data, read("entry-merges.json"))
+    merges = read("entry-merges.json")
+    apply_merges(data, merges)
+    protected_aliases = {alias for group in merges.values() if group.get("protectAliasMedia") for alias in group["aliases"]}
     for filename in ("campaign-existing.json", "campaign-references.json", "events-final.json", "exploration-final.json"):
         apply_editorial_guides(data, read(filename))
     organize_campaign(data, read("campaign-order.json")["missions"])
     for filename in ("editorial-media.json", "campaign-media.json", "events-media.json", "exploration-media.json"):
-        apply_editorial_photos(data, read(filename))
+        apply_editorial_photos(data, read(filename), protected_aliases)
+    assign_thumbnails(data, read("thumbnail-media.json"), protected_aliases)
     ids = {row["id"].lower() for row in data["items"]}
     assert len(ids) == len(data["items"])
     pin_ids = {pin["id"]: pin["item"].lower() for pin in data["pins"]}

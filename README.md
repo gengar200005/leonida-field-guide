@@ -15,7 +15,7 @@ Python 3.10 이상에서 `python build.py`를 실행한 뒤 `dist/index.html`을
 - `data/*.jsonl`의 한 줄이 공략 한 편입니다. 고정 ID, 제목, 요약, 단계, 표, 출처와 연관 항목을 관리합니다. 원문을 보존하면서 보강한 단계와 조건은 `editorial-guides.json`에 둡니다.
 - `map-regions.json`의 해안 다각형은 지역 판별에서 우선합니다. `map-estimates.json`에는 `527d04a`의 한글 지명·중심·반경 62개와, 겹치는 반경에서 중심까지의 상대 거리를 비교하고 육지 윤곽과 지도 수면을 반영한 추정 영역 51개가 있습니다. 기존 지명 10개는 확인된 다각형으로 표시합니다. 베스푸치 섬의 옛 중심은 리알토 제도 경계 안이어서 별도 추정 영역을 두지 않았습니다.
 - `atlas.json`에는 지도에 표시할 수 있는 위치와 원본 핀 주소가 있습니다. 사진이 보여 주는 장소와 게임 내 ID를 대조합니다.
-- `photos.json`에는 사진별 원본, 표시 문구, 제작자, 이용 조건이 있습니다. 편집자가 선택한 대표 이미지와 추가 장면은 `editorial-media.json`과 `media/editorial/`에 있습니다. `media/*.zip`의 WebP 파일은 배포 과정에서 개별 파일로 풀립니다.
+- `photos.json`에는 사진별 원본, 표시 문구, 제작자, 이용 조건이 있습니다. 카드와 상세 상단에 공통으로 쓸 현장 사진은 `thumbnail-media.json`에서 관리합니다. `python tests/thumbnails.py --decode`로 실제 표시율과 누락 목록을 확인할 수 있습니다. 편집자가 선택한 대표 이미지와 추가 장면은 `editorial-media.json`과 `media/editorial/`에 있습니다. `media/*.zip`의 WebP 파일은 배포 과정에서 개별 파일로 풀립니다.
 - `entry-merges.json`에는 대표 항목별 통합 근거와 구 ID가 있습니다. 빌드 시 사진·출처·서로 다른 지점을 보존하고 기존 `redirects.json`과 합쳐 예전 링크와 저장 기록을 이전합니다.
 - `revision-review.json`은 이전 판 검토 기록, `index-relations.json`은 책 색인과 도감의 연결 기록입니다. 둘 다 배포 사이트에 복사되지 않습니다.
 

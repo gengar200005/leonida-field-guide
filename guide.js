@@ -140,7 +140,7 @@ function representativePhoto(v){
   if(a.embedded)return m;
   return a.original?{src:a.original,caption:v.title+" 외형",typeLabel:"외형",source:a.original}:null;
  }
- return m?.src&&!m.reveal&&!contextPhoto(v,m)?m:null;
+ return v.thumbnailIndex===-1?m:v.gallery?.[v.thumbnailIndex]||null;
 }
 function mediaArt(v){
  const m=representativePhoto(v);
@@ -409,13 +409,15 @@ function fieldFigure(v,m,index){
 }
 function photoFigure(v){
  const m=photo(v);
- const embedded=catalogEntry(v)?catDetailPhoto(v):"";
- return embedded||(m?.src&&!contextPhoto(v,m)?fieldFigure(v,m,-1):"");
+ if(catalogEntry(v))return catDetailPhoto(v)||(m?.src&&!contextPhoto(v,m)?fieldFigure(v,m,-1):"");
+ const hero=representativePhoto(v);
+ return hero?fieldFigure(v,hero,v.thumbnailIndex):m?.reveal?fieldFigure(v,m,-1):"";
 }
 function fieldGallery(v){
- const m=photo(v),appearance=catalogEntry(v)?catalogAppearance(v,m):null,hero=representativePhoto(v);
+ const m=photo(v),hero=representativePhoto(v);
  const frames=[];
- if(m?.src&&(contextPhoto(v,m)||(appearance?.original&&!appearance.embedded&&m.src!==hero?.src)))frames.push(fieldFigure(v,m,-1));
+ const primaryInGallery=catalogEntry(v)?contextPhoto(v,m)||Boolean(hero&&m?.src!==hero.src):hero?m?.src!==hero.src:!m?.reveal;
+ if(m?.src&&primaryInGallery)frames.push(fieldFigure(v,m,-1));
  const seenImages=new Set([hero?.src,m?.src].filter(Boolean));
  const seenLinks=new Set([...seenImages,...(m?.src?[m.source]:[])].filter(Boolean));
  const originals=[];
@@ -487,6 +489,10 @@ function sourceLink(ref){
  const host=names[domain]||domain,label=ref.label||"출처";
  return link(ref.url,["원문 출처","지도 열기","이미지 출처"].includes(label)?label+" · "+host:label);
 }
+function relatedCard(r){
+ const image=representativePhoto(r);
+ return '<a class="related-card" href="'+entry(r.id)+'">'+(image?'<img loading="lazy" decoding="async" alt="" src="'+esc(image.src)+'">':"")+'<span>'+esc(r.title)+'</span></a>';
+}
 function relatedLink(r){return '<a href="'+entry(r.id)+'">'+esc(r.title)+'</a>'}
 function fieldReferences(v){
  const refs=v.fieldReferences;
@@ -525,7 +531,7 @@ function detail(v){
   '<a href="#/guide/p01?track=story&amp;chapter='+v.chapter+'">'+(v.chapter?"챕터 "+v.chapter:"프롤로그")+' 미션 목록</a>'+
   (position+1<chapterMissions.length?'<a href="'+entry(chapterMissions[position+1].id)+'">다음 공략 →</a>':'')+'</div></nav>';
  const sources=links.length?'<details class="panel reference-links"><summary>지도·영상·참고 자료 <small>'+links.length+'</small></summary><div class="links">'+links.map(sourceLink).join("")+'</div></details>':"";
- const relatedPanel=related.length?'<div class="panel"><h2>연관 공략</h2>'+related.slice(0,8).map(relatedLink).join("")+(related.length>8?'<details><summary>전체 '+related.length+'개 보기</summary>'+related.slice(8).map(relatedLink).join("")+'</details>':'')+'</div>':"";
+ const relatedPanel=related.length?'<div class="panel"><h2>연관 공략</h2>'+related.slice(0,8).map(relatedCard).join("")+(related.length>8?'<details><summary>전체 '+related.length+'개 보기</summary>'+related.slice(8).map(relatedCard).join("")+'</details>':'')+'</div>':"";
  return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article">'+intro+mobileOutline+(catalogEntry(v)?catDetailFacts(v):"")+entryMap(v)+sections.map(section).join("")+fieldGallery(v)+fieldReferences(v)+videoSection(links)+campaignNav+sources+'</article><aside class="rail">'+desktopOutline+relatedPanel+'</aside></div>';
 }
 function missing(){return trail([["찾을 수 없는 공략"]])+'<h1>공략을 찾을 수 없습니다</h1><p class="lead">이전 판의 주소이거나 통합된 항목일 수 있습니다.</p><a class="btn" href="#/guides">공략 도감 열기</a>'}
@@ -1118,7 +1124,7 @@ document.addEventListener("submit",event=>{
 });
 function credits(){
  const names=nameSources.length?'<section class="panel"><h2>한국어 명칭</h2><p>공식 표기를 확인한 명칭은 아래 자료를 따릅니다. 그 밖의 고유명에는 한글 표기를 덧붙였으며, 영문 원명으로도 검색할 수 있습니다.</p><div class="links">'+nameSources.map(sourceLink).join("")+'</div></section>':"";
- return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>리오나이다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다. 확대 시 원본 상세 타일을 표시합니다. 섬 음영은 이 지도의 해안선을 추적한 뒤 Open GTA 6 Map의 인쇄 지도 육지 윤곽과 교차 확인한 결과입니다. GTAMap.io를 참고해 소속 구역과 카운티를 확인했습니다. 내륙의 점선은 기존 지역 중심과 반경을 바탕으로 육지와 수면을 구분해 표시한 추정 범위입니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://github.com/fbritoferreira/gta6","Open GTA 6 Map · fbritoferreira")+link("https://gtamap.io/?areas=outline#map","구역 대조 지도")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map의 CC BY 4.0은 기여자가 만든 지도 데이터에 적용됩니다. 게임 화면은 원본 사진 링크로 제공합니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6/blob/main/LICENSE","Open GTA 6 Map 이용 조건")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'+names;
+ return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>리오나이다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다. 확대 시 원본 상세 타일을 표시합니다. 섬 음영은 이 지도의 해안선을 추적한 뒤 Open GTA 6 Map의 인쇄 지도 육지 윤곽과 교차 확인한 결과입니다. GTAMap.io를 참고해 소속 구역과 카운티를 확인했습니다. 내륙의 점선은 기존 지역 중심과 반경을 바탕으로 육지와 수면을 구분해 표시한 추정 범위입니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://github.com/fbritoferreira/gta6","Open GTA 6 Map · fbritoferreira")+link("https://gtamap.io/?areas=outline#map","구역 대조 지도")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map의 CC BY 4.0은 기여자가 만든 지도 데이터에 적용됩니다. 외부 현장 사진은 원본 서버에서 불러오며, 사진 아래에서 제공처를 확인할 수 있습니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6/blob/main/LICENSE","Open GTA 6 Map 이용 조건")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'+names;
 }
 function render(reset=false){
  const r=route();let title="리오나이다 필드 가이드",html;
@@ -1212,8 +1218,17 @@ main.addEventListener("error",e=>{
   note.className="caption";note.textContent="현장 사진을 불러오지 못했습니다.";
   figureButton.replaceWith(note);return;
  }
+ if(image.closest(".related-card")){image.remove();return}
  const cardArt=image.closest(".card-art");
- if(cardArt){cardArt.remove();return}
+ if(cardArt){
+  if(cardArt.closest(".guide-card")){
+   const fallback=document.createElement("span");
+   fallback.className="art unavailable-photo";
+   fallback.textContent="사진을 불러올 수 없습니다";
+   image.replaceWith(fallback);
+  }else cardArt.remove();
+  return;
+ }
  const anchor=image.closest('a[data-action="appearance"]');
  if(!anchor)return;
  const fallback=photoSourcePage(findItem(anchor.dataset.id),image.src);

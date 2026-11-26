@@ -211,3 +211,8 @@ main{min-height:70vh;padding-top:28px;padding-bottom:64px}main:focus{outline:non
 .guide-back:hover{border-color:var(--sea)}
 html{scroll-padding-top:54px}
 @media(max-width:630px){.trail{gap:10px;margin-bottom:12px}.trail>div{font-size:12px}}
+
+.rail .related-card{display:flex;align-items:center;gap:10px;min-height:44px}
+.related-card img{width:76px;aspect-ratio:16/9;object-fit:cover;border-radius:4px;flex:none}
+
+.art.unavailable-photo{display:grid;place-items:center;color:var(--muted);font-size:.875rem}
