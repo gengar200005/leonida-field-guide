@@ -60,7 +60,7 @@ function parseState(raw){
   for(const [id,flags] of Object.entries(raw.items)){
     if(!/^[a-z0-9-]{1,100}$/i.test(id)||!flags||typeof flags!=="object") continue;
     const key=cleanId(findItem(id)?.id||id);
-    for(const flag of ["done","favorite","later"]) if(flags[flag]===true)(values[key]??={})[flag]=true;
+    for(const flag of ["done","favorite","later","owned"]) if(flags[flag]===true)(values[key]??={})[flag]=true;
   }
   return {version:1,chapter:raw.chapter,items:values};
 }
@@ -143,7 +143,7 @@ function listPage(page,id,p){
  const photoControl=visual?'<label>사진 <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("embedded","도감에 사진이 있는 항목",mediaFilter)+opt("original","원본 사진 링크가 있는 항목",mediaFilter)+opt("photo","사진 또는 원본 링크",mediaFilter)+'</select></label>':"";
  const reading={V:"v-registration",P02:"p02-collection-check",P01:"p01-save-slots",P06:"p06-collection-targets",P09:"p09-region-routes",P08:"p08-range-medals",P04:"p04-first-visit",P05:"p05-region-exploration",P07:"p07-first-garage"};
  const firstGuide=!mine&&!search?findItem(reading[cat]):null;
- const routeGuideIds={V:["v-chapter-2-route","v-42-collection-route","v-vehicle-index"],P01:["p01-roadmap"],P02:["p02-play-guide","p02-weapon-index","p02-chapter-two-kit","p02-field-pickup-route"],P03:["p03-economy-overview"],P04:["p04-catalog"],P07:["p07-property-catalog"],P08:["p08-training-start"],P09:["p09-start-here","p09-mission-index","p09-encounter-index","p09-chapter-deadlines","p09-world-activities"],P10:["p10-story-tools"]}[cat]||[];
+ const routeGuideIds={V:["v-chapter-2-route","v-42-collection-route","v-vehicle-index"],P01:["p01-roadmap"],P02:["p02-play-guide","p02-weapon-index","p02-chapter-two-kit","p02-field-pickup-route"],P03:["p03-economy-overview"],P04:["p04-catalog"],P07:["p07-property-catalog"],P08:["p08-training-start"],P09:["p09-start-here","p09-mission-index","p09-encounter-index","p09-chapter-deadlines","p09-world-activities"],P10:["p10-story-tools","p10-report-index"]}[cat]||[];
  const routeShortcut=!mine&&!search?routeGuideIds.map(findItem).filter(Boolean).map(v=>'<div class="guide-shortcut">'+relatedLink(v)+'</div>').join(""):"";
  const shortcut=firstGuide?'<div class="guide-shortcut"><a href="'+entry(firstGuide.id)+'">'+esc(firstGuide.title)+' →</a></div>':"";
  if(!search&&!mine&&cat!=="P01"){
@@ -162,12 +162,20 @@ function searchItems(q){const terms=q.split(/\s+/).map(norm).filter(Boolean);if(
  const [title,body]=searchCache.get(v.id);if(terms.every(t=>title.includes(t)||body.includes(t)))hits.push([v,terms.filter(t=>title.includes(t)).length+(norm(v.title)===norm(q)?5:0)])}
  return hits.sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
 }
-function discoveryList(ids, unit="곳"){
+function checklistButton(v,title,flag,label){
+ const pressed=Boolean(flags(v)[flag]);
+ return '<button data-flag="'+flag+'" data-id="'+esc(v.id)+'" data-label="'+esc(label)+'" aria-label="'+esc(title+' '+label)+'" aria-pressed="'+pressed+'">'+(pressed?'✓ ':'')+esc(label)+'</button>';
+}
+function discoveryList({checklist:ids,checklistUnit:unit="곳",checklistVerify:verify=false,checklistRisk:risks={}}){
  const places=ids.map(findItem).filter(Boolean);
  const finished=places.filter(v=>flags(v).done).length;
- return '<div class="discovery-checklist"><p role="status">발견 완료 <b data-count>'+finished+'</b> / '+places.length+esc(unit)+'</p>'+places.map(v=>{
-   const done=Boolean(flags(v).done);
-   return '<div class="discovery-row"><a href="'+entry(v.id)+'"><small>'+esc(v.id.toUpperCase())+'</small> '+esc(v.title.split(" / ")[0])+'</a><button data-flag="done" data-id="'+esc(v.id)+'" aria-label="'+esc(v.title.split(" / ")[0])+' 완료" aria-pressed="'+done+'">'+(done?'✓ 완료':'완료')+'</button></div>';
+ const label=verify?"재로드 확인":"발견 완료";
+ return '<div class="discovery-checklist"><p role="status">'+label+' <b data-count>'+finished+'</b> / '+places.length+esc(unit)+'</p>'+places.map(v=>{
+   const title=v.title.split(" / ")[0];
+   const done=checklistButton(v,title,"done",verify?"재로드":"완료");
+   const actions=verify?'<div class="discovery-actions">'+checklistButton(v,title,"owned","첫 확인")+done+'</div>':done;
+   const risk=risks[v.id]?'<small class="discovery-risk">주의 '+esc(risks[v.id])+'</small>':"";
+   return '<div class="discovery-row"><a href="'+entry(v.id)+'"><small>'+esc(v.id.toUpperCase())+'</small><span>'+esc(title)+risk+'</span></a>'+actions+'</div>';
  }).join("")+'</div>';
 }
 const pinById=new Map(pins.map(pin=>[pin.id,pin]));
@@ -194,7 +202,7 @@ function section(s,index){
  const stops=(s.places||[]).map(findItem).filter(Boolean);
  const places=s.mapPins?regionMap(s.mapPins):stops.length?'<div class="links">'+stops.map(relatedLink).join("")+'</div>':'';
  const hints=s.hints?'<ul class="field-hints">'+s.hints.map(findItem).filter(Boolean).map(v=>'<li>'+relatedLink(v)+'<p>'+esc(v.summary)+'</p></li>').join("")+'</ul>':'';
- const content=body+places+hints+(s.checklist?discoveryList(s.checklist,s.checklistUnit):'')+(related?'<div class="links">'+relatedLink(related)+'</div>':'');
+ const content=body+places+hints+(s.checklist?discoveryList(s):'')+(related?'<div class="links">'+relatedLink(related)+'</div>':'');
  return s.reveal?'<details class="panel" id="s'+index+'"><summary>'+esc(s.title)+' · 펼치기</summary>'+content+'</details>':'<section class="panel" id="s'+index+'"><h2>'+esc(s.title)+'</h2>'+content+'</section>';
 }
 function basePhotoFigure(v){const m=photo(v);if(!m?.src)return "";return '<figure><button data-action="image" data-id="'+esc(v.id)+'" aria-label="사진 확대"><img src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"></button><figcaption class="caption">'+esc(m.caption||v.title)+' · '+link(m.source,m.credit||"원본")+(m.license?' · '+link(m.license,"이용 조건"):'')+'</figcaption></figure>'}
@@ -274,6 +282,24 @@ function detail(v){if(!v)return missing();
 function missing(){return '<h1>공략을 찾을 수 없습니다</h1><p class="lead">이전 판의 주소이거나 통합된 항목일 수 있습니다.</p><a class="btn" href="#/guides">공략 도감 열기</a>'}
 const inBounds=p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=-12288&&p.x<=6144&&p.y>=-10240&&p.y<=12288;
 const mapped=pins.filter(inBounds);
+const mappedIds=new Set(mapped.map(p=>cleanId(p.item)));
+const externalMapItems=readerItems.filter(v=>v.fieldReferences?.map&&!mappedIds.has(cleanId(v.id)));
+const mapCategories=[...new Set([...mapped,...externalMapItems].map(v=>v.category).filter(Boolean))];
+function externalMapList(category,region,style,activity,terms,open){
+ const matches=externalMapItems.filter(v=>{
+  if(category&&v.category!==category)return false;
+  if(region&&!norm(regionFilter(v.region)).includes(norm(region)))return false;
+  if(style&&vehicleStyles.get(cleanId(v.id))!==style)return false;
+  if(activity&&!cleanId(v.id).startsWith("p06-"+activity+"-"))return false;
+  const search=norm([v.title,v.region,...(v.aliases||[]),...(v.originalTerms||[])].join(" "));
+  return terms.every(term=>search.includes(term));
+ });
+ if(!matches.length)return "";
+ return '<details class="panel map-references"'+(open?' open':'')+'><summary>원본 지도에서 볼 수 있는 공략 '+matches.length.toLocaleString()+'개</summary><ul>'+matches.map(v=>
+  '<li><div>'+relatedLink(v)+(v.region?'<small>'+esc(v.region)+'</small>':'')+'</div><div class="map-reference-links">'+link(v.fieldReferences.map,"원본 지도")+link(v.fieldReferences.photo,"현장 사진")+'</div></li>'
+ ).join("")+'</ul></details>';
+}
+
 let zoom=1,selected="",mapLimit=60;
 const percent=p=>[(p.x+12288)/18432*100,(12288-p.y)/22528*100];
 function mapSearchText(pin){
@@ -291,6 +317,7 @@ function mapPage(p){
  const query=(p.get("q")||"").trim();
  const terms=query.split(/\s+/).filter(Boolean).map(norm);
  const list=mapped.filter(v=>(!region||v.region===region)&&(!category||v.category===category)&&(!activity||v.item.toLowerCase().startsWith("p06-"+activity+"-"))&&(!style||vehicleStyles.get(cleanId(v.item))===style)&&(!terms.length||terms.every(term=>mapSearchText(v).includes(term))));
+ const references=externalMapList(category,region,style,activity,terms,!list.length);
  const search='<form id="map-search" class="bar" role="search" aria-label="지도에서 검색"><label>장소·수집품 <input name="q" placeholder="예: Vicki, 코튼마우스" value="'+esc(query)+'"></label><button>찾기</button>'+(query?'<button type="button" data-action="clear-map-search">검색 지우기</button>':'')+'</form>';
  const wanted=p.get("pin");
  const current=list.find(v=>v.id===selected)||list.find(v=>v.id===wanted&&v.item===item)||list.find(v=>item&&v.item===item&&!variableBox(v))||list.find(v=>item&&v.item===item);
@@ -301,7 +328,7 @@ function mapPage(p){
    const v=vs[0],[x,y]=percent(v),many=vs.length>1;
    return '<button class="pin '+(v===current?"active ":"")+(many?"cluster":"")+'" style="left:'+x+'%;top:'+y+'%" '+(many?'data-cluster':'data-pin')+'="'+esc(v.id)+'" aria-label="'+esc(many?"위치 "+vs.length+"개 확대":pinTitle(v))+'">'+(many?vs.length:"")+'</button>';
  }).join("");
- return trail([["통합 지도"]])+'<div class="eyebrow">LEONIDA ATLAS</div><h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+[...new Set(mapped.map(v=>v.category))].filter(Boolean).map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style):"")+'<span class="count">'+list.length.toLocaleString()+'개 위치</span></div><div class="maplayout"><div><div class="mapview" tabindex="0" aria-label="리오나이다 지형도"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" alt="리오나이다의 도로·수로·해안 지형">'+pinsHTML+'</div></div><div class="bar"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><a class="textlink" href="#/credits">지도 출처</a></div></div><aside class="panel"><h2>이 지도에서 찾기</h2>'+(current?'<div class="selectedpin"><b>'+esc(pinTitle(current))+'</b><p>'+esc(current.region)+'</p><div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 위치가 없습니다.")+'</p>')+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'">'+esc(pinTitle(v))+'<small>'+esc(v.region)+'</small></button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
+ return trail([["통합 지도"]])+'<div class="eyebrow">LEONIDA ATLAS</div><h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+mapCategories.map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style):"")+'<span class="count">'+list.length.toLocaleString()+'개 핀</span></div>'+references+'<div class="maplayout"><div><div class="mapview" tabindex="0" aria-label="리오나이다 지형도"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" alt="리오나이다의 도로·수로·해안 지형">'+pinsHTML+'</div></div><div class="bar"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><a class="textlink" href="#/credits">지도 출처</a></div></div><aside class="panel"><h2>이 지도에서 찾기</h2>'+(current?'<div class="selectedpin"><b>'+esc(pinTitle(current))+'</b><p>'+esc(current.region)+'</p><div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 지도 핀이 없습니다.")+'</p>')+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'">'+esc(pinTitle(v))+'<small>'+esc(v.region)+'</small></button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
 }
 document.addEventListener("submit",event=>{
  if(event.target.id!=="map-search")return;
@@ -334,9 +361,9 @@ const dialog=document.querySelector("#lightbox");dialog.querySelector("button").
 main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)return;
  if(el.dataset.video){const frame=document.createElement("iframe");frame.title="공략 영상";frame.src="https://www.youtube-nocookie.com/embed/"+el.dataset.video+"?start="+Number(el.dataset.time)+"&autoplay=1";frame.allow="autoplay; encrypted-media; fullscreen";frame.allowFullscreen=true;frame.referrerPolicy="strict-origin-when-cross-origin";frame.className="video";el.replaceWith(frame);return}
  if(el.dataset.scroll!==undefined){e.preventDefault();document.getElementById("s"+el.dataset.scroll)?.scrollIntoView();return}
- if(el.dataset.flag){const key=cleanId(el.dataset.id),flag=el.dataset.flag;const current=state.items[key]??={};current[flag]=!current[flag];save();el.setAttribute("aria-pressed",String(current[flag]));el.textContent=(current[flag]?"✓ ":"")+({done:"완료",favorite:"즐겨찾기",later:"나중에"}[flag]);
+ if(el.dataset.flag){const key=cleanId(el.dataset.id),flag=el.dataset.flag;const current=state.items[key]??={};current[flag]=!current[flag];save();el.setAttribute("aria-pressed",String(current[flag]));el.textContent=(current[flag]?"✓ ":"")+(el.dataset.label||{done:"완료",favorite:"즐겨찾기",later:"나중에"}[flag]);
    const checklist=el.closest(".discovery-checklist");
-   if(checklist)checklist.querySelector("[data-count]").textContent=checklist.querySelectorAll('button[aria-pressed="true"]').length;
+   if(checklist)checklist.querySelector("[data-count]").textContent=checklist.querySelectorAll('button[data-flag="done"][aria-pressed="true"]').length;
    return}
  if(el.dataset.cluster){selected=el.dataset.cluster;zoom=Math.min(8,zoom*2);render();centerPin();return}
  if(el.dataset.pin){selected=el.dataset.pin;const listScroll=document.querySelector(".pinlist").scrollTop;render();document.querySelector(".pinlist").scrollTop=listScroll;centerPin();return}

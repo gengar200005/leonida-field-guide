@@ -2,8 +2,8 @@
   "scope": "Page-to-guide navigation and editorial provenance. Name and index matches identify candidate destinations. No match establishes visual or semantic sign-off. Separate visual checks are required.",
   "counts": {
     "cover-index-or-editorial": 24,
-    "edited": 454,
-    "linked": 89
+    "edited": 472,
+    "linked": 71
   },
   "pages": [
     {
@@ -8903,7 +8903,11 @@
     {
       "book": "P10",
       "page": 1,
-      "routes": {},
+      "routes": {
+        "재편집 본문": [
+          "p10-story-tools"
+        ]
+      },
       "status": "cover-index-or-editorial"
     },
     {
@@ -8918,9 +8922,20 @@
           "p10-m07",
           "p10-s01",
           "p10-s03"
+        ],
+        "재편집 본문": [
+          "p10-story-tools",
+          "p10-s01",
+          "p10-s03",
+          "p10-a01",
+          "p10-a05",
+          "p10-m07",
+          "p10-official-updates",
+          "p10-report-index",
+          "p10-report-sources"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -8941,9 +8956,27 @@
           "p10-s01",
           "p10-s02",
           "p10-s03"
+        ],
+        "재편집 본문": [
+          "p10-story-tools",
+          "p10-s02",
+          "p10-a01",
+          "p10-a04",
+          "p10-m08",
+          "p10-s03",
+          "p10-a05",
+          "p10-m07",
+          "p10-m12",
+          "v-14",
+          "p10-a07",
+          "p10-a10",
+          "p10-a11",
+          "p10-s01",
+          "p10-e02",
+          "p10-e01"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -8964,9 +8997,27 @@
           "p10-m07",
           "p10-m08",
           "p10-m12"
+        ],
+        "재편집 본문": [
+          "p10-story-tools",
+          "p10-a04",
+          "p10-m08",
+          "p10-a09",
+          "p10-a05",
+          "p10-m07",
+          "p04-03",
+          "p04-01",
+          "p10-a01",
+          "p10-a06",
+          "p10-a07",
+          "l26",
+          "p09-area-grassrivers",
+          "p01-region-coast",
+          "p10-m12",
+          "p10-e02"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9207,9 +9258,14 @@
         "항목 번호": [
           "p10-m01",
           "p10-m02"
+        ],
+        "재편집 본문": [
+          "p10-m01",
+          "p10-m02",
+          "p10-official-updates"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9227,9 +9283,13 @@
           "p10-g02",
           "p10-m03",
           "p10-m04"
+        ],
+        "재편집 본문": [
+          "p10-m03",
+          "p10-m04"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9246,9 +9306,13 @@
         "항목 번호": [
           "p10-m06",
           "p10-m07"
+        ],
+        "재편집 본문": [
+          "p10-m06",
+          "p10-m07"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9291,9 +9355,13 @@
           "p10-m10",
           "p10-m12",
           "p10-s03"
+        ],
+        "재편집 본문": [
+          "p10-m10",
+          "p10-m12"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9310,9 +9378,13 @@
         "항목 번호": [
           "p10-g01",
           "p10-g02"
+        ],
+        "재편집 본문": [
+          "p10-g01",
+          "p10-g02"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9329,9 +9401,13 @@
         "항목 번호": [
           "p10-g03",
           "p10-g04"
+        ],
+        "재편집 본문": [
+          "p10-g03",
+          "p10-g04"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9348,9 +9424,13 @@
         "항목 번호": [
           "p10-g05",
           "p10-g06"
+        ],
+        "재편집 본문": [
+          "p10-g05",
+          "p10-g06"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9366,9 +9446,12 @@
           "p10-g01",
           "p10-g07",
           "p10-m12"
+        ],
+        "재편집 본문": [
+          "p10-g07"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9385,9 +9468,13 @@
         "항목 번호": [
           "p10-e01",
           "p10-e02"
+        ],
+        "재편집 본문": [
+          "p10-e02",
+          "p10-e01"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9434,9 +9521,31 @@
           "p10-s03",
           "p10-s04",
           "p10-s05"
+        ],
+        "재편집 본문": [
+          "p10-story-tools",
+          "p10-s01",
+          "p10-s02",
+          "p10-s03",
+          "p10-s04",
+          "p10-s05",
+          "p10-a01",
+          "p10-a02",
+          "p10-a03",
+          "p10-a04",
+          "p10-a05",
+          "p10-a06",
+          "p10-a07",
+          "p10-a08",
+          "p10-a09",
+          "p10-m01",
+          "p10-m02",
+          "p10-m03",
+          "p10-m04",
+          "p10-m05"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9480,9 +9589,30 @@
           "p10-m10",
           "p10-m11",
           "p10-m12"
+        ],
+        "재편집 본문": [
+          "p10-story-tools",
+          "p10-m06",
+          "p10-m07",
+          "p10-m08",
+          "p10-m09",
+          "p10-m10",
+          "p10-m11",
+          "p10-m12",
+          "p10-e01",
+          "p10-a10",
+          "p10-a11",
+          "p10-e02",
+          "p10-g01",
+          "p10-g02",
+          "p10-g03",
+          "p10-g04",
+          "p10-g05",
+          "p10-g06",
+          "p10-g07"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9498,9 +9628,18 @@
           "p10-g04",
           "p10-g06",
           "p10-m02"
+        ],
+        "재편집 본문": [
+          "p10-report-index",
+          "p10-g04",
+          "p10-g02",
+          "p10-g06",
+          "p10-reward-preservation",
+          "v-01",
+          "v-02"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9511,9 +9650,19 @@
           "p10-g02",
           "p10-g04",
           "p10-s02"
+        ],
+        "재편집 본문": [
+          "p10-report-index",
+          "p10-g03",
+          "p10-g01",
+          "p07-f02",
+          "p10-s02",
+          "p10-s05",
+          "p10-e02",
+          "p10-official-updates"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9527,9 +9676,20 @@
           "p10-g03",
           "p10-g04",
           "p10-m03"
+        ],
+        "재편집 본문": [
+          "p10-report-index",
+          "p10-g01",
+          "p10-g02",
+          "p10-g03",
+          "p10-g04",
+          "p10-m03",
+          "p10-a01",
+          "p10-e01",
+          "p10-official-updates"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
@@ -9564,9 +9724,23 @@
           "p10-g05",
           "p10-g06",
           "p10-g07"
+        ],
+        "재편집 본문": [
+          "p10-report-sources",
+          "p10-g01",
+          "p10-g02",
+          "p10-g03",
+          "p10-g04",
+          "p10-g05",
+          "p10-g06",
+          "p10-g07",
+          "p10-a07",
+          "p07-f02",
+          "p07-s02",
+          "v-14"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",
