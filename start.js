@@ -8,6 +8,28 @@
  main.addEventListener("error",event=>{
   if(event.target.matches?.("img.home-art"))event.target.hidden=true;
  },true);
+ // A fresh tab starts its own guide history, including when opened on a shared link.
+ function markVisit(canGoBack){
+  if(!history.state?.guideVisit){
+   history.replaceState({...history.state,guideVisit:{canGoBack}},"");
+  }
+ }
+ markVisit(false);
+ history.scrollRestoration="manual";
+ window.addEventListener("hashchange",()=>markVisit(true));
+ function rememberScroll(){
+  const visit=history.state?.guideVisit;
+  if(visit&&(visit.scrollY||0)!==window.scrollY){
+   history.replaceState({...history.state,guideVisit:{...visit,scrollY:window.scrollY}},"");
+  }
+ }
+ document.addEventListener("click",event=>{
+  if(event.target.closest("a,button"))rememberScroll();
+ },true);
+ document.addEventListener("submit",rememberScroll,true);
+ document.addEventListener("change",rememberScroll,true);
+ document.addEventListener("scrollend",rememberScroll);
+ window.addEventListener("pagehide",rememberScroll);
  let started=false;
  function submit(event){
   event.preventDefault();

@@ -38,9 +38,20 @@ def run(context, base, mobile):
     page.locator('.selectedpin .links a[href="#/entry/v-56"]').click()
     expect(page.locator("h1")).to_contain_text("치타")
 
+    page.get_by_role("button", name="뒤로", exact=True).click()
+    expect(page.locator(".selectedpin")).to_contain_text("치타")
+    page.go_forward()
+    expect(page.locator("article h1")).to_contain_text("치타")
+
     page.locator("#searchbox").fill("Assassin Nipper")
     page.locator("#searchbox").press("Enter")
     page.locator('main a[href="#/entry/p02-w-001"]').first.click()
+    expect(page.locator("article.article")).to_contain_text("난파선")
+    page.reload(wait_until="domcontentloaded")
+    page.get_by_role("button", name="뒤로", exact=True).click()
+    expect(page.locator("main h1")).to_have_text("검색 결과")
+    expect(page.locator("#searchbox")).to_have_value("Assassin Nipper")
+    page.go_forward()
     expect(page.locator("article.article")).to_contain_text("난파선")
     visit("/entry/l03")
     answer = page.locator("details.panel").filter(has=page.locator("summary", has_text="상호작용")).first
@@ -119,6 +130,24 @@ def run(context, base, mobile):
     expect(page.locator(".mapcontrols span")).not_to_have_text("150%")
     page.locator('[data-map-action="fullscreen"]').click()
     assert page.evaluate("document.documentElement.scrollWidth <= innerWidth + 1")
+    shared = context.new_page()
+    shared.goto(base + "#/entry/p09-m-004", wait_until="domcontentloaded")
+    shared.get_by_role("button", name="도감으로", exact=True).click()
+    expect(shared.locator("main h1")).to_be_visible()
+    assert shared.url.endswith("#/guide/p09")
+    shared.locator('[data-action="more"]').click()
+    card = shared.locator(".cards .card").nth(42).locator('a[href^="#/entry/"]').first
+    card.evaluate("el=>el.scrollIntoView({block:'center'})")
+    before = shared.evaluate("scrollY")
+    card.click()
+    back = shared.get_by_role("button", name="뒤로", exact=True)
+    expect(shared.locator("article h1")).to_be_visible()
+    shared.evaluate("window.scrollTo(0,900)")
+    expect(back).to_be_in_viewport()
+    back.click()
+    expect(card).to_be_visible()
+    assert abs(shared.evaluate("scrollY") - before) < 12
+    shared.close()
     assert not errors, errors
     print("PASS", "mobile touch viewport" if mobile else "desktop", flush=True)
 

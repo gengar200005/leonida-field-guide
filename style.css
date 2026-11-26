@@ -202,5 +202,12 @@ main{min-height:70vh;padding-top:28px;padding-bottom:64px}main:focus{outline:non
 .card .catalog-appearance:has(.catalog-original:not([data-action])){aspect-ratio:auto;background:transparent;border-bottom:1px solid var(--line)}
 .card .catalog-appearance .catalog-original:not([data-action]){justify-content:start;padding:8px var(--card-padding);min-height:44px;text-align:left}
 @media(min-width:701px){
- .rail{max-height:calc(100svh - 32px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
+ .rail{top:56px;max-height:calc(100svh - 72px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin}
 }
+
+.trail{position:sticky;top:0;z-index:4;display:flex;align-items:center;gap:14px;padding:2px 0;background:var(--paper)}
+.guide-back{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:4px 12px;color:var(--pine);font-size:14px;font-weight:700}
+.trail .guide-back span{padding:0;font-size:18px;line-height:1}
+.guide-back:hover{border-color:var(--sea)}
+html{scroll-padding-top:54px}
+@media(max-width:630px){.trail{gap:10px;margin-bottom:12px}.trail>div{font-size:12px}}

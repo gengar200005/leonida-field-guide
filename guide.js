@@ -116,7 +116,15 @@ function setParam(k,v){
  if(page==="search"&&k==="cat")params.delete("region");
  location.hash=location.hash.split("?")[0]+(params.size?"?"+params:"");
 }
-function trail(parts){return '<div class="trail"><a href="#/">홈</a>'+parts.map(([name,href])=>'<span>/</span>'+(href?'<a href="'+href+'">'+esc(name)+'</a>':esc(name))).join("")+'</div>'}
+function trail(parts){
+ const current=route();
+ const guide=current.page==="entry"&&findItem(current.id);
+ const fallback=guide?group(guide.category):current.page==="guide"?"#/guides":"#/";
+ const label=history.state?.guideVisit?.canGoBack?"뒤로":fallback==="#/"?"홈으로":"도감으로";
+ const back='<button class="guide-back" type="button" data-back="'+fallback+'"><span aria-hidden="true">←</span> '+label+'</button>';
+ const crumbs='<a href="#/">홈</a>'+parts.map(([name,href])=>'<span>/</span>'+(href?'<a href="'+href+'">'+esc(name)+'</a>':esc(name))).join("");
+ return '<div class="trail">'+back+(parts.length?'<div>'+crumbs+'</div>':"")+'</div>';
+}
 function categoryButton(c,full=false){const [name,code,description]=categories[c];return '<a href="'+group(c)+'"><span class="glyph" aria-hidden="true">'+code+'</span><span>'+name+(full?'<small>'+description+'</small>':'')+'</span></a>'}
 function catalogEntry(v){
  return v.category==="V"?/^v-\d+$/.test(v.id):v.category==="P02"&&/^p02-(?:[we]-|x)\d+$/.test(v.id);
@@ -217,7 +225,7 @@ function card(v){
 }
 function cards(vs){return vs.length?'<div class="cards'+(vs.every(catalogEntry)?' catalog-grid':'')+'">'+vs.map(card).join("")+'</div>':'<p class="empty">조건에 맞는 공략이 없습니다.</p>'}
 function chapterSelect(selected){return '<label>챕터 <select data-change="chapter">'+opt("","전체 챕터",selected)+chapters.map((c,i)=>opt(i,c,selected)).join("")+'</select></label>'}
-function home(){return window.guideHomeMarkup}
+function home(){return (history.state?.guideVisit?.canGoBack?trail([]):"")+window.guideHomeMarkup}
 function guides(){
  const index=findItem("p01-guide-index");
  const browse=index?'<div class="guide-shortcut">'+relatedLink(index)+'</div>':"";
@@ -520,7 +528,7 @@ function detail(v){
  const relatedPanel=related.length?'<div class="panel"><h2>연관 공략</h2>'+related.slice(0,8).map(relatedLink).join("")+(related.length>8?'<details><summary>전체 '+related.length+'개 보기</summary>'+related.slice(8).map(relatedLink).join("")+'</details>':'')+'</div>':"";
  return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article">'+intro+mobileOutline+(catalogEntry(v)?catDetailFacts(v):"")+entryMap(v)+sections.map(section).join("")+fieldGallery(v)+fieldReferences(v)+videoSection(links)+campaignNav+sources+'</article><aside class="rail">'+desktopOutline+relatedPanel+'</aside></div>';
 }
-function missing(){return '<h1>공략을 찾을 수 없습니다</h1><p class="lead">이전 판의 주소이거나 통합된 항목일 수 있습니다.</p><a class="btn" href="#/guides">공략 도감 열기</a>'}
+function missing(){return trail([["찾을 수 없는 공략"]])+'<h1>공략을 찾을 수 없습니다</h1><p class="lead">이전 판의 주소이거나 통합된 항목일 수 있습니다.</p><a class="btn" href="#/guides">공략 도감 열기</a>'}
 const inBounds=p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=-12288&&p.x<=6144&&p.y>=-10240&&p.y<=12288;
 const mapped=pins.filter(inBounds);
 const mapRegion=value=>{
@@ -1130,9 +1138,11 @@ function render(reset=false){
 function routeChanged(){
  const r=route();
  rememberMap();
- limit=36;
- if(r.page==="map"){openMapRoute(r);return}
- previousMapHash="";setMapFullscreen(false);render(true);
+ const visit=history.state?.guideVisit;
+ limit=visit?.limit||36;
+ if(r.page==="map")openMapRoute(r);
+ else {previousMapHash="";setMapFullscreen(false);render(true)}
+ if(visit?.scrollY)window.scrollTo(0,visit.scrollY);
 }
 window.addEventListener("hashchange",routeChanged);
 document.querySelector(".skip").onclick=e=>{e.preventDefault();main.focus()};
@@ -1220,6 +1230,14 @@ dialog.addEventListener("error",e=>{
  e.target.replaceWith(note);
 },true);
 main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)return;
+ if(el.dataset.back){
+  if(history.state?.guideVisit?.canGoBack)history.back();
+  else{
+   history.replaceState({...history.state,guideVisit:{canGoBack:false}},"",el.dataset.back);
+   routeChanged();
+  }
+  return;
+ }
  if(el.dataset.video){const frame=document.createElement("iframe");frame.title="공략 영상";frame.src="https://www.youtube-nocookie.com/embed/"+el.dataset.video+"?start="+Number(el.dataset.time)+"&autoplay=1";frame.allow="autoplay; encrypted-media; fullscreen";frame.allowFullscreen=true;frame.referrerPolicy="strict-origin-when-cross-origin";frame.className="video";el.replaceWith(frame);return}
  if(el.dataset.scroll!==undefined){
   e.preventDefault();
@@ -1251,7 +1269,11 @@ main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)r
  }
  const action=el.dataset.action;
  if(action==="clear-map-search"){setParam("q","");return}
- if(action==="more"){limit+=36;render()}else if(action==="mapmore"){mapLimit+=60;refreshMap()}else if(action==="zoomin"||action==="zoomout"){
+ if(action==="more"){
+  limit+=36;
+  history.replaceState({...history.state,guideVisit:{...history.state?.guideVisit,limit}},"");
+  render();
+ }else if(action==="mapmore"){mapLimit+=60;refreshMap()}else if(action==="zoomin"||action==="zoomout"){
   const keepFocus=document.activeElement===el;
   const view=main.querySelector(".mapview");
   const next=Math.min(8,Math.max(1,zoom*(action==="zoomin"?1.5:1/1.5)));
