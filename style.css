@@ -93,3 +93,11 @@ main{min-height:70vh;padding-top:28px;padding-bottom:64px}main:focus{outline:non
 .map-tiles img{position:absolute;display:block}
 .map-region-tooltip{position:absolute;z-index:3;pointer-events:none;max-width:calc(100% - 16px);padding:4px 10px;background:#142a26;color:white;border:1px solid #dce5db;border-radius:5px;font-size:14px;font-weight:700;box-shadow:0 1px 4px #12291f80}
 .map-help{margin:8px 0 12px;color:var(--muted);font-size:13px}
+
+.map-region-shade{position:absolute;transform:translate(-50%,-50%);pointer-events:none}
+.map-region-tooltip{white-space:pre-line;max-width:min(28rem,calc(100% - 16px));line-height:1.45;overflow-wrap:anywhere}
+.pinlist button[data-pin]{padding:10px 12px;line-height:1.45}
+.pinlist button[aria-current="location"]{background:#e8f0e9;box-shadow:inset 3px 0 var(--sea)}
+.pinlist strong,.selectedpin strong{display:block;overflow-wrap:anywhere}
+.pinlist small,.selectedpin small{display:block;color:var(--sea);font-size:.85rem;margin-top:2px}
+.pin-hint{display:block;margin-top:4px;color:var(--muted);font-size:.89rem;line-height:1.5;overflow-wrap:anywhere}

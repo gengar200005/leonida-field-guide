@@ -98,6 +98,24 @@ def localize(data, sources):
     data["nameSources"] = [{"label": s["label"], "url": s["source"]} for s in sources]
 
 
+def prepare_map_titles(data):
+    # These map-specific editorial readings can differ from an official Korean name.
+    labels = {}
+    for path in sorted(ROOT.glob("map-names-*.json")):
+        batch = read(path.name)
+        if labels.keys() & batch.keys():
+            raise ValueError(f"Duplicate map title in {path.name}")
+        labels.update(batch)
+    item_titles = {item["id"].lower(): item["title"] for item in data["items"]}
+    pin_ids = {pin["id"] for pin in data["pins"]}
+    if labels.keys() - pin_ids:
+        raise ValueError("Map title has no matching pin")
+    for pin in data["pins"]:
+        # Each P04/P07/P09 pin describes the same place or event as its guide.
+        fallback = item_titles[pin["item"].lower()] if pin["category"] in {"P04", "P07", "P09"} else pin["name"]
+        pin["mapTitle"] = labels.get(pin["id"], fallback)
+
+
 def build():
     SITE.mkdir(exist_ok=True)
     data = {
@@ -105,9 +123,11 @@ def build():
         "media": read("photos.json"),
         "pins": read("atlas.json"),
         "mapRegions": read("map-regions.json"),
+        "mapReferenceNames": read("map-reference-names.json"),
         "redirects": read("redirects.json")
     }
     localize(data, read("official-names.json"))
+    prepare_map_titles(data)
     ids = {row["id"].lower() for row in data["items"]}
     assert len(ids) == len(data["items"])
     assert all(pin["item"].lower() in ids for pin in data["pins"])

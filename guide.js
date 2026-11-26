@@ -49,6 +49,7 @@ for(const pin of pins){
 }
 const variableBox=p=>p?.category==="P06"&&p.url.includes("feature=yellow-loot-box");
 function pinTitle(p){
+ if(p.mapTitle)return p.mapTitle;
  const guide=findItem(p.item);
  if(variableBox(p))return "가변 상자 · "+(guide?.title||p.name);
  if(guide&&p.id.includes("/standout-vehicle-")&&(guide.englishName||/[가-힣]/.test(guide.title)))return guide.title;
@@ -240,7 +241,7 @@ function listPage(page,id,p){
 }
 const searchCache=new Map();
 function searchItems(q){const terms=q.split(/\s+/).map(norm).filter(Boolean);if(!terms.length)return [];
- const hits=[];for(const v of readerItems){if(!searchCache.has(v.id))searchCache.set(v.id,[norm([v.title,...(v.aliases||[])].join("|")),norm([v.region,v.summary,catName(v.category),...(v.originalTerms||[]),...v.sections.filter(s=>!s.reveal).flatMap(s=>[s.title,...(s.paragraphs||[]),...(s.steps||[]),...(s.table?.rows||[]).flat()])].join("|"))]);
+ const hits=[];for(const v of readerItems){if(!searchCache.has(v.id))searchCache.set(v.id,[norm([v.title,...(v.aliases||[]),...pinLinks(v).map(pinTitle)].join("|")),norm([v.region,v.summary,catName(v.category),...(v.originalTerms||[]),...v.sections.filter(s=>!s.reveal).flatMap(s=>[s.title,...(s.paragraphs||[]),...(s.steps||[]),...(s.table?.rows||[]).flat()])].join("|"))]);
  const [title,body]=searchCache.get(v.id);if(terms.every(t=>title.includes(t)||body.includes(t)))hits.push([v,terms.filter(t=>title.includes(t)).length+(norm(v.title)===norm(q)?5:0)])}
  return hits.sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
 }
@@ -375,18 +376,19 @@ const mapRegion=value=>{
 const mappedIds=new Set(mapped.map(p=>cleanId(p.item)));
 const externalMapItems=readerItems.filter(v=>v.fieldReferences?.map&&!mappedIds.has(cleanId(v.id)));
 const mapCategories=[...new Set([...mapped,...externalMapItems].map(v=>v.category).filter(Boolean))];
+const referenceName=v=>window.FIELD_GUIDE.mapReferenceNames?.[v.id]||v.title;
 function externalMapList(category,region,style,activity,terms,open){
  const matches=externalMapItems.filter(v=>{
   if(category&&v.category!==category)return false;
   if(region&&!norm(mapRegion(v.region)).includes(norm(region)))return false;
   if(style&&vehicleStyles.get(cleanId(v.id))!==style)return false;
   if(activity&&!cleanId(v.id).startsWith("p06-"+activity+"-"))return false;
-  const search=norm([v.title,v.region,...(v.aliases||[]),...(v.originalTerms||[])].join(" "));
+  const search=norm([referenceName(v),v.title,mapRegion(v.region),v.region,catName(v.category),...(v.aliases||[]),...(v.originalTerms||[])].join(" "));
   return terms.every(term=>search.includes(term));
  });
  if(!matches.length)return "";
  return '<details class="panel map-references"'+(open?' open':'')+'><summary>원본 지도에서 볼 수 있는 공략 '+matches.length.toLocaleString()+'개</summary><ul>'+matches.map(v=>
-  '<li><div>'+relatedLink(v)+(v.region?'<small>'+esc(mapRegion(v.region))+'</small>':'')+'</div><div class="map-reference-links">'+link(v.fieldReferences.map,"원본 지도")+link(v.fieldReferences.photo,"현장 사진")+'</div></li>'
+  '<li><div><a href="'+entry(v.id)+'">'+esc(referenceName(v))+'</a><small>'+esc([catName(v.category),mapRegion(v.region)].filter(Boolean).join(" · "))+'</small></div><div class="map-reference-links">'+link(v.fieldReferences.map,"원본 지도")+link(v.fieldReferences.photo,"현장 사진")+'</div></li>'
  ).join("")+'</ul></details>';
 }
 
@@ -394,9 +396,52 @@ let zoom=1,selected="",mapLimit=60;
 const percent=p=>[(p.x+12288)/18432*100,(12288-p.y)/22528*100];
 function mapSearchText(pin){
  const guide=findItem(pin.item);
- return norm([pinTitle(pin),pin.name,pin.originalName,mapRegion(pin.region),pin.region,pin.originalRegion,guide?.title,...(guide?.aliases||[])].filter(Boolean).join(" "));
+ return norm([pinTitle(pin),pinFacts(pin).kind,pin.name,pin.originalName,mapRegion(pin.region),pin.region,pin.originalRegion,guide?.title,...(guide?.aliases||[])].filter(Boolean).join(" "));
 }
-const activityTypes={ho:"농구 골대",dr:"드론 레이스",bs:"책 교환",rd:"읽을거리",fl:"플라밍고",md:"명상",c:"카드",sj:"스턴트 점프",br:"교량 아래 비행",kf:"나이프 플라이트",bj:"BASE 점프"};
+const activityTypes={ho:"농구 골대",dr:"드론 레이스",bs:"책 교환",rd:"읽을거리",fl:"플라밍고",md:"명상",c:"카드",sj:"스턴트 점프",br:"교량 아래 비행",kf:"나이프 플라이트",bj:"베이스 점프"};
+const collectKinds={...activityTypes,c:"수집 카드",wl:"랜드마크 스캔",wc:"진귀한 사물 스캔",ws:"조형물 스캔",mu:"벽화",ah03:"거리 미술",pl:"플레이리스트 포스터",st3:"수집 시계"};
+const economyKinds={fx:"장물 매입처",go:"갱단 거점",gr:"차량 차고",gx:"갱단 거점",pn:"차량 수리·도색",rr:"레이스 코스",sa:"금고 후보",ta:"견인형 현금인출기",vr:"차량 인도 의뢰"};
+const factCache=new Map();
+function pinFacts(pin){
+ if(factCache.has(pin.id))return factCache.get(pin.id);
+ const guide=findItem(pin.item);
+ const fields=new Map((guide?.sections||[]).filter(s=>!s.reveal).flatMap(s=>s.table?.rows||[]).filter(r=>r.length===2));
+ const part=cleanId(pin.item).split("-")[1]||"";
+ const kindByGroup={
+  V:fields.get("종류")||"고유 차량",
+  P02:fields.get("종류")||fields.get("위치와 획득 조건")?.split("·")[0].trim()||fields.get("장비"),
+  P03:economyKinds[part.replace(/\d+$/,"")]||fields.get("분류"),
+  P06:collectKinds[part],
+  P07:part.startsWith("h")?"은신처":"차량 차고",
+  P08:part==="gym"?"체육관":"사격장",
+  P09:"랜덤 이벤트"
+ };
+ const kind=kindByGroup[pin.category]||catName(pin.category);
+ const region=mapRegion(pin.region);
+ let hint="";
+ if(variableBox(pin))hint="상자 내용물이 달라질 수 있습니다.";
+ else if(pin.category==="P06")hint=fields.get("위치 힌트")||fields.get("성공에 필요한 확인")||"";
+ else if(pin.category==="P09")hint=fields.get("유형")==="기타 조우"?"":fields.get("유형");
+ // A shared guide can cover several sites. Only use its published summary for single-site guides.
+ if(!hint&&guide&&pinLinks(guide).length===1){
+  const sentence=(guide.summary||"").split(/(?<=[다요])\.\s+/)[0];
+  const parts=sentence.split(/\s+·\s+/).map(t=>mapRegion(t.trim())).filter(t=>t&&t!==region&&t!==kind&&/[가-힣]/.test(t)&&!/[a-z]{2,}/i.test(t));
+  hint=parts.join(" · ");
+  if(hint&&/[다요]$/.test(hint))hint+=".";
+ }
+ if(hint===region||hint===kind)hint="";
+ const facts={kind,region,hint:hint||""};
+ factCache.set(pin.id,facts);
+ return facts;
+}
+function pinPreviewText(pin){
+ const {kind,region,hint}=pinFacts(pin);
+ return [pinTitle(pin),[kind,region].filter(Boolean).join(" · "),hint].filter(Boolean).join("\n");
+}
+function pinContents(pin){
+ const {kind,region,hint}=pinFacts(pin);
+ return '<strong>'+esc(pinTitle(pin))+'</strong><small>'+esc([kind,region].filter(Boolean).join(" · "))+'</small>'+(hint?'<span class="pin-hint">'+esc(hint)+'</span>':"");
+}
 function activityPicker(selected){
  return '<label>수집 활동 <select data-change="activity">'+opt("","전체 활동",selected)+Object.entries(activityTypes).map(([key,label])=>opt(key,label,selected)).join("")+'</select></label>';
 }
@@ -417,13 +462,14 @@ function mapPage(p){
  for(const v of list){const [x,y]=percent(v);const key=v===current||!cell?v.id:Math.floor(x/cell)+":"+Math.floor(y/cell);if(!buckets.has(key))buckets.set(key,[]);buckets.get(key).push(v)}
  const pinsHTML=[...buckets.values()].map(vs=>{
    const v=vs[0],[x,y]=percent(v),many=vs.length>1;
-   return '<button class="pin '+(v===current?"active ":"")+(many?"cluster":"")+'" style="left:'+x+'%;top:'+y+'%" '+(many?'data-cluster':'data-pin')+'="'+esc(v.id)+'" aria-label="'+esc(many?"위치 "+vs.length+"개 확대":pinTitle(v))+'">'+(many?vs.length:"")+'</button>';
+   const label=many?["위치 "+vs.length+"개",...vs.slice(0,3).map(pinTitle),vs.length>3?"외 "+(vs.length-3)+"개":""].filter(Boolean).join("\n"):pinPreviewText(v);
+   return '<button class="pin '+(v===current?"active ":"")+(many?"cluster":"")+'" style="left:'+x+'%;top:'+y+'%" '+(many?'data-cluster':'data-pin')+'="'+esc(v.id)+'" aria-label="'+esc(many?label+"\n확대해서 보기":label)+'">'+(many?vs.length:"")+'</button>';
  }).join("");
  const controls='<div class="bar mapcontrols"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><a class="textlink" href="#/credits">지도 출처</a></div>';
  const viewport='<div class="map-window"><div class="mapview" tabindex="0" aria-label="리오나이다 지형도" aria-describedby="map-help"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" draggable="false" alt="리오나이다의 도로·수로·해안 지형"><div class="map-tiles" aria-hidden="true"></div>'+pinsHTML+'</div></div><div class="map-region-tooltip" hidden></div></div>';
- const help='<p id="map-help" class="map-help">끌어서 이동하세요. 확대하면 가리키거나 터치한 곳 주변의 구역명이 표시됩니다.</p>';
- const selectedPlace=current?'<div class="selectedpin"><b>'+esc(pinTitle(current))+'</b><p>'+esc(mapRegion(current.region))+'</p><div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 지도 핀이 없습니다.")+'</p>';
- return trail([["통합 지도"]])+'<h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+mapCategories.map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style,true):"")+'<span class="count">'+list.length.toLocaleString()+'개 핀</span></div>'+references+'<div class="maplayout"><div>'+controls+viewport+help+'</div><aside class="panel"><h2>이 지도에서 찾기</h2>'+selectedPlace+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'">'+esc(pinTitle(v))+'<small>'+esc(mapRegion(v.region))+'</small></button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
+ const help='<p id="map-help" class="map-help">끌어서 이동하세요. 구역을 가리키거나 터치하면 이름과 대략적인 범위를 볼 수 있습니다.</p>';
+ const selectedPlace=current?'<div class="selectedpin">'+pinContents(current)+'<div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 지도 핀이 없습니다.")+'</p>';
+ return trail([["통합 지도"]])+'<h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+mapCategories.map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style,true):"")+'<span class="count">'+list.length.toLocaleString()+'개 핀</span></div>'+references+'<div class="maplayout"><div>'+controls+viewport+help+'</div><aside class="panel"><h2>이 지도에서 찾기</h2>'+selectedPlace+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'"'+(v===current?' aria-current="location"':'')+'>'+pinContents(v)+'</button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
 }
 function mapRegionNear(x,y){
  let closest=null,distance=1;
@@ -431,12 +477,51 @@ function mapRegionNear(x,y){
   const relative=Math.hypot(x-region.x,y-region.y)/region.radius;
   if(relative<distance){closest=region;distance=relative}
  }
- return closest?.name;
+ return closest;
+}
+// Fade the reference area at its outer edge and where another label becomes closer.
+function shadeMapRegion(mask,region){
+ const size=128;
+ mask.width=mask.height=size;
+ const context=mask.getContext("2d"),image=context.createImageData(size,size);
+ const nearby=mapRegions.labels.filter(other=>other!==region&&Math.hypot(region.x-other.x,region.y-other.y)<region.radius+other.radius);
+ for(let row=0;row<size;row++){
+  const dy=1-(row+.5)*2/size;
+  for(let column=0;column<size;column++){
+   const dx=(column+.5)*2/size-1;
+   const distance=Math.hypot(dx,dy);
+   if(distance>=1)continue;
+   const x=region.x+dx*region.radius,y=region.y+dy*region.radius;
+   let edge=1-distance;
+   for(const other of nearby){
+    edge=Math.min(edge,Math.hypot(x-other.x,y-other.y)/other.radius-distance);
+   }
+   if(edge<=0)continue;
+   const offset=(row*size+column)*4;
+   image.data[offset]=27;
+   image.data[offset+1]=28;
+   image.data[offset+2]=65;
+   image.data[offset+3]=64*Math.min(1,edge*5);
+  }
+ }
+ context.putImageData(image,0,0);
+ const [left,top]=percent(region);
+ mask.style.left=left+"%";
+ mask.style.top=top+"%";
+ mask.style.width=region.radius*2/18432*100+"%";
+ mask.style.height=region.radius*2/22528*100+"%";
 }
 function setupMap(view){
  const canvas=view.querySelector(".mapcanvas");
  const layer=view.querySelector(".map-tiles");
  const tooltip=view.parentElement.querySelector(".map-region-tooltip");
+ const mask=document.createElement("canvas");
+ mask.className="map-region-shade";
+ mask.setAttribute("aria-hidden","true");
+ mask.hidden=true;
+ layer.after(mask);
+ const pinPreviews=new WeakMap();
+ let shadedRegion=null;
  const highResolution={width:4608,height:5632,tile:1024};
  const loaded=new Set();
  let scheduled=false,drag=null,blockPinClick=false;
@@ -468,22 +553,53 @@ function setupMap(view){
    }
   });
  }
- function showRegion(event){
-  if(zoom<=1){tooltip.hidden=true;return}
+ function hidePreview(){
+  mask.hidden=true;
+  tooltip.hidden=true;
+ }
+ function showPreview(clientX,clientY,button){
   const bounds=canvas.getBoundingClientRect();
-  const x=(event.clientX-bounds.left)/bounds.width*18432-12288;
-  const y=12288-(event.clientY-bounds.top)/bounds.height*22528;
-  const name=mapRegionNear(x,y);
-  if(!name){tooltip.hidden=true;return}
-  if(tooltip.textContent!==name)tooltip.textContent=name;
+  const x=(clientX-bounds.left)/bounds.width*18432-12288;
+  const y=12288-(clientY-bounds.top)/bounds.height*22528;
+  const region=mapRegionNear(x,y);
+  mask.hidden=!region;
+  if(region&&region!==shadedRegion){
+   shadeMapRegion(mask,region);
+   shadedRegion=region;
+  }
+  let label=region?.name;
+  if(button){
+   if(!pinPreviews.has(button)){
+    const pin=pinById.get(button.dataset.pin);
+    pinPreviews.set(button,pin?pinPreviewText(pin):button.getAttribute("aria-label"));
+   }
+   label=pinPreviews.get(button);
+  }
+  if(!label){hidePreview();return}
+  if(tooltip.textContent!==label)tooltip.textContent=label;
   tooltip.hidden=false;
   const frame=view.parentElement.getBoundingClientRect();
-  const left=Math.min(event.clientX-frame.left+14,frame.width-tooltip.offsetWidth-8);
-  const top=Math.min(event.clientY-frame.top+14,frame.height-tooltip.offsetHeight-8);
+  const left=Math.min(clientX-frame.left+14,frame.width-tooltip.offsetWidth-8);
+  const top=Math.min(clientY-frame.top+14,frame.height-tooltip.offsetHeight-8);
   tooltip.style.left=Math.max(8,left)+"px";
   tooltip.style.top=Math.max(8,top)+"px";
  }
- view.addEventListener("scroll",loadVisibleTiles,{passive:true});
+ function showRegion(event){
+  showPreview(event.clientX,event.clientY,event.target.closest(".pin"));
+ }
+ function previewButton(event){
+  const button=event.target.closest(".pin");
+  if(!button||(event.type==="focusin"&&!button.matches(":focus-visible")))return;
+  const rect=button.getBoundingClientRect();
+  showPreview(rect.left+rect.width/2,rect.top+rect.height/2,button);
+ }
+ view.addEventListener("focusin",previewButton);
+ view.addEventListener("pinpreview",previewButton);
+ view.addEventListener("focusout",hidePreview);
+ view.addEventListener("scroll",()=>{
+  loadVisibleTiles();
+  if(!view.contains(document.activeElement.closest(".pin")))hidePreview();
+ },{passive:true});
  window.addEventListener("resize",()=>{
   if(view.isConnected)loadVisibleTiles();
  },{signal:mapViewEvents.signal});
@@ -503,7 +619,7 @@ function setupMap(view){
    drag.moved=true;
    view.setPointerCapture(event.pointerId);
    view.classList.add("is-dragging");
-   tooltip.hidden=true;
+   hidePreview();
   }
   view.scrollLeft=drag.left-dx;
   view.scrollTop=drag.top-dy;
@@ -521,7 +637,7 @@ function setupMap(view){
   if(event.target===view)finish(event);
  });
  view.addEventListener("pointerleave",event=>{
-  if(event.pointerType==="mouse")tooltip.hidden=true;
+  if(event.pointerType==="mouse")hidePreview();
   if(drag&&!drag.moved)drag=null;
  });
  view.addEventListener("click",event=>{
@@ -577,7 +693,7 @@ function render(reset=false){
  if(r.page==="search")document.querySelector("#searchbox").value=r.params.get("q")||"";
  if(reset){window.scrollTo(0,0);main.focus({preventScroll:true})}
 }
-function centerPin(){const container=document.querySelector(".mapview"),pin=container?.querySelector(".active");if(pin){container.scrollLeft=pin.offsetLeft-container.clientWidth/2;container.scrollTop=pin.offsetTop-container.clientHeight/2}}
+function centerPin(){const container=document.querySelector(".mapview"),pin=container?.querySelector(".active")||container?.querySelector(".pin:only-of-type[data-pin]");if(pin){container.scrollLeft=pin.offsetLeft-container.clientWidth/2;container.scrollTop=pin.offsetTop-container.clientHeight/2}}
 function routeChanged(){limit=36;mapLimit=60;selected="";zoom=route().params.has("item")?2:1;render(true);centerPin()}
 window.addEventListener("hashchange",routeChanged);
 document.querySelector(".skip").onclick=e=>{e.preventDefault();main.focus()};
@@ -617,7 +733,21 @@ main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)r
    if(checklist)checklist.querySelector("[data-count]").textContent=checklist.querySelectorAll('button[data-flag="done"][aria-pressed="true"]').length;
    return}
  if(el.dataset.cluster){selected=el.dataset.cluster;zoom=Math.min(8,zoom*2);render();centerPin();return}
- if(el.dataset.pin){selected=el.dataset.pin;const listScroll=document.querySelector(".pinlist").scrollTop;render();document.querySelector(".pinlist").scrollTop=listScroll;centerPin();return}
+ if(el.dataset.pin){
+  const inMap=el.classList.contains("pin");
+  const listScroll=document.querySelector(".pinlist").scrollTop;
+  selected=el.dataset.pin;
+  render();
+  const list=main.querySelector(".pinlist");
+  list.scrollTop=listScroll;
+  centerPin();
+  if(inMap){
+   const active=main.querySelector(".mapview .active");
+   active?.focus({preventScroll:true});
+   active?.dispatchEvent(new Event("pinpreview",{bubbles:true}));
+  }else if(e.detail===0)list.querySelector('[aria-current="location"]')?.focus({preventScroll:true});
+  return;
+ }
  const action=el.dataset.action;
  if(action==="clear-map-search"){setParam("q","");return}
  if(action==="more"){limit+=36;render()}else if(action==="mapmore"){mapLimit+=60;render();centerPin()}else if(action==="zoomin"||action==="zoomout"){
