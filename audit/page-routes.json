@@ -2,8 +2,8 @@
   "scope": "Page-to-guide navigation and editorial provenance. Name and index matches identify candidate destinations. No match establishes visual or semantic sign-off. Separate visual checks are required.",
   "counts": {
     "cover-index-or-editorial": 28,
-    "edited": 90,
-    "linked": 436,
+    "edited": 101,
+    "linked": 425,
     "navigation": 13
   },
   "pages": [
@@ -75,9 +75,12 @@
       "routes": {
         "편집 본문": [
           "p01-c01-guide"
+        ],
+        "재편집 본문": [
+          "p01-c01-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -105,9 +108,12 @@
       "routes": {
         "편집 본문": [
           "p01-c02-motel"
+        ],
+        "재편집 본문": [
+          "p01-c02-motel"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -125,9 +131,12 @@
       "routes": {
         "편집 본문": [
           "p01-c03-guide"
+        ],
+        "재편집 본문": [
+          "p01-c03-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -155,9 +164,12 @@
       "routes": {
         "편집 본문": [
           "p01-c04-guide"
+        ],
+        "재편집 본문": [
+          "p01-c04-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -5941,9 +5953,12 @@
         "항목 번호": [
           "p09-m-071",
           "p09-m-075"
+        ],
+        "재편집 본문": [
+          "p09-chapter-deadlines"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P09",
@@ -6094,9 +6109,13 @@
           "p09-re-075",
           "p09-sh",
           "p09-wy"
+        ],
+        "재편집 본문": [
+          "p09-wy",
+          "p09-sh"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P09",
@@ -6107,9 +6126,13 @@
           "p09-ki",
           "p09-ky",
           "p09-re-017"
+        ],
+        "재편집 본문": [
+          "p09-ki",
+          "p09-ky"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P09",
@@ -6119,9 +6142,13 @@
           "p09-al",
           "p09-bi",
           "p09-gp-918706"
+        ],
+        "재편집 본문": [
+          "p09-al",
+          "p09-bi"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P09",
@@ -7001,9 +7028,15 @@
           "p09-m-057",
           "p09-m-071",
           "p09-m-075"
+        ],
+        "재편집 본문": [
+          "p09-m-071-guide",
+          "p09-m-075-guide",
+          "p09-sy-guide",
+          "p09-ya-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P09",
@@ -7027,9 +7060,17 @@
         ],
         "항목 번호": [
           "p09-m-083"
+        ],
+        "재편집 본문": [
+          "p01-c03-007-guide",
+          "p09-al-guide",
+          "p09-bi-guide",
+          "p09-ki-guide",
+          "p09-ky-guide",
+          "p09-wy-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P09",
@@ -7052,9 +7093,17 @@
         ],
         "항목 번호": [
           "p09-re-019"
+        ],
+        "재편집 본문": [
+          "p09-bg-guide",
+          "p09-cv-guide",
+          "p09-gp-918060-guide",
+          "p09-gp-918117-guide",
+          "p09-hu-guide",
+          "p09-sw-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P10",

@@ -74,7 +74,7 @@ function card(v){
  const body=mediaArt(v)+'<div class="cardbody"><span class="kicker">'+esc([catName(v.category),v.region].filter(Boolean).join(" · "))+'</span><h3>'+esc(v.title)+'</h3><p>'+esc(v.summary)+'</p>'+statusText(v)+(flags(v).done?'<small class="label">✓ 완료</small>':'')+'</div>';
  const appearance=appearanceSource(v);
  const original=photo(v);
- const photoLink=original?.originalPhoto&&!original.reveal?link(original.originalPhoto,"현장 사진 원본"):"";
+ const photoLink=original?.originalPhoto&&!original.reveal&&!original.originalReveal?link(original.originalPhoto,original.originalLinkLabel||"현장 사진 원본"):"";
  if(!appearance&&!photoLink)return '<a class="card" href="'+entry(v.id)+'">'+body+'</a>';
  return '<article class="card"><a class="card-guide" href="'+entry(v.id)+'">'+body+'</a><div class="card-photo">'+photoLink+(appearance?link(appearance.url,'외형 원본 보기'):"")+'</div></article>';
 }
@@ -109,11 +109,22 @@ function listPage(page,id,p){
  const regionChoices=[...new Set(all.map(v=>v.region).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ko"));
  if(filter)all=all.filter(v=>v.region===filter);
  const mediaFilter=p.get("media")||"";
- const visual=!mine&&!search&&["V","P02","P05","P06","P07"].includes(cat);
- if(visual&&mediaFilter==="photo")all=all.filter(v=>!photo(v)?.reveal&&(photo(v)?.src||photo(v)?.originalPhoto||appearanceSource(v)));
- const photoControl=visual?'<label>보기 <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("photo","사진·외형 원본 제공",mediaFilter)+'</select></label>':"";
+ const visual=!mine&&!search&&["V","P02","P05","P06","P07","P09"].includes(cat);
+ if(visual&&mediaFilter){
+  all=all.filter(v=>{
+   const m=photo(v);
+   const embedded=m?.src&&!m.reveal;
+   const linked=!m?.reveal&&((m?.originalPhoto&&!m.originalReveal)||appearanceSource(v));
+   if(mediaFilter==="embedded")return embedded;
+   if(mediaFilter==="original")return linked;
+   return mediaFilter!=="photo"||embedded||linked;
+  });
+ }
+ const photoControl=visual?'<label>사진 <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("embedded","도감에 사진이 있는 항목",mediaFilter)+opt("original","원본 사진 링크가 있는 항목",mediaFilter)+opt("photo","사진 또는 원본 링크",mediaFilter)+'</select></label>':"";
  const reading={V:"v-registration",P02:"p02-collection-check",P01:"p01-save-slots",P06:"p06-collection-targets",P09:"p09-region-routes",P08:"p08-range-medals",P04:"p04-first-visit",P05:"p05-region-exploration",P07:"p07-first-garage"};
  const firstGuide=!mine&&!search?findItem(reading[cat]):null;
+ const deadlines=cat==="P09"?findItem("p09-chapter-deadlines"):null;
+ const deadlineLink=deadlines?'<div class="guide-shortcut">'+relatedLink(deadlines)+'</div>':"";
  const shortcut=firstGuide?'<div class="guide-shortcut"><a href="'+entry(firstGuide.id)+'">'+esc(firstGuide.title)+' →</a></div>':"";
  if(!search&&!mine&&cat!=="P01"){
    const rank=v=>(v.status==="unconfirmed"?0:4)+(photo(v)?.src&&!photo(v)?.reveal?2:0);
@@ -123,7 +134,7 @@ function listPage(page,id,p){
  const region=regionChoices.length>1?'<label>지역 <select data-change="region">'+opt("","전체 지역",filter)+regionChoices.map(r=>opt(r,r,filter)).join("")+'</select></label>':"";
  const tabs=mine?'<div class="chips">'+Object.entries({favorite:"즐겨찾기",later:"나중에",done:"완료"}).map(([k,v])=>'<a '+(k===flag?'aria-current="page"':'')+' href="#/mine?flag='+k+'">'+v+'</a>').join("")+'</div>':"";
  const backup=mine?'<div class="bar"><button data-action="export">기록 내보내기</button><label class="btn">기록 가져오기 <input id="restore" type="file" accept=".json,application/json" hidden></label></div>':"";
- return trail([["공략 도감","#/guides"],[title]])+'<div class="eyebrow">'+(categories[cat]?.[1]||"FIELD GUIDE")+'</div>'+listHeading(cat,title,search?'“'+q+'”':categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+shortcut+'<div class="bar">'+(cat==="P01"?chapterSelect():"")+region+photoControl+'<span class="count">'+all.length.toLocaleString()+'개 공략</span></div>'+cards(all.slice(0,limit))+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
+ return trail([["공략 도감","#/guides"],[title]])+'<div class="eyebrow">'+(categories[cat]?.[1]||"FIELD GUIDE")+'</div>'+listHeading(cat,title,search?'“'+q+'”':categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+deadlineLink+shortcut+'<div class="bar">'+(cat==="P01"?chapterSelect():"")+region+photoControl+'<span class="count">'+all.length.toLocaleString()+'개 공략</span></div>'+cards(all.slice(0,limit))+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
 }
 const searchCache=new Map();
 function searchItems(q){const terms=q.split(/\s+/).map(norm).filter(Boolean);if(!terms.length)return [];
@@ -167,7 +178,10 @@ function section(s,index){
 }
 function basePhotoFigure(v){const m=photo(v);if(!m?.src)return "";return '<figure><button data-action="image" data-id="'+esc(v.id)+'" aria-label="사진 확대"><img src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"></button><figcaption class="caption">'+esc(m.caption||v.title)+' · '+link(m.source,m.credit||"원본")+(m.license?' · '+link(m.license,"이용 조건"):'')+'</figcaption></figure>'}
 function photoFigure(v){
- const m=photo(v),html=basePhotoFigure(v)+(m?.originalPhoto?'<div class="links">'+link(m.originalPhoto,m.caption+" · 원본 사진")+'</div>':"");
+ const m=photo(v);
+ const direct=m?.originalPhoto?'<div class="links">'+link(m.originalPhoto,(m.originalCaption||m.caption||v.title)+" · 원본 사진")+'</div>':"";
+ const original=m?.originalReveal&&direct?'<details><summary>'+esc(m.originalReveal)+'</summary>'+direct+'</details>':direct;
+ const html=basePhotoFigure(v)+original;
  const figure=m?.reveal?'<details class="panel"><summary>'+esc(m.reveal)+' 사진 보기</summary>'+html+'</details>':html;
  const appearance=appearanceSource(v);
  if(!appearance)return figure;
