@@ -27,7 +27,7 @@ for(const vehicle of categoryItems("V")){
 const styleChoices=[...new Set(vehicleStyles.values())].sort((a,b)=>a.localeCompare(b,"ko"));
 const mapStyleNames={
  "All-Terrain":"전지형","Blinged Up":"화려한 장식",Chopper:"초퍼","Clout Chaser":"인기 추구","Demolition Derby":"데몰리션 더비",
- Donks:"동크","DriveShaft Famous":"드라이브샤프트 유명차","Fine Art":"예술 작품",Girlypop:"걸리팝","Hot Rods":"핫로드",
+ Donks:"동크","DriveShaft Famous":"드라이브샤프트에 소개된 차량","Fine Art":"예술 작품",Girlypop:"걸리팝","Hot Rods":"핫로드",
  "Law & Order":"법과 질서","Leonida Man":"리오나이다 맨",Lowriders:"로라이더",Mudder:"머더",Patriot:"패트리엇",
  "Pedal Power":"페달 파워","Race Bikes":"레이스 바이크",Retro:"레트로","Ripped & Shredded":"립트 앤 슈레디드",
  "Stock Car":"스톡카","Street Racer":"스트리트 레이서","Swamp Style":"습지 스타일",Throwback:"복고풍",Topper:"토퍼","Ultra-Luxe":"초호화"
@@ -535,7 +535,7 @@ function detail(v){
  const summary=v.summary&&v.summary!==v.title&&v.summary!=="–"?'<p class="lead">'+esc(v.summary)+'</p>':"";
  const visual=photoFigure(v);
  const flow=v.progression;
- const progress=flow?'<section class="panel"><h2>진행 조건</h2><p>'+esc([flow.kind,...(flow.actors||[]),flow.completion===true?"100% 달성 대상":""].filter(Boolean).join(" · "))+'</p>'+(flow.mapAlias?'<p>지도 목표명 · '+esc(flow.mapAlias)+'</p>':'')+(flow.gate?'<p>'+esc(flow.gate)+'</p>':'')+(flow.prior?.length?'<details><summary>확인된 선행 미션 보기</summary><div class="links">'+flow.prior.map(findItem).filter(Boolean).map(relatedLink).join("")+'</div></details>':'')+'</section>':"";
+ const progress=flow?'<section class="panel"><h2>진행 조건</h2><p>'+esc([flow.kind,...(flow.actors||[]),flow.completion===true?"100% 달성 대상":""].filter(Boolean).join(" · "))+'</p>'+(flow.mapAlias?'<p>지도 목표 · '+esc(flow.mapGoalKo)+'</p><details><summary>지도 목표 영문 표기</summary><p lang="en">'+esc(flow.mapAlias)+'</p></details>':'')+(flow.gate?'<p>'+esc(flow.gate)+'</p>':'')+(flow.prior?.length?'<details><summary>확인된 선행 미션 보기</summary><div class="links">'+flow.prior.map(findItem).filter(Boolean).map(relatedLink).join("")+'</div></details>':'')+'</section>':"";
  const originalPhotos=links.filter(ref=>!ref.reveal&&/^(카드 외형|현장 사진) · 원본(?:$|[ ·(])/.test(ref.label||""));
  const photoLinks=originalPhotos.length?'<div class="links original-photos">'+originalPhotos.map(sourceLink).join("")+'</div>':"";
  const intro='<header class="intro"><div class="intro-content"><p class="kicker">'+esc(meta.join(" · "))+'</p><h1>'+esc(v.title)+'</h1>'+summary+statusText(v)+originalName+brief+'<div class="tools">'+actions+'</div></div>'+visual+'</header>';

@@ -1,0 +1,144 @@
+{
+  "objectives": {
+    "Go See Cal": "칼 만나러 가기",
+    "Collect Mandy’s Rent": "맨디에게 월세 받기",
+    "Meet Brian": "브라이언 만나기",
+    "Work for Kenton": "켄튼의 의뢰 받기",
+    "Meet Cal": "칼 만나기",
+    "Lucia’s Release": "루시아의 출소",
+    "Donnie’s Drop": "도니의 화물 인계",
+    "Set Up Bank Account": "은행 계좌 개설하기",
+    "Meet Mattia & Kat": "마티아와 캣 만나기",
+    "Join Donnie On A Job": "도니의 일 돕기",
+    "Head to Donnie’s Trailer": "도니의 트레일러로 가기",
+    "Talk to Lucia": "루시아와 대화하기",
+    "Take Up Mattia’s Offer": "마티아의 제안 수락하기",
+    "Move the Ambulance": "구급차 옮기기",
+    "See Linda, The Manager": "모텔 관리인 린다 만나기",
+    "Find Painkillers": "진통제 찾기",
+    "Take A Vehicle to Moses": "모제스에게 차량 가져가기",
+    "Steal the Crawler for Moses": "모제스에게 가져갈 크롤러 훔치기",
+    "Check on Jason": "제이슨의 상태 확인하기",
+    "Rob Vicki’s Boss": "비키의 상사 털기",
+    "Move to Vice City": "바이스 시티로 이사하기",
+    "Go See Dre’Quan": "드레콴 만나러 가기",
+    "Meet Brian & Lori": "브라이언과 로리 만나기",
+    "Visit the Antique Store": "골동품점 방문하기",
+    "Catch Up With Mia": "미아를 만나 안부 묻기",
+    "Speak with Tyrone": "타이론과 대화하기",
+    "Steal The Car for Raul": "라울에게 가져갈 차 훔치기",
+    "Watch the Real Dimez": "리얼 다임즈 공연 보기",
+    "Talk to Boobie": "부비와 대화하기",
+    "Meeting with Raul": "라울과 약속 장소에서 만나기",
+    "Meet Raul": "라울 만나기",
+    "Meet Raul’s Crew": "라울의 동료들 만나기",
+    "Steal the Zorrusso for Randy": "랜디에게 가져갈 조루쏘 훔치기",
+    "Scope Out the Bank": "은행 사전 답사하기",
+    "Meet Dre’Quan": "드레콴 만나기",
+    "Meet Andrea": "안드레아 만나기",
+    "Shoot the Music Video": "뮤직비디오 촬영하기",
+    "Meet Mia": "미아 만나기",
+    "Meet at the Planning Room / Prepping the Explosives": "작전실에 모이기 / 폭발물 준비하기",
+    "Return to the Apartment": "아파트로 돌아가기",
+    "Start the Heist / Wait for Raul to get in Touch": "습격 시작하기 / 라울의 연락 기다리기",
+    "Speak to the Concierge": "호텔 안내 직원과 대화하기",
+    "Meet Abe Gonzalez": "에이브 곤잘레스 만나기",
+    "Work Personal Security": "신변 경호 맡기",
+    "Bring Raul the Hard Drive": "라울에게 하드 드라이브 가져가기",
+    "Meet Raul / Raul’s Plan": "라울 만나기 / 라울의 계획",
+    "Scope Out the Airport": "공항 사전 답사하기",
+    "Hang Out With Nate": "네이트와 시간 보내기",
+    "Workout": "운동하기",
+    "Deal with Raina": "레이나 상대하기",
+    "Work Security for Andrés": "안드레스 경호하기",
+    "Help Kordell’s Crew": "코델의 동료들 돕기",
+    "Rescue Rafa from Kidnappers": "납치범에게서 라파 구출하기",
+    "Help With The Launch Party": "신곡 공개 파티 돕기",
+    "Spy on the Bodybuilders": "보디빌더들 관찰하기",
+    "Help Andrea": "안드레아 돕기",
+    "Meet Kordell": "코델 만나기",
+    "Steal a Catering Truck": "케이터링 트럭 훔치기",
+    "Start the Airport Heist": "공항 습격 시작하기",
+    "Stop by the Front Desk": "호텔 프런트에 들르기",
+    "Meet Vinny": "비니 만나기",
+    "Talk to Mattia": "마티아와 대화하기",
+    "Negotiate a Deal with Abe": "에이브와 거래 조건 협상하기",
+    "Meet with Abe": "에이브 만나기",
+    "Pick Up Another Gun": "총 한 자루 더 구하기",
+    "Collect Brian’s Rent": "브라이언 대신 월세 받기",
+    "Fix Your Car": "자동차 수리하기",
+    "Steal the Practice Safe": "연습용 금고 훔치기",
+    "Shoot a Promo": "홍보 사진 촬영하기",
+    "Hit Richardson Jewelry, Hit Donovan Banks & Co, Hit Casa de Empeno, Sell Jewelry to Yasmani": "리처드슨 주얼리·도너번 뱅크스 앤 코·카사 데 엠페뇨에서 보석 훔치기 / 야스마니에게 보석 팔기"
+  },
+  "titles": {
+    "p01-story-unwanted-attention": [
+      "관심은 꺼줘",
+      "관심은 꺼줘 · 압류장에서 피닉스 되찾기"
+    ],
+    "p01-story-pipework": [
+      "맨디의 싱크대",
+      "맨디의 월세와 막힌 싱크대"
+    ],
+    "p01-story-save-for-the-future": [
+      "가족 저축 쌓기",
+      "가족 저축 계좌에 돈 모으기"
+    ],
+    "p01-story-whats-in-the-bag": [
+      "가방 속 물건 조사",
+      "모텔에서 가방 속 단서 조사하기"
+    ],
+    "p01-story-overnight-charges": [
+      "밀린 숙박비 상담",
+      "모텔 관리인에게 밀린 숙박비 문의하기"
+    ],
+    "p01-story-moses": [
+      "모제스의 차량 등록 수업",
+      "모제스에게 차량 등록 배우기"
+    ],
+    "p01-story-daily-driver": [
+      "흰색 크롤러 인도",
+      "흰색 크롤러를 모제스에게 가져가기"
+    ],
+    "p01-story-car-service": [
+      "라울의 차량 인도",
+      "라울에게 차 가져가기"
+    ],
+    "p01-story-steal-the-zorrusso-for-randy": [
+      "랜디의 조루쏘 인도",
+      "랜디에게 조루쏘 가져가기"
+    ],
+    "p01-story-heist-planning": [
+      "은행 작업 준비 목록",
+      "은행 습격 전 준비할 일"
+    ],
+    "p01-story-ride-or-die": [
+      "죽거나 달리거나",
+      "죽거나 달리거나 · 행사장에서 분홍색 오픈카 찾기"
+    ],
+    "p01-story-lab-fees": [
+      "기념품점에서 브라이언의 임대료 회수하기",
+      "브라이언 대신 기념품점 월세 받기"
+    ],
+    "p01-story-coffee-break": [
+      "스타렛 모텔에서 커피와 동료 메뉴 열기",
+      "스타렛 모텔에서 커피를 마시고 동료 메뉴 열기"
+    ],
+    "i019": [
+      "검은곰과 마주치는 조우",
+      "검은곰과 마주쳤을 때"
+    ],
+    "i080": [
+      "칼라가 산의 활공 인물 목격담",
+      "칼라가산 상공에서 목격된 사람 형체"
+    ],
+    "i098": [
+      "주기 중인 헬리콥터의 추락 제보",
+      "헬기장에 세워 둔 헬리콥터의 추락 제보"
+    ],
+    "p09-m-082": [
+      "포트 겔혼에서 머리 바꾸기",
+      "포트 겔혼 미용실에서 머리 모양 바꾸기"
+    ]
+  }
+}

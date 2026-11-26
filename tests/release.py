@@ -186,7 +186,7 @@ def verify_story(page, base):
     page.locator('main a[href="#/guide/p01?track=story"]').first.click()
     page.locator('main a[href="#/entry/p01-story-lab-fees"]').first.click()
     title = page.locator("article.article h1")
-    expect(title).to_contain_text("임대료")
+    expect(title).to_contain_text("월세")
     article = page.locator("article.article")
     expect(article).to_contain_text("우편함")
     dark = article.locator("details.protected-photo").first
@@ -220,6 +220,11 @@ def verify_campaign(page, base):
     page.get_by_text("함께 할 선택 의뢰", exact=False).first.click()
     expect(page.locator('main li').filter(has_text="시한 주의").first).to_be_visible()
     page.goto(base + "#/entry/p01-story-pipework", wait_until="domcontentloaded")
+    expect(article.get_by_text("지도 목표 · 맨디에게 월세 받기")).to_be_visible()
+    original = article.get_by_text("Collect Mandy’s Rent", exact=True).last
+    expect(original).to_be_hidden()
+    article.get_by_text("지도 목표 영문 표기").click()
+    expect(original).to_be_visible()
     article.get_by_text("확인된 선행 미션 보기").click()
     expect(article.locator('details[open] a[href="#/entry/p01-story-just-a-scratch"]')).to_be_visible()
     page.goto(base + "#/guide/p01?track=story", wait_until="domcontentloaded")

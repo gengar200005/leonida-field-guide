@@ -272,6 +272,9 @@ def organize_campaign(data, missions):
                 section.update(title="이 챕터의 스토리 미션", places=by_chapter[item["chapter"]], reveal="목록")
 
 
+from korean_editorial import apply_korean_copy
+
+
 def build():
     SITE.mkdir(exist_ok=True)
     data = {
@@ -346,6 +349,7 @@ def build():
             if pin and pin_ids.get(pin) != item["id"].lower():
                 raise ValueError(f"Location pin does not belong to guide {item['id']}: {pin}")
     assert all(record["title"] and isinstance(record["sections"], list) for record in data["items"])
+    apply_korean_copy(data, read("korean-editorial.json"))
     media_dir = SITE / "media"
     media_dir.mkdir(exist_ok=True)
     packages = [*sorted((ROOT / "media").glob("*.zip")), *sorted((ROOT / "media/editorial").glob("*.zip"))]
