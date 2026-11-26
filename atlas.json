@@ -20401,5 +20401,125 @@
     "url": "https://metaforge.app/gta-6/map/leonida?markerID=dc9ed1a4-6647-4570-0af5-5b9f92d75954",
     "x": 548.1,
     "y": 1297.3
+  },
+  {
+    "id": "l05/s-dexter-apartment",
+    "item": "l05",
+    "name": "트리니티 아파트 · 건물 주변",
+    "category": "P05",
+    "region": "바이스 시티 · 워싱턴 아일랜드",
+    "url": "https://gta6map.city/?m=s-dexter-apartment",
+    "x": 1423.9,
+    "y": 2198.2
+  },
+  {
+    "id": "l07/pin-917867",
+    "item": "l07",
+    "name": "펠리컨 밸리 연구 전초기지 · 조사 건물 주변",
+    "category": "P05",
+    "region": "마리아나 · 펠리컨 밸리",
+    "url": "https://gta6gps.com/?p=pin-917867",
+    "x": -3955,
+    "y": -4097
+  },
+  {
+    "id": "l15/s-cruise-ship-interior",
+    "item": "l15",
+    "name": "포트 바이스 시티 · 크루즈선 북서쪽 부두",
+    "category": "P05",
+    "region": "바이스 시티 · 항만",
+    "url": "https://gta6map.city/?m=s-cruise-ship-interior",
+    "x": 330.0,
+    "y": -287.0
+  },
+  {
+    "id": "l17/s-sos-island",
+    "item": "l17",
+    "name": "SOS 섬 · 외해의 모래톱",
+    "category": "P05",
+    "region": "마리아나 서쪽 외해",
+    "url": "https://gta6map.city/?m=s-sos-island",
+    "x": -7284.0,
+    "y": -3880.0
+  },
+  {
+    "id": "l21/s-tallaloko-container-mushrooms-backrooms",
+    "item": "l21",
+    "name": "탈라로코 호수 동쪽 · 주황 컨테이너",
+    "category": "P05",
+    "region": "탈라로코 호수 인근",
+    "url": "https://gta6map.city/?m=s-tallaloko-container-mushrooms-backrooms",
+    "x": -1397.0,
+    "y": 7035.0
+  },
+  {
+    "id": "l22/s-hyde-island-lucia-bomb-collar-hunt",
+    "item": "l22",
+    "name": "하이드 아일랜드 · 서쪽 선착장 쪽 진입",
+    "category": "P05",
+    "region": "모로 · 하이드 아일랜드",
+    "url": "https://gta6map.city/?m=s-hyde-island-lucia-bomb-collar-hunt",
+    "x": -2755.8,
+    "y": 8830.6
+  },
+  {
+    "id": "l24/s-lummox-ruins-bong-mario-block",
+    "item": "l24",
+    "name": "럼목스 북부 유적 · 블록 탐색 지점",
+    "category": "P05",
+    "region": "럼목스 · 북부 유적",
+    "url": "https://gta6map.city/?m=s-lummox-ruins-bong-mario-block",
+    "x": -4096.6,
+    "y": 7412.1
+  },
+  {
+    "id": "p02-w-003/unique-weapon-071",
+    "item": "p02-w-003",
+    "name": "빅 파인 · 브레인워셔 1922 회수 벙커",
+    "category": "P02",
+    "region": "빅 파인",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=unique-weapon-071",
+    "x": -5674.0,
+    "y": -1558.0
+  },
+  {
+    "id": "p02-w-023/pin-918704",
+    "item": "p02-w-023",
+    "name": "샤크투스 섬 · 루소의 1922가 있는 벙커",
+    "category": "P02",
+    "region": "샤크투스 섬",
+    "url": "https://gta6gps.com/?p=pin-918704",
+    "x": 161,
+    "y": 5284
+  },
+  {
+    "id": "p02-w-048/weapon-spawn-069",
+    "item": "p02-w-048",
+    "name": "밥캣 키 서쪽 · 더블 크로스 바트라 해저 지점",
+    "category": "P02",
+    "region": "밥캣 키 서쪽 해역",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#weapon-spawn-069",
+    "x": -7172.0,
+    "y": -2420.0
+  },
+  {
+    "id": "p02-w-096/unique-weapon-074",
+    "item": "p02-w-096",
+    "name": "선다운 비행장 · 피트의 KZ-59가 있는 격납고",
+    "category": "P02",
+    "region": "선다운 비행장",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=unique-weapon-074",
+    "x": -782.0,
+    "y": 4391.0
+  },
+  {
+    "id": "p02-w-111/pin-917794",
+    "item": "p02-w-111",
+    "name": "키 렌토 남동쪽 · 건 넛 주택",
+    "category": "P02",
+    "region": "키 렌토 남동쪽",
+    "url": "https://gta6gps.com/?p=pin-917794",
+    "x": -2771,
+    "y": -6494
   }
 ]

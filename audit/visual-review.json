@@ -7139,6 +7139,4502 @@
         "https://github.com/rolux/gtadb.org/blob/main/LICENSE-DATA"
       ],
       "responsive": "390×844와 1365×900에서 모든 챕터, 구형 기록 가져오기와 내보내기, 새 현장 사진 및 출처·지도 링크 확인."
+    },
+    {
+      "date": "2026-11-26",
+      "focus": "누락된 사진·원본 지도·한국어 표기와 모바일 탐색",
+      "media": {
+        "embeddedItemsAdded": 5,
+        "originalLinksAdded": 131,
+        "main": {
+          "counts": {
+            "changed": 103,
+            "embeddedItemsAdded": 5,
+            "uniqueEmbeddedFiles": 4,
+            "originalLinksAdded": 101,
+            "embeddedBefore": {
+              "l01": 1,
+              "l03": 1,
+              "l26": 1,
+              "p01": 1,
+              "p02": 3,
+              "p04": 2,
+              "p06": 4,
+              "p07": 4,
+              "p09": 16,
+              "v": 3
+            },
+            "embeddedAfter": {
+              "l01": 1,
+              "l03": 1,
+              "l26": 1,
+              "p01": 1,
+              "p02": 4,
+              "p04": 3,
+              "p06": 4,
+              "p07": 4,
+              "p09": 16,
+              "v": 6
+            },
+            "originalLinksBefore": {
+              "l04": 1,
+              "l11": 1,
+              "l19": 1,
+              "l32": 1,
+              "p02": 28,
+              "p03": 19,
+              "p06": 97,
+              "p07": 5,
+              "p09": 130,
+              "v": 172,
+              "x02": 2
+            },
+            "originalLinksAfter": {
+              "l04": 1,
+              "l11": 1,
+              "l19": 1,
+              "l32": 1,
+              "p02": 51,
+              "p03": 19,
+              "p04": 14,
+              "p06": 97,
+              "p07": 5,
+              "p09": 130,
+              "v": 236,
+              "x02": 2
+            },
+            "identicalLinkSkipped": [
+              "p02-w-026",
+              "p02-w-041",
+              "p02-w-045",
+              "p02-w-079",
+              "p02-w-092",
+              "v-46",
+              "v-48",
+              "v-51",
+              "v-52",
+              "v-53",
+              "v-54"
+            ]
+          },
+          "sourceCheck": [
+            "GTADB 공개 저장소 landmark 좌표·파일명·현장 사진을 기존 공략 핀과 대조했습니다. 지도상의 기준점과 사진 속 시설 외관을 확인하고 출처와 CC BY 4.0 고지를 넣었습니다.",
+            "GTABase의 표식 ID가 일치하는 파일은 HTTP 응답 후 WebP로 열어 차종·외형·판매점·거점 위치를 시각적으로 대조했습니다. 목록 이미지와 원본 크기 판본을 구분했으며 재사용 조건이 확인되지 않은 사진은 원본 링크로 연결했습니다.",
+            "Rockstar 공식 모음의 일반형과 에디션 홍보 이미지는 세부 변형 이름이 일치하는 판본이 확보되지 않은 곳에 적용하지 않았습니다.",
+            "동일한 원본 URL이 상세 공략의 기존 출처나 사진 키에 있으면 중복 등록하지 않았습니다. 구판 표기는 제목 대조로 확인된 경우에만 기록했습니다."
+          ],
+          "sources": {
+            "p02-w-014": {
+              "latestPages": [
+                [
+                  "P02",
+                  14
+                ],
+                [
+                  "P02",
+                  27
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  14,
+                  27
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-047",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-mahi-nipper-38-unique-weapon-1ef66e33.webp"
+            },
+            "p02-w-018": {
+              "latestPages": [
+                [
+                  "P02",
+                  15
+                ],
+                [
+                  "P02",
+                  29
+                ],
+                [
+                  "index",
+                  11
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  15,
+                  29
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-065",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-nite-raptor-k17-unique-weapon-efa586f0.webp"
+            },
+            "p02-w-033": {
+              "latestPages": [
+                [
+                  "P02",
+                  6
+                ],
+                [
+                  "P02",
+                  16
+                ],
+                [
+                  "P02",
+                  33
+                ],
+                [
+                  "index",
+                  9
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  6,
+                  16,
+                  33
+                ],
+                "GTA6_15_weapons_map_guide.pdf": [
+                  1,
+                  6
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#weapon-spawn-078",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-couch-potato-mustang-357-unique-weapon-303cd78d.webp"
+            },
+            "p02-w-036": {
+              "latestPages": [
+                [
+                  "P02",
+                  16
+                ],
+                [
+                  "P02",
+                  34
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  16,
+                  34
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-063",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-iron-oak-wcr-1-unique-weapon-f7d995a9.webp"
+            },
+            "p02-w-039": {
+              "latestPages": [
+                [
+                  "P02",
+                  16
+                ],
+                [
+                  "P02",
+                  35
+                ],
+                [
+                  "P02",
+                  43
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  16,
+                  35
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-009",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-lyles-h-l-38-unique-weapon-2a82b272.webp"
+            },
+            "p02-w-043": {
+              "latestPages": [
+                [
+                  "P02",
+                  16
+                ],
+                [
+                  "P02",
+                  36
+                ],
+                [
+                  "index",
+                  9
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  16,
+                  36
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#weapon-spawn-057",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-chromium-w-10-unique-weapon-0c605253.webp"
+            },
+            "p02-w-047": {
+              "latestPages": [
+                [
+                  "P02",
+                  17
+                ],
+                [
+                  "P02",
+                  37
+                ],
+                [
+                  "index",
+                  9
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  17,
+                  37
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-068",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-dazzler-dw-9-unique-weapon-3650476a.webp"
+            },
+            "p02-w-058": {
+              "latestPages": [
+                [
+                  "P02",
+                  17
+                ],
+                [
+                  "P02",
+                  40
+                ],
+                [
+                  "index",
+                  11
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  17,
+                  40
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-049",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-pocketblast-dsg-unique-weapon-b7fad75d.webp"
+            },
+            "p02-w-063": {
+              "latestPages": [
+                [
+                  "P02",
+                  18
+                ],
+                [
+                  "P02",
+                  41
+                ],
+                [
+                  "index",
+                  9
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  18,
+                  41
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-058",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-backdoor-hobo-unique-weapon-cf537bd1.webp"
+            },
+            "p02-w-065": {
+              "latestPages": [
+                [
+                  "P02",
+                  18
+                ],
+                [
+                  "P02",
+                  42
+                ],
+                [
+                  "index",
+                  9
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  18,
+                  42
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-056",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-bruiser-super400-unique-weapon-730ddb54.webp"
+            },
+            "p02-w-069": {
+              "latestPages": [
+                [
+                  "P02",
+                  18
+                ],
+                [
+                  "P02",
+                  43
+                ],
+                [
+                  "index",
+                  9
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  18,
+                  43
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-030",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-final-chapter-kvga-12-unique-weapon-e9aad6bd.webp"
+            },
+            "p02-w-072": {
+              "latestPages": [
+                [
+                  "P02",
+                  6
+                ],
+                [
+                  "P02",
+                  18
+                ],
+                [
+                  "P02",
+                  44
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  18,
+                  44
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-006",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hellspawn-comshot-12-unique-weapon-c2ff5680.webp"
+            },
+            "p02-w-073": {
+              "latestPages": [
+                [
+                  "P02",
+                  18
+                ],
+                [
+                  "P02",
+                  44
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  18,
+                  44
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-029",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hostile-super400-unique-weapon-0f494ce2.webp"
+            },
+            "p02-w-075": {
+              "latestPages": [
+                [
+                  "P02",
+                  18
+                ],
+                [
+                  "P02",
+                  45
+                ],
+                [
+                  "index",
+                  11
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  18,
+                  45
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-057",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-nitepower-az1200-unique-weapon-3627f7c3.webp"
+            },
+            "p02-w-078": {
+              "latestPages": [
+                [
+                  "P02",
+                  19
+                ],
+                [
+                  "P02",
+                  45
+                ],
+                [
+                  "index",
+                  11
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  19,
+                  45
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-028",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-throttler-verro-unique-weapon-463dff66.webp"
+            },
+            "p02-w-080": {
+              "latestPages": [
+                [
+                  "P02",
+                  19
+                ],
+                [
+                  "P02",
+                  46
+                ],
+                [
+                  "index",
+                  11
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  19,
+                  46
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-059",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-watcher-pro-moreland-850-unique-weapon-529af5b2.webp"
+            },
+            "p02-w-081": {
+              "latestPages": [
+                [
+                  "P02",
+                  19
+                ],
+                [
+                  "P02",
+                  46
+                ],
+                [
+                  "index",
+                  11
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  19,
+                  46
+                ]
+              },
+              "source": "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L2874,ig.jpg",
+              "license": "https://github.com/rolux/gtadb.org/blob/main/LICENSE-DATA",
+              "src": "media/field-landmark-l2874.webp",
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-woodhatch-longshot-unique-weapon-d33ad1f0.webp"
+            },
+            "p02-w-086": {
+              "latestPages": [
+                [
+                  "P02",
+                  19
+                ],
+                [
+                  "P02",
+                  47
+                ],
+                [
+                  "index",
+                  9
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  19,
+                  47
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#weapon-spawn-039",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-drug-mule-kz-59-unique-weapon-229fc1d9.webp"
+            },
+            "p02-w-089": {
+              "latestPages": [
+                [
+                  "P02",
+                  19
+                ],
+                [
+                  "P02",
+                  48
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  19,
+                  48
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#weapon-spawn-075",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-kingpin-heathen-unique-weapon-d62e2361.webp"
+            },
+            "p02-w-090": {
+              "latestPages": [
+                [
+                  "P02",
+                  19
+                ],
+                [
+                  "P02",
+                  48
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  19,
+                  48
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#weapon-spawn-070",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-kolt-associates-556-unique-weapon-85aa183d.webp"
+            },
+            "p02-w-103": {
+              "latestPages": [
+                [
+                  "P02",
+                  20
+                ],
+                [
+                  "P02",
+                  52
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  20,
+                  52
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#weapon-spawn-014",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-kingfishers-w-22-unique-weapon-410ff632.webp"
+            },
+            "p02-w-106": {
+              "latestPages": [
+                [
+                  "P02",
+                  21
+                ],
+                [
+                  "P02",
+                  53
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  21,
+                  53
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-054",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-mossy-mediator-unique-weapon-60976932.webp"
+            },
+            "p02-w-121": {
+              "latestPages": [
+                [
+                  "P02",
+                  1
+                ],
+                [
+                  "P02",
+                  22
+                ],
+                [
+                  "P02",
+                  57
+                ],
+                [
+                  "index",
+                  10
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P02_Weapons_Equipment_Atlas_R1_KR.pdf": [
+                  1,
+                  22,
+                  57
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-020",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-mercenary-lmg-6-unique-weapon-4eebb255.webp"
+            },
+            "p04-01": {
+              "latestPages": [
+                [
+                  "P04",
+                  5
+                ],
+                [
+                  "P04",
+                  11
+                ],
+                [
+                  "P04",
+                  51
+                ],
+                [
+                  "P10",
+                  4
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-001",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-fishing-shacks-gang-operation-feb25e73.webp"
+            },
+            "p04-03": {
+              "latestPages": [
+                [
+                  "P04",
+                  5
+                ],
+                [
+                  "P04",
+                  13
+                ],
+                [
+                  "P04",
+                  51
+                ],
+                [
+                  "P10",
+                  4
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-003",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-manatee-motel-gang-operation-c6f96b37.webp"
+            },
+            "p04-04": {
+              "latestPages": [
+                [
+                  "P04",
+                  4
+                ],
+                [
+                  "P04",
+                  14
+                ],
+                [
+                  "P04",
+                  51
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-004",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-kingpin-bowling-gang-operation-f7a0948c.webp"
+            },
+            "p04-05": {
+              "latestPages": [
+                [
+                  "P04",
+                  4
+                ],
+                [
+                  "P04",
+                  15
+                ],
+                [
+                  "P04",
+                  51
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-005",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-june-warehouse-gang-operation-f9fcd652.webp"
+            },
+            "p04-06": {
+              "latestPages": [
+                [
+                  "P04",
+                  4
+                ],
+                [
+                  "P04",
+                  9
+                ],
+                [
+                  "P04",
+                  16
+                ],
+                [
+                  "P04",
+                  51
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-006",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-la-cascara-motel-gang-operation-5410b340.webp"
+            },
+            "p04-07": {
+              "latestPages": [
+                [
+                  "P04",
+                  4
+                ],
+                [
+                  "P04",
+                  9
+                ],
+                [
+                  "P04",
+                  17
+                ],
+                [
+                  "P04",
+                  51
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  4,
+                  9,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49,
+                  51
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-007",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-brooks-boatworks-gang-operation-085a9054.webp"
+            },
+            "p04-08": {
+              "latestPages": [
+                [
+                  "P04",
+                  4
+                ],
+                [
+                  "P04",
+                  9
+                ],
+                [
+                  "P04",
+                  18
+                ],
+                [
+                  "P04",
+                  51
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-008",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-robbery-opportunity-kolts-associates-gang-operation-dd425c63.webp"
+            },
+            "p04-12": {
+              "latestPages": [
+                [
+                  "P04",
+                  5
+                ],
+                [
+                  "P04",
+                  9
+                ],
+                [
+                  "P04",
+                  21
+                ],
+                [
+                  "P04",
+                  22
+                ],
+                [
+                  "P04",
+                  51
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-042",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-la-polilla-negra-watson-bay-safehouse-gang-operation-6ca00d19.webp"
+            },
+            "p04-14": {
+              "latestPages": [
+                [
+                  "P03",
+                  15
+                ],
+                [
+                  "P04",
+                  6
+                ],
+                [
+                  "P04",
+                  24
+                ],
+                [
+                  "P04",
+                  51
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-013",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-robbery-opportunity-gang-operation-6c6f0536.webp"
+            },
+            "p04-15": {
+              "latestPages": [
+                [
+                  "P04",
+                  6
+                ],
+                [
+                  "P04",
+                  9
+                ],
+                [
+                  "P04",
+                  25
+                ],
+                [
+                  "P04",
+                  52
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-034",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-final-chapter-hog-stars-garage-gang-operation-dee96235.webp"
+            },
+            "p04-35": {
+              "latestPages": [
+                [
+                  "P04",
+                  8
+                ],
+                [
+                  "P04",
+                  45
+                ],
+                [
+                  "P04",
+                  53
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  45
+                ]
+              },
+              "source": "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L791,ig.jpg",
+              "license": "https://github.com/rolux/gtadb.org/blob/main/LICENSE-DATA",
+              "src": "media/field-landmark-l791.webp",
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-criminals-vespucci-mansion-gang-operation-bc4950a8.webp"
+            },
+            "p04-36": {
+              "latestPages": [
+                [
+                  "P04",
+                  6
+                ],
+                [
+                  "P04",
+                  9
+                ],
+                [
+                  "P04",
+                  46
+                ],
+                [
+                  "P04",
+                  53
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-030",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-gas-station-meth-front-gang-operation-dfe0fc21.webp"
+            },
+            "p04-38": {
+              "latestPages": [
+                [
+                  "P04",
+                  4
+                ],
+                [
+                  "P04",
+                  9
+                ],
+                [
+                  "P04",
+                  48
+                ],
+                [
+                  "P04",
+                  53
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-031",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-backroom-weed-front-gang-operation-aee37f20.webp"
+            },
+            "p04-39": {
+              "latestPages": [
+                [
+                  "P04",
+                  6
+                ],
+                [
+                  "P04",
+                  9
+                ],
+                [
+                  "P04",
+                  49
+                ],
+                [
+                  "P04",
+                  53
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA_VI_P04_Gang_Operations_Integrated_R1_KR.pdf": [
+                  6,
+                  9,
+                  11,
+                  12,
+                  13,
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  21,
+                  22,
+                  23,
+                  24,
+                  25,
+                  26,
+                  27,
+                  28,
+                  29,
+                  30,
+                  31,
+                  32,
+                  33,
+                  34,
+                  35,
+                  36,
+                  37,
+                  38,
+                  39,
+                  40,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  46,
+                  47,
+                  48,
+                  49,
+                  53
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-032",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-carter-mining-boathouse-gang-operation-7e71156b.webp"
+            },
+            "v-01": {
+              "latestPages": [
+                [
+                  "P10",
+                  27
+                ],
+                [
+                  "V",
+                  1
+                ],
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  3
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  14
+                ],
+                [
+                  "V",
+                  17
+                ],
+                [
+                  "V",
+                  64
+                ],
+                [
+                  "V",
+                  65
+                ],
+                [
+                  "V",
+                  76
+                ],
+                [
+                  "index",
+                  12
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  1
+                ],
+                "GTA6_Chapter2_Priority_Vehicles_KR.pdf": [
+                  1
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  1,
+                  7,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  1
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  1,
+                  2,
+                  3,
+                  14,
+                  17
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-071",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-canis-black-moth-kamacho-standout-vehicle-0f3f16c0.webp"
+            },
+            "v-02": {
+              "latestPages": [
+                [
+                  "P10",
+                  27
+                ],
+                [
+                  "V",
+                  1
+                ],
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  3
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  14
+                ],
+                [
+                  "V",
+                  18
+                ],
+                [
+                  "V",
+                  61
+                ],
+                [
+                  "V",
+                  85
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  1
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  1,
+                  7,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  1
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-076",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-teniente-manana-b4048467-320.webp"
+            },
+            "v-03": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  3
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  12
+                ],
+                [
+                  "V",
+                  19
+                ],
+                [
+                  "V",
+                  59
+                ],
+                [
+                  "V",
+                  78
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  2
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  3,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  1
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  3,
+                  12,
+                  19,
+                  59
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-027",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-bravado-devils-rope-gauntlet-standout-vehicle-cbca1787.webp"
+            },
+            "v-06": {
+              "latestPages": [
+                [
+                  "V",
+                  1
+                ],
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  3
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  11
+                ],
+                [
+                  "V",
+                  22
+                ],
+                [
+                  "V",
+                  59
+                ],
+                [
+                  "V",
+                  79
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  3
+                ],
+                "GTA6_Chapter2_Priority_Vehicles_KR.pdf": [
+                  1,
+                  2,
+                  3
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  2,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  1
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  1,
+                  2,
+                  3,
+                  11,
+                  22,
+                  59
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-029",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-vapid-firebug-dominator-standout-vehicle-f2063f90.webp"
+            },
+            "v-08": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  4
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  10
+                ],
+                [
+                  "V",
+                  24
+                ],
+                [
+                  "V",
+                  59
+                ],
+                [
+                  "V",
+                  77
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  4
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  5,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  2
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  4,
+                  10,
+                  24,
+                  59
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-054",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-cherry-bomb-chino-670156e9-320.webp"
+            },
+            "v-09": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  4
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  13
+                ],
+                [
+                  "V",
+                  25
+                ],
+                [
+                  "V",
+                  86
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  5
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  4,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  2
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  4,
+                  13,
+                  25
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-010",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-verdant-buccaneer-058d89cb-320.webp"
+            },
+            "v-10": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  4
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  14
+                ],
+                [
+                  "V",
+                  26
+                ],
+                [
+                  "V",
+                  59
+                ],
+                [
+                  "V",
+                  77
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  5
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  7,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  2
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  4,
+                  14,
+                  26,
+                  59
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-065",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-caliente-picador-a5dc7398-320.webp"
+            },
+            "v-11": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  4
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  13
+                ],
+                [
+                  "V",
+                  27
+                ],
+                [
+                  "V",
+                  81
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  6
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  4,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  2
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  4,
+                  13,
+                  27
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-001",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-marthas-vamos-standout-vehicle-fb343f01.webp"
+            },
+            "v-113": {
+              "latestPages": [
+                [
+                  "V",
+                  77
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-024",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-circles-of-hell-youga-8f11c8bc-320.webp"
+            },
+            "v-115": {
+              "latestPages": [
+                [
+                  "V",
+                  78
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-026",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-bravado-copperheads-gauntlet-standout-vehicle-d45327e6.webp"
+            },
+            "v-13": {
+              "latestPages": [
+                [
+                  "V",
+                  1
+                ],
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  4
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  10
+                ],
+                [
+                  "V",
+                  29
+                ],
+                [
+                  "V",
+                  59
+                ],
+                [
+                  "V",
+                  60
+                ],
+                [
+                  "V",
+                  84
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  7
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  6,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  3
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  1,
+                  2,
+                  4,
+                  10,
+                  29,
+                  59,
+                  60
+                ]
+              },
+              "source": "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L791,ig.jpg",
+              "license": "https://github.com/rolux/gtadb.org/blob/main/LICENSE-DATA",
+              "src": "media/field-landmark-l791.webp",
+              "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/standout-vehicle-044.webp"
+            },
+            "v-131": {
+              "latestPages": [
+                [
+                  "V",
+                  78
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-079",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-dr-sheehans-airboat-3dacff7b-320.webp"
+            },
+            "v-136": {
+              "latestPages": [
+                [
+                  "V",
+                  79
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-017",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-albany-driveshaft-devanity-standout-vehicle-3ee70a49.webp"
+            },
+            "v-14": {
+              "latestPages": [
+                [
+                  "P10",
+                  3
+                ],
+                [
+                  "P10",
+                  31
+                ],
+                [
+                  "V",
+                  1
+                ],
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  4
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  10
+                ],
+                [
+                  "V",
+                  30
+                ],
+                [
+                  "V",
+                  60
+                ],
+                [
+                  "V",
+                  75
+                ],
+                [
+                  "index",
+                  12
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  7,
+                  22
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  6,
+                  8,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  3
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  1,
+                  2,
+                  4,
+                  10,
+                  30,
+                  60
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-049",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-andrew-nodes-thrax-09318990-320.webp"
+            },
+            "v-140": {
+              "latestPages": [
+                [
+                  "V",
+                  79
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-113",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-driveshaft-legends-marshall-standout-vehicle-88b787a7.webp"
+            },
+            "v-144": {
+              "latestPages": [
+                [
+                  "V",
+                  79
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-047",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-elven-queen-youga-c3585b2d-320.webp"
+            },
+            "v-145": {
+              "latestPages": [
+                [
+                  "V",
+                  79
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-028",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-classique-emancipator-stallion-standout-vehicle-eebc61f1.webp"
+            },
+            "v-152": {
+              "latestPages": [
+                [
+                  "V",
+                  79
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-011",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-vapid-finns-reclaimer-standout-vehicle-132bcac7.webp"
+            },
+            "v-157": {
+              "latestPages": [
+                [
+                  "V",
+                  80
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-035",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-fruit-outlet-walton-standout-vehicle-0679d9b3.webp"
+            },
+            "v-158": {
+              "latestPages": [
+                [
+                  "V",
+                  80
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-108",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-gator-shack-bison-standout-vehicle-38aa920e.webp"
+            },
+            "v-16": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  5
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  13
+                ],
+                [
+                  "V",
+                  32
+                ],
+                [
+                  "V",
+                  64
+                ],
+                [
+                  "V",
+                  82
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  8
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  4,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  3
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  5,
+                  13,
+                  32,
+                  64
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-006",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-nancys-crawler-5f5695d4-320.webp"
+            },
+            "v-162": {
+              "latestPages": [
+                [
+                  "V",
+                  80
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-128",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-benefactor-gilded-dubsta-standout-vehicle-9851ea2e.webp"
+            },
+            "v-168": {
+              "latestPages": [
+                [
+                  "V",
+                  80
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-129",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-gold-scarab-windsor-e6a27ec4-320.webp"
+            },
+            "v-169": {
+              "latestPages": [
+                [
+                  "V",
+                  80
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-003",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-vapid-gradys-slamvan-standout-vehicle-e7de3a58.webp"
+            },
+            "v-176": {
+              "latestPages": [
+                [
+                  "V",
+                  81
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-141",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-pfister-hornet-growler-standout-vehicle-5989fdce.webp"
+            },
+            "v-19": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  5
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  11
+                ],
+                [
+                  "V",
+                  35
+                ],
+                [
+                  "V",
+                  59
+                ],
+                [
+                  "V",
+                  84
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  10
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  2,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  4
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  5,
+                  11,
+                  35,
+                  59
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-025",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-smuggler-caracara-870b640e-320.webp"
+            },
+            "v-194": {
+              "latestPages": [
+                [
+                  "V",
+                  81
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-070",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-western-magma-cliffhanger-standout-vehicle-a8b1bb78.webp"
+            },
+            "v-198": {
+              "latestPages": [
+                [
+                  "V",
+                  82
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-002",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-midsummer-erode-809c9bde-320.webp"
+            },
+            "v-20": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  5
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  11
+                ],
+                [
+                  "V",
+                  36
+                ],
+                [
+                  "V",
+                  59
+                ],
+                [
+                  "V",
+                  86
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  10
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  2,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  4
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  5,
+                  11,
+                  36,
+                  59
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-036",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-vapid-truth-justice-caracara-standout-vehicle-b2f13edf.webp"
+            },
+            "v-202": {
+              "latestPages": [
+                [
+                  "V",
+                  82
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-073",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-mountain-yosemite-standout-vehicle-6e007b0e.webp"
+            },
+            "v-204": {
+              "latestPages": [
+                [
+                  "V",
+                  82
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-117",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-86-rancher-stars-and-stripes-standout-vehicle-53171566.webp"
+            },
+            "v-206": {
+              "latestPages": [
+                [
+                  "V",
+                  82
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-007",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-maibatsu-myways-manchez-standout-vehicle-5749b3ba.webp"
+            },
+            "v-214": {
+              "latestPages": [
+                [
+                  "V",
+                  83
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-136",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-pacific-manchez-60d57bdc-320.webp"
+            },
+            "v-22": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  6
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  14
+                ],
+                [
+                  "V",
+                  38
+                ],
+                [
+                  "V",
+                  78
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  11
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  2,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  4
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  6,
+                  14,
+                  38
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-060",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-cultivator-sandking-9a5ef757-320.webp"
+            },
+            "v-222": {
+              "latestPages": [
+                [
+                  "V",
+                  83
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-119",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-pink-sunset-baller-c2694aa2-320.webp"
+            },
+            "v-226": {
+              "latestPages": [
+                [
+                  "V",
+                  83
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-145",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-princess-jubilee-b8bb7752-320.webp"
+            },
+            "v-23": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  6
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  14
+                ],
+                [
+                  "V",
+                  39
+                ],
+                [
+                  "V",
+                  76
+                ],
+                [
+                  "index",
+                  12
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  12
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  7,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  4
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  6,
+                  14,
+                  39
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-077",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-blood-moon-bandito-a46d68ea-320.webp"
+            },
+            "v-233": {
+              "latestPages": [
+                [
+                  "V",
+                  84
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-018",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-red-apple-orchard-rancher-standout-vehicle-adf7bc22.webp"
+            },
+            "v-237": {
+              "latestPages": [
+                [
+                  "V",
+                  84
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-109",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-seashark-sedna-graffiti-standout-vehicle-f9030ae8.webp"
+            },
+            "v-24": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  6
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  12
+                ],
+                [
+                  "V",
+                  40
+                ],
+                [
+                  "V",
+                  84
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  12
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  3,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  4
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  6,
+                  12,
+                  40
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-019",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-sludge-wraith-injection-6c3ae9f2-320.webp"
+            },
+            "v-244": {
+              "latestPages": [
+                [
+                  "V",
+                  84
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-033",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-western-searing-zombie-bobber-standout-vehicle-29f9d664.webp"
+            },
+            "v-249": {
+              "latestPages": [
+                [
+                  "V",
+                  84
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-084",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-vapid-shrimp-and-save-shifter-standout-vehicle-d75aeca0.webp"
+            },
+            "v-25": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  6
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  13
+                ],
+                [
+                  "V",
+                  41
+                ],
+                [
+                  "V",
+                  64
+                ],
+                [
+                  "V",
+                  80
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  13
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  4,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  5
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  6,
+                  13,
+                  41,
+                  64
+                ]
+              },
+              "source": "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L3825,ig.jpg",
+              "license": "https://github.com/rolux/gtadb.org/blob/main/LICENSE-DATA",
+              "src": "media/field-landmark-l3825.webp",
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-flower-powered-rancher-standout-vehicle-1b13123d.webp"
+            },
+            "v-252": {
+              "latestPages": [
+                [
+                  "V",
+                  84
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-046",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-smush-ganado-cd00ba54-320.webp"
+            },
+            "v-255": {
+              "latestPages": [
+                [
+                  "V",
+                  85
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-107",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-spiderweb-coquette-daa13cd7-320.webp"
+            },
+            "v-256": {
+              "latestPages": [
+                [
+                  "V",
+                  85
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L3628,ig.jpg",
+              "license": "https://github.com/rolux/gtadb.org/blob/main/LICENSE-DATA",
+              "src": "media/field-landmark-l3628.webp",
+              "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/gta6-standout-vehicle-115.webp"
+            },
+            "v-259": {
+              "latestPages": [
+                [
+                  "V",
+                  85
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-066",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-lapwing-stolen-valor-300-h-standout-vehicle-e51dc2df.webp"
+            },
+            "v-260": {
+              "latestPages": [
+                [
+                  "V",
+                  85
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-093",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-squalo-street-art-standout-vehicle-eab9862f.webp"
+            },
+            "v-269": {
+              "latestPages": [
+                [
+                  "V",
+                  85
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-012",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-bravado-third-eye-youga-standout-vehicle-dbc07e96.webp"
+            },
+            "v-27": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  6
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  15
+                ],
+                [
+                  "V",
+                  43
+                ],
+                [
+                  "V",
+                  84
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  14
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  2,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  5
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  6,
+                  15,
+                  43
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-056",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-vapid-red-hot-hustler-standout-vehicle-9c2d22e4.webp"
+            },
+            "v-274": {
+              "latestPages": [
+                [
+                  "V",
+                  86
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-015",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-truther-burrito-standout-vehicle-05e88998.webp"
+            },
+            "v-276": {
+              "latestPages": [
+                [
+                  "V",
+                  86
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-088",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-twinstripe-vigero-standout-vehicle-184e6f86.webp"
+            },
+            "v-279": {
+              "latestPages": [
+                [
+                  "V",
+                  86
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-144",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-vice-vinyl-coquette-184f01a3-320.webp"
+            },
+            "v-30": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  7
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  14
+                ],
+                [
+                  "V",
+                  46
+                ],
+                [
+                  "V",
+                  61
+                ],
+                [
+                  "V",
+                  86
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  15
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  7,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  5
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  7,
+                  14,
+                  46
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-064",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-maibatsu-tropical-manchez-standout-vehicle-f23b7799.webp"
+            },
+            "v-31": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  7
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  12
+                ],
+                [
+                  "V",
+                  47
+                ],
+                [
+                  "V",
+                  64
+                ],
+                [
+                  "V",
+                  81
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  7,
+                  12,
+                  47
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-031",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-nagasaki-hung-carbon-rs-standout-vehicle-20533836.webp"
+            },
+            "v-32": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  7
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  12
+                ],
+                [
+                  "V",
+                  48
+                ],
+                [
+                  "V",
+                  59
+                ],
+                [
+                  "V",
+                  82
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  16
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  3,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  6
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  7,
+                  12,
+                  48,
+                  59
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-030",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-lcc-monarch-avarus-standout-vehicle-0a533399.webp"
+            },
+            "v-33": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  7
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  14
+                ],
+                [
+                  "V",
+                  49
+                ],
+                [
+                  "V",
+                  82
+                ],
+                [
+                  "index",
+                  14
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  17
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  7,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  6
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  7,
+                  14,
+                  49
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-075",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-midnight-sun-avarus-25acdc1d-320.webp"
+            },
+            "v-36": {
+              "latestPages": [
+                [
+                  "V",
+                  2
+                ],
+                [
+                  "V",
+                  8
+                ],
+                [
+                  "V",
+                  9
+                ],
+                [
+                  "V",
+                  10
+                ],
+                [
+                  "V",
+                  52
+                ],
+                [
+                  "V",
+                  61
+                ],
+                [
+                  "V",
+                  62
+                ],
+                [
+                  "V",
+                  86
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {
+                "GTA6_Standout_Vehicles_Detailed_Road_Maps_KR.pdf": [
+                  18,
+                  22
+                ],
+                "GTA6_Standout_Vehicles_Map_Guide_KR.pdf": [
+                  5,
+                  8,
+                  9
+                ],
+                "GTA6_42_Cars_Clickable_Link_Guide_KR.pdf": [
+                  6
+                ],
+                "GTA6_Standout_Vehicles_42_KR.pdf": [
+                  2,
+                  8,
+                  10,
+                  52,
+                  61,
+                  62
+                ]
+              },
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-112",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-pfister-growler-vanessas-standout-vehicle-3d3e5061.webp"
+            },
+            "v-43": {
+              "latestPages": [
+                [
+                  "V",
+                  65
+                ],
+                [
+                  "V",
+                  67
+                ],
+                [
+                  "V",
+                  78
+                ],
+                [
+                  "index",
+                  13
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-085",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-cousin-carlos-akane-standout-vehicle-3f147045.webp"
+            },
+            "v-44": {
+              "latestPages": [
+                [
+                  "V",
+                  67
+                ],
+                [
+                  "V",
+                  75
+                ],
+                [
+                  "index",
+                  12
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-004",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-bravado-bison-1800-standout-vehicle-7053bb4f.webp"
+            },
+            "v-49": {
+              "latestPages": [
+                [
+                  "V",
+                  66
+                ],
+                [
+                  "V",
+                  70
+                ],
+                [
+                  "V",
+                  83
+                ],
+                [
+                  "index",
+                  15
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-081",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-lure-predator-rainbow-ripple-l20s-standout-vehicle-c6ec8904.webp"
+            },
+            "v-50": {
+              "latestPages": [
+                [
+                  "V",
+                  66
+                ],
+                [
+                  "V",
+                  70
+                ],
+                [
+                  "V",
+                  86
+                ],
+                [
+                  "index",
+                  16
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-078",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-seashark-westbound-azure-standout-vehicle-e8dc43fb.webp"
+            },
+            "v-76": {
+              "latestPages": [
+                [
+                  "V",
+                  75
+                ],
+                [
+                  "index",
+                  12
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-061",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-beach-candy-bobcat-fc63356f-320.webp"
+            },
+            "v-79": {
+              "latestPages": [
+                [
+                  "V",
+                  75
+                ],
+                [
+                  "index",
+                  12
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-020",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/site-beer-monster-marshall-c4d3aa1e-320.webp"
+            },
+            "v-82": {
+              "latestPages": [
+                [
+                  "V",
+                  76
+                ],
+                [
+                  "index",
+                  12
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-101",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-cheetah-pounce-plate-standout-vehicle-c1fed5f3.webp"
+            },
+            "v-98": {
+              "latestPages": [
+                [
+                  "V",
+                  77
+                ],
+                [
+                  "index",
+                  12
+                ]
+              ],
+              "previousTitleMentions": {},
+              "source": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-059",
+              "license": null,
+              "src": null,
+              "originalPhoto": "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-declasse-bugstars-burrito-standout-vehicle-2b0c645d.webp"
+            }
+          }
+        },
+        "additionalVehicles": {
+          "changed": 30,
+          "evidence": "동일 세부 차량의 GamesDB 항목 이름, 이미지 대체 텍스트, 원본 이미지 파일 이름이 일치. 원본 WebP를 직접 열어 형태를 시각 확인했습니다. 게시 권리는 확인되지 않아 해당 원본 파일의 외형 링크만 표시합니다.",
+          "sourceRecords": {
+            "v-231": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/rauls-coquette-classic",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/rauls-coquette-classic.webp",
+              "alt": "Raul's Coquette Classic",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-239": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/royal-sanchez",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/royal-sanchez.webp",
+              "alt": "Royal Sanchez",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-242": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/sandblasted-cliffhanger",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/sandblasted-cliffhanger.webp",
+              "alt": "Sandblasted Cliffhanger",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-251": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/smokescreen-carbon-rs",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/smokescreen-carbon-rs.webp",
+              "alt": "Smokescreen Carbon RS",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-262": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/sunset-sanchez",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/sunset-sanchez.webp",
+              "alt": "Sunset Sanchez",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-59": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/1010-cheetah",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/1010-cheetah.webp",
+              "alt": "1010 Cheetah",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-62": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/ahol-blista",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/ahol-blista.webp",
+              "alt": "Ahol Blista",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-64": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/ambergris-torlan",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/ambergris-torlan.webp",
+              "alt": "Ambergris Torlan",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-67": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/applesauce-bobcat",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/applesauce-bobcat.webp",
+              "alt": "Applesauce Bobcat",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-69": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/audacity-sanchez",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/audacity-sanchez.webp",
+              "alt": "AudaCity Sanchez",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-70": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/audacity-sandking",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/audacity-sandking.webp",
+              "alt": "AudaCity Sandking",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-71": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/avalanche-supervolito",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/avalanche-supervolito.webp",
+              "alt": "Avalanche Supervolito",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-77": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/beast-chino",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/beast-chino.webp",
+              "alt": "Beast Chino",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-85": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/black-widow-emerus",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/black-widow-emerus.webp",
+              "alt": "Black Widow Emerus",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-94": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/brets-rebel",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/brets-rebel.webp",
+              "alt": "Bret's Rebel",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-99": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/bullion-gauntlet",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/bullion-gauntlet.webp",
+              "alt": "Bullion Gauntlet",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-100": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/burning-cypher",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/burning-cypher.webp",
+              "alt": "Burning Cypher",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-106": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/cellerica-caddy",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/cellerica-caddy.webp",
+              "alt": "Cellerica Caddy",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-112": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/chrome-street-blazer",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/chrome-street-blazer.webp",
+              "alt": "Chrome Street Blazer",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-118": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/cuban-hermes",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/cuban-hermes.webp",
+              "alt": "Cuban Hermes",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-125": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/dogfight-fcr",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/dogfight-fcr.webp",
+              "alt": "Dogfight FCR",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-129": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/donk-verus",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/donk-verus.webp",
+              "alt": "Donk Verus",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-154": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/flipside-enduro",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/flipside-enduro.webp",
+              "alt": "Flipside Enduro",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-173": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/highwayman-sanchez",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/highwayman-sanchez.webp",
+              "alt": "Highwayman Sanchez",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-177": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/independence-boomazoom",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/independence-boomazoom.webp",
+              "alt": "Independence Boomazoom",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-178": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/interdimensional-youga",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/interdimensional-youga.webp",
+              "alt": "Interdimensional Youga",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-185": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/lacewing-maverick",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/lacewing-maverick.webp",
+              "alt": "Lacewing Maverick",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-186": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/lagoon-schafter",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/lagoon-schafter.webp",
+              "alt": "Lagoon Schafter",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-200": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/monster-futo",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/monster-futo.webp",
+              "alt": "Monster Futo",
+              "decodedSize": [
+                512,
+                256
+              ]
+            },
+            "v-203": {
+              "provider": "GamesDB",
+              "source": "https://gamesdb.gg/gta-6/vehicles/muckspreader-bandito",
+              "image": "https://gamesdb.gg/gta-6/images/game/vehicles/muckspreader-bandito.webp",
+              "alt": "Muckspreader Bandito",
+              "decodedSize": [
+                512,
+                256
+              ]
+            }
+          },
+          "remainingVehiclesWithNoConfirmedPhoto": [
+            {
+              "id": "v-236",
+              "name": "Revival Kit Car",
+              "result": [
+                "HTTP Error 404: Not Found"
+              ]
+            },
+            {
+              "id": "v-263",
+              "name": "Survivor Riata",
+              "result": [
+                "HTTP Error 404: Not Found"
+              ]
+            },
+            {
+              "id": "v-278",
+              "name": "Venturas BLVD Elegy",
+              "result": [
+                "HTTP Error 404: Not Found"
+              ]
+            },
+            {
+              "id": "v-72",
+              "name": "Axanthic Transgressor",
+              "result": [
+                "HTTP Error 404: Not Found"
+              ]
+            },
+            {
+              "id": "v-93",
+              "name": "Born Free Deviant",
+              "result": [
+                "HTTP Error 404: Not Found"
+              ]
+            },
+            {
+              "id": "v-148",
+              "name": "Endurance Mamba GT",
+              "result": [
+                "HTTP Error 404: Not Found"
+              ]
+            }
+          ]
+        },
+        "coverage": {
+          "vehiclesWithPhotoOrLink": 276,
+          "vehicles": 282,
+          "weaponVariantsWithPhotoOrLink": 130,
+          "weaponVariants": 130,
+          "operationsWithPhotoOrLink": 37,
+          "operations": 40
+        }
+      },
+      "map": {
+        "baseline": "e4a2d34",
+        "focus": "서로 다른 공개 지도와 게임 원본 대조로 검증된 지도 위치 및 직접 링크 보강",
+        "pins": {
+          "l05": {
+            "id": "l05/s-dexter-apartment",
+            "name": "트리니티 아파트 · 건물 주변",
+            "coordinates": [
+              1423.9,
+              2198.2
+            ],
+            "evidence": [
+              "https://gta6map.city/?m=s-dexter-apartment",
+              "https://gta6map.city/data/secrets/index.json",
+              "https://fbritoferreira.github.io/gta6/?loc=easter-egg-003",
+              "https://gta6gps.com/?p=pin-917889",
+              "https://gta6map.city/img/s/dexter-apartment.jpg"
+            ],
+            "checks": "워싱턴 아일랜드의 수로 안쪽 건물. Open GTA 6 Map의 아파트 표식과 약 9게임 단위 이내, GTA6 GPS도 같은 건물 주변입니다."
+          },
+          "l07": {
+            "id": "l07/pin-917867",
+            "name": "펠리컨 밸리 연구 전초기지 · 조사 건물 주변",
+            "coordinates": [
+              -3955,
+              -4097
+            ],
+            "evidence": [
+              "https://gta6gps.com/?p=pin-917867",
+              "https://assets.gta6gps.com/app/map/data.a6d2d16f396f.json",
+              "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#weapon-spawn-024",
+              "https://gta6map.city/secrets/giant-mutant-crab/"
+            ],
+            "checks": "GPS의 연구 건물과 GTABase의 같은 시설에서 회수하는 VF5 표식이 약 24게임 단위에서 맞습니다. 이는 접근용 표식입니다."
+          },
+          "l15": {
+            "id": "l15/s-cruise-ship-interior",
+            "name": "포트 바이스 시티 · 크루즈선 북서쪽 부두",
+            "coordinates": [
+              330.0,
+              -287.0
+            ],
+            "evidence": [
+              "https://gta6map.city/?m=s-cruise-ship-interior",
+              "https://gta6map.city/data/secrets/index.json",
+              "https://gta6map.city/img/s/cruise-ship-interior.jpg",
+              "https://www.youtube.com/watch?v=OnWC__OxyTk&t=32s"
+            ],
+            "checks": "항만 섬의 북서 부두와 길게 그려진 선체를 원본 지도 및 접근 영상에서 맞췄습니다. 선내 층별 좌표는 포함하지 않습니다."
+          },
+          "l17": {
+            "id": "l17/s-sos-island",
+            "name": "SOS 섬 · 외해의 모래톱",
+            "coordinates": [
+              -7284.0,
+              -3880.0
+            ],
+            "evidence": [
+              "https://gta6map.city/?m=s-sos-island",
+              "https://gta6map.city/data/secrets/index.json",
+              "https://gta6gps.com/?p=pin-917864",
+              "https://static.beebom.com/wp-content/uploads/2026/11/GTA-6-SOS-island-map-location.jpg"
+            ],
+            "checks": "게임 지도, 외해의 좁다란 모래톱과 두 공개 좌표가 같은 섬을 가리킵니다. 섬 중심 표식입니다."
+          },
+          "l21": {
+            "id": "l21/s-tallaloko-container-mushrooms-backrooms",
+            "name": "탈라로코 호수 동쪽 · 주황 컨테이너",
+            "coordinates": [
+              -1397.0,
+              7035.0
+            ],
+            "evidence": [
+              "https://gta6map.city/?m=s-tallaloko-container-mushrooms-backrooms",
+              "https://gta6map.city/data/secrets/index.json",
+              "https://gta6gps.com/?p=pin-918411",
+              "https://static.beebom.com/wp-content/uploads/2026/11/Control-easter-egg-location-GTA-6.jpg"
+            ],
+            "checks": "호수 동쪽 순환로의 컨테이너와 두 공급자의 같은 컨테이너 조우를 대조했습니다."
+          },
+          "l22": {
+            "id": "l22/s-hyde-island-lucia-bomb-collar-hunt",
+            "name": "하이드 아일랜드 · 서쪽 선착장 쪽 진입",
+            "coordinates": [
+              -2755.8,
+              8830.6
+            ],
+            "evidence": [
+              "https://gta6map.city/?m=s-hyde-island-lucia-bomb-collar-hunt",
+              "https://gta6map.city/data/secrets/index.json",
+              "https://gta6map.city/img/s/hyde-island-lucia-bomb-collar-hunt.jpg",
+              "https://www.dexerto.com/wikis/gta-6/easter-eggs/hyde-island-hunt-easter-egg-manhuntsaw/"
+            ],
+            "checks": "초승달 해변의 반대편에 있는 진입 구역. 도전 이후 이동하는 인물과 후속 보상에는 같은 좌표를 사용하지 않았습니다."
+          },
+          "l24": {
+            "id": "l24/s-lummox-ruins-bong-mario-block",
+            "name": "럼목스 북부 유적 · 블록 탐색 지점",
+            "coordinates": [
+              -4096.6,
+              7412.1
+            ],
+            "evidence": [
+              "https://gta6map.city/?m=s-lummox-ruins-bong-mario-block",
+              "https://gta6map.city/data/secrets/index.json",
+              "https://gta6gps.com/?p=pin-918160",
+              "https://fbritoferreira.github.io/gta6/?loc=easter-egg-044",
+              "https://static.beebom.com/wp-content/uploads/2026/11/Mario-easter-egg-location-GTA-6.jpg"
+            ],
+            "checks": "물길과 옛 제지시설의 유적을 두 공개 표식 및 원본 지도로 맞췄습니다. 시설 스캔과 블록 조사는 별도 목표입니다."
+          },
+          "p02-w-003": {
+            "id": "p02-w-003/unique-weapon-071",
+            "name": "빅 파인 · 브레인워셔 1922 회수 벙커",
+            "coordinates": [
+              -5674.0,
+              -1558.0
+            ],
+            "evidence": [
+              "https://fbritoferreira.github.io/gta6/?loc=unique-weapon-071",
+              "https://github.com/fbritoferreira/gta6",
+              "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-071",
+              "https://gta.guide/gta-6/guides/gta-6-president-russo-bunkers"
+            ],
+            "checks": "Open GTA 6 Map과 기존 GTABase 지점의 공통 ID 및 원본 공략의 빅 파인 수령 시설을 맞췄습니다. 지하에서의 층별 위치는 미표시입니다."
+          },
+          "p02-w-023": {
+            "id": "p02-w-023/pin-918704",
+            "name": "샤크투스 섬 · 루소의 1922가 있는 벙커",
+            "coordinates": [
+              161,
+              5284
+            ],
+            "evidence": [
+              "https://gta6gps.com/?p=pin-918704",
+              "https://assets.gta6gps.com/app/map/data.a6d2d16f396f.json",
+              "https://gta6gps.com/guides/presidents-bunker",
+              "https://gta.guide/gta-6/guides/gta-6-president-russo-bunkers"
+            ],
+            "checks": "섬과 첫 벙커 금고의 권총 보고를 두 원문으로 대조했습니다. 지상에서는 같은 시설의 입구를 먼저 확인하세요."
+          },
+          "p02-w-048": {
+            "id": "p02-w-048/weapon-spawn-069",
+            "name": "밥캣 키 서쪽 · 더블 크로스 바트라 해저 지점",
+            "coordinates": [
+              -7172.0,
+              -2420.0
+            ],
+            "evidence": [
+              "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#weapon-spawn-069",
+              "https://github.com/fbritoferreira/gta6",
+              "https://www.gtabase.com/images/gta-6/maps/spots/gta-6-double-cross-vatra-heavy-smg-unique-weapon-location-map.webp?v=1795515278",
+              "https://www.gtabase.com/gta-6/weapons/double-cross-vatra"
+            ],
+            "checks": "바로 연결되는 GTABase의 정확한 그림, 원본 지도 ID와 Open GTA 6 Map의 동일한 해저 지점을 맞췄습니다."
+          },
+          "p02-w-096": {
+            "id": "p02-w-096/unique-weapon-074",
+            "name": "선다운 비행장 · 피트의 KZ-59가 있는 격납고",
+            "coordinates": [
+              -782.0,
+              4391.0
+            ],
+            "evidence": [
+              "https://fbritoferreira.github.io/gta6/?loc=unique-weapon-074",
+              "https://github.com/fbritoferreira/gta6",
+              "https://www.powerpyx.com/wp-content/uploads/gta-6-walkthrough-the-last-mile-passing-the-torch-2.jpg",
+              "https://www.powerpyx.com/wp-content/uploads/gta-6-walkthrough-the-last-mile-passing-the-torch-5.jpg"
+            ],
+            "checks": "격납고의 도로와 활주로가 원본 게임 지도와 일치합니다. 지도는 고정 시설이고 회수는 의뢰 중 격납고 테이블입니다."
+          },
+          "p02-w-111": {
+            "id": "p02-w-111/pin-917794",
+            "name": "키 렌토 남동쪽 · 건 넛 주택",
+            "coordinates": [
+              -2771,
+              -6494
+            ],
+            "evidence": [
+              "https://gta6gps.com/?p=pin-917794",
+              "https://assets.gta6gps.com/app/map/data.a6d2d16f396f.json",
+              "https://fbritoferreira.github.io/gta6/?loc=unique-weapon-038",
+              "https://fbritoferreira.github.io/gta6/screenshots/gta6-unique-weapon-038.webp"
+            ],
+            "checks": "첫 번째 공개 회수 보고인 주택의 같은 변형을 확인했습니다. GPS와 Open GTA 6 Map의 이 번호가 한 게임 단위 차이입니다. 두 번째 공개 지점은 별도로 남겼습니다."
+          }
+        },
+        "entryIds": [
+          "l02",
+          "l05",
+          "l06",
+          "l07",
+          "l15",
+          "l17",
+          "l21",
+          "l22",
+          "l23",
+          "l24",
+          "p02-w-003",
+          "p02-w-013",
+          "p02-w-023",
+          "p02-w-048",
+          "p02-w-096",
+          "p02-w-111",
+          "p02-w-115",
+          "p02-w-125",
+          "p02-x05",
+          "p06-ws-010",
+          "v-59"
+        ],
+        "externalOnly": [
+          "l02",
+          "l06",
+          "l23",
+          "p02-w-013",
+          "p02-w-115",
+          "p02-w-125",
+          "p02-x05",
+          "p06-ws-010",
+          "v-59"
+        ],
+        "coordinateChecks": [
+          "GTA6 GPS가 공개한 GTADB Day 기준을 확인했고 지형 타일·위치 비교에 사용. https://gta6gps.com/about",
+          "Open GTA 6 Map 1024 좌표를 x=(u−512)×32, y=(512−v)×32로 변환. 기존 St. Lucia Lighthouse 값과 0.73 게임 단위 차이이며 Crop Dusting Job 일치. City 좌표의 트리니티 아파트·럼목스 유적과 Open 원본 좌표도 같은 지형에서 교차 대조.",
+          "공개 표식의 게임 내 정밀도는 자료별로 다릅니다. 층·실내·해저 회수 조건 및 접근 위치를 본문에서 분리했고 지도 핀에는 정밀도 수치를 추가하지 않았습니다."
+        ],
+        "withheldPins": {
+          "l02": "창고 방문 지점과 모텔 의뢰 시작점은 서로 다르므로 직접 위치 링크만 배치.",
+          "l06": "게시판 차고와 인근 사진 속 주택은 40m 떨어진 별도 표식.",
+          "l09": "GTA6GPS의 지하 시설과 원본 Abandoned Site 좌표가 약 1,040 게임 단위 차이. 기존 직접 지도를 유지.",
+          "l12": "이미 같은 자유 조우 대상의 지도 지점이 있어 중복 추가하지 않음.",
+          "l16": "등대와 해당 조우에 각각 기존 지도 항목이 있음.",
+          "l18": "같은 기념물을 WAiNK 항목으로 이미 표시.",
+          "l27": "주택 앞 계류장이 기존 키 렌토 은신처와 같은 진입 위치.",
+          "l23": "시설과 물탑은 원본으로 확인했으나 두 차례 진입의 정확한 좌표는 확인되지 않음.",
+          "p02-w-115": "섬 서쪽 진입과 도전 이후 회수 위치는 같은 좌표로 표시할 수 없음.",
+          "p02-w-125": "두 지도에서 등대·육상 지점은 확인했으나 해저 칼 위치 좌표로 채택하기에는 불충분.",
+          "p02-x05": "공개 지도에서 확인되는 다른 하우너스 H-AT의 획득 지점과 지하 트레일러를 구분.",
+          "p06-ws-010": "GPS와 Open GTA 6 Map 좌표가 구역 안에서도 약 182 게임 단위 차이.",
+          "v-59": "사우스사이드 스토리지와 같은 수령 시설을 가리키므로 지도 원본 링크만 제공."
+        },
+        "originalVisualSheets": [
+          "comparison-1.jpg",
+          "comparison-2.jpg",
+          "comparison-3.jpg",
+          "comparison-4.jpg",
+          "city-comparison-1.jpg",
+          "city-comparison-2.jpg",
+          "linked-originals.jpg"
+        ]
+      },
+      "officialKoreanNames": {
+        "sources": [
+          "https://www.playstation.com/ko-kr/games/grand-theft-auto-vi/",
+          "https://www.playstation.com/en-us/games/grand-theft-auto-vi/",
+          "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/kr/",
+          "https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/",
+          "https://psray.net/trophies/42972?lang=ko",
+          "https://www.powerpyx.com/gta-6-hit-kingpin-bowling-walkthrough/",
+          "https://www.gtabase.com/gta-6/weapons/gutterball-moreland-850"
+        ],
+        "candidateFiles": [
+          "official-names-additions.json",
+          "replacements.jsonl"
+        ],
+        "comparison": "PlayStation 한·영 얼티밋 소개의 동일 문장과 PS5 동일 트로피 한·영 데이터를 대조. 자료에 있는 이름과 해당 활용 문맥만 적용.",
+        "termsAdded": 32,
+        "affectedCards": 95,
+        "affectedPins": 10,
+        "affectedEntryIds": [
+          "i044",
+          "i114",
+          "i119",
+          "k07",
+          "k08",
+          "l01",
+          "p01-c01-guide",
+          "p01-c03-guide",
+          "p01-c04-guide",
+          "p01-endgame",
+          "p01-region-atlas",
+          "p01-region-offshore",
+          "p01-roadmap",
+          "p02-w-120",
+          "p03-bn09",
+          "p03-fx01",
+          "p03-gr11",
+          "p03-pn11",
+          "p03-pn14",
+          "p03-st011",
+          "p03-st048",
+          "p03-vr013",
+          "p04-04",
+          "p04-05",
+          "p04-06",
+          "p04-07",
+          "p04-08",
+          "p04-catalog",
+          "p05-dive-route",
+          "p05-power-circuit",
+          "p05-region-exploration",
+          "p06-c-ant-08",
+          "p06-c-lco-19",
+          "p06-c-lpa-06",
+          "p06-c-lpo-04",
+          "p06-c-lsw-19",
+          "p06-c-lwr-02",
+          "p06-c-lwr-04",
+          "p06-c-rat-17",
+          "p06-c-rig-32",
+          "p06-c-vcf-20",
+          "p06-c-vna-11",
+          "p06-collection-targets",
+          "p06-stunt-starts",
+          "p07-e03",
+          "p07-first-garage",
+          "p07-garage-retention",
+          "p07-garages",
+          "p07-s01",
+          "p08-progression",
+          "p08-range-medals",
+          "p08-training-check",
+          "p09-ac-15",
+          "p09-activity-rewards",
+          "p09-al",
+          "p09-al-guide",
+          "p09-an",
+          "p09-ca",
+          "p09-ed",
+          "p09-fr",
+          "p09-ke",
+          "p09-m-009",
+          "p09-m-017",
+          "p09-m-018",
+          "p09-m-036",
+          "p09-m-043",
+          "p09-m-067",
+          "p09-me",
+          "p09-pa",
+          "p09-pe",
+          "p09-repeated-activities",
+          "p09-start-here",
+          "p09-ty",
+          "p10-reward-preservation",
+          "r03",
+          "v-01",
+          "v-02",
+          "v-117",
+          "v-17",
+          "v-213",
+          "v-261",
+          "v-279",
+          "v-41",
+          "v-49",
+          "v-52",
+          "v-84",
+          "v-registration",
+          "w02",
+          "w05",
+          "w06",
+          "w08",
+          "w09",
+          "w11",
+          "w22",
+          "w27"
+        ],
+        "replacements": {
+          "p06-collection-targets": "data/field-guides.jsonl",
+          "p09-m-067": "data/p09-01.jsonl",
+          "p03-vr013": "data/p03-03.jsonl"
+        },
+        "verifiedExamples": [
+          {
+            "id": "p03-pn14",
+            "before": "Washington Beach",
+            "after": "워싱턴 비치"
+          },
+          {
+            "id": "p03-pn11",
+            "before": "Stockyard",
+            "after": "스톡야드"
+          },
+          {
+            "id": "v-49",
+            "before": "Gambit Bay",
+            "after": "갬빗 베이"
+          },
+          {
+            "id": "p06-collection-targets",
+            "before": "One Last Job",
+            "after": "마지막 하나 (One Last Thing)"
+          },
+          {
+            "id": "p09-m-067",
+            "tested": "산탄총, 수집품 시계, 트로피를 구분하고 무기·거점 상세로 연결"
+          }
+        ]
+      },
+      "responsive": [
+        "360·390px와 1365px 브라우저에서 검색 분류로 목록을 좁히고 같은 검색어를 지도로 넘기는 조작을 검증.",
+        "공략 목차 키보드 이동과 접힌 상세의 기본 상태, 지도 상단 확대와 키보드 포커스, 외부 현장 사진 카드 표시를 확인.",
+        "390·1365px에서 추가·교체 사진 경로의 실제 내장 파일과 원본 링크, 위치별 지도·상세 연결, 한글·영문 검색을 확인."
+      ]
     }
   ],
   "responsive": {
@@ -7184,11 +11680,11 @@
     "remaining": "구판 개정 대장 297행은 원본 대조 완료. 최신 12권 전체의 페이지별 반영·대조 기록을 완료했습니다.",
     "map": {
       "totalEntries": 3387,
-      "pins": 2034,
-      "entriesWithPins": 1948,
-      "remainingWithoutOwnPin": 1439,
-      "scope": "각 위치는 독립 좌표 핀 기준. 공용 진입 지도, 외부 링크, 지역 동선, 비위치형 가이드가 포함된 전체 공략 수와는 단위가 다름. 독립 좌표가 없는 73개 공략은 통합 지도에서 원본 지도 또는 현장 사진으로 별도 연결.",
-      "entriesWithExternalMapOnly": 73
+      "pins": 2046,
+      "entriesWithPins": 1960,
+      "remainingWithoutOwnPin": 1427,
+      "scope": "각 위치는 독립 좌표 핀 기준. 공용 진입 지도, 외부 링크, 지역 동선, 비위치형 가이드가 포함된 전체 공략 수와는 단위가 다름. 독립 좌표가 없는 77개 공략은 통합 지도에서 원본 지도 또는 현장 사진으로 별도 연결.",
+      "entriesWithExternalMapOnly": 77
     },
     "revisionCoverage": {
       "reviewedRows": 297,

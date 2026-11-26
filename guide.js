@@ -44,7 +44,7 @@ const variableBox=p=>p?.category==="P06"&&p.url.includes("feature=yellow-loot-bo
 function pinTitle(p){
  const guide=findItem(p.item);
  if(variableBox(p))return "가변 상자 · "+(guide?.title||p.name);
- if(guide?.englishName&&p.id.includes("/standout-vehicle-"))return guide.title;
+ if(guide&&p.id.includes("/standout-vehicle-")&&(guide.englishName||/[가-힣]/.test(guide.title)))return guide.title;
  return p.name;
 }
 const pinLinks=v=>atlasByItem.get(cleanId(v.id))||[];
@@ -73,7 +73,12 @@ try{
 function save(){try{localStorage.setItem(storageKey,JSON.stringify(state))}catch{document.querySelector("#feedback").textContent="이 브라우저에서는 기록을 저장할 수 없습니다."}}
 const flags=v=>state.items[cleanId(v.id)]||{};
 function route(){const [path,query=""]=location.hash.slice(1).split("?");let bits;try{bits=(path||"/").split("/").filter(Boolean).map(decodeURIComponent)}catch{bits=[]}return {page:bits[0]||"home",id:bits[1]||"",params:new URLSearchParams(query)}}
-function setParam(k,v){const hash=location.hash.split("?")[0],p=route().params;if(v)p.set(k,v);else p.delete(k);location.hash=hash+(p.size?"?"+p:"")}
+function setParam(k,v){
+ const {page,params}=route();
+ if(v)params.set(k,v);else params.delete(k);
+ if(page==="search"&&k==="cat")params.delete("region");
+ location.hash=location.hash.split("?")[0]+(params.size?"?"+params:"");
+}
 function trail(parts){return '<div class="trail"><a href="#/">홈</a>'+parts.map(([name,href])=>'<span>/</span>'+(href?'<a href="'+href+'">'+esc(name)+'</a>':esc(name))).join("")+'</div>'}
 function categoryButton(c,full=false){const [name,code,description]=categories[c];return '<a href="'+group(c)+'"><span class="glyph" aria-hidden="true">'+code+'</span><span>'+name+(full?'<small>'+description+'</small>':'')+'</span></a>'}
 function mediaArt(v){
@@ -87,11 +92,15 @@ function statusText(v){
  const text=[v.status==="unconfirmed"?"획득 조건 미확인":"",Number.isInteger(v.chapter)?"관련 진행 · "+chapters[v.chapter]:""].filter(Boolean).join(" · ");
  return text?'<p class="statusnote">'+esc(text)+'</p>':"";
 }
+function cardPhotoLink(v){
+ const m=photo(v);
+ if(m?.reveal||m?.originalReveal)return "";
+ return link(m?.originalPhoto,m?.originalLinkLabel||"현장 사진 원본")||link(v.fieldReferences?.photo,"현장 사진 원본");
+}
 function card(v){
  const body=mediaArt(v)+'<div class="cardbody"><span class="kicker">'+esc([catName(v.category),v.region].filter(Boolean).join(" · "))+'</span><h3>'+esc(v.title)+'</h3><p>'+esc(v.summary)+'</p>'+statusText(v)+(flags(v).done?'<small class="label">✓ 완료</small>':'')+'</div>';
  const appearance=appearanceSource(v);
- const original=photo(v);
- const photoLink=original?.originalPhoto&&!original.reveal&&!original.originalReveal?link(original.originalPhoto,original.originalLinkLabel||"현장 사진 원본"):"";
+ const photoLink=cardPhotoLink(v);
  if(!appearance&&!photoLink)return '<a class="card" href="'+entry(v.id)+'">'+body+'</a>';
  return '<article class="card"><a class="card-guide" href="'+entry(v.id)+'">'+body+'</a><div class="card-photo">'+photoLink+(appearance?link(appearance.url,'외형 원본 보기'):"")+'</div></article>';
 }
@@ -126,6 +135,12 @@ function listPage(page,id,p){
  const cat=id.toUpperCase(),mine=page==="mine",search=page==="search",q=(p.get("q")||"").trim(),filter=regionFilter(p.get("region")),flag=p.get("flag")||"favorite";
  const title=mine?"내 기록":search?"검색 결과":catName(cat);
  let all=mine?items.filter(v=>flags(v)[flag]):search?searchItems(q):categoryItems(cat);
+ const scope=search&&Object.hasOwn(categories,p.get("cat"))?p.get("cat"):"";
+ const searchCategories=search?[...new Set(all.map(v=>v.category).filter(c=>Object.hasOwn(categories,c)))]:[];
+ if(scope){
+  all=all.filter(v=>v.category===scope);
+  if(!searchCategories.includes(scope))searchCategories.push(scope);
+ }
  const regionChoices=[...new Set(all.map(v=>v.region).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ko"));
  if(filter)all=all.filter(v=>v.region===filter);
  const vehicles=!mine&&!search&&cat==="V";
@@ -137,7 +152,7 @@ function listPage(page,id,p){
   all=all.filter(v=>{
    const m=photo(v);
    const embedded=m?.src&&!m.reveal;
-   const linked=!m?.reveal&&((m?.originalPhoto&&!m.originalReveal)||appearanceSource(v));
+   const linked=cardPhotoLink(v)||(!m?.reveal&&appearanceSource(v));
    if(mediaFilter==="embedded")return embedded;
    if(mediaFilter==="original")return linked;
    return mediaFilter!=="photo"||embedded||linked;
@@ -159,9 +174,13 @@ function listPage(page,id,p){
   all=[...all].sort((a,b)=>(a.chapter??9)-(b.chapter??9));
  }
  const region=regionChoices.length>1?'<label>지역 <select data-change="region">'+opt("","전체 지역",filter)+regionChoices.map(r=>opt(r,r,filter)).join("")+'</select></label>':"";
+ const searchScope=searchCategories.length?'<label>공략 분류 <select data-change="cat">'+opt("","전체 분류",scope)+Object.keys(categories).filter(c=>searchCategories.includes(c)).map(c=>opt(c,catName(c),scope)).join("")+'</select></label>':"";
+ const mapQuery=new URLSearchParams({q});
+ if(mapCategories.includes(scope))mapQuery.set("cat",scope);
+ const mapSearchLink=search&&q?'<a class="btn" href="#/map?'+esc(mapQuery)+'">지도에서 검색 ↗</a>':"";
  const tabs=mine?'<div class="chips">'+Object.entries({favorite:"즐겨찾기",later:"나중에",done:"완료"}).map(([k,v])=>'<a '+(k===flag?'aria-current="page"':'')+' href="#/mine?flag='+k+'">'+v+'</a>').join("")+'</div>':"";
  const backup=mine?'<div class="bar"><button data-action="export">기록 내보내기</button><label class="btn">기록 가져오기 <input id="restore" type="file" accept=".json,application/json" hidden></label></div>':"";
- return trail([["공략 도감","#/guides"],[title]])+'<div class="eyebrow">'+(categories[cat]?.[1]||"FIELD GUIDE")+'</div>'+listHeading(cat,title,search?'“'+q+'”':categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+routeShortcut+shortcut+'<div class="bar">'+(cat==="P01"?chapterSelect(chapter):"")+region+(vehicles?vehicleStylePicker(style):"")+photoControl+'<span class="count">'+all.length.toLocaleString()+'개 공략</span></div>'+cards(all.slice(0,limit))+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
+ return trail([["공략 도감","#/guides"],[title]])+'<div class="eyebrow">'+(categories[cat]?.[1]||"FIELD GUIDE")+'</div>'+listHeading(cat,title,search?'“'+q+'”':categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+routeShortcut+shortcut+'<div class="bar">'+searchScope+(cat==="P01"?chapterSelect(chapter):"")+region+(vehicles?vehicleStylePicker(style):"")+photoControl+mapSearchLink+'<span class="count">'+all.length.toLocaleString()+'개 공략</span></div>'+cards(all.slice(0,limit))+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
 }
 const searchCache=new Map();
 function searchItems(q){const terms=q.split(/\s+/).map(norm).filter(Boolean);if(!terms.length)return [];
@@ -280,11 +299,15 @@ function fieldReferences(v){
    (refs.note?'<p>'+esc(refs.note)+'</p>':'')+'<div class="links">'+buttons.join("")+'</div></details>';
 }
 function detail(v){if(!v)return missing();
- const f=flags(v),links=v.sources||[],mp=pins.find(p=>cleanId(p.item)===cleanId(v.id)),sections=v.sections||[];
+ const f=flags(v),links=v.sources||[],sections=v.sections||[];
  const related=(v.related||[]).map(findItem).filter(Boolean);
  const actions=Object.entries({favorite:"즐겨찾기",later:"나중에",done:"완료"}).map(([k,t])=>'<button data-flag="'+k+'" data-id="'+esc(v.id)+'" aria-pressed="'+Boolean(f[k])+'">'+(f[k]?"✓ ":"")+t+'</button>').join("");
- return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article"><div class="intro"><div class="kicker">'+esc([catName(v.category),v.region].filter(Boolean).join(" · "))+'</div><h1>'+esc(v.title)+'</h1><p class="lead">'+esc(v.summary)+'</p>'+statusText(v)+'<div class="tools">'+actions+'</div>'+photoFigure(v)+'</div>'+fieldReferences(v)+entryMap(v)+sections.map(section).join("")+
- videoSection(links)+(links.length?'<section class="panel"><h2>지도·영상·참고 자료</h2><div class="links">'+links.map(sourceLink).join("")+'</div></section>':'')+'</article><aside class="rail"><div class="panel"><h2>이 공략에서</h2>'+sections.map((s,i)=>'<a href="#s'+i+'" data-scroll="'+i+'">'+esc(s.title)+'</a>').join("")+(mp?'<a href="#/map?item='+encodeURIComponent(v.id)+'">지도에서 위치 보기 ↗</a>':'')+'</div>'+(related.length?'<div class="panel"><h2>연관 공략</h2>'+related.slice(0,8).map(relatedLink).join("")+(related.length>8?'<details><summary>전체 '+related.length+'개 보기</summary>'+related.slice(8).map(relatedLink).join("")+'</details>':'')+'</div>':'')+'</aside></div>';
+ const location=pinLinks(v).length?'<a href="#/map?item='+encodeURIComponent(v.id)+'">지도에서 위치 보기 ↗</a>':"";
+ const outline=sections.map((s,i)=>'<a href="#s'+i+'" data-scroll="'+i+'">'+esc(s.title)+'</a>').join("")+location;
+ const mobileOutline=outline?'<details class="guide-toc"><summary>공략 목차</summary>'+outline+'</details>':"";
+ const desktopOutline=outline?'<div class="panel guide-toc-desktop"><h2>이 공략에서</h2>'+outline+'</div>':"";
+ return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article"><div class="intro"><div class="kicker">'+esc([catName(v.category),v.region].filter(Boolean).join(" · "))+'</div><h1>'+esc(v.title)+'</h1><p class="lead">'+esc(v.summary)+'</p>'+statusText(v)+'<div class="tools">'+actions+'</div>'+mobileOutline+photoFigure(v)+'</div>'+fieldReferences(v)+entryMap(v)+sections.map(section).join("")+
+ videoSection(links)+(links.length?'<section class="panel"><h2>지도·영상·참고 자료</h2><div class="links">'+links.map(sourceLink).join("")+'</div></section>':'')+'</article><aside class="rail">'+desktopOutline+(related.length?'<div class="panel"><h2>연관 공략</h2>'+related.slice(0,8).map(relatedLink).join("")+(related.length>8?'<details><summary>전체 '+related.length+'개 보기</summary>'+related.slice(8).map(relatedLink).join("")+'</details>':'')+'</div>':'')+'</aside></div>';
 }
 function missing(){return '<h1>공략을 찾을 수 없습니다</h1><p class="lead">이전 판의 주소이거나 통합된 항목일 수 있습니다.</p><a class="btn" href="#/guides">공략 도감 열기</a>'}
 const inBounds=p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=-12288&&p.x<=6144&&p.y>=-10240&&p.y<=12288;
@@ -335,7 +358,8 @@ function mapPage(p){
    const v=vs[0],[x,y]=percent(v),many=vs.length>1;
    return '<button class="pin '+(v===current?"active ":"")+(many?"cluster":"")+'" style="left:'+x+'%;top:'+y+'%" '+(many?'data-cluster':'data-pin')+'="'+esc(v.id)+'" aria-label="'+esc(many?"위치 "+vs.length+"개 확대":pinTitle(v))+'">'+(many?vs.length:"")+'</button>';
  }).join("");
- return trail([["통합 지도"]])+'<div class="eyebrow">LEONIDA ATLAS</div><h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+mapCategories.map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style):"")+'<span class="count">'+list.length.toLocaleString()+'개 핀</span></div>'+references+'<div class="maplayout"><div><div class="mapview" tabindex="0" aria-label="리오나이다 지형도"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" alt="리오나이다의 도로·수로·해안 지형">'+pinsHTML+'</div></div><div class="bar"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><a class="textlink" href="#/credits">지도 출처</a></div></div><aside class="panel"><h2>이 지도에서 찾기</h2>'+(current?'<div class="selectedpin"><b>'+esc(pinTitle(current))+'</b><p>'+esc(current.region)+'</p><div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 지도 핀이 없습니다.")+'</p>')+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'">'+esc(pinTitle(v))+'<small>'+esc(v.region)+'</small></button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
+ const controls='<div class="bar mapcontrols"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><a class="textlink" href="#/credits">지도 출처</a></div>';
+ return trail([["통합 지도"]])+'<div class="eyebrow">LEONIDA ATLAS</div><h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+mapCategories.map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style):"")+'<span class="count">'+list.length.toLocaleString()+'개 핀</span></div>'+references+'<div class="maplayout"><div>'+controls+'<div class="mapview" tabindex="0" aria-label="리오나이다 지형도"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" alt="리오나이다의 도로·수로·해안 지형">'+pinsHTML+'</div></div></div><aside class="panel"><h2>이 지도에서 찾기</h2>'+(current?'<div class="selectedpin"><b>'+esc(pinTitle(current))+'</b><p>'+esc(current.region)+'</p><div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 지도 핀이 없습니다.")+'</p>')+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'">'+esc(pinTitle(v))+'<small>'+esc(v.region)+'</small></button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
 }
 document.addEventListener("submit",event=>{
  if(event.target.id!=="map-search")return;
@@ -367,7 +391,17 @@ main.addEventListener("change",async e=>{const el=e.target;
 const dialog=document.querySelector("#lightbox");dialog.querySelector("button").onclick=()=>dialog.close();
 main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)return;
  if(el.dataset.video){const frame=document.createElement("iframe");frame.title="공략 영상";frame.src="https://www.youtube-nocookie.com/embed/"+el.dataset.video+"?start="+Number(el.dataset.time)+"&autoplay=1";frame.allow="autoplay; encrypted-media; fullscreen";frame.allowFullscreen=true;frame.referrerPolicy="strict-origin-when-cross-origin";frame.className="video";el.replaceWith(frame);return}
- if(el.dataset.scroll!==undefined){e.preventDefault();document.getElementById("s"+el.dataset.scroll)?.scrollIntoView();return}
+ if(el.dataset.scroll!==undefined){
+  e.preventDefault();
+  const section=document.getElementById("s"+el.dataset.scroll);
+  const heading=section?.querySelector("h2,summary");
+  if(heading){
+   if(heading.localName!=="summary")heading.tabIndex=-1;
+   heading.focus({preventScroll:true});
+  }
+  section?.scrollIntoView();
+  return;
+ }
  if(el.dataset.flag){const key=cleanId(el.dataset.id),flag=el.dataset.flag;const current=state.items[key]??={};current[flag]=!current[flag];save();el.setAttribute("aria-pressed",String(current[flag]));el.textContent=(current[flag]?"✓ ":"")+(el.dataset.label||{done:"완료",favorite:"즐겨찾기",later:"나중에"}[flag]);
    const checklist=el.closest(".discovery-checklist");
    if(checklist)checklist.querySelector("[data-count]").textContent=checklist.querySelectorAll('button[data-flag="done"][aria-pressed="true"]').length;
@@ -376,7 +410,18 @@ main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)r
  if(el.dataset.pin){selected=el.dataset.pin;const listScroll=document.querySelector(".pinlist").scrollTop;render();document.querySelector(".pinlist").scrollTop=listScroll;centerPin();return}
  const action=el.dataset.action;
  if(action==="clear-map-search"){setParam("q","");return}
- if(action==="more"){limit+=36;render()}else if(action==="mapmore"){mapLimit+=60;render();centerPin()}else if(action==="zoomin"||action==="zoomout"){const elMap=document.querySelector(".mapview"),cx=(elMap.scrollLeft+elMap.clientWidth/2)/elMap.scrollWidth,cy=(elMap.scrollTop+elMap.clientHeight/2)/elMap.scrollHeight;zoom=Math.min(8,Math.max(1,zoom*(action==="zoomin"?1.5:1/1.5)));render();const next=document.querySelector(".mapview");next.scrollLeft=cx*next.scrollWidth-next.clientWidth/2;next.scrollTop=cy*next.scrollHeight-next.clientHeight/2}
+ if(action==="more"){limit+=36;render()}else if(action==="mapmore"){mapLimit+=60;render();centerPin()}else if(action==="zoomin"||action==="zoomout"){
+  const keepFocus=document.activeElement===el;
+  const elMap=document.querySelector(".mapview");
+  const centerX=(elMap.scrollLeft+elMap.clientWidth/2)/elMap.scrollWidth;
+  const centerY=(elMap.scrollTop+elMap.clientHeight/2)/elMap.scrollHeight;
+  zoom=Math.min(8,Math.max(1,zoom*(action==="zoomin"?1.5:1/1.5)));
+  render();
+  const next=document.querySelector(".mapview");
+  next.scrollLeft=centerX*next.scrollWidth-next.clientWidth/2;
+  next.scrollTop=centerY*next.scrollHeight-next.clientHeight/2;
+  if(keepFocus)main.querySelector('[data-action="'+action+'"]').focus({preventScroll:true});
+ }
  else if(action==="image"){const v=findItem(el.dataset.id),m=photo(v);dialog.querySelector("figure").innerHTML='<img src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"><figcaption>'+esc(m.caption||v.title)+'</figcaption>';dialog.showModal()}
  else if(action==="export"){const file=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(file);a.download="leonida-progress.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}});
 routeChanged();
