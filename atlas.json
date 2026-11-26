@@ -4951,7 +4951,7 @@
     "item": "p06-c-vfl-04",
     "name": "Vice City Flamingos card: Bill Norton",
     "category": "P06",
-    "region": "Hamlet",
+    "region": "Southside",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-vice-city-flamingos#card-vice-city-flamingos-027",
     "x": -1963.0,
     "y": -2060.0
@@ -4961,7 +4961,7 @@
     "item": "p06-c-vfl-04",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Hamlet",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-vice-city-flamingos-014",
     "x": -7342.0,
     "y": 3192.0
@@ -4971,7 +4971,7 @@
     "item": "p06-c-vfl-05",
     "name": "Vice City Flamingos card: Charlie Spears",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Little Cuba",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-vice-city-flamingos#card-vice-city-flamingos-023",
     "x": -1257.0,
     "y": 21.0
@@ -4981,7 +4981,7 @@
     "item": "p06-c-vfl-07",
     "name": "Vice City Flamingos card: Elias Delgado (Pink)",
     "category": "P06",
-    "region": "Vice Beach",
+    "region": "Ocean Beach",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-vice-city-flamingos#card-vice-city-flamingos-026",
     "x": 1467.0,
     "y": 604.0
@@ -5071,7 +5071,7 @@
     "item": "p06-c-vfl-16",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-vice-city-flamingos-012",
     "x": -2214.0,
     "y": -5225.0
@@ -5151,7 +5151,7 @@
     "item": "p06-c-vna-01",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Waning Sands",
+    "region": "Vice City",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-vice-city-narcos-008",
     "x": -2387.0,
     "y": 365.0
@@ -5161,7 +5161,7 @@
     "item": "p06-c-vna-02",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Salton",
+    "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-vice-city-narcos-010",
     "x": -2775.0,
     "y": -6227.0
@@ -5201,7 +5201,7 @@
     "item": "p06-c-vna-09",
     "name": "Vice City Narcos card: Christoph Schulz",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Downtown",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-vice-city-narcos#card-vice-city-narcos-014",
     "x": -397.0,
     "y": 236.0
@@ -5221,7 +5221,7 @@
     "item": "p06-c-vna-09",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-vice-city-narcos-009",
     "x": -4644.0,
     "y": 3408.0
@@ -5231,7 +5231,7 @@
     "item": "p06-c-vna-17",
     "name": "Vice City Narcos card: Leroy Rook (Gold)",
     "category": "P06",
-    "region": "Waning Sands",
+    "region": "Belville",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-vice-city-narcos#card-vice-city-narcos-012",
     "x": -1193.0,
     "y": 2635.0
@@ -5311,7 +5311,7 @@
     "item": "p06-c-vma-13",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Rockridge",
+    "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-vice-city-manatees-005",
     "x": -3153.0,
     "y": 1789.0
@@ -5321,7 +5321,7 @@
     "item": "p06-c-vma-13",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Rockridge",
+    "region": "Hamlet",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-vice-city-manatees-010",
     "x": -2780.0,
     "y": -3064.0
@@ -5361,7 +5361,7 @@
     "item": "p06-c-vcf-03",
     "name": "Vice City Club De Fútbol card: Anne Florence (Teal)",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Downtown",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-vice-city-club-de-futbol#card-vice-city-club-de-futbol-011",
     "x": -830.0,
     "y": -565.0
@@ -5391,7 +5391,7 @@
     "item": "p06-c-vcf-16",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Vice Beach",
+    "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-vice-city-flamingos-005",
     "x": -4637.0,
     "y": 3431.0
@@ -5471,7 +5471,7 @@
     "item": "p06-c-lsw-11",
     "name": "Liberty City Swingers card: Garth Buxton",
     "category": "P06",
-    "region": "Kelly County",
+    "region": "Watson Bay",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-liberty-city-swingers#card-liberty-city-swingers-007",
     "x": -4743.0,
     "y": -3344.0
@@ -5541,7 +5541,7 @@
     "item": "p06-c-lsw-24",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Hamlet",
+    "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-liberty-city-swingers-005",
     "x": -2191.0,
     "y": -5485.0
@@ -5551,7 +5551,7 @@
     "item": "p06-c-lpe-09",
     "name": "Liberty City Penetrators card: Dimitri Petrov",
     "category": "P06",
-    "region": "Waning Sands",
+    "region": "Belville",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-liberty-city-penetrators#card-liberty-city-penetrators-018",
     "x": -1289.0,
     "y": 3156.0
@@ -5561,7 +5561,7 @@
     "item": "p06-c-lpe-09",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Waning Sands",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-liberty-city-penetrators-011",
     "x": -5599.0,
     "y": 4486.0
@@ -5571,7 +5571,7 @@
     "item": "p06-c-lpe-09",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Waning Sands",
+    "region": "Vice City",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-liberty-city-penetrators-014",
     "x": -278.0,
     "y": 1797.0
@@ -5581,7 +5581,7 @@
     "item": "p06-c-lpe-10",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Little Cuba",
+    "region": "Watson Bay",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-liberty-city-penetrators-002",
     "x": -6375.0,
     "y": -6289.0
@@ -5621,7 +5621,7 @@
     "item": "p06-c-lpe-23",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Hamlet",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-liberty-city-penetrators-006",
     "x": -5074.0,
     "y": 7064.0
@@ -5631,7 +5631,7 @@
     "item": "p06-c-lpe-23",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Hamlet",
+    "region": "Capri",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-liberty-city-penetrators-007",
     "x": -7207.0,
     "y": 418.0
@@ -5641,7 +5641,7 @@
     "item": "p06-c-lpe-24",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Watson Bay",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-liberty-city-penetrators-005",
     "x": -5626.0,
     "y": 3330.0
@@ -5681,7 +5681,7 @@
     "item": "p06-c-lwr-05",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Gloriana Key",
+    "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-liberty-city-wrath-007",
     "x": -2248.0,
     "y": -5645.0
@@ -5711,7 +5711,7 @@
     "item": "p06-c-lwr-20",
     "name": "Robbie Stine (Silver)",
     "category": "P06",
-    "region": "West Kalaga, Lummox County",
+    "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-liberty-city-wrath#card-liberty-city-wrath-014",
     "x": -4045.0,
     "y": 6908.0
@@ -5771,7 +5771,7 @@
     "item": "p06-c-lco-15",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Moreau",
+    "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-los-santos-corkers-009",
     "x": -3880.0,
     "y": 2386.0
@@ -5781,7 +5781,7 @@
     "item": "p06-c-lco-19",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Washington Beach",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-los-santos-corkers-011",
     "x": -7238.0,
     "y": 3416.0
@@ -5821,7 +5821,7 @@
     "item": "p06-c-lco-23",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Kelly County / Mariana County",
+    "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-los-santos-corkers-012",
     "x": -4096.0,
     "y": 4655.0
@@ -5841,7 +5841,7 @@
     "item": "p06-c-lco-24",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Hamlet",
+    "region": "Watson Bay",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-los-santos-corkers-010",
     "x": -6389.0,
     "y": -6380.0
@@ -5881,7 +5881,7 @@
     "item": "p06-c-lpa-08",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Gloriana Key",
+    "region": "Waning Sands",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-los-santos-panic-005",
     "x": 291.0,
     "y": 5595.0
@@ -5971,7 +5971,7 @@
     "item": "p06-c-lpa-17",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-los-santos-panic-010",
     "x": -3221.0,
     "y": -4896.0
@@ -6051,7 +6051,7 @@
     "item": "p06-c-lpo-24",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Waning Sands",
+    "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-los-santos-pounders-010",
     "x": -2262.0,
     "y": -5349.0
@@ -6091,7 +6091,7 @@
     "item": "p06-c-bwr-02",
     "name": "Backyard Wrestling card: Blood Smith (Standard)",
     "category": "P06",
-    "region": "Key Lento",
+    "region": "매니페스트 캐니언",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-backyard-wrestling#card-backyard-wrestling-018",
     "x": -5471.0,
     "y": 4841.0
@@ -6101,7 +6101,7 @@
     "item": "p06-c-bwr-03",
     "name": "Backyard Wrestling card: Cherry O'Glade (Standard)",
     "category": "P06",
-    "region": "Hamlet",
+    "region": "마리아나 카운티 북부",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-backyard-wrestling#card-backyard-wrestling-019",
     "x": -3926.0,
     "y": -2106.0
@@ -6121,7 +6121,7 @@
     "item": "p06-c-bwr-05",
     "name": "Backyard Wrestling card: Chrissy Deangelo (Standard)",
     "category": "P06",
-    "region": "Ambrosia",
+    "region": "칼라가산 국립공원",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-backyard-wrestling#card-backyard-wrestling-020",
     "x": -2816.0,
     "y": 6159.0
@@ -6131,7 +6131,7 @@
     "item": "p06-c-bwr-05",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Ambrosia",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-backyard-wrestling-007",
     "x": -5759.0,
     "y": 6625.0
@@ -6151,7 +6151,7 @@
     "item": "p06-c-bwr-06",
     "name": "Loot box",
     "category": "P06",
-    "region": "Watson Bay",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-backyard-wrestling-016",
     "x": -5201.0,
     "y": 8112.0
@@ -6191,7 +6191,7 @@
     "item": "p06-c-bwr-09",
     "name": "Backyard Wrestling card: Katie K",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Vice Beach",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-backyard-wrestling#card-backyard-wrestling-015",
     "x": 1826.0,
     "y": 899.0
@@ -6201,7 +6201,7 @@
     "item": "p06-c-bwr-09",
     "name": "Backyard Wrestling card: Katie K (Standard)",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Rockridge",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-backyard-wrestling#card-backyard-wrestling-021",
     "x": -1490.0,
     "y": 880.0
@@ -6231,7 +6231,7 @@
     "item": "p06-c-bwr-09",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-backyard-wrestling-010",
     "x": -2011.0,
     "y": -5668.0
@@ -6281,7 +6281,7 @@
     "item": "p06-c-ant-11",
     "name": "Chastity",
     "category": "P06",
-    "region": "Key Lento",
+    "region": "Vice City",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-americas-next-top-hooker#card-americas-next-top-hooker-011",
     "x": -192.0,
     "y": 2027.0
@@ -6311,7 +6311,7 @@
     "item": "p06-c-ant-11",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Key Lento",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-americas-next-top-hooker-012",
     "x": -6247.0,
     "y": 4358.0
@@ -6341,7 +6341,7 @@
     "item": "p06-c-ant-12",
     "name": "Crystal",
     "category": "P06",
-    "region": "Port Gellhorn",
+    "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-americas-next-top-hooker#card-americas-next-top-hooker-022",
     "x": -3734.0,
     "y": 5606.0
@@ -6431,7 +6431,7 @@
     "item": "p06-c-del-03",
     "name": "Delights card: Cleo (Standard)",
     "category": "P06",
-    "region": "Capri",
+    "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-delights#hidden-package-010",
     "x": -2879.4,
     "y": 6549.1
@@ -6491,7 +6491,7 @@
     "item": "p06-c-del-06",
     "name": "Delights card: Daisy",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-delights#card-delights-018",
     "x": -2005.0,
     "y": -5618.0
@@ -6511,7 +6511,7 @@
     "item": "p06-c-del-07",
     "name": "Delights card: Harley",
     "category": "P06",
-    "region": "Port Gellhorn",
+    "region": "Hamlet",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-delights#card-delights-020",
     "x": -2273.0,
     "y": -2163.0
@@ -6551,7 +6551,7 @@
     "item": "p06-c-del-09",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Watson Bay",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-delights-007",
     "x": -6253.0,
     "y": -6488.0
@@ -6591,7 +6591,7 @@
     "item": "p06-c-del-12",
     "name": "Delights card: Mario (Standard)",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Hamlet",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-delights#collectible-card-074",
     "x": -2154.7,
     "y": -1876.2
@@ -6601,7 +6601,7 @@
     "item": "p06-c-del-12",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Hamlet",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-delights-012",
     "x": -5248.0,
     "y": 5574.0
@@ -6611,7 +6611,7 @@
     "item": "p06-c-del-12",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Hamlet",
+    "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-delights-016",
     "x": -6567.0,
     "y": 3979.0
@@ -6631,7 +6631,7 @@
     "item": "p06-c-del-13",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Ambrosia",
+    "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-delights-014",
     "x": -2275.0,
     "y": -5919.0
@@ -6671,7 +6671,7 @@
     "item": "p06-c-del-15",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-delights-011",
     "x": -3600.0,
     "y": 8018.0
@@ -6721,7 +6721,7 @@
     "item": "p06-c-del-18",
     "name": "Delights card: Vicki (Standard)",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Hamlet",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-delights#collectible-card-076",
     "x": -1836.0,
     "y": -2044.1
@@ -6731,7 +6731,7 @@
     "item": "p06-c-del-18",
     "name": "Yellow Loot Box",
     "category": "P06",
-    "region": "Kelly County / Vice-Dale County / Mariana County",
+    "region": "Hamlet",
     "url": "https://www.gtabase.com/gta-6/map/?feature=yellow-loot-box#card-delights-005",
     "x": -837.0,
     "y": -3580.0
@@ -6811,7 +6811,7 @@
     "item": "p06-c-jac-11",
     "name": "Jack of Hearts card: Jemila (Pink)",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Hamlet",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-jack-of-hearts#collectible-card-075",
     "x": -1418.5,
     "y": -2034.8
@@ -7001,7 +7001,7 @@
     "item": "p06-c-jac-33",
     "name": "Jack of Hearts card: Vanessa (Silver)",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Gloriana Key",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-jack-of-hearts#collectible-card-070",
     "x": -1360.0,
     "y": -1164.1
@@ -7181,7 +7181,7 @@
     "item": "p06-c-nin-21",
     "name": "Nine1Nine card: Julia (Silver)",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Gloriana Key",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-nine1nine#collectible-card-073",
     "x": -1260.1,
     "y": -1687.1
@@ -7301,7 +7301,7 @@
     "item": "p06-c-nin-35",
     "name": "Nine1Nine card: Serena (Gold)",
     "category": "P06",
-    "region": "Vice City",
+    "region": "Hamlet",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-nine1nine#collectible-card-077",
     "x": -1092.8,
     "y": -2777.5
@@ -7361,7 +7361,7 @@
     "item": "p06-c-rig-23",
     "name": "Right Wing: America's Hero card: Right Wing (Red)",
     "category": "P06",
-    "region": "Vice-Dale County",
+    "region": "Bayside",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-right-wing#card-right-wing-014",
     "x": -490.0,
     "y": 1225.0
@@ -7411,7 +7411,7 @@
     "item": "p06-c-edu-01",
     "name": "Ed Comics Universe card: Capsule (Light Blue)",
     "category": "P06",
-    "region": "Gloriana Key",
+    "region": "Tequesta",
     "url": "https://www.gtabase.com/gta-6/map/?feature=card-ed-comics#card-ed-comics-016",
     "x": -1114.0,
     "y": -992.0
@@ -20521,5 +20521,95 @@
     "url": "https://gta6gps.com/?p=pin-917794",
     "x": -2771,
     "y": -6494
+  },
+  {
+    "id": "l12/pin-915700",
+    "item": "l12",
+    "name": "햄릿 남쪽 늪길 · 목격 지점",
+    "category": "P05",
+    "region": "햄릿",
+    "url": "https://gta6gps.com/?p=pin-915700",
+    "x": -2958,
+    "y": -3790
+  },
+  {
+    "id": "l16/waink-landmark-007",
+    "item": "l16",
+    "name": "세인트 루시아 등대 · 출항 단서",
+    "category": "P05",
+    "region": "리틀 하딘 섬",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=waink-landmark#waink-landmark-007",
+    "x": 672.6,
+    "y": 6333.2
+  },
+  {
+    "id": "l18/waink-sculpture-004",
+    "item": "l18",
+    "name": "매니페스트 캐니언 · 말 조각 기념물",
+    "category": "P05",
+    "region": "매니페스트 캐니언",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=waink-sculpture#waink-sculpture-004",
+    "x": -5871.9,
+    "y": 5552.0
+  },
+  {
+    "id": "l28/waink-curiosity-008",
+    "item": "l28",
+    "name": "그레이슨 · 언덕 위 반려동물 묘지",
+    "category": "P05",
+    "region": "그레이슨",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=waink-curiosity#waink-curiosity-008",
+    "x": -5614.3,
+    "y": 6623.6
+  },
+  {
+    "id": "l33/pin-918705",
+    "item": "l33",
+    "name": "샤크투스 섬 · 첫 지하 시설",
+    "category": "P05",
+    "region": "샤크투스 섬",
+    "url": "https://gta6gps.com/?p=pin-918705",
+    "x": 140,
+    "y": 5300
+  },
+  {
+    "id": "l34/unique-weapon-071",
+    "item": "l34",
+    "name": "빅 파인 서쪽 숲 · 두 번째 지하 시설",
+    "category": "P05",
+    "region": "빅 파인",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=unique-weapon-071",
+    "x": -5674.0,
+    "y": -1558.0
+  },
+  {
+    "id": "i066/waink-curiosity-033",
+    "item": "i066",
+    "name": "퍼밋 키스 · 도시 방향 이정표",
+    "category": "P05",
+    "region": "퍼밋 키스",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=waink-curiosity#waink-curiosity-033",
+    "x": -5965.3,
+    "y": -6244.9
+  },
+  {
+    "id": "i069/gang-operation-003",
+    "item": "i069",
+    "name": "햄릿 남서쪽 · 매너티 모텔",
+    "category": "P05",
+    "region": "햄릿",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=gang-operation#gang-operation-003",
+    "x": -3011.2,
+    "y": -4118.4
+  },
+  {
+    "id": "i115/unique-weapon-011",
+    "item": "i115",
+    "name": "오션 비치 · 선라이트 모텔 3C",
+    "category": "P05",
+    "region": "오션 비치",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-011",
+    "x": 1915.0,
+    "y": 417.0
   }
 ]

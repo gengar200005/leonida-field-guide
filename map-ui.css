@@ -1,0 +1,50 @@
+.map-categories{display:flex;flex-wrap:wrap;gap:5px;border:0;margin:10px 0;padding:0}
+.map-categories legend{font-weight:700;margin-bottom:5px}
+.map-categories button,.mapcontrols button{font-size:.9rem;min-height:36px;padding:5px 10px}
+.map-categories button{display:inline-flex;gap:6px;align-items:center}
+.map-categories button[aria-pressed=true],.mapcontrols button[aria-pressed=true]{background:#20392e;color:white}
+.pin-key,.mapview .pin:not(.cluster){background:var(--marker,#325846);color:white}
+.pin-P01{--marker:#58412e}.pin-V{--marker:#176887}.pin-P02{--marker:#973d43}.pin-P03{--marker:#316842}.pin-P04{--marker:#784523}.pin-P05{--marker:#76418d}.pin-P06{--marker:#8a5908}.pin-P07{--marker:#225d57}.pin-P08{--marker:#52508b}.pin-P09{--marker:#8a355f}
+.mapcanvas .map-pins{position:absolute;inset:0;pointer-events:none}
+.map-pins button{pointer-events:auto}
+.mapview .pin:not(.cluster){display:grid;place-items:center;width:21px;height:21px;border:1.5px solid white;box-shadow:0 1px 3px #172d25}
+.pin-key{display:inline-grid;place-items:center;width:21px;height:21px;border-radius:50%}
+.pin-key svg,.mapview .pin svg,.spot-list svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+.mapview .pin.cluster[class*=pin-P]{background:var(--marker);color:white}
+.mapview .pin.active{outline:3px solid #ffcc56;outline-offset:1px;z-index:2}
+.mapview .pin.pin-done::after{content:"✓";background:#183c24;color:white;position:absolute;right:-5px;top:-7px;border-radius:50%;font:700 10px/13px sans-serif;width:13px}
+.map-undone{display:inline-flex;gap:5px;align-items:center;min-height:36px}
+.map-filters .map-undone input{width:17px;height:17px;min-height:0;accent-color:var(--sea)}
+.map-progress,.map-nearby{padding:10px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:8px 0}
+.map-progress summary{cursor:pointer;font-weight:650}
+.map-progress ul{list-style:none;margin:10px 0;padding:0}
+.map-progress li{display:grid;grid-template-columns:minmax(7em,1fr) minmax(28px,1fr) 5em;align-items:center;gap:6px;font-size:.85rem}
+.map-progress small{text-align:right}
+.map-progress progress{width:100%;height:8px;accent-color:#37684d}
+.map-nearby ol{padding-left:1.6em;margin:5px 0}
+.map-nearby ol button,.spot-list button{min-height:34px;padding:5px 8px;text-align:left}
+.map-nearby ol small{display:block}
+.spot-picker{position:absolute;bottom:8px;left:8px;right:8px;max-width:400px;z-index:4;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px;box-shadow:0 3px 12px #12281e55}
+.spot-picker .heading,.map-nearby .heading{margin:0}
+.spot-picker button,.map-nearby .heading button{min-height:32px;padding:4px 8px}
+.spot-list{display:grid;max-height:100px;overflow-y:auto;margin:6px 0}
+.spot-list button{display:flex;align-items:center;gap:7px}
+.spot-list svg{flex:none}
+.done-tag{float:right;color:#2b6643;font-size:.82rem}
+body.map-full{overflow:hidden}
+.map-full .maplayout{position:fixed;inset:0;z-index:20;padding:10px;background:var(--paper);overflow:auto;align-items:start}
+.map-full .maplayout .panel{max-height:calc(100dvh - 20px);overflow:auto}
+.map-full .mapview{height:calc(100dvh - 105px)}
+@media(max-width:760px){
+ .map-full .maplayout{display:block;padding:8px}
+ .map-full .mapview{height:calc(72dvh - 68px);min-height:200px}
+ .map-full .maplayout .panel{max-height:none}
+ .map-full .mapcontrols{position:sticky;top:0;z-index:6;background:var(--paper);margin:0;padding:4px 0}
+ .map-categories button{min-height:38px}
+ .map-categories{gap:4px}
+ .map-full .pinlist{max-height:none}
+}
+.fullscreen-filters{display:none}
+.map-full .fullscreen-filters{display:inline-block}
+.map-full header,.map-full footer,.map-full .skip,.map-full main>h1,.map-full main>.trail,.map-full main>.map-references,.map-full .map-inputs{display:none}
+.map-full.mapfilters-open .map-inputs{display:block;position:fixed;inset:4px 4px auto;z-index:24;border:1px solid var(--line);border-radius:8px;padding:12px;max-height:90dvh;overflow:auto;background:var(--card);box-shadow:0 4px 20px #18312755}

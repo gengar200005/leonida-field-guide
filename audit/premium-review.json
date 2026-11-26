@@ -1,0 +1,301 @@
+{
+  "date": "2026-11-26",
+  "baselineCommit": "88294c862c3a0b7742a2a70d972c3a65a8aa5c00",
+  "scope": "비교 대상은 같은 ID. 독립 검수의 3,229개는 번호별 원본 파일, 3,387개는 권역·색인·별도 활동 공략을 포함한다. 3,383개는 현재 도감에 노출되는 항목. 단계 개수와 제목 길이는 구조 지표이며 품질 점수로 환산하지 않았다.",
+  "before": {
+    "total": 3387,
+    "readers": 3383,
+    "hangulTitles": 1310,
+    "pins": 2046,
+    "pinnedItems": 1960,
+    "baselineCorpus": {
+      "P01": {
+        "entries": 17,
+        "steps": 13,
+        "steps2": 13,
+        "unconfirmed": 0,
+        "shortSummary": 0,
+        "ownPins": 1,
+        "confirmedOrConditionalFields": 0
+      },
+      "V": {
+        "entries": 284,
+        "steps": 41,
+        "steps2": 41,
+        "unconfirmed": 10,
+        "shortSummary": 100,
+        "ownPins": 250,
+        "confirmedOrConditionalFields": 0
+      },
+      "P02": {
+        "entries": 158,
+        "steps": 150,
+        "steps2": 149,
+        "unconfirmed": 13,
+        "shortSummary": 2,
+        "ownPins": 111,
+        "confirmedOrConditionalFields": 0
+      },
+      "P05": {
+        "entries": 403,
+        "steps": 22,
+        "steps2": 16,
+        "unconfirmed": 194,
+        "shortSummary": 292,
+        "ownPins": 14,
+        "confirmedOrConditionalFields": 0
+      },
+      "P06": {
+        "entries": 1104,
+        "steps": 5,
+        "steps2": 5,
+        "unconfirmed": 0,
+        "shortSummary": 979,
+        "ownPins": 799,
+        "confirmedOrConditionalFields": 0
+      },
+      "P09": {
+        "entries": 554,
+        "steps": 52,
+        "steps2": 51,
+        "unconfirmed": 11,
+        "shortSummary": 404,
+        "ownPins": 280,
+        "confirmedOrConditionalFields": 0
+      }
+    },
+    "events2": 0,
+    "secretsGroups": {
+      "분류 전": 403
+    }
+  },
+  "after": {
+    "total": 3387,
+    "readers": 3383,
+    "hangulTitles": 3383,
+    "pins": 2055,
+    "pinnedItems": 1969,
+    "baselineCorpus": {
+      "P01": {
+        "entries": 17,
+        "steps": 13,
+        "steps2": 13,
+        "unconfirmed": 0,
+        "shortSummary": 0,
+        "ownPins": 1,
+        "confirmedOrConditionalFields": 0
+      },
+      "V": {
+        "entries": 284,
+        "steps": 78,
+        "steps2": 78,
+        "unconfirmed": 10,
+        "shortSummary": 109,
+        "ownPins": 250,
+        "confirmedOrConditionalFields": 0
+      },
+      "P02": {
+        "entries": 158,
+        "steps": 150,
+        "steps2": 149,
+        "unconfirmed": 13,
+        "shortSummary": 2,
+        "ownPins": 111,
+        "confirmedOrConditionalFields": 0
+      },
+      "P05": {
+        "entries": 403,
+        "steps": 29,
+        "steps2": 23,
+        "unconfirmed": 194,
+        "shortSummary": 224,
+        "ownPins": 23,
+        "confirmedOrConditionalFields": 403
+      },
+      "P06": {
+        "entries": 1104,
+        "steps": 158,
+        "steps2": 158,
+        "unconfirmed": 0,
+        "shortSummary": 883,
+        "ownPins": 799,
+        "confirmedOrConditionalFields": 0
+      },
+      "P09": {
+        "entries": 554,
+        "steps": 131,
+        "steps2": 130,
+        "unconfirmed": 11,
+        "shortSummary": 332,
+        "ownPins": 280,
+        "confirmedOrConditionalFields": 0
+      }
+    },
+    "events2": 71,
+    "secretsGroups": {
+      "미확인 미스터리": 198,
+      "참고·소품": 118,
+      "현장 안내": 50,
+      "탐험 동선": 16,
+      "조건부 접근": 21
+    }
+  },
+  "caseReview": {
+    "criterion": "각 사례에서 열거한 현장·획득 조건을 웹앱만으로 읽고, 원문 설명이나 현장 영상 기록과 일치하는지 확인. 대표 사례의 선정 검수. 전수 검증률이나 PS5 재현율이 아니다.",
+    "matchedBefore": 6,
+    "matchedAfter": 8,
+    "samples": [
+      {
+        "id": "v-49",
+        "condition": "갬빗 베이 작은 섬에 있는 수상 차량",
+        "source": "https://gamesdb.gg/gta-6/vehicles/rainbow-ripple-l20s",
+        "before": true,
+        "after": true
+      },
+      {
+        "id": "p02-w-001",
+        "condition": "퍼밋 키스의 난파선 갑판 해치에서 얻는 권총",
+        "source": "https://www.gtabase.com/gta-6/weapons/assassin-nipper-38",
+        "before": true,
+        "after": true
+      },
+      {
+        "id": "l03",
+        "condition": "송신탑 꼭대기 둥지의 상호작용과 짧은 장면",
+        "source": "https://www.gta-xtreme.com/en/gta-6-radio-tower-easter-egg-location",
+        "before": true,
+        "after": true
+      },
+      {
+        "id": "p07-g01",
+        "condition": "미첼 차고 1칸, 일반가 5천 달러와 할인 4천 달러 구분",
+        "source": "https://www.gtafinder.com/gta-6/guides/garages",
+        "before": true,
+        "after": true
+      },
+      {
+        "id": "p06-c-lco-23",
+        "condition": "모텔 공용 주방 냉장고 앞면에서 얻는 빅터 카드",
+        "source": "https://playtheorymedia.com/gta-6-before-you-leave-chapter-2/",
+        "before": true,
+        "after": true
+      },
+      {
+        "id": "l33",
+        "condition": "낮에 도심에서 대화 후 리틀 쿠바의 오른쪽 계단과 두 번째 문, 녹음과 냉장고 사진 순서",
+        "source": "https://games.gg/grand-theft-auto-vi/guides/grand-theft-auto-6-presidential-bunkers-location-entry/",
+        "before": true,
+        "after": true
+      },
+      {
+        "id": "p06-c-vfl-04",
+        "condition": "고정 카드 사본 위치가 사우스사이드 SW 3번 애비뉴 이지 퀵 편의점 위층 발코니 아치 끝임을 설명. 가변 상자는 포트 겔혼 별도 핀",
+        "source": "https://linkleung310.github.io/gtavi-atlas/en/guides/collectibles/cards-vice-city-flamingos.html#entry-4",
+        "before": false,
+        "after": true
+      },
+      {
+        "id": "p09-re-221",
+        "condition": "포트 겔혼 ATM 출금 후 500달러를 요청하는 조우의 개별 목격 기록",
+        "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-221",
+        "before": false,
+        "after": true
+      }
+    ],
+    "eventSourceGitBlob": "70ecb934e9326db8a350e23e7210109ec0cd1d83"
+  },
+  "collectibleSources": {
+    "printPages": {
+      "P01": [
+        14
+      ],
+      "P05": [
+        21,
+        25,
+        27,
+        37,
+        67,
+        68
+      ],
+      "P06": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    "pinSpecificRoutes": 155,
+    "correctedPinRegions": 60,
+    "chapterChecklists": 5,
+    "chapterTargets": 20
+  },
+  "browserReview": {
+    "widths": [
+      1365,
+      390
+    ],
+    "input": [
+      "mouse and keyboard",
+      "emulated touch with two contacts"
+    ],
+    "scenarios": [
+      "차량 사진 확대 → 지도 → 상세",
+      "영문 무기 검색과 획득 위치",
+      "비밀 탐험의 첫 단서와 닫힌 해답 펼치기",
+      "지도 확대·드래그·이중 분류·군집 선택·전체 화면",
+      "지도 획득 완료와 미완료 필터",
+      "새로고침·상세·내 기록·둘째 탭에 완료 상태 반영",
+      "챕터 전환 전 체크리스트 저장 및 취소",
+      "모바일 사진·핀 선택과 핀치 확대",
+      "외형 원본 응답 및 출처 페이지 연결",
+      "빌 노턴 카드 고정 위치와 가변 상자의 서로 다른 권역·층·핀 전환"
+    ],
+    "testFile": "tests/player_flows.py"
+  },
+  "limits": [
+    "미확인 제보와 장기 보존, 재등장, 현행 콘솔 패치 재현은 근거가 있는 범위만 표시.",
+    "행정 경계는 미확보이며 구역 음영은 대표점 인근의 추정 범위. 방문 순서는 지점 간 직선거리 기준.",
+    "외부 원본에서 제공하는 이미지는 해당 호스트의 네트워크 상태와 정책에 영향을 받음.",
+    "한글 제목 측정은 공식 번역 인증이 아니며 본문 전체 한글 치환률을 뜻하지 않음."
+  ],
+  "catalogRendering": {
+    "criterion": "같은 282대·150종 카드에서 img URL을 읽고 Chromium의 decode(), naturalWidth>0 확인. 접근 실패 재시도. 권리 확인이 어려운 이미지의 파일 복제 없이 원 호스트를 사용.",
+    "counts": {
+      "vehicles": {
+        "before": 77,
+        "after": 282
+      },
+      "weaponsAndGear": {
+        "before": 49,
+        "after": 149
+      }
+    },
+    "missingAppearance": [
+      "p02-x03"
+    ]
+  },
+  "catalogComparisons": {
+    "vehicles": {
+      "speedBefore": 44,
+      "speedAfter": 240,
+      "knownRegistrationFee": 36,
+      "documentedAccess": 38
+    },
+    "weaponsAndGear": {
+      "power": 116,
+      "purchasePrice": 22,
+      "difficulty": 63
+    }
+  },
+  "homeInitialJavaScriptBytes": {
+    "baseline": 4627888,
+    "current": 1833,
+    "measure": "압축 전. 첫 화면에서 입력 또는 탐색하기 전에 요청하는 스크립트 합계."
+  }
+}

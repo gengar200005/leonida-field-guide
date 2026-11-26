@@ -1,10 +1,13 @@
 """Build the static guide. Requires only the Python standard library."""
 import hashlib
+from html import escape
 import json
 import re
 import shutil
 import zipfile
 from pathlib import Path
+
+from reader_names import prepare_reader_names
 
 ROOT = Path(__file__).resolve().parent
 SITE = ROOT / "dist"
@@ -116,9 +119,48 @@ def prepare_map_titles(data):
         pin["mapTitle"] = labels.get(pin["id"], fallback)
 
 
+def home_markup(data):
+    categories = data["categories"]
+
+    def category_link(key, description=False):
+        name, code, detail = categories[key]
+        extra = f"<small>{escape(detail)}</small>" if description else ""
+        return (f'<a href="#/guide/{key.lower()}"><span class="glyph" aria-hidden="true">{code}</span>'
+                f'<span>{escape(name)}{extra}</span></a>')
+
+    primary = "".join(category_link(k) for k in ("V", "P02", "P05", "P06"))
+    all_categories = "".join(category_link(k, True) for k in categories)
+    indexed = {item["id"].lower(): item for item in data["items"]}
+    cards = []
+    for key in ("v-04", "p02-w-001", "l03"):
+        item = indexed[key]
+        photo = data["media"].get(key, {})
+        if item["category"] in {"V", "P02"}:
+            src = photo.get("src") if photo.get("kind") == "appearance" else None
+            if not src:
+                src = next((ref["url"] for ref in item.get("sources", [])
+                            if ref["label"] in {"차량 외형 원본", "무기 외형 원본"} and ref["url"].startswith("https://")), None)
+            alt = item["title"] + " 외형"
+        else:
+            src, alt = photo.get("src"), photo.get("caption", "")
+        image = (f'<img class="art home-art" loading="lazy" decoding="async" src="{escape(src)}" alt="{escape(alt)}">'
+                 if src and not photo.get("reveal") else "")
+        cards.append(f'<a class="card" href="#/entry/{key}">{image}<div class="cardbody">'
+                     f'<span class="kicker">{escape(categories[item["category"]][0])}</span>'
+                     f'<h3>{escape(item["title"])}</h3><p>{escape(item["summary"])}</p></div></a>')
+    return ('<section class="hero"><div class="scene" style="background-image:url(media/landmark-l36.webp)"></div>'
+            '<div class="herotext"><h1>리오나이다 필드 가이드</h1><p>챕터별 진행, 차량과 장비, 비밀 장소와 수집품을 찾아보세요.</p>'
+            '<a class="btn primary" href="#/guide/p01">챕터별 공략 보기 →</a></div>'
+            '<a class="photocredit" href="#/credits">오션 뷰 호텔 · GTADB</a></section>'
+            f'<div class="quick">{primary}</div><section class="section"><div class="heading"><h2>탐험 수첩</h2>'
+            f'<a href="#/map">지도에서 찾기 ↗</a></div><div class="cards">{"".join(cards)}</div></section>'
+            f'<section class="section"><h2>공략 전체 보기</h2><div class="catgrid">{all_categories}</div></section>')
+
+
 def build():
     SITE.mkdir(exist_ok=True)
     data = {
+        "categories": read("categories.json"),
         "items": [json.loads(line) for file in sorted((ROOT / "data").glob("*.jsonl")) for line in file.read_text(encoding="utf-8").splitlines() if line],
         "media": read("photos.json"),
         "pins": read("atlas.json"),
@@ -128,9 +170,17 @@ def build():
     }
     localize(data, read("official-names.json"))
     prepare_map_titles(data)
+    prepare_reader_names(data, read("reader-names.json"))
     ids = {row["id"].lower() for row in data["items"]}
     assert len(ids) == len(data["items"])
-    assert all(pin["item"].lower() in ids for pin in data["pins"])
+    pin_ids = {pin["id"]: pin["item"].lower() for pin in data["pins"]}
+    assert len(pin_ids) == len(data["pins"])
+    assert all(item in ids for item in pin_ids.values())
+    for item in data["items"]:
+        for section in item["sections"]:
+            pin = section.get("locationPin")
+            if pin and pin_ids.get(pin) != item["id"].lower():
+                raise ValueError(f"Location pin does not belong to guide {item['id']}: {pin}")
     assert all(record["title"] and isinstance(record["sections"], list) for record in data["items"])
     media_dir = SITE / "media"
     media_dir.mkdir(exist_ok=True)
@@ -145,11 +195,13 @@ def build():
         if photo.get("src") and not (SITE / photo["src"]).is_file():
             raise ValueError(f"Missing media: {photo['src']}")
     (SITE / "guide-data.js").write_text("window.FIELD_GUIDE=" + json.dumps(data,ensure_ascii=False,separators=(",",":")) + ";\n", encoding="utf-8")
-    for filename in ("index.html","style.css","guide.js"):
-        shutil.copyfile(ROOT / filename, SITE / filename)
+    bundles = {"style.css": ["style.css", "catalog.css", "map-ui.css"], "guide.js": ["catalog.js", "guide.js"]}
+    for output, components in bundles.items():
+        (SITE / output).write_text("\n".join((ROOT / file).read_text(encoding="utf-8") for file in components), encoding="utf-8")
+    shutil.copyfile(ROOT / "start.js", SITE / "start.js")
     index = SITE / "index.html"
-    html = index.read_text(encoding="utf-8")
-    for filename in ("style.css", "guide-data.js", "guide.js"):
+    html = (ROOT / "index.html").read_text(encoding="utf-8").replace("<!-- guide-home -->", home_markup(data))
+    for filename in ("style.css", "guide-data.js", "guide.js", "start.js"):
         digest = hashlib.sha256((SITE / filename).read_bytes()).hexdigest()[:12]
         html = html.replace(f'"{filename}"', f'"{filename}?v={digest}"')
     index.write_text(html, encoding="utf-8")
