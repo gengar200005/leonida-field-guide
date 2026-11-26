@@ -1990,6 +1990,204 @@
    ],
    "searchedWeb": false
   },
+  "i075": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "spoiler",
+   "detail": "공개된 도로 장면에서 사고 피해자의 사슴 복장과 조우의 정체가 드러나며 총 외형은 보이지 않는다. Legacy Gaming 원본 목록 영상의 미리보기 네 장은 여러 무기 모음과 진행자 얼굴이다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://gta6map.city/secrets/hunter-layered-350-sniper/",
+    "https://www.youtube.com/watch?v=XbSRUlQwW7A",
+    "https://gta6map.city/img/still/s-hunter-layered-350-sniper.webp"
+   ]
+  },
+  "i081": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "unconfirmed",
+   "detail": "GTA6Map의 설명 및 원본 그림은 잠수부와 움직이지 않는 해저 조형물 또는 잔해를 보여 준다. 생물이 움직였다는 별도 목격담을 입증하는 장면이 아니다.",
+   "searchedWeb": false,
+   "sources": [
+    "https://gta6map.city/secrets/kraken/",
+    "https://gta6map.city/img/still/s-kraken.webp"
+   ]
+  },
+  "p03-cash-key-lento": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "spoiler",
+   "detail": "원본 캡처를 열어 비상금을 숨긴 바닥의 정확한 위치와 열린 칸을 확인했다. 기존 안내에서 위치 공개를 선택한 뒤에 보여 주는 내용이다. 연결된 영상의 기본 이미지는 금액을 표시하고 세 장의 미리보기에는 다른 장소가 나온다.",
+   "searchedWeb": false,
+   "sources": [
+    "https://gta6map.city/secrets/hidden-cash-floorboard/",
+    "https://www.youtube.com/watch?v=uuZqDsDP818",
+    "https://gta6map.city/img/still/s-hidden-cash-floorboard.webp"
+   ]
+  },
+  "p06-kf-010": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "rights",
+   "detail": "원본 CDN에서는 여러 고층 타워 사이의 통과 지점이 보인다. CDN 단독 주소에는 촬영자와 해당 사진을 제3자 카드에 재게시하거나 삽입할 수 있는 조건이 없다. Warp Pipes의 원본 영상은 17:14를 가리키지만 제공자 기본 미리보기 세 장을 아이다 타워 구간으로 개별 식별할 수 없었다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://warppipes.com/en/gta-6/knife-flights/kf-aida-towers",
+    "https://www.youtube.com/watch?v=cHVOE3UVK3E&t=1034s",
+    "https://assets.trackercdn.com/metatable/db/gta6/C9B7612035F972AB3E933E8DA2CD1CA0"
+   ]
+  },
+  "p09-da": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "rights",
+   "detail": "스톡야드의 바에서 음료를 선택하는 장면으로 PowerPyx 워터마크를 확인했다. Previously가 제공하는 사본에 추가 재사용 권한이 명시되어 있지 않으며 PowerPyx 이용약관 제5조는 허가가 필요하다고 명시한다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://www.powerpyx.com/tos/",
+    "https://www.powerpyx.com/gta-6-its-a-date-walkthrough/",
+    "https://kingy.wiki/games/gta6/missions/its-a-date",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/date-missions-courtyard-bar.jpg"
+   ]
+  },
+  "p10-a07": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "overview",
+   "detail": "델 리오와 톰프슨 코트 등 두 보상 차고 슬롯을 비교하는 공략이다. 단일 셔터와 주차장 지도가 두 곳을 식별하지 못한다.",
+   "searchedWeb": false,
+   "sources": [
+    "https://media.gtaboom.com/variants/1920/media/images/a9/71/garage-door-8d02c1355d1eba6d.jpg"
+   ]
+  },
+  "p10-a09": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "rights",
+   "detail": "장비를 착용한 잠수부와 수중 표식 사진을 확인했다. Previously는 라 노체 난파선 장면을 Push Square의 캡처로 표기하며 원 촬영자·발행자가 다른 사이트 카드에 사진을 표시하도록 허가한 기록을 확인하지 못했다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-underwater-treasure/",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/underwater-lanoche-wreck-clean.jpg"
+   ]
+  },
+  "p10-e02": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "overview",
+   "detail": "챕터 5 마지막 구간의 여러 활동과 저장 슬롯을 나누는 종합 안내다. 기존 사진은 일반 빈 슬롯 목록이며 최종 챕터나 개별 활동을 식별하지 않는다.",
+   "searchedWeb": false,
+   "sources": [
+    "https://allthings.how/gta-6-how-to-save-your-game-and-why-save-game-is-greyed-out/",
+    "https://static.allthings.how/wp-content/uploads/2026/11/04-save-empty-slots.webp"
+   ]
+  },
+  "p10-m09": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "mismatch",
+   "detail": "현장 사진에는 캐릭터가 거리 ATM에 서 있는 모습이 나온다. 이 항목에서 비교하는 가방 가치, 우편 또는 BuckMe 입금액은 보이지 않는다.",
+   "searchedWeb": false,
+   "sources": [
+    "https://kotaku.com/app/uploads/2026/11/GTa-6-atm.jpg"
+   ]
+  },
+  "p10-s02": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "rights",
+   "detail": "AllThingsHow의 사진에서 미션 도중 회색으로 비활성화된 Game 저장 메뉴를 확인했다. 해당 스크린샷을 이 가이드 카드에 재게시하거나 삽입하도록 허가하는 표기는 원 기사에서 확인되지 않았다.",
+   "searchedWeb": false,
+   "sources": [
+    "https://allthings.how/gta-6-how-to-save-your-game-and-why-save-game-is-greyed-out/",
+    "https://static.allthings.how/wp-content/uploads/2026/11/02-save-game-greyed-1.webp"
+   ]
+  },
+  "p02-impound-gear": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "candidate",
+   "detail": "GTAFinder의 사진은 PC Gamer가 시험한 트렁크라 햄릿 압류장 식별 근거가 약하다. 기존 햄릿 전용 영상의 sd1 원본에서 열린 차와 장비 선택 창을 확인했으며 독립 현장 설명과 대조했다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://www.gtafinder.com/gta-6/guides/free-weapons-and-body-armor",
+    "https://cheatsearch.net/guide/hamlet-police-impound-free-armor-weapons",
+    "https://www.gtafinder.com/screenshots/free-weapons-trunk-pickup.webp",
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-refill-body-armor.jpg",
+    "https://www.youtube.com/watch?v=zLdbp0Vavvo",
+    "https://i.ytimg.com/vi/zLdbp0Vavvo/sd1.jpg"
+   ],
+   "result": "대표 이미지 등록",
+   "browserDecode": {
+    "width": 640,
+    "height": 480,
+    "comparison": "공략 카드·상단 사진과 원본 영상의 현장 대조"
+   }
+  },
+  "p09-pl": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "candidate",
+   "detail": "Previously에 크레딧으로 기록된 Mr Lore 원본에서 sd2 프레임의 추락기와 초지의 불길을 대조했다. 최종 전리품 장면을 보여 주지 않는다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-random-events/",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/random-events-plane-wreck.jpg",
+    "https://www.youtube.com/watch?v=UNlRnYxgVnU",
+    "https://i.ytimg.com/vi/UNlRnYxgVnU/sd2.jpg"
+   ],
+   "result": "대표 이미지 등록",
+   "browserDecode": {
+    "width": 640,
+    "height": 480,
+    "comparison": "공략 카드·상단 사진과 원본 영상의 현장 대조"
+   }
+  },
+  "p10-g03": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "candidate",
+   "detail": "Vice Vaulted의 출처 1번이 Caspahz의 바로 이 영상으로 연결된다. sd1에서 저택 차고 안 푸른 트랙스를 확인했다. 사진은 차량과 현장을 보여 주며 이후 버전에서의 글리치 작동은 입증하지 않는다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://www.vicevaulted.com/d/gta6-andrew-node-thrax-garage-breach-glitch",
+    "https://i.ytimg.com/vi/-mzJSlSHK-A/sd1.jpg",
+    "https://www.youtube.com/watch?v=-mzJSlSHK-A"
+   ],
+   "result": "대표 이미지 등록",
+   "browserDecode": {
+    "width": 640,
+    "height": 480,
+    "comparison": "공략 카드·상단 사진과 원본 영상의 현장 대조"
+   }
+  },
+  "p10-a01": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "candidate",
+   "detail": "GTA BOOM의 직접 촬영 기사 및 발세로 트레일러 전용 영상 두 편과 대조. 공개 영상 sd2에서는 주방 해치로 내려가는 모습이 보이지만 어두운 세로 화면이며 자막과 여백이 차지하는 면적이 크다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://www.gtaboom.com/gta-6-where-to-find-four-hidden-weapons-in-pelican-valley-and-the-griffin-bunker-in-chapter-1-13f1",
+    "https://www.youtube.com/watch?v=xRiJZOrxV6Y",
+    "https://media.gtaboom.com/variants/1600/media/images/bc/74/kitchen-hatch-a03ce3718eb11384.jpg",
+    "https://www.youtube.com/watch?v=_EhR6J6hwr4",
+    "https://i.ytimg.com/vi/_EhR6J6hwr4/sd2.jpg"
+   ]
+  },
+  "p09-re-074": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "candidate",
+   "detail": "어두운 숲의 야간 화면에서 대상과 의식의 시작 지점을 명확하게 식별하기 어렵다. 원본은 같은 핀에 귀속된다. 다른 사건 사진으로 오분류하지 않고 더 식별력 있는 각도를 찾을 대상으로 남겼다.",
+   "searchedWeb": false,
+   "sources": [
+    "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-074.webp"
+   ]
+  },
+  "p09-re-101": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "candidate",
+   "detail": "야간 도로와 차량만 두드러진다. 전직 CEO를 구별할 인물 모습이 보이지 않는다. 원본은 같은 핀에 귀속된다. 다른 사건 사진으로 오분류하지 않고 더 식별력 있는 각도를 찾을 대상으로 남겼다.",
+   "searchedWeb": false,
+   "sources": [
+    "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-101.webp"
+   ]
+  },
+  "p09-re-164": {
+   "status": "후보 원본 개봉 및 식별력 대조",
+   "reason": "candidate",
+   "detail": "역광 속 사람의 윤곽만 보여 관광객의 외형이나 조우 지점을 구분하기 어렵다. 원본은 같은 핀에 귀속된다. 다른 사건 사진으로 오분류하지 않고 더 식별력 있는 각도를 찾을 대상으로 남겼다.",
+   "searchedWeb": false,
+   "sources": [
+    "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-164.webp"
+   ]
+  },
   "p06-c-del-17": {
    "status": "등록",
    "reason": "기존 원본은 있으나 썸네일 연결 누락",
@@ -1998,7 +2196,22 @@
     "https://fbritoferreira.github.io/gta6/?loc=card-delights-015",
     "https://fbritoferreira.github.io/gta6/screenshots/gta6-card-delights-015.webp"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "https://fbritoferreira.github.io/gta6/screenshots/gta6-card-delights-015.webp",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 320,
+      "height": 180
+     }
+    ]
+   }
   },
   "p06-br-195": {
    "status": "미확보",
@@ -2018,7 +2231,17 @@
     "https://github.com/rolux/gtadb.org#readme",
     "https://creativecommons.org/licenses/by/4.0/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "media/editorial/field-l654.webp",
+    "origin": "local HTTP",
+    "attempts": [
+     {
+      "width": 960,
+      "height": 267
+     }
+    ]
+   }
   },
   "p03-fx03": {
    "status": "미확보",
@@ -2074,7 +2297,17 @@
     "https://github.com/rolux/gtadb.org#readme",
     "https://creativecommons.org/licenses/by/4.0/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "media/editorial/field-l806.webp",
+    "origin": "local HTTP",
+    "attempts": [
+     {
+      "width": 960,
+      "height": 292
+     }
+    ]
+   }
   },
   "p06-bj-008": {
    "status": "미확보",
@@ -2103,7 +2336,17 @@
     "https://github.com/rolux/gtadb.org#readme",
     "https://creativecommons.org/licenses/by/4.0/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "media/editorial/field-l1313.webp",
+    "origin": "local HTTP",
+    "attempts": [
+     {
+      "width": 740,
+      "height": 396
+     }
+    ]
+   }
   },
   "p06-br-053": {
    "status": "미확보",
@@ -2132,7 +2375,17 @@
     "https://github.com/rolux/gtadb.org#readme",
     "https://creativecommons.org/licenses/by/4.0/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "media/editorial/field-l1409.webp",
+    "origin": "local HTTP",
+    "attempts": [
+     {
+      "width": 960,
+      "height": 543
+     }
+    ]
+   }
   },
   "p03-sa003": {
    "status": "미확보",
@@ -2197,7 +2450,17 @@
     "https://github.com/rolux/gtadb.org#readme",
     "https://creativecommons.org/licenses/by/4.0/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "media/editorial/field-l644.webp",
+    "origin": "local HTTP",
+    "attempts": [
+     {
+      "width": 627,
+      "height": 600
+     }
+    ]
+   }
   },
   "p06-br-158": {
    "status": "미확보",
@@ -2217,7 +2480,17 @@
     "https://github.com/rolux/gtadb.org#readme",
     "https://creativecommons.org/licenses/by/4.0/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "media/editorial/field-l265.webp",
+    "origin": "local HTTP",
+    "attempts": [
+     {
+      "width": 960,
+      "height": 459
+     }
+    ]
+   }
   },
   "p06-br-119": {
    "status": "미확보",
@@ -2246,7 +2519,17 @@
     "https://github.com/rolux/gtadb.org#readme",
     "https://creativecommons.org/licenses/by/4.0/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "media/editorial/field-l564.webp",
+    "origin": "local HTTP",
+    "attempts": [
+     {
+      "width": 500,
+      "height": 239
+     }
+    ]
+   }
   },
   "p06-kf-022": {
    "status": "미확보",
@@ -2266,7 +2549,17 @@
     "https://i.ytimg.com/vi/V94O5xRHT5M/hq1.jpg",
     "https://gta6map.city/secrets/giant-mutant-crab/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/V94O5xRHT5M/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "l09": {
    "status": "영상 원본과 현장 확인",
@@ -2277,7 +2570,17 @@
     "https://i.ytimg.com/vi/xqELudeidF8/hq1.jpg",
     "https://gameta.gg/gta6/guides/aliens-and-ufo-easter-egg/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/xqELudeidF8/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "l10": {
    "status": "영상 원본과 현장 확인",
@@ -2288,7 +2591,17 @@
     "https://i.ytimg.com/vi/MJtFy0fjxjo/hq1.jpg",
     "https://gta6map.city/secrets/final-flush-stamina-boost/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/MJtFy0fjxjo/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "l17": {
    "status": "영상 원본과 현장 확인",
@@ -2299,7 +2612,17 @@
     "https://i.ytimg.com/vi/UJrtZeJvIvM/hq1.jpg",
     "https://gta6bugs.com/easter-eggs/sos-island"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/UJrtZeJvIvM/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "l22": {
    "status": "영상 원본과 현장 확인",
@@ -2310,7 +2633,17 @@
     "https://i.ytimg.com/vi/IxJQLem1gmo/hq2.jpg",
     "https://gta6map.city/secrets/hyde-island-lucia-bomb-collar-hunt/"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/IxJQLem1gmo/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "l08": {
    "status": "현장·이용 조건·영상 공개 프레임 대조",
@@ -2326,15 +2659,26 @@
    "searchedWeb": true
   },
   "l12": {
-   "status": "사진 위치·영상 확인",
-   "reason": "mismatch",
-   "detail": "PDF 21쪽과 Beebom의 사진은 왓슨 베이의 별도 목격이다. 햄릿 남쪽 핀 접근 장면으로 사용할 수 없다. 제공 영상의 발자국·사체 사진도 해당 핀과 일치하는지 확인되지 않았다.",
+   "status": "현장·원본 영상 시각 대조",
+   "reason": "신규 현장 사진 연결",
+   "detail": "PowerPyx 원문의 햄릿 남쪽 자유 조우 절에 수록된 영상 Ft2JuG4ruGY의 습지 픽업 장면을 확인했다. GTA6BUGS의 자유 탐험 도입부에 같은 영상의 픽업 장면과 장소 설명이 있다. 왓슨 베이 사진과 커크의 다른 연속 미션 촬영분을 제외했고, 괴물과 퍼즐 해답이 드러나지 않는 프레임을 선택했다.",
    "sources": [
-    "https://static.beebom.com/wp-content/uploads/2026/11/Bigfoot-spotted-at-the-south-of-watson-bay-in-GTA-6-1.jpg",
-    "https://www.youtube.com/watch?v=9rMOFQBvUxU",
-    "https://www.powerpyx.com/gta-6-bigfoot-sasquatch-easter-egg-location/"
+    "https://www.powerpyx.com/gta-6-bigfoot-sasquatch-easter-egg-location/",
+    "https://gta6bugs.com/easter-eggs/skunk-ape-bigfoot",
+    "https://www.youtube.com/watch?v=Ft2JuG4ruGY",
+    "https://i.ytimg.com/vi/Ft2JuG4ruGY/hq3.jpg"
    ],
-   "searchedWeb": true
+   "searchedWeb": true,
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/Ft2JuG4ruGY/hq3.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "l21": {
    "status": "원본 장면 확인",
@@ -2635,7 +2979,22 @@
    "sources": [
     "https://fbritoferreira.github.io/gta6/?loc=parachuting-001",
     "https://fbritoferreira.github.io/gta6/screenshots/parachuting-001.webp"
-   ]
+   ],
+   "browserDecode": {
+    "source": "https://fbritoferreira.github.io/gta6/screenshots/parachuting-001.webp",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 1279,
+      "height": 720
+     }
+    ]
+   }
   },
   "x02-02": {
    "status": "과거 자산 복원",
@@ -2645,7 +3004,22 @@
    "sources": [
     "https://fbritoferreira.github.io/gta6/?loc=parachuting-002",
     "https://fbritoferreira.github.io/gta6/screenshots/parachuting-002.webp"
-   ]
+   ],
+   "browserDecode": {
+    "source": "https://fbritoferreira.github.io/gta6/screenshots/parachuting-002.webp",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 960,
+      "height": 720
+     }
+    ]
+   }
   },
   "p06-c-jac-26": {
    "status": "과거 자산 복원",
@@ -2655,7 +3029,22 @@
    "sources": [
     "https://fbritoferreira.github.io/gta6/?loc=collectible-card-087",
     "https://fbritoferreira.github.io/gta6/screenshots/collectible-card-087.webp"
-   ]
+   ],
+   "browserDecode": {
+    "source": "https://fbritoferreira.github.io/gta6/screenshots/collectible-card-087.webp",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 1280,
+      "height": 720
+     }
+    ]
+   }
   },
   "p09-re-020": {
    "status": "과거 자산 복원",
@@ -2665,7 +3054,22 @@
    "sources": [
     "https://fbritoferreira.github.io/gta6/?loc=random-event-020",
     "https://fbritoferreira.github.io/gta6/screenshots/random-event-020.webp"
-   ]
+   ],
+   "browserDecode": {
+    "source": "https://fbritoferreira.github.io/gta6/screenshots/random-event-020.webp",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 540,
+      "height": 720
+     }
+    ]
+   }
   },
   "p04-16": {
    "reason": "등록",
@@ -2686,7 +3090,22 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-irons-building-supply-entry.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 1920,
+      "height": 1080
+     }
+    ]
+   }
   },
   "p04-17": {
    "reason": "등록",
@@ -2702,7 +3121,22 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-sound4sound-studio-entry.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 1920,
+      "height": 1080
+     }
+    ]
+   }
   },
   "p04-18": {
    "reason": "등록",
@@ -2723,7 +3157,22 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-la-perle-trap-house-entry.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 1920,
+      "height": 1080
+     }
+    ]
+   }
   },
   "p04-19": {
    "reason": "등록",
@@ -2739,7 +3188,17 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://howtovideogame.com/wp-content/uploads/2026/11/gta-6-illegal-sneaker-trade-safe-code-capture-2.webp",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 1200,
+      "height": 675
+     }
+    ]
+   }
   },
   "p04-24": {
    "reason": "등록",
@@ -2760,7 +3219,22 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-saber-shipping-yard-entry.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 1920,
+      "height": 1080
+     }
+    ]
+   }
   },
   "p04-32": {
    "reason": "등록",
@@ -2776,7 +3250,22 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-cigar-import-front-entry.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 0,
+      "height": 0,
+      "error": "Error: timeout"
+     },
+     {
+      "width": 1920,
+      "height": 1080
+     }
+    ]
+   }
   },
   "p07-s01": {
    "reason": "등록",
@@ -2797,7 +3286,17 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://cdn.nerdschalk.com/wp-content/uploads/2026/11/where-to-find-port-gellhorn-station-garage-in-gta-6-shot-07-8cb62a7d-wm-tr.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 1920,
+      "height": 1080
+     }
+    ]
+   }
   },
   "p07-garage-retention": {
    "reason": "등록",
@@ -2813,7 +3312,17 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://cdn.nerdschalk.com/wp-content/uploads/2026/11/how-to-register-a-vehicle-in-gta-6-shot-06-0721b0dd-wm-br.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 1920,
+      "height": 1080
+     }
+    ]
+   }
   },
   "p07-garages": {
    "reason": "등록",
@@ -2829,7 +3338,17 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://techwiser.com/wp-content/uploads/2026/11/How-to-buy-Garage-1024x576.webp",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 1024,
+      "height": 576
+     }
+    ]
+   }
   },
   "p07-e02": {
    "reason": "등록",
@@ -2851,7 +3370,17 @@
     }
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://media.gtaboom.com/variants/1920/media/images/33/77/garage-66333faaa985c05f.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 1920,
+      "height": 1080
+     }
+    ]
+   }
   },
   "p07-g04": {
    "reason": "map",
@@ -2961,7 +3490,17 @@
     "https://getvicekeys.com/guides/gta-6-petes-deliveries-avery-allen"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/DK4DafTzz0Y/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-056": {
    "reason": "mismatch",
@@ -2992,7 +3531,17 @@
     "https://www.powerpyx.com/gta-6-bring-out-the-chimp-help-save-the-chimps-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/Ws117MWo2qE/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-005": {
    "reason": "등록",
@@ -3003,7 +3552,17 @@
     "https://www.powerpyx.com/gta-6-twin-flames-shut-down-the-fracking-site-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/EpXogSEL-4Y/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-006": {
    "reason": "등록",
@@ -3014,7 +3573,17 @@
     "https://www.powerpyx.com/gta-6-dodo-rise-meet-with-the-dodos-contact-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/RejpOq37Dy0/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-022": {
    "reason": "등록",
@@ -3025,7 +3594,17 @@
     "https://www.powerpyx.com/gta-6-all-strangers-freaks-side-missions/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/QJzJGibGXSw/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-033": {
    "reason": "등록",
@@ -3036,7 +3615,17 @@
     "https://www.powerpyx.com/gta-6-pay-the-cellerica-fee-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/HQ0PA2vEnKc/hq3.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-035": {
    "reason": "등록",
@@ -3047,7 +3636,17 @@
     "https://www.powerpyx.com/gta-6-read-the-label-retrieve-the-cellerica-van-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/ik6oCAo1gCE/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-044": {
    "reason": "등록",
@@ -3058,7 +3657,17 @@
     "https://www.powerpyx.com/gta-6-all-strangers-freaks-side-missions/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/dJ7I32Med7E/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-045": {
    "reason": "등록",
@@ -3069,7 +3678,17 @@
     "https://www.powerpyx.com/gta-6-the-unknown-stuntman-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/-zxX8B8-Xsw/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-046": {
    "reason": "등록",
@@ -3080,7 +3699,17 @@
     "https://www.powerpyx.com/gta-6-trial-by-tire-meet-the-audacity-engineer-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/8LI_jMehmcQ/hq3.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-047": {
    "reason": "등록",
@@ -3091,7 +3720,17 @@
     "https://www.powerpyx.com/gta-6-quit-your-job-sell-your-house-help-papa-audacity-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/SH2UARHCVQY/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-049": {
    "reason": "등록",
@@ -3102,7 +3741,17 @@
     "https://www.powerpyx.com/gta-6-catching-a-whale-help-papa-audacity-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/67Nl30GUsi8/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-050": {
    "reason": "등록",
@@ -3113,7 +3762,17 @@
     "https://www.powerpyx.com/gta-6-the-audacity-attend-the-launch-party-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/FrBRofMqgWs/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-052": {
    "reason": "등록",
@@ -3124,7 +3783,17 @@
     "https://www.powerpyx.com/gta-6-the-last-mile-passing-the-torch-recover-petes-plane-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/QSRuFBHSo-c/hq3.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-066": {
    "reason": "등록",
@@ -3135,7 +3804,17 @@
     "https://www.powerpyx.com/gta-6-hit-avery-pawn-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/QYVkps7RU4g/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-072": {
    "reason": "등록",
@@ -3146,7 +3825,17 @@
     "https://www.powerpyx.com/gta-6-drequans-gift-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/J8dpbb1NPUU/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-m-073": {
    "reason": "등록",
@@ -3157,7 +3846,17 @@
     "https://www.powerpyx.com/gta-6-thats-where-the-money-is-wait-at-the-cafe-walkthrough/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/oP3PBiywlOU/hq2.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-sp": {
    "reason": "등록",
@@ -3168,7 +3867,17 @@
     "https://gtascoop.com/guides/gta-6-random-encounters/#the-beach-grappler-the-beta-blocker"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://i.ytimg.com/vi/JJPxm1aKBIc/hq1.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 480,
+      "height": 360
+     }
+    ]
+   }
   },
   "p09-pe": {
    "reason": "등록",
@@ -3179,7 +3888,17 @@
     "https://gtascoop.com/map/#mission-passing-the-torch"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/pilot-pete-hangar-clean.jpg",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 1140,
+      "height": 641
+     }
+    ]
+   }
   },
   "p09-m-039": {
    "reason": "등록",
@@ -3190,7 +3909,17 @@
     "https://www.powerpyx.com/gta-6-all-strangers-freaks-side-missions/"
    ],
    "searchedWeb": true,
-   "status": "전용 원본 및 실화면 대조"
+   "status": "전용 원본 및 실화면 대조",
+   "browserDecode": {
+    "source": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/payday-loans-southside.webp",
+    "origin": "GitHub Pages",
+    "attempts": [
+     {
+      "width": 2554,
+      "height": 1277
+     }
+    ]
+   }
   }
  },
  "probeMethod": "2026-11-26 배포 웹앱 페이지에서 Chromium Image.decode()를 시험했다. 첫 시도에 실패한 URL은 다시 시도하고 두 번 모두 각각 동일 URL의 HEAD 응답과 Cross-Origin-Resource-Policy를 확인했다. 이미지 파일 등록 및 표시 가능 여부를 판단하는 검사이며 대상과 권리에 대한 판정은 별도다.",

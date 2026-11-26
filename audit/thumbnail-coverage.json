@@ -3,10 +3,10 @@
  "overall": {
   "entries": 3280,
   "before": 572,
-  "card": 978,
-  "hero": 978,
+  "card": 982,
+  "hero": 982,
   "mapEntries": 1971,
-  "mapImages": 723
+  "mapImages": 724
  },
  "byCategory": {
   "P01": {
@@ -20,8 +20,8 @@
   "P02": {
    "entries": 166,
    "before": 149,
-   "card": 151,
-   "hero": 151,
+   "card": 152,
+   "hero": 152,
    "mapEntries": 111,
    "mapImages": 106
   },
@@ -44,10 +44,10 @@
   "P05": {
    "entries": 339,
    "before": 9,
-   "card": 50,
-   "hero": 50,
+   "card": 51,
+   "hero": 51,
    "mapEntries": 35,
-   "mapImages": 25
+   "mapImages": 26
   },
   "P06": {
    "entries": 1211,
@@ -76,16 +76,16 @@
   "P09": {
    "entries": 574,
    "before": 27,
-   "card": 164,
-   "hero": 164,
+   "card": 165,
+   "hero": 165,
    "mapEntries": 330,
    "mapImages": 100
   },
   "P10": {
    "entries": 39,
    "before": 5,
-   "card": 5,
-   "hero": 5,
+   "card": 6,
+   "hero": 6,
    "mapEntries": 0,
    "mapImages": 0
   },
@@ -117,17 +117,17 @@
  "fieldExploration": {
   "entries": 70,
   "before": 8,
-  "card": 37,
-  "hero": 37,
+  "card": 38,
+  "hero": 38,
   "mapEntries": 34,
-  "mapImages": 25
+  "mapImages": 26
  },
  "eventsByType": {
   "랜덤 조우": {
    "entries": 395,
    "before": 1,
-   "card": 90,
-   "hero": 90,
+   "card": 91,
+   "hero": 91,
    "mapEntries": 277,
    "mapImages": 89
   },
@@ -179,6 +179,7 @@
   "l07",
   "l09",
   "l10",
+  "l12",
   "l13",
   "l14",
   "l15",
@@ -232,6 +233,7 @@
   "p01-story-vcia-takedown",
   "p01-story-watch-it",
   "p01-story-welcome-to-vice-city",
+  "p02-impound-gear",
   "p03-sa002",
   "p03-sa005",
   "p03-sa007",
@@ -462,6 +464,7 @@
   "p09-m-072",
   "p09-m-073",
   "p09-pe",
+  "p09-pl",
   "p09-re-006",
   "p09-re-012",
   "p09-re-020",
@@ -549,6 +552,7 @@
   "p09-re-277",
   "p09-re-278",
   "p09-sp",
+  "p10-g03",
   "p10-s04",
   "v-registration",
   "w01",
@@ -570,8 +574,10 @@
   "l07",
   "l09",
   "l10",
+  "l12",
   "l17",
   "l22",
+  "p02-impound-gear",
   "p03-sa012",
   "p03-sa079",
   "p04-16",
@@ -610,8 +616,10 @@
   "p09-m-072",
   "p09-m-073",
   "p09-pe",
+  "p09-pl",
   "p09-re-020",
   "p09-sp",
+  "p10-g03",
   "x02-01",
   "x02-02"
  ],
@@ -849,6 +857,7 @@
   "l07",
   "l09",
   "l10",
+  "l12",
   "l13",
   "l14",
   "l15",
@@ -896,6 +905,7 @@
   "p01-story-vcia-takedown",
   "p01-story-watch-it",
   "p01-story-welcome-to-vice-city",
+  "p02-impound-gear",
   "p03-sa012",
   "p03-sa079",
   "p04-01",
@@ -1011,7 +1021,9 @@
   "p09-m-072",
   "p09-m-073",
   "p09-pe",
+  "p09-pl",
   "p09-sp",
+  "p10-g03",
   "p10-s04",
   "v-registration",
   "w01",
@@ -1050,7 +1062,6 @@
   "p06-collection-targets",
   "p09-region-routes",
   "p08-range-medals",
-  "p02-impound-gear",
   "p01-c01-guide",
   "p01-c03-guide",
   "p01-c04-guide",
@@ -1573,7 +1584,6 @@
   "p03-economy-videos",
   "p04-catalog",
   "l08",
-  "l12",
   "l20",
   "l21",
   "l24",
@@ -2965,7 +2975,6 @@
   "p09-sw",
   "p09-eg",
   "p09-bg",
-  "p09-pl",
   "p09-mm",
   "p09-da",
   "p09-m-016",
@@ -3325,7 +3334,6 @@
   "p10-m08",
   "p10-m11",
   "p10-m12",
-  "p10-g03",
   "p10-g04",
   "p10-g05",
   "p10-g06",
@@ -3354,7 +3362,6 @@
   "p06-collection-targets",
   "p09-region-routes",
   "p08-range-medals",
-  "p02-impound-gear",
   "p01-c01-guide",
   "p01-c03-guide",
   "p01-c04-guide",
@@ -3877,7 +3884,6 @@
   "p03-economy-videos",
   "p04-catalog",
   "l08",
-  "l12",
   "l20",
   "l21",
   "l24",
@@ -5269,7 +5275,6 @@
   "p09-sw",
   "p09-eg",
   "p09-bg",
-  "p09-pl",
   "p09-mm",
   "p09-da",
   "p09-m-016",
@@ -5629,7 +5634,6 @@
   "p10-m08",
   "p10-m11",
   "p10-m12",
-  "p10-g03",
   "p10-g04",
   "p10-g05",
   "p10-g06",
@@ -5929,7 +5933,6 @@
   "p03-vr017",
   "p03-vr018",
   "l08",
-  "l12",
   "l20",
   "l21",
   "l24",
@@ -6903,7 +6906,7 @@
   "p09-re-236",
   "p08-gym-prices"
  ],
- "distinctURLs": 965,
+ "distinctURLs": 969,
  "decodeChecked": true,
  "decodeFailures": [],
  "failedEntryIds": []
