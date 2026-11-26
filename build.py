@@ -104,6 +104,7 @@ def build():
         "items": [json.loads(line) for file in sorted((ROOT / "data").glob("*.jsonl")) for line in file.read_text(encoding="utf-8").splitlines() if line],
         "media": read("photos.json"),
         "pins": read("atlas.json"),
+        "mapRegions": read("map-regions.json"),
         "redirects": read("redirects.json")
     }
     localize(data, read("official-names.json"))

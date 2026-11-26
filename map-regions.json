@@ -1,0 +1,457 @@
+{
+  "names": {
+    "Abismo Key": "아비스모 키",
+    "Allied Crystal": "앨라이드 크리스털",
+    "Ambrosia": "앰브로시아",
+    "Ambrosia Raceway": "앰브로시아 레이스웨이",
+    "Balsero": "발세로",
+    "Bayside": "베이사이드",
+    "Belpoint": "벨포인트 섬",
+    "Belville": "벨빌",
+    "Belville 북쪽": "벨빌 북쪽",
+    "Big Pine": "빅 파인",
+    "Bluegrass": "블루그래스",
+    "Bobcat Key": "밥캣 키",
+    "Bonanza/Moreau": "보난자·모로",
+    "Buckskin": "벅스킨 습지",
+    "Buckskin Swamp": "벅스킨 습지",
+    "Capri": "카프리",
+    "Catalan Bay": "카탈란 베이",
+    "Catalan Key": "카탈란 키",
+    "Crosstown": "크로스타운",
+    "Dalton Island": "돌턴 섬",
+    "Downtown": "다운타운 바이스 시티",
+    "Draper Island": "드레이퍼 섬",
+    "Emerald Springs": "에메랄드 스프링스",
+    "Frampton Islands": "프램프턴 제도",
+    "Frogswater": "프로그스워터",
+    "Gellhorn International Raceway": "겔혼 국제 레이스웨이",
+    "Gloriana Key": "글로리아나 키",
+    "Grassrivers": "그래스리버스",
+    "Hamlet": "햄릿",
+    "Kelly County": "켈리",
+    "Kelly County / Mariana County": "켈리·마리아나",
+    "Kelly County / Vice-Dale County / Mariana County": "켈리·바이스데일·마리아나",
+    "Key Lento": "키 렌토",
+    "La Perle": "라 펄",
+    "Leaf Links": "리프 링크스",
+    "Leonard County": "레너드",
+    "Little Cuba": "리틀 쿠바",
+    "Lummox County": "럼목스",
+    "Mariana County": "마리아나",
+    "Millport": "밀포트",
+    "Moreau": "모로",
+    "North Kelly": "노스 켈리",
+    "North Leonard": "레너드 북부",
+    "Ocean Beach": "오션 비치",
+    "Peacock Bay": "피콕 베이",
+    "Pegassi Residences Garage": "페가시 레지던스 차고",
+    "Pelican Valley": "펠리컨 밸리",
+    "Peregrine Bay": "페러그린 베이",
+    "Permit Keys": "퍼밋 키스",
+    "Port Gellhorn": "포트 겔혼",
+    "Port Vice City": "포트 바이스 시티",
+    "Rialto Islands": "리알토 제도",
+    "Rockridge": "록리지",
+    "Salton": "솔턴",
+    "Shoreline": "쇼어라인",
+    "Southside": "사우스사이드",
+    "Southwind": "사우스윈드",
+    "Starfish Island": "스타피시 아일랜드",
+    "Stockyard": "스톡야드",
+    "Tallaloko": "탈라로코 호수",
+    "Tequesta": "테퀘스타",
+    "Tequesta Retreat": "테퀘스타 리트리트",
+    "Thrillbilly Mud Club 부근": "스릴빌리 머드 클럽 부근",
+    "Tisha-Wocka": "티샤워카",
+    "Tola Bay": "톨라 베이",
+    "Vespucci Island": "베스푸치 섬",
+    "Vice Beach": "바이스 비치",
+    "Vice City International Airport": "바이스 시티 국제공항",
+    "Vice Decor District": "바이스 데코 지구",
+    "Vice-Dale County": "바이스데일",
+    "Waning Sands": "워닝 샌즈",
+    "Washington Beach": "워싱턴 비치",
+    "Watson Bay": "왓슨 베이",
+    "West Kalaga, Lummox County": "럼목스 · 칼라가 서부",
+    "Wild Hog Point": "와일드 호그 포인트",
+    "Yorktown": "요크타운",
+    "바이스 시티 · 라 펄 / Del Rio Boulevard": "바이스 시티 · 라 펄 / 델 리오 대로",
+    "바이스 시티 국제 공항": "바이스 시티 국제공항",
+    "앰브로시아 Raceway": "앰브로시아 레이스웨이"
+  },
+  "labels": [
+    {
+      "name": "워싱턴 비치",
+      "x": 1843,
+      "y": 1991,
+      "radius": 650
+    },
+    {
+      "name": "오션 비치",
+      "x": 1762,
+      "y": 605,
+      "radius": 865
+    },
+    {
+      "name": "테퀘스타 리트리트",
+      "x": -188,
+      "y": -1021,
+      "radius": 300
+    },
+    {
+      "name": "바이스 데코 지구",
+      "x": -187,
+      "y": 2136,
+      "radius": 420
+    },
+    {
+      "name": "라 펄",
+      "x": -976,
+      "y": 1498,
+      "radius": 370
+    },
+    {
+      "name": "크로스타운",
+      "x": -657,
+      "y": 1192,
+      "radius": 370
+    },
+    {
+      "name": "스톡야드",
+      "x": -366,
+      "y": 1809,
+      "radius": 330
+    },
+    {
+      "name": "베이사이드",
+      "x": -417,
+      "y": 943,
+      "radius": 300
+    },
+    {
+      "name": "쇼어라인",
+      "x": -301,
+      "y": 117,
+      "radius": 350
+    },
+    {
+      "name": "다운타운 바이스 시티",
+      "x": -642,
+      "y": -189,
+      "radius": 535
+    },
+    {
+      "name": "록리지",
+      "x": -1295,
+      "y": 890,
+      "radius": 480
+    },
+    {
+      "name": "발세로",
+      "x": -2102,
+      "y": 464,
+      "radius": 575
+    },
+    {
+      "name": "리틀 쿠바",
+      "x": -1189,
+      "y": 171,
+      "radius": 415
+    },
+    {
+      "name": "솔턴",
+      "x": -1517,
+      "y": -287,
+      "radius": 490
+    },
+    {
+      "name": "테퀘스타",
+      "x": -911,
+      "y": -1074,
+      "radius": 445
+    },
+    {
+      "name": "피콕 베이",
+      "x": -1269,
+      "y": -1791,
+      "radius": 510
+    },
+    {
+      "name": "사우스사이드",
+      "x": -1754,
+      "y": -2064,
+      "radius": 475
+    },
+    {
+      "name": "리프 링크스",
+      "x": 816,
+      "y": 2402,
+      "radius": 385
+    },
+    {
+      "name": "앨라이드 크리스털",
+      "x": -2831,
+      "y": 3935,
+      "radius": 430
+    },
+    {
+      "name": "티샤워카",
+      "x": -2778,
+      "y": 764,
+      "radius": 550
+    },
+    {
+      "name": "돌턴 섬",
+      "x": 1819,
+      "y": -1331,
+      "radius": 420
+    },
+    {
+      "name": "글로리아나 키",
+      "x": 597,
+      "y": -1837,
+      "radius": 525
+    },
+    {
+      "name": "카탈란 키",
+      "x": -39,
+      "y": -1753,
+      "radius": 450
+    },
+    {
+      "name": "포트 바이스 시티",
+      "x": 391,
+      "y": -487,
+      "radius": 470
+    },
+    {
+      "name": "리알토 제도",
+      "x": 491,
+      "y": 1245,
+      "radius": 495
+    },
+    {
+      "name": "워닝 샌즈",
+      "x": -136,
+      "y": 4029,
+      "radius": 625
+    },
+    {
+      "name": "벨빌",
+      "x": -1319,
+      "y": 2884,
+      "radius": 670
+    },
+    {
+      "name": "바이스 시티 국제공항",
+      "x": -2318,
+      "y": -764,
+      "radius": 910
+    },
+    {
+      "name": "페러그린 베이",
+      "x": -1852,
+      "y": -3539,
+      "radius": 510
+    },
+    {
+      "name": "햄릿",
+      "x": -2588,
+      "y": -3319,
+      "radius": 840
+    },
+    {
+      "name": "블루그래스",
+      "x": -2671,
+      "y": -2197,
+      "radius": 500
+    },
+    {
+      "name": "키 렌토",
+      "x": -2473,
+      "y": -5810,
+      "radius": 980
+    },
+    {
+      "name": "포트 겔혼",
+      "x": -6402,
+      "y": 3766,
+      "radius": 1300
+    },
+    {
+      "name": "스타피시 아일랜드",
+      "x": 665,
+      "y": 434,
+      "radius": 450
+    },
+    {
+      "name": "왓슨 베이",
+      "x": -4943,
+      "y": -3180,
+      "radius": 830
+    },
+    {
+      "name": "앰브로시아",
+      "x": -2774,
+      "y": 4130,
+      "radius": 830
+    },
+    {
+      "name": "카탈란 베이",
+      "x": 930,
+      "y": 2914,
+      "radius": 530
+    },
+    {
+      "name": "아비스모 키",
+      "x": -4919,
+      "y": -7330,
+      "radius": 495
+    },
+    {
+      "name": "카프리",
+      "x": -6790,
+      "y": 197,
+      "radius": 950
+    },
+    {
+      "name": "사우스윈드",
+      "x": -6387,
+      "y": -6392,
+      "radius": 650
+    },
+    {
+      "name": "벨포인트 섬",
+      "x": -8264,
+      "y": -929,
+      "radius": 550
+    },
+    {
+      "name": "겔혼 국제 레이스웨이",
+      "x": -6466,
+      "y": 1806,
+      "radius": 700
+    },
+    {
+      "name": "에메랄드 스프링스",
+      "x": -3998,
+      "y": 2140,
+      "radius": 680
+    },
+    {
+      "name": "벅스킨 습지",
+      "x": -4145,
+      "y": 1007,
+      "radius": 750
+    },
+    {
+      "name": "프램프턴 제도",
+      "x": -1888,
+      "y": 7998,
+      "radius": 500
+    },
+    {
+      "name": "밀포트",
+      "x": -1113,
+      "y": 6439,
+      "radius": 710
+    },
+    {
+      "name": "모로",
+      "x": -3915,
+      "y": 7954,
+      "radius": 900
+    },
+    {
+      "name": "그래스리버스",
+      "x": -3058,
+      "y": -4924,
+      "radius": 1250
+    },
+    {
+      "name": "요크타운",
+      "x": -5766,
+      "y": 6641,
+      "radius": 740
+    },
+    {
+      "name": "드레이퍼 섬",
+      "x": -7339,
+      "y": 4984,
+      "radius": 580
+    },
+    {
+      "name": "마운트 칼라가",
+      "x": -3430,
+      "y": 6371,
+      "radius": 710
+    },
+    {
+      "name": "빅 파인",
+      "x": -5580,
+      "y": -1418,
+      "radius": 820
+    },
+    {
+      "name": "펠리컨 밸리",
+      "x": -3941,
+      "y": -4011,
+      "radius": 775
+    },
+    {
+      "name": "탈라로코 호수",
+      "x": -1376,
+      "y": 7120,
+      "radius": 845
+    },
+    {
+      "name": "밥캣 키",
+      "x": -6547,
+      "y": -2396,
+      "radius": 630
+    },
+    {
+      "name": "퍼밋 키스",
+      "x": -5552,
+      "y": -6730,
+      "radius": 550
+    },
+    {
+      "name": "프로그스워터",
+      "x": -2873,
+      "y": 4828,
+      "radius": 575
+    },
+    {
+      "name": "선다운 비행장",
+      "x": -841,
+      "y": 4308,
+      "radius": 370
+    },
+    {
+      "name": "하이드 아일랜드",
+      "x": -2756,
+      "y": 8831,
+      "radius": 455
+    },
+    {
+      "name": "톨라 베이",
+      "x": -5363,
+      "y": -1142,
+      "radius": 440
+    },
+    {
+      "name": "앰브로시아 레이스웨이",
+      "x": -3005,
+      "y": 4615,
+      "radius": 430
+    },
+    {
+      "name": "베스푸치 섬",
+      "x": 495,
+      "y": 1207,
+      "radius": 325
+    }
+  ]
+}

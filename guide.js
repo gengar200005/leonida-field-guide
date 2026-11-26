@@ -1,5 +1,5 @@
 "use strict";
-const {items,media,pins,redirects={},regionAliases={},nameSources=[]}=window.FIELD_GUIDE;
+const {items,media,pins,mapRegions,redirects={},regionAliases={},nameSources=[]}=window.FIELD_GUIDE;
 const categories={
   P01:["챕터별 공략","CH","진행 전 확인할 수집품과 선택"],V:["고유 차량","GT","발견 위치와 차고 등록"],P02:["무기와 장비","EQ","획득 조건과 보관 방법"],
   P05:["비밀 탐험","EX","숨겨진 장소와 단계별 단서"],P06:["수집품","CO","컬렉션별 위치와 대체 사본"],P07:["부동산·은신처","HQ","위치와 이용 조건"],
@@ -30,8 +30,15 @@ for(const vehicle of categoryItems("V")){
  }
 }
 const styleChoices=[...new Set(vehicleStyles.values())].sort((a,b)=>a.localeCompare(b,"ko"));
-function vehicleStylePicker(selected){
- return '<label>차량 스타일 <select data-change="style">'+opt("","전체 스타일",selected)+styleChoices.map(style=>opt(style,style,selected)).join("")+'</select></label>';
+const mapStyleNames={
+ "All-Terrain":"전지형","Blinged Up":"화려한 장식",Chopper:"초퍼","Clout Chaser":"인기 추구","Demolition Derby":"데몰리션 더비",
+ Donks:"동크","DriveShaft Famous":"드라이브샤프트 유명차","Fine Art":"예술 작품",Girlypop:"걸리팝","Hot Rods":"핫로드",
+ "Law & Order":"법과 질서","Leonida Man":"리오나이다 맨",Lowriders:"로라이더",Mudder:"머더",Patriot:"패트리엇",
+ "Pedal Power":"페달 파워","Race Bikes":"레이스 바이크",Retro:"레트로","Ripped & Shredded":"립트 앤 슈레디드",
+ "Stock Car":"스톡카","Street Racer":"스트리트 레이서","Swamp Style":"습지 스타일",Throwback:"복고풍",Topper:"토퍼","Ultra-Luxe":"초호화"
+};
+function vehicleStylePicker(selected,inMap=false){
+ return '<label>차량 스타일 <select data-change="style">'+opt("","전체 스타일",selected)+styleChoices.map(style=>opt(style,(inMap&&mapStyleNames[style])||style,selected)).join("")+'</select></label>';
 }
 
 const atlasByItem=new Map();
@@ -361,13 +368,17 @@ function detail(v){if(!v)return missing();
 function missing(){return '<h1>공략을 찾을 수 없습니다</h1><p class="lead">이전 판의 주소이거나 통합된 항목일 수 있습니다.</p><a class="btn" href="#/guides">공략 도감 열기</a>'}
 const inBounds=p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=-12288&&p.x<=6144&&p.y>=-10240&&p.y<=12288;
 const mapped=pins.filter(inBounds);
+const mapRegion=value=>{
+ const region=regionFilter(value);
+ return Object.hasOwn(mapRegions.names,region)?mapRegions.names[region]:region;
+};
 const mappedIds=new Set(mapped.map(p=>cleanId(p.item)));
 const externalMapItems=readerItems.filter(v=>v.fieldReferences?.map&&!mappedIds.has(cleanId(v.id)));
 const mapCategories=[...new Set([...mapped,...externalMapItems].map(v=>v.category).filter(Boolean))];
 function externalMapList(category,region,style,activity,terms,open){
  const matches=externalMapItems.filter(v=>{
   if(category&&v.category!==category)return false;
-  if(region&&!norm(regionFilter(v.region)).includes(norm(region)))return false;
+  if(region&&!norm(mapRegion(v.region)).includes(norm(region)))return false;
   if(style&&vehicleStyles.get(cleanId(v.id))!==style)return false;
   if(activity&&!cleanId(v.id).startsWith("p06-"+activity+"-"))return false;
   const search=norm([v.title,v.region,...(v.aliases||[]),...(v.originalTerms||[])].join(" "));
@@ -375,7 +386,7 @@ function externalMapList(category,region,style,activity,terms,open){
  });
  if(!matches.length)return "";
  return '<details class="panel map-references"'+(open?' open':'')+'><summary>원본 지도에서 볼 수 있는 공략 '+matches.length.toLocaleString()+'개</summary><ul>'+matches.map(v=>
-  '<li><div>'+relatedLink(v)+(v.region?'<small>'+esc(v.region)+'</small>':'')+'</div><div class="map-reference-links">'+link(v.fieldReferences.map,"원본 지도")+link(v.fieldReferences.photo,"현장 사진")+'</div></li>'
+  '<li><div>'+relatedLink(v)+(v.region?'<small>'+esc(mapRegion(v.region))+'</small>':'')+'</div><div class="map-reference-links">'+link(v.fieldReferences.map,"원본 지도")+link(v.fieldReferences.photo,"현장 사진")+'</div></li>'
  ).join("")+'</ul></details>';
 }
 
@@ -383,21 +394,22 @@ let zoom=1,selected="",mapLimit=60;
 const percent=p=>[(p.x+12288)/18432*100,(12288-p.y)/22528*100];
 function mapSearchText(pin){
  const guide=findItem(pin.item);
- return norm([pinTitle(pin),pin.name,pin.originalName,pin.region,pin.originalRegion,guide?.title,...(guide?.aliases||[])].filter(Boolean).join(" "));
+ return norm([pinTitle(pin),pin.name,pin.originalName,mapRegion(pin.region),pin.region,pin.originalRegion,guide?.title,...(guide?.aliases||[])].filter(Boolean).join(" "));
 }
 const activityTypes={ho:"농구 골대",dr:"드론 레이스",bs:"책 교환",rd:"읽을거리",fl:"플라밍고",md:"명상",c:"카드",sj:"스턴트 점프",br:"교량 아래 비행",kf:"나이프 플라이트",bj:"BASE 점프"};
 function activityPicker(selected){
  return '<label>수집 활동 <select data-change="activity">'+opt("","전체 활동",selected)+Object.entries(activityTypes).map(([key,label])=>opt(key,label,selected)).join("")+'</select></label>';
 }
 function mapPage(p){
- const item=p.get("item"),region=regionFilter(p.get("region")),category=p.get("cat")||"",regions=[...new Set(mapped.map(v=>v.region).filter(Boolean))].sort();
+ const item=p.get("item"),region=mapRegion(p.get("region")),category=p.get("cat")||"";
+ const regions=[...new Set(mapped.map(v=>mapRegion(v.region)).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ko"));
  const activity=category==="P06"?(p.get("activity")||""):"";
  const style=category==="V"?(p.get("style")||""):"";
  const query=(p.get("q")||"").trim();
  const terms=query.split(/\s+/).filter(Boolean).map(norm);
- const list=mapped.filter(v=>(!region||v.region===region)&&(!category||v.category===category)&&(!activity||v.item.toLowerCase().startsWith("p06-"+activity+"-"))&&(!style||vehicleStyles.get(cleanId(v.item))===style)&&(!terms.length||terms.every(term=>mapSearchText(v).includes(term))));
+ const list=mapped.filter(v=>(!region||mapRegion(v.region)===region)&&(!category||v.category===category)&&(!activity||v.item.toLowerCase().startsWith("p06-"+activity+"-"))&&(!style||vehicleStyles.get(cleanId(v.item))===style)&&(!terms.length||terms.every(term=>mapSearchText(v).includes(term))));
  const references=externalMapList(category,region,style,activity,terms,!list.length);
- const search='<form id="map-search" class="bar" role="search" aria-label="지도에서 검색"><label>장소·수집품 <input name="q" placeholder="예: Vicki, 코튼마우스" value="'+esc(query)+'"></label><button>찾기</button>'+(query?'<button type="button" data-action="clear-map-search">검색 지우기</button>':'')+'</form>';
+ const search='<form id="map-search" class="bar" role="search" aria-label="지도에서 검색"><label>장소·수집품 <input name="q" placeholder="예: 포트 겔혼, 코튼마우스" value="'+esc(query)+'"></label><button>찾기</button>'+(query?'<button type="button" data-action="clear-map-search">검색 지우기</button>':'')+'</form>';
  const wanted=p.get("pin");
  const current=list.find(v=>v.id===selected)||list.find(v=>v.id===wanted&&v.item===item)||list.find(v=>item&&v.item===item&&!variableBox(v))||list.find(v=>item&&v.item===item);
  if(current)selected=current.id;
@@ -408,8 +420,139 @@ function mapPage(p){
    return '<button class="pin '+(v===current?"active ":"")+(many?"cluster":"")+'" style="left:'+x+'%;top:'+y+'%" '+(many?'data-cluster':'data-pin')+'="'+esc(v.id)+'" aria-label="'+esc(many?"위치 "+vs.length+"개 확대":pinTitle(v))+'">'+(many?vs.length:"")+'</button>';
  }).join("");
  const controls='<div class="bar mapcontrols"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><a class="textlink" href="#/credits">지도 출처</a></div>';
- return trail([["통합 지도"]])+'<div class="eyebrow">LEONIDA ATLAS</div><h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+mapCategories.map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style):"")+'<span class="count">'+list.length.toLocaleString()+'개 핀</span></div>'+references+'<div class="maplayout"><div>'+controls+'<div class="mapview" tabindex="0" aria-label="리오나이다 지형도"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" alt="리오나이다의 도로·수로·해안 지형">'+pinsHTML+'</div></div></div><aside class="panel"><h2>이 지도에서 찾기</h2>'+(current?'<div class="selectedpin"><b>'+esc(pinTitle(current))+'</b><p>'+esc(current.region)+'</p><div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 지도 핀이 없습니다.")+'</p>')+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'">'+esc(pinTitle(v))+'<small>'+esc(v.region)+'</small></button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
+ const viewport='<div class="map-window"><div class="mapview" tabindex="0" aria-label="리오나이다 지형도" aria-describedby="map-help"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" draggable="false" alt="리오나이다의 도로·수로·해안 지형"><div class="map-tiles" aria-hidden="true"></div>'+pinsHTML+'</div></div><div class="map-region-tooltip" hidden></div></div>';
+ const help='<p id="map-help" class="map-help">끌어서 이동하세요. 확대하면 가리키거나 터치한 곳 주변의 구역명이 표시됩니다.</p>';
+ const selectedPlace=current?'<div class="selectedpin"><b>'+esc(pinTitle(current))+'</b><p>'+esc(mapRegion(current.region))+'</p><div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 지도 핀이 없습니다.")+'</p>';
+ return trail([["통합 지도"]])+'<h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+mapCategories.map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style,true):"")+'<span class="count">'+list.length.toLocaleString()+'개 핀</span></div>'+references+'<div class="maplayout"><div>'+controls+viewport+help+'</div><aside class="panel"><h2>이 지도에서 찾기</h2>'+selectedPlace+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'">'+esc(pinTitle(v))+'<small>'+esc(mapRegion(v.region))+'</small></button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
 }
+function mapRegionNear(x,y){
+ let closest=null,distance=1;
+ for(const region of mapRegions.labels){
+  const relative=Math.hypot(x-region.x,y-region.y)/region.radius;
+  if(relative<distance){closest=region;distance=relative}
+ }
+ return closest?.name;
+}
+function setupMap(view){
+ const canvas=view.querySelector(".mapcanvas");
+ const layer=view.querySelector(".map-tiles");
+ const tooltip=view.parentElement.querySelector(".map-region-tooltip");
+ const highResolution={width:4608,height:5632,tile:1024};
+ const loaded=new Set();
+ let scheduled=false,drag=null,blockPinClick=false;
+ function loadVisibleTiles(){
+  if(zoom<=1||scheduled)return;
+  scheduled=true;
+  requestAnimationFrame(()=>{
+   scheduled=false;
+   if(!view.isConnected||!canvas.clientWidth)return;
+   const {width,height,tile}=highResolution;
+   const scale=width/canvas.clientWidth;
+   const left=view.scrollLeft*scale,top=view.scrollTop*scale;
+   const lastColumn=Math.min(Math.ceil(width/tile)-1,Math.floor((left+view.clientWidth*scale)/tile));
+   const lastRow=Math.min(Math.ceil(height/tile)-1,Math.floor((top+view.clientHeight*scale)/tile));
+   for(let row=Math.floor(top/tile);row<=lastRow;row++){
+    for(let column=Math.floor(left/tile);column<=lastColumn;column++){
+     const key=row+"-"+column;
+     if(loaded.has(key))continue;
+     const image=new Image();
+     const x=column*tile,y=row*tile;
+     image.alt="";
+     image.draggable=false;
+     image.decoding="async";
+     image.style.cssText="left:"+x/width*100+"%;top:"+y/height*100+"%;width:"+Math.min(tile,width-x)/width*100+"%;height:"+Math.min(tile,height-y)/height*100+"%";
+     image.src="media/leonida-detail-"+key+".webp";
+     layer.append(image);
+     loaded.add(key);
+    }
+   }
+  });
+ }
+ function showRegion(event){
+  if(zoom<=1){tooltip.hidden=true;return}
+  const bounds=canvas.getBoundingClientRect();
+  const x=(event.clientX-bounds.left)/bounds.width*18432-12288;
+  const y=12288-(event.clientY-bounds.top)/bounds.height*22528;
+  const name=mapRegionNear(x,y);
+  if(!name){tooltip.hidden=true;return}
+  if(tooltip.textContent!==name)tooltip.textContent=name;
+  tooltip.hidden=false;
+  const frame=view.parentElement.getBoundingClientRect();
+  const left=Math.min(event.clientX-frame.left+14,frame.width-tooltip.offsetWidth-8);
+  const top=Math.min(event.clientY-frame.top+14,frame.height-tooltip.offsetHeight-8);
+  tooltip.style.left=Math.max(8,left)+"px";
+  tooltip.style.top=Math.max(8,top)+"px";
+ }
+ view.addEventListener("scroll",loadVisibleTiles,{passive:true});
+ window.addEventListener("resize",()=>{
+  if(view.isConnected)loadVisibleTiles();
+ },{signal:mapViewEvents.signal});
+ view.addEventListener("pointerdown",event=>{
+  if(!event.isPrimary||event.button!==0)return;
+  blockPinClick=false;
+  drag={id:event.pointerId,x:event.clientX,y:event.clientY,left:view.scrollLeft,top:view.scrollTop,moved:false};
+ });
+ view.addEventListener("pointermove",event=>{
+  if(drag?.id!==event.pointerId){
+   if(event.pointerType==="mouse")showRegion(event);
+   return;
+  }
+  const dx=event.clientX-drag.x,dy=event.clientY-drag.y;
+  if(!drag.moved&&Math.hypot(dx,dy)<6)return;
+  if(!drag.moved){
+   drag.moved=true;
+   view.setPointerCapture(event.pointerId);
+   view.classList.add("is-dragging");
+   tooltip.hidden=true;
+  }
+  view.scrollLeft=drag.left-dx;
+  view.scrollTop=drag.top-dy;
+ });
+ function finish(event){
+  if(drag?.id!==event.pointerId)return;
+  blockPinClick=drag.moved;
+  if(!drag.moved&&event.pointerType==="touch"&&event.type==="pointerup")showRegion(event);
+  drag=null;
+  view.classList.remove("is-dragging");
+ }
+ view.addEventListener("pointerup",finish);
+ view.addEventListener("pointercancel",finish);
+ view.addEventListener("lostpointercapture",event=>{
+  if(event.target===view)finish(event);
+ });
+ view.addEventListener("pointerleave",event=>{
+  if(event.pointerType==="mouse")tooltip.hidden=true;
+  if(drag&&!drag.moved)drag=null;
+ });
+ view.addEventListener("click",event=>{
+  if(!blockPinClick||event.detail===0)return;
+  event.preventDefault();
+  event.stopPropagation();
+  blockPinClick=false;
+ },true);
+ view.addEventListener("wheel",event=>{
+  if(!event.ctrlKey&&!event.metaKey)return;
+  event.preventDefault();
+  const next=Math.min(8,Math.max(1,zoom*(event.deltaY<0?1.5:1/1.5)));
+  if(next===zoom||!event.deltaY)return;
+  const rect=view.getBoundingClientRect();
+  changeMapZoom(next,event.clientX-rect.left-view.clientLeft,event.clientY-rect.top-view.clientTop);
+ },{passive:false});
+ loadVisibleTiles();
+}
+function changeMapZoom(level,x,y){
+ const view=main.querySelector(".mapview");
+ const canvas=view.querySelector(".mapcanvas");
+ const relativeX=(view.scrollLeft+x)/canvas.clientWidth;
+ const relativeY=(view.scrollTop+y)/canvas.clientHeight;
+ zoom=level;
+ render();
+ const next=main.querySelector(".mapview");
+ const nextCanvas=next.querySelector(".mapcanvas");
+ next.scrollLeft=relativeX*nextCanvas.clientWidth-x;
+ next.scrollTop=relativeY*nextCanvas.clientHeight-y;
+}
+let mapViewEvents;
 document.addEventListener("submit",event=>{
  if(event.target.id!=="map-search")return;
  event.preventDefault();
@@ -417,7 +560,7 @@ document.addEventListener("submit",event=>{
 });
 function credits(){
  const names=nameSources.length?'<section class="panel"><h2>공식 한국어 명칭</h2><div class="links">'+nameSources.map(sourceLink).join("")+'</div></section>':"";
- return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>리오나이다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map의 CC BY 4.0은 기여자가 만든 지도 데이터에 적용됩니다. 게임 화면은 원본 사진 링크로 제공합니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6/blob/main/LICENSE","Open GTA 6 Map 이용 조건")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'+names;
+ return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>리오나이다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다. 확대 시 원본 상세 타일을 표시합니다. 지도 위의 한글 구역명은 공개 위치 자료를 대조해 주변 지역을 안내합니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://gta6map.city/","구역 위치 참고")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map의 CC BY 4.0은 기여자가 만든 지도 데이터에 적용됩니다. 게임 화면은 원본 사진 링크로 제공합니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6/blob/main/LICENSE","Open GTA 6 Map 이용 조건")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'+names;
 }
 function render(reset=false){
  const r=route();let title="리오나이다 필드 가이드",html;
@@ -425,6 +568,11 @@ function render(reset=false){
  else if(["guide","mine","search"].includes(r.page))html=listPage(r.page,r.id,r.params);
  else if(r.page==="map")html=mapPage(r.params);else if(["credits","sources"].includes(r.page))html=credits();else html=missing();
  main.innerHTML=html+'<span id="feedback" role="status"></span>';document.title=title+" · GTA VI";
+ mapViewEvents?.abort();
+ if(r.page==="map"){
+  mapViewEvents=new AbortController();
+  setupMap(main.querySelector(".mapview"));
+ }
  document.querySelectorAll("nav a").forEach(a=>{const active=(r.page==="home"&&a.hash==="#/")||(["guide","entry","guides"].includes(r.page)&&a.hash==="#/guides")||a.hash==="#/"+r.page;if(active)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
  if(r.page==="search")document.querySelector("#searchbox").value=r.params.get("q")||"";
  if(reset){window.scrollTo(0,0);main.focus({preventScroll:true})}
@@ -474,14 +622,9 @@ main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)r
  if(action==="clear-map-search"){setParam("q","");return}
  if(action==="more"){limit+=36;render()}else if(action==="mapmore"){mapLimit+=60;render();centerPin()}else if(action==="zoomin"||action==="zoomout"){
   const keepFocus=document.activeElement===el;
-  const elMap=document.querySelector(".mapview");
-  const centerX=(elMap.scrollLeft+elMap.clientWidth/2)/elMap.scrollWidth;
-  const centerY=(elMap.scrollTop+elMap.clientHeight/2)/elMap.scrollHeight;
-  zoom=Math.min(8,Math.max(1,zoom*(action==="zoomin"?1.5:1/1.5)));
-  render();
-  const next=document.querySelector(".mapview");
-  next.scrollLeft=centerX*next.scrollWidth-next.clientWidth/2;
-  next.scrollTop=centerY*next.scrollHeight-next.clientHeight/2;
+  const view=main.querySelector(".mapview");
+  const next=Math.min(8,Math.max(1,zoom*(action==="zoomin"?1.5:1/1.5)));
+  changeMapZoom(next,view.clientWidth/2,view.clientHeight/2);
   if(keepFocus)main.querySelector('[data-action="'+action+'"]').focus({preventScroll:true});
  }
  else if(action==="image"){const v=findItem(el.dataset.id),m=photo(v);showPhoto(m.src,m.caption||v.title)}

@@ -11684,6 +11684,20 @@
         "https://metaforge.app/gta-6/database/weapons/assassin-nipper-38",
         "https://metaforge.app/gta-6/database/vehicles/albany-teniente-manana"
       ]
+    },
+    {
+      "date": "2026-11-26",
+      "focus": "통합 지도 원본 상세 타일·끌기 이동·한글 구역 안내",
+      "checks": [
+        "기본 지도 2304×2816과 상세 지도 4608×5632의 해안·도로 기준 8곳 및 기존 핀 좌표 확인. 확대 상태에서 화면 안에 들어오는 원본 상세 타일을 로드하며 전체 지도에서는 기존 용량의 개요도를 사용.",
+        "마우스 누르고 끌기, 실제 터치 이벤트로 끌기와 탭, 확대 버튼, Ctrl/Command와 휠의 커서 중심 확대, 기존 위치 선택을 폭 390px 및 1365px에서 확인.",
+        "한글 구역 이름 62개를 공개 지명과 확인된 위치 기준점과 대조. 구역 풍선은 인근 기준점에 따른 안내이며 게임의 정확한 행정 경계 판정이 아님. 통합 지도 지역 필터는 한글로 표시하고 기존 영문 주소와 검색을 유지."
+      ],
+      "sources": [
+        "https://github.com/rolux/gtadb.org/tree/bfa3971f0f49c651b6833c2e696414bd68d3d4fc/maps/tiles/6/day/3",
+        "https://github.com/rolux/gtadb.org/blob/main/LICENSE-DATA",
+        "https://gta6map.city/"
+      ]
     }
   ],
   "responsive": {
