@@ -81,10 +81,13 @@ function setParam(k,v){
 }
 function trail(parts){return '<div class="trail"><a href="#/">홈</a>'+parts.map(([name,href])=>'<span>/</span>'+(href?'<a href="'+href+'">'+esc(name)+'</a>':esc(name))).join("")+'</div>'}
 function categoryButton(c,full=false){const [name,code,description]=categories[c];return '<a href="'+group(c)+'"><span class="glyph" aria-hidden="true">'+code+'</span><span>'+name+(full?'<small>'+description+'</small>':'')+'</span></a>'}
+function catalogEntry(v){
+ return v.category==="V"?/^v-\d+$/.test(v.id):v.category==="P02"&&/^p02-(?:[we]-|x)\d+$/.test(v.id);
+}
 function mediaArt(v){
  const m=photo(v);
  if(m?.src&&!m.reveal)return '<div class="artbox"><img class="art" loading="lazy" src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'">'+(m.typeLabel?'<small>'+esc(m.typeLabel)+'</small>':'')+'</div>';
- if(!["V","P02","P06","P07"].includes(v.category)||m?.reveal)return "";
+ if(!["P06","P07"].includes(v.category)||m?.reveal)return "";
  const p=pinLinks(v).find(pt=>!variableBox(pt));
  return p?'<div class="artbox">'+terrainThumb(p)+'<small>현장 지도</small></div>':"";
 }
@@ -97,14 +100,39 @@ function cardPhotoLink(v){
  if(m?.reveal||m?.originalReveal)return "";
  return link(m?.originalPhoto,m?.originalLinkLabel||"현장 사진 원본")||link(v.fieldReferences?.photo,"현장 사진 원본");
 }
+function catalogAppearance(v,m){
+ if(m?.reveal)return {};
+ const labeled=m?.originalLinkLabel==="차량 외형 원본"||m?.originalLinkLabel==="공식 장비 사진 원본";
+ const original=m?.originalReveal?undefined:labeled&&url(m.originalPhoto)?m.originalPhoto:appearanceSource(v)?.url;
+ return {embedded:m?.kind==="appearance"?m.src:undefined,original};
+}
+function catalogFieldPhoto(v,m,appearance){
+ if(m?.reveal)return "";
+ if(m?.src&&m.kind!=="appearance")return '<button data-action="image" data-id="'+esc(v.id)+'">현장 사진</button>';
+ if(m?.originalReveal)return "";
+ const original=m?.originalPhoto!==appearance?link(m?.originalPhoto,"현장 사진"):"";
+ return original||link(v.fieldReferences?.photo,"현장 사진");
+}
+function catalogCard(v){
+ const m=photo(v),appearance=catalogAppearance(v,m),label=esc(v.title);
+ const preview=appearance.embedded
+  ?'<button data-action="image" data-id="'+esc(v.id)+'" aria-label="'+label+' 외형 사진 확대"><img loading="lazy" src="'+esc(appearance.embedded)+'" alt="'+esc(m.caption||v.title)+'"></button>'
+  :link(appearance.original,"외형 보기")||'<span>외형 사진 없음</span>';
+ const point=pinLinks(v).find(p=>!variableBox(p));
+ const map=point?'<a href="'+esc(mapPinRoute(point))+'">지도</a>':link(v.fieldReferences?.map,"원본 지도");
+ const photoLink=catalogFieldPhoto(v,m,appearance.original);
+ const guide='<a href="'+entry(v.id)+'">공략</a>';
+ return '<article class="card catalog-card"><div class="catalog-main"><div class="catalog-appearance">'+preview+'</div><div class="catalog-info cardbody"><span class="kicker">'+esc([catName(v.category),v.region].filter(Boolean).join(" · "))+'</span><h3><a href="'+entry(v.id)+'">'+label+'</a></h3><p>'+esc(v.summary)+'</p>'+statusText(v)+(flags(v).done?'<small class="label">✓ 완료</small>':'')+'</div></div><div class="catalog-actions">'+guide+map+photoLink+'</div></article>';
+}
 function card(v){
+ if(catalogEntry(v))return catalogCard(v);
  const body=mediaArt(v)+'<div class="cardbody"><span class="kicker">'+esc([catName(v.category),v.region].filter(Boolean).join(" · "))+'</span><h3>'+esc(v.title)+'</h3><p>'+esc(v.summary)+'</p>'+statusText(v)+(flags(v).done?'<small class="label">✓ 완료</small>':'')+'</div>';
  const appearance=appearanceSource(v);
  const photoLink=cardPhotoLink(v);
  if(!appearance&&!photoLink)return '<a class="card" href="'+entry(v.id)+'">'+body+'</a>';
  return '<article class="card"><a class="card-guide" href="'+entry(v.id)+'">'+body+'</a><div class="card-photo">'+photoLink+(appearance?link(appearance.url,'외형 원본 보기'):"")+'</div></article>';
 }
-function cards(vs){return vs.length?'<div class="cards">'+vs.map(card).join("")+'</div>':'<p class="empty">조건에 맞는 공략이 없습니다.</p>'}
+function cards(vs){return vs.length?'<div class="cards'+(vs.every(catalogEntry)?' catalog-grid':'')+'">'+vs.map(card).join("")+'</div>':'<p class="empty">조건에 맞는 공략이 없습니다.</p>'}
 function chapterSelect(selected){return '<label>챕터 <select data-change="chapter">'+opt("","전체 챕터",selected)+chapters.map((c,i)=>opt(i,c,selected)).join("")+'</select></label>'}
 function home(){
  const featured=["v-04","p02-w-001","P05-L03"].map(findItem).filter(Boolean);
@@ -135,6 +163,9 @@ function listPage(page,id,p){
  const cat=id.toUpperCase(),mine=page==="mine",search=page==="search",q=(p.get("q")||"").trim(),filter=regionFilter(p.get("region")),flag=p.get("flag")||"favorite";
  const title=mine?"내 기록":search?"검색 결과":catName(cat);
  let all=mine?items.filter(v=>flags(v)[flag]):search?searchItems(q):categoryItems(cat);
+ const catalog=page==="guide"&&["V","P02"].includes(cat);
+ const guideEntries=catalog?all.filter(v=>!catalogEntry(v)):[];
+ if(catalog)all=all.filter(catalogEntry);
  const scope=search&&Object.hasOwn(categories,p.get("cat"))?p.get("cat"):"";
  const searchCategories=search?[...new Set(all.map(v=>v.category).filter(c=>Object.hasOwn(categories,c)))]:[];
  if(scope){
@@ -151,21 +182,27 @@ function listPage(page,id,p){
  if(visual&&mediaFilter){
   all=all.filter(v=>{
    const m=photo(v);
-   const embedded=m?.src&&!m.reveal;
-   const linked=cardPhotoLink(v)||(!m?.reveal&&appearanceSource(v));
+   const appearance=catalog?catalogAppearance(v,m):null;
+   const embedded=appearance?appearance.embedded:m?.src&&!m.reveal;
+   const linked=appearance?appearance.original:cardPhotoLink(v)||(!m?.reveal&&appearanceSource(v));
    if(mediaFilter==="embedded")return embedded;
    if(mediaFilter==="original")return linked;
    return mediaFilter!=="photo"||embedded||linked;
   });
  }
- const photoControl=visual?'<label>사진 <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("embedded","도감에 사진이 있는 항목",mediaFilter)+opt("original","원본 사진 링크가 있는 항목",mediaFilter)+opt("photo","사진 또는 원본 링크",mediaFilter)+'</select></label>':"";
+ const photoControl=visual?'<label>'+(catalog?"외형 사진":"사진")+' <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("embedded",catalog?"외형 미리보기":"도감에 사진이 있는 항목",mediaFilter)+opt("original",catalog?"외형 원본 링크":"원본 사진 링크가 있는 항목",mediaFilter)+opt("photo",catalog?"외형 사진 또는 링크":"사진 또는 원본 링크",mediaFilter)+'</select></label>':"";
  const reading={V:"v-registration",P02:"p02-collection-check",P01:"p01-save-slots",P06:"p06-collection-targets",P09:"p09-region-routes",P08:"p08-range-medals",P04:"p04-first-visit",P05:"p05-region-exploration",P07:"p07-first-garage"};
  const firstGuide=!mine&&!search?findItem(reading[cat]):null;
  const routeGuideIds={V:["v-42-collection-route","v-vehicle-index"],P01:["p01-roadmap"],P02:["p02-play-guide","p02-weapon-index","p02-field-pickup-route"],P03:["p03-economy-overview"],P04:["p04-catalog"],P07:["p07-property-catalog"],P08:["p08-training-start"],P09:["p09-start-here","p09-mission-index","p09-encounter-index","p09-chapter-deadlines","p09-world-activities"],P10:["p10-story-tools","p10-report-index"]}[cat]||[];
- const routeShortcut=!mine&&!search?routeGuideIds.map(findItem).filter(Boolean).map(v=>'<div class="guide-shortcut">'+relatedLink(v)+'</div>').join(""):"";
- const shortcut=firstGuide?'<div class="guide-shortcut"><a href="'+entry(firstGuide.id)+'">'+esc(firstGuide.title)+' →</a></div>':"";
+ const routeShortcut=!mine&&!search&&!catalog?routeGuideIds.map(findItem).filter(Boolean).map(v=>'<div class="guide-shortcut">'+relatedLink(v)+'</div>').join(""):"";
+ const shortcut=firstGuide&&!catalog?'<div class="guide-shortcut"><a href="'+entry(firstGuide.id)+'">'+esc(firstGuide.title)+' →</a></div>':"";
+ const guideMenu=catalog?'<details class="catalog-guides"><summary>'+(vehicles?"차량 등록·수집 공략":"무기·장비 획득 공략")+'</summary><div class="links">'+[...new Set([firstGuide?.id,...routeGuideIds,...guideEntries.map(v=>v.id)])].map(findItem).filter(Boolean).map(relatedLink).join("")+'</div></details>':"";
  if(!search&&!mine&&cat!=="P01"){
-   const rank=v=>(v.status==="unconfirmed"?0:4)+(photo(v)?.src&&!photo(v)?.reveal?2:0);
+   const rank=v=>{
+    const m=photo(v);
+    const preview=m?.src&&!m.reveal&&(!catalog||m.kind==="appearance");
+    return (v.status==="unconfirmed"?0:4)+(preview?2:0);
+   };
    all=[...all].sort((a,b)=>rank(b)-rank(a));
  }
  const chapter=cat==="P01"&&/^[0-6]$/.test(p.get("chapter"))?p.get("chapter"):"";
@@ -180,7 +217,7 @@ function listPage(page,id,p){
  const mapSearchLink=search&&q?'<a class="btn" href="#/map?'+esc(mapQuery)+'">지도에서 검색 ↗</a>':"";
  const tabs=mine?'<div class="chips">'+Object.entries({favorite:"즐겨찾기",later:"나중에",done:"완료"}).map(([k,v])=>'<a '+(k===flag?'aria-current="page"':'')+' href="#/mine?flag='+k+'">'+v+'</a>').join("")+'</div>':"";
  const backup=mine?'<div class="bar"><button data-action="export">기록 내보내기</button><label class="btn">기록 가져오기 <input id="restore" type="file" accept=".json,application/json" hidden></label></div>':"";
- return trail([["공략 도감","#/guides"],[title]])+'<div class="eyebrow">'+(categories[cat]?.[1]||"FIELD GUIDE")+'</div>'+listHeading(cat,title,search?'“'+q+'”':categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+routeShortcut+shortcut+'<div class="bar">'+searchScope+(cat==="P01"?chapterSelect(chapter):"")+region+(vehicles?vehicleStylePicker(style):"")+photoControl+mapSearchLink+'<span class="count">'+all.length.toLocaleString()+'개 공략</span></div>'+cards(all.slice(0,limit))+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
+ return trail([["공략 도감","#/guides"],[title]])+'<div class="eyebrow">'+(categories[cat]?.[1]||"FIELD GUIDE")+'</div>'+listHeading(cat,title,search?'“'+q+'”':categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+routeShortcut+shortcut+guideMenu+'<div class="bar">'+searchScope+(cat==="P01"?chapterSelect(chapter):"")+region+(vehicles?vehicleStylePicker(style):"")+photoControl+mapSearchLink+'<span class="count">'+all.length.toLocaleString()+(catalog?'개 항목':'개 공략')+'</span></div>'+cards(all.slice(0,limit))+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
 }
 const searchCache=new Map();
 function searchItems(q){const terms=q.split(/\s+/).map(norm).filter(Boolean);if(!terms.length)return [];
@@ -245,7 +282,7 @@ function photoFigure(v){
 function appearanceSource(v){
  if(v.category==="V")return (v.sources||[]).find(ref=>ref.label==="차량 외형 원본"&&url(ref.url));
  if(v.category!=="P02"||!/^p02-w-\d+$/.test(v.id))return null;
- return (v.sources||[]).find(ref=>/^https:\/\/static\.metaforge\.app\/(?:gta-6\/progress\/weapons\/[\w-]+\.webp|posts\/gta-6\/img-[\w-]+)$/.test(ref.url));
+ return (v.sources||[]).find(ref=>(ref.label==="무기 외형 원본"&&url(ref.url))||/^https:\/\/static\.metaforge\.app\/gta-6\/progress\/weapons\/[\w-]+\.webp$/.test(ref.url));
 }
 function localMap(p){if(!p)return "";const x=(p.x+12288)/8,y=(12288-p.y)/8;
  return '<a class="inset" href="'+esc(mapPinRoute(p))+'"><svg role="img" aria-label="현장 주변의 지형과 위치" viewBox="'+(x-140)+' '+(y-80)+' 280 160"><image href="media/leonida-map.webp" width="2304" height="2816"/><circle cx="'+x+'" cy="'+y+'" r="7" fill="#e45a30" stroke="white" stroke-width="2"/></svg><span>통합 지도에서 확대 ↗</span></a>';
