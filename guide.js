@@ -28,7 +28,12 @@ for(const pin of pins){
  atlasByItem.get(key).push(pin);
 }
 const variableBox=p=>p?.category==="P06"&&p.url.includes("feature=yellow-loot-box");
-const pinTitle=p=>variableBox(p)?"가변 상자 · "+(findItem(p.item)?.title||p.name):p.name;
+function pinTitle(p){
+ const guide=findItem(p.item);
+ if(variableBox(p))return "가변 상자 · "+(guide?.title||p.name);
+ if(guide?.englishName&&p.id.includes("/standout-vehicle-"))return guide.title;
+ return p.name;
+}
 const pinLinks=v=>atlasByItem.get(cleanId(v.id))||[];
 function terrainThumb(p){
  const x=(p.x+12288)/8,y=(12288-p.y)/8;
@@ -238,7 +243,7 @@ let zoom=1,selected="",mapLimit=60;
 const percent=p=>[(p.x+12288)/18432*100,(12288-p.y)/22528*100];
 function mapSearchText(pin){
  const guide=findItem(pin.item);
- return norm([pinTitle(pin),pin.region,guide?.title,...(guide?.aliases||[])].filter(Boolean).join(" "));
+ return norm([pinTitle(pin),pin.name,pin.region,guide?.title,...(guide?.aliases||[])].filter(Boolean).join(" "));
 }
 const activityTypes={ho:"농구 골대",dr:"드론 레이스",bs:"책 교환",rd:"읽을거리",fl:"플라밍고",md:"명상",c:"카드",sj:"스턴트 점프",br:"교량 아래 비행",kf:"나이프 플라이트",bj:"BASE 점프"};
 function activityPicker(selected){

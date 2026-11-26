@@ -2,8 +2,8 @@
   "scope": "Page-to-guide navigation and editorial provenance. Name and index matches identify candidate destinations. No match establishes visual or semantic sign-off. Separate visual checks are required.",
   "counts": {
     "cover-index-or-editorial": 28,
-    "edited": 87,
-    "linked": 439,
+    "edited": 90,
+    "linked": 436,
     "navigation": 13
   },
   "pages": [
@@ -6131,9 +6131,16 @@
           "p09-br",
           "p09-m-021",
           "p09-ya"
+        ],
+        "재편집 본문": [
+          "p09-br",
+          "p09-m-021",
+          "p09-ya",
+          "p09-m-030",
+          "p09-m-031"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P09",
@@ -8402,9 +8409,15 @@
         ],
         "명칭 대조": [
           "v-35"
+        ],
+        "재편집 본문": [
+          "v-35",
+          "p09-mo",
+          "p09-m-019",
+          "p09-m-020"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8415,9 +8428,13 @@
         ],
         "명칭 대조": [
           "v-36"
+        ],
+        "재편집 본문": [
+          "v-36",
+          "p07-f02"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
