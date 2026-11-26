@@ -308,6 +308,23 @@ def build():
     protected_aliases.update(old for old, target in data["redirects"].items() if target in protected_targets)
     apply_merges(data, final_groups)
     classify_guides(data, decisions)
+    progression = read("campaign-progression.json")
+    missions = progression["missions"]
+    for item in data["items"]:
+        key = item["id"]
+        if key in missions:
+            flow = missions[key]
+            if any(missions[parent]["order"] >= flow["order"] for parent in flow.get("prior", [])):
+                raise ValueError(f"Invalid prerequisite order: {key}")
+            item.update(progression=flow, sequence=flow["order"])
+            alias = flow.get("mapAlias")
+            if alias and alias not in item["aliases"]:
+                item["aliases"].append(alias)
+        for section in item["sections"]:
+            if section["title"] == "이 챕터의 스토리 미션":
+                section["places"].sort(key=lambda key: missions[key]["order"])
+        if key in progression["optional"]:
+            item["chapterOptional"] = progression["optional"][key]
     assign_thumbnails(data, read("thumbnail-media.json"), protected_aliases)
     media_links = read("media-reference-links.json")
     items_by_id = {item["id"]: item for item in data["items"]}

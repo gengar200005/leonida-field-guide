@@ -1,0 +1,1371 @@
+{
+ "missions": {
+  "p01-prologue": {
+   "kind": "스토리 미션",
+   "order": 1
+  },
+  "p01-story-gone-fishing": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-prologue"
+   ],
+   "kind": "스토리 미션",
+   "order": 2
+  },
+  "p01-story-gear-up": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Pick Up Another Gun",
+   "prior": [
+    "p01-story-gone-fishing"
+   ],
+   "kind": "필수 진행 과제",
+   "order": 3
+  },
+  "p01-story-unwanted-attention": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Go See Cal",
+   "prior": [
+    "p01-story-gone-fishing"
+   ],
+   "kind": "스토리 미션",
+   "order": 4
+  },
+  "p01-story-lab-fees": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Collect Brian’s Rent",
+   "prior": [
+    "p01-story-gone-fishing"
+   ],
+   "kind": "스토리 미션",
+   "order": 5
+  },
+  "p01-story-pipework": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Collect Mandy’s Rent",
+   "prior": [
+    "p01-story-gear-up",
+    "p01-story-lab-fees",
+    "p01-story-just-a-scratch",
+    "p01-story-unwanted-attention"
+   ],
+   "kind": "스토리 미션",
+   "order": 7
+  },
+  "p01-story-just-a-scratch": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Fix Your Car",
+   "prior": [
+    "p01-story-gone-fishing"
+   ],
+   "kind": "스토리 미션",
+   "order": 6
+  },
+  "p01-story-hey-arnold": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Brian",
+   "prior": [
+    "p01-story-pipework"
+   ],
+   "kind": "스토리 미션",
+   "order": 8
+  },
+  "p01-story-island-dreams": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Work for Kenton",
+   "prior": [
+    "p01-story-hey-arnold"
+   ],
+   "kind": "스토리 미션",
+   "order": 9
+  },
+  "p01-story-feng-shui": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Cal",
+   "prior": [
+    "p01-story-island-dreams"
+   ],
+   "kind": "스토리 미션",
+   "order": 10
+  },
+  "p01-story-coming-home": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Lucia’s Release",
+   "prior": [
+    "p01-story-feng-shui"
+   ],
+   "kind": "스토리 미션",
+   "order": 11
+  },
+  "p01-story-clean-up-after-donnie": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Donnie’s Drop",
+   "prior": [
+    "p01-story-coming-home"
+   ],
+   "kind": "스토리 미션",
+   "order": 12
+  },
+  "p01-story-buck-me": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Set Up Bank Account",
+   "prior": [
+    "p01-story-coming-home"
+   ],
+   "kind": "스토리 미션",
+   "order": 13
+  },
+  "p01-story-down-to-earth": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Brian",
+   "prior": [
+    "p01-story-clean-up-after-donnie",
+    "p01-story-buck-me"
+   ],
+   "kind": "스토리 미션",
+   "order": 14
+  },
+  "p01-story-deposit-cash-into-buckme": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-buck-me"
+   ],
+   "kind": "필수 진행 과제",
+   "order": 15
+  },
+  "p01-story-save-for-the-future": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-buck-me"
+   ],
+   "kind": "필수 진행 과제",
+   "order": 16
+  },
+  "p01-story-day-release": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Mattia & Kat",
+   "prior": [
+    "p01-story-down-to-earth"
+   ],
+   "kind": "스토리 미션",
+   "order": 17
+  },
+  "p01-story-clear-skies": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Join Donnie On A Job",
+   "prior": [
+    "p01-story-down-to-earth"
+   ],
+   "kind": "스토리 미션",
+   "order": 18
+  },
+  "p01-story-building-a-life": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-clear-skies"
+   ],
+   "kind": "스토리 미션",
+   "order": 19
+  },
+  "p01-story-swamped": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Brian",
+   "kind": "스토리 미션",
+   "order": 20
+  },
+  "p01-story-don-gone": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Head to Donnie’s Trailer",
+   "prior": [
+    "p01-story-swamped"
+   ],
+   "kind": "스토리 미션",
+   "order": 21
+  },
+  "p01-story-recalibration": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Talk to Lucia",
+   "kind": "스토리 미션",
+   "order": 22
+  },
+  "p01-story-tourist-trap": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Take Up Mattia’s Offer",
+   "prior": [
+    "p01-story-recalibration"
+   ],
+   "kind": "스토리 미션",
+   "order": 23
+  },
+  "p01-story-home-sweet-home": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-tourist-trap"
+   ],
+   "kind": "스토리 미션",
+   "order": 24
+  },
+  "p01-story-discharge-time": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-home-sweet-home"
+   ],
+   "kind": "스토리 미션",
+   "order": 25
+  },
+  "p01-story-whats-in-the-bag": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-discharge-time"
+   ],
+   "kind": "스토리 미션",
+   "order": 26
+  },
+  "p01-story-ambulance-chaser": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Move the Ambulance",
+   "prior": [
+    "p01-story-whats-in-the-bag"
+   ],
+   "kind": "스토리 미션",
+   "order": 27
+  },
+  "p09-m-077": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-whats-in-the-bag"
+   ],
+   "kind": "필수 진행 과제",
+   "order": 28
+  },
+  "p01-story-overnight-charges": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "See Linda, The Manager",
+   "prior": [
+    "p01-story-whats-in-the-bag"
+   ],
+   "kind": "스토리 미션",
+   "order": 29
+  },
+  "p01-story-just-moved-in": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-whats-in-the-bag"
+   ],
+   "kind": "스토리 미션",
+   "order": 30
+  },
+  "p01-story-girls-trip": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Find Painkillers",
+   "prior": [
+    "p01-story-overnight-charges",
+    "p01-story-just-moved-in"
+   ],
+   "kind": "스토리 미션",
+   "order": 31
+  },
+  "p01-story-moses": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Take A Vehicle to Moses",
+   "prior": [
+    "p01-story-girls-trip"
+   ],
+   "kind": "스토리 미션",
+   "order": 32
+  },
+  "p09-m-082": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-girls-trip"
+   ],
+   "kind": "스토리 미션",
+   "order": 33
+  },
+  "p09-m-081": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-girls-trip"
+   ],
+   "kind": "스토리 미션",
+   "order": 34
+  },
+  "p09-m-080": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-girls-trip"
+   ],
+   "kind": "스토리 미션",
+   "order": 35
+  },
+  "p01-story-daily-driver": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Steal the Crawler for Moses",
+   "prior": [
+    "p01-story-moses"
+   ],
+   "kind": "스토리 미션",
+   "order": 36
+  },
+  "p09-m-078": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-overnight-charges"
+   ],
+   "kind": "스토리 미션",
+   "order": 37
+  },
+  "p01-story-slam-dunk": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Find Painkillers",
+   "kind": "스토리 미션",
+   "order": 38
+  },
+  "p01-story-breakfast-run": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Check on Jason",
+   "prior": [
+    "p01-story-slam-dunk"
+   ],
+   "kind": "필수 진행 과제",
+   "order": 39
+  },
+  "p01-story-coffee-break": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-breakfast-run"
+   ],
+   "kind": "필수 진행 과제",
+   "order": 40
+  },
+  "p01-story-prepare-for-vice-city": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-coffee-break"
+   ],
+   "kind": "필수 진행 과제",
+   "order": 41
+  },
+  "p01-story-afternoon-delight": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Rob Vicki’s Boss",
+   "prior": [
+    "p01-story-coffee-break"
+   ],
+   "kind": "스토리 미션",
+   "order": 42
+  },
+  "p01-story-checking-out": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Move to Vice City",
+   "gate": "챕터 2의 다른 필수 의뢰를 마치고 $15,000 이상 확보",
+   "kind": "스토리 미션",
+   "order": 43
+  },
+  "p01-story-welcome-to-vice-city": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-checking-out"
+   ],
+   "kind": "스토리 미션",
+   "order": 44
+  },
+  "p01-story-dealers-choice": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Go See Dre’Quan",
+   "prior": [
+    "p01-story-welcome-to-vice-city"
+   ],
+   "kind": "스토리 미션",
+   "order": 45
+  },
+  "p01-story-meet-the-heders": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Brian & Lori",
+   "prior": [
+    "p01-story-dealers-choice"
+   ],
+   "kind": "스토리 미션",
+   "order": 46
+  },
+  "p01-story-dubious-provenance": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Visit the Antique Store",
+   "prior": [
+    "p01-story-dealers-choice"
+   ],
+   "kind": "스토리 미션",
+   "order": 47
+  },
+  "p01-story-mami-knows-best": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Catch Up With Mia",
+   "prior": [
+    "p01-story-dealers-choice"
+   ],
+   "kind": "스토리 미션",
+   "order": 48
+  },
+  "p01-story-tyrone": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "kind": "스토리 미션",
+   "order": 49
+  },
+  "p01-story-here-kitty-kitty": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Speak with Tyrone",
+   "kind": "스토리 미션",
+   "order": 50
+  },
+  "p01-story-send-money-to-lorena": {
+   "completion": true,
+   "prior": [
+    "p01-story-mami-knows-best"
+   ],
+   "kind": "필수 진행 과제",
+   "order": 51
+  },
+  "p01-story-car-service": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Steal The Car for Raul",
+   "prior": [
+    "p01-story-meet-the-heders"
+   ],
+   "kind": "스토리 미션",
+   "order": 52
+  },
+  "p01-story-send-more-money-to-lorena": {
+   "completion": true,
+   "prior": [
+    "p01-story-send-money-to-lorena"
+   ],
+   "kind": "필수 진행 과제",
+   "order": 53
+  },
+  "p01-story-top-billing": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Watch the Real Dimez",
+   "prior": [
+    "p01-story-car-service"
+   ],
+   "kind": "스토리 미션",
+   "order": 54
+  },
+  "p01-story-boobie-time": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Talk to Boobie",
+   "kind": "스토리 미션",
+   "order": 55
+  },
+  "p09-m-037": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "mapAlias": "Hit Richardson Jewelry, Hit Donovan Banks & Co, Hit Casa de Empeno, Sell Jewelry to Yasmani",
+   "prior": [
+    "p01-story-boobie-time"
+   ],
+   "kind": "스토리 미션",
+   "order": 56
+  },
+  "p01-story-first-impressions": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meeting with Raul",
+   "prior": [
+    "p01-story-car-service"
+   ],
+   "kind": "스토리 미션",
+   "order": 57
+  },
+  "p01-story-caught-slipping": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-boobie-time",
+    "p01-story-first-impressions"
+   ],
+   "kind": "스토리 미션",
+   "order": 58
+  },
+  "p01-story-crosstown-traffic": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Raul",
+   "prior": [
+    "p01-story-car-service"
+   ],
+   "kind": "스토리 미션",
+   "order": 59
+  },
+  "p01-story-credit-check": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Raul’s Crew",
+   "prior": [
+    "p01-story-crosstown-traffic"
+   ],
+   "kind": "스토리 미션",
+   "order": 60
+  },
+  "p01-story-steal-the-zorrusso-for-randy": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Steal the Zorrusso for Randy",
+   "prior": [
+    "p01-story-crosstown-traffic"
+   ],
+   "kind": "스토리 미션",
+   "order": 61
+  },
+  "p01-story-sinfrontera-national-bank": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Scope Out the Bank",
+   "prior": [
+    "p01-story-credit-check"
+   ],
+   "kind": "스토리 미션",
+   "order": 62
+  },
+  "p01-story-security-expert": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-sinfrontera-national-bank"
+   ],
+   "kind": "스토리 미션",
+   "order": 63
+  },
+  "p01-story-heist-planning": {
+   "completion": true,
+   "prior": [
+    "p01-story-security-expert"
+   ],
+   "kind": "스토리 미션",
+   "order": 64
+  },
+  "p01-story-ride-or-die": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Dre’Quan",
+   "prior": [
+    "p01-story-credit-check"
+   ],
+   "kind": "스토리 미션",
+   "order": 65
+  },
+  "p01-story-company-property": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Brian",
+   "prior": [
+    "p01-story-security-expert"
+   ],
+   "kind": "스토리 미션",
+   "order": 66
+  },
+  "p01-story-the-missing-link": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Andrea",
+   "prior": [
+    "p01-story-company-property"
+   ],
+   "kind": "스토리 미션",
+   "order": 67
+  },
+  "p01-story-safe-word": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Steal the Practice Safe",
+   "prior": [
+    "p01-story-company-property"
+   ],
+   "kind": "스토리 미션",
+   "order": 68
+  },
+  "p01-story-cooties": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Shoot the Music Video",
+   "kind": "스토리 미션",
+   "order": 69
+  },
+  "p01-story-south-leonida-real-estate": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Mia",
+   "prior": [
+    "p01-story-mami-knows-best"
+   ],
+   "kind": "스토리 미션",
+   "order": 70
+  },
+  "p01-story-hidden-charges": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet at the Planning Room / Prepping the Explosives",
+   "prior": [
+    "p01-story-company-property",
+    "p01-story-cooties"
+   ],
+   "kind": "스토리 미션",
+   "order": 71
+  },
+  "p01-story-bricked-up": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Return to the Apartment",
+   "prior": [
+    "p01-story-hidden-charges"
+   ],
+   "kind": "스토리 미션",
+   "order": 72
+  },
+  "p01-story-the-cartel-heist": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Start the Heist / Wait for Raul to get in Touch",
+   "prior": [
+    "p01-story-hidden-charges"
+   ],
+   "kind": "스토리 미션",
+   "order": 73
+  },
+  "p01-story-ocean-beach": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-the-cartel-heist"
+   ],
+   "kind": "스토리 미션",
+   "order": 74
+  },
+  "p01-story-another-life": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-ocean-beach"
+   ],
+   "kind": "스토리 미션",
+   "order": 75
+  },
+  "p01-story-pool-day": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-another-life"
+   ],
+   "kind": "스토리 미션",
+   "order": 76
+  },
+  "p01-story-company-cars": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Speak to the Concierge",
+   "prior": [
+    "p01-story-pool-day"
+   ],
+   "kind": "스토리 미션",
+   "order": 77
+  },
+  "p01-story-lawyer-up": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Abe Gonzalez",
+   "prior": [
+    "p01-story-pool-day"
+   ],
+   "kind": "스토리 미션",
+   "order": 78
+  },
+  "p01-story-party-hard": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Work Personal Security",
+   "prior": [
+    "p01-story-lawyer-up"
+   ],
+   "kind": "스토리 미션",
+   "order": 79
+  },
+  "p01-story-heavy-lifting": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Bring Raul the Hard Drive",
+   "prior": [
+    "p01-story-lawyer-up"
+   ],
+   "kind": "스토리 미션",
+   "order": 80
+  },
+  "p01-story-photo-shoot": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Shoot a Promo",
+   "prior": [
+    "p01-story-party-hard"
+   ],
+   "kind": "스토리 미션",
+   "order": 81
+  },
+  "p01-story-making-gainz": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Raul / Raul’s Plan",
+   "prior": [
+    "p01-story-heavy-lifting"
+   ],
+   "kind": "스토리 미션",
+   "order": 82
+  },
+  "p01-story-too-much-baggage": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Scope Out the Airport",
+   "prior": [
+    "p01-story-making-gainz"
+   ],
+   "kind": "스토리 미션",
+   "order": 83
+  },
+  "p01-story-watch-it": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Dre’Quan",
+   "prior": [
+    "p01-story-making-gainz"
+   ],
+   "kind": "스토리 미션",
+   "order": 84
+  },
+  "p01-story-cash-injections": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Hang Out With Nate",
+   "prior": [
+    "p01-story-amateur-hour"
+   ],
+   "kind": "스토리 미션",
+   "order": 86,
+   "gate": "아마추어 아워를 마친 뒤 네이트에게 전화"
+  },
+  "p01-story-amateur-hour": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Workout",
+   "kind": "스토리 미션",
+   "order": 85
+  },
+  "p01-story-dirty-work": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Deal with Raina",
+   "prior": [
+    "p01-story-too-much-baggage",
+    "p01-story-cash-injections"
+   ],
+   "kind": "스토리 미션",
+   "order": 87
+  },
+  "p01-story-adventures-in-babysitting": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Work Security for Andrés",
+   "prior": [
+    "p01-story-making-gainz"
+   ],
+   "kind": "스토리 미션",
+   "order": 88
+  },
+  "p01-story-fresh-evidence": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Dre’Quan",
+   "prior": [
+    "p01-story-watch-it",
+    "p01-story-adventures-in-babysitting"
+   ],
+   "kind": "스토리 미션",
+   "order": 89
+  },
+  "p01-story-power-play": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Help Kordell’s Crew",
+   "prior": [
+    "p01-story-childs-play"
+   ],
+   "kind": "스토리 미션",
+   "order": 91
+  },
+  "p01-story-childs-play": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Rescue Rafa from Kidnappers",
+   "prior": [
+    "p01-story-fresh-evidence"
+   ],
+   "kind": "스토리 미션",
+   "order": 90
+  },
+  "p01-story-headliners": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Help With The Launch Party",
+   "kind": "스토리 미션",
+   "order": 92,
+   "gate": "공항 작전 전의 다른 필수 미션 완료"
+  },
+  "p01-story-close-surveillance": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Spy on the Bodybuilders",
+   "prior": [
+    "p01-story-power-play"
+   ],
+   "kind": "스토리 미션",
+   "order": 93
+  },
+  "p01-story-delivery-method": {
+   "actors": [
+    "제이슨"
+   ],
+   "completion": true,
+   "mapAlias": "Help Andrea",
+   "prior": [
+    "p01-story-power-play"
+   ],
+   "kind": "스토리 미션",
+   "order": 94
+  },
+  "p01-story-team-building": {
+   "actors": [
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Kordell",
+   "prior": [
+    "p01-story-power-play"
+   ],
+   "kind": "스토리 미션",
+   "order": 95
+  },
+  "p01-story-fully-catered": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Steal a Catering Truck",
+   "prior": [
+    "p01-story-power-play"
+   ],
+   "kind": "스토리 미션",
+   "order": 96
+  },
+  "p01-story-vcia-takedown": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Start the Airport Heist",
+   "prior": [
+    "p01-story-headliners"
+   ],
+   "kind": "스토리 미션",
+   "order": 97,
+   "gate": "공항 작전 준비 의뢰도 모두 완료"
+  },
+  "p01-story-tie-up-loose-ends": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-vcia-takedown"
+   ],
+   "kind": "스토리 미션",
+   "order": 98
+  },
+  "p01-story-sunset": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Stop by the Front Desk",
+   "prior": [
+    "p01-story-vcia-takedown"
+   ],
+   "kind": "스토리 미션",
+   "order": 99
+  },
+  "p01-story-starting-from-zero": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-sunset"
+   ],
+   "kind": "스토리 미션",
+   "order": 100
+  },
+  "p01-story-bird-in-the-hand": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-starting-from-zero"
+   ],
+   "kind": "스토리 미션",
+   "order": 101
+  },
+  "p01-story-taking-liberties": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-bird-in-the-hand"
+   ],
+   "kind": "스토리 미션",
+   "order": 102
+  },
+  "p01-story-doggie-bag": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet Vinny",
+   "prior": [
+    "p01-story-taking-liberties"
+   ],
+   "kind": "스토리 미션",
+   "order": 103
+  },
+  "p01-story-vc-baby": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Talk to Mattia",
+   "prior": [
+    "p01-story-taking-liberties"
+   ],
+   "kind": "스토리 미션",
+   "order": 104
+  },
+  "p01-story-operation-savage-glory": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-doggie-bag",
+    "p01-story-vc-baby"
+   ],
+   "kind": "스토리 미션",
+   "order": 105
+  },
+  "p01-story-honest-abe": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Negotiate a Deal with Abe",
+   "prior": [
+    "p01-story-operation-savage-glory"
+   ],
+   "kind": "스토리 미션",
+   "order": 106
+  },
+  "p01-story-unfinished-business": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-honest-abe"
+   ],
+   "kind": "스토리 미션",
+   "order": 107
+  },
+  "p01-story-protective-custody": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "mapAlias": "Meet with Abe",
+   "kind": "스토리 미션",
+   "order": 108
+  },
+  "p01-story-the-end-of-the-road": {
+   "actors": [
+    "제이슨",
+    "루시아"
+   ],
+   "completion": true,
+   "prior": [
+    "p01-story-protective-custody"
+   ],
+   "kind": "스토리 미션",
+   "order": 109
+  }
+ },
+ "optional": {
+  "p09-m-007": {
+   "chapter": 1,
+   "missable": true
+  },
+  "p09-m-008": {
+   "chapter": 1,
+   "missable": true
+  },
+  "p09-m-059": {
+   "chapter": 1,
+   "missable": false
+  },
+  "p09-m-060": {
+   "chapter": 1,
+   "missable": false
+  },
+  "p09-m-061": {
+   "chapter": 1,
+   "missable": false
+  },
+  "p09-m-062": {
+   "chapter": 1,
+   "missable": false
+  },
+  "p09-ca": {
+   "chapter": 1,
+   "missable": false
+  },
+  "p09-m-074": {
+   "chapter": 1,
+   "missable": true
+  },
+  "p09-m-063": {
+   "chapter": 1,
+   "missable": false
+  },
+  "p09-m-064": {
+   "chapter": 1,
+   "missable": false
+  },
+  "p09-m-075": {
+   "chapter": 1,
+   "missable": true
+  },
+  "p09-m-065": {
+   "chapter": 2,
+   "missable": false
+  },
+  "p09-m-066": {
+   "chapter": 2,
+   "missable": false
+  },
+  "p09-m-067": {
+   "chapter": 2,
+   "missable": false
+  },
+  "p09-m-068": {
+   "chapter": 2,
+   "missable": false
+  },
+  "p09-m-069": {
+   "chapter": 3,
+   "missable": false
+  },
+  "p09-m-030": {
+   "chapter": 3,
+   "missable": true
+  },
+  "p09-ed": {
+   "chapter": 4,
+   "missable": false
+  },
+  "p09-m-071": {
+   "chapter": 4,
+   "missable": false
+  }
+ }
+}

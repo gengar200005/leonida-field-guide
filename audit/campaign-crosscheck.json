@@ -1,0 +1,1350 @@
+{
+ "p01-prologue": {
+  "chapter": 0,
+  "gtabaseNumber": 1,
+  "powerPyxIndex": [
+   0,
+   1
+  ],
+  "pcGamerIndex": [
+   1,
+   1
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-gone-fishing": {
+  "chapter": 1,
+  "gtabaseNumber": 2,
+  "powerPyxIndex": [
+   1,
+   1
+  ],
+  "pcGamerIndex": [
+   1,
+   2
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-gear-up": {
+  "chapter": 1,
+  "gtabaseNumber": 3,
+  "powerPyxIndex": [
+   1,
+   2
+  ],
+  "pcGamerIndex": [
+   1,
+   3
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-unwanted-attention": {
+  "chapter": 1,
+  "gtabaseNumber": 4,
+  "powerPyxIndex": [
+   1,
+   5
+  ],
+  "pcGamerIndex": [
+   1,
+   6
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-lab-fees": {
+  "chapter": 1,
+  "gtabaseNumber": 5,
+  "powerPyxIndex": [
+   1,
+   3
+  ],
+  "pcGamerIndex": [
+   1,
+   5
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-pipework": {
+  "chapter": 1,
+  "gtabaseNumber": 6,
+  "powerPyxIndex": [
+   1,
+   6
+  ],
+  "pcGamerIndex": [
+   1,
+   7
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-just-a-scratch": {
+  "chapter": 1,
+  "gtabaseNumber": 7,
+  "powerPyxIndex": [
+   1,
+   4
+  ],
+  "pcGamerIndex": [
+   1,
+   4
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-hey-arnold": {
+  "chapter": 1,
+  "gtabaseNumber": 8,
+  "powerPyxIndex": [
+   1,
+   9
+  ],
+  "pcGamerIndex": [
+   1,
+   8
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-island-dreams": {
+  "chapter": 1,
+  "gtabaseNumber": 9,
+  "powerPyxIndex": [
+   1,
+   10
+  ],
+  "pcGamerIndex": [
+   1,
+   9
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-feng-shui": {
+  "chapter": 1,
+  "gtabaseNumber": 10,
+  "powerPyxIndex": [
+   1,
+   11
+  ],
+  "pcGamerIndex": [
+   1,
+   10
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-coming-home": {
+  "chapter": 1,
+  "gtabaseNumber": 11,
+  "powerPyxIndex": [
+   1,
+   17
+  ],
+  "pcGamerIndex": [
+   1,
+   11
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-clean-up-after-donnie": {
+  "chapter": 1,
+  "gtabaseNumber": 12,
+  "powerPyxIndex": [
+   1,
+   18
+  ],
+  "pcGamerIndex": [
+   1,
+   13
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-buck-me": {
+  "chapter": 1,
+  "gtabaseNumber": 13,
+  "powerPyxIndex": [
+   1,
+   19
+  ],
+  "pcGamerIndex": [
+   1,
+   12
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-down-to-earth": {
+  "chapter": 1,
+  "gtabaseNumber": 14,
+  "powerPyxIndex": [
+   1,
+   20
+  ],
+  "pcGamerIndex": [
+   1,
+   14
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-deposit-cash-into-buckme": {
+  "chapter": 1,
+  "gtabaseNumber": 15,
+  "powerPyxIndex": [
+   1,
+   21
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-save-for-the-future": {
+  "chapter": 1,
+  "gtabaseNumber": 16,
+  "powerPyxIndex": [
+   1,
+   22
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-day-release": {
+  "chapter": 1,
+  "gtabaseNumber": 17,
+  "powerPyxIndex": [
+   1,
+   24
+  ],
+  "pcGamerIndex": [
+   1,
+   16
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-clear-skies": {
+  "chapter": 1,
+  "gtabaseNumber": 18,
+  "powerPyxIndex": [
+   1,
+   26
+  ],
+  "pcGamerIndex": [
+   1,
+   15
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-building-a-life": {
+  "chapter": 1,
+  "gtabaseNumber": 19,
+  "powerPyxIndex": [
+   1,
+   27
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-swamped": {
+  "chapter": 1,
+  "gtabaseNumber": 20,
+  "powerPyxIndex": [
+   1,
+   28
+  ],
+  "pcGamerIndex": [
+   1,
+   17
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-don-gone": {
+  "chapter": 1,
+  "gtabaseNumber": 21,
+  "powerPyxIndex": [
+   1,
+   29
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-recalibration": {
+  "chapter": 1,
+  "gtabaseNumber": 22,
+  "powerPyxIndex": [
+   1,
+   31
+  ],
+  "pcGamerIndex": [
+   1,
+   19
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-tourist-trap": {
+  "chapter": 1,
+  "gtabaseNumber": 23,
+  "powerPyxIndex": [
+   1,
+   32
+  ],
+  "pcGamerIndex": [
+   1,
+   20
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-home-sweet-home": {
+  "chapter": 1,
+  "gtabaseNumber": 24,
+  "powerPyxIndex": [
+   1,
+   33
+  ],
+  "pcGamerIndex": [
+   1,
+   21
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-discharge-time": {
+  "chapter": 1,
+  "gtabaseNumber": 25,
+  "powerPyxIndex": [
+   1,
+   34
+  ],
+  "pcGamerIndex": [
+   1,
+   22
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-whats-in-the-bag": {
+  "chapter": 2,
+  "gtabaseNumber": 26,
+  "powerPyxIndex": [
+   2,
+   1
+  ],
+  "pcGamerIndex": [
+   2,
+   1
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-ambulance-chaser": {
+  "chapter": 2,
+  "gtabaseNumber": 27,
+  "powerPyxIndex": [
+   2,
+   11
+  ],
+  "pcGamerIndex": [
+   2,
+   2
+  ],
+  "conditionChecked": true
+ },
+ "p09-m-077": {
+  "chapter": 2,
+  "gtabaseNumber": 28,
+  "powerPyxIndex": [
+   2,
+   2
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-overnight-charges": {
+  "chapter": 2,
+  "gtabaseNumber": 29,
+  "powerPyxIndex": [
+   2,
+   3
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-just-moved-in": {
+  "chapter": 2,
+  "gtabaseNumber": 30,
+  "powerPyxIndex": [
+   2,
+   4
+  ],
+  "pcGamerIndex": [
+   2,
+   3
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-girls-trip": {
+  "chapter": 2,
+  "gtabaseNumber": 31,
+  "powerPyxIndex": [
+   2,
+   5
+  ],
+  "pcGamerIndex": [
+   2,
+   4
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-moses": {
+  "chapter": 2,
+  "gtabaseNumber": 32,
+  "powerPyxIndex": [
+   2,
+   7
+  ],
+  "pcGamerIndex": [
+   2,
+   5
+  ],
+  "conditionChecked": true
+ },
+ "p09-m-082": {
+  "chapter": 2,
+  "gtabaseNumber": 33,
+  "powerPyxIndex": [
+   2,
+   8
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p09-m-081": {
+  "chapter": 2,
+  "gtabaseNumber": 34,
+  "powerPyxIndex": [
+   2,
+   9
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p09-m-080": {
+  "chapter": 2,
+  "gtabaseNumber": 35,
+  "powerPyxIndex": [
+   2,
+   10
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-daily-driver": {
+  "chapter": 2,
+  "gtabaseNumber": 36,
+  "powerPyxIndex": [
+   2,
+   16
+  ],
+  "pcGamerIndex": [
+   2,
+   6
+  ],
+  "conditionChecked": true
+ },
+ "p09-m-078": {
+  "chapter": 2,
+  "gtabaseNumber": 37,
+  "powerPyxIndex": [
+   2,
+   13
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-slam-dunk": {
+  "chapter": 2,
+  "gtabaseNumber": 38,
+  "powerPyxIndex": [
+   2,
+   14
+  ],
+  "pcGamerIndex": [
+   2,
+   7
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-breakfast-run": {
+  "chapter": 2,
+  "gtabaseNumber": 39,
+  "powerPyxIndex": [
+   2,
+   17
+  ],
+  "pcGamerIndex": [
+   2,
+   8
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-coffee-break": {
+  "chapter": 2,
+  "gtabaseNumber": 40,
+  "powerPyxIndex": [
+   2,
+   18
+  ],
+  "pcGamerIndex": [
+   2,
+   9
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-prepare-for-vice-city": {
+  "chapter": 2,
+  "gtabaseNumber": 41,
+  "powerPyxIndex": [
+   2,
+   24
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-afternoon-delight": {
+  "chapter": 2,
+  "gtabaseNumber": 42,
+  "powerPyxIndex": [
+   2,
+   26
+  ],
+  "pcGamerIndex": [
+   2,
+   10
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-checking-out": {
+  "chapter": 2,
+  "gtabaseNumber": 43,
+  "powerPyxIndex": [
+   2,
+   27
+  ],
+  "pcGamerIndex": [
+   2,
+   11
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-welcome-to-vice-city": {
+  "chapter": 3,
+  "gtabaseNumber": 44,
+  "powerPyxIndex": [
+   3,
+   1
+  ],
+  "pcGamerIndex": [
+   3,
+   1
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-dealers-choice": {
+  "chapter": 3,
+  "gtabaseNumber": 45,
+  "powerPyxIndex": [
+   3,
+   2
+  ],
+  "pcGamerIndex": [
+   3,
+   2
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-meet-the-heders": {
+  "chapter": 3,
+  "gtabaseNumber": 46,
+  "powerPyxIndex": [
+   3,
+   12
+  ],
+  "pcGamerIndex": [
+   3,
+   3
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-dubious-provenance": {
+  "chapter": 3,
+  "gtabaseNumber": 47,
+  "powerPyxIndex": [
+   3,
+   3
+  ],
+  "pcGamerIndex": [
+   3,
+   4
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-mami-knows-best": {
+  "chapter": 3,
+  "gtabaseNumber": 48,
+  "powerPyxIndex": [
+   3,
+   4
+  ],
+  "pcGamerIndex": [
+   3,
+   5
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-tyrone": {
+  "chapter": 3,
+  "gtabaseNumber": 49,
+  "powerPyxIndex": null,
+  "pcGamerIndex": [
+   3,
+   7
+  ],
+  "conditionChecked": false
+ },
+ "p01-story-here-kitty-kitty": {
+  "chapter": 3,
+  "gtabaseNumber": 50,
+  "powerPyxIndex": [
+   3,
+   7
+  ],
+  "pcGamerIndex": [
+   3,
+   8
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-send-money-to-lorena": {
+  "chapter": 3,
+  "gtabaseNumber": 51,
+  "powerPyxIndex": [
+   3,
+   8
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-car-service": {
+  "chapter": 3,
+  "gtabaseNumber": 52,
+  "powerPyxIndex": [
+   3,
+   15
+  ],
+  "pcGamerIndex": [
+   3,
+   9
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-send-more-money-to-lorena": {
+  "chapter": 3,
+  "gtabaseNumber": 53,
+  "powerPyxIndex": [
+   3,
+   16
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-top-billing": {
+  "chapter": 3,
+  "gtabaseNumber": 54,
+  "powerPyxIndex": [
+   3,
+   17
+  ],
+  "pcGamerIndex": [
+   3,
+   10
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-boobie-time": {
+  "chapter": 3,
+  "gtabaseNumber": 55,
+  "powerPyxIndex": [
+   3,
+   10
+  ],
+  "pcGamerIndex": [
+   3,
+   11
+  ],
+  "conditionChecked": true
+ },
+ "p09-m-037": {
+  "chapter": 3,
+  "gtabaseNumber": 56,
+  "powerPyxIndex": [
+   3,
+   13
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-first-impressions": {
+  "chapter": 3,
+  "gtabaseNumber": 57,
+  "powerPyxIndex": [
+   3,
+   18
+  ],
+  "pcGamerIndex": [
+   3,
+   12
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-caught-slipping": {
+  "chapter": 3,
+  "gtabaseNumber": 58,
+  "powerPyxIndex": [
+   3,
+   27
+  ],
+  "pcGamerIndex": [
+   3,
+   13
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-crosstown-traffic": {
+  "chapter": 3,
+  "gtabaseNumber": 59,
+  "powerPyxIndex": [
+   3,
+   19
+  ],
+  "pcGamerIndex": [
+   3,
+   14
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-credit-check": {
+  "chapter": 3,
+  "gtabaseNumber": 60,
+  "powerPyxIndex": [
+   3,
+   20
+  ],
+  "pcGamerIndex": [
+   3,
+   15
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-steal-the-zorrusso-for-randy": {
+  "chapter": 3,
+  "gtabaseNumber": 61,
+  "powerPyxIndex": [
+   3,
+   21
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-sinfrontera-national-bank": {
+  "chapter": 3,
+  "gtabaseNumber": 62,
+  "powerPyxIndex": [
+   3,
+   25
+  ],
+  "pcGamerIndex": [
+   3,
+   17
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-security-expert": {
+  "chapter": 3,
+  "gtabaseNumber": 63,
+  "powerPyxIndex": [
+   3,
+   26
+  ],
+  "pcGamerIndex": [
+   3,
+   18
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-heist-planning": {
+  "chapter": 3,
+  "gtabaseNumber": 64,
+  "powerPyxIndex": [
+   3,
+   28
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-ride-or-die": {
+  "chapter": 3,
+  "gtabaseNumber": 65,
+  "powerPyxIndex": [
+   3,
+   22
+  ],
+  "pcGamerIndex": [
+   3,
+   19
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-company-property": {
+  "chapter": 3,
+  "gtabaseNumber": 66,
+  "powerPyxIndex": [
+   3,
+   29
+  ],
+  "pcGamerIndex": [
+   3,
+   20
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-the-missing-link": {
+  "chapter": 3,
+  "gtabaseNumber": 67,
+  "powerPyxIndex": [
+   3,
+   31
+  ],
+  "pcGamerIndex": [
+   3,
+   21
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-safe-word": {
+  "chapter": 3,
+  "gtabaseNumber": 68,
+  "powerPyxIndex": [
+   3,
+   30
+  ],
+  "pcGamerIndex": [
+   3,
+   22
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-cooties": {
+  "chapter": 3,
+  "gtabaseNumber": 69,
+  "powerPyxIndex": [
+   3,
+   34
+  ],
+  "pcGamerIndex": [
+   3,
+   23
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-south-leonida-real-estate": {
+  "chapter": 3,
+  "gtabaseNumber": 70,
+  "powerPyxIndex": [
+   3,
+   37
+  ],
+  "pcGamerIndex": [
+   3,
+   6
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-hidden-charges": {
+  "chapter": 3,
+  "gtabaseNumber": 71,
+  "powerPyxIndex": [
+   3,
+   35
+  ],
+  "pcGamerIndex": [
+   3,
+   25
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-bricked-up": {
+  "chapter": 3,
+  "gtabaseNumber": 72,
+  "powerPyxIndex": [
+   3,
+   36
+  ],
+  "pcGamerIndex": [
+   3,
+   24
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-the-cartel-heist": {
+  "chapter": 3,
+  "gtabaseNumber": 73,
+  "powerPyxIndex": [
+   3,
+   38
+  ],
+  "pcGamerIndex": [
+   3,
+   26
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-ocean-beach": {
+  "chapter": 4,
+  "gtabaseNumber": 74,
+  "powerPyxIndex": [
+   4,
+   1
+  ],
+  "pcGamerIndex": [
+   4,
+   1
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-another-life": {
+  "chapter": 4,
+  "gtabaseNumber": 75,
+  "powerPyxIndex": [
+   4,
+   2
+  ],
+  "pcGamerIndex": [
+   4,
+   2
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-pool-day": {
+  "chapter": 4,
+  "gtabaseNumber": 76,
+  "powerPyxIndex": [
+   4,
+   3
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-company-cars": {
+  "chapter": 4,
+  "gtabaseNumber": 77,
+  "powerPyxIndex": [
+   4,
+   4
+  ],
+  "pcGamerIndex": [
+   4,
+   3
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-lawyer-up": {
+  "chapter": 4,
+  "gtabaseNumber": 78,
+  "powerPyxIndex": [
+   4,
+   5
+  ],
+  "pcGamerIndex": [
+   4,
+   4
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-party-hard": {
+  "chapter": 4,
+  "gtabaseNumber": 79,
+  "powerPyxIndex": [
+   4,
+   8
+  ],
+  "pcGamerIndex": [
+   4,
+   5
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-heavy-lifting": {
+  "chapter": 4,
+  "gtabaseNumber": 80,
+  "powerPyxIndex": [
+   4,
+   6
+  ],
+  "pcGamerIndex": [
+   4,
+   6
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-photo-shoot": {
+  "chapter": 4,
+  "gtabaseNumber": 81,
+  "powerPyxIndex": [
+   4,
+   10
+  ],
+  "pcGamerIndex": [
+   4,
+   7
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-making-gainz": {
+  "chapter": 4,
+  "gtabaseNumber": 82,
+  "powerPyxIndex": [
+   4,
+   14
+  ],
+  "pcGamerIndex": [
+   4,
+   8
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-too-much-baggage": {
+  "chapter": 4,
+  "gtabaseNumber": 83,
+  "powerPyxIndex": [
+   4,
+   16
+  ],
+  "pcGamerIndex": [
+   4,
+   13
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-watch-it": {
+  "chapter": 4,
+  "gtabaseNumber": 84,
+  "powerPyxIndex": [
+   4,
+   17
+  ],
+  "pcGamerIndex": [
+   4,
+   9
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-cash-injections": {
+  "chapter": 4,
+  "gtabaseNumber": 85,
+  "powerPyxIndex": [
+   4,
+   20
+  ],
+  "pcGamerIndex": [
+   4,
+   10
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-amateur-hour": {
+  "chapter": 4,
+  "gtabaseNumber": 86,
+  "powerPyxIndex": [
+   4,
+   18
+  ],
+  "pcGamerIndex": [
+   4,
+   11
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-dirty-work": {
+  "chapter": 4,
+  "gtabaseNumber": 87,
+  "powerPyxIndex": [
+   4,
+   21
+  ],
+  "pcGamerIndex": [
+   4,
+   12
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-adventures-in-babysitting": {
+  "chapter": 4,
+  "gtabaseNumber": 88,
+  "powerPyxIndex": [
+   4,
+   23
+  ],
+  "pcGamerIndex": [
+   4,
+   14
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-fresh-evidence": {
+  "chapter": 4,
+  "gtabaseNumber": 89,
+  "powerPyxIndex": [
+   4,
+   25
+  ],
+  "pcGamerIndex": [
+   4,
+   15
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-power-play": {
+  "chapter": 4,
+  "gtabaseNumber": 90,
+  "powerPyxIndex": [
+   4,
+   28
+  ],
+  "pcGamerIndex": [
+   4,
+   16
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-childs-play": {
+  "chapter": 4,
+  "gtabaseNumber": 91,
+  "powerPyxIndex": [
+   4,
+   26
+  ],
+  "pcGamerIndex": [
+   4,
+   17
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-headliners": {
+  "chapter": 4,
+  "gtabaseNumber": 92,
+  "powerPyxIndex": [
+   4,
+   34
+  ],
+  "pcGamerIndex": [
+   4,
+   18
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-close-surveillance": {
+  "chapter": 4,
+  "gtabaseNumber": 93,
+  "powerPyxIndex": [
+   4,
+   29
+  ],
+  "pcGamerIndex": [
+   4,
+   19
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-delivery-method": {
+  "chapter": 4,
+  "gtabaseNumber": 94,
+  "powerPyxIndex": [
+   4,
+   30
+  ],
+  "pcGamerIndex": [
+   4,
+   20
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-team-building": {
+  "chapter": 4,
+  "gtabaseNumber": 95,
+  "powerPyxIndex": [
+   4,
+   31
+  ],
+  "pcGamerIndex": [
+   4,
+   21
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-fully-catered": {
+  "chapter": 4,
+  "gtabaseNumber": 96,
+  "powerPyxIndex": [
+   4,
+   32
+  ],
+  "pcGamerIndex": [
+   4,
+   22
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-vcia-takedown": {
+  "chapter": 4,
+  "gtabaseNumber": 97,
+  "powerPyxIndex": [
+   4,
+   35
+  ],
+  "pcGamerIndex": [
+   4,
+   23
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-tie-up-loose-ends": {
+  "chapter": 4,
+  "gtabaseNumber": 98,
+  "powerPyxIndex": [
+   4,
+   36
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-sunset": {
+  "chapter": 4,
+  "gtabaseNumber": 99,
+  "powerPyxIndex": [
+   4,
+   39
+  ],
+  "pcGamerIndex": [
+   4,
+   24
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-starting-from-zero": {
+  "chapter": 4,
+  "gtabaseNumber": 100,
+  "powerPyxIndex": [
+   4,
+   40
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-bird-in-the-hand": {
+  "chapter": 5,
+  "gtabaseNumber": 101,
+  "powerPyxIndex": [
+   5,
+   1
+  ],
+  "pcGamerIndex": [
+   5,
+   1
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-taking-liberties": {
+  "chapter": 5,
+  "gtabaseNumber": 102,
+  "powerPyxIndex": [
+   5,
+   2
+  ],
+  "pcGamerIndex": [
+   5,
+   2
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-doggie-bag": {
+  "chapter": 5,
+  "gtabaseNumber": 103,
+  "powerPyxIndex": [
+   5,
+   3
+  ],
+  "pcGamerIndex": [
+   5,
+   4
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-vc-baby": {
+  "chapter": 5,
+  "gtabaseNumber": 104,
+  "powerPyxIndex": [
+   5,
+   4
+  ],
+  "pcGamerIndex": [
+   5,
+   3
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-operation-savage-glory": {
+  "chapter": 5,
+  "gtabaseNumber": 105,
+  "powerPyxIndex": [
+   5,
+   5
+  ],
+  "pcGamerIndex": [
+   5,
+   5
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-honest-abe": {
+  "chapter": 5,
+  "gtabaseNumber": 106,
+  "powerPyxIndex": [
+   5,
+   6
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-unfinished-business": {
+  "chapter": 5,
+  "gtabaseNumber": 107,
+  "powerPyxIndex": [
+   5,
+   7
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ },
+ "p01-story-protective-custody": {
+  "chapter": 5,
+  "gtabaseNumber": 108,
+  "powerPyxIndex": [
+   5,
+   9
+  ],
+  "pcGamerIndex": [
+   5,
+   6
+  ],
+  "conditionChecked": true
+ },
+ "p01-story-the-end-of-the-road": {
+  "chapter": 5,
+  "gtabaseNumber": 109,
+  "powerPyxIndex": [
+   5,
+   10
+  ],
+  "pcGamerIndex": null,
+  "conditionChecked": true
+ }
+}

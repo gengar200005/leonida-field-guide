@@ -194,7 +194,7 @@ function readerFacts(v){
 }
 function cardBody(v){
  const {kind,reward,warning,condition}=readerFacts(v);
- const meta=[kind,v.region].filter(Boolean).join(" · ");
+ const meta=[v.progression?.kind||kind,v.region].filter(Boolean).join(" · ");
  const summary=v.summary&&v.summary!==v.title&&v.summary!==v.region&&v.summary!==meta&&v.summary!=="–"?v.summary:"";
  const note=v.evidenceGroup||(v.status==="unconfirmed"?"조건 미확인":"");
  const ch=Number.isInteger(v.chapter)?chapters[v.chapter]:"";
@@ -227,7 +227,7 @@ function home(){return (history.state?.guideVisit?.canGoBack?trail([]):"")+windo
 function guides(){
  const index=findItem("p01-guide-index");
  const browse=index?'<div class="guide-shortcut">'+relatedLink(index)+'</div>':"";
- return trail([["공략 도감"]])+'<h1>공략 도감</h1>'+browse+'<div class="section catgrid">'+Object.keys(categories).map(c=>categoryButton(c,true)).join("")+'</div>';
+ return trail([["공략 도감"]])+'<h1>공략 도감</h1>'+browse+Object.entries({"스토리와 의뢰":["P01","P09"],"차량과 장비":["V","P02"],"지도와 탐험":["P05","P06","P04","REF"],"경제와 성장":["P03","P07","P08","P10"]}).map(([name,keys])=>'<section><h2>'+name+'</h2><div class="section catgrid">'+keys.map(c=>categoryButton(c,true)).join("")+'</div></section>').join("");
 }
 let limit=36;
 function listHeading(cat,title,description){
@@ -309,6 +309,16 @@ function listPage(page,id,p){
   if(chapter!=="")all=all.filter(v=>v.chapter===Number(chapter));
   all=[...all].sort((a,b)=>(a.chapter??9)-(b.chapter??9)||(a.sequence??0)-(b.sequence??0));
  }
+ const mode=p.get("purpose")||"";
+ const hasCampaign=cat==="P01"&&!mine&&!search;
+ const purpose=hasCampaign?'<label>진행 유형 <select data-change="purpose">'+opt("","전체 유형",mode)+["스토리 미션","필수 진행 과제"].map(k=>opt(k,k,mode)).join("")+'</select></label>':"";
+ if(hasCampaign&&["스토리 미션","필수 진행 과제"].includes(mode))all=all.filter(v=>v.progression?.kind===mode);
+ let chapterLinks="";
+ if(hasCampaign&&chapter!==""&&Number(chapter)>0){
+  const overview=["","p01-c01-guide","p01-c02-motel","p01-c03-guide","p01-c04-guide","p01-c05-guide","p01-endgame"][Number(chapter)];
+  const optional=readerItems.filter(v=>v.chapterOptional?.chapter===Number(chapter)).sort((a,b)=>Number(b.chapterOptional.missable)-Number(a.chapterOptional.missable));
+  chapterLinks='<section class="panel"><h2>이 시점에 확인할 공략</h2><div class="links">'+relatedLink(findItem(overview))+relatedLink(findItem("p09-chapter-deadlines"))+'</div>'+(optional.length?'<details><summary>함께 할 선택 의뢰 '+optional.length+'개</summary><ul>'+optional.map(v=>'<li>'+(v.chapterOptional.missable?'시한 주의 · ':'')+relatedLink(v)+'</li>').join("")+'</ul></details>':'')+'</section>';
+ }
  const region=regionChoices.length>1?'<label>지역 <select data-change="region">'+opt("","전체 지역",filter)+regionChoices.map(r=>opt(r,r,filter)).join("")+'</select></label>':"";
  const searchScope=searchCategories.length?'<label>공략 분류 <select data-change="cat">'+opt("","전체 분류",scope)+Object.keys(categories).filter(c=>searchCategories.includes(c)).map(c=>opt(c,catName(c),scope)).join("")+'</select></label>':"";
  const mapQuery=new URLSearchParams({q});
@@ -320,7 +330,7 @@ function listPage(page,id,p){
  const mediaFilters=region+(vehicles?vehicleStylePicker(style):"")+photoControl;
  const browseControls=catalog?catCompareControls(cat,p,mediaFilters):region+evidencePicker+photoControl;
  const results=comparison?catCompareView(all.slice(0,limit),cat,p):cards(all.slice(0,limit));
- return trail([["공략 도감","#/guides"],[title]])+listHeading(cat,title,search?'“'+q+'”':story?"챕터별 시작 조건과 진행 순서, 놓치기 쉬운 보상":categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+routeShortcut+guideMenu+'<div class="bar browse-filters">'+track+missionPicker+searchScope+(cat==="P01"?chapterSelect(chapter):"")+browseControls+mapSearchLink+'<span class="count">'+all.length.toLocaleString()+(catalog?'개 항목':'개 공략')+'</span></div>'+results+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
+ return trail([["공략 도감","#/guides"],[title]])+listHeading(cat,title,search?'“'+q+'”':story?"권장 진행 순서입니다. 함께 열린 의뢰는 원하는 순서로 진행하세요.":categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+routeShortcut+guideMenu+'<div class="bar browse-filters">'+track+missionPicker+searchScope+(cat==="P01"?chapterSelect(chapter):"")+purpose+browseControls+mapSearchLink+'<span class="count">'+all.length.toLocaleString()+(catalog?'개 항목':'개 공략')+'</span></div>'+chapterLinks+results+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
 }
 const searchCache=new Map();
 function searchRecord(v){
@@ -524,6 +534,8 @@ function detail(v){
  const brief=rows.length?'<dl class="entry-facts">'+rows.map(([k,value])=>'<div><dt>'+k+'</dt><dd>'+esc(value)+'</dd></div>').join("")+'</dl>':"";
  const summary=v.summary&&v.summary!==v.title&&v.summary!=="–"?'<p class="lead">'+esc(v.summary)+'</p>':"";
  const visual=photoFigure(v);
+ const flow=v.progression;
+ const progress=flow?'<section class="panel"><h2>진행 조건</h2><p>'+esc([flow.kind,...(flow.actors||[]),flow.completion===true?"100% 달성 대상":""].filter(Boolean).join(" · "))+'</p>'+(flow.mapAlias?'<p>지도 목표명 · '+esc(flow.mapAlias)+'</p>':'')+(flow.gate?'<p>'+esc(flow.gate)+'</p>':'')+(flow.prior?.length?'<details><summary>확인된 선행 미션 보기</summary><div class="links">'+flow.prior.map(findItem).filter(Boolean).map(relatedLink).join("")+'</div></details>':'')+'</section>':"";
  const originalPhotos=links.filter(ref=>!ref.reveal&&/^(카드 외형|현장 사진) · 원본(?:$|[ ·(])/.test(ref.label||""));
  const photoLinks=originalPhotos.length?'<div class="links original-photos">'+originalPhotos.map(sourceLink).join("")+'</div>':"";
  const intro='<header class="intro"><div class="intro-content"><p class="kicker">'+esc(meta.join(" · "))+'</p><h1>'+esc(v.title)+'</h1>'+summary+statusText(v)+originalName+brief+'<div class="tools">'+actions+'</div></div>'+visual+'</header>';
@@ -535,7 +547,7 @@ function detail(v){
   (position+1<chapterMissions.length?'<a href="'+entry(chapterMissions[position+1].id)+'">다음 공략 →</a>':'')+'</div></nav>';
  const sources=links.length?'<details class="panel reference-links"><summary>지도·영상·참고 자료 <small>'+links.length+'</small></summary><div class="links">'+links.map(sourceLink).join("")+'</div></details>':"";
  const relatedPanel=related.length?'<div class="panel"><h2>연관 공략</h2>'+related.slice(0,8).map(relatedCard).join("")+(related.length>8?'<details><summary>전체 '+related.length+'개 보기</summary>'+related.slice(8).map(relatedCard).join("")+'</details>':'')+'</div>':"";
- return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article">'+intro+mobileOutline+photoLinks+(catalogEntry(v)?catDetailFacts(v):"")+entryMap(v)+sections.map(section).join("")+fieldGallery(v)+fieldReferences(v)+videoSection(links)+campaignNav+sources+'</article><aside class="rail">'+desktopOutline+relatedPanel+'</aside></div>';
+ return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article">'+intro+mobileOutline+progress+photoLinks+(catalogEntry(v)?catDetailFacts(v):"")+entryMap(v)+sections.map(section).join("")+fieldGallery(v)+fieldReferences(v)+videoSection(links)+campaignNav+sources+'</article><aside class="rail">'+desktopOutline+relatedPanel+'</aside></div>';
 }
 function missing(){return trail([["찾을 수 없는 공략"]])+'<h1>공략을 찾을 수 없습니다</h1><p class="lead">이전 판의 주소이거나 통합된 항목일 수 있습니다.</p><a class="btn" href="#/guides">공략 도감 열기</a>'}
 const inBounds=p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=-12288&&p.x<=6144&&p.y>=-10240&&p.y<=12288;
