@@ -14,9 +14,7 @@ const regionFilter=value=>Object.hasOwn(regionAliases,value)?regionAliases[value
 const group=cat=>"#/guide/"+cat.toLowerCase();
 const catName=cat=>categories[cat]?.[0]||"공략";
 const readerItems=items.filter(v=>!(v.status==="reference"&&v.summary==="–"));
-const categoryKeys=v=>[v.category,...(v.alsoCategories||[])];
-const matchesCategory=(v,choices)=>categoryKeys(v).some(c=>choices.has(c));
-const categoryItems=c=>readerItems.filter(v=>categoryKeys(v).includes(c));
+const categoryItems=c=>readerItems.filter(v=>v.category===c);
 const opt=(v,label,sel)=>'<option value="'+esc(v)+'"'+(String(v)===String(sel)?" selected":"")+'>'+esc(label)+'</option>';
 const photo=v=>media[cleanId(v?.id)];
 const vehicleStyles=new Map();
@@ -236,6 +234,7 @@ function listHeading(cat,title,description){
  return '<div class="list-heading"><h1>'+esc(title)+'</h1>'+(description?'<p class="lead">'+esc(description)+'</p>':'')+'</div>';
 }
 function missionBrowseType(v){
+ if(v.missionType)return v.missionType;
  if(/^p09-(?:re-|gp-|at$|je$|hu(?:-|$)|sw(?:-|$)|cv(?:-|$)|eg$|bg(?:-|$)|sp$|pl$|mm$)/.test(v.id))return "랜덤 조우";
  if(/^p09-ac-/.test(v.id))return "자유 활동";
  if(/^p09-(?:m-|[a-z]{2}(?:-guide)?$)/.test(v.id)||v.id.startsWith("p01-c"))return "미션·연속 의뢰";
@@ -252,9 +251,9 @@ function listPage(page,id,p){
  const guideEntries=catalog?all.filter(v=>!catalogEntry(v)):[];
  if(catalog)all=all.filter(catalogEntry);
  const scope=search&&Object.hasOwn(categories,p.get("cat"))?p.get("cat"):"";
- const searchCategories=search?[...new Set(all.flatMap(categoryKeys).filter(c=>Object.hasOwn(categories,c)))]:[];
+ const searchCategories=search?[...new Set(all.map(v=>v.category).filter(c=>Object.hasOwn(categories,c)))]:[];
  if(scope){
-  all=all.filter(v=>categoryKeys(v).includes(scope));
+  all=all.filter(v=>v.category===scope);
   if(!searchCategories.includes(scope))searchCategories.push(scope);
  }
  const missionType=cat==="P09"&&page==="guide"?p.get("mission")||"":"";
@@ -543,11 +542,11 @@ const mapRegion=value=>{
 };
 const mappedIds=new Set(mapped.map(p=>cleanId(p.item)));
 const externalMapItems=readerItems.filter(v=>v.fieldReferences?.map&&!mappedIds.has(cleanId(v.id)));
-const mapCategories=[...new Set([...mapped,...externalMapItems].flatMap(categoryKeys).filter(Boolean))];
+const mapCategories=[...new Set([...mapped,...externalMapItems].map(v=>v.category).filter(Boolean))];
 const referenceName=v=>window.FIELD_GUIDE.mapReferenceNames?.[v.id]||v.title;
 function externalMapList(cats,region,style,activity,terms,open,undone){
  const matches=externalMapItems.filter(v=>{
-  if(cats.size&&!matchesCategory(v,cats)||undone&&flags(v).done)return false;
+  if(cats.size&&!cats.has(v.category)||undone&&flags(v).done)return false;
   if(region&&!norm(mapRegion(v.region)).includes(norm(region)))return false;
   if(style&&v.category==="V"&&vehicleStyles.get(cleanId(v.id))!==style)return false;
   if(!matchesActivity(v,v.id,cats,activity))return false;
@@ -576,7 +575,7 @@ for(const [old,target] of Object.entries(redirects)){
  if(old.startsWith("p06-")&&!collectionCodeById.has(target))collectionCodeById.set(target,old.split("-")[1]);
 }
 function matchesActivity(record,itemId,cats,activity){
- return !activity||categoryKeys(record).some(c=>c!=="P06"&&cats.has(c))||
+ return !activity||(record.category!=="P06"&&cats.has(record.category))||
     collectionCodeById.get(cleanId(itemId))===activity;
 }
 
@@ -588,13 +587,14 @@ function pinFacts(pin){
  const fields=new Map((guide?.sections||[]).filter(s=>!s.reveal).flatMap(s=>s.table?.rows||[]).filter(r=>r.length===2));
  const part=cleanId(pin.item).split("-")[1]||"";
  const kindByGroup={
-  V:fields.get("종류")||"고유 차량",
+  V:fields.get("종류")||(catalogEntry(guide)?"고유 차량":"차량 이용·등록"),
   P02:fields.get("종류")||fields.get("위치와 획득 조건")?.split("·")[0].trim()||fields.get("장비"),
+  REF:fields.get("분류")||fields.get("유형")||economyKinds[part.replace(/\d+$/,"")],
   P03:economyKinds[part.replace(/\d+$/,"")]||fields.get("분류"),
   P06:collectKinds[part],
   P07:part.startsWith("h")?"은신처":"차량 차고",
   P08:part==="gym"?"체육관":"사격장",
-  P09:"랜덤 이벤트"
+  P09:guide?missionBrowseType(guide):"서브미션·이벤트"
  };
  const kind=kindByGroup[pin.category]||catName(pin.category);
  const region=mapRegion(pin.region);
@@ -652,7 +652,8 @@ const mapIcons={
  P06:"M8 2l6 5-6 7-6-7z",
  P07:"M1 8l7-6 7 6m-12-1v7h10V7",
  P08:"M2 6v4m3-6v8m6-8v8m3-6v4M5 8h6",
- P09:"M2 3h12v8H8l-4 3v-3H2z"
+ P09:"M2 3h12v8H8l-4 3v-3H2z",
+ REF:"M8 15S3 9 3 6a5 5 0 0 1 10 0c0 3-5 9-5 9z M8 5v2"
 };
 const pinSymbol=cat=>'<svg viewBox="0 0 16 16" aria-hidden="true"><path d="'+(mapIcons[cat]||mapIcons.P01)+'"/></svg>';
 const mapRegionsList=[...new Set(mapped.map(pin=>mapRegion(pin.region)).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ko"));
@@ -727,7 +728,7 @@ function mapPage(p){
  const style=cats.has("V")?(p.get("style")||""):"";
  const undone=p.get("undone")==="1",query=(p.get("q")||"").trim();
  const terms=query.split(/\s+/).filter(Boolean).map(norm);
- mapList=mapped.filter(v=>(!region||mapRegion(v.region)===region)&&(!cats.size||matchesCategory(v,cats))&&(!undone||!pinDone(v))&&matchesActivity(v,v.item,cats,activity)&&(!style||v.category!=="V"||vehicleStyles.get(cleanId(v.item))===style)&&terms.every(term=>mapSearchText(v).includes(term)));
+ mapList=mapped.filter(v=>(!region||mapRegion(v.region)===region)&&(!cats.size||cats.has(v.category))&&(!undone||!pinDone(v))&&matchesActivity(v,v.item,cats,activity)&&(!style||v.category!=="V"||vehicleStyles.get(cleanId(v.item))===style)&&terms.every(term=>mapSearchText(v).includes(term)));
  const references=externalMapList(cats,region,style,activity,terms,!mapList.length,undone);
  const wanted=p.get("pin");
  const current=mapList.find(v=>v.id===selected)||mapList.find(v=>v.id===wanted&&v.item===item)||mapList.find(v=>item&&v.item===item&&!variableBox(v))||mapList.find(v=>item&&v.item===item);

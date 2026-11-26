@@ -23,6 +23,8 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Verify desktop and touch player flows before publishing
         run: python tests/release.py --offline --captures "${{ runner.temp }}/guide-captures"
+      - name: Check primary categories, redirects and save migration
+        run: python tests/final_editorial.py --offline
       - name: Verify thumbnail coverage and spoiler protection
         run: python tests/thumbnails.py
       - name: Retain desktop and mobile screenshots

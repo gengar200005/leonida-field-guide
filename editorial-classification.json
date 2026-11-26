@@ -1,0 +1,929 @@
+{
+  "merges": {
+    "p07-garages": {
+      "aliases": [
+        "p03-ec39"
+      ],
+      "evidence": "같은 부동산 앱의 차고 구입 절차와 차고 보관 슬롯. 거래 비용과 가방 픽업 조건을 합친다."
+    },
+    "p09-pe": {
+      "aliases": [
+        "p03-air"
+      ],
+      "evidence": "연락책·5개 배송 순서·각 제한 시각·보상 총액이 일치한다. 개별 배송과 연속 의뢰는 구별한다.",
+      "representedSections": [
+        "557905092c68e509"
+      ],
+      "representedSummaries": [
+        "제이슨의 연락과 현재 비행장 표식에서 출발합니다. 투하 지점과 착륙까지 완료하고 실제 입금을 확인하세요."
+      ]
+    },
+    "p09-m-052": {
+      "aliases": [
+        "p03-ec31"
+      ],
+      "evidence": "파일럿 피트 1번째 배송의 순번·제한·보상·다음 연락이 대응한다. 이전 경제 자료의 출발지와 실제 수령 지점은 함께 대조했다.",
+      "representedSections": [
+        "0dee7457943c6853",
+        "089ab488ae5dd90b"
+      ],
+      "representedSummaries": [
+        "레너드 격납고 출발 → 지정 지점 투하 → 포트 겔혼 귀환. 지급 사례 $12,000."
+      ],
+      "newSections": [
+        {
+          "title": "연락과 정산",
+          "paragraphs": [
+            "첫 배송은 챕터 4의 1회 의뢰입니다. 착륙과 하차 후 BuckMe에서 12,000달러 입금을 확인하세요. 이전 자료에는 출발지가 다르게 표기되어 있으므로 현재의 연락과 비행장 표식을 따르세요."
+          ]
+        },
+        {
+          "title": "구간과 난이도",
+          "table": {
+            "headers": [
+              "항목",
+              "내용"
+            ],
+            "rows": [
+              [
+                "기존 공략의 난이도 평가",
+                "보통"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "p09-m-053": {
+      "aliases": [
+        "p03-ec32"
+      ],
+      "evidence": "파일럿 피트 2번째 배송의 순번·제한·보상·다음 연락이 대응한다. 이전 경제 자료의 출발지와 실제 수령 지점은 함께 대조했다.",
+      "representedSections": [
+        "4d05d5d2d8ce9f9f",
+        "fa49e3d9562f1f57",
+        "bb289ad51fa2ac56"
+      ],
+      "representedSummaries": [
+        "첫 배송 약 반나절 뒤 문자 보고. 수상기로 7곳, 게임 시간 2시간 이내. 출발지는 문자 기준. 지급 사례 조건 충족 시 $20,000."
+      ],
+      "newSections": [
+        {
+          "title": "연락과 정산",
+          "paragraphs": [
+            "첫 배송 약 반나절 뒤 문자를 받은 사례가 있습니다. 출발지 표기가 자료마다 달라 현재 문자 표식을 따르세요. 두 번째 의뢰는 한 차례로 집계하고 착륙 뒤 BuckMe 입금을 확인하세요."
+          ]
+        },
+        {
+          "title": "구간과 난이도",
+          "table": {
+            "headers": [
+              "항목",
+              "내용"
+            ],
+            "rows": [
+              [
+                "기존 공략의 난이도 평가",
+                "보통~높음"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "p09-m-054": {
+      "aliases": [
+        "p03-ec33"
+      ],
+      "evidence": "파일럿 피트 3번째 배송의 순번·제한·보상·다음 연락이 대응한다. 이전 경제 자료의 출발지와 실제 수령 지점은 함께 대조했다.",
+      "representedSections": [
+        "dbbd2bafa220364f",
+        "f7a2b69f28cc52eb"
+      ],
+      "representedSummaries": [
+        "두 번째 완료 후 7곳을 20:00 이전 투하한 사례. 지급 사례 조건 충족 시 $20,000."
+      ],
+      "newSections": [
+        {
+          "title": "연락과 정산",
+          "paragraphs": [
+            "두 번째 배송 뒤 열리는 한 차례의 의뢰입니다. 착륙 후 BuckMe에서 조건부 20,000달러 정산을 확인하세요."
+          ]
+        },
+        {
+          "title": "구간과 난이도",
+          "table": {
+            "headers": [
+              "항목",
+              "내용"
+            ],
+            "rows": [
+              [
+                "기존 공략의 난이도 평가",
+                "보통~높음"
+              ],
+              [
+                "관할 지역",
+                "마리아나"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "p09-m-055": {
+      "aliases": [
+        "p03-ec34"
+      ],
+      "evidence": "파일럿 피트 4번째 배송의 순번·제한·보상·다음 연락이 대응한다. 이전 경제 자료의 출발지와 실제 수령 지점은 함께 대조했다.",
+      "representedSections": [
+        "034e9784eb4c7114",
+        "227a7a6b18e34092"
+      ],
+      "representedSummaries": [
+        "켈리 비행장 표식. 7곳을 14:00 이전 완료한 사례. 지급 사례 조건 충족 시 $20,000."
+      ],
+      "newSections": [
+        {
+          "title": "연락과 정산",
+          "paragraphs": [
+            "두 번째 배송 뒤 열리는 한 차례의 의뢰입니다. 켈리 비행장 표식과 공급자 위치를 구분하고 착륙 뒤 BuckMe에서 지급액을 확인하세요."
+          ]
+        },
+        {
+          "title": "구간과 난이도",
+          "table": {
+            "headers": [
+              "항목",
+              "내용"
+            ],
+            "rows": [
+              [
+                "기존 공략의 난이도 평가",
+                "보통~높음"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "p09-m-056": {
+      "aliases": [
+        "p03-ec35"
+      ],
+      "evidence": "파일럿 피트 5번째 배송의 순번·제한·보상·다음 연락이 대응한다. 이전 경제 자료의 출발지와 실제 수령 지점은 함께 대조했다.",
+      "representedSections": [
+        "4e06b2701f971256",
+        "79d71b4dec3f4cbc"
+      ],
+      "representedSummaries": [
+        "앞선 두 건 뒤 문자. 레너드 출발, 7곳을 08:00 이전 완료한 사례. 지급 사례 조건 충족 시 $20,000."
+      ],
+      "newSections": [
+        {
+          "title": "연락과 정산",
+          "paragraphs": [
+            "사우스포인트와 에이버리 두 의뢰 뒤 열리는 마지막 1회 배송입니다. 레너드 출발 표식과 게임 시각을 확인하고 착륙 뒤 BuckMe를 확인하세요."
+          ]
+        },
+        {
+          "title": "구간과 난이도",
+          "table": {
+            "headers": [
+              "항목",
+              "내용"
+            ],
+            "rows": [
+              [
+                "기존 공략의 난이도 평가",
+                "보통~높음"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "p01-story-dubious-provenance": {
+      "aliases": [
+        "p01-c03-007-guide"
+      ],
+      "evidence": "같은 Dubious Provenance 미션·핼리팩스·조각상 인계 선택·담보 시계. 보상과 선택은 접어서 보존한다.",
+      "protectAliasSections": "이후 진행",
+      "protectAliasMedia": true
+    },
+    "v-registration": {
+      "aliases": [
+        "p03-ec42",
+        "p10-s03"
+      ],
+      "evidence": "개인 차량의 등록, 첫 비용, 차고 주차와 호출 확인이라는 같은 절차. 무료 등록·에디션 혜택을 보존한다."
+    },
+    "p09-wy": {
+      "aliases": [
+        "p03-ec47"
+      ],
+      "evidence": "스타렛 모텔 주차장 와이먼의 차량 도움과 후속 50달러 보상, 같은 지도 지점."
+    },
+    "p09-m-022": {
+      "aliases": [
+        "p03-ec27"
+      ],
+      "evidence": "브렛에게 요청 종·등급을 맞춰 반납하는 사냥 덱. 첫 사냥 미션은 별도로 유지한다."
+    },
+    "p09-ca": {
+      "aliases": [
+        "p03-ec28"
+      ],
+      "evidence": "칼의 문자로 시작하는 낚시·도감 활동. 판매 수익 미확인 조건을 보존한다."
+    },
+    "p09-mo": {
+      "aliases": [
+        "p03-ec11"
+      ],
+      "evidence": "모제스 지정 차량의 납품과 포트 겔혼 첫 차고 해금. 지급 보고와 차량 상태 보너스를 함께 보존한다."
+    },
+    "p03-buckme": {
+      "aliases": [
+        "p03-ec02",
+        "p03-ec03"
+      ],
+      "evidence": "당좌·공동 저축·계정 등급의 같은 시스템. 입출금과 저축 단계 자료를 함께 제공한다."
+    },
+    "p10-g01": {
+      "aliases": [
+        "p03-ec44"
+      ],
+      "evidence": "아폴로 애그리게이츠 창고의 같은 전리품 재등장 제보와 세이브·로드 조건."
+    },
+    "p10-e01": {
+      "aliases": [
+        "p03-ec45"
+      ],
+      "evidence": "스토리 완료 후 같은 게임 내 치트 메뉴·저장 제약, 자금 치트에 관한 조건."
+    },
+    "p05-dive-route": {
+      "aliases": [
+        "p03-ec38"
+      ],
+      "evidence": "기존 30곳 수중 인양 개요는 현행 33곳 권역·장비 안내에 포함된다. 현물과 판매 가능 전리품의 구분을 보존한다.",
+      "protectAliasSections": "location",
+      "protectAliasMedia": true,
+      "representedSections": [
+        "8836e508f7bae061"
+      ],
+      "representedSummaries": [
+        "지도와 장비 요구를 먼저 확인."
+      ]
+    },
+    "p02-field-pickup-route": {
+      "aliases": [
+        "p02-field-route"
+      ],
+      "evidence": "같은 15종의 현장 무기를 습지에서 밥캣 키까지 방문하는 동선. 개별 무기 공략은 유지한다."
+    },
+    "v-42-collection-route": {
+      "aliases": [
+        "v-road-landmarks"
+      ],
+      "evidence": "권역별 두 안내의 고유 차량 핀 42개가 전부 일치한다. 도로 표지와 접근 조건을 함께 보존한다."
+    },
+    "l32": {
+      "aliases": [
+        "p03-sa036"
+      ],
+      "evidence": "벨포인트 기울어진 요트의 특정 금고 safe-045 좌표가 일치한다. 후보 표의 불명확한 금고 번호와 보상은 현장 공략으로 확인됐다.",
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true,
+      "representedSections": [
+        "6aaa6660bc9d7e8e",
+        "58b9b908eb2d7e47"
+      ],
+      "representedSummaries": [
+        "금고 후보 · 지점별"
+      ]
+    },
+    "i081": {
+      "aliases": [
+        "e080",
+        "e164"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 크라켄 목격담. 별도 해저 조각상은 유지한다.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i091": {
+      "aliases": [
+        "e125",
+        "e166"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 플로리다 인어 목격담.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i147": {
+      "aliases": [
+        "e006",
+        "e097"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 휴대폰에 남은 마이클의 Wind Chimes 벨소리.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i106": {
+      "aliases": [
+        "e101",
+        "e142"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. Race and Chase 7 게시물의 차기작·발매 연기 농담.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i054": {
+      "aliases": [
+        "e155"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 치와와에 올라탄 캐릭터 조각상.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i033": {
+      "aliases": [
+        "e115"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 정장 입은 빈센트와 영화 콜래트럴을 인용한 조우.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i113": {
+      "aliases": [
+        "e073"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 악마와의 보스전을 다룬 헤비메탈 하우스 제보.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i127": {
+      "aliases": [
+        "e040"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 테네브레 룩스 게임기를 플레이하는 퍼즐.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i125": {
+      "aliases": [
+        "e123"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 루시아에게 말하는 소 투시.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "e002": {
+      "aliases": [
+        "e057"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 산 안드레아스 리마스터의 사진에 등장한 집. 인근 다른 건물과 구별한다.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "e038": {
+      "aliases": [
+        "e054"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 리버티 시티·로스 산토스 스포츠팀이 나온 카드에 대한 오마주. 개별 카드 도감은 유지한다.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "e042": {
+      "aliases": [
+        "e114"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 시트콤 사인펠드의 ASS MAN 번호판.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "e082": {
+      "aliases": [
+        "e120"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 더 위켄드의 집을 본뜬 저택.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i037": {
+      "aliases": [
+        "e160"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. Dexter’s Kill Room. 별도 아파트와 구별한다.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i038": {
+      "aliases": [
+        "e122"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 다이 하드의 McClane을 인용한 환기 전문가 모자.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i006": {
+      "aliases": [
+        "e105"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 조이 시스템의 Clair Obscur: Expedition 33 오마주.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "i129": {
+      "aliases": [
+        "e010"
+      ],
+      "evidence": "기존 개별 출처와 영문명에서 식별한 같은 대상. 리오나이다의 퍼리 금지령을 알리는 게임 속 뉴스.",
+      "representedSummaries": [
+        "추가 출처 후보"
+      ],
+      "protectAliasSections": "solution",
+      "protectAliasMedia": true
+    },
+    "p03-income": {
+      "aliases": [
+        "p03-ec49"
+      ],
+      "evidence": "순수익 비교표의 비용 차감 안내. 가방·탄약·수리·포기 비용을 반영한다."
+    },
+    "p03-cash-key-lento": {
+      "aliases": [
+        "i073"
+      ],
+      "evidence": "키 렌토 거처의 같은 침실 바닥판 밑 현금 봉투. PS5 공개 실기와 주택 지도는 회수 위치와 한 차례의 금액을 뒷받침한다. 고정액과 첫 해금 시점은 미확인.",
+      "protectAliasMedia": true,
+      "protectAliasSections": "solution",
+      "newSections": [
+        {
+          "title": "해금과 반복 회수",
+          "reveal": "solution",
+          "paragraphs": [
+            "실기에서 본 액수는 한 번의 사례입니다. 처음 얻을 수 있는 시점, 고정 지급액과 재획득 여부는 확인되지 않았습니다."
+          ]
+        }
+      ],
+      "representedSections": [
+        "a9bd787aedab74b7"
+      ],
+      "representedSummaries": [
+        "키 렌토 거처 침실에서 바닥판을 확인하는 은닉품 제보입니다. 첫 이용 시점과 회수 가능한 금액은 미확인입니다."
+      ]
+    },
+    "p04-08": {
+      "aliases": [
+        "p03-cash-gellhorn"
+      ],
+      "evidence": "동일 GPS pin-916284 및 같은 실기 링크. 주택 환기구·주방 금고·메모·약 $3,000이 일치한다. 서로 다른 방문에서 관측한 고유 556과 현금을 구분한다.",
+      "protectAliasMedia": true
+    },
+    "p09-re-149": {
+      "aliases": [
+        "i026"
+      ],
+      "evidence": "게임 지도 random-event-149 원본 설명의 고장 난 차, 여성 운전자, 도움 거절, 트렁크 은닉물과 독립 단서 broken-down-car-drug-trunk가 일치한다. 제보된 금액은 미확정·선택 열람으로 보존한다.",
+      "summary": "키 렌토에서 고장 난 차 옆에 선 여성을 볼 수 있습니다. 가까이 다가가면 도움을 거절할 수 있습니다.",
+      "protectAliasMedia": true,
+      "protectAliasSections": "solution",
+      "representedSummaries": [
+        "특수 조우"
+      ]
+    },
+    "p09-m-044": {
+      "aliases": [
+        "p03-ec48"
+      ],
+      "evidence": "챕터 3 포트 겔혼에서 덩크가 제공하는 후속 Robbery Tips. 장물 정산용 드롭오프와 구별하고 개별 수익 미확인 상태를 보존한다."
+    },
+    "p01-prologue": {
+      "aliases": [
+        "p03-ec01"
+      ],
+      "evidence": "프롤로그의 자금 안내. 같은 오프닝 외 개별 목표·반복 수익이 없고 수익 활동은 첫 자유 탐험에서 시작한다.",
+      "newSections": [
+        {
+          "title": "프롤로그의 돈",
+          "paragraphs": [
+            "프롤로그에는 재방문해서 반복할 수 있는 수익원이 확인되지 않았습니다. 챕터 1에서 자유 탐험을 시작한 뒤 벌이를 계획하세요."
+          ]
+        }
+      ],
+      "representedSections": [
+        "9f007a0c814d902e",
+        "8278295655e88f0b"
+      ],
+      "representedSummaries": [
+        "진행만 하고 수익 루프는 C1 자유 탐험에서 시작한다."
+      ]
+    }
+  },
+  "categories": {
+    "P01": [
+      "p03-ec04",
+      "p03-ec43"
+    ],
+    "V": [
+      "p10-s04",
+      "p10-m10"
+    ],
+    "P07": [
+      "p03-ec40"
+    ],
+    "P02": [
+      "p03-ec41",
+      "p10-a02"
+    ],
+    "P04": [
+      "p03-gx06"
+    ],
+    "P10": [
+      "p03-buckme"
+    ],
+    "P09": [
+      "p03-ec24",
+      "p03-ec30",
+      "p03-ec46",
+      "p03-rc01",
+      "p03-rc02",
+      "p03-rc03",
+      "p03-rc04",
+      "p03-rc05",
+      "p03-rc06",
+      "p03-rc07",
+      "p03-rc08",
+      "p03-rc09",
+      "p03-rc10",
+      "p03-rc11",
+      "p03-rc12",
+      "p03-rc13",
+      "p03-rr001",
+      "p03-rr002",
+      "p03-rr003",
+      "p03-rr004",
+      "p03-rr005",
+      "p03-rr006",
+      "p03-rr007",
+      "p03-rr008",
+      "p03-rr009",
+      "p03-rr010",
+      "p03-rr011",
+      "p03-rr012",
+      "p03-rr013",
+      "p03-rr014",
+      "p03-rr015",
+      "p03-rr016",
+      "p03-rr017",
+      "p03-rr018",
+      "p03-rr019",
+      "p03-rr020",
+      "p03-rr021",
+      "p03-rr022",
+      "p03-rr023",
+      "p03-rr024",
+      "p03-rr025",
+      "p03-rr026",
+      "p03-rr027",
+      "p03-rr028",
+      "p03-rr029",
+      "p03-rr030",
+      "p03-rr031",
+      "p03-rr032",
+      "p03-rr033",
+      "p03-rr034",
+      "p03-rr035",
+      "p03-rr036",
+      "p03-rr037",
+      "p03-rr038",
+      "p03-rr040",
+      "p03-rr041"
+    ],
+    "REF": [
+      "p03-fx01",
+      "p03-fx03",
+      "p03-fx05",
+      "p03-fx06",
+      "p03-fx07",
+      "p03-sa001",
+      "p03-sa002",
+      "p03-sa003",
+      "p03-sa004",
+      "p03-sa005",
+      "p03-sa006",
+      "p03-sa007",
+      "p03-sa008",
+      "p03-sa009",
+      "p03-sa010",
+      "p03-sa011",
+      "p03-sa012",
+      "p03-sa013",
+      "p03-sa014",
+      "p03-sa015",
+      "p03-sa016",
+      "p03-sa017",
+      "p03-sa018",
+      "p03-sa019",
+      "p03-sa020",
+      "p03-sa021",
+      "p03-sa022",
+      "p03-sa023",
+      "p03-sa024",
+      "p03-sa025",
+      "p03-sa026",
+      "p03-sa027",
+      "p03-sa028",
+      "p03-sa029",
+      "p03-sa030",
+      "p03-sa031",
+      "p03-sa032",
+      "p03-sa033",
+      "p03-sa034",
+      "p03-sa035",
+      "p03-sa037",
+      "p03-sa038",
+      "p03-sa039",
+      "p03-sa040",
+      "p03-sa041",
+      "p03-sa042",
+      "p03-sa043",
+      "p03-sa044",
+      "p03-sa045",
+      "p03-sa046",
+      "p03-sa047",
+      "p03-sa048",
+      "p03-sa049",
+      "p03-sa050",
+      "p03-sa051",
+      "p03-sa052",
+      "p03-sa053",
+      "p03-sa054",
+      "p03-sa055",
+      "p03-sa056",
+      "p03-sa057",
+      "p03-sa058",
+      "p03-sa059",
+      "p03-sa060",
+      "p03-sa061",
+      "p03-sa062",
+      "p03-sa063",
+      "p03-sa064",
+      "p03-sa065",
+      "p03-sa066",
+      "p03-sa067",
+      "p03-sa068",
+      "p03-sa069",
+      "p03-sa070",
+      "p03-sa071",
+      "p03-sa072",
+      "p03-sa073",
+      "p03-sa074",
+      "p03-sa075",
+      "p03-sa076",
+      "p03-sa077",
+      "p03-sa078",
+      "p03-sa079",
+      "p03-sa080",
+      "p03-sa081",
+      "p03-sa082",
+      "p03-sa083",
+      "p03-sa084",
+      "p03-sa085",
+      "p03-sa086",
+      "p03-sa087",
+      "p03-sa088",
+      "p03-sa089",
+      "p03-sa090",
+      "p03-sa091",
+      "p03-sa092",
+      "p03-sa093",
+      "p03-sa094",
+      "p03-sa095",
+      "p03-sa096",
+      "p03-sa097",
+      "p03-sa098",
+      "p03-sa099",
+      "p03-sa100",
+      "p03-sa101",
+      "p03-sf001",
+      "p03-sf002",
+      "p03-sf003",
+      "p03-sf004",
+      "p03-sf005",
+      "p03-sf006",
+      "p03-sf007",
+      "p03-sf008",
+      "p03-sf009",
+      "p03-sf010",
+      "p03-sf011",
+      "p03-sf012",
+      "p03-sf013",
+      "p03-sf014",
+      "p03-sf015",
+      "p03-sf016",
+      "p03-sf017",
+      "p03-sf018",
+      "p03-sf019",
+      "p03-sf020",
+      "p03-sf021",
+      "p03-sl001",
+      "p03-sl002",
+      "p03-sl003",
+      "p03-sl004",
+      "p03-sl005",
+      "p03-sl006",
+      "p03-sl007",
+      "p03-sl008",
+      "p03-sl009",
+      "p03-sl010",
+      "p03-sl011",
+      "p03-sl012",
+      "p03-sl013",
+      "p03-sl014",
+      "p03-st001",
+      "p03-st002",
+      "p03-st003",
+      "p03-st004",
+      "p03-st005",
+      "p03-st006",
+      "p03-st007",
+      "p03-st008",
+      "p03-st009",
+      "p03-st010",
+      "p03-st011",
+      "p03-st012",
+      "p03-st013",
+      "p03-st014",
+      "p03-st015",
+      "p03-st016",
+      "p03-st017",
+      "p03-st018",
+      "p03-st019",
+      "p03-st020",
+      "p03-st021",
+      "p03-st022",
+      "p03-st023",
+      "p03-st024",
+      "p03-st025",
+      "p03-st026",
+      "p03-st027",
+      "p03-st028",
+      "p03-st029",
+      "p03-st030",
+      "p03-st031",
+      "p03-st032",
+      "p03-st033",
+      "p03-st034",
+      "p03-st035",
+      "p03-st036",
+      "p03-st037",
+      "p03-st038",
+      "p03-st039",
+      "p03-st040",
+      "p03-st041",
+      "p03-st042",
+      "p03-st043",
+      "p03-st044",
+      "p03-st045",
+      "p03-st046",
+      "p03-st047",
+      "p03-st048",
+      "p03-st049",
+      "p03-st050",
+      "p03-st051",
+      "p03-st052",
+      "p03-st053",
+      "p03-st054",
+      "p03-st055",
+      "p03-st056",
+      "p03-st057",
+      "p03-st058",
+      "p03-st059",
+      "p03-st060",
+      "p03-st061",
+      "p03-st062",
+      "p03-st063",
+      "p03-st064",
+      "p03-st065",
+      "p03-st066",
+      "p03-st067",
+      "p03-st068",
+      "p03-st069",
+      "p03-st070",
+      "p03-st071",
+      "p03-st072"
+    ]
+  },
+  "missionTypes": {
+    "자유 활동": [
+      "p03-ec30",
+      "p03-ec46",
+      "p03-rc01",
+      "p03-rc02",
+      "p03-rc03",
+      "p03-rc04",
+      "p03-rc05",
+      "p03-rc06",
+      "p03-rc07",
+      "p03-rc08",
+      "p03-rc09",
+      "p03-rc10",
+      "p03-rc11",
+      "p03-rc12",
+      "p03-rc13",
+      "p03-rr001",
+      "p03-rr002",
+      "p03-rr003",
+      "p03-rr004",
+      "p03-rr005",
+      "p03-rr006",
+      "p03-rr007",
+      "p03-rr008",
+      "p03-rr009",
+      "p03-rr010",
+      "p03-rr011",
+      "p03-rr012",
+      "p03-rr013",
+      "p03-rr014",
+      "p03-rr015",
+      "p03-rr016",
+      "p03-rr017",
+      "p03-rr018",
+      "p03-rr019",
+      "p03-rr020",
+      "p03-rr021",
+      "p03-rr022",
+      "p03-rr023",
+      "p03-rr024",
+      "p03-rr025",
+      "p03-rr026",
+      "p03-rr027",
+      "p03-rr028",
+      "p03-rr029",
+      "p03-rr030",
+      "p03-rr031",
+      "p03-rr032",
+      "p03-rr033",
+      "p03-rr034",
+      "p03-rr035",
+      "p03-rr036",
+      "p03-rr037",
+      "p03-rr038",
+      "p03-rr040",
+      "p03-rr041"
+    ],
+    "랜덤 조우": [
+      "p03-ec24"
+    ]
+  }
+}

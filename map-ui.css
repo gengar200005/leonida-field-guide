@@ -4,13 +4,13 @@
 .map-categories button{display:inline-flex;gap:6px;align-items:center}
 .map-categories button[aria-pressed=true],.mapcontrols button[aria-pressed=true]{background:#20392e;color:white}
 .pin-key,.mapview .pin:not(.cluster){background:var(--marker,#325846);color:white}
-.pin-P01{--marker:#58412e}.pin-V{--marker:#176887}.pin-P02{--marker:#973d43}.pin-P03{--marker:#316842}.pin-P04{--marker:#784523}.pin-P05{--marker:#76418d}.pin-P06{--marker:#8a5908}.pin-P07{--marker:#225d57}.pin-P08{--marker:#52508b}.pin-P09{--marker:#8a355f}
+.pin-P01{--marker:#58412e}.pin-V{--marker:#176887}.pin-P02{--marker:#973d43}.pin-P03{--marker:#316842}.pin-P04{--marker:#784523}.pin-P05{--marker:#76418d}.pin-P06{--marker:#8a5908}.pin-P07{--marker:#225d57}.pin-P08{--marker:#52508b}.pin-P09{--marker:#8a355f}.pin-REF{--marker:#52616a}
 .mapcanvas .map-pins{position:absolute;inset:0;pointer-events:none}
 .map-pins button{pointer-events:auto}
 .mapview .pin:not(.cluster){display:grid;place-items:center;width:21px;height:21px;border:1.5px solid white;box-shadow:0 1px 3px #172d25}
 .pin-key{display:inline-grid;place-items:center;width:21px;height:21px;border-radius:50%}
 .pin-key svg,.mapview .pin svg,.spot-list svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
-.mapview .pin.cluster[class*=pin-P]{background:var(--marker);color:white}
+.mapview .pin.cluster[class*=pin-P],.mapview .pin.cluster.pin-REF{background:var(--marker);color:white}
 .mapview .pin.active{outline:3px solid #ffcc56;outline-offset:1px;z-index:2}
 .mapview .pin.pin-done::after{content:"✓";background:#183c24;color:white;position:absolute;right:-5px;top:-7px;border-radius:50%;font:700 10px/13px sans-serif;width:13px}
 .map-undone{display:inline-flex;gap:5px;align-items:center;min-height:36px}

@@ -1,0 +1,3301 @@
+{
+ "baselineCommit": "369f7d6d33b9d75c3a0d75f439e4fd7bcd2e9ffb",
+ "baselineMissingRegistration": {
+  "noMediaRecord": 2359,
+  "originalLink": 37,
+  "guardedEntry": 1,
+  "guardedOriginalLinksWithinOriginalLink": 2
+ },
+ "overviewIDs": [
+  "p01-c01-guide",
+  "p01-c03-guide",
+  "p01-c04-guide",
+  "p01-c05-guide",
+  "p01-endgame",
+  "p01-guide-index",
+  "p01-region-atlas",
+  "p01-region-city",
+  "p01-region-coast",
+  "p01-region-inland",
+  "p01-region-offshore",
+  "p01-region-south",
+  "p01-region-west",
+  "p01-roadmap",
+  "p01-source-notes",
+  "p02-chapter-two-kit",
+  "p02-collection-check",
+  "p02-equipment-overview",
+  "p02-field-pickup-route",
+  "p02-field-route",
+  "p02-play-guide",
+  "p02-weapon-index",
+  "p03-c02-money",
+  "p03-cash-sites",
+  "p03-economy-overview",
+  "p03-economy-videos",
+  "p03-income",
+  "p03-sell",
+  "p03-vaults",
+  "p04-catalog",
+  "p04-first-visit",
+  "p05-power-circuit",
+  "p05-region-exploration",
+  "p06-card-sets",
+  "p06-collection-targets",
+  "p06-flamingo-routes",
+  "p06-lodging-copies",
+  "p06-meditation",
+  "p06-poster-watch",
+  "p06-regional-collecting",
+  "p06-stunt-starts",
+  "p06-windows",
+  "p07-first-garage",
+  "p07-garage-retention",
+  "p07-garages",
+  "p07-property-catalog",
+  "p08-fitness-atlas",
+  "p08-gym-prices",
+  "p08-hud-practice",
+  "p08-loadout",
+  "p08-range-medals",
+  "p08-sources",
+  "p08-training-check",
+  "p08-training-start",
+  "p09-activity-rewards",
+  "p09-area-ambrosia",
+  "p09-area-gellhorn",
+  "p09-area-grassrivers",
+  "p09-area-kalaga",
+  "p09-area-keys",
+  "p09-area-vice",
+  "p09-chapter-deadlines",
+  "p09-completion-review",
+  "p09-encounter-index",
+  "p09-mission-index",
+  "p09-observation-conditions",
+  "p09-reference-notes",
+  "p09-region-routes",
+  "p09-repeated-activities",
+  "p09-start-here",
+  "p09-world-activities",
+  "p10-official-updates",
+  "p10-report-index",
+  "p10-report-sources",
+  "p10-reward-preservation",
+  "p10-story-tools",
+  "v-42-collection-route",
+  "v-chapter-2-route",
+  "v-registration",
+  "v-road-landmarks",
+  "v-vehicle-index"
+ ],
+ "historical": {
+  "p06-c-jac-26": {
+   "archive": "media/photos-15.zip",
+   "member": "pin-collectible-card-087.webp",
+   "sha256": "547d594a148cafc161ca0a6c988ac47eed3b56b3e7b3639d978c6f7f99c65fb2",
+   "px": [
+    1280,
+    720
+   ],
+   "id": "p06-c-jac-26",
+   "disposition": "ready",
+   "visualFinding": "원본 고해상도에서 보트 옆 접이식 의자와 카드 획득 표시를 판독하고, 영문 카드명·금색 변형·핀 ID를 대조했다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p03-rr039": {
+   "archive": "media/photos-17.zip",
+   "member": "pin-gta6-race-054.webp",
+   "sha256": "b46ffc97bea06977dfd7921d55ae680bf0490afb7cb63197df9066d043b957e4",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p03-rc05",
+   "disposition": "map",
+   "visualFinding": "그레이슨 경주의 기록 창과 지도 일부만 보인다. 출발선의 게임 화면은 이 파일에 없다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-074": {
+   "archive": "media/photos-18.zip",
+   "member": "pin-gta6-random-event-074.webp",
+   "sha256": "f4041d9a23e440f5569e3c92d0672f2709a5f5074d3314d723e87a673f50801c",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-074",
+   "disposition": "candidate",
+   "visualFinding": "어두운 숲의 야간 화면에서 대상과 의식의 시작 지점을 명확하게 식별하기 어렵다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-101": {
+   "archive": "media/photos-18.zip",
+   "member": "pin-gta6-random-event-101.webp",
+   "sha256": "1fde3f60f7addf532bc1f23fd4d68f4f46ea7bff02539de136b686b1f70228d5",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-101",
+   "disposition": "candidate",
+   "visualFinding": "야간 도로와 차량만 두드러진다. 전직 CEO를 구별할 인물 모습이 보이지 않는다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-157": {
+   "archive": "media/photos-18.zip",
+   "member": "pin-gta6-random-event-157.webp",
+   "sha256": "b0ae3a8a931c518bd3102f3229f577e3c6d921306d9a9f9edbbbd645e2de8107",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-157",
+   "disposition": "spoiler",
+   "visualFinding": "유령의 정체와 얼굴이 보이고 보호 표시가 설정되어 있다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-164": {
+   "archive": "media/photos-18.zip",
+   "member": "pin-gta6-random-event-164.webp",
+   "sha256": "c38cb3c0916e6978599f440a45d0ef7c32be00b2185d8a100607acc26f31c8aa",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-164",
+   "disposition": "candidate",
+   "visualFinding": "역광 속 사람의 윤곽만 보여 관광객의 외형이나 조우 지점을 구분하기 어렵다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-166": {
+   "archive": "media/photos-19.zip",
+   "member": "pin-gta6-random-event-166.webp",
+   "sha256": "9cea8697f40c7fde032081ed9794f75f7aa729991ac0211afd01d07731215240",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-166",
+   "disposition": "spoiler",
+   "visualFinding": "휴대폰 사진에서 동물과 차량 안팎의 상황이 드러나며 조우의 발견 내용을 바로 알 수 있다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-215": {
+   "archive": "media/photos-19.zip",
+   "member": "pin-gta6-random-event-215.webp",
+   "sha256": "f3888a34b2b22192804d4f140be76094dd29dccf9290e39494c08289058fcc17",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-215",
+   "disposition": "spoiler",
+   "visualFinding": "차 안에서 동승하는 유령의 모습이 화면 전체에 나타난다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-228": {
+   "archive": "media/photos-19.zip",
+   "member": "pin-gta6-random-event-228.webp",
+   "sha256": "8a3f621266f69331ff63f5aca050df0e5fb0f2934742003488de18bee5d11cc3",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-228",
+   "disposition": "spoiler",
+   "visualFinding": "길가 소파를 본 뒤 들어가는 붉은 실내와 함정이 먼저 드러난다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-254": {
+   "archive": "media/photos-19.zip",
+   "member": "pin-gta6-random-event-254.webp",
+   "sha256": "ebf8e6bdaa75b4a2e0f1ec884e79210e0adca35b0811777f163ed65db6b70b56",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-254",
+   "disposition": "spoiler",
+   "visualFinding": "날치기를 목격하는 시작 장면 대신 자동차 옆 바닥에 쓰러진 인물이 보인다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-256": {
+   "archive": "media/photos-19.zip",
+   "member": "pin-gta6-random-event-256.webp",
+   "sha256": "ba5528407abb23adee3cc28e64645a9700e8f950cdc815ead9b280d85f084e17",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-256",
+   "disposition": "spoiler",
+   "visualFinding": "광산 안 테이블 위의 발견 대상이 이미 드러난다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-272": {
+   "archive": "media/photos-20.zip",
+   "member": "pin-gta6-random-event-272.webp",
+   "sha256": "1497d0c4352bfb50abecb5dbe18e4cc68f887b326dafa453891438d397c4408a",
+   "px": [
+    320,
+    180
+   ],
+   "id": "p09-re-272",
+   "disposition": "spoiler",
+   "visualFinding": "차 바로 앞에 나타난 존재가 보인다. 다리를 처음 찾아가는 장면이 아니다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p06-c-del-03": {
+   "archive": "media/photos-23.zip",
+   "member": "pin-hidden-package-010.webp",
+   "sha256": "a7ab095a2a08081d369eb62eaddbc26a6843233c18968023f23d8e19c9e4e943",
+   "px": [
+    540,
+    720
+   ],
+   "id": "p06-c-del-03",
+   "disposition": "map",
+   "visualFinding": "수면과 지도 표식만 보인다. 기존 파일명도 숨은 패키지라서 클레오 카드의 외형을 확인할 수 없다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-004": {
+   "archive": "media/photos-23.zip",
+   "member": "pin-random-event-004.webp",
+   "sha256": "35856c0c8121b29f8ed1291eb61ef61495d4408651ed437d427f882dc0a76acb",
+   "px": [
+    540,
+    720
+   ],
+   "id": "p09-re-004",
+   "disposition": "map",
+   "visualFinding": "일시정지 지도에 찍힌 위치 표식이다. 항공기나 추락 장면은 없다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-019": {
+   "archive": "media/photos-24.zip",
+   "member": "pin-random-event-019.webp",
+   "sha256": "927ed6eef14e7029f26074362550b93b3b6157bdb057a2ceb15d408e20e4610f",
+   "px": [
+    674,
+    720
+   ],
+   "id": "p09-re-019",
+   "disposition": "spoiler",
+   "visualFinding": "사고 차량과 함께 다음 수색 목적지가 자막에 표시된다. 해당 원본에는 스포일러 보호도 설정되어 있다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-020": {
+   "archive": "media/photos-24.zip",
+   "member": "pin-random-event-020.webp",
+   "sha256": "7ae44dd8d0ce370681accc48907f4a3ceaa4d17cec74ed9827fcd6310298dc21",
+   "px": [
+    540,
+    720
+   ],
+   "id": "p09-re-020",
+   "disposition": "ready",
+   "visualFinding": "원본 크기로 열어 보트와 수면 위 여러 지느러미를 확인했고, 밀수 요트 조우의 핀을 대조했다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p09-re-038": {
+   "archive": "media/photos-25.zip",
+   "member": "pin-random-event-038.webp",
+   "sha256": "72834283794a583a8e9e075da325b39d2abf6feee303b090a999126a0aeaa0b7",
+   "px": [
+    1280,
+    720
+   ],
+   "id": "l08",
+   "disposition": "spoiler",
+   "visualFinding": "구조하는 대상의 정체와 탈것이 한눈에 드러난다. 대표 ID의 발견 단계에서 공개하는 장면이다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p03-sa030": {
+   "archive": "media/photos-27.zip",
+   "member": "pin-safe-035.webp",
+   "sha256": "19df435dd7c7b9b210d85b134d4f94464c1857ea4273c5ecf44b21c37b909625",
+   "px": [
+    540,
+    720
+   ],
+   "id": "p03-sa030",
+   "disposition": "spoiler",
+   "visualFinding": "메일 화면에 금고의 비밀번호가 그대로 적혀 있다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p03-sa016": {
+   "archive": "media/photos-27.zip",
+   "member": "pin-safe-043.webp",
+   "sha256": "bda0bd16c1f81eac9f66e713dd68098090e9359e9b36839a7c6a62be1cdfa30e",
+   "px": [
+    540,
+    720
+   ],
+   "id": "p03-sa016",
+   "disposition": "map",
+   "visualFinding": "주유소 건물 평면도와 핀을 촬영한 화면이다. 금고나 주유소 외관은 보이지 않는다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p03-sa036": {
+   "archive": "media/photos-27.zip",
+   "member": "pin-safe-045.webp",
+   "sha256": "39262af8d03521a5370aff7d9e87be5e9cab646709b742d99b09b663d446b808",
+   "px": [
+    960,
+    720
+   ],
+   "id": "p03-sa036",
+   "disposition": "spoiler",
+   "visualFinding": "액자 옆 금고 암호와 열린 보관함이 한 화면에 나온다.",
+   "archiveCommit": "b7d18994"
+  },
+  "x02-01": {
+   "archive": "media/photos-field-01.zip",
+   "member": "field-parachuting-001.webp",
+   "sha256": "6a90331d7cfcb02e8155f1c3d8a649cee33b4170ec9fcdd8dbd0cbb5c5aa89af",
+   "px": [
+    1200,
+    676
+   ],
+   "id": "x02-01",
+   "disposition": "ready",
+   "visualFinding": "옛 파일과 배저 R&D 타워 옥상 표식의 실제 공개 사진을 대조했다.",
+   "archiveCommit": "b7d18994"
+  },
+  "x02-02": {
+   "archive": "media/photos-field-02.zip",
+   "member": "field-parachuting-002.webp",
+   "sha256": "0ac7a9a95a14205adadbde76a8f98bf3bcd73e4e15d96bf595f369feba6f5da3",
+   "px": [
+    960,
+    720
+   ],
+   "id": "x02-02",
+   "disposition": "ready",
+   "visualFinding": "옛 파일과 전파탑 상부 표식의 실제 공개 사진을 대조했다.",
+   "archiveCommit": "b7d18994"
+  },
+  "p06-c-edu-34": {
+   "archive": "media/photos-field-03.zip",
+   "member": "field-collectible-card-111.webp",
+   "sha256": "4ec73e296aa25bb78d748eab4e4c19ca5cec55cd0715ebd4580cc5424b62f659",
+   "px": [
+    1200,
+    622
+   ],
+   "id": "p06-c-edu-34",
+   "disposition": "map",
+   "visualFinding": "정확한 카드 위치를 표시한 도로 지도로, 백서린 카드나 획득 현장 사진은 아니다.",
+   "archiveCommit": "b7d18994"
+  }
+ },
+ "powerPyxTerms": {
+  "url": "https://www.powerpyx.com/tos/",
+  "section": 5,
+  "finding": "개인용 한 부를 제외한 복제·재게시·전송·배포에 사전 서면 허가를 요구한다. 공개 가이드에 사진을 표시할 권한 문서는 확인되지 않아 원문 링크로 유지했다."
+ },
+ "urlChecks": {
+  "https://alcasthq.com/wp-content/uploads/2026/11/How-to-Get-the-Final-Chapter-KVGA-12-in-GTA-6.webp": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://cdn.mos.cms.futurecdn.net/5cBcwUr2yknDXx8nyaQrY9.jpg": [
+   {
+    "width": 2560,
+    "height": 1440
+   }
+  ],
+  "https://cdn.mos.cms.futurecdn.net/YUgLGRFjchWWb3o2oVAT6D.jpg": [
+   {
+    "width": 2560,
+    "height": 1440
+   }
+  ],
+  "https://cdn.mos.cms.futurecdn.net/YkHkvAKxs7x7JyBknvQRPU.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://cdn.mos.cms.futurecdn.net/g8Enb9ZjZTV9xLHoMFH2RY.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/collectible-card-087.webp": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-race-054.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-074.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-101.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-157.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-164.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-166.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-215.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-228.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-254.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-256.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-272.webp": [
+   {
+    "width": 320,
+    "height": 180
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/hidden-package-010.webp": [
+   {
+    "width": 540,
+    "height": 720
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/random-event-004.webp": [
+   {
+    "width": 540,
+    "height": 720
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/random-event-019.webp": [
+   {
+    "width": 674,
+    "height": 720
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/random-event-020.webp": [
+   {
+    "width": 540,
+    "height": 720
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/random-event-038.webp": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/safe-035.webp": [
+   {
+    "width": 540,
+    "height": 720
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/safe-043.webp": [
+   {
+    "width": 540,
+    "height": 720
+   }
+  ],
+  "https://fbritoferreira.github.io/gta6/screenshots/safe-045.webp": [
+   {
+    "width": 960,
+    "height": 720
+   }
+  ],
+  "https://gameta.gg/_ipx/w_1720&q_80/media/guides/aliens-and-ufo-easter-egg/10.webp": [
+   {
+    "width": 1720,
+    "height": 968
+   }
+  ],
+  "https://gta6map.city/img/still/s-final-flush-stamina-boost.webp": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://gta6map.city/img/still/s-flame-bike-lab-hideout-safe-2121.webp": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://gta6map.city/img/still/s-giant-mutant-crab.webp": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://gta6map.city/img/still/s-hidden-cash-floorboard.webp": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://gta6map.city/img/still/s-hunter-layered-350-sniper.webp": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://gta6map.city/img/still/s-kraken.webp": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://howtovideogame.com/wp-content/uploads/2026/11/gta-6-illegal-sneaker-trade-safe-code-capture-2.webp": [
+   {
+    "width": 1200,
+    "height": 675
+   }
+  ],
+  "https://i.ytimg.com/vi/-mzJSlSHK-A/sd1.jpg": [
+   {
+    "width": 640,
+    "height": 480
+   }
+  ],
+  "https://i.ytimg.com/vi/DUXwIRHRLBE/sd1.jpg": [
+   {
+    "width": 640,
+    "height": 480
+   }
+  ],
+  "https://i.ytimg.com/vi/DUXwIRHRLBE/sd2.jpg": [
+   {
+    "width": 640,
+    "height": 480
+   }
+  ],
+  "https://i.ytimg.com/vi/wnGt2dyvEDE/sd1.jpg": [
+   {
+    "width": 640,
+    "height": 480
+   }
+  ],
+  "https://kotaku.com/app/uploads/2026/11/GTa-6-atm.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://media.dexerto.com/media/grand%20theft%20auto%20VI%20GTA%206%20hyde%20island%20hunt%20manhunt%20saw%20easter%20egg%201.jpg?width=1200&quality=75&format=auto": [
+   {
+    "width": 1200,
+    "height": 675
+   }
+  ],
+  "https://media.gtaboom.com/variants/1600/media/images/bc/74/kitchen-hatch-a03ce3718eb11384.jpg": [
+   {
+    "width": 1600,
+    "height": 900
+   }
+  ],
+  "https://media.gtaboom.com/variants/1920/media/images/a9/71/garage-door-8d02c1355d1eba6d.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://media.gtaboom.com/variants/1920/media/images/bd/c2/vanessas-garage-la-perle-map-a4a4041c241fee82.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://static.allthings.how/wp-content/uploads/2026/11/02-save-game-greyed-1.webp": [
+   {
+    "width": 1600,
+    "height": 900
+   }
+  ],
+  "https://static.allthings.how/wp-content/uploads/2026/11/04-save-empty-slots.webp": [
+   {
+    "width": 1600,
+    "height": 900
+   }
+  ],
+  "https://static.beebom.com/wp-content/uploads/2026/11/Bigfoot-spotted-at-the-south-of-watson-bay-in-GTA-6-1.jpg": [
+   {
+    "width": 1200,
+    "height": 675
+   }
+  ],
+  "https://static.beebom.com/wp-content/uploads/2026/11/Control-easter-egg-GTA-6.jpg": [
+   {
+    "width": 1200,
+    "height": 674
+   }
+  ],
+  "https://static.beebom.com/wp-content/uploads/2026/11/GTA-6-Mario-block-and-hat-easter-egg.jpg": [
+   {
+    "width": 1200,
+    "height": 675
+   }
+  ],
+  "https://static.beebom.com/wp-content/uploads/2026/11/GTA-6-Michaels-Boat-Los-Santos-GPS.jpg": [
+   {
+    "width": 1200,
+    "height": 675
+   }
+  ],
+  "https://static.beebom.com/wp-content/uploads/2026/11/GTA-6-SOS-island-easter-egg.jpg": [
+   {
+    "width": 1200,
+    "height": 675
+   }
+  ],
+  "https://static.beebom.com/wp-content/uploads/2026/11/Jet-Ski-Dog-in-GTA-6.jpg": [
+   {
+    "width": 1200,
+    "height": 675
+   }
+  ],
+  "https://static.metaforge.app/gta-6/progress/gangs/fishing-shacks.webp": [
+   {
+    "width": 1600,
+    "height": 800
+   }
+  ],
+  "https://static.metaforge.app/gta-6/progress/gangs/manatee-motel.webp": [
+   {
+    "width": 1600,
+    "height": 800
+   }
+  ],
+  "https://www.gta6heists.com/assets/robberies/saber-shipping-yard/gta-6-saber-shipping-yard-safe-keypad-notes-8046.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-ahol-street-art-wheel-379-ahol-street-art-cfee62f3.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-bonanza-giant-waink-landmark-12266edd.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-book-swap-2-book-swap-2732358b.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-book-swap-3-book-swap-d014ffbe.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-book-swap-4-book-swap-3f160866.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-book-swap-6-book-swap-11e7246c.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-book-swap-7-book-swap-fad9fc4a.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-crimson-palms-base-jump-base-jump-46e71c53.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-gellhorn-drive-in-theatre-stunt-jump-stunt-jump-d1588f63.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-graffiti-bridge-under-the-bridge-f9394581.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-1-mariana-county-basketball-17965373.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-10-mariana-county-basketball-c44c6ebf.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-100-lummox-county-basketball-0f3f2bcb.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-11-mariana-county-basketball-7c98634f.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-12-mariana-county-basketball-712a6e20.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-13-mariana-county-basketball-963499aa.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-14-mariana-county-basketball-cf2b9489.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-19-vice-dale-county-basketball-ed967a77.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-2-mariana-county-basketball-fffd41e0.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-20-vice-dale-county-basketball-b16a13f8.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-21-vice-dale-county-basketball-1bcfd874.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-22-vice-dale-county-basketball-78aaa052.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-23-vice-dale-county-basketball-5d80dc9b.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-24-vice-dale-county-basketball-cda76935.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-3-mariana-county-basketball-6394c4fa.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-33-vice-dale-county-basketball-e0c15dbc.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-37-vice-dale-county-basketball-afcf85ac.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-4-mariana-county-basketball-5c3d81c6.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-40-vice-dale-county-basketball-a34b1755.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-41-vice-dale-county-basketball-f4106862.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-44-vice-dale-county-basketball-2e99328a.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-49-mariana-county-basketball-ad8a0c72.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-5-mariana-county-basketball-729ad0d5.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-50-mariana-county-basketball-2b683e2a.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-51-mariana-county-basketball-9355ea26.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-52-mariana-county-basketball-a055b4a6.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-6-mariana-county-basketball-30342cfc.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-64-vice-dale-county-basketball-02fc0ab8.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-69-leonard-county-basketball-52fef39d.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-7-mariana-county-basketball-7eaf6470.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-70-leonard-county-basketball-6fa2ef32.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-72-leonard-county-basketball-ffe68ab3.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-8-mariana-county-basketball-080bf0d1.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-80-leonard-county-basketball-f3484178.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-81-leonard-county-basketball-b98f0f0e.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-82-leonard-county-basketball-176d7887.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-83-kelly-county-basketball-921d1d75.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-84-kelly-county-basketball-e9499b8a.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-85-kelly-county-basketball-e5314424.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-86-kelly-county-basketball-fb7c940b.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-87-kelly-county-basketball-bbe0cde1.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-88-kelly-county-basketball-54969588.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-89-kelly-county-basketball-05adb0ce.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-90-kelly-county-basketball-a5f4676c.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-91-kelly-county-basketball-e98e3aee.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-92-kelly-county-basketball-377c1f61.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-93-kelly-county-basketball-237b538b.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-94-kelly-county-basketball-64aa50ee.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-96-lummox-county-basketball-c6ca83bb.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-97-lummox-county-basketball-b15790ec.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-98-lummox-county-basketball-edb4ab9a.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-hoop-99-lummox-county-basketball-1cc745c6.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-swamp-meditation-waink-curiosity-04c9a3a4.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-the-sniper-of-la-perle-4-playlist-4c065d09.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-top-fun-drones-leonida-rc-raceway-drone-race-ade98da1.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/submissions/gta-6-top-fun-drones-marshland-animal-park-drone-race-873b3fdb.webp": [
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   },
+   {
+    "error": "EncodingError",
+    "http": 200,
+    "policy": "same-origin",
+    "type": "image/webp"
+   }
+  ],
+  "https://www.gtabase.com/images/gta-6/maps/thumbs/gta-6-shore-court-garage-garage-640.webp?v=1795352593": [
+   {
+    "error": "EncodingError",
+    "http": 404,
+    "policy": "same-origin",
+    "type": "text/html"
+   },
+   {
+    "error": "EncodingError",
+    "http": 404,
+    "policy": "same-origin",
+    "type": null
+   }
+  ],
+  "https://www.gtafinder.com/screenshots/free-weapons-trunk-pickup.webp": [
+   {
+    "width": 1200,
+    "height": 675
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-11.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-14.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-16.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-19.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-2.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-21.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-33.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-36.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-38.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-5.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-7.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-9.jpg": [
+   {
+    "width": 1920,
+    "height": 1080
+   }
+  ],
+  "https://www.videogameschronicle.com/files/2026/11/Grand-Theft-Auto-VI_20261124113216.jpg": [
+   {
+    "width": 3840,
+    "height": 2160
+   }
+  ],
+  "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/date-missions-courtyard-bar.jpg": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/random-events-plane-wreck.jpg": [
+   {
+    "width": 1280,
+    "height": 720
+   }
+  ],
+  "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/random-events-sparring.jpg": [
+   {
+    "width": 960,
+    "height": 540
+   }
+  ],
+  "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/underwater-lanoche-wreck-clean.jpg": [
+   {
+    "width": 1600,
+    "height": 900
+   }
+  ]
+ },
+ "byId": {
+  "r00": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 키 렌토 송신탑을 올려다보는 시작 장면을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/Grand-Theft-Auto-VI_20261124113216.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r01": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 고가도로 아래 불이 켜진 양쪽 문을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-21.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r02": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 도로 옆 조명 아래의 변전소 출입문을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-19.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r03": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 금속 울타리와 변전소 문을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-16.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r04": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 철조망 안 작은 변전소 건물을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-14.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r05": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 건물 외벽에 장착된 전기함을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-11.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r06": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 A 표시가 있는 건물 모서리을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-9.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r07": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 울타리 너머 별채와 외벽을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-7.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r08": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 보안 울타리 안의 작은 시설을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-5.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r10": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 Me 표식과 외벽을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-2.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r11": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 햄릿 남부의 B 표식을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-38.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r12": {
+   "reason": "rights",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "원본 기사 구역명과 흰 건물의 파란 띠와 외부 스위치을 대조했다. VGC 원문 하단은 콘텐츠 복제에 권리자 허가를 요구한다. 재게시 또는 가이드 카드 삽입을 허가한 문서를 확인하지 못했다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-36.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "r13": {
+   "reason": "spoiler",
+   "status": "VGC 원문 단계·스크린샷·이용 조건 대조",
+   "detail": "자주색 포털이 열린 최종 발견 장면을 확인했다. 퍼즐을 마친 뒤의 결과가 드러난다.",
+   "sources": [
+    "https://www.videogameschronicle.com/guide/gta-6-vice-city-retro-easter-egg-walkthrough-rewards/",
+    "https://www.videogameschronicle.com/files/2026/11/GTA-6-Full-Vice-City-retro-easter-egg-walkthrough-all-rewards-33.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "p10-a02": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "마나티 모텔 사진의 짐·상자만으로 무료 장비 종류와 획득 장소를 식별할 수 없다.",
+   "sources": [
+    "https://static.metaforge.app/gta-6/progress/gangs/manatee-motel.webp"
+   ],
+   "searchedWeb": false
+  },
+  "p10-a08": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "일반 저장 슬롯 메뉴 화면이며 해당 미션의 보상 보관함이나 보상을 식별할 장면은 없다.",
+   "sources": [
+    "https://static.allthings.how/wp-content/uploads/2026/11/04-save-empty-slots.webp"
+   ],
+   "searchedWeb": false
+  },
+  "p10-e01": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "인물의 얼굴과 팔만 보이는 장면이다. 치트 메뉴와 저장 복구 시점을 식별할 수 없다.",
+   "sources": [
+    "https://cdn.mos.cms.futurecdn.net/5cBcwUr2yknDXx8nyaQrY9.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "p10-g01": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "창고 밖 차량 장면으로는 전리품을 다시 획득하는 행동이나 장소를 식별하기 어렵다.",
+   "sources": [
+    "https://i.ytimg.com/vi/DUXwIRHRLBE/sd1.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "p10-g02": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "도로 위의 일반 1인칭 화면이다. 휴대전화 전환이나 시점이 고정된 상황을 식별할 단서가 없다.",
+   "sources": [
+    "https://cdn.mos.cms.futurecdn.net/g8Enb9ZjZTV9xLHoMFH2RY.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "p10-g04": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "차량이 도로 위에 있는 장면으로 벽 경계에서의 이동 오류를 식별하기 어렵다.",
+   "sources": [
+    "https://i.ytimg.com/vi/wnGt2dyvEDE/sd1.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "p10-g05": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "창고 밖 여러 차량이 보이나 등록 밴의 가방 상태는 보이지 않는다.",
+   "sources": [
+    "https://i.ytimg.com/vi/DUXwIRHRLBE/sd2.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "p10-m04": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "3인칭 도로 주행 화면에서 자동 운전 상태나 수동 전환 동작이 확인되지 않는다.",
+   "sources": [
+    "https://cdn.mos.cms.futurecdn.net/YUgLGRFjchWWb3o2oVAT6D.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "p10-m08": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "벽 앞의 인물을 보여 주며 의뢰 NPC와 스태미나 보상 여부는 사진으로 식별하기 어렵다.",
+   "sources": [
+    "https://cdn.mos.cms.futurecdn.net/YkHkvAKxs7x7JyBknvQRPU.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "p10-m12": {
+   "reason": "mismatch",
+   "status": "기존 이미지 시각 대조",
+   "detail": "거점 내부 탁자와 휴대전화가 보이지만 거점 완료 및 재방문 보상 지급 상태를 확인할 수 없다.",
+   "sources": [
+    "https://static.metaforge.app/gta-6/progress/gangs/fishing-shacks.webp"
+   ],
+   "searchedWeb": false
+  },
+  "p06-c-del-17": {
+   "status": "등록",
+   "reason": "기존 원본은 있으나 썸네일 연결 누락",
+   "detail": "같은 시리즈와 영문 인물명 Tracy를 확인한 뒤 손에 든 분홍색 카드 면을 대조했다.",
+   "sources": [
+    "https://fbritoferreira.github.io/gta6/?loc=card-delights-015",
+    "https://fbritoferreira.github.io/gta6/screenshots/gta6-card-delights-015.webp"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-195": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L651(Bridge, Mariana County) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L651,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-159": {
+   "status": "등록",
+   "reason": "신규 현장 사진 연결",
+   "detail": "GTADB L654(Bridge, Vice-Dale County)의 게임 사진과 지도상의 활동(Under the Bridge: Gloriana Key North)을 대조. 좌표 차이 1 지도 단위. 캡션은 사진에서 구별되는 건물·다리로 한정했다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L654,ig.jpg",
+    "https://github.com/rolux/gtadb.org#readme",
+    "https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "searchedWeb": true
+  },
+  "p03-fx03": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L1009(Pawn Shop, Salton, Vice City) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1009,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-045": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L2661(Bridge, Kelly County) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L2661,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-196": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L1316(Bridge, Mariana County) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1316,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-148": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L2473(Bridge, Vice City) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L2473,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-164": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L2761(Bridge, Vice-Dale County) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L2761,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p03-sa079": {
+   "status": "등록",
+   "reason": "신규 현장 사진 연결",
+   "detail": "GTADB L806(La Cascara Motel, Port Gellhorn)의 게임 사진과 지도상의 활동(Lieutenant Room Safe - La Cascara Motel)을 대조. 좌표 차이 8 지도 단위. 캡션은 사진에서 구별되는 건물·다리로 한정했다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L806,ig.jpg",
+    "https://github.com/rolux/gtadb.org#readme",
+    "https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "searchedWeb": true
+  },
+  "p06-bj-008": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L185(The Sumerian, Delphino Cir, Bayside, Vice City) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L185,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-199": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L826(Bridge, Key Lento) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L826,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-083": {
+   "status": "등록",
+   "reason": "신규 현장 사진 연결",
+   "detail": "GTADB L1313(Bridge, Vice Beach)의 게임 사진과 지도상의 활동(Oleander Bridge)을 대조. 좌표 차이 12 지도 단위. 캡션은 사진에서 구별되는 건물·다리로 한정했다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1313,ig.jpg",
+    "https://github.com/rolux/gtadb.org#readme",
+    "https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-053": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L1336(Bridge, Ambrosia) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1336,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-192": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L1408(Bridge, Mariana County) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1408,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-189": {
+   "status": "등록",
+   "reason": "신규 현장 사진 연결",
+   "detail": "GTADB L1409(Bridge, Watson Bay)의 게임 사진과 지도상의 활동(Under the Bridge: Gavin's Creek East)을 대조. 좌표 차이 13 지도 단위. 캡션은 사진에서 구별되는 건물·다리로 한정했다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1409,ig.jpg",
+    "https://github.com/rolux/gtadb.org#readme",
+    "https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "searchedWeb": true
+  },
+  "p03-sa003": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L3267(Fleeca Bank, Key Lento) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L3267,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-166": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L652(Bridge, Vice City) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L652,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-040": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L886(Bridge, Ambrosia) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L886,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-150": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L1625(Bridge, Vice City) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1625,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-bj-011": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L706(Arcadia Towers (S), Downtown, Vice City) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L706,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p03-sa055": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L679(Gas Station, Stockyard, Vice City) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L679,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-kf-009": {
+   "status": "등록",
+   "reason": "신규 현장 사진 연결",
+   "detail": "GTADB L644(The Amalfi, Ocean Beach, Vice Beach)의 게임 사진과 지도상의 활동(The Amalfi Knife Flight)을 대조. 좌표 차이 20 지도 단위. 캡션은 사진에서 구별되는 건물·다리로 한정했다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L644,ig.jpg",
+    "https://github.com/rolux/gtadb.org#readme",
+    "https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-158": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L1756(Bridge, Mariana County) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1756,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p03-sa012": {
+   "status": "등록",
+   "reason": "신규 현장 사진 연결",
+   "detail": "GTADB L265(Sunrise RV Park, Mariana County)의 게임 사진과 지도상의 활동(Office Safe - Sunrise RV Park)을 대조. 좌표 차이 27 지도 단위. 캡션은 사진에서 구별되는 건물·다리로 한정했다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L265,ig.jpg",
+    "https://github.com/rolux/gtadb.org#readme",
+    "https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-119": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L422(Rivo Bridge, Rialto Islands) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L422,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-197": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L825(Bridge, Key Lento) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L825,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "p06-br-113": {
+   "status": "등록",
+   "reason": "신규 현장 사진 연결",
+   "detail": "GTADB L564(Bridge, Rialto Islands)의 게임 사진과 지도상의 활동(Casanova Island Bridge)을 대조. 좌표 차이 33 지도 단위. 캡션은 사진에서 구별되는 건물·다리로 한정했다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L564,ig.jpg",
+    "https://github.com/rolux/gtadb.org#readme",
+    "https://creativecommons.org/licenses/by/4.0/"
+   ],
+   "searchedWeb": true
+  },
+  "p06-kf-022": {
+   "status": "미확보",
+   "reason": "기존 이미지가 다른 콘텐츠와 불일치",
+   "detail": "GTADB의 L569(Clarissa Hotel, Downtown, Vice City) 사진과 핀을 대조했다. 주변 경관·지도·흐릿한 원경에서 해당 행동 지점의 특징을 식별하기 어려워 대표 사진으로 채택하지 않았다.",
+   "sources": [
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L569,ig.jpg"
+   ],
+   "searchedWeb": true
+  },
+  "l07": {
+   "status": "영상 원본과 현장 확인",
+   "reason": "신규 현장 사진 연결",
+   "detail": "작은 계단과 나무 난간이 있는 연구동의 출입구 · 해당 조우의 원본 영상과 촬영 장면을 대조했다. 영상 제공처의 미리보기를 사용하고 원본 영상으로 연결했다.",
+   "sources": [
+    "https://www.youtube.com/watch?v=V94O5xRHT5M",
+    "https://i.ytimg.com/vi/V94O5xRHT5M/hq1.jpg",
+    "https://gta6map.city/secrets/giant-mutant-crab/"
+   ],
+   "searchedWeb": true
+  },
+  "l09": {
+   "status": "영상 원본과 현장 확인",
+   "reason": "신규 현장 사진 연결",
+   "detail": "지하 시설의 둥근 금속 통로 · 해당 조우의 원본 영상과 촬영 장면을 대조했다. 영상 제공처의 미리보기를 사용하고 원본 영상으로 연결했다.",
+   "sources": [
+    "https://www.youtube.com/watch?v=xqELudeidF8",
+    "https://i.ytimg.com/vi/xqELudeidF8/hq1.jpg",
+    "https://gameta.gg/gta6/guides/aliens-and-ufo-easter-egg/"
+   ],
+   "searchedWeb": true
+  },
+  "l10": {
+   "status": "영상 원본과 현장 확인",
+   "reason": "신규 현장 사진 연결",
+   "detail": "QR 단서를 조사한 뒤 박사와 대화하는 장면 · 해당 조우의 원본 영상과 촬영 장면을 대조했다. 영상 제공처의 미리보기를 사용하고 원본 영상으로 연결했다.",
+   "sources": [
+    "https://www.youtube.com/watch?v=MJtFy0fjxjo",
+    "https://i.ytimg.com/vi/MJtFy0fjxjo/hq1.jpg",
+    "https://gta6map.city/secrets/final-flush-stamina-boost/"
+   ],
+   "searchedWeb": true
+  },
+  "l17": {
+   "status": "영상 원본과 현장 확인",
+   "reason": "신규 현장 사진 연결",
+   "detail": "보트에서 바라본 SOS 섬의 모래톱과 야자수 · 해당 조우의 원본 영상과 촬영 장면을 대조했다. 영상 제공처의 미리보기를 사용하고 원본 영상으로 연결했다.",
+   "sources": [
+    "https://www.youtube.com/watch?v=UJrtZeJvIvM",
+    "https://i.ytimg.com/vi/UJrtZeJvIvM/hq1.jpg",
+    "https://gta6bugs.com/easter-eggs/sos-island"
+   ],
+   "searchedWeb": true
+  },
+  "l22": {
+   "status": "영상 원본과 현장 확인",
+   "reason": "신규 현장 사진 연결",
+   "detail": "하이드 아일랜드의 야간 탐색 중 만나는 목조 계단 · 해당 조우의 원본 영상과 촬영 장면을 대조했다. 영상 제공처의 미리보기를 사용하고 원본 영상으로 연결했다.",
+   "sources": [
+    "https://www.youtube.com/watch?v=IxJQLem1gmo",
+    "https://i.ytimg.com/vi/IxJQLem1gmo/hq2.jpg",
+    "https://gta6map.city/secrets/hyde-island-lucia-bomb-collar-hunt/"
+   ],
+   "searchedWeb": true
+  },
+  "l08": {
+   "status": "현장·이용 조건·영상 공개 프레임 대조",
+   "reason": "rights",
+   "detail": "덱세르토 공략에는 갬빗 베이 수영 시작 장면이 있다. 해당 기사의 사진을 별도 사이트 카드에 표시할 허가는 확인하지 못했다. PDF 17쪽과 공개된 영상 프레임은 구조자와 결말을 보여 준다. 외부 원문은 열람할 수 있다.",
+   "sources": [
+    "https://www.dexerto.com/wikis/gta-6/easter-eggs/jet-ski-dog/",
+    "https://www.dexerto.com/terms-and-conditions/",
+    "https://www.youtube.com/watch?v=nJwjQX5Kb0U",
+    "https://www.youtube.com/watch?v=XLlli3nzKVo",
+    "https://www.youtube.com/watch?v=lGSRawV-3xw"
+   ],
+   "searchedWeb": true
+  },
+  "l12": {
+   "status": "사진 위치·영상 확인",
+   "reason": "mismatch",
+   "detail": "PDF 21쪽과 Beebom의 사진은 왓슨 베이의 별도 목격이다. 햄릿 남쪽 핀 접근 장면으로 사용할 수 없다. 제공 영상의 발자국·사체 사진도 해당 핀과 일치하는지 확인되지 않았다.",
+   "sources": [
+    "https://static.beebom.com/wp-content/uploads/2026/11/Bigfoot-spotted-at-the-south-of-watson-bay-in-GTA-6-1.jpg",
+    "https://www.youtube.com/watch?v=9rMOFQBvUxU",
+    "https://www.powerpyx.com/gta-6-bigfoot-sasquatch-easter-egg-location/"
+   ],
+   "searchedWeb": true
+  },
+  "l21": {
+   "status": "원본 장면 확인",
+   "reason": "spoiler",
+   "detail": "컨테이너 원본이 숨은 공간의 내부와 마지막 장치를 그대로 보여 준다.",
+   "sources": [
+    "https://static.beebom.com/wp-content/uploads/2026/11/Control-easter-egg-GTA-6.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "l24": {
+   "status": "원본 장면 확인",
+   "reason": "spoiler",
+   "detail": "원본 합성 사진이 블록 파괴 뒤의 발견과 모자 모습을 함께 공개한다.",
+   "sources": [
+    "https://static.beebom.com/wp-content/uploads/2026/11/GTA-6-Mario-block-and-hat-easter-egg.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "l27": {
+   "status": "원본 장면 확인",
+   "reason": "spoiler",
+   "detail": "보트 GPS의 원본 사진이 마지막 발견인 목적지를 직접 보여 준다. 기존 모음 영상의 대체 프레임은 다른 콘텐츠다.",
+   "sources": [
+    "https://static.beebom.com/wp-content/uploads/2026/11/GTA-6-Michaels-Boat-Los-Santos-GPS.jpg"
+   ],
+   "searchedWeb": false
+  },
+  "w02": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-4.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w03": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-6.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w04": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-8.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w07": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-14.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w10": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-20.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w13": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-26.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w14": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-28.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w15": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-30.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w16": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-32.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w17": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-34.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w18": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-36.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w19": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-38.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w20": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-40.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w21": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-42.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w23": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-46.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w24": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-48.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w26": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-52.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w27": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-54.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w28": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-56.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w29": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-58.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w31": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-62.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "w32": {
+   "status": "수중 33곳 목록과 원본 지도 시각 대조",
+   "reason": "map",
+   "detail": "PowerPyx 원본을 열어 수중 현장 대신 게임 지도의 발견 이름과 표식이 표시된 것을 확인했다. GTA6Direct의 같은 발견 항목도 위치 지도다. 33곳을 함께 다루는 영상의 공통 썸네일을 개별 장면에 붙이지 않았다.",
+   "sources": [
+    "https://www.powerpyx.com/wp-content/uploads/gta-6-underwater-discovery-location-64.jpg",
+    "https://www.powerpyx.com/gta-6-all-underwater-discoveries-locations/",
+    "https://gta6direct.com/shared/collectibles/underwater-discoveries",
+    "https://www.youtube.com/watch?v=gBQTHLYV3tQ"
+   ],
+   "searchedWeb": true
+  },
+  "x02-01": {
+   "status": "과거 자산 복원",
+   "reason": "기존 원본은 있으나 썸네일 연결 누락",
+   "detail": "배저 R&D 타워 옥상에서 내려다보는 낙하 지점 · 예전 ZIP 이미지와 원본 마커를 재대조하고 브라우저 표시를 확인했다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://fbritoferreira.github.io/gta6/?loc=parachuting-001",
+    "https://fbritoferreira.github.io/gta6/screenshots/parachuting-001.webp"
+   ]
+  },
+  "x02-02": {
+   "status": "과거 자산 복원",
+   "reason": "기존 원본은 있으나 썸네일 연결 누락",
+   "detail": "바다가 내려다보이는 전파탑 상부의 발판 · 예전 ZIP 이미지와 원본 마커를 재대조하고 브라우저 표시를 확인했다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://fbritoferreira.github.io/gta6/?loc=parachuting-002",
+    "https://fbritoferreira.github.io/gta6/screenshots/parachuting-002.webp"
+   ]
+  },
+  "p06-c-jac-26": {
+   "status": "과거 자산 복원",
+   "reason": "기존 원본은 있으나 썸네일 연결 누락",
+   "detail": "모나리사 금색 카드의 현장 · 보트와 접이식 의자 옆에 뜨는 수집 표시 · 예전 ZIP 이미지와 원본 마커를 재대조하고 브라우저 표시를 확인했다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://fbritoferreira.github.io/gta6/?loc=collectible-card-087",
+    "https://fbritoferreira.github.io/gta6/screenshots/collectible-card-087.webp"
+   ]
+  },
+  "p09-re-020": {
+   "status": "과거 자산 복원",
+   "reason": "기존 원본은 있으나 썸네일 연결 누락",
+   "detail": "보트 뒤편 수면 위로 드러난 여러 개의 지느러미 · 예전 ZIP 이미지와 원본 마커를 재대조하고 브라우저 표시를 확인했다.",
+   "searchedWeb": true,
+   "sources": [
+    "https://fbritoferreira.github.io/gta6/?loc=random-event-020",
+    "https://fbritoferreira.github.io/gta6/screenshots/random-event-020.webp"
+   ]
+  },
+  "p04-16": {
+   "reason": "등록",
+   "detail": "오토바이가 늘어선 아이언스 건축자재 창고의 열린 출입구 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-gang-operations/",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-irons-building-supply-entry.jpg",
+    "https://www.gta6heists.com/robberies/irons-building-supply"
+   ],
+   "attempts": [
+    {
+     "url": "https://www.gta6heists.com/assets/robberies/irons-building-supply/gta-6-irons-building-supply-final-chapter-choppers-in-the-yard-by-the-refinery.webp",
+     "result": "HTTP 200, 이미지 파일 직접 열기 성공. Pages 출처 브라우저 내보이기 시 EncodingError로 제외"
+    },
+    {
+     "url": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-irons-building-supply-entry.jpg",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p04-17": {
+   "reason": "등록",
+   "detail": "둥근 간판이 붙은 사운드4사운드 녹음실의 유리 출입문 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-gang-operations/",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-sound4sound-studio-entry.jpg"
+   ],
+   "attempts": [
+    {
+     "url": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-sound4sound-studio-entry.jpg",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p04-18": {
+   "reason": "등록",
+   "detail": "거리에서 접근하며 보이는 라 펄 거점 주택 정면 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-gang-operations/",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-la-perle-trap-house-entry.jpg",
+    "https://www.gta6heists.com/robberies/la-perle-trap-house"
+   ],
+   "attempts": [
+    {
+     "url": "https://www.gta6heists.com/assets/robberies/la-perle-trap-house/gta-6-la-perle-trap-house-back-wall-way-in.webp",
+     "result": "HTTP 200, 이미지 파일 직접 열기 성공. Pages 출처 브라우저 내보이기 시 EncodingError로 제외"
+    },
+    {
+     "url": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-la-perle-trap-house-entry.jpg",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p04-19": {
+   "reason": "등록",
+   "detail": "초록색 상가 끝에 있는 드립 드롭스 운동화 매장 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://howtovideogame.com/gta-6-illegal-sneaker-trade-safe-code/",
+    "https://howtovideogame.com/wp-content/uploads/2026/11/gta-6-illegal-sneaker-trade-safe-code-capture-2.webp"
+   ],
+   "attempts": [
+    {
+     "url": "https://howtovideogame.com/wp-content/uploads/2026/11/gta-6-illegal-sneaker-trade-safe-code-capture-2.webp",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p04-24": {
+   "reason": "등록",
+   "detail": "청새치 간판을 올려다볼 수 있는 야적장의 철망 출입구 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-gang-operations/",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-saber-shipping-yard-entry.jpg",
+    "https://www.gta6heists.com/robberies/saber-shipping-yard"
+   ],
+   "attempts": [
+    {
+     "url": "https://www.gta6heists.com/assets/robberies/saber-shipping-yard/gta-6-saber-shipping-yard-entrance-wall-voyager-signs.webp",
+     "result": "HTTP 200, 이미지 파일 직접 열기 성공. Pages 출처 브라우저 내보이기 시 EncodingError로 제외"
+    },
+    {
+     "url": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-saber-shipping-yard-entry.jpg",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p04-32": {
+   "reason": "등록",
+   "detail": "시가 상자가 선반에 놓인 팔미스 리커의 뒷방 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-gang-operations/",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-cigar-import-front-entry.jpg"
+   ],
+   "attempts": [
+    {
+     "url": "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/gang-operations-cigar-import-front-entry.jpg",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-s01": {
+   "reason": "등록",
+   "detail": "철길 옆 포트 겔혼 역 차고의 셔터 입구 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://nerdschalk.com/port-gellhorn-station-garage-location/",
+    "https://cdn.nerdschalk.com/wp-content/uploads/2026/11/where-to-find-port-gellhorn-station-garage-in-gta-6-shot-07-8cb62a7d-wm-tr.jpg",
+    "https://techwiser.com/gta-6-garage-locations/"
+   ],
+   "attempts": [
+    {
+     "url": "https://techwiser.com/wp-content/uploads/2026/11/Garage-6-Location-1.webp",
+     "result": "지도만 있는 기존 게임 화면 확인"
+    },
+    {
+     "url": "https://cdn.nerdschalk.com/wp-content/uploads/2026/11/where-to-find-port-gellhorn-station-garage-in-gta-6-shot-07-8cb62a7d-wm-tr.jpg",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-garage-retention": {
+   "reason": "등록",
+   "detail": "차량 정비 메뉴에서 개인 차량 등록을 선택하는 화면 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://nerdschalk.com/register-car-gta-6/",
+    "https://cdn.nerdschalk.com/wp-content/uploads/2026/11/how-to-register-a-vehicle-in-gta-6-shot-06-0721b0dd-wm-br.jpg"
+   ],
+   "attempts": [
+    {
+     "url": "https://cdn.nerdschalk.com/wp-content/uploads/2026/11/how-to-register-a-vehicle-in-gta-6-shot-06-0721b0dd-wm-br.jpg",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-garages": {
+   "reason": "등록",
+   "detail": "게임 내 휴대전화에서 차고 매물을 볼 수 있는 부동산 앱 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://techwiser.com/gta-6-garage-locations/",
+    "https://techwiser.com/wp-content/uploads/2026/11/How-to-buy-Garage-1024x576.webp"
+   ],
+   "attempts": [
+    {
+     "url": "https://techwiser.com/wp-content/uploads/2026/11/How-to-buy-Garage-1024x576.webp",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-e02": {
+   "reason": "등록",
+   "detail": "차고 표식이 뜬 쇼어 코트의 흰색 셔터와 골목 확인. 출처 설명과 실제 장면을 비교하고 배포 주소에서 이미지 디코딩을 확인함.",
+   "sources": [
+    "https://www.gtaboom.com/gta-6-vintage-vice-city-pack-claim-guide-3ca6#find-shore-court-garage",
+    "https://media.gtaboom.com/variants/1920/media/images/33/77/garage-66333faaa985c05f.jpg",
+    "https://getvicekeys.com/guides/gta-6-55-vapid-stanier",
+    "https://gta6replay.com/properties/shore-court-garage/"
+   ],
+   "attempts": [
+    {
+     "url": "https://gta6replay.com/assets/database/images/shore-court-garage.jpg",
+     "result": "게임 차량과 해변 도로만 보여 셔터를 식별할 수 없음"
+    },
+    {
+     "url": "https://media.gtaboom.com/variants/1920/media/images/33/77/garage-66333faaa985c05f.jpg",
+     "result": "HTTP 200. 실제 브라우저에서 원본 호스트 이미지 표시 성공"
+    }
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-g04": {
+   "reason": "map",
+   "detail": "TechWiser 10번과 GTA6 Replay의 게임 캡처는 지도뿐. GTA6 Tracker 현장 사진은 36m 떨어진 급수탑 L657이며, GTABase 대표 이미지는 VI 로고이다.",
+   "sources": [
+    "https://techwiser.com/gta-6-garage-locations/",
+    "https://gta6replay.com/properties/store-n-bolt/",
+    "https://www.gta6tracker.org/l/store-n-bolt",
+    "https://www.gtabase.com/gta-6/properties/store-n-bolt"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-s02": {
+   "reason": "map",
+   "detail": "기존 자료와 Previously·GTA6 Replay의 톰프슨 코트 화면은 지도 핀만 보여 준다. 현장 사진으로 소개된 L2165의 실제 대상은 36m 떨어진 빈 머신 카페다.",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-garages-owned/",
+    "https://gta6replay.com/properties/thompson-court-garage/",
+    "https://www.gta6tracker.org/l/thompson-court-garage"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-s03": {
+   "reason": "map",
+   "detail": "NE 15번가 개별 원본과 Previously 캡처는 지도 핀이다. GTA6 Tracker L480은 39m 떨어진 스톡야드 건물로 표기되어 차고와 일치하지 않는다.",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-garages-owned/",
+    "https://gta6replay.com/properties/ne-15th-street-garage/",
+    "https://www.gta6tracker.org/l/ne-15th-street-garage"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-e03": {
+   "reason": "mismatch",
+   "detail": "GTA Xtreme의 전용 화면은 추정 검색 지역을 나타낸 지도. Leonida Hub 갤러리의 실제 피사체는 베스푸치 섬 저택 차고와 셀레리카 배달 장면이다.",
+   "sources": [
+    "https://leonidahub.org/en/guides/money/list/crosstown-garage",
+    "https://www.gta-xtreme.com/en/gta-6-elegy-locations",
+    "https://www.rockstargames.com/gta-plus/benefits"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-f01": {
+   "reason": "spoiler",
+   "detail": "확인된 실내 사진에는 벽화 퍼즐의 최종 보상과 착시 벽화가 함께 보인다. 다른 후보는 정답 숫자가 적힌 영상 섬네일 또는 외부 제작자의 이용 허가가 필요한 영상 캡처다.",
+   "sources": [
+    "https://getvicekeys.com/guides/gta-6-1010-murals-and-cheetah",
+    "https://gta6info.app/vehicles/grotti-1010-cheetah",
+    "https://gta6info.app/guides/grotti-1010-cheetah-free-garage-southside-storage-code-1010",
+    "https://gta-walkthrough.com/gta-6-1010-murals/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-property-catalog": {
+   "reason": "overview",
+   "detail": "22개 부동산을 종합하는 항목. GTABase의 전체 분류 대표 이미지는 프로모션 배너이고, 부동산 지도 사이트의 개별 매물 사진은 다른 항목에 대응한다.",
+   "sources": [
+    "https://www.gtabase.com/gta-6/properties/",
+    "https://www.gtafinder.com/gta-6/guides/garages",
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-garages-owned/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p07-first-garage": {
+   "reason": "overview",
+   "detail": "예산·슬롯 비교 전용 화면은 확인되지 않았다. TechWiser의 구매 단계 사진은 이미 와이엇 모터스 항목에 쓰인 같은 매물 장면으로, 현재 확인한 자료는 개별 매물이나 앱 진입 화면이다.",
+   "sources": [
+    "https://techwiser.com/gta-6-garage-locations/",
+    "https://www.gtafinder.com/gta-6/guides/garages"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-016": {
+   "reason": "mismatch",
+   "detail": "초상과 농장 사진이 후속 방문의 특정 장면인지 확인되지 않음",
+   "sources": [
+    "https://heistatlas.com/en/database/missions/buddy/",
+    "https://www.youtube.com/watch?v=jLrnAuNxFzY"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-054": {
+   "reason": "mismatch",
+   "detail": "GTA6Tracker의 Hostile Takeover는 다른 GTA 작품의 사진이라고 원문에 명시. Notebook은 PowerPyx 지도 화면만 있고 실제 비행장 현장 사진은 확보되지 않음.",
+   "sources": [
+    "https://gta6notebook.com/walkthrough/petes-deliveries-southpoint-airfield/",
+    "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L1562,ig.jpg",
+    "https://www.gta6tracker.org/l/hostile-takeover"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-055": {
+   "reason": "등록",
+   "detail": "에이버리 앨런 배송 중 흐린 날씨에 수상기를 조종하는 장면 · 정확한 단계명 Stormy Weather와 해당 영상 및 프레임 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=DK4DafTzz0Y",
+    "https://i.ytimg.com/vi/DK4DafTzz0Y/hq2.jpg",
+    "https://getvicekeys.com/guides/gta-6-petes-deliveries-avery-allen"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-056": {
+   "reason": "mismatch",
+   "detail": "레너드 카운티 마지막 배송 단독 촬영 자료 미확보",
+   "sources": [
+    "https://senseos.gg/wiki/grand-theft-auto-vi/missions/deliver-packages-pilot-pete/",
+    "https://www.gtabase.com/gta-6/strangers/deliver-packages-pilot-pete",
+    "https://www.vicecitytracker.com/side-missions/pilot-pete"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-079": {
+   "reason": "mismatch",
+   "detail": "챕터 전체 자금 목표와 개별 선택 의뢰의 대표 장면을 구분할 근거가 부족함",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-optional-missions/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-003": {
+   "reason": "등록",
+   "detail": "침팬지 보호소 의뢰를 시작하며 노아와 만나는 장면 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=Ws117MWo2qE",
+    "https://i.ytimg.com/vi/Ws117MWo2qE/hq2.jpg",
+    "https://www.powerpyx.com/gta-6-bring-out-the-chimp-help-save-the-chimps-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-005": {
+   "reason": "등록",
+   "detail": "파이프와 펌프가 설치된 가스 채굴 시설 안 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=EpXogSEL-4Y",
+    "https://i.ytimg.com/vi/EpXogSEL-4Y/hq2.jpg",
+    "https://www.powerpyx.com/gta-6-twin-flames-shut-down-the-fracking-site-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-006": {
+   "reason": "등록",
+   "detail": "연락책이 안내한 장소의 자판기 앞 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=RejpOq37Dy0",
+    "https://i.ytimg.com/vi/RejpOq37Dy0/hq2.jpg",
+    "https://www.powerpyx.com/gta-6-dodo-rise-meet-with-the-dodos-contact-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-022": {
+   "reason": "등록",
+   "detail": "첫 사냥 덱의 흰꼬리사슴을 찾아 조준하는 화면 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=QJzJGibGXSw",
+    "https://i.ytimg.com/vi/QJzJGibGXSw/hq2.jpg",
+    "https://www.powerpyx.com/gta-6-all-strangers-freaks-side-missions/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-033": {
+   "reason": "등록",
+   "detail": "셀레리카 참가비를 보내기 위해 휴대폰의 벅미 앱을 여는 화면 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=HQ0PA2vEnKc",
+    "https://i.ytimg.com/vi/HQ0PA2vEnKc/hq3.jpg",
+    "https://www.powerpyx.com/gta-6-pay-the-cellerica-fee-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-035": {
+   "reason": "등록",
+   "detail": "셀레리카 밴을 몰아 창고로 향하는 장면 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=ik6oCAo1gCE",
+    "https://i.ytimg.com/vi/ik6oCAo1gCE/hq2.jpg",
+    "https://www.powerpyx.com/gta-6-read-the-label-retrieve-the-cellerica-van-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-044": {
+   "reason": "등록",
+   "detail": "덩크가 알려준 스캐터드 파인스의 트레일러 구역 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=dJ7I32Med7E",
+    "https://i.ytimg.com/vi/dJ7I32Med7E/hq1.jpg",
+    "https://www.powerpyx.com/gta-6-all-strangers-freaks-side-missions/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-045": {
+   "reason": "등록",
+   "detail": "해변에서 파파 오대시티 일행과 처음 만나는 장면 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=-zxX8B8-Xsw",
+    "https://i.ytimg.com/vi/-zxX8B8-Xsw/hq1.jpg",
+    "https://www.powerpyx.com/gta-6-the-unknown-stuntman-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-046": {
+   "reason": "등록",
+   "detail": "시험 주행에 사용하는 오대시티 표식 점프대 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=8LI_jMehmcQ",
+    "https://i.ytimg.com/vi/8LI_jMehmcQ/hq3.jpg",
+    "https://www.powerpyx.com/gta-6-trial-by-tire-meet-the-audacity-engineer-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-047": {
+   "reason": "등록",
+   "detail": "피콕 베이 낙하 스턴트를 위해 탑승한 항공기 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=SH2UARHCVQY",
+    "https://i.ytimg.com/vi/SH2UARHCVQY/hq2.jpg",
+    "https://www.powerpyx.com/gta-6-quit-your-job-sell-your-house-help-papa-audacity-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-049": {
+   "reason": "등록",
+   "detail": "분홍 연기를 뿜으며 도심 상공을 비행하는 곡예기 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=67Nl30GUsi8",
+    "https://i.ytimg.com/vi/67Nl30GUsi8/hq2.jpg",
+    "https://www.powerpyx.com/gta-6-catching-a-whale-help-papa-audacity-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-050": {
+   "reason": "등록",
+   "detail": "해 질 무렵 조명이 켜진 오대시티 출시 행사장 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=FrBRofMqgWs",
+    "https://i.ytimg.com/vi/FrBRofMqgWs/hq1.jpg",
+    "https://www.powerpyx.com/gta-6-the-audacity-attend-the-launch-party-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-052": {
+   "reason": "등록",
+   "detail": "선다운 비행장 격납고 안에서 회수할 피트의 비행기 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=QSRuFBHSo-c",
+    "https://i.ytimg.com/vi/QSRuFBHSo-c/hq3.jpg",
+    "https://www.powerpyx.com/gta-6-the-last-mile-passing-the-torch-recover-petes-plane-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-066": {
+   "reason": "등록",
+   "detail": "에이버리 전당포의 진열대와 매장 내부 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=QYVkps7RU4g",
+    "https://i.ytimg.com/vi/QYVkps7RU4g/hq1.jpg",
+    "https://www.powerpyx.com/gta-6-hit-avery-pawn-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-072": {
+   "reason": "등록",
+   "detail": "드레콴의 연락으로 받는 오토바이 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=J8dpbb1NPUU",
+    "https://i.ytimg.com/vi/J8dpbb1NPUU/hq1.jpg",
+    "https://www.powerpyx.com/gta-6-drequans-gift-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-073": {
+   "reason": "등록",
+   "detail": "잠긴 철문 앞에서 표시되는 개방 선택지 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=oP3PBiywlOU",
+    "https://i.ytimg.com/vi/oP3PBiywlOU/hq2.jpg",
+    "https://www.powerpyx.com/gta-6-thats-where-the-money-is-wait-at-the-cafe-walkthrough/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-sp": {
+   "reason": "등록",
+   "detail": "바이스 시티 해변 잔디에서 대련을 제안하는 상대 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.youtube.com/watch?v=JJPxm1aKBIc",
+    "https://i.ytimg.com/vi/JJPxm1aKBIc/hq1.jpg",
+    "https://gtascoop.com/guides/gta-6-random-encounters/#the-beach-grappler-the-beta-blocker"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-pe": {
+   "reason": "등록",
+   "detail": "선다운 비행장 격납고에서 피트의 비행기와 붉은 출입문을 확인하는 장면 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-pilot-pete-deliveries/",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/pilot-pete-hangar-clean.jpg",
+    "https://gtascoop.com/map/#mission-passing-the-torch"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  },
+  "p09-m-039": {
+   "reason": "등록",
+   "detail": "대출점 의뢰에서 방문할 수 있는 사우스사이드 점포 외관 · 실제 장면 대조 및 Chromium decode 확인",
+   "sources": [
+    "https://www.watchpreviously.com/news/gta-6-walkthrough/side-payday-loan-stores/",
+    "https://www.watchpreviously.com/news/gta-vi-side-content-tracker/assets/payday-loans-southside.webp",
+    "https://www.powerpyx.com/gta-6-all-strangers-freaks-side-missions/"
+   ],
+   "searchedWeb": true,
+   "status": "전용 원본 및 실화면 대조"
+  }
+ },
+ "probeMethod": "2026-11-26 배포 웹앱 페이지에서 Chromium Image.decode()를 시험했다. 첫 시도에 실패한 URL은 다시 시도하고 두 번 모두 각각 동일 URL의 HEAD 응답과 Cross-Origin-Resource-Policy를 확인했다. 이미지 파일 등록 및 표시 가능 여부를 판단하는 검사이며 대상과 권리에 대한 판정은 별도다.",
+ "pdfVisualChecks": [
+  {
+   "book": "P07",
+   "page": 9,
+   "ids": [
+    "p07-g04"
+   ],
+   "finding": "차고 위치 지도와 기본 매물 자료를 양쪽 차고별로 분리해 확인."
+  },
+  {
+   "book": "P07",
+   "page": 12,
+   "ids": [
+    "p07-s01",
+    "p07-s02"
+   ],
+   "finding": "첫 무료 차고와 톰프슨 코트 차고의 위치 자료를 구분. 본문에 실기 외관 검증 대기 표시가 있는 칸이 있다."
+  },
+  {
+   "book": "P07",
+   "page": 13,
+   "ids": [
+    "p07-s03"
+   ],
+   "finding": "NE 15번가 차고는 지도와 실기 사진 검증 대기 문구가 있다. 오른쪽 페가시 차고 사진은 별도 건물이다.",
+   "reasonCode": "map"
+  },
+  {
+   "book": "P07",
+   "page": 15,
+   "ids": [
+    "p07-e02"
+   ],
+   "finding": "오른쪽 쇼어 코트에는 지도, 왼쪽 파라다이스에만 실물 차고 사진이 있다.",
+   "reasonCode": "map"
+  },
+  {
+   "book": "P09",
+   "page": 25,
+   "ids": [
+    "p09-pe"
+   ],
+   "finding": "페이지 하단의 피트 항공 배송 장면을 확인. 상단 스턴트 운전은 별개 의뢰다."
+  },
+  {
+   "book": "P09",
+   "page": 33,
+   "ids": [
+    "p09-sp"
+   ],
+   "finding": "상단 괴담의 도로 지도와 하단 해변 대련 현장 사진을 구분."
+  },
+  {
+   "book": "P05",
+   "page": 16,
+   "ids": [
+    "l07"
+   ],
+   "finding": "좌측 위치 지도, 우측 연구 시설 안쪽에서 드러나는 생물. 후자의 기본 노출은 발견 내용을 공개한다.",
+   "reasonCode": "spoiler"
+  },
+  {
+   "book": "P05",
+   "page": 17,
+   "ids": [
+    "l08"
+   ],
+   "finding": "좌측 위치 지도, 우측 구조자와 탈것 정체가 보이는 장면.",
+   "reasonCode": "spoiler"
+  },
+  {
+   "book": "P05",
+   "page": 18,
+   "ids": [
+    "l09"
+   ],
+   "finding": "지도와 차량으로 접근하는 플레이 장면. 퍼즐 해답은 이 장면에 없다."
+  },
+  {
+   "book": "P05",
+   "page": 19,
+   "ids": [
+    "l10"
+   ],
+   "finding": "지도와 실내 벽에서 단서를 찾는 장면."
+  },
+  {
+   "book": "P05",
+   "page": 21,
+   "ids": [
+    "l12"
+   ],
+   "finding": "본문에서 우측 사진은 왓슨 베이의 별도 조우, 표식은 햄릿 남쪽이라고 명시.",
+   "reasonCode": "mismatch"
+  },
+  {
+   "book": "P05",
+   "page": 26,
+   "ids": [
+    "l17"
+   ],
+   "finding": "좌측 섬 지도와 우측 모래 위 SOS 표식이 있는 실제 장면을 구분."
+  }
+ ]
+}

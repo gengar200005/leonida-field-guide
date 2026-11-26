@@ -7,7 +7,7 @@ import shutil
 import zipfile
 from pathlib import Path
 
-from editorial_merge import apply_merges
+from editorial_merge import apply_merges, classify_guides
 from reader_names import prepare_reader_names
 
 ROOT = Path(__file__).resolve().parent
@@ -265,8 +265,6 @@ def organize_campaign(data, missions):
         if row["english"] not in aliases:
             aliases.append(row["english"])
         item["sourceTitleIndex"] = aliases.index(row["english"])
-        if item["category"] != "P01" and "P01" not in item.setdefault("alsoCategories", []):
-            item["alsoCategories"].append("P01")
 
     for item in items.values():
         for section in item["sections"]:
@@ -301,6 +299,15 @@ def build():
     organize_campaign(data, read("campaign-order.json")["missions"])
     for filename in ("editorial-media.json", "campaign-media.json", "events-media.json", "exploration-media.json"):
         apply_editorial_photos(data, read(filename), protected_aliases)
+    decisions = read("editorial-classification.json")
+    final_groups = decisions["merges"]
+    # Complete the previous release's guide and media overlays before transferring
+    # their content. This preserves former representatives as historical redirects.
+    protected_targets = {alias for group in final_groups.values() if group.get("protectAliasMedia") for alias in group["aliases"]}
+    protected_aliases.update(protected_targets)
+    protected_aliases.update(old for old, target in data["redirects"].items() if target in protected_targets)
+    apply_merges(data, final_groups)
+    classify_guides(data, decisions)
     assign_thumbnails(data, read("thumbnail-media.json"), protected_aliases)
     ids = {row["id"].lower() for row in data["items"]}
     assert len(ids) == len(data["items"])

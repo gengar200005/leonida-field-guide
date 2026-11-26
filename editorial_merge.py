@@ -84,7 +84,7 @@ def include_section(target, incoming):
 
 def combine(target, old, group):
     old_id = old["id"]
-    for name in ("aliases", "related", "originalTerms"):
+    for name in ("aliases", "related", "originalTerms", "legacyIds"):
         values = old.get(name, [])
         if name == "aliases":
             values = [old["title"], *values]
@@ -93,23 +93,34 @@ def combine(target, old, group):
     old_category = old["category"]
     pages = old.get("sourcePages", [])
     if target["category"] != old_category:
-        target["alsoCategories"] = unique([*target.get("alsoCategories", []), old_category])
         if pages:
             by_book = target.setdefault("alsoSourcePages", {})
             by_book[old_category] = sorted(set(by_book.get(old_category, [])) | set(pages))
     elif pages:
         target["sourcePages"] = sorted(set(target.get("sourcePages", [])) | set(pages))
 
+    for book, source_pages in old.get("alsoSourcePages", {}).items():
+        by_book = target.setdefault("alsoSourcePages", {})
+        by_book[book] = sorted(set(by_book.get(book, [])) | set(source_pages))
     for ref in old.get("sources", []):
         add_source(target, ref)
     merge_references(target, old.get("fieldReferences"))
+    for references in old.get("otherFieldReferences", []):
+        merge_references(target, references)
+    if old.get("unlock") and old["unlock"] != target.get("unlock"):
+        if not target.get("unlock"):
+            target["unlock"] = old["unlock"]
+        else:
+            include_section(target, {"title": "해금과 이용 시점", "paragraphs": [old["unlock"]]})
     summary = old.get("summary", "").strip()
     represented = group.get("representedSummaries", [])
     if summary and summary != target["summary"] and summary not in represented:
         existing_text = json.dumps(target["sections"] + old["sections"], ensure_ascii=False)
         if summary not in existing_text:
             note = {"title": "현장에서 알아볼 점", "paragraphs":[summary]}
-            if target["category"] == "P05":
+            if group.get("protectAliasSections"):
+                note["reveal"] = group["protectAliasSections"]
+            elif target["category"] == "P05":
                 note["reveal"] = "location"
             include_section(target, note)
 
@@ -152,12 +163,11 @@ def merge_pins(data, aliases, by_id):
                 add_source(by_id[key], {"url":pin["url"], "label": pin.get("mapTitle") or "현장 위치 지도"})
             continue
         pin["category"] = by_id[key]["category"]
-        if by_id[key].get("alsoCategories"):
-            pin["alsoCategories"] = by_id[key]["alsoCategories"]
         retained.append(pin)
         positions.setdefault(marker_key, pin)
     data["pins"] = retained
-    data["pinRedirects"] = redirects
+    previous = data.get("pinRedirects", {})
+    data["pinRedirects"] = {**{key: redirects.get(value, value) for key, value in previous.items()}, **redirects}
 
 
 def rewire(items, redirects, pin_redirects):
@@ -222,3 +232,34 @@ def apply_merges(data, groups):
             pin["region"] = region
     rewire(data["items"], redirects, data["pinRedirects"])
     return aliases
+
+def classify_guides(data, decisions):
+    """Publish one primary category and retain the actual source book for page citations."""
+    by_id = {item["id"].lower(): item for item in data["items"]}
+    categories = {}
+    for category, keys in decisions["categories"].items():
+        if category not in data["categories"] or set(keys) & categories.keys():
+            raise ValueError(f"Unknown or conflicting primary category: {category}")
+        categories.update(dict.fromkeys(keys, category))
+    for item in by_id.values():
+        if item.get("track") == "story":
+            categories[item["id"].lower()] = "P01"
+    for key, category in categories.items():
+        item = by_id[key]
+        previous = item["category"]
+        if previous != category:
+            pages = item.pop("sourcePages", [])
+            books = item.setdefault("alsoSourcePages", {}) if pages or item.get("alsoSourcePages") else {}
+            if pages:
+                books[previous] = sorted(set(pages) | set(books.get(previous, [])))
+            if category in books:
+                item["sourcePages"] = books.pop(category)
+            item["category"] = category
+    for mission_type, keys in decisions["missionTypes"].items():
+        for key in keys:
+            item = by_id[key]
+            if item["category"] != "P09":
+                raise ValueError(f"Activity classification outside P09: {key}")
+            item["missionType"] = mission_type
+    for pin in data["pins"]:
+        pin["category"] = by_id[pin["item"].lower()]["category"]
