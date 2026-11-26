@@ -11667,6 +11667,23 @@
         "https://www.rockstargames.com/VI/media/screenshots",
         "https://support.rockstargames.com/articles/7bNaeoMFTV0iUDGhStTXvz/policy-on-posting-copyrighted-rockstar-games-material"
       ]
+    },
+    {
+      "date": "2026-11-26",
+      "focus": "외형 원본 사진을 도감 카드에서 직접 열람",
+      "checks": [
+        "외형 링크가 있는 무기·장비와 차량은 원본 제공처의 공개 이미지 주소로 외형 영역을 채움. 가까운 화면의 카드부터 로드하며, 외형 이미지를 눌러 같은 화면에서 확대하고 원본 링크도 열 수 있음.",
+        "외형 요청이 실패한 카드의 같은 자리에는 원본 링크를 표시. 기존의 지도·현장 사진 버튼은 외형과 별도로 표시.",
+        "어쌔신 니퍼 .38은 출처 도감의 대표 이미지 표제와 대조하여 확인한 외형 사진 주소를 연결. 테니엔테 마냐나는 카드의 외형 전용 출처 사진을 사용."
+      ],
+      "entryIds": [
+        "p02-w-001",
+        "v-02"
+      ],
+      "sources": [
+        "https://metaforge.app/gta-6/database/weapons/assassin-nipper-38",
+        "https://metaforge.app/gta-6/database/vehicles/albany-teniente-manana"
+      ]
     }
   ],
   "responsive": {

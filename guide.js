@@ -100,17 +100,18 @@ function cardPhotoLink(v){
  if(m?.reveal||m?.originalReveal)return "";
  return link(m?.originalPhoto,m?.originalLinkLabel||"현장 사진 원본")||link(v.fieldReferences?.photo,"현장 사진 원본");
 }
+const appearanceLabels=new Set(["차량 외형 원본","공식 장비 사진 원본"]);
 function catalogAppearance(v,m){
  if(m?.reveal)return {};
- const labeled=m?.originalLinkLabel==="차량 외형 원본"||m?.originalLinkLabel==="공식 장비 사진 원본";
- const original=m?.originalReveal?undefined:labeled&&url(m.originalPhoto)?m.originalPhoto:appearanceSource(v)?.url;
+ const labeled=appearanceLabels.has(m?.originalLinkLabel)?url(m.originalPhoto):"";
+ const original=m?.originalReveal?undefined:appearanceSource(v)?.url||(labeled?m.originalPhoto:undefined);
  return {embedded:m?.kind==="appearance"?m.src:undefined,original};
 }
 function catalogFieldPhoto(v,m,appearance){
  if(m?.reveal)return "";
  if(m?.src&&m.kind!=="appearance")return '<button data-action="image" data-id="'+esc(v.id)+'">현장 사진</button>';
  if(m?.originalReveal)return "";
- const original=m?.originalPhoto!==appearance?link(m?.originalPhoto,"현장 사진"):"";
+ const original=!appearanceLabels.has(m?.originalLinkLabel)&&m?.originalPhoto!==appearance?link(m?.originalPhoto,"현장 사진"):"";
  return original||link(v.fieldReferences?.photo,"현장 사진");
 }
 function catalogThumbnail(m,v){
@@ -124,9 +125,11 @@ function catalogThumbnail(m,v){
 }
 function catalogCard(v){
  const m=photo(v),appearance=catalogAppearance(v,m),label=esc(v.title);
+ const original=url(appearance.original);
  const preview=appearance.embedded
   ?'<button data-action="image" data-id="'+esc(v.id)+'" aria-label="'+label+' 외형 사진 확대">'+catalogThumbnail(m,v)+'</button>'
-  :link(appearance.original,"외형 원본")||'<span>외형 사진 없음</span>';
+  :original?'<a class="catalog-original" href="'+original+'" target="_blank" rel="noopener noreferrer" data-action="appearance" data-id="'+esc(v.id)+'" aria-label="'+label+' 외형 사진 확대"><img loading="lazy" src="'+original+'" alt="'+label+' 외형"></a>'
+  :'<span>외형 사진 없음</span>';
  const point=pinLinks(v).find(p=>!variableBox(p));
  const map=point?'<a href="'+esc(mapPinRoute(point))+'">지도</a>':link(v.fieldReferences?.map,"원본 지도");
  const photoLink=catalogFieldPhoto(v,m,appearance.original);
@@ -199,7 +202,7 @@ function listPage(page,id,p){
    return mediaFilter!=="photo"||embedded||linked;
   });
  }
- const photoControl=visual?'<label>'+(catalog?"외형 사진":"사진")+' <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("embedded",catalog?"외형 미리보기":"도감에 사진이 있는 항목",mediaFilter)+opt("original",catalog?"외형 원본 링크":"원본 사진 링크가 있는 항목",mediaFilter)+opt("photo",catalog?"외형 사진 또는 링크":"사진 또는 원본 링크",mediaFilter)+'</select></label>':"";
+ const photoControl=visual?'<label>'+(catalog?"외형 사진":"사진")+' <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("embedded",catalog?"사이트에 저장된 사진":"도감에 사진이 있는 항목",mediaFilter)+opt("original",catalog?"외부 원본 사진":"원본 사진 링크가 있는 항목",mediaFilter)+opt("photo",catalog?"사진이 있는 항목":"사진 또는 원본 링크",mediaFilter)+'</select></label>':"";
  const reading={V:"v-registration",P02:"p02-collection-check",P01:"p01-save-slots",P06:"p06-collection-targets",P09:"p09-region-routes",P08:"p08-range-medals",P04:"p04-first-visit",P05:"p05-region-exploration",P07:"p07-first-garage"};
  const firstGuide=!mine&&!search?findItem(reading[cat]):null;
  const routeGuideIds={V:["v-42-collection-route","v-vehicle-index"],P01:["p01-roadmap"],P02:["p02-play-guide","p02-weapon-index","p02-field-pickup-route"],P03:["p03-economy-overview"],P04:["p04-catalog"],P07:["p07-property-catalog"],P08:["p08-training-start"],P09:["p09-start-here","p09-mission-index","p09-encounter-index","p09-chapter-deadlines","p09-world-activities"],P10:["p10-story-tools","p10-report-index"]}[cat]||[];
@@ -435,6 +438,19 @@ main.addEventListener("change",async e=>{const el=e.target;
  if(el.dataset.change){setParam(el.dataset.change,el.value);return}
  if(el.id==="restore"&&el.files[0]){try{const data=parseState(JSON.parse(await el.files[0].text()));state=data;save();render();document.querySelector("#feedback").textContent="기록을 가져왔습니다."}catch{document.querySelector("#feedback").textContent="지원하는 기록 JSON 파일을 선택하세요."}}});
 const dialog=document.querySelector("#lightbox");dialog.querySelector("button").onclick=()=>dialog.close();
+function showPhoto(src,caption,source=""){
+ dialog.querySelector("figure").innerHTML='<img src="'+esc(src)+'" alt="'+esc(caption)+'"><figcaption>'+esc(caption)+source+'</figcaption>';
+ dialog.showModal();
+}
+main.addEventListener("error",e=>{
+ const image=e.target;
+ if(image.localName!=="img")return;
+ const anchor=image.closest('a[data-action="appearance"]');
+ if(!anchor)return;
+ anchor.textContent="외형 원본 ↗";
+ anchor.removeAttribute("data-action");
+ anchor.removeAttribute("aria-label");
+},true);
 main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)return;
  if(el.dataset.video){const frame=document.createElement("iframe");frame.title="공략 영상";frame.src="https://www.youtube-nocookie.com/embed/"+el.dataset.video+"?start="+Number(el.dataset.time)+"&autoplay=1";frame.allow="autoplay; encrypted-media; fullscreen";frame.allowFullscreen=true;frame.referrerPolicy="strict-origin-when-cross-origin";frame.className="video";el.replaceWith(frame);return}
  if(el.dataset.scroll!==undefined){
@@ -468,6 +484,11 @@ main.addEventListener("click",e=>{const el=e.target.closest("button,a");if(!el)r
   next.scrollTop=centerY*next.scrollHeight-next.clientHeight/2;
   if(keepFocus)main.querySelector('[data-action="'+action+'"]').focus({preventScroll:true});
  }
- else if(action==="image"){const v=findItem(el.dataset.id),m=photo(v);dialog.querySelector("figure").innerHTML='<img src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"><figcaption>'+esc(m.caption||v.title)+'</figcaption>';dialog.showModal()}
+ else if(action==="image"){const v=findItem(el.dataset.id),m=photo(v);showPhoto(m.src,m.caption||v.title)}
+ else if(action==="appearance"&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey&&el.querySelector("img")?.naturalWidth){
+  e.preventDefault();
+  const v=findItem(el.dataset.id);
+  showPhoto(el.href,v.title+" 외형"," · "+link(el.href,"외형 원본"));
+ }
  else if(action==="export"){const file=new Blob([JSON.stringify(state,null,2)],{type:"application/json"}),a=document.createElement("a");a.href=URL.createObjectURL(file);a.download="leonida-progress.json";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}});
 routeChanged();
