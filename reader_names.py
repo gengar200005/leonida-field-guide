@@ -50,6 +50,21 @@ def prepare_reader_names(data, names):
                 item["title"] = translation
                 aliases.append(title)
                 item["sourceTitleIndex"] = list(dict.fromkeys(aliases)).index(title)
+        if key.startswith("p06-fl-") and len(by_item[key]) == 1:
+            # The collectible number distinguishes similar field descriptions and
+            # keeps the card, search result and exact map pin under one name.
+            pin = by_item[key][0]
+            name = pin["mapTitle"]
+            if re.fullmatch(r"플라밍고 [0-9]+번", name):
+                place = next((row[1] for section in item["sections"]
+                              for row in section.get("table", {}).get("rows", [])
+                              if len(row) == 2 and row[0] == "지도 지명" and row[1]), "")
+                if place:
+                    name += " · " + translate_labels(place)
+                    pin["mapTitle"] = name
+            if item["title"] != name:
+                aliases.append(item["title"])
+                item["title"] = name
         canonical = consistent_places(item["title"])
         if canonical != item["title"]:
             aliases.append(item["title"])

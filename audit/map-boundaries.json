@@ -1,0 +1,320 @@
+{
+  "date": "2026-11-26",
+  "baseline": "527d04a3a3606b55e4b36249ff8b4230c9de4eb3",
+  "coverage": {
+    "formerRadiusLabels": 62,
+    "officialAdministrativeBoundaries": 0,
+    "shoreNamedAreas": 14,
+    "landComponents": 19,
+    "inland": "경계 확정 불가. 음영 없음. 지역별 원본 지도를 별도 열 수 있음."
+  },
+  "geometry": "실제 표시 중인 4608×5632 GTADB 지도에서 독립된 섬의 해안을 추적. 구역 전체를 추정하지 않으며 섬이 확인되는 부분만 표시. 좌표는 게임 x,y. 원점 픽셀 (3072,3072), 한 픽셀은 4 게임 좌표 단위. SVG와 point-in-polygon이 같은 좌표를 사용.",
+  "sources": [
+    {
+      "url": "https://github.com/rolux/gtadb.org",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "use": "GTADB.ORG and contributors. 서비스가 사용하는 상세 지도에서 해안과 호수 윤곽을 추출하고 단순화."
+    },
+    {
+      "url": "https://fbritoferreira.github.io/gta6/data/land.json",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "use": "Open GTA 6 Map (fbritoferreira). 인쇄 지도에서 추적한 육지 성분을 원본 해안과 대조. x = 32u − 16384, y = 16384 − 32v. 인쇄 지도와 실지도의 물가 위치가 다른 곳은 실지도를 기준으로 대조."
+    },
+    {
+      "url": "https://fbritoferreira.github.io/gta6/data/districts.json",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "use": "10개 권역 모두 제외. scripts/build-districts.ts에서 장소 보로노이 및 반경을 사용하며 원형에 가까운 미확인 내륙과 수면 홀 누락."
+    },
+    {
+      "url": "https://gtamap.io/?areas=outline",
+      "version": "/data/areas/gta6.json?v=5007e3bb",
+      "use": "87개 지역, 5개 카운티 판독. 이용 조건에서 구역 파일에 대한 재배포 허가를 확인하기 어려워 윤곽 대조 및 이름·카운티 교차확인과 직접 링크에만 이용. 건물·지명 또는 별도 구역에 걸치는 섬 제외."
+    },
+    {
+      "url": "https://negentropy.studio/districts/",
+      "use": "검색 색인에 게임의 map_regions_20_counties 및 map_regions_50_neighborhoods 소스 설명이 있으나 원본 /districts/, /about/, gta.zone/districts/ 모두 HTTP 410. 데이터 접근 및 이용 조건 미확인으로 적용하지 않음."
+    }
+  ],
+  "observations": [
+    {
+      "region": "Rialto Islands",
+      "parts": [
+        {
+          "idx": 50,
+          "referenceCoverage": 0.991,
+          "shoreCrosscheck": 0.692,
+          "anchors": [],
+          "sample": [
+            545,
+            1284
+          ]
+        },
+        {
+          "idx": 75,
+          "referenceCoverage": 0.988,
+          "shoreCrosscheck": 0.739,
+          "anchors": [],
+          "sample": [
+            764,
+            1326
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Starfish Island",
+      "parts": [
+        {
+          "idx": 35,
+          "referenceCoverage": 0.953,
+          "shoreCrosscheck": 0.838,
+          "anchors": [
+            "L2731"
+          ],
+          "sample": [
+            902,
+            495
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Port Vice City",
+      "parts": [
+        {
+          "idx": 8,
+          "referenceCoverage": 0.991,
+          "shoreCrosscheck": 0.916,
+          "anchors": [
+            "L689",
+            "L690",
+            "L691"
+          ],
+          "sample": [
+            750,
+            -579
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Gloriana Key",
+      "parts": [
+        {
+          "idx": 7,
+          "referenceCoverage": 0.967,
+          "shoreCrosscheck": 0.953,
+          "anchors": [
+            "L1874",
+            "L1886"
+          ],
+          "sample": [
+            1076,
+            -1636
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Catalan Key",
+      "parts": [
+        {
+          "idx": 11,
+          "referenceCoverage": 0.973,
+          "shoreCrosscheck": 0.94,
+          "anchors": [
+            "L127",
+            "L1362",
+            "L2026"
+          ],
+          "sample": [
+            -141,
+            -2150
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Belpoint",
+      "parts": [
+        {
+          "idx": 19,
+          "referenceCoverage": 0.952,
+          "shoreCrosscheck": 0.953,
+          "anchors": [],
+          "sample": [
+            -8659,
+            158
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Bobcat Key",
+      "parts": [
+        {
+          "idx": 10,
+          "referenceCoverage": 0.951,
+          "shoreCrosscheck": 0.932,
+          "anchors": [
+            "L1068"
+          ],
+          "sample": [
+            -6431,
+            -1851
+          ]
+        },
+        {
+          "idx": 38,
+          "referenceCoverage": 0.937,
+          "shoreCrosscheck": 0.906,
+          "anchors": [],
+          "sample": [
+            -7328,
+            -706
+          ]
+        },
+        {
+          "idx": 66,
+          "referenceCoverage": 0.918,
+          "shoreCrosscheck": 0.875,
+          "anchors": [],
+          "sample": [
+            -7002,
+            -654
+          ]
+        },
+        {
+          "idx": 78,
+          "referenceCoverage": 0.902,
+          "shoreCrosscheck": 0.864,
+          "anchors": [],
+          "sample": [
+            -5972,
+            -2074
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Watson Bay",
+      "parts": [
+        {
+          "idx": 27,
+          "referenceCoverage": 0.942,
+          "shoreCrosscheck": 0.925,
+          "anchors": [
+            "L1561"
+          ],
+          "sample": [
+            -5669,
+            -2747
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Corsair Key",
+      "parts": [
+        {
+          "idx": 61,
+          "referenceCoverage": 0.927,
+          "shoreCrosscheck": 0.891,
+          "anchors": [],
+          "sample": [
+            -803,
+            -3586
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Goose Key",
+      "parts": [
+        {
+          "idx": 25,
+          "referenceCoverage": 0.966,
+          "shoreCrosscheck": 0.901,
+          "anchors": [],
+          "sample": [
+            -7839,
+            -6432
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Draper Island",
+      "parts": [
+        {
+          "idx": 5,
+          "referenceCoverage": 0.979,
+          "shoreCrosscheck": 0.965,
+          "anchors": [
+            "L3149"
+          ],
+          "sample": [
+            -7484,
+            5025
+          ]
+        },
+        {
+          "idx": 51,
+          "referenceCoverage": 0.932,
+          "shoreCrosscheck": 0.904,
+          "anchors": [],
+          "sample": [
+            -6643,
+            5076
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Zephyr Islands",
+      "parts": [
+        {
+          "idx": 47,
+          "referenceCoverage": 0.961,
+          "shoreCrosscheck": 0.91,
+          "anchors": [],
+          "sample": [
+            -7794,
+            5689
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Hyde Island",
+      "parts": [
+        {
+          "idx": 13,
+          "referenceCoverage": 0.96,
+          "shoreCrosscheck": 0.891,
+          "anchors": [],
+          "sample": [
+            -2661,
+            8846
+          ]
+        }
+      ]
+    },
+    {
+      "region": "Little Hardin Island",
+      "parts": [
+        {
+          "idx": 37,
+          "referenceCoverage": 0.915,
+          "shoreCrosscheck": 0.86,
+          "anchors": [],
+          "sample": [
+            432,
+            5700
+          ]
+        }
+      ]
+    }
+  ],
+  "method": "실제 게임 지도에 비춘 해안선, 지역 원본 다각형 내부율(referenceCoverage), 인쇄 지도와 실제 지도 추출면의 교집합/합집합(shoreCrosscheck), 본토에서 분리되는 수면 채널, 귀속이 다른 지역에 대한 겹침을 점검. 일부 좁은 교량은 해안 인접부까지만 선택됨. 전체 카운티 외곽선은 표시하지 않음."
+}

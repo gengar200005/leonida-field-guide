@@ -48,3 +48,9 @@ body.map-full{overflow:hidden}
 .map-full .fullscreen-filters{display:inline-block}
 .map-full header,.map-full footer,.map-full .skip,.map-full main>h1,.map-full main>.trail,.map-full main>.map-references,.map-full .map-inputs{display:none}
 .map-full.mapfilters-open .map-inputs{display:block;position:fixed;inset:4px 4px auto;z-index:24;border:1px solid var(--line);border-radius:8px;padding:12px;max-height:90dvh;overflow:auto;background:var(--card);box-shadow:0 4px 20px #18312755}
+
+.mapcanvas .map-boundary-overlay{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.map-boundary-overlay path{fill:#63337b;fill-opacity:.23;stroke:#4b345d;stroke-opacity:.85;stroke-width:1.4px;stroke-linejoin:round}
+.selectedpin .pin-cover{display:block;margin-bottom:8px;color:inherit;overflow:hidden;background:transparent}
+.selectedpin .pin-cover img{display:block;width:100%;max-height:190px;object-fit:contain;background:#182923;border-radius:5px}
+.selectedpin .pin-cover small{display:block;font-size:.78rem;margin-top:3px}

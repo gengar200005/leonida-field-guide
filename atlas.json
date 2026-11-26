@@ -20611,5 +20611,55 @@
     "url": "https://www.gtabase.com/gta-6/map/?feature=unique-weapon#unique-weapon-011",
     "x": 1915.0,
     "y": 417.0
+  },
+  {
+    "id": "l02/pin-917811",
+    "item": "l02",
+    "name": "포트 겔혼 · 창고 사물함 단서",
+    "category": "P05",
+    "region": "포트 겔혼",
+    "url": "https://gta6gps.com/?p=pin-917811",
+    "x": -6428,
+    "y": 3350
+  },
+  {
+    "id": "l10/pin-918161",
+    "item": "l10",
+    "name": "코르세어 키 · 화장실 단서",
+    "category": "P05",
+    "region": "코르세어 키",
+    "url": "https://gta6gps.com/?p=pin-918161",
+    "x": -994,
+    "y": -4035
+  },
+  {
+    "id": "l20/pin-918038",
+    "item": "l20",
+    "name": "맥키트릭 농장 · 후속 방문",
+    "category": "P05",
+    "region": "켈리 카운티",
+    "url": "https://gta6gps.com/?p=pin-918038",
+    "x": -4028,
+    "y": 4059
+  },
+  {
+    "id": "l23/pin-918752",
+    "item": "l23",
+    "name": "리오나이다 호수 북안 · 프레디의 시설",
+    "category": "P05",
+    "region": "레너드 카운티",
+    "url": "https://gta6gps.com/?p=pin-918752",
+    "x": -2520,
+    "y": 5458
+  },
+  {
+    "id": "l30/pin-917830",
+    "item": "l30",
+    "name": "코튼마우스 호수 · 트레일러",
+    "category": "P05",
+    "region": "마리아나 카운티",
+    "url": "https://gta6gps.com/?p=pin-917830",
+    "x": -3838,
+    "y": -4954
   }
 ]

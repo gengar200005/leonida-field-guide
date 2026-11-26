@@ -86,17 +86,19 @@ function catCompareList(all,cat,p){
  }
  return all;
 }
-function catCompareControls(cat,p){
+function catCompareControls(cat,p,otherFilters){
  const vs=categoryItems(cat).filter(catalogEntry);
  const kinds=[...new Set(vs.map(v=>catalogFacts(v).kind))].sort((a,b)=>a.localeCompare(b,"ko"));
  const conditions=[...new Set(vs.map(v=>catalogFacts(v).condition).filter(Boolean))];
  const sortKeys=cat==="V"?["speed","accel","handling","fee","accessRank"]:["power","accuracy","range","capacity","price","difficulty"];
  const choose=(name,key,options)=>'<label>'+name+' <select data-change="'+key+'">'+options.map(([v,t])=>opt(v,t,p.get(key)||"")).join("")+'</select></label>';
- return choose(cat==="V"?"차종":"장비 유형","kind",[["","전체"],...kinds.map(k=>[k,k])])+
-  (cat==="V"?choose("차량 접근","access",[["","전체"],...["문 열림","잠금·키패드","전용 도구"].map(k=>[k,k])]):"")+
-  choose("획득 조건","obtain",[["","전체"],...conditions.map(k=>[k,k]),["pick","편집자 추천"]])+
-  choose("정렬","order",[["","기본 순서"],...sortKeys.map(k=>[k,catalogSortLabels[k]])])+
-  choose("보기","layout",[["","외형 도감"],["compare","비교표"]]);
+ const type=choose(cat==="V"?"차종":"장비 유형","kind",[["","전체"],...kinds.map(k=>[k,k])]);
+ const view=choose("보기","layout",[["","외형 도감"],["compare","비교표"]]);
+ const order=choose("정렬","order",[["","기본 순서"],...sortKeys.map(k=>[k,catalogSortLabels[k]])]);
+ const access=cat==="V"?choose("차량 접근","access",[["","전체"],...["문 열림","잠금·키패드","전용 도구"].map(k=>[k,k])]):"";
+ const obtain=choose("획득 조건","obtain",[["","전체"],...conditions.map(k=>[k,k]),["pick","편집자 추천"]]);
+ const expanded=p.get("layout")==="compare"||["access","obtain","media","region","style"].some(k=>p.get(k));
+ return view+type+order+'<details class="filter-more"'+(expanded?' open':'')+'><summary>상세 필터</summary><div>'+otherFilters+access+obtain+'</div></details>';
 }
 function catCompareView(vs,cat,p){
  if(!vs.length)return '<p class="empty">선택한 조건에 맞는 항목이 없습니다.</p>';
@@ -111,11 +113,16 @@ function catCompareView(vs,cat,p){
  return '<div class="tablewrap catalog-compare" tabindex="0" role="region" aria-label="도감 비교표"><table><caption>대상별 게임 지표 · — 값 미확인</caption><thead><tr><th scope="col">이름 · 종류</th>'+columns.map(c=>'<th scope="col">'+c[1]+'</th>').join("")+'<th scope="col">획득 조건</th></tr></thead><tbody>'+
   vs.map(v=>{const f=catalogFacts(v);return '<tr><th scope="row"><a href="'+entry(v.id)+'">'+esc(v.title)+'</a><small>'+esc(f.kind)+'</small></th>'+columns.map(([k])=>'<td>'+format(f,k)+'</td>').join("")+'<td>'+esc(f.note||f.access||"—")+'</td></tr>'}).join("")+'</tbody></table></div>';
 }
-function catDetailFacts(v){
+function catDetailPhoto(v){
  if(!catalogEntry(v))return "";
- const f=catalogFacts(v),a=catalogAppearance(v,photo(v)),source=url(a.original);
+ const a=catalogAppearance(v,photo(v)),source=url(a.original);
  let image="";
  if(source&&!a.embedded)image='<figure class="catalog-detail-appearance"><a class="catalog-original" data-action="appearance" data-id="'+esc(v.id)+'" href="'+source+'" target="_blank" rel="noopener noreferrer"><img src="'+source+'" alt="'+esc(v.title)+' 외형" loading="lazy"></a><figcaption>외형 · '+link(a.original,"원본 사진")+'</figcaption></figure>';
+ return image;
+}
+function catDetailFacts(v){
+ if(!catalogEntry(v))return "";
+ const f=catalogFacts(v);
  const rows=[["종류",f.kind],["획득 조건",f.note||f.access],["등록비",f.fee!=null?"$"+f.fee.toLocaleString("ko-KR"):""],["구매가",f.price!=null?"$"+f.price.toLocaleString("ko-KR"):""],["접근 난이도",f.difficultyLabel],["차량 접근",f.accessLabel],["보안",f.security],["추적 장치",f.tracking],["보관·재호출",f.storage],["편집자 추천",catalogPicks[v.id]]].filter(([,v])=>v);
- return image+(rows.length>1?'<dl class="catalog-facts">'+rows.map(([k,v])=>'<div><dt>'+k+'</dt><dd>'+esc(v)+'</dd></div>').join("")+'</dl>':"");
+ return (rows.length>1?'<dl class="catalog-facts">'+rows.map(([k,v])=>'<div><dt>'+k+'</dt><dd>'+esc(v)+'</dd></div>').join("")+'</dl>':"");
 }

@@ -1,0 +1,421 @@
+{
+  "date": "2026-11-26",
+  "baseline": "527d04a3a3606b55e4b36249ff8b4230c9de4eb3",
+  "before": {
+    "allEntries": 3387,
+    "readerEntries": 3383,
+    "pins": 2055,
+    "ownPinEntries": 1969,
+    "externalMapOnly": 73,
+    "secretLeadsWithPin": 20,
+    "secretLeadDenominator": 37,
+    "storyWalkthroughs": 0,
+    "twoOrMoreSteps": 807,
+    "decodedCardImages": 462,
+    "distinctCardImageURLs": 448,
+    "decodeFailures": [],
+    "cardsByPrimaryCategory": {
+      "P01": {
+        "entries": 18,
+        "withImage": 1,
+        "decoded": 1,
+        "multiStep": 14,
+        "mapped": 1
+      },
+      "P02": {
+        "entries": 165,
+        "withImage": 149,
+        "decoded": 149,
+        "multiStep": 153,
+        "mapped": 111
+      },
+      "V": {
+        "entries": 287,
+        "withImage": 282,
+        "decoded": 282,
+        "multiStep": 79,
+        "mapped": 250
+      },
+      "P06": {
+        "entries": 1212,
+        "withImage": 4,
+        "decoded": 4,
+        "multiStep": 260,
+        "mapped": 902
+      },
+      "P09": {
+        "entries": 571,
+        "withImage": 16,
+        "decoded": 16,
+        "multiStep": 133,
+        "mapped": 280
+      },
+      "P08": {
+        "entries": 14,
+        "withImage": 0,
+        "decoded": 0,
+        "multiStep": 7,
+        "mapped": 2
+      },
+      "P03": {
+        "entries": 602,
+        "withImage": 0,
+        "decoded": 0,
+        "multiStep": 47,
+        "mapped": 340
+      },
+      "P04": {
+        "entries": 42,
+        "withImage": 3,
+        "decoded": 3,
+        "multiStep": 41,
+        "mapped": 40
+      },
+      "P05": {
+        "entries": 404,
+        "withImage": 3,
+        "decoded": 3,
+        "multiStep": 23,
+        "mapped": 23
+      },
+      "P07": {
+        "entries": 26,
+        "withImage": 4,
+        "decoded": 4,
+        "multiStep": 24,
+        "mapped": 20
+      },
+      "P10": {
+        "entries": 42,
+        "withImage": 0,
+        "decoded": 0,
+        "multiStep": 26,
+        "mapped": 0
+      }
+    }
+  },
+  "after": {
+    "allEntries": 3239,
+    "readerEntries": 3235,
+    "pins": 2008,
+    "ownPinEntries": 1918,
+    "externalMapOnly": 66,
+    "secretLeadsWithPin": 26,
+    "secretLeadDenominator": 37,
+    "storyWalkthroughs": 8,
+    "twoOrMoreSteps": 843,
+    "decodedCardImages": 510,
+    "distinctCardImageURLs": 501,
+    "decodeFailures": [],
+    "cardsByPrimaryCategory": {
+      "P01": {
+        "entries": 26,
+        "withImage": 10,
+        "decoded": 10,
+        "multiStep": 22,
+        "mapped": 1
+      },
+      "P02": {
+        "entries": 165,
+        "withImage": 149,
+        "decoded": 149,
+        "multiStep": 153,
+        "mapped": 111
+      },
+      "V": {
+        "entries": 287,
+        "withImage": 282,
+        "decoded": 282,
+        "multiStep": 79,
+        "mapped": 250
+      },
+      "P06": {
+        "entries": 1211,
+        "withImage": 15,
+        "decoded": 15,
+        "multiStep": 260,
+        "mapped": 902
+      },
+      "P09": {
+        "entries": 525,
+        "withImage": 24,
+        "decoded": 24,
+        "multiStep": 155,
+        "mapped": 278
+      },
+      "P08": {
+        "entries": 14,
+        "withImage": 4,
+        "decoded": 4,
+        "multiStep": 7,
+        "mapped": 2
+      },
+      "P03": {
+        "entries": 535,
+        "withImage": 5,
+        "decoded": 5,
+        "multiStep": 46,
+        "mapped": 286
+      },
+      "P04": {
+        "entries": 42,
+        "withImage": 4,
+        "decoded": 4,
+        "multiStep": 41,
+        "mapped": 40
+      },
+      "P05": {
+        "entries": 362,
+        "withImage": 6,
+        "decoded": 6,
+        "multiStep": 30,
+        "mapped": 28
+      },
+      "P07": {
+        "entries": 26,
+        "withImage": 6,
+        "decoded": 6,
+        "multiStep": 24,
+        "mapped": 20
+      },
+      "P10": {
+        "entries": 42,
+        "withImage": 5,
+        "decoded": 5,
+        "multiStep": 26,
+        "mapped": 0
+      }
+    }
+  },
+  "definition": {
+    "counts": "공개 목록·검색에 나오는 대표 항목 기준. 내부 참고 항목 4개 제외. 보조 분류의 참조와 같은 장소의 복수 핀은 별도 공략으로 세지 않는다. 다른 콘텐츠의 존재 여부에 대한 전수 인증은 아니다.",
+    "images": "모든 대표 항목을 실제 브라우저 카드 마크업으로 렌더 후 첫 이미지의 decode() 및 naturalWidth 검사. 지도·원본 링크·스포일러·상세 갤러리는 목록 이미지 확보에 포함하지 않는다. 한 이미지가 여러 항목의 동일 장소를 보여줄 수 있다.",
+    "depth": "steps 두 줄 이상인 섹션을 포함한 대표 항목. 표준화된 안내의 구조 지표이며 개별 공략의 플레이 정확도나 상세 편집률 자체와 다르다."
+  },
+  "consolidation": {
+    "groups": 116,
+    "merged": 156,
+    "allAliasSourceURLsVerified": 401,
+    "fieldReferenceURLsVerified": 6,
+    "sourceMediaRecordsVerified": 18,
+    "crossReferencesVerified": 104,
+    "redirectedOrReassociatedPinsVerifiedAtOriginalCoordinates": 64,
+    "coincidentPinIdsConsolidated": 56,
+    "newAlternateLocationMarkers": 4,
+    "beforeItemsInCurrentBuild": 3395,
+    "afterItemsInCurrentBuild": 3239,
+    "afterPins": 2008,
+    "afterReaderItems": 3235,
+    "examples": {
+      "distinctRealVariants": [
+        "v-01",
+        "v-21"
+      ],
+      "preservedMissionStages": [
+        "p09-m-007",
+        "p09-m-008",
+        "p09-m-020"
+      ],
+      "differentATMs": [
+        "p09-re-221",
+        "p09-at"
+      ],
+      "differentReportedLocations": {
+        "p09-re-191": [
+          "앰브로시아 시장",
+          "카프리 편의점"
+        ],
+        "p09-re-197": [
+          "바이스 시티 트레일러",
+          "바이스 비치",
+          "도심 남부"
+        ]
+      }
+    }
+  },
+  "independentRetentionChecks": {
+    "groups": 116,
+    "aliases": 156,
+    "aliasSourceUrls": 277,
+    "mediaUrls": 41,
+    "lostSourceUrls": [],
+    "lostMediaUrls": [],
+    "incorrectOldPins": []
+  },
+  "mediaWork": {
+    "editorialAssignments": 59,
+    "editorialFrames": 78,
+    "withheldSpoilerAssets": 3,
+    "sourceLedger": "editorial-media.json",
+    "verifiedSceneSamples": [
+      "첫 보트 포커스 HUD와 화물",
+      "쌍안경으로 보는 선착장",
+      "키 렌토 기념품점 키패드",
+      "게임 화면에 번호가 표시되는 보관소 단서(펼침)",
+      "스타렛 모텔 주차장의 와이먼과 보닛"
+    ],
+    "distinctReferencedImages": 71,
+    "newLocalImages": 70
+  },
+  "editing": {
+    "contentRecords": 71,
+    "includesRelationshipOnly": 2,
+    "chaptersWithFeaturedStoryGuides": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "sourceMatchedSecretPins": [
+      "l02",
+      "l10",
+      "l20",
+      "l23",
+      "l30"
+    ],
+    "collectibleTitleConsistency": "기존 플라밍고 58개는 고유 번호와 현장명으로 지도·목록·상세를 일치시켰다."
+  },
+  "mapBoundaries": {
+    "formerRadiusLabels": 62,
+    "officialAdministrativeBoundaries": 0,
+    "shoreNamedAreas": 14,
+    "landComponents": 19,
+    "inland": "경계 확정 불가. 음영 없음. 지역별 원본 지도를 별도 열 수 있음."
+  },
+  "scopeLimits": [
+    "내륙 행정경계는 미확인. 섬 해안선으로 지역을 식별할 수 있는 곳만 색칠.",
+    "저작권자 허용 및 내용 확인이 어려운 미션·장소는 텍스트 또는 원문으로 제공.",
+    "같은 제목이어도 활동·위치·보상이 다르거나 일치 근거가 부족하면 별도 기록 유지.",
+    "현재 콘솔 패치에서 검증하지 못한 조우 재발생, 구전 정보, 장기 보존은 근거 범위만 명시."
+  ],
+  "browser": {
+    "testedWidths": [
+      1365,
+      390
+    ],
+    "engine": "Chromium, desktop + touch emulation",
+    "test": "tests/release.py",
+    "screenshots": [
+      "audit/s16-views/desktop.webp",
+      "audit/s16-views/mobile.webp"
+    ],
+    "testedJourneys": [
+      "구 와이먼 상세 주소와 3개 저장 플래그를 대표에 합치기",
+      "구 지도 핀 직접 링크와 수집 기록 보존",
+      "지역 확대·마우스/터치 선택과 바다·내륙 무음영",
+      "홈, 챕터/의뢰 목록, 상세, 차량, 장비, 탐험, 수집, 지도, 내 기록에서 링크·오버플로 확인",
+      "스토리 키패드 단서 사진 요청 지연/펼치기, 현장 사진 확대",
+      "빠른 검색, 지도 완료 토글/다중 분류/미완료·재방문"
+    ],
+    "localTiming": {
+      "base": {
+        "samples": [
+          [
+            250,
+            487,
+            [
+              [
+                "start.js",
+                1833
+              ]
+            ]
+          ],
+          [
+            119,
+            395,
+            [
+              [
+                "start.js",
+                1833
+              ]
+            ]
+          ],
+          [
+            151,
+            287,
+            [
+              [
+                "start.js",
+                1833
+              ]
+            ]
+          ],
+          [
+            112,
+            270,
+            [
+              [
+                "start.js",
+                1833
+              ]
+            ]
+          ]
+        ],
+        "medianHomeMs": 135.0,
+        "medianOpenMapMs": 341.0
+      },
+      "release": {
+        "samples": [
+          [
+            116,
+            280,
+            [
+              [
+                "start.js",
+                1833
+              ]
+            ]
+          ],
+          [
+            111,
+            271,
+            [
+              [
+                "start.js",
+                1833
+              ]
+            ]
+          ],
+          [
+            100,
+            285,
+            [
+              [
+                "start.js",
+                1833
+              ]
+            ]
+          ],
+          [
+            127,
+            279,
+            [
+              [
+                "start.js",
+                1833
+              ]
+            ]
+          ]
+        ],
+        "medianHomeMs": 113.5,
+        "medianOpenMapMs": 279.5
+      }
+    }
+  },
+  "internalReferences": {
+    "beforeCount": 4693,
+    "beforeBroken": 0,
+    "afterCount": 4590,
+    "afterBroken": 0,
+    "fields": [
+      "related",
+      "places",
+      "relatedGuide",
+      "hints",
+      "checklist",
+      "mapPins",
+      "locationPin"
+    ]
+  }
+}

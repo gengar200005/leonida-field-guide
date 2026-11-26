@@ -35,13 +35,13 @@ def run(context, base, mobile):
     page.get_by_role("button", name="닫기", exact=True).click()
     vehicle.locator('a[href^="#/map"]').first.click()
     expect(page.locator(".selectedpin")).to_contain_text("치타")
-    page.locator('.selectedpin a[href="#/entry/v-56"]').click()
+    page.locator('.selectedpin .links a[href="#/entry/v-56"]').click()
     expect(page.locator("h1")).to_contain_text("치타")
 
     page.locator("#searchbox").fill("Assassin Nipper")
     page.locator("#searchbox").press("Enter")
     page.locator('main a[href="#/entry/p02-w-001"]').first.click()
-    expect(page.locator("article")).to_contain_text("난파선")
+    expect(page.locator("article.article")).to_contain_text("난파선")
     visit("/entry/l03")
     answer = page.locator("details.panel").filter(has=page.locator("summary", has_text="상호작용")).first
     expect(answer.locator("summary")).to_be_visible()
@@ -52,8 +52,8 @@ def run(context, base, mobile):
     visit("/guide/p01")
     page.locator('select[data-change="chapter"]').select_option("2")
     page.locator('main a[href="#/entry/p01-c02-motel"]').first.click()
-    expect(page.locator("article")).to_contain_text("카드")
-    expect(page.locator("article")).to_contain_text("저장")
+    expect(page.locator("article.article")).to_contain_text("카드")
+    expect(page.locator("article.article")).to_contain_text("저장")
     check = page.locator('.discovery-checklist button[data-flag="done"]').first
     check.click()
     expect(check).to_have_attribute("aria-pressed", "true")
@@ -69,7 +69,7 @@ def run(context, base, mobile):
     item = "p06-c-lco-23"
     visit("/map?item=" + item)
     selected = page.locator(".selectedpin")
-    expect(selected.locator('a[href="#/entry/' + item + '"]')).to_be_visible()
+    expect(selected.locator('.links a[href="#/entry/' + item + '"]')).to_be_visible()
     # The second tab stays on the live record while the map writes to the same save.
     other = context.new_page()
     other.goto(base + "#/entry/" + item, wait_until="domcontentloaded", timeout=90000)

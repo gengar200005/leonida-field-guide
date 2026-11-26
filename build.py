@@ -7,6 +7,7 @@ import shutil
 import zipfile
 from pathlib import Path
 
+from editorial_merge import apply_merges
 from reader_names import prepare_reader_names
 
 ROOT = Path(__file__).resolve().parent
@@ -128,11 +129,12 @@ def home_markup(data):
         return (f'<a href="#/guide/{key.lower()}"><span class="glyph" aria-hidden="true">{code}</span>'
                 f'<span>{escape(name)}{extra}</span></a>')
 
-    primary = "".join(category_link(k) for k in ("V", "P02", "P05", "P06"))
+    primary = ('<a href="#/guide/p01?track=story"><span class="glyph" aria-hidden="true">CH</span>'
+               '<span>스토리 미션</span></a>') + "".join(category_link(k) for k in ("P09", "V", "P02", "P05", "P06"))
     all_categories = "".join(category_link(k, True) for k in categories)
     indexed = {item["id"].lower(): item for item in data["items"]}
     cards = []
-    for key in ("v-04", "p02-w-001", "l03"):
+    for key in ("p01-story-gear-up", "v-56", "l03"):
         item = indexed[key]
         photo = data["media"].get(key, {})
         if item["category"] in {"V", "P02"}:
@@ -146,8 +148,8 @@ def home_markup(data):
         image = (f'<img class="art home-art" loading="lazy" decoding="async" src="{escape(src)}" alt="{escape(alt)}">'
                  if src and not photo.get("reveal") else "")
         cards.append(f'<a class="card" href="#/entry/{key}">{image}<div class="cardbody">'
-                     f'<span class="kicker">{escape(categories[item["category"]][0])}</span>'
-                     f'<h3>{escape(item["title"])}</h3><p>{escape(item["summary"])}</p></div></a>')
+                     f'<h3>{escape(item["title"])}</h3><span class="kicker">{escape(categories[item["category"]][0])}</span>'
+                     f'<p>{escape(item["summary"])}</p></div></a>')
     return ('<section class="hero"><div class="scene" style="background-image:url(media/landmark-l36.webp)"></div>'
             '<div class="herotext"><h1>리오나이다 필드 가이드</h1><p>챕터별 진행, 차량과 장비, 비밀 장소와 수집품을 찾아보세요.</p>'
             '<a class="btn primary" href="#/guide/p01">챕터별 공략 보기 →</a></div>'
@@ -155,6 +157,55 @@ def home_markup(data):
             f'<div class="quick">{primary}</div><section class="section"><div class="heading"><h2>탐험 수첩</h2>'
             f'<a href="#/map">지도에서 찾기 ↗</a></div><div class="cards">{"".join(cards)}</div></section>'
             f'<section class="section"><h2>공략 전체 보기</h2><div class="catgrid">{all_categories}</div></section>')
+
+
+def apply_editorial_guides(data, guides):
+    items = {item["id"].lower(): item for item in data["items"]}
+    for key, updates in guides.items():
+        item = items[key.lower()]
+        for field, value in updates.items():
+            if field == "title":
+                if item["title"] != value:
+                    item["aliases"] = list(dict.fromkeys([*item.get("aliases", []), item["title"]]))
+                    item["title"] = value
+            elif field == "summary":
+                item[field] = value
+            elif field == "replaceSections":
+                titles = [section["title"] for section in item["sections"]]
+                if any(titles.count(title) != 1 for title in value):
+                    raise ValueError(f"Ambiguous editorial section on {key}")
+                item["sections"] = [value.get(section["title"], section) for section in item["sections"]]
+            elif field in {"sections", "related", "sources"}:
+                result = item.setdefault(field, [])
+                for entry in value:
+                    if entry not in result:
+                        result.append(entry)
+            else:
+                raise ValueError(f"Unexpected editorial field on {key}: {field}")
+
+
+def apply_editorial_photos(data, photographs):
+    items = {item["id"].lower(): item for item in data["items"]}
+    grouped = {}
+    # Prefer the editor's selection on the representative. Former entries may
+    # contribute further scene photos even after their old URLs become redirects.
+    for old_key, images in sorted(photographs.items(), key=lambda pair: pair[0] not in items):
+        key = data["redirects"].get(old_key, old_key)
+        grouped.setdefault(key, []).extend(images)
+    for key, images in grouped.items():
+        item = items[key]
+        if not images:
+            raise ValueError(f"Missing editorial image record for {key}")
+        previous = data["media"].get(key)
+        first, *gallery = images
+        if previous:
+            if previous.get("src") and previous.get("src") == first.get("src"):
+                first = {**previous, **first}
+            elif previous not in images:
+                gallery.append(previous)
+        data["media"][key] = first
+        if gallery:
+            item.setdefault("gallery", []).extend(gallery)
 
 
 def build():
@@ -171,6 +222,9 @@ def build():
     localize(data, read("official-names.json"))
     prepare_map_titles(data)
     prepare_reader_names(data, read("reader-names.json"))
+    apply_editorial_guides(data, read("editorial-guides.json"))
+    apply_merges(data, read("entry-merges.json"))
+    apply_editorial_photos(data, read("editorial-media.json"))
     ids = {row["id"].lower() for row in data["items"]}
     assert len(ids) == len(data["items"])
     pin_ids = {pin["id"]: pin["item"].lower() for pin in data["pins"]}
@@ -184,16 +238,25 @@ def build():
     assert all(record["title"] and isinstance(record["sections"], list) for record in data["items"])
     media_dir = SITE / "media"
     media_dir.mkdir(exist_ok=True)
-    for package in sorted((ROOT / "media").glob("*.zip")):
+    packages = [*sorted((ROOT / "media").glob("*.zip")), *sorted((ROOT / "media/editorial").glob("*.zip"))]
+    for package in packages:
+        dest = media_dir / package.parent.relative_to(ROOT / "media")
+        dest.mkdir(parents=True, exist_ok=True)
         with zipfile.ZipFile(package) as archive:
             for record in archive.infolist():
                 name = record.filename
                 if name != Path(name).name or not name.endswith(".webp"):
                     raise ValueError(f"Invalid media member: {name}")
-                (media_dir / name).write_bytes(archive.read(record))
-    for photo in data["media"].values():
-        if photo.get("src") and not (SITE / photo["src"]).is_file():
-            raise ValueError(f"Missing media: {photo['src']}")
+                (dest / name).write_bytes(archive.read(record))
+    for image in (ROOT / "media/editorial").glob("*.webp"):
+        (media_dir / "editorial").mkdir(exist_ok=True)
+        shutil.copyfile(image, media_dir / "editorial" / image.name)
+    photos = [*data["media"].values(), *(image for item in data["items"] for image in item.get("gallery", []))]
+    for photo in photos:
+        src = photo.get("src")
+        if src and not src.startswith("https://"):
+            if not src.startswith("media/") or ".." in Path(src).parts or not (SITE / src).is_file():
+                raise ValueError(f"Missing or invalid image: {src}")
     (SITE / "guide-data.js").write_text("window.FIELD_GUIDE=" + json.dumps(data,ensure_ascii=False,separators=(",",":")) + ";\n", encoding="utf-8")
     bundles = {"style.css": ["style.css", "catalog.css", "map-ui.css"], "guide.js": ["catalog.js", "guide.js"]}
     for output, components in bundles.items():
