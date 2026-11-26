@@ -1,5 +1,5 @@
 "use strict";
-const {items,media,pins,redirects={}}=window.FIELD_GUIDE;
+const {items,media,pins,redirects={},regionAliases={},nameSources=[]}=window.FIELD_GUIDE;
 const categories={
   P01:["챕터별 공략","CH","진행 전 확인할 수집품과 선택"],V:["고유 차량","GT","발견 위치와 차고 등록"],P02:["무기와 장비","EQ","획득 조건과 보관 방법"],
   P05:["비밀 탐험","EX","숨겨진 장소와 단계별 단서"],P06:["수집품","CO","컬렉션별 위치와 대체 사본"],P07:["부동산·은신처","HQ","위치와 이용 조건"],
@@ -15,6 +15,7 @@ const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const url=v=>{try{const u=new URL(v);return ["https:","http:"].includes(u.protocol)?esc(u.href):""}catch{return ""}};
 const link=(src,label)=>url(src)?'<a target="_blank" rel="noopener noreferrer" href="'+url(src)+'">'+esc(label)+' ↗</a>':"";
 const entry=id=>"#/entry/"+encodeURIComponent(id);
+const regionFilter=value=>Object.hasOwn(regionAliases,value)?regionAliases[value]:(value||"");
 const group=cat=>"#/guide/"+cat.toLowerCase();
 const catName=cat=>categories[cat]?.[0]||"공략";
 const readerItems=items.filter(v=>!(v.status==="reference"&&v.summary==="–"));
@@ -95,7 +96,7 @@ function chapterSelect(){return '<label>현재 진행 <select class="chaptersele
 function chapterGuide(){return categoryItems("P01").find(v=>v.chapter===state.chapter&&/^p01-(c|endgame|prologue)/i.test(v.id))}
 function home(){
  const current=chapterGuide(),featured=["v-04","p02-w-001","P05-L03"].map(findItem).filter(Boolean);
- return '<section class="hero"><div class="scene" style="background-image:url(media/landmark-l36.webp)"></div><div class="herotext"><div class="eyebrow">Grand Theft Auto VI · Story Mode</div><h1>레오니다 필드 가이드</h1><p>다음에 탈 차, 찾아갈 장소, 챕터를 넘기기 전 챙길 것들.</p><a class="btn primary" href="'+(current?entry(current.id):group("P01"))+'">'+chapters[state.chapter]+' 공략 보기 →</a></div><a class="photocredit" href="#/credits">오션 뷰 호텔 · GTADB</a></section>'+
+ return '<section class="hero"><div class="scene" style="background-image:url(media/landmark-l36.webp)"></div><div class="herotext"><div class="eyebrow">Grand Theft Auto VI · Story Mode</div><h1>리오나이다 필드 가이드</h1><p>다음에 탈 차, 찾아갈 장소, 챕터를 넘기기 전 챙길 것들.</p><a class="btn primary" href="'+(current?entry(current.id):group("P01"))+'">'+chapters[state.chapter]+' 공략 보기 →</a></div><a class="photocredit" href="#/credits">오션 뷰 호텔 · GTADB</a></section>'+
  '<div class="quick">'+["V","P02","P05","P01"].map(c=>categoryButton(c)).join("")+'</div>'+
  '<section class="section"><div class="heading"><h2>탐험 수첩</h2><a href="#/map">지도에서 찾기 ↗</a></div>'+cards(featured)+'</section>'+
  '<section class="section"><div class="heading"><h2>공략 전체 보기</h2>'+chapterSelect()+'</div><div class="catgrid">'+Object.keys(categories).map(c=>categoryButton(c,true)).join("")+'</div></section>';
@@ -106,7 +107,7 @@ const categoryPhotos={
  V:["official-grotti-cheetah.webp","1995 그로티 치타 · Rockstar Games"],
  P02:["official-weapon-variants.webp","무기 변형 · Rockstar Games"],
  P05:["official-swamp-airboat.webp","습지 탐험 · Rockstar Games"],
- P06:["official-keys-street.webp","레오니다 키스 · Rockstar Games"],
+ P06:["official-keys-street.webp","리오나이다 키스 · Rockstar Games"],
  P07:["landmark-l307.webp","스타렛 모텔 · GTADB"]
 };
 function listHeading(cat,title,description){
@@ -115,7 +116,7 @@ function listHeading(cat,title,description){
  return '<div class="category-banner"><div><h1>'+esc(title)+'</h1><p>'+esc(description)+'</p></div><figure><img src="media/'+a[0]+'" alt="'+esc(a[1])+'"><figcaption>'+esc(a[1])+'</figcaption></figure></div>';
 }
 function listPage(page,id,p){
- const cat=id.toUpperCase(),mine=page==="mine",search=page==="search",q=(p.get("q")||"").trim(),filter=p.get("region")||"",flag=p.get("flag")||"favorite";
+ const cat=id.toUpperCase(),mine=page==="mine",search=page==="search",q=(p.get("q")||"").trim(),filter=regionFilter(p.get("region")),flag=p.get("flag")||"favorite";
  const title=mine?"내 기록":search?"검색 결과":catName(cat);
  let all=mine?items.filter(v=>flags(v)[flag]):search?searchItems(q):categoryItems(cat);
  const regionChoices=[...new Set(all.map(v=>v.region).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ko"));
@@ -138,9 +139,8 @@ function listPage(page,id,p){
  const photoControl=visual?'<label>사진 <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("embedded","도감에 사진이 있는 항목",mediaFilter)+opt("original","원본 사진 링크가 있는 항목",mediaFilter)+opt("photo","사진 또는 원본 링크",mediaFilter)+'</select></label>':"";
  const reading={V:"v-registration",P02:"p02-collection-check",P01:"p01-save-slots",P06:"p06-collection-targets",P09:"p09-region-routes",P08:"p08-range-medals",P04:"p04-first-visit",P05:"p05-region-exploration",P07:"p07-first-garage"};
  const firstGuide=!mine&&!search?findItem(reading[cat]):null;
- const routeGuideId={V:"v-chapter-2-route",P09:"p09-chapter-deadlines"}[cat];
- const routeGuide=firstGuide&&findItem(routeGuideId);
- const routeShortcut=routeGuide?'<div class="guide-shortcut">'+relatedLink(routeGuide)+'</div>':"";
+ const routeGuideIds={V:["v-chapter-2-route","v-vehicle-index"],P01:["p01-roadmap"],P02:["p02-play-guide"],P07:["p07-property-catalog"],P09:["p09-chapter-deadlines"]}[cat]||[];
+ const routeShortcut=firstGuide?routeGuideIds.map(findItem).filter(Boolean).map(v=>'<div class="guide-shortcut">'+relatedLink(v)+'</div>').join(""):"";
  const shortcut=firstGuide?'<div class="guide-shortcut"><a href="'+entry(firstGuide.id)+'">'+esc(firstGuide.title)+' →</a></div>':"";
  if(!search&&!mine&&cat!=="P01"){
    const rank=v=>(v.status==="unconfirmed"?0:4)+(photo(v)?.src&&!photo(v)?.reveal?2:0);
@@ -154,14 +154,14 @@ function listPage(page,id,p){
 }
 const searchCache=new Map();
 function searchItems(q){const terms=q.split(/\s+/).map(norm).filter(Boolean);if(!terms.length)return [];
- const hits=[];for(const v of readerItems){if(!searchCache.has(v.id))searchCache.set(v.id,[norm([v.title,...(v.aliases||[])].join("|")),norm([v.region,v.summary,catName(v.category),...v.sections.filter(s=>!s.reveal).flatMap(s=>[s.title,...(s.paragraphs||[]),...(s.steps||[]),...(s.table?.rows||[]).flat()])].join("|"))]);
+ const hits=[];for(const v of readerItems){if(!searchCache.has(v.id))searchCache.set(v.id,[norm([v.title,...(v.aliases||[])].join("|")),norm([v.region,v.summary,catName(v.category),...(v.originalTerms||[]),...v.sections.filter(s=>!s.reveal).flatMap(s=>[s.title,...(s.paragraphs||[]),...(s.steps||[]),...(s.table?.rows||[]).flat()])].join("|"))]);
  const [title,body]=searchCache.get(v.id);if(terms.every(t=>title.includes(t)||body.includes(t)))hits.push([v,terms.filter(t=>title.includes(t)).length+(norm(v.title)===norm(q)?5:0)])}
  return hits.sort((a,b)=>b[1]-a[1]).map(x=>x[0]);
 }
-function discoveryList(ids){
+function discoveryList(ids, unit="곳"){
  const places=ids.map(findItem).filter(Boolean);
  const finished=places.filter(v=>flags(v).done).length;
- return '<div class="discovery-checklist"><p role="status">발견 완료 <b data-count>'+finished+'</b> / '+places.length+'곳</p>'+places.map(v=>{
+ return '<div class="discovery-checklist"><p role="status">발견 완료 <b data-count>'+finished+'</b> / '+places.length+esc(unit)+'</p>'+places.map(v=>{
    const done=Boolean(flags(v).done);
    return '<div class="discovery-row"><a href="'+entry(v.id)+'"><small>'+esc(v.id.toUpperCase())+'</small> '+esc(v.title.split(" / ")[0])+'</a><button data-flag="done" data-id="'+esc(v.id)+'" aria-label="'+esc(v.title.split(" / ")[0])+' 완료" aria-pressed="'+done+'">'+(done?'✓ 완료':'완료')+'</button></div>';
  }).join("")+'</div>';
@@ -189,7 +189,7 @@ function section(s,index){
  const stops=(s.places||[]).map(findItem).filter(Boolean);
  const places=s.mapPins?regionMap(s.mapPins):stops.length?'<div class="links">'+stops.map(relatedLink).join("")+'</div>':'';
  const hints=s.hints?'<ul class="field-hints">'+s.hints.map(findItem).filter(Boolean).map(v=>'<li>'+relatedLink(v)+'<p>'+esc(v.summary)+'</p></li>').join("")+'</ul>':'';
- const content=body+places+hints+(s.checklist?discoveryList(s.checklist):'')+(related?'<div class="links">'+relatedLink(related)+'</div>':'');
+ const content=body+places+hints+(s.checklist?discoveryList(s.checklist,s.checklistUnit):'')+(related?'<div class="links">'+relatedLink(related)+'</div>':'');
  return s.reveal?'<details class="panel" id="s'+index+'"><summary>'+esc(s.title)+' · 펼치기</summary>'+content+'</details>':'<section class="panel" id="s'+index+'"><h2>'+esc(s.title)+'</h2>'+content+'</section>';
 }
 function basePhotoFigure(v){const m=photo(v);if(!m?.src)return "";return '<figure><button data-action="image" data-id="'+esc(v.id)+'" aria-label="사진 확대"><img src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"></button><figcaption class="caption">'+esc(m.caption||v.title)+' · '+link(m.source,m.credit||"원본")+(m.license?' · '+link(m.license,"이용 조건"):'')+'</figcaption></figure>'}
@@ -273,14 +273,14 @@ let zoom=1,selected="",mapLimit=60;
 const percent=p=>[(p.x+12288)/18432*100,(12288-p.y)/22528*100];
 function mapSearchText(pin){
  const guide=findItem(pin.item);
- return norm([pinTitle(pin),pin.name,pin.region,guide?.title,...(guide?.aliases||[])].filter(Boolean).join(" "));
+ return norm([pinTitle(pin),pin.name,pin.originalName,pin.region,pin.originalRegion,guide?.title,...(guide?.aliases||[])].filter(Boolean).join(" "));
 }
 const activityTypes={ho:"농구 골대",dr:"드론 레이스",bs:"책 교환",rd:"읽을거리",fl:"플라밍고",md:"명상",c:"카드",sj:"스턴트 점프",br:"교량 아래 비행",kf:"나이프 플라이트",bj:"BASE 점프"};
 function activityPicker(selected){
  return '<label>수집 활동 <select data-change="activity">'+opt("","전체 활동",selected)+Object.entries(activityTypes).map(([key,label])=>opt(key,label,selected)).join("")+'</select></label>';
 }
 function mapPage(p){
- const item=p.get("item"),region=p.get("region")||"",category=p.get("cat")||"",regions=[...new Set(mapped.map(v=>v.region).filter(Boolean))].sort();
+ const item=p.get("item"),region=regionFilter(p.get("region")),category=p.get("cat")||"",regions=[...new Set(mapped.map(v=>v.region).filter(Boolean))].sort();
  const activity=category==="P06"?(p.get("activity")||""):"";
  const style=category==="V"?(p.get("style")||""):"";
  const query=(p.get("q")||"").trim();
@@ -296,16 +296,19 @@ function mapPage(p){
    const v=vs[0],[x,y]=percent(v),many=vs.length>1;
    return '<button class="pin '+(v===current?"active ":"")+(many?"cluster":"")+'" style="left:'+x+'%;top:'+y+'%" '+(many?'data-cluster':'data-pin')+'="'+esc(v.id)+'" aria-label="'+esc(many?"위치 "+vs.length+"개 확대":pinTitle(v))+'">'+(many?vs.length:"")+'</button>';
  }).join("");
- return trail([["통합 지도"]])+'<div class="eyebrow">LEONIDA ATLAS</div><h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+[...new Set(mapped.map(v=>v.category))].filter(Boolean).map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style):"")+'<span class="count">'+list.length.toLocaleString()+'개 위치</span></div><div class="maplayout"><div><div class="mapview" tabindex="0" aria-label="레오니다 지형도"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" alt="레오니다의 도로·수로·해안 지형">'+pinsHTML+'</div></div><div class="bar"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><a class="textlink" href="#/credits">지도 출처</a></div></div><aside class="panel"><h2>이 지도에서 찾기</h2>'+(current?'<div class="selectedpin"><b>'+esc(pinTitle(current))+'</b><p>'+esc(current.region)+'</p><div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 위치가 없습니다.")+'</p>')+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'">'+esc(pinTitle(v))+'<small>'+esc(v.region)+'</small></button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
+ return trail([["통합 지도"]])+'<div class="eyebrow">LEONIDA ATLAS</div><h1>통합 지도</h1>'+search+'<div class="bar"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+regions.map(v=>opt(v,v,region)).join("")+'</select></label><label>분류 <select data-change="cat">'+opt("","전체",category)+[...new Set(mapped.map(v=>v.category))].filter(Boolean).map(c=>opt(c,catName(c),category)).join("")+'</select></label>'+(category==="P06"?activityPicker(activity):"")+(category==="V"?vehicleStylePicker(style):"")+'<span class="count">'+list.length.toLocaleString()+'개 위치</span></div><div class="maplayout"><div><div class="mapview" tabindex="0" aria-label="리오나이다 지형도"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" alt="리오나이다의 도로·수로·해안 지형">'+pinsHTML+'</div></div><div class="bar"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><a class="textlink" href="#/credits">지도 출처</a></div></div><aside class="panel"><h2>이 지도에서 찾기</h2>'+(current?'<div class="selectedpin"><b>'+esc(pinTitle(current))+'</b><p>'+esc(current.region)+'</p><div class="links">'+(findItem(current.item)?'<a href="'+entry(current.item)+'">상세 공략 →</a>':'')+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+'</div></div>':'<p class="sub">'+(list.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 위치가 없습니다.")+'</p>')+'<div class="pinlist">'+list.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'">'+esc(pinTitle(v))+'<small>'+esc(v.region)+'</small></button>').join("")+(list.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div></aside></div>';
 }
 document.addEventListener("submit",event=>{
  if(event.target.id!=="map-search")return;
  event.preventDefault();
  setParam("q",new FormData(event.target).get("q").trim());
 });
-function credits(){return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>레오니다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map의 CC BY 4.0은 기여자가 만든 지도 데이터에 적용됩니다. 게임 화면은 원본 사진 링크로 제공합니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6/blob/main/LICENSE","Open GTA 6 Map 이용 조건")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'}
+function credits(){
+ const names=nameSources.length?'<section class="panel"><h2>공식 한국어 명칭</h2><div class="links">'+nameSources.map(sourceLink).join("")+'</div></section>':"";
+ return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>리오나이다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map의 CC BY 4.0은 기여자가 만든 지도 데이터에 적용됩니다. 게임 화면은 원본 사진 링크로 제공합니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6/blob/main/LICENSE","Open GTA 6 Map 이용 조건")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'+names;
+}
 function render(reset=false){
- const r=route();let title="레오니다 필드 가이드",html;
+ const r=route();let title="리오나이다 필드 가이드",html;
  if(r.page==="home")html=home();else if(r.page==="guides")html=guides();else if(r.page==="entry"){const v=findItem(r.id);if(!v&&/^(p\d\d|v|index)-p\d{3}$/.test(r.id)){const part=r.id.split("-")[0];html=part==="index"?guides():listPage("guide",part,r.params)}else html=detail(v);title=v?.title||title}
  else if(["guide","mine","search"].includes(r.page))html=listPage(r.page,r.id,r.params);
  else if(r.page==="map")html=mapPage(r.params);else if(["credits","sources"].includes(r.page))html=credits();else html=missing();

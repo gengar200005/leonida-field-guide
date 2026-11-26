@@ -1,6 +1,7 @@
 """Build the static guide. Requires only the Python standard library."""
 import hashlib
 import json
+import re
 import shutil
 import zipfile
 from pathlib import Path
@@ -11,6 +12,92 @@ SITE = ROOT / "dist"
 def read(name):
     return json.loads((ROOT / name).read_text(encoding="utf-8"))
 
+
+def localize(data, sources):
+    names = {key.casefold(): name for source in sources for key, name in source["terms"].items()}
+    alternatives = "|".join(re.escape(term) for term in sorted(names, key=len, reverse=True))
+    pattern = re.compile(r"(?<![A-Za-z0-9])(?:" + alternatives + r")(?![A-Za-z0-9])", re.IGNORECASE)
+    korean_text = re.compile(r"[가-힣]")
+    separator = re.compile(r"( [·–—-] )")
+    regions = {}
+
+    def translate(value, matched=None, *, proper_name=False):
+        if proper_name and " / " in value and korean_text.search(value):
+            return " / ".join(translate(part, matched, proper_name=True) for part in value.split(" / "))
+        if proper_name and not korean_text.search(value) and value.casefold() not in names:
+            parts = separator.split(value)
+            return "".join(translate(part, matched) if part.casefold() in names else part for part in parts)
+
+        def replace(match):
+            english = match[0]
+            korean = names[english.casefold()]
+            preceding = value[:match.start()]
+            if preceding.endswith("(") and preceding[:-1].rstrip().endswith(korean):
+                return english
+            following = value[match.end():]
+            if (english.casefold() == "leonida" and re.match(r" Man\b", following)
+                or english.casefold() == "vice city" and re.match(r" FM\b", following)):
+                return english
+            if matched is not None:
+                matched.add(english)
+            return korean
+
+        return pattern.sub(replace, value)
+
+    def region(record):
+        original = record.get("region")
+        if original:
+            korean = translate(original)
+            if original != korean:
+                regions[original] = korean
+                record["region"] = korean
+
+    for item in data["items"]:
+        original_title = item["title"]
+        item["title"] = translate(original_title, proper_name=True)
+        if item["title"] != original_title:
+            item["aliases"] = list(dict.fromkeys([*item.get("aliases", []), original_title]))
+        original_region = item.get("region")
+        region(item)
+        matched = set()
+        if original_region and item["region"] != original_region:
+            matched.add(original_region)
+        if item.get("summary"):
+            item["summary"] = translate(item["summary"], matched, proper_name=True)
+        for section in item["sections"]:
+            search_terms = None if section.get("reveal") else matched
+            section["title"] = translate(section["title"], search_terms, proper_name=True)
+            for field in ("steps", "paragraphs"):
+                if field in section:
+                    section[field] = [translate(line, search_terms, proper_name=True) for line in section[field]]
+            for row in section.get("table", {}).get("rows", []):
+                if row[0].startswith("영문") or row[0] == "스타일":
+                    continue
+                row[:] = [translate(cell, search_terms) if isinstance(cell, str) else cell for cell in row]
+        for field in ("caption", "note"):
+            references = item.get("fieldReferences", {})
+            if references.get(field):
+                references[field] = translate(references[field], matched)
+        if matched:
+            item["originalTerms"] = sorted(matched)
+
+    for pin in data["pins"]:
+        original_region = pin.get("region")
+        region(pin)
+        if pin.get("region") != original_region:
+            pin["originalRegion"] = original_region
+        name = translate(pin["name"], proper_name=True)
+        if name != pin["name"]:
+            pin["originalName"] = pin["name"]
+            pin["name"] = name
+    for photo in data["media"].values():
+        for field in ("caption", "originalCaption"):
+            if photo.get(field):
+                photo[field] = translate(photo[field])
+    data["regionAliases"] = regions
+    data["nameSources"] = [{"label": s["label"], "url": s["source"]} for s in sources]
+
+
 def build():
     SITE.mkdir(exist_ok=True)
     data = {
@@ -19,6 +106,7 @@ def build():
         "pins": read("atlas.json"),
         "redirects": read("redirects.json")
     }
+    localize(data, read("official-names.json"))
     ids = {row["id"].lower() for row in data["items"]}
     assert len(ids) == len(data["items"])
     assert all(pin["item"].lower() in ids for pin in data["pins"])

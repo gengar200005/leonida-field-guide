@@ -992,72 +992,79 @@
   {
     "id": "x02-01/parachuting-001",
     "item": "x02-01",
-    "name": "Parachute (Badger R&D Tower)",
+    "name": "낙하산 · 배저 R&D 타워 옥상",
     "category": "P02",
     "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=parachuting#parachuting-001",
     "x": -2662.4,
-    "y": -6044.8
+    "y": -6044.8,
+    "originalName": "Parachute (Badger R&D Tower)"
   },
   {
     "id": "x02-02/parachuting-002",
     "item": "x02-02",
-    "name": "Parachute (radio tower)",
+    "name": "낙하산 · 전파탑 상부",
     "category": "P02",
     "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=parachuting#parachuting-002",
     "x": -3280.0,
-    "y": -6729.6
+    "y": -6729.6,
+    "originalName": "Parachute (radio tower)"
   },
   {
     "id": "x02-03/parachuting-003",
     "item": "x02-03",
-    "name": "Parachute (Effluvia roof)",
+    "name": "낙하산 · 에플루비아 건물 옥상",
     "category": "P02",
     "region": "",
     "url": "https://www.gtabase.com/gta-6/map/?feature=parachuting#parachuting-003",
     "x": 1493.0,
-    "y": 1335.0
+    "y": 1335.0,
+    "originalName": "Parachute (Effluvia roof)"
   },
   {
     "id": "x02-04/parachuting-004",
     "item": "x02-04",
-    "name": "Parachute",
+    "name": "낙하산 · 남부 타워 상부",
     "category": "P02",
     "region": "",
     "url": "https://www.gtabase.com/gta-6/map/?feature=parachuting#parachuting-004",
     "x": -1933.0,
-    "y": -5217.0
+    "y": -5217.0,
+    "originalName": "Parachute"
   },
   {
     "id": "x02-05/parachuting-005",
     "item": "x02-05",
-    "name": "Parachute",
+    "name": "낙하산 · 동부 옥상 보행로 남동쪽",
     "category": "P02",
     "region": "",
     "url": "https://www.gtabase.com/gta-6/map/?feature=parachuting#parachuting-005",
     "x": 1721.0,
-    "y": 2385.0
+    "y": 2385.0,
+    "originalName": "Parachute"
   },
   {
     "id": "x02-06/parachuting-006",
     "item": "x02-06",
-    "name": "Parachute",
+    "name": "낙하산 · 동부 옥상 보행로 북쪽",
     "category": "P02",
     "region": "",
     "url": "https://www.gtabase.com/gta-6/map/?feature=parachuting#parachuting-006",
     "x": 1649.0,
-    "y": 2451.0
+    "y": 2451.0,
+    "originalName": "Parachute"
   },
   {
     "id": "x02-07/parachuting-007",
     "item": "x02-07",
-    "name": "Parachute (Flash FM transmitter)",
+    "name": "낙하산 · 플래시 FM 송신탑 상부",
     "category": "P02",
     "region": "",
     "url": "https://www.gtabase.com/gta-6/map/?feature=parachuting#parachuting-007",
     "x": -181.0,
-    "y": 2423.0
+    "y": 2423.0,
+    "originalName": "Parachute (Flash FM transmitter)"
   },
   {
     "id": "p03-bn02/bank-007",
@@ -15342,12 +15349,13 @@
   {
     "id": "v-01/standout-vehicle-071",
     "item": "v-01",
-    "name": "Camus Black Moth Kamacho",
+    "name": "Canis Black Moth Kamacho",
     "category": "V",
     "region": "Watson Bay",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-071",
     "x": -4585.6,
-    "y": -2940.8
+    "y": -2940.8,
+    "originalName": "Camus Black Moth Kamacho"
   },
   {
     "id": "v-02/standout-vehicle-076",
@@ -15372,12 +15380,13 @@
   {
     "id": "v-04/standout-vehicle-050",
     "item": "v-04",
-    "name": "Benefactor Nightlight Schafer",
+    "name": "Benefactor Nightlight Schafter",
     "category": "V",
     "region": "Vice City",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-050",
     "x": -1120,
-    "y": 416
+    "y": 416,
+    "originalName": "Benefactor Nightlight Schafer"
   },
   {
     "id": "v-06/standout-vehicle-029",
@@ -15632,12 +15641,13 @@
   {
     "id": "v-31/standout-vehicle-031",
     "item": "v-31",
-    "name": "Nagasaki Hung Carbos RS",
+    "name": "Nagasaki Hung Carbon RS",
     "category": "V",
     "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-031",
     "x": -1859.2,
-    "y": 3788.8
+    "y": 3788.8,
+    "originalName": "Nagasaki Hung Carbos RS"
   },
   {
     "id": "v-32/standout-vehicle-030",
@@ -15682,12 +15692,13 @@
   {
     "id": "v-36/standout-vehicle-112",
     "item": "v-36",
-    "name": "Pfister Growler (Vanessa's)",
+    "name": "Pfister Vanessa's Growler",
     "category": "V",
     "region": "La Perle",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-112",
     "x": -980.0,
-    "y": 1376
+    "y": 1376,
+    "originalName": "Pfister Growler (Vanessa's)"
   },
   {
     "id": "v-37/standout-vehicle-022",
@@ -15762,12 +15773,13 @@
   {
     "id": "v-44/standout-vehicle-004",
     "item": "v-44",
-    "name": "Bravado Bison 1800",
+    "name": "Bravado Alpha Bison",
     "category": "V",
     "region": "Moreau",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-004",
     "x": -2502.4,
-    "y": 7929.6
+    "y": 7929.6,
+    "originalName": "Bravado Bison 1800"
   },
   {
     "id": "v-45/standout-vehicle-172",
@@ -15980,14 +15992,14 @@
     "y": 1146.0
   },
   {
-    "id": "v-75/standout-vehicle-149",
+    "id": "v-75/standout-vehicle-170",
     "item": "v-75",
-    "name": "Delaney Racing Car",
+    "name": "Battler Picador",
     "category": "V",
-    "region": "Capri",
-    "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-149",
-    "x": -5109.0,
-    "y": 478.0
+    "region": "Frogswater",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=standout-vehicle-170",
+    "x": -2872.9,
+    "y": 4828.0
   },
   {
     "id": "v-76/standout-vehicle-061",
@@ -16002,12 +16014,13 @@
   {
     "id": "v-78/standout-vehicle-126",
     "item": "v-78",
-    "name": "BF '77 Bandito (Stars and Stripes)",
+    "name": "BF Beer Buggy Bandito",
     "category": "V",
     "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-126",
     "x": -7605.0,
-    "y": 3436.0
+    "y": 3436.0,
+    "originalName": "BF '77 Bandito (Stars and Stripes)"
   },
   {
     "id": "v-79/standout-vehicle-020",
@@ -16042,12 +16055,13 @@
   {
     "id": "v-82/standout-vehicle-101",
     "item": "v-82",
-    "name": "Cheetah (POUNCE plate)",
+    "name": "Piccia Big Cat Furia",
     "category": "V",
     "region": "Starfish Island",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-101",
     "x": 899.2,
-    "y": 643.2
+    "y": 643.2,
+    "originalName": "Cheetah (POUNCE plate)"
   },
   {
     "id": "v-83/standout-vehicle-218",
@@ -16082,12 +16096,13 @@
   {
     "id": "v-87/standout-vehicle-111",
     "item": "v-87",
-    "name": "Blazing Mallard",
+    "name": "Lapwing Blazing Mallard",
     "category": "V",
     "region": "Bobcat Key",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-111",
     "x": -5905.0,
-    "y": -2422.0
+    "y": -2422.0,
+    "originalName": "Blazing Mallard"
   },
   {
     "id": "v-88/standout-vehicle-211",
@@ -16222,12 +16237,13 @@
   {
     "id": "v-104/standout-vehicle-139",
     "item": "v-104",
-    "name": "Candyman Scorcher",
+    "name": "Del Perro Candyman Scorcher",
     "category": "V",
     "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-139",
     "x": -6537.0,
-    "y": 3595.0
+    "y": 3595.0,
+    "originalName": "Candyman Scorcher"
   },
   {
     "id": "v-105/standout-vehicle-164",
@@ -16282,12 +16298,13 @@
   {
     "id": "v-111/standout-vehicle-105",
     "item": "v-111",
-    "name": "Karin Cheshire Rebel (Barn Find)",
+    "name": "Karin Cheshire Rebel",
     "category": "V",
     "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-105",
     "x": -5638.0,
-    "y": 4491.0
+    "y": 4491.0,
+    "originalName": "Karin Cheshire Rebel (Barn Find)"
   },
   {
     "id": "v-113/standout-vehicle-024",
@@ -16472,32 +16489,35 @@
   {
     "id": "v-134/standout-vehicle-116",
     "item": "v-134",
-    "name": "Annis Elegy (Drift)",
+    "name": "Annis Drifter Elegy",
     "category": "V",
     "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-116",
     "x": -6740.0,
-    "y": 2499.0
+    "y": 2499.0,
+    "originalName": "Annis Elegy (Drift)"
   },
   {
     "id": "v-135/standout-vehicle-103",
     "item": "v-135",
-    "name": "Bravado Driveshaft Banshee",
+    "name": "Bravado DriveShaft Banshee",
     "category": "V",
     "region": "Hamlet",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-103",
     "x": -3043.0,
-    "y": -3561.0
+    "y": -3561.0,
+    "originalName": "Bravado Driveshaft Banshee"
   },
   {
     "id": "v-136/standout-vehicle-017",
     "item": "v-136",
-    "name": "Albany Driveshaft Devanity",
+    "name": "Albany DriveShaft Devanity",
     "category": "V",
     "region": "North Leonard",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-017",
     "x": -2464,
-    "y": 5865.6
+    "y": 5865.6,
+    "originalName": "Albany Driveshaft Devanity"
   },
   {
     "id": "v-137/standout-vehicle-156",
@@ -16532,12 +16552,13 @@
   {
     "id": "v-140/standout-vehicle-113",
     "item": "v-140",
-    "name": "Driveshaft Legends: Marshall",
+    "name": "Vapid DriveShaft Marshall",
     "category": "V",
     "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-113",
     "x": -6361.0,
-    "y": 4350.0
+    "y": 4350.0,
+    "originalName": "Driveshaft Legends: Marshall"
   },
   {
     "id": "v-141/standout-vehicle-237",
@@ -16672,12 +16693,13 @@
   {
     "id": "v-155/standout-vehicle-095",
     "item": "v-155",
-    "name": "Shyster Flower Child Woodland",
+    "name": "Schyster Flower Child Woodland",
     "category": "V",
     "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-095",
     "x": -2960.0,
-    "y": -6508.8
+    "y": -6508.8,
+    "originalName": "Shyster Flower Child Woodland"
   },
   {
     "id": "v-156/standout-vehicle-165",
@@ -16702,12 +16724,13 @@
   {
     "id": "v-158/standout-vehicle-108",
     "item": "v-158",
-    "name": "Gator Shack Bison",
+    "name": "Bravado Gator Shack Bison",
     "category": "V",
     "region": "Big Pine",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-108",
     "x": -5580.0,
-    "y": -1418.0
+    "y": -1418.0,
+    "originalName": "Gator Shack Bison"
   },
   {
     "id": "v-159/standout-vehicle-272",
@@ -16802,12 +16825,13 @@
   {
     "id": "v-168/standout-vehicle-129",
     "item": "v-168",
-    "name": "Gold Scarab Windsor",
+    "name": "Buckingham Gold Scarab Windsor",
     "category": "V",
     "region": "Waning Sands",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-129",
     "x": 712.0,
-    "y": 3692.0
+    "y": 3692.0,
+    "originalName": "Gold Scarab Windsor"
   },
   {
     "id": "v-169/standout-vehicle-003",
@@ -16952,12 +16976,13 @@
   {
     "id": "v-188/standout-vehicle-110",
     "item": "v-188",
-    "name": "MER-CAN Outlaw Love Buggy",
+    "name": "Mer-Can Love Buggy Outlaw",
     "category": "V",
     "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-110",
     "x": -6289.0,
-    "y": 4497.0
+    "y": 4497.0,
+    "originalName": "MER-CAN Outlaw Love Buggy"
   },
   {
     "id": "v-189/standout-vehicle-256",
@@ -17092,12 +17117,13 @@
   {
     "id": "v-204/standout-vehicle-117",
     "item": "v-204",
-    "name": "Declasse '86 Rancher (Stars and Stripes)",
+    "name": "Declasse Mud Crasher Rancher",
     "category": "V",
     "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-117",
     "x": -6393.0,
-    "y": 4421.0
+    "y": 4421.0,
+    "originalName": "Declasse '86 Rancher (Stars and Stripes)"
   },
   {
     "id": "v-205/standout-vehicle-173",
@@ -17192,12 +17218,13 @@
   {
     "id": "v-214/standout-vehicle-136",
     "item": "v-214",
-    "name": "Maibatsu Manchez (Pink/Blue)",
+    "name": "Maibatsu Pacific Manchez",
     "category": "V",
     "region": "Capri",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-136",
     "x": -5336.0,
-    "y": 1068.0
+    "y": 1068.0,
+    "originalName": "Maibatsu Manchez (Pink/Blue)"
   },
   {
     "id": "v-215/standout-vehicle-252",
@@ -17212,22 +17239,24 @@
   {
     "id": "v-216/standout-vehicle-104",
     "item": "v-216",
-    "name": "Partytime Caddy",
+    "name": "Maibatsu Partytime Caddy",
     "category": "V",
     "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-104",
     "x": -6558.0,
-    "y": 3600.0
+    "y": 3600.0,
+    "originalName": "Partytime Caddy"
   },
   {
     "id": "v-217/standout-vehicle-100",
     "item": "v-217",
-    "name": "Peacock Sovereign (motorcycle)",
+    "name": "Western Peacock Sovereign",
     "category": "V",
     "region": "Capri",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-100",
     "x": -6233.6,
-    "y": -793.6
+    "y": -793.6,
+    "originalName": "Peacock Sovereign (motorcycle)"
   },
   {
     "id": "v-218/standout-vehicle-225",
@@ -17272,12 +17301,13 @@
   {
     "id": "v-222/standout-vehicle-119",
     "item": "v-222",
-    "name": "Pink Gallivanter Baller II",
+    "name": "Gallivanter Pink Sunset Baller",
     "category": "V",
     "region": "Belville",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-119",
     "x": -1188.0,
-    "y": 2632.0
+    "y": 2632.0,
+    "originalName": "Pink Gallivanter Baller II"
   },
   {
     "id": "v-223/standout-vehicle-292",
@@ -17312,12 +17342,13 @@
   {
     "id": "v-226/standout-vehicle-145",
     "item": "v-226",
-    "name": "Princess Jubilee",
+    "name": "Buckingham Princess Jubilee",
     "category": "V",
     "region": "Rialto Islands",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-145",
     "x": 296.0,
-    "y": 1267.0
+    "y": 1267.0,
+    "originalName": "Princess Jubilee"
   },
   {
     "id": "v-227/standout-vehicle-166",
@@ -17412,12 +17443,13 @@
   {
     "id": "v-237/standout-vehicle-109",
     "item": "v-237",
-    "name": "Seashark Sedna (Graffiti)",
+    "name": "Seashark Revolutionary Azure",
     "category": "V",
     "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-109",
     "x": -2865.0,
-    "y": -6279.0
+    "y": -6279.0,
+    "originalName": "Seashark Sedna (Graffiti)"
   },
   {
     "id": "v-238/standout-vehicle-282",
@@ -17492,12 +17524,13 @@
   {
     "id": "v-247/standout-vehicle-132",
     "item": "v-247",
-    "name": "Dinka \"She's All That\" Blista",
+    "name": "Dinka She's All That Blista",
     "category": "V",
     "region": "Port Gellhorn",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-132",
     "x": -6396.0,
-    "y": 3465.0
+    "y": 3465.0,
+    "originalName": "Dinka \"She's All That\" Blista"
   },
   {
     "id": "v-248/standout-vehicle-179",
@@ -17562,12 +17595,13 @@
   {
     "id": "v-255/standout-vehicle-107",
     "item": "v-255",
-    "name": "Spiderweb Coquette",
+    "name": "Invetero Spiderweb Coquette",
     "category": "V",
     "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-107",
     "x": -1869.0,
-    "y": -5340.0
+    "y": -5340.0,
+    "originalName": "Spiderweb Coquette"
   },
   {
     "id": "v-256/standout-vehicle-115",
@@ -17612,12 +17646,13 @@
   {
     "id": "v-260/standout-vehicle-093",
     "item": "v-260",
-    "name": "Squalo \"Street Art\"",
+    "name": "Shitzu Street Art Squalo",
     "category": "V",
     "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-093",
     "x": -2633.6,
-    "y": -5920
+    "y": -5920,
+    "originalName": "Squalo \"Street Art\""
   },
   {
     "id": "v-261/standout-vehicle-114",
@@ -17712,12 +17747,13 @@
   {
     "id": "v-271/standout-vehicle-143",
     "item": "v-271",
-    "name": "Tormentor Street Blazer (ATV)",
+    "name": "Nagasaki Tormentor Street Blazer",
     "category": "V",
     "region": "Ambrosia",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-143",
     "x": -3991.0,
-    "y": 8478.0
+    "y": 8478.0,
+    "originalName": "Tormentor Street Blazer (ATV)"
   },
   {
     "id": "v-272/standout-vehicle-185",
@@ -17752,22 +17788,24 @@
   {
     "id": "v-275/standout-vehicle-098",
     "item": "v-275",
-    "name": "Imponte Ruiner Turbo",
+    "name": "Imponte Turbo Ruiner",
     "category": "V",
     "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-098",
     "x": -2227.2,
-    "y": -5827.2
+    "y": -5827.2,
+    "originalName": "Imponte Ruiner Turbo"
   },
   {
     "id": "v-276/standout-vehicle-088",
     "item": "v-276",
-    "name": "Twinstripe Vigero",
+    "name": "Declasse Twinstripe Vigero",
     "category": "V",
     "region": "Key Lento",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-088",
     "x": -3228.8,
-    "y": -6553.6
+    "y": -6553.6,
+    "originalName": "Twinstripe Vigero"
   },
   {
     "id": "v-277/standout-vehicle-283",
@@ -17792,12 +17830,13 @@
   {
     "id": "v-279/standout-vehicle-144",
     "item": "v-279",
-    "name": "Vice Vinyl Coquette",
+    "name": "Invetero Vice Vinyl Coquette",
     "category": "V",
     "region": "Stockyard",
     "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-144",
     "x": 632.0,
-    "y": 1116.0
+    "y": 1116.0,
+    "originalName": "Vice Vinyl Coquette"
   },
   {
     "id": "v-280/standout-vehicle-207",

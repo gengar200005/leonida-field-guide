@@ -1,0 +1,116 @@
+[
+  {
+    "source": "https://www.rockstargames.com/kr/newswire/article/39akk424a9oo53/grand-theft-auto-vi-now-available",
+    "label": "락스타 한국어 출시 안내",
+    "terms": {
+      "Leonida": "리오나이다",
+      "레오니다": "리오나이다",
+      "Vice City": "바이스 시티",
+      "바이스시티": "바이스 시티"
+    }
+  },
+  {
+    "source": "https://www.rockstargames.com/kr/newswire/article/o3982oa93a23k4/the-music-of-grand-theft-auto-vi-in-game-radio-stations",
+    "label": "락스타 한국어 뉴스와이어",
+    "terms": {
+      "Grassrivers": "그래스리버스",
+      "그라스리버스": "그래스리버스",
+      "Port Gellhorn": "포트 겔혼"
+    }
+  },
+  {
+    "source": "https://store.rockstargames.com/ko/merchandise/gtavi-goodtime-state-vice-city-collection",
+    "label": "락스타 한국어 스토어",
+    "terms": {
+      "Leonida Keys": "리오나이다 키스"
+    }
+  },
+  {
+    "source": "https://www.xbox.com/ko-KR/games/store/grand-theft-auto-vi/9NNZSNHLR63L/0017",
+    "label": "얼티밋 에디션의 공식 한국어 소개",
+    "terms": {
+      "Ultimate Edition": "얼티밋 에디션",
+      "Vice City Styles": "바이스 시티 스타일",
+      "Hawk & Little Morgan Revolver": "호크 & 리틀 모건 리볼버",
+      "Hawk & Little Morgan": "호크 & 리틀 모건 리볼버",
+      "Girardi ES9 Pistol": "지라르디 ES9 피스톨",
+      "Girardi ES9": "지라르디 ES9",
+      "Kloze K17 Pistol": "클로제 K17 피스톨",
+      "Kloze K17": "클로제 K17",
+      "Caminos Signature K17": "클로제 K17 피스톨 · Caminos Signature",
+      "Grotti Cheetah": "그로티 치타",
+      "Shitzu Squalo": "시츄 스쿠알로",
+      "Dinka Enduro": "딩카 엔듀로",
+      "Crest Kayak": "크레스트 카약",
+      "Vapid Ganado": "바피드 가나도",
+      "Ganado Retro Build": "가나도 레트로 빌드",
+      "Vapid Dominator Buggy": "바피드 도미네이터 버기",
+      "Vercetti Mansion": "버세티 저택"
+    }
+  },
+  {
+    "source": "https://store.rockstargames.com/ko/game/buy-gta-vi",
+    "label": "락스타 한국어 에디션 비교",
+    "terms": {
+      "Rideout Customs": "라이드아웃 커스텀 개조점",
+      "Sara Unisex Salon": "사라 유니섹스 살롱",
+      "Stock 305": "스톡 305",
+      "Electric Fang Tattoo": "일렉트릭 팽 문신 시술소",
+      "One Eyed Willy": "원 아이드 윌리",
+      "PTT Youngin$": "PTT 영인$"
+    }
+  },
+  {
+    "source": "https://store.playstation.com/ko-kr/product/EP1004-PPSA01547_00-CONTENTPACK00001",
+    "label": "빈티지 바이스 시티 팩의 공식 한국어 소개",
+    "terms": {
+      "Vintage Vice City Pack": "빈티지 바이스 시티 팩",
+      "Vapid Stanier": "바피드 스태니어",
+      "Shore Court Garage": "쇼어 코트 차고",
+      "Shore Drive": "쇼어 드라이브",
+      "Ocean Beach": "오션 비치",
+      "Tommy Vercetti": "토미 버세티"
+    }
+  },
+  {
+    "source": "https://www.xbox.com/ko-KR/games/grand-theft-auto-vi",
+    "label": "Xbox 공식 한국어 GTA VI 소개",
+    "terms": {
+      "Jason Duval": "제이슨 듀발",
+      "Lucia Caminos": "루시아 카미노스"
+    }
+  },
+  {
+    "source": "https://www.rockstargames.com/VI",
+    "label": "락스타 공식 GTA VI 인물·지역·특전 소개의 한국어 표시",
+    "terms": {
+      "Ambrosia": "앰브로시아",
+      "Mount Kalaga": "마운트 칼라가",
+      "Watson Bay": "왓슨 베이",
+      "Paradise Garage": "파라다이스 차고",
+      "Weapon Locker": "무기 사물함"
+    }
+  },
+  {
+    "source": "https://www.rockstargames.com/VI/only-in-leonida",
+    "label": "락스타 공식 인물 소개의 한국어 표시",
+    "terms": {
+      "Cal Hampton": "칼 햄튼",
+      "칼 햄프턴": "칼 햄튼",
+      "Boobie Ike": "부비 아이크",
+      "Dre'Quan Priest": "드레콴 프리스트",
+      "Dre’Quan Priest": "드레콴 프리스트",
+      "Real Dimez": "리얼 다임즈",
+      "Raul Bautista": "라울 바티스타",
+      "Raúl Bautista": "라울 바티스타",
+      "라울 바우티스타": "라울 바티스타",
+      "Brian Heder": "브라이언 헤더",
+      "Bae-Luxe": "베이럭스",
+      "Roxy": "록시",
+      "Only Raw Records": "온리 로우 레코즈",
+      "Jack of Hearts": "잭 오브 하츠",
+      "Liberty City": "리버티 시티",
+      "Leonida Penitentiary": "리오나이다 교도소"
+    }
+  }
+]

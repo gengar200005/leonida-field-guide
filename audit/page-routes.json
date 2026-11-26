@@ -1,30 +1,39 @@
 {
   "scope": "Page-to-guide navigation and editorial provenance. Name and index matches identify candidate destinations. No match establishes visual or semantic sign-off. Separate visual checks are required.",
   "counts": {
-    "cover-index-or-editorial": 28,
-    "edited": 124,
-    "linked": 402,
-    "navigation": 13
+    "cover-index-or-editorial": 26,
+    "edited": 181,
+    "linked": 351,
+    "navigation": 9
   },
   "pages": [
     {
       "book": "P01",
       "page": 1,
-      "routes": {},
+      "routes": {
+        "재편집 본문": [
+          "p01-roadmap"
+        ]
+      },
       "status": "cover-index-or-editorial"
     },
     {
       "book": "P01",
       "page": 2,
-      "routes": {},
-      "status": "cover-index-or-editorial"
+      "routes": {
+        "재편집 본문": [
+          "p01-roadmap"
+        ]
+      },
+      "status": "edited"
     },
     {
       "book": "P01",
       "page": 3,
       "routes": {
         "재편집 본문": [
-          "p01-save-slots"
+          "p01-save-slots",
+          "p01-roadmap"
         ]
       },
       "status": "edited"
@@ -34,7 +43,8 @@
       "page": 4,
       "routes": {
         "재편집 본문": [
-          "p01-save-slots"
+          "p01-save-slots",
+          "p01-roadmap"
         ]
       },
       "status": "edited"
@@ -55,9 +65,12 @@
       "routes": {
         "편집 본문": [
           "p01-prologue"
+        ],
+        "재편집 본문": [
+          "p01-prologue"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -65,9 +78,12 @@
       "routes": {
         "편집 본문": [
           "p01-c01-guide"
+        ],
+        "재편집 본문": [
+          "p01-c01-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -88,9 +104,12 @@
       "routes": {
         "편집 본문": [
           "p01-c01-guide"
+        ],
+        "재편집 본문": [
+          "p01-c01-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -98,9 +117,12 @@
       "routes": {
         "편집 본문": [
           "p01-c02-motel"
+        ],
+        "재편집 본문": [
+          "p01-c02-motel"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -121,9 +143,12 @@
       "routes": {
         "편집 본문": [
           "p01-c02-motel"
+        ],
+        "재편집 본문": [
+          "p01-c02-motel"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -154,9 +179,12 @@
       "routes": {
         "편집 본문": [
           "p01-c03-guide"
+        ],
+        "재편집 본문": [
+          "p01-c03-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -187,9 +215,12 @@
       "routes": {
         "편집 본문": [
           "p01-c05-guide"
+        ],
+        "재편집 본문": [
+          "p01-c05-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -209,7 +240,8 @@
           "p01-endgame"
         ],
         "재편집 본문": [
-          "p01-save-slots"
+          "p01-save-slots",
+          "p01-endgame"
         ]
       },
       "status": "edited"
@@ -220,18 +252,25 @@
       "routes": {
         "편집 본문": [
           "p01-endgame"
+        ],
+        "재편집 본문": [
+          "p01-endgame"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
       "page": 22,
-      "routes": {},
+      "routes": {
+        "재편집 본문": [
+          "p01-region-atlas"
+        ]
+      },
       "navigation": [
         "#/map"
       ],
-      "status": "navigation"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -240,9 +279,13 @@
         "편집 본문": [
           "p01-region-south",
           "p01-region-west"
+        ],
+        "재편집 본문": [
+          "p01-region-west",
+          "p01-region-south"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -251,9 +294,13 @@
         "편집 본문": [
           "p01-region-city",
           "p01-region-coast"
+        ],
+        "재편집 본문": [
+          "p01-region-city",
+          "p01-region-coast"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -262,9 +309,13 @@
         "편집 본문": [
           "p01-region-inland",
           "p01-region-south"
+        ],
+        "재편집 본문": [
+          "p01-region-inland",
+          "p01-region-south"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
@@ -272,24 +323,35 @@
       "routes": {
         "편집 본문": [
           "p01-region-offshore"
+        ],
+        "재편집 본문": [
+          "p01-region-offshore"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P01",
       "page": 27,
-      "routes": {},
+      "routes": {
+        "재편집 본문": [
+          "p01-guide-index"
+        ]
+      },
       "navigation": [
         "#/"
       ],
-      "status": "navigation"
+      "status": "edited"
     },
     {
       "book": "P01",
       "page": 28,
-      "routes": {},
-      "status": "cover-index-or-editorial"
+      "routes": {
+        "재편집 본문": [
+          "p01-source-notes"
+        ]
+      },
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -298,6 +360,9 @@
         "명칭 대조": [
           "p02-w-092",
           "p02-w-121"
+        ],
+        "재편집 본문": [
+          "p02-play-guide"
         ]
       },
       "status": "linked"
@@ -311,16 +376,20 @@
           "p02-w-079",
           "p02-w-092",
           "p02-w-107"
+        ],
+        "재편집 본문": [
+          "p02-play-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
       "page": 3,
       "routes": {
         "재편집 본문": [
-          "p02-collection-check"
+          "p02-collection-check",
+          "p02-play-guide"
         ]
       },
       "status": "edited"
@@ -328,20 +397,28 @@
     {
       "book": "P02",
       "page": 4,
-      "routes": {},
+      "routes": {
+        "재편집 본문": [
+          "p02-play-guide"
+        ]
+      },
       "navigation": [
         "#/map"
       ],
-      "status": "navigation"
+      "status": "edited"
     },
     {
       "book": "P02",
       "page": 5,
-      "routes": {},
+      "routes": {
+        "재편집 본문": [
+          "p02-play-guide"
+        ]
+      },
       "navigation": [
         "#/map"
       ],
-      "status": "navigation"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -355,16 +432,20 @@
           "p02-w-053",
           "p02-w-072",
           "p02-w-129"
+        ],
+        "재편집 본문": [
+          "p02-play-guide"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
       "page": 7,
       "routes": {
         "재편집 본문": [
-          "p02-collection-check"
+          "p02-collection-check",
+          "p02-play-guide"
         ]
       },
       "status": "edited"
@@ -380,9 +461,18 @@
           "p02-e-04",
           "p02-e-05",
           "p02-e-06"
+        ],
+        "재편집 본문": [
+          "p02-equipment-overview",
+          "p02-e-01",
+          "p02-e-02",
+          "p02-e-03",
+          "p02-e-04",
+          "p02-e-05",
+          "p02-e-06"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -398,9 +488,18 @@
           "p02-e-10",
           "p02-e-11",
           "p02-e-12"
+        ],
+        "재편집 본문": [
+          "p02-equipment-overview",
+          "p02-e-07",
+          "p02-e-08",
+          "p02-e-09",
+          "p02-e-10",
+          "p02-e-11",
+          "p02-e-12"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -416,9 +515,16 @@
           "p02-x02",
           "p02-x03",
           "p02-x04"
+        ],
+        "재편집 본문": [
+          "p02-equipment-overview",
+          "p02-x01",
+          "p02-x02",
+          "p02-x03",
+          "p02-x04"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -434,9 +540,18 @@
           "p02-x06",
           "p02-x07",
           "p02-x08"
+        ],
+        "재편집 본문": [
+          "p02-equipment-overview",
+          "p02-x05",
+          "p02-x06",
+          "p02-x07",
+          "p02-x08",
+          "p02-w-005",
+          "p02-w-009"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -450,16 +565,27 @@
           "x02-05",
           "x02-06",
           "x02-07"
+        ],
+        "재편집 본문": [
+          "p02-x02",
+          "x02-01",
+          "x02-02",
+          "x02-03",
+          "x02-04",
+          "x02-05",
+          "x02-06",
+          "x02-07"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
       "page": 13,
       "routes": {
         "재편집 본문": [
-          "p02-collection-check"
+          "p02-collection-check",
+          "p02-play-guide"
         ]
       },
       "status": "edited"
@@ -5278,9 +5404,12 @@
           "p07-s02",
           "p07-s03",
           "p07-s04"
+        ],
+        "재편집 본문": [
+          "p07-property-catalog"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5288,9 +5417,12 @@
       "routes": {
         "명칭 대조": [
           "p07-s01"
+        ],
+        "재편집 본문": [
+          "p07-property-catalog"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5301,16 +5433,20 @@
         ],
         "항목 번호": [
           "p07-s04"
+        ],
+        "재편집 본문": [
+          "p07-property-catalog"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
       "page": 7,
       "routes": {
         "재편집 본문": [
-          "p07-first-garage"
+          "p07-first-garage",
+          "p07-property-catalog"
         ]
       },
       "status": "edited"
@@ -5329,9 +5465,13 @@
         "항목 번호": [
           "p07-g01",
           "p07-g02"
+        ],
+        "재편집 본문": [
+          "p07-g01",
+          "p07-g02"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5344,9 +5484,13 @@
         "항목 번호": [
           "p07-g03",
           "p07-g04"
+        ],
+        "재편집 본문": [
+          "p07-g03",
+          "p07-g04"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5362,9 +5506,13 @@
         "항목 번호": [
           "p07-g05",
           "p07-g06"
+        ],
+        "재편집 본문": [
+          "p07-g05",
+          "p07-g06"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5381,9 +5529,13 @@
         "항목 번호": [
           "p07-g07",
           "p07-g08"
+        ],
+        "재편집 본문": [
+          "p07-g07",
+          "p07-g08"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5400,9 +5552,13 @@
         "항목 번호": [
           "p07-s01",
           "p07-s02"
+        ],
+        "재편집 본문": [
+          "p07-s01",
+          "p07-s02"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5420,9 +5576,13 @@
           "p07-h05",
           "p07-s03",
           "p07-s04"
+        ],
+        "재편집 본문": [
+          "p07-s03",
+          "p07-s04"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5439,9 +5599,13 @@
         "항목 번호": [
           "p07-f01",
           "p07-f02"
+        ],
+        "재편집 본문": [
+          "p07-f01",
+          "p07-f02"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5457,9 +5621,13 @@
         "항목 번호": [
           "p07-e01",
           "p07-e02"
+        ],
+        "재편집 본문": [
+          "p07-e01",
+          "p07-e02"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5475,9 +5643,13 @@
         "항목 번호": [
           "p07-e03",
           "p07-h01"
+        ],
+        "재편집 본문": [
+          "p07-e03",
+          "p07-h01"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5494,9 +5666,13 @@
           "p07-f02",
           "p07-h02",
           "p07-h03"
+        ],
+        "재편집 본문": [
+          "p07-h02",
+          "p07-h03"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5515,9 +5691,13 @@
           "p07-h05",
           "p07-s02",
           "p07-s04"
+        ],
+        "재편집 본문": [
+          "p07-h04",
+          "p07-h05"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5541,9 +5721,12 @@
           "p07-g06",
           "p07-g07",
           "p07-g08"
+        ],
+        "재편집 본문": [
+          "p07-garages"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5566,9 +5749,12 @@
           "p07-s02",
           "p07-s03",
           "p07-s04"
+        ],
+        "재편집 본문": [
+          "p07-garages"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5577,16 +5763,20 @@
         "항목 번호": [
           "p07-e03",
           "p07-f02"
+        ],
+        "재편집 본문": [
+          "p07-garage-retention"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
       "page": 22,
       "routes": {
         "재편집 본문": [
-          "p07-first-garage"
+          "p07-first-garage",
+          "p07-garage-retention"
         ]
       },
       "status": "edited"
@@ -5635,9 +5825,12 @@
           "p07-s02",
           "p07-s03",
           "p07-s04"
+        ],
+        "재편집 본문": [
+          "p07-property-catalog"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5653,9 +5846,12 @@
           "p07-h05",
           "p07-s01",
           "p07-s04"
+        ],
+        "재편집 본문": [
+          "p07-property-catalog"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P07",
@@ -5668,9 +5864,14 @@
           "p07-g01",
           "p07-g03",
           "p07-s01"
+        ],
+        "재편집 본문": [
+          "p07-s01",
+          "p07-g01",
+          "p07-g03"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P08",
@@ -9072,9 +9273,36 @@
           "v-77",
           "v-78",
           "v-79"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-05",
+          "v-59",
+          "v-60",
+          "v-61",
+          "v-62",
+          "v-63",
+          "v-44",
+          "v-64",
+          "v-65",
+          "v-14",
+          "v-66",
+          "v-67",
+          "v-68",
+          "v-69",
+          "v-70",
+          "v-71",
+          "v-72",
+          "v-73",
+          "v-74",
+          "v-75",
+          "v-76",
+          "v-77",
+          "v-78",
+          "v-79"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9148,9 +9376,36 @@
           "v-92",
           "v-93",
           "v-94"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-80",
+          "v-81",
+          "v-82",
+          "v-83",
+          "v-84",
+          "v-54",
+          "v-53",
+          "v-01",
+          "v-85",
+          "v-86",
+          "v-87",
+          "v-88",
+          "v-23",
+          "v-07",
+          "v-39",
+          "v-45",
+          "v-89",
+          "v-52",
+          "v-90",
+          "v-91",
+          "v-92",
+          "v-93",
+          "v-17",
+          "v-94"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9229,9 +9484,36 @@
           "v-97",
           "v-98",
           "v-99"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-95",
+          "v-96",
+          "v-97",
+          "v-98",
+          "v-99",
+          "v-100",
+          "v-101",
+          "v-28",
+          "v-102",
+          "v-10",
+          "v-103",
+          "v-104",
+          "v-105",
+          "v-106",
+          "v-107",
+          "v-108",
+          "v-109",
+          "v-18",
+          "v-08",
+          "v-110",
+          "v-111",
+          "v-112",
+          "v-113",
+          "v-114"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9309,9 +9591,36 @@
           "v-38",
           "v-43",
           "v-51"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-38",
+          "v-51",
+          "v-115",
+          "v-116",
+          "v-43",
+          "v-117",
+          "v-118",
+          "v-119",
+          "v-22",
+          "v-120",
+          "v-121",
+          "v-03",
+          "v-122",
+          "v-123",
+          "v-124",
+          "v-125",
+          "v-126",
+          "v-127",
+          "v-128",
+          "v-129",
+          "v-130",
+          "v-131",
+          "v-132",
+          "v-133"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9392,9 +9701,36 @@
           "v-154",
           "v-155",
           "v-42"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-134",
+          "v-135",
+          "v-136",
+          "v-137",
+          "v-138",
+          "v-139",
+          "v-140",
+          "v-141",
+          "v-142",
+          "v-143",
+          "v-144",
+          "v-145",
+          "v-146",
+          "v-147",
+          "v-148",
+          "v-42",
+          "v-149",
+          "v-150",
+          "v-151",
+          "v-152",
+          "v-06",
+          "v-153",
+          "v-154",
+          "v-155"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9473,9 +9809,36 @@
           "v-25",
           "v-26",
           "v-37"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-25",
+          "v-156",
+          "v-157",
+          "v-158",
+          "v-159",
+          "v-160",
+          "v-161",
+          "v-26",
+          "v-162",
+          "v-163",
+          "v-164",
+          "v-165",
+          "v-166",
+          "v-37",
+          "v-167",
+          "v-168",
+          "v-169",
+          "v-170",
+          "v-21",
+          "v-171",
+          "v-172",
+          "v-173",
+          "v-174",
+          "v-175"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9554,9 +9917,36 @@
           "v-31",
           "v-46",
           "v-55"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-176",
+          "v-31",
+          "v-46",
+          "v-177",
+          "v-178",
+          "v-179",
+          "v-180",
+          "v-55",
+          "v-181",
+          "v-182",
+          "v-183",
+          "v-184",
+          "v-185",
+          "v-186",
+          "v-187",
+          "v-188",
+          "v-189",
+          "v-190",
+          "v-191",
+          "v-192",
+          "v-193",
+          "v-194",
+          "v-195",
+          "v-11"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9632,9 +10022,36 @@
           "v-35",
           "v-47",
           "v-48"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-196",
+          "v-197",
+          "v-33",
+          "v-198",
+          "v-47",
+          "v-199",
+          "v-32",
+          "v-200",
+          "v-201",
+          "v-35",
+          "v-202",
+          "v-203",
+          "v-204",
+          "v-205",
+          "v-206",
+          "v-16",
+          "v-207",
+          "v-48",
+          "v-04",
+          "v-208",
+          "v-209",
+          "v-210",
+          "v-211",
+          "v-212"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9713,9 +10130,36 @@
           "v-232",
           "v-49",
           "v-56"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-213",
+          "v-214",
+          "v-215",
+          "v-216",
+          "v-217",
+          "v-218",
+          "v-219",
+          "v-220",
+          "v-15",
+          "v-221",
+          "v-222",
+          "v-223",
+          "v-224",
+          "v-225",
+          "v-56",
+          "v-226",
+          "v-227",
+          "v-12",
+          "v-228",
+          "v-229",
+          "v-49",
+          "v-230",
+          "v-231",
+          "v-232"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9794,9 +10238,36 @@
           "v-251",
           "v-252",
           "v-27"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-233",
+          "v-27",
+          "v-234",
+          "v-235",
+          "v-236",
+          "v-237",
+          "v-238",
+          "v-13",
+          "v-239",
+          "v-240",
+          "v-241",
+          "v-242",
+          "v-243",
+          "v-244",
+          "v-245",
+          "v-246",
+          "v-247",
+          "v-248",
+          "v-249",
+          "v-250",
+          "v-24",
+          "v-251",
+          "v-19",
+          "v-252"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9876,9 +10347,36 @@
           "v-273",
           "v-29",
           "v-34"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-253",
+          "v-254",
+          "v-34",
+          "v-255",
+          "v-256",
+          "v-257",
+          "v-258",
+          "v-259",
+          "v-260",
+          "v-261",
+          "v-262",
+          "v-263",
+          "v-264",
+          "v-265",
+          "v-266",
+          "v-267",
+          "v-02",
+          "v-268",
+          "v-269",
+          "v-270",
+          "v-271",
+          "v-272",
+          "v-273",
+          "v-29"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -9934,9 +10432,30 @@
           "v-50",
           "v-57",
           "v-58"
+        ],
+        "재편집 본문": [
+          "v-vehicle-index",
+          "v-30",
+          "v-20",
+          "v-274",
+          "v-40",
+          "v-275",
+          "v-276",
+          "v-58",
+          "v-41",
+          "v-36",
+          "v-277",
+          "v-278",
+          "v-09",
+          "v-279",
+          "v-50",
+          "v-280",
+          "v-281",
+          "v-57",
+          "v-282"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "index",
