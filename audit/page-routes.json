@@ -2,8 +2,8 @@
   "scope": "Page-to-guide navigation and editorial provenance. Name and index matches identify candidate destinations. No match establishes visual or semantic sign-off. Separate visual checks are required.",
   "counts": {
     "cover-index-or-editorial": 28,
-    "edited": 101,
-    "linked": 425,
+    "edited": 117,
+    "linked": 409,
     "navigation": 13
   },
   "pages": [
@@ -1821,9 +1821,12 @@
         ],
         "명칭 대조": [
           "p02-w-071"
+        ],
+        "재편집 본문": [
+          "p02-w-071"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -1831,9 +1834,12 @@
       "routes": {
         "권말 색인": [
           "p02-w-082"
+        ],
+        "재편집 본문": [
+          "p02-w-082"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -1844,9 +1850,12 @@
         ],
         "명칭 대조": [
           "p02-w-052"
+        ],
+        "재편집 본문": [
+          "p02-w-052"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -1857,9 +1866,12 @@
         ],
         "명칭 대조": [
           "p02-w-060"
+        ],
+        "재편집 본문": [
+          "p02-w-060"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -1867,9 +1879,12 @@
       "routes": {
         "명칭 대조": [
           "p02-w-116"
+        ],
+        "재편집 본문": [
+          "p02-w-116"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -1960,7 +1975,17 @@
           "p02-w-120"
         ],
         "재편집 본문": [
-          "p02-collection-check"
+          "p02-collection-check",
+          "p02-w-012",
+          "p02-w-013",
+          "p02-w-017",
+          "p02-w-034",
+          "p02-w-042",
+          "p02-w-050",
+          "p02-w-059",
+          "p02-w-096",
+          "p02-w-116",
+          "p02-w-120"
         ]
       },
       "status": "edited"
@@ -1983,7 +2008,10 @@
           "p02-w-034"
         ],
         "재편집 본문": [
-          "p02-collection-check"
+          "p02-collection-check",
+          "p02-w-034",
+          "p02-w-013",
+          "p02-w-012"
         ]
       },
       "status": "edited"
@@ -8494,9 +8522,12 @@
         ],
         "명칭 대조": [
           "v-37"
+        ],
+        "재편집 본문": [
+          "v-37"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8507,9 +8538,12 @@
         ],
         "명칭 대조": [
           "v-38"
+        ],
+        "재편집 본문": [
+          "v-38"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8520,9 +8554,12 @@
         ],
         "명칭 대조": [
           "v-39"
+        ],
+        "재편집 본문": [
+          "v-39"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8533,9 +8570,12 @@
         ],
         "명칭 대조": [
           "v-40"
+        ],
+        "재편집 본문": [
+          "v-40"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8546,9 +8586,12 @@
         ],
         "명칭 대조": [
           "v-41"
+        ],
+        "재편집 본문": [
+          "v-41"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8559,9 +8602,12 @@
         ],
         "명칭 대조": [
           "v-42"
+        ],
+        "재편집 본문": [
+          "v-42"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8580,9 +8626,12 @@
           "v-20",
           "v-29",
           "v-32"
+        ],
+        "재편집 본문": [
+          "v-chapter-2-route"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8664,9 +8713,19 @@
           "v-25",
           "v-28",
           "v-34"
+        ],
+        "재편집 본문": [
+          "v-registration",
+          "v-01",
+          "v-04",
+          "v-16",
+          "v-25",
+          "v-28",
+          "v-31",
+          "v-34"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8695,7 +8754,19 @@
           "v-58"
         ],
         "재편집 본문": [
-          "v-registration"
+          "v-registration",
+          "v-46",
+          "v-47",
+          "v-48",
+          "v-49",
+          "v-50",
+          "v-51",
+          "v-52",
+          "v-53",
+          "v-54",
+          "v-55",
+          "v-56",
+          "v-58"
         ]
       },
       "status": "edited"
@@ -8715,9 +8786,13 @@
         "항목 번호": [
           "v-43",
           "v-44"
+        ],
+        "재편집 본문": [
+          "v-43",
+          "v-44"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8736,9 +8811,13 @@
           "v-05",
           "v-45",
           "v-46"
+        ],
+        "재편집 본문": [
+          "v-45",
+          "v-46"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8755,9 +8834,13 @@
         "항목 번호": [
           "v-47",
           "v-48"
+        ],
+        "재편집 본문": [
+          "v-47",
+          "v-48"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",

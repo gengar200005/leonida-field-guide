@@ -123,8 +123,9 @@ function listPage(page,id,p){
  const photoControl=visual?'<label>사진 <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("embedded","도감에 사진이 있는 항목",mediaFilter)+opt("original","원본 사진 링크가 있는 항목",mediaFilter)+opt("photo","사진 또는 원본 링크",mediaFilter)+'</select></label>':"";
  const reading={V:"v-registration",P02:"p02-collection-check",P01:"p01-save-slots",P06:"p06-collection-targets",P09:"p09-region-routes",P08:"p08-range-medals",P04:"p04-first-visit",P05:"p05-region-exploration",P07:"p07-first-garage"};
  const firstGuide=!mine&&!search?findItem(reading[cat]):null;
- const deadlines=cat==="P09"?findItem("p09-chapter-deadlines"):null;
- const deadlineLink=deadlines?'<div class="guide-shortcut">'+relatedLink(deadlines)+'</div>':"";
+ const routeGuideId={V:"v-chapter-2-route",P09:"p09-chapter-deadlines"}[cat];
+ const routeGuide=firstGuide&&findItem(routeGuideId);
+ const routeShortcut=routeGuide?'<div class="guide-shortcut">'+relatedLink(routeGuide)+'</div>':"";
  const shortcut=firstGuide?'<div class="guide-shortcut"><a href="'+entry(firstGuide.id)+'">'+esc(firstGuide.title)+' →</a></div>':"";
  if(!search&&!mine&&cat!=="P01"){
    const rank=v=>(v.status==="unconfirmed"?0:4)+(photo(v)?.src&&!photo(v)?.reveal?2:0);
@@ -134,7 +135,7 @@ function listPage(page,id,p){
  const region=regionChoices.length>1?'<label>지역 <select data-change="region">'+opt("","전체 지역",filter)+regionChoices.map(r=>opt(r,r,filter)).join("")+'</select></label>':"";
  const tabs=mine?'<div class="chips">'+Object.entries({favorite:"즐겨찾기",later:"나중에",done:"완료"}).map(([k,v])=>'<a '+(k===flag?'aria-current="page"':'')+' href="#/mine?flag='+k+'">'+v+'</a>').join("")+'</div>':"";
  const backup=mine?'<div class="bar"><button data-action="export">기록 내보내기</button><label class="btn">기록 가져오기 <input id="restore" type="file" accept=".json,application/json" hidden></label></div>':"";
- return trail([["공략 도감","#/guides"],[title]])+'<div class="eyebrow">'+(categories[cat]?.[1]||"FIELD GUIDE")+'</div>'+listHeading(cat,title,search?'“'+q+'”':categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+deadlineLink+shortcut+'<div class="bar">'+(cat==="P01"?chapterSelect():"")+region+photoControl+'<span class="count">'+all.length.toLocaleString()+'개 공략</span></div>'+cards(all.slice(0,limit))+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
+ return trail([["공략 도감","#/guides"],[title]])+'<div class="eyebrow">'+(categories[cat]?.[1]||"FIELD GUIDE")+'</div>'+listHeading(cat,title,search?'“'+q+'”':categories[cat]?.[2]||"이 브라우저에 기록한 공략을 다시 열 수 있습니다.")+tabs+routeShortcut+shortcut+'<div class="bar">'+(cat==="P01"?chapterSelect():"")+region+photoControl+'<span class="count">'+all.length.toLocaleString()+'개 공략</span></div>'+cards(all.slice(0,limit))+(all.length>limit?'<button class="more" data-action="more">다음 공략 더 보기</button>':'')+backup;
 }
 const searchCache=new Map();
 function searchItems(q){const terms=q.split(/\s+/).map(norm).filter(Boolean);if(!terms.length)return [];
