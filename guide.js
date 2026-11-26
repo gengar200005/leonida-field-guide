@@ -722,18 +722,16 @@ function mapPage(p){
  const search='<form id="map-search" class="bar" role="search" aria-label="지도에서 검색"><label>장소·수집품 <input name="q" placeholder="예: 포트 겔혼, 코튼마우스" value="'+esc(query)+'"></label><button>찾기</button>'+(query?'<button type="button" data-action="clear-map-search">검색 지우기</button>':'')+'</form>';
  const pickers='<fieldset class="map-categories"><legend>지도 분류</legend><button type="button" data-map-cat="" aria-pressed="'+!cats.size+'">전체</button>'+mapCategories.map(c=>'<button type="button" data-map-cat="'+c+'" aria-pressed="'+cats.has(c)+'"><span class="pin-key pin-'+c+'">'+pinSymbol(c)+'</span>'+esc(catName(c))+'</button>').join("")+'</fieldset>';
  const filters='<div class="bar map-filters"><label>지역 <select data-change="region">'+opt("","전체 지역",region)+mapRegionsList.map(v=>opt(v,v,region)).join("")+'</select></label>'+(cats.has("P06")?activityPicker(activity):"")+(cats.has("V")?vehicleStylePicker(style,true):"")+'<label class="map-undone"><input type="checkbox" data-map-filter="undone" '+(undone?"checked":"")+'> 미완료 핀만 보기</label><span class="count">'+mapList.length.toLocaleString()+'개 핀</span></div>';
- const controls='<div class="bar mapcontrols"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><button data-map-action="fullscreen" aria-pressed="'+mapFullscreen+'">'+(mapFullscreen?"전체 화면 닫기":"전체 화면")+'</button><button class="fullscreen-filters" data-map-action="filters">분류·필터</button><button data-map-action="near">지도 중앙 주변 찾기</button><a class="textlink" href="#/credits">지도 출처</a></div>';
+ const controls='<div class="bar mapcontrols"><button data-action="zoomout" aria-label="지도 축소">−</button><button data-action="zoomin" aria-label="지도 확대">＋</button><span>'+Math.round(zoom*100)+'%</span><button data-map-action="fullscreen" aria-pressed="'+mapFullscreen+'">'+(mapFullscreen?"전체 화면 닫기":"전체 화면")+'</button><button type="button" data-shading aria-pressed="'+regionShading+'">지역 음영</button><button class="fullscreen-filters" data-map-action="filters">분류·필터</button><button data-map-action="near">지도 중앙 주변 찾기</button><a class="textlink" href="#/credits">지도 출처</a></div>';
  const viewport='<div class="map-window"><div class="mapview" tabindex="0" aria-label="리오나이다 지형도" aria-describedby="map-help"><div class="mapcanvas" style="width:'+zoom*100+'%;aspect-ratio:2304/2816"><img src="media/leonida-map.webp" draggable="false" alt="리오나이다의 도로·수로·해안 지형"><div class="map-tiles" aria-hidden="true"></div><svg class="map-boundary-overlay" aria-hidden="true" viewBox="-12288 -12288 18432 22528" preserveAspectRatio="none"><path fill-rule="evenodd" vector-effect="non-scaling-stroke"/></svg><div class="map-pins">'+pinsHTML+'</div></div></div><div class="map-region-tooltip" hidden></div>'+clusterPicker()+'</div>';
- const help='<p id="map-help" class="map-help">끌어서 이동하고 휠이나 두 손가락으로 확대하세요. 확인된 섬에 마우스를 올리거나 터치하면 해안선과 소속 카운티가 표시됩니다. <a data-region-source href="https://gtamap.io/?areas=outline#map" target="_blank" rel="noopener noreferrer">전체 구역 원본 지도 ↗</a></p>';
+ const help='<p id="map-help" class="map-help">끌어서 이동하고 휠이나 두 손가락으로 확대하세요. 지도에 마우스를 올리거나 터치하면 지역명이 표시됩니다. 실선은 확인된 해안 경계, 점선은 대략적인 지역 범위입니다. <a data-region-source href="https://gtamap.io/?areas=outline#map" target="_blank" rel="noopener noreferrer">전체 구역 원본 지도 ↗</a></p>';
  const selectedPlace=current?'<div class="selectedpin">'+pinCover(current)+pinContents(current)+pinGuideSummary(current)+'<div class="links">'+doneControl(current)+'<button data-map-action="near-pin">이 핀 주변 찾기</button><a href="'+entry(current.item)+'">상세 공략 →</a>'+link(current.url,current.url.includes("/photos/")?"진입 지점 원본 사진":"원본 위치")+link(sourceDistrictAt(current.x,current.y),"이 위치의 구역 원본")+'</div></div>':'<p class="sub">'+(mapList.length?"핀이나 목록에서 위치를 선택하세요.":"이 조건에 맞는 지도 핀이 없습니다.")+'</p>';
  const list='<div class="pinlist">'+mapList.slice(0,mapLimit).map(v=>'<button data-pin="'+esc(v.id)+'"'+(v===current?' aria-current="location"':'')+'>'+(pinDone(v)?'<span class="done-tag">✓ 완료</span>':'')+pinContents(v)+'</button>').join("")+(mapList.length>mapLimit?'<button data-action="mapmore">위치 더 보기</button>':'')+'</div>';
  return trail([["통합 지도"]])+'<h1>통합 지도</h1><div class="map-inputs">'+search+pickers+filters+'<button class="fullscreen-filters" data-map-action="filters">지도 보기</button></div><div class="maplayout"><div>'+controls+viewport+help+'</div><aside class="panel"><h2>이 지도에서 찾기</h2>'+selectedPlace+nearbyPanel(mapList)+mapProgress()+list+'</aside></div>'+references;
 }
 const sourceDistrictAt=(x,y)=>"https://gtamap.io/?areas=outline&x="+Math.round(x)+"&y="+Math.round(y)+"&z=5#map";
 // Each outline uses game-world coordinates from the same projected coastline as the map.
-const shoreAreas=(mapRegions.boundaries?.features||[]).map(feature=>{
- const {geometry,properties}=feature;
- const shapes=geometry.type==="Polygon"?[geometry.coordinates]:geometry.coordinates;
+function makeMapArea(name, description, shapes, estimated=false){
  const parts=shapes.map(rings=>{
   const bounds=[Infinity,Infinity,-Infinity,-Infinity];
   for(const [x,y] of rings[0]){
@@ -745,8 +743,17 @@ const shoreAreas=(mapRegions.boundaries?.features||[]).map(feature=>{
  const path=shapes.flatMap(polygon=>polygon.map(ring=>
   "M"+ring.map(([x,y])=>x+","+(-y)).join("L")+"Z"
  )).join("");
- return {name:mapRegion(properties.name),county:mapRegion(properties.county)+" 카운티",parts,path};
-});
+ return {name,description,parts,path,estimated};
+}
+const shoreAreas=mapRegions.boundaries.features.map(({properties,geometry})=>
+ makeMapArea(mapRegion(properties.name),mapRegion(properties.county)+" 카운티",
+  geometry.type==="Polygon"?[geometry.coordinates]:geometry.coordinates));
+const estimatedAreas=Object.entries(mapRegions.estimates.areas).map(([name,shapes])=>
+ makeMapArea(name,"대략적인 지역 범위",shapes,true));
+const mapAreas=[...shoreAreas,...estimatedAreas];
+let regionShading=true;
+try{regionShading=localStorage.getItem("leonida-region-shading")!=="off"}catch{}
+
 function insideMapRing(x,y,ring){
  let inside=false;
  for(let i=0,j=ring.length-1;i<ring.length;j=i++){
@@ -755,8 +762,8 @@ function insideMapRing(x,y,ring){
  }
  return inside;
 }
-function shoreAreaAt(x,y){
- for(const area of shoreAreas){
+function mapAreaAt(x,y){
+ for(const area of mapAreas){
   for(const {bounds:[left,bottom,right,top],rings} of area.parts){
    if(x<left||x>right||y<bottom||y>top)continue;
    if(insideMapRing(x,y,rings[0])&&!rings.slice(1).some(hole=>insideMapRing(x,y,hole)))return area;
@@ -811,19 +818,21 @@ function setupMap(view){
   const bounds=canvas.getBoundingClientRect();
   const x=(clientX-bounds.left)/bounds.width*18432-12288;
   const y=12288-(clientY-bounds.top)/bounds.height*22528;
-  const region=shoreAreaAt(x,y);
+  const region=mapAreaAt(x,y);
   if(region!==shadedRegion){
-   if(region)overlay.setAttribute("d",region.path);
+   if(region&&regionShading)overlay.setAttribute("d",region.path);
    else overlay.removeAttribute("d");
+   overlay.classList.toggle("estimated",!!region?.estimated);
    shadedRegion=region;
   }
-  let label=region?region.name+" · "+region.county:"";
+  let label=region?region.name+" · "+region.description:"";
   if(button){
    if(!pinPreviews.has(button)){
     const pin=pinById.get(button.dataset.pin);
     pinPreviews.set(button,pin?pinPreviewText(pin):button.getAttribute("aria-label"));
    }
    label=pinPreviews.get(button);
+   if(region?.estimated)label+=" · "+region.name+" (대략적인 지역 범위)";
   }
   if(!label){hidePreview();return}
   if(tooltip.textContent!==label)tooltip.textContent=label;
@@ -834,6 +843,14 @@ function setupMap(view){
   tooltip.style.left=Math.max(8,left)+"px";
   tooltip.style.top=Math.max(8,top)+"px";
  }
+ const shadingButton=main.querySelector("[data-shading]");
+ shadingButton.addEventListener("click",()=>{
+  regionShading=!regionShading;
+  shadingButton.setAttribute("aria-pressed",String(regionShading));
+  if(regionShading&&shadedRegion)overlay.setAttribute("d",shadedRegion.path);
+  else overlay.removeAttribute("d");
+  try{localStorage.setItem("leonida-region-shading",regionShading?"on":"off")}catch{}
+ });
  function showRegion(event){
   showPreview(event.clientX,event.clientY,event.target.closest(".pin"));
  }
@@ -1093,7 +1110,7 @@ document.addEventListener("submit",event=>{
 });
 function credits(){
  const names=nameSources.length?'<section class="panel"><h2>한국어 명칭</h2><p>공식 표기를 확인한 명칭은 아래 자료를 따릅니다. 그 밖의 고유명에는 한글 표기를 덧붙였으며, 영문 원명으로도 검색할 수 있습니다.</p><div class="links">'+nameSources.map(sourceLink).join("")+'</div></section>':"";
- return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>리오나이다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다. 확대 시 원본 상세 타일을 표시합니다. 섬 음영은 이 지도의 해안선을 추적한 뒤 Open GTA 6 Map의 인쇄 지도 육지 윤곽과 교차 확인한 결과입니다. GTAMap.io를 참고해 소속 구역과 카운티를 확인했습니다. 내륙 행정 경계는 표시하지 않습니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://github.com/fbritoferreira/gta6","Open GTA 6 Map · fbritoferreira")+link("https://gtamap.io/?areas=outline#map","구역 대조 지도")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map의 CC BY 4.0은 기여자가 만든 지도 데이터에 적용됩니다. 게임 화면은 원본 사진 링크로 제공합니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6/blob/main/LICENSE","Open GTA 6 Map 이용 조건")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'+names;
+ return trail([["지도와 이미지 출처"]])+'<h1>지도와 이미지 출처</h1><section class="panel"><h2>리오나이다 지형도와 현장 사진</h2><p>GTA VI Map Tiles 및 현장 사진 · GTADB.ORG and contributors. 이 가이드에서는 타일을 합치고 사진 크기와 파일 형식을 조정했습니다. 원본의 좌표계를 사용합니다. 확대 시 원본 상세 타일을 표시합니다. 섬 음영은 이 지도의 해안선을 추적한 뒤 Open GTA 6 Map의 인쇄 지도 육지 윤곽과 교차 확인한 결과입니다. GTAMap.io를 참고해 소속 구역과 카운티를 확인했습니다. 내륙의 점선은 기존 지역 중심과 반경을 바탕으로 육지와 수면을 구분해 표시한 추정 범위입니다.</p><div class="links">'+link("https://map.gtadb.org","GTADB 지도")+link("https://github.com/rolux/gtadb.org","원본 자료")+link("https://github.com/fbritoferreira/gta6","Open GTA 6 Map · fbritoferreira")+link("https://gtamap.io/?areas=outline#map","구역 대조 지도")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section><section class="panel"><h2>항목별 사진과 영상</h2><p>외형 사진, 현장 사진, 위치 지도를 구분해 표시합니다. Open GTA 6 Map의 CC BY 4.0은 기여자가 만든 지도 데이터에 적용됩니다. 게임 화면은 원본 사진 링크로 제공합니다. 공식 홍보 도판은 © Rockstar Games입니다. 재게시 허가를 확인하기 어려운 자료는 각 항목의 원본 링크에서 볼 수 있습니다. GTA VI와 게임 내 디자인은 Rockstar Games의 저작물입니다.</p><div class="links">'+link("https://github.com/fbritoferreira/gta6/blob/main/LICENSE","Open GTA 6 Map 이용 조건")+link("https://www.rockstargames.com/VI/media/screenshots","Rockstar Games 공식 갤러리")+link("https://creativecommons.org/licenses/by/4.0/","CC BY 4.0")+'</div></section>'+names;
 }
 function render(reset=false){
  const r=route();let title="리오나이다 필드 가이드",html;

@@ -242,7 +242,7 @@ def build():
         "items": [json.loads(line) for file in sorted((ROOT / "data").glob("*.jsonl")) for line in file.read_text(encoding="utf-8").splitlines() if line],
         "media": read("photos.json"),
         "pins": read("atlas.json"),
-        "mapRegions": read("map-regions.json"),
+        "mapRegions": {**read("map-regions.json"), "estimates": read("map-estimates.json")},
         "mapReferenceNames": read("map-reference-names.json"),
         "redirects": read("redirects.json")
     }
@@ -297,6 +297,9 @@ def build():
     for output, components in bundles.items():
         (SITE / output).write_text("\n".join((ROOT / file).read_text(encoding="utf-8") for file in components), encoding="utf-8")
     shutil.copyfile(ROOT / "start.js", SITE / "start.js")
+    shutil.copytree(ROOT / "icons", SITE / "icons", dirs_exist_ok=True)
+    for file in ("favicon.ico", "manifest.webmanifest"):
+        shutil.copyfile(ROOT / file, SITE / file)
     index = SITE / "index.html"
     html = (ROOT / "index.html").read_text(encoding="utf-8").replace("<!-- guide-home -->", home_markup(data))
     for filename in ("style.css", "guide-data.js", "guide.js", "start.js"):

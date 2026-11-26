@@ -98,38 +98,87 @@ def verify_shores(page, address, mobile, output=None):
     expect(view).to_be_visible()
     tip = page.locator(".map-region-tooltip")
     assert not view.locator("canvas.map-region-shade").count()
-    # World positions independently compared against the base map: two named islands,
-    # uncovered inland and open ocean. The original tiles use eight world units/pixel.
-    points = ((902, 495, "스타피시"), (-7484, 5025, "드레이퍼"),
-              (-3950, 80, None), (-10800, -9000, None))
+    path = view.locator(".map-boundary-overlay path").first
+    switch = page.get_by_role("button", name="지역 음영", exact=True)
+    expect(switch).to_have_attribute("aria-pressed", "true")
+
+    def point_at(x, y):
+        view.scroll_into_view_if_needed()
+        screen = view.evaluate("""async (v, [x,y])=>{
+            const c=v.querySelector('.mapcanvas'), fx=(x+12288)/18432, fy=(12288-y)/22528;
+            v.scrollLeft=fx*c.clientWidth-v.clientWidth/2;
+            v.scrollTop=fy*c.clientHeight-v.clientHeight/2;
+            await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);
+            const r=c.getBoundingClientRect();
+            return [r.left+fx*r.width,r.top+fy*r.height];
+        }""", [x, y])
+        if mobile:
+            page.touchscreen.tap(*screen)
+        else:
+            page.mouse.move(screen[0]-2, screen[1]-1)
+            page.mouse.move(*screen)
+
+    # Ocean Beach's former circle includes the stretch of sea at (2350,605).
+    points = ((902, 495, "스타피시", False), (-7484, 5025, "드레이퍼", False),
+              (-5580, -1418, "빅 파인", True), (-6402, 3766, "포트 겔혼", True),
+              (-3950, 80, None, False), (2350, 605, None, False), (-10800, -9000, None, False))
     for enlarged in (False, True):
         if enlarged:
             page.get_by_role("button", name="지도 확대", exact=True).click()
-        view.scroll_into_view_if_needed()
-        for x, y, name in points:
-            screen = view.evaluate("""async (v, [x,y])=>{
-                const c=v.querySelector('.mapcanvas'), fx=(x+12288)/18432, fy=(12288-y)/22528;
-                v.scrollLeft=fx*c.clientWidth-v.clientWidth/2;
-                v.scrollTop=fy*c.clientHeight-v.clientHeight/2;
-                await new Promise(requestAnimationFrame);await new Promise(requestAnimationFrame);
-                const r=c.getBoundingClientRect();
-                return [r.left+fx*r.width,r.top+fy*r.height];
-            }""", [x, y])
-            if mobile:
-                page.touchscreen.tap(*screen)
-            else:
-                page.mouse.move(screen[0]-2, screen[1]-1)
-                page.mouse.move(*screen)
-            if name:
-                expect(tip).to_be_visible()
-                expect(tip).to_contain_text(name)
-                path = view.locator(".map-boundary-overlay path").first
-                expect(path).to_be_visible()
-                assert len(path.get_attribute("d") or "") > 50
-                if output and enlarged and name == "스타피시":
-                    view.screenshot(path=output/f"{390 if mobile else 1365}-coast.jpg", type="jpeg", quality=85)
-            else:
+        for x, y, name, estimated in points:
+            point_at(x, y)
+            if not name:
                 expect(tip).to_be_hidden()
+                assert not path.get_attribute("d")
+                continue
+            expect(tip).to_be_visible()
+            expect(tip).to_contain_text(name)
+            assert ("대략적인 지역 범위" in tip.inner_text()) == estimated
+            assert path.evaluate("p=>getComputedStyle(p).strokeDasharray !== 'none'") == estimated
+            expect(path).to_be_visible()
+            assert len(path.get_attribute("d") or "") > 50
+            if output and enlarged and name in ("스타피시", "빅 파인"):
+                kind = "inland" if estimated else "coast"
+                view.screenshot(path=output/f"{390 if mobile else 1365}-{kind}.jpg", type="jpeg", quality=85)
+    switch.click()
+    page.reload(wait_until="domcontentloaded")
+    expect(switch).to_have_attribute("aria-pressed", "false")
+    point_at(-5580, -1418)
+    expect(tip).to_contain_text("빅 파인")
+    assert not path.get_attribute("d")
+    switch.click()
+    point_at(-5580, -1418)
+    expect(switch).to_have_attribute("aria-pressed", "true")
+    assert path.get_attribute("d")
+
+
+def verify_icons(page):
+    manifest_url = page.locator('link[rel="manifest"]').evaluate("a=>a.href")
+    response = page.request.get(manifest_url)
+    assert response.ok
+    manifest = response.json()
+    assert (manifest["name"], manifest["short_name"]) == ("리오나이다 필드 가이드", "GTA VI 가이드")
+    assert manifest["display"] == "standalone"
+    ico_url = page.locator('link[href$=".ico"]').evaluate("a=>a.href")
+    assert page.request.get(ico_url).ok
+    page.evaluate("""async ([m, url]) => {
+        const resolve = p=>new URL(p,url).href;
+        if(resolve(m.scope)!==new URL('./',location.href).href || resolve(m.start_url)!==resolve('./#/'))
+            throw Error('Incorrect Pages scope or launch URL');
+        for(const [purpose,size] of [['any',192],['any',512],['maskable',512],['apple',180],['svg',0],['ico',0]]){
+            const asset=m.icons.find(i=>i.purpose===purpose && i.sizes===size+'x'+size);
+            const selector={apple:'link[rel="apple-touch-icon"]',svg:'link[type="image/svg+xml"]',ico:'link[href$=".ico"]'}[purpose];
+            const href=selector?document.querySelector(selector).href:resolve(asset.src);
+            if(!href.startsWith(resolve(m.scope)))throw Error(href);
+            // Playwright intercepts the implicit /favicon.ico request when routing is enabled.
+            const response=await fetch(purpose==="ico"?href+"?decode":href);
+            if(!response.ok)throw Error(href + " " + response.status);
+            const img=new Image(); img.src=URL.createObjectURL(await response.blob());
+            try { await img.decode(); } catch(e) { throw Error(href + " " + e.message); }
+            finally { URL.revokeObjectURL(img.src); }
+            if(!img.naturalWidth || (size && (img.naturalWidth!==size || img.naturalHeight!==size)))throw Error(href);
+        }
+    }""", [manifest, manifest_url])
 
 
 def verify_story(page, base):
@@ -260,12 +309,13 @@ def inspect(base, offline, output):
             errors = []
             page.on("pageerror", lambda error: errors.append(str(error)))
             verify_merged_entry(page, base)
+            verify_icons(page)
             verify_shores(page, base, width==390, output)
             verify_story(page, base)
             verify_campaign(page, base)
             results[width] = inspect_views(page, base, output, width)
             assert not errors, errors
-            print(f"PASS {width}px: legacy URLs, union of save flags, source retention, coastline selection, 109-mission chronology, shared mission IDs, aquarium route, progressive clues, protected endings and reader routes", flush=True)
+            print(f"PASS {width}px: legacy URLs, union of save flags, source retention, coastal and inland overlays, install icons, 109-mission chronology, shared mission IDs, aquarium route, progressive clues, protected endings and reader routes", flush=True)
             ctx.close()
         browser.close()
     if output:

@@ -54,3 +54,5 @@ body.map-full{overflow:hidden}
 .selectedpin .pin-cover{display:block;margin-bottom:8px;color:inherit;overflow:hidden;background:transparent}
 .selectedpin .pin-cover img{display:block;width:100%;max-height:190px;object-fit:contain;background:#182923;border-radius:5px}
 .selectedpin .pin-cover small{display:block;font-size:.78rem;margin-top:3px}
+
+.map-boundary-overlay path.estimated{fill:#715138;fill-opacity:.13;stroke:#644933;stroke-opacity:.7;stroke-width:1.2px;stroke-dasharray:4 5}

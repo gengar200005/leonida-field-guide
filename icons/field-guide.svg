@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="리오나이다 필드 가이드">
+  <defs>
+    <linearGradient id="dusk" x1="0" x2=".35" y1="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#ffbe69"/><stop offset=".47" stop-color="#ff8c6c"/><stop offset="1" stop-color="#e85391"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="100" fill="#142e29"/>
+  <g id="insignia">
+    <g stroke="#688a73" stroke-width="6" fill="none">
+      <circle cx="256" cy="256" r="194"/>
+      <path d="M63 256h19m348 0h19M256 431v19"/>
+    </g>
+    <path d="m256 49 11 29h-22z" fill="#ffd598"/>
+    <path d="M138 199a128 128 0 0 1 236 0z M134 208h244l3 11H131z M129 229h254l1 8H128z" fill="url(#dusk)"/>
+    <path d="M104 246h47l51 100 54-100h47l-82 140h-40z M323 246h43v140h-43z" fill="#fff3d9"/>
+  </g>
+</svg>
