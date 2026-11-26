@@ -67,6 +67,8 @@ main{min-height:70vh;padding-top:28px;padding-bottom:64px}main:focus{outline:non
 .catalog-appearance a{color:var(--sea);font-weight:700;text-underline-offset:3px;text-decoration:underline;padding:5px}
 .catalog-appearance button{border:0;border-radius:0;background:none;padding:0}
 .catalog-appearance img{display:block;width:100%;height:100%;object-fit:contain}
+.catalog-appearance .catalog-frame{display:block;position:relative;height:auto;overflow:hidden}
+.catalog-frame img{position:absolute;object-fit:fill}
 .catalog-info{padding:0;min-width:0}
 .catalog-info .kicker{display:block;font-size:11px}
 .catalog-info h3{font-size:17px;margin:4px 0 6px}

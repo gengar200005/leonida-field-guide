@@ -113,11 +113,20 @@ function catalogFieldPhoto(v,m,appearance){
  const original=m?.originalPhoto!==appearance?link(m?.originalPhoto,"현장 사진"):"";
  return original||link(v.fieldReferences?.photo,"현장 사진");
 }
+function catalogThumbnail(m,v){
+ const frame=m.previewFrame;
+ const attrs=' loading="lazy" src="'+esc(m.src)+'" alt="'+esc(m.caption||v.title)+'"';
+ if(!frame)return '<img'+attrs+'>';
+ const [left,top,width,height]=frame;
+ const ratio=width*m.width+"/"+(height*m.height);
+ const positioning="width:"+10000/width+"%;height:"+10000/height+"%;left:"+(-100*left/width)+"%;top:"+(-100*top/height)+"%";
+ return '<span class="catalog-frame" style="aspect-ratio:'+ratio+'"><img'+attrs+' style="'+positioning+'"></span>';
+}
 function catalogCard(v){
  const m=photo(v),appearance=catalogAppearance(v,m),label=esc(v.title);
  const preview=appearance.embedded
-  ?'<button data-action="image" data-id="'+esc(v.id)+'" aria-label="'+label+' 외형 사진 확대"><img loading="lazy" src="'+esc(appearance.embedded)+'" alt="'+esc(m.caption||v.title)+'"></button>'
-  :link(appearance.original,"외형 보기")||'<span>외형 사진 없음</span>';
+  ?'<button data-action="image" data-id="'+esc(v.id)+'" aria-label="'+label+' 외형 사진 확대">'+catalogThumbnail(m,v)+'</button>'
+  :link(appearance.original,"외형 원본")||'<span>외형 사진 없음</span>';
  const point=pinLinks(v).find(p=>!variableBox(p));
  const map=point?'<a href="'+esc(mapPinRoute(point))+'">지도</a>':link(v.fieldReferences?.map,"원본 지도");
  const photoLink=catalogFieldPhoto(v,m,appearance.original);
@@ -201,7 +210,7 @@ function listPage(page,id,p){
    const rank=v=>{
     const m=photo(v);
     const preview=m?.src&&!m.reveal&&(!catalog||m.kind==="appearance");
-    return (v.status==="unconfirmed"?0:4)+(preview?2:0);
+    return (v.status==="unconfirmed"?0:4)+(preview?(catalog?8:2):0);
    };
    all=[...all].sort((a,b)=>rank(b)-rank(a));
  }
