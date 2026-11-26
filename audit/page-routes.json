@@ -2,8 +2,8 @@
   "scope": "Page-to-guide navigation and editorial provenance. Name and index matches identify candidate destinations. No match establishes visual or semantic sign-off. Separate visual checks are required.",
   "counts": {
     "cover-index-or-editorial": 28,
-    "edited": 117,
-    "linked": 409,
+    "edited": 124,
+    "linked": 402,
     "navigation": 13
   },
   "pages": [
@@ -1895,9 +1895,12 @@
         ],
         "명칭 대조": [
           "p02-w-105"
+        ],
+        "재편집 본문": [
+          "p02-w-105"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -1908,9 +1911,12 @@
         ],
         "명칭 대조": [
           "p02-w-002"
+        ],
+        "재편집 본문": [
+          "p02-w-002"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -1918,9 +1924,12 @@
       "routes": {
         "권말 색인": [
           "p02-w-030"
+        ],
+        "재편집 본문": [
+          "p02-w-030"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -1954,9 +1963,33 @@
           "p02-w-107",
           "p02-w-116",
           "p02-x05"
+        ],
+        "재편집 본문": [
+          "p02-collection-check",
+          "p02-w-092",
+          "p02-w-026",
+          "p02-w-079",
+          "p02-w-001",
+          "p02-w-077",
+          "p02-w-107",
+          "p02-w-041",
+          "p02-w-046",
+          "p02-w-045",
+          "p02-x05",
+          "p02-w-083",
+          "p02-w-074",
+          "p02-w-071",
+          "p02-w-082",
+          "p02-w-052",
+          "p02-w-060",
+          "p02-w-116",
+          "p02-w-105",
+          "p02-w-002",
+          "p02-w-030",
+          "p02-impound-gear"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "P02",
@@ -8857,9 +8890,13 @@
         "항목 번호": [
           "v-49",
           "v-50"
+        ],
+        "재편집 본문": [
+          "v-49",
+          "v-50"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8876,9 +8913,13 @@
         "항목 번호": [
           "v-51",
           "v-52"
+        ],
+        "재편집 본문": [
+          "v-51",
+          "v-52"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8895,9 +8936,14 @@
         "항목 번호": [
           "v-53",
           "v-54"
+        ],
+        "재편집 본문": [
+          "v-53",
+          "v-54",
+          "p06-stunt-starts"
         ]
       },
-      "status": "linked"
+      "status": "edited"
     },
     {
       "book": "V",
@@ -8916,7 +8962,10 @@
           "v-56"
         ],
         "재편집 본문": [
-          "v-registration"
+          "v-registration",
+          "v-55",
+          "v-56",
+          "p09-m-072"
         ]
       },
       "status": "edited"
@@ -8938,7 +8987,9 @@
           "v-58"
         ],
         "재편집 본문": [
-          "v-registration"
+          "v-registration",
+          "v-57",
+          "v-58"
         ]
       },
       "status": "edited"
