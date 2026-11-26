@@ -1164,7 +1164,11 @@ main.addEventListener("toggle",e=>{
  const panel=e.target;
  if(!panel.open||!panel.classList.contains("protected-photo"))return;
  const template=panel.querySelector("template");
- if(template)template.replaceWith(template.content.cloneNode(true));
+ if(!template)return;
+ const figure=document.importNode(template.content,true);
+ const image=figure.querySelector("img");
+ if(image)image.loading="eager";
+ template.replaceWith(figure);
 },true);
 main.addEventListener("error",e=>{
  const image=e.target;

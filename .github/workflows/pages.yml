@@ -19,7 +19,7 @@ jobs:
           python-version: '3.12'
       - name: Install browser test tools
         run: |
-          python -m pip install playwright==1.51.0
+          python -m pip install playwright==1.62.0
           python -m playwright install --with-deps chromium
       - name: Verify desktop and touch player flows before publishing
         run: python tests/release.py --offline --captures "${{ runner.temp }}/guide-captures"

@@ -146,7 +146,9 @@ def verify_story(page, base):
     dark.locator("summary").click()
     image = dark.locator("img")
     expect(image).to_be_visible()
-    assert image.evaluate("im=>im.decode().then(()=>im.naturalWidth>0)")
+    image.scroll_into_view_if_needed()
+    expect(image).to_have_js_property("complete", True)
+    assert image.evaluate("im=>im.decode().then(()=>im.naturalWidth>0)"), source
     dark.get_by_role("button").click()
     expect(page.locator("#lightbox img")).to_be_visible()
     page.get_by_role("button", name="닫기", exact=True).click()
