@@ -215,4 +215,11 @@ html{scroll-padding-top:54px}
 .rail .related-card{display:flex;align-items:center;gap:10px;min-height:44px}
 .related-card img{width:76px;aspect-ratio:16/9;object-fit:cover;border-radius:4px;flex:none}
 
-.art.unavailable-photo{display:grid;place-items:center;color:var(--muted);font-size:.875rem}
+.home-art[hidden]{display:none}
+.card:has(>.home-art[hidden])::before{content:"사진을 불러오지 못했습니다."}
+.unavailable-photo,.card:has(>.home-art[hidden])::before{display:block;padding:8px var(--card-padding);color:var(--muted);font-size:.875rem}
+.field-figure .unavailable-photo{margin:0;padding:8px 0}
+/* Keep lazy photo failures from moving the player to another card on return. */
+.cards .card-art>.unavailable-photo,.card:has(>.home-art[hidden])::before{
+ display:grid;place-items:center;aspect-ratio:16/9;background:#e5eae1
+}

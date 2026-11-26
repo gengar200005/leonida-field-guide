@@ -309,6 +309,15 @@ def build():
     apply_merges(data, final_groups)
     classify_guides(data, decisions)
     assign_thumbnails(data, read("thumbnail-media.json"), protected_aliases)
+    media_links = read("media-reference-links.json")
+    items_by_id = {item["id"]: item for item in data["items"]}
+    for key, references in media_links.items():
+        item = items_by_id[key]
+        # The existing player opens the first video, so prefer its verified scene.
+        seen = {ref["url"] for ref in references}
+        if len(seen) != len(references):
+            raise ValueError(f"Duplicate media reference on {key}")
+        item["sources"] = references + [ref for ref in item.get("sources", []) if ref["url"] not in seen]
     ids = {row["id"].lower() for row in data["items"]}
     assert len(ids) == len(data["items"])
     pin_ids = {pin["id"]: pin["item"].lower() for pin in data["pins"]}
@@ -332,9 +341,10 @@ def build():
                 if name != Path(name).name or not name.endswith(".webp"):
                     raise ValueError(f"Invalid media member: {name}")
                 (dest / name).write_bytes(archive.read(record))
-    for image in (ROOT / "media/editorial").glob("*.webp"):
-        (media_dir / "editorial").mkdir(exist_ok=True)
-        shutil.copyfile(image, media_dir / "editorial" / image.name)
+    for image in (ROOT / "media").glob("*/*.webp"):
+        dest = media_dir / image.relative_to(ROOT / "media")
+        dest.parent.mkdir(exist_ok=True)
+        shutil.copyfile(image, dest)
     photos = [*data["media"].values(), *(image for item in data["items"] for image in item.get("gallery", []))]
     for photo in photos:
         src = photo.get("src")

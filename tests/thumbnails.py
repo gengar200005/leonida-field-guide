@@ -67,6 +67,7 @@ def check(base, decode):
                 "mapEntries":sum(r["map"] is not None for r in group),"mapImages":sum(bool(r["map"]) for r in group)}
     current={r["id"] for r in rows if r["pic"]}
     previous_patch=previous | {redirects.get(k,k) for k in baseline["v102AddedCardIds"]}
+    bulk_baseline = previous_patch | {redirects.get(k,k) for k in baseline["editorialAddedCardIds"]}
     gained=current-previous
     mission_groups={r["readerGroup"] for r in rows if r["readerGroup"]}
     historical={k:redirects.get(k,k) for k in baseline["historicalAssignments"]}
@@ -76,6 +77,7 @@ def check(base, decode):
             "eventsByType":{g:stats([r for r in rows if r["readerGroup"]==g]) for g in sorted(mission_groups)},
             "newlyVisible":sorted(gained),"lostSinceBaseline":sorted(previous-current),
             "lostSinceV102":sorted(previous_patch-current),"newSinceV102":sorted(current-previous_patch),
+            "lostSinceEditorial":sorted(bulk_baseline-current),"newSinceEditorial":sorted(current-bulk_baseline),
             "restoredFromHistory":sorted(gained.intersection(historical.values())),"firstVisibleInAudit":sorted(gained-set(historical.values())),
             "olderAssignmentsWithoutCard":{k:v for k,v in sorted(historical.items()) if v not in current},
             "missingCard":[r["id"] for r in rows if not r["pic"]],"missingHero":[r["id"] for r in rows if not r["hero"]],
@@ -95,6 +97,6 @@ if __name__=="__main__":
     if args.output:
         args.output.write_text(json.dumps(report,ensure_ascii=False,indent=1)+"\n",encoding="utf-8")
     print({k:report[k] for k in ("overall","campaign","fieldExploration","distinctURLs","decodeFailures")})
-    assert not report["lostSinceBaseline"] and not report["lostSinceV102"] and not report["decodeFailures"]
+    assert not report["lostSinceBaseline"] and not report["lostSinceV102"] and not report["lostSinceEditorial"] and not report["decodeFailures"]
     assert report["campaign"]["entries"]==report["campaign"]["card"]
     assert "p09-re-041" not in report["missingCard"]

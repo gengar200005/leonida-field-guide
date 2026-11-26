@@ -451,7 +451,7 @@ function appearanceSource(v){
  return (v.sources||[]).find(ref=>(["무기 외형 원본","장비 외형 원본"].includes(ref.label)&&url(ref.url))||/^https:\/\/static\.metaforge\.app\/gta-6\/progress\/weapons\/[\w-]+\.webp$/.test(ref.url));
 }
 function localMap(p){if(!p)return "";const x=(p.x+12288)/8,y=(12288-p.y)/8;
- return '<a class="inset" href="'+esc(mapPinRoute(p))+'"><svg role="img" aria-label="현장 주변의 지형과 위치" viewBox="'+(x-140)+' '+(y-80)+' 280 160"><image href="media/leonida-map.webp" width="2304" height="2816"/><circle cx="'+x+'" cy="'+y+'" r="7" fill="#e45a30" stroke="white" stroke-width="2"/></svg><span>통합 지도에서 확대 ↗</span></a>';
+ return '<a class="inset" href="'+esc(mapPinRoute(p))+'"><svg role="img" aria-label="위치 지도 · 현장 주변 지형과 핀" viewBox="'+(x-140)+' '+(y-80)+' 280 160"><image href="media/leonida-map.webp" width="2304" height="2816"/><circle cx="'+x+'" cy="'+y+'" r="7" fill="#e45a30" stroke="white" stroke-width="2"/></svg><span>위치 지도 · 통합 지도에서 확대 ↗</span></a>';
 }
 function entryMap(v){
  const points=pinLinks(v);
@@ -468,18 +468,20 @@ function entryMap(v){
  return v.category==="P05"?'<details class="panel"><summary>정확한 위치와 주변 지도 펼치기</summary>'+body+'</details>':'<section class="panel"><h2>'+esc(v.mapTitle||"현장 위치")+'</h2>'+body+'</section>';
 }
 function videoSection(links){
- let video=null,seconds=0,label="";
+ let video=null,seconds=0,label="",protectedVideo=false;
  for(const ref of links){
   try{const u=new URL(ref.url),id=u.hostname==="youtu.be"?u.pathname.slice(1):["www.youtube.com","youtube.com","m.youtube.com"].includes(u.hostname)?u.searchParams.get("v"):null;
    if(!id||!/^[A-Za-z0-9_-]{11}$/.test(id))continue;
    const t=u.searchParams.get("t")||u.searchParams.get("start")||"0";
    const parts=t.match(/^(?:(\d+)h)?(?:(\d+)m)?(\d+)s?$/);
    seconds=parts?Number(parts[1]||0)*3600+Number(parts[2]||0)*60+Number(parts[3]):0;
-   video=id;label=ref.label||"영상";break;
+   video=id;label=ref.label||"영상";protectedVideo=Boolean(ref.reveal);break;
   }catch{}
  }
  if(!video)return "";
- return '<section class="panel"><h2>참고 영상</h2><button data-video="'+video+'" data-time="'+seconds+'">▶ '+esc(label)+' 재생</button></section>';
+ const button='<button data-video="'+video+'" data-time="'+seconds+'">▶ '+esc(label)+' 재생</button>';
+ return protectedVideo?'<details class="panel protected-video"><summary>공략 영상 보기 · 스포일러</summary>'+button+'</details>':
+  '<section class="panel"><h2>참고 영상</h2>'+button+'</section>';
 }
 function sourceLink(ref){
  const href=url(ref.url);if(!href)return "";
@@ -522,6 +524,8 @@ function detail(v){
  const brief=rows.length?'<dl class="entry-facts">'+rows.map(([k,value])=>'<div><dt>'+k+'</dt><dd>'+esc(value)+'</dd></div>').join("")+'</dl>':"";
  const summary=v.summary&&v.summary!==v.title&&v.summary!=="–"?'<p class="lead">'+esc(v.summary)+'</p>':"";
  const visual=photoFigure(v);
+ const originalPhotos=links.filter(ref=>!ref.reveal&&/^(카드 외형|현장 사진) · 원본(?:$|[ ·(])/.test(ref.label||""));
+ const photoLinks=originalPhotos.length?'<div class="links original-photos">'+originalPhotos.map(sourceLink).join("")+'</div>':"";
  const intro='<header class="intro"><div class="intro-content"><p class="kicker">'+esc(meta.join(" · "))+'</p><h1>'+esc(v.title)+'</h1>'+summary+statusText(v)+originalName+brief+'<div class="tools">'+actions+'</div></div>'+visual+'</header>';
  const chapterMissions=v.track==="story"?categoryItems("P01").filter(i=>i.track==="story"&&i.chapter===v.chapter).sort((a,b)=>a.sequence-b.sequence):[];
  const position=chapterMissions.indexOf(v);
@@ -531,7 +535,7 @@ function detail(v){
   (position+1<chapterMissions.length?'<a href="'+entry(chapterMissions[position+1].id)+'">다음 공략 →</a>':'')+'</div></nav>';
  const sources=links.length?'<details class="panel reference-links"><summary>지도·영상·참고 자료 <small>'+links.length+'</small></summary><div class="links">'+links.map(sourceLink).join("")+'</div></details>':"";
  const relatedPanel=related.length?'<div class="panel"><h2>연관 공략</h2>'+related.slice(0,8).map(relatedCard).join("")+(related.length>8?'<details><summary>전체 '+related.length+'개 보기</summary>'+related.slice(8).map(relatedCard).join("")+'</details>':'')+'</div>':"";
- return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article">'+intro+mobileOutline+(catalogEntry(v)?catDetailFacts(v):"")+entryMap(v)+sections.map(section).join("")+fieldGallery(v)+fieldReferences(v)+videoSection(links)+campaignNav+sources+'</article><aside class="rail">'+desktopOutline+relatedPanel+'</aside></div>';
+ return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article">'+intro+mobileOutline+photoLinks+(catalogEntry(v)?catDetailFacts(v):"")+entryMap(v)+sections.map(section).join("")+fieldGallery(v)+fieldReferences(v)+videoSection(links)+campaignNav+sources+'</article><aside class="rail">'+desktopOutline+relatedPanel+'</aside></div>';
 }
 function missing(){return trail([["찾을 수 없는 공략"]])+'<h1>공략을 찾을 수 없습니다</h1><p class="lead">이전 판의 주소이거나 통합된 항목일 수 있습니다.</p><a class="btn" href="#/guides">공략 도감 열기</a>'}
 const inBounds=p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=-12288&&p.x<=6144&&p.y>=-10240&&p.y<=12288;
@@ -1216,19 +1220,29 @@ main.addEventListener("error",e=>{
  const figureButton=image.closest('.field-figure button[data-action="image"]');
  if(figureButton){
   const note=document.createElement("p");
-  note.className="caption";note.textContent="현장 사진을 불러오지 못했습니다.";
+  note.className="unavailable-photo";note.textContent="사진을 불러오지 못했습니다.";
   figureButton.replaceWith(note);return;
  }
  if(image.closest(".related-card")){image.remove();return}
  const cardArt=image.closest(".card-art");
  if(cardArt){
-  if(cardArt.closest(".guide-card")){
-   const fallback=document.createElement("span");
-   fallback.className="art unavailable-photo";
-   fallback.textContent="사진을 불러올 수 없습니다";
-   image.replaceWith(fallback);
-  }else cardArt.remove();
+  const fallback=document.createElement("span");
+  fallback.className="unavailable-photo";
+  fallback.textContent="사진을 불러오지 못했습니다.";
+  cardArt.replaceChildren(fallback);
   return;
+ }
+ const button=image.closest('.catalog-appearance button[data-action="image"]');
+ if(button){
+  const v=findItem(button.dataset.id);
+  const original=photo(v)?.source;
+  const source=url(original)?original:"";
+  const fallback=document.createElement("a");
+  fallback.className="catalog-original";
+  fallback.href=source||entry(v.id);
+  if(source){fallback.target="_blank";fallback.rel="noopener noreferrer"}
+  fallback.textContent=source?"외형 사진 출처 ↗":"외형 공략 보기 →";
+  button.replaceWith(fallback);return;
  }
  const anchor=image.closest('a[data-action="appearance"]');
  if(!anchor)return;
