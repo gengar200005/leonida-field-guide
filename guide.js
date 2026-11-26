@@ -3,7 +3,7 @@ const {items,media,pins,redirects={},regionAliases={},nameSources=[]}=window.FIE
 const categories={
   P01:["챕터별 공략","CH","진행 전 확인할 수집품과 선택"],V:["고유 차량","GT","발견 위치와 차고 등록"],P02:["무기와 장비","EQ","획득 조건과 보관 방법"],
   P05:["비밀 탐험","EX","숨겨진 장소와 단계별 단서"],P06:["수집품","CO","컬렉션별 위치와 대체 사본"],P07:["부동산·은신처","HQ","위치와 이용 조건"],
-  P03:["돈벌이·경제","EC","초기 자금과 반복 수입"],P04:["갱단 거점","OP","현장 접근과 보상"],P08:["전투·성장","SK","능력과 장비 운용"],
+  P03:["돈벌이·경제","EC","초기 자금과 반복 수입"],P04:["갱단 거점","OP","기본판 39곳과 얼티밋 에디션 특전 1곳의 위치·해금·보상"],P08:["전투·성장","SK","능력과 장비 운용"],
   P09:["서브미션·이벤트","EV","조우 조건과 시한"],P10:["숨은 메커니즘","ME","작동 조건과 판본 차이"]
 };
 const chapters=["프롤로그","챕터 1","챕터 2","챕터 3","챕터 4","챕터 5","엔드게임"];
@@ -143,7 +143,7 @@ function listPage(page,id,p){
  const photoControl=visual?'<label>사진 <select data-change="media">'+opt("","전체 항목",mediaFilter)+opt("embedded","도감에 사진이 있는 항목",mediaFilter)+opt("original","원본 사진 링크가 있는 항목",mediaFilter)+opt("photo","사진 또는 원본 링크",mediaFilter)+'</select></label>':"";
  const reading={V:"v-registration",P02:"p02-collection-check",P01:"p01-save-slots",P06:"p06-collection-targets",P09:"p09-region-routes",P08:"p08-range-medals",P04:"p04-first-visit",P05:"p05-region-exploration",P07:"p07-first-garage"};
  const firstGuide=!mine&&!search?findItem(reading[cat]):null;
- const routeGuideIds={V:["v-chapter-2-route","v-vehicle-index"],P01:["p01-roadmap"],P02:["p02-play-guide","p02-weapon-index"],P03:["p03-economy-overview"],P04:["p04-catalog"],P07:["p07-property-catalog"],P08:["p08-training-start"],P09:["p09-chapter-deadlines","p09-world-activities"]}[cat]||[];
+ const routeGuideIds={V:["v-chapter-2-route","v-42-collection-route","v-vehicle-index"],P01:["p01-roadmap"],P02:["p02-play-guide","p02-weapon-index","p02-chapter-two-kit","p02-field-pickup-route"],P03:["p03-economy-overview"],P04:["p04-catalog"],P07:["p07-property-catalog"],P08:["p08-training-start"],P09:["p09-start-here","p09-mission-index","p09-encounter-index","p09-chapter-deadlines","p09-world-activities"],P10:["p10-story-tools"]}[cat]||[];
  const routeShortcut=!mine&&!search?routeGuideIds.map(findItem).filter(Boolean).map(v=>'<div class="guide-shortcut">'+relatedLink(v)+'</div>').join(""):"";
  const shortcut=firstGuide?'<div class="guide-shortcut"><a href="'+entry(firstGuide.id)+'">'+esc(firstGuide.title)+' →</a></div>':"";
  if(!search&&!mine&&cat!=="P01"){

@@ -15685,9 +15685,9 @@
     "name": "Maibatsu Speedy Boomazoom",
     "category": "V",
     "region": "Little Cuba",
-    "url": "https://www.gtabase.com/gta-6/map/?feature=standout-vehicle#standout-vehicle-254",
-    "x": -23.9,
-    "y": -10.0
+    "url": "https://gta6gps.com/?p=pin-916933",
+    "x": -1093.8,
+    "y": -40.2
   },
   {
     "id": "v-35/standout-vehicle-200",
@@ -20391,5 +20391,15 @@
     "url": "https://www.gtabase.com/gta-6/map/?feature=shooting-range#shooting-range-015",
     "x": -2297.6,
     "y": 1241.6
+  },
+  {
+    "id": "v-05/manor-garage",
+    "item": "v-05",
+    "name": "’97 페넘브라 FF · 저택 차고",
+    "category": "V",
+    "region": "Rialto Islands",
+    "url": "https://metaforge.app/gta-6/map/leonida?markerID=dc9ed1a4-6647-4570-0af5-5b9f92d75954",
+    "x": 548.1,
+    "y": 1297.3
   }
 ]

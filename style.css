@@ -28,5 +28,5 @@ main{min-height:70vh;padding-top:28px;padding-bottom:64px}main:focus{outline:non
 .discovery-row button{min-height:44px;flex:none}
 
 #map-search input{font:inherit;padding:8px;max-width:100%;width:min(50vw,22rem);border:1px solid var(--line);border-radius:4px}
-.region-map{width:100%;height:auto;max-height:400px;background:#e7ebe5;border-radius:6px;display:block}.route-places li{padding-block:3px}.route-places a{text-underline-offset:3px}
-.route-places .route-pin{display:inline-block;margin-inline-start:6px;min-height:30px;padding:3px 5px;color:var(--sea)}
+.region-map{width:100%;height:auto;max-height:400px;background:#e7ebe5;border-radius:6px;display:block}.region-map text{pointer-events:none}.route-places li{padding-block:3px}.route-places a{text-underline-offset:3px}
+.route-places .route-pin{display:inline-block;margin-inline-start:6px;min-height:36px;min-width:44px;padding:7px 6px;color:var(--sea)}
