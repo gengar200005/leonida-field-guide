@@ -223,3 +223,12 @@ html{scroll-padding-top:54px}
 .cards .card-art>.unavailable-photo,.card:has(>.home-art[hidden])::before{
  display:grid;place-items:center;aspect-ratio:16/9;background:#e5eae1
 }
+
+@media(max-width:600px){
+ .deadline-table table,.deadline-table tbody,.deadline-table tr,.deadline-table td{display:block;width:100%;min-width:0;box-sizing:border-box}
+ .deadline-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+ .deadline-table tr{padding:.5rem 0;border-bottom:1px solid var(--line)}
+ .deadline-table td{white-space:normal;overflow-wrap:anywhere;border:0;padding:.3rem .6rem}
+ .deadline-table td:first-child{font-weight:700}
+ .deadline-table td:not(:first-child)::before{content:attr(data-label);display:block;font-size:.82em;font-weight:600}
+}

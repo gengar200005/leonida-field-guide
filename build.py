@@ -350,6 +350,23 @@ def build():
                 raise ValueError(f"Location pin does not belong to guide {item['id']}: {pin}")
     assert all(record["title"] and isinstance(record["sections"], list) for record in data["items"])
     apply_korean_copy(data, read("korean-editorial.json"))
+    # Match whole regions only. County subdivisions have their own pin sets.
+    region_spellings = {"러먹스": "럼목스", "웨이닝 샌즈": "워닝 샌즈",
+                        "바이스 시티 International Airport": "바이스 시티 국제공항"}
+    aliases = data["regionAliases"]
+    aliases.update({key: region_spellings.get(value, value) for key, value in aliases.items()})
+    aliases.update(region_spellings)
+    for record in data["items"]:
+        if record.get("region") in region_spellings:
+            record["region"] = region_spellings[record["region"]]
+
+    guide = items_by_id["p01-c01-guide"]
+    deadlines = next(s["table"] for s in guide["sections"] if s["title"] == "진행 전에 챙길 것")
+    deadlines["missionLinks"] = {}
+    for name, slug in (("Tourist Trap", "tourist-trap"), ("Swamped", "swamped"), ("Don Gone", "don-gone")):
+        mission = items_by_id["p01-story-" + slug]
+        cell = next(row[1] for row in deadlines["rows"] if row[1].startswith(name + " "))
+        deadlines["missionLinks"][cell] = {"id": mission["id"], "suffix": cell[len(name):]}
     media_dir = SITE / "media"
     media_dir.mkdir(exist_ok=True)
     packages = [*sorted((ROOT / "media").glob("*.zip")), *sorted((ROOT / "media/editorial").glob("*.zip"))]

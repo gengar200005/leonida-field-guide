@@ -219,6 +219,13 @@ def verify_campaign(page, base):
     expect(page.locator("main .count")).to_have_text("3개 공략")
     page.get_by_text("함께 할 선택 의뢰", exact=False).first.click()
     expect(page.locator('main li').filter(has_text="시한 주의").first).to_be_visible()
+    page.get_by_role("link", name="아뮤네이션에서 첫 장총 고르기", exact=True).first.click()
+    expect(article.locator(".kicker").first).to_contain_text("필수 진행 과제")
+    page.goto(base + "#/entry/p01-c01-guide", wait_until="domcontentloaded")
+    table = article.locator(".deadline-table")
+    for name, slug in [("관광 사기", "tourist-trap"), ("늪지의 거래", "swamped"), ("사라진 도니", "don-gone")]:
+        expect(table.get_by_role("link", name=name, exact=True)).to_have_attribute("href", "#/entry/p01-story-" + slug)
+    assert table.evaluate("t=>t.scrollWidth<=t.clientWidth+1")
     page.goto(base + "#/entry/p01-story-pipework", wait_until="domcontentloaded")
     expect(article.get_by_text("지도 목표 · 맨디에게 월세 받기")).to_be_visible()
     original = article.get_by_text("Collect Mandy’s Rent", exact=True).last

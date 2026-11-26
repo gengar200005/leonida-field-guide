@@ -55,7 +55,8 @@ function terrainThumb(p){
  const x=(p.x+12288)/8,y=(12288-p.y)/8;
  return '<svg class="terrain-thumb" role="img" aria-label="획득 지점 주변 지형" viewBox="'+(x-140)+' '+(y-80)+' 280 160" preserveAspectRatio="xMidYMid slice"><image href="media/leonida-map.webp" width="2304" height="2816"/><circle cx="'+x+'" cy="'+y+'" r="6" fill="#d64b29" stroke="white" stroke-width="2"/></svg>';
 }
-const norm=v=>String(v??"").normalize("NFKC").toLocaleLowerCase().replace(/스탈릿/g,"스타렛").replace(/라\s*페를/g,"라 펄").replace(/[\s·'’.-]/g,"");
+const searchRegionNames=v=>String(v??"").replace(/러먹스/g,"럼목스").replace(/웨이닝\s*샌즈/g,"워닝 샌즈").replace(/바이스\s*시티\s*international\s*airport/gi,"바이스 시티 국제공항");
+const norm=v=>searchRegionNames(v).normalize("NFKC").toLocaleLowerCase().replace(/스탈릿/g,"스타렛").replace(/라\s*페를/g,"라 펄").replace(/[\s·'’.-]/g,"");
 const storageKey="leonida-guide-v1";
 function parseState(raw){
   if (!raw||raw.version!==1||!raw.items||typeof raw.items!=="object"||Array.isArray(raw.items)) throw Error();
@@ -341,7 +342,7 @@ function searchRecord(v){
  return searchCache.get(v.id);
 }
 function searchItems(q,namesOnly=false){
- const terms=q.split(/\s+/).map(norm).filter(Boolean);
+ const terms=searchRegionNames(q).split(/\s+/).map(norm).filter(Boolean);
  if(!terms.length)return [];
  const exact=norm(q),hits=[];
  for(const v of readerItems){
@@ -397,7 +398,12 @@ function regionMap(ids){
  return '<svg class="region-map" role="group" aria-label="권역별 방문 지점" viewBox="'+[left,top,width,height].join(" ")+'"><image href="media/leonida-map.webp" width="2304" height="2816"/>'+marks+'</svg><ol class="route-places">'+points.map(p=>'<li>'+relatedLink(findItem(p.item))+' <a class="route-pin" href="'+esc(mapPinRoute(p))+'" aria-label="'+esc(pinTitle(p)+' 지도 핀 열기')+'">핀 ↗</a></li>').join("")+'</ol>';
 }
 function section(s,index){
- const t=s.table,tm=t?.rows?.length?'<div class="tablewrap" role="region" aria-label="'+esc(s.title)+'" tabindex="0"><table><thead><tr>'+(t.headers||[]).map(v=>'<th scope="col">'+esc(v)+'</th>').join("")+'</tr></thead><tbody>'+t.rows.map(row=>'<tr>'+row.map(v=>'<td>'+esc(v)+'</td>').join("")+'</tr>').join("")+'</tbody></table></div>':"";
+ const cell=value=>{
+  const ref=s.table?.missionLinks?.[value];
+  const mission=ref&&findItem(ref.id);
+  return mission?'<a href="'+entry(mission.id)+'">'+esc(mission.title)+'</a>'+esc(ref.suffix):esc(value);
+ };
+ const t=s.table,tm=t?.rows?.length? '<div class="tablewrap'+(t.missionLinks?' deadline-table':'')+'" role="region" aria-label="'+esc(s.title)+'" tabindex="0"><table><thead><tr>'+(t.headers||[]).map(v=>'<th scope="col">'+esc(v)+'</th>').join("")+'</tr></thead><tbody>'+t.rows.map(row=>'<tr>'+row.map((v,i)=>'<td data-label="'+esc(t.headers?.[i]||'')+'">'+cell(v)+'</td>').join("")+'</tr>').join("")+'</tbody></table></div>':"";
  const body=(s.paragraphs||[]).map(v=>'<p>'+esc(v)+'</p>').join("")+((s.steps||[]).length?'<ol>'+s.steps.map(v=>'<li>'+esc(v)+'</li>').join("")+'</ol>':'')+tm;
  const related=s.relatedGuide&&findItem(s.relatedGuide);
  const stops=(s.places||[]).map(findItem).filter(Boolean);
@@ -529,7 +535,7 @@ function detail(v){
  const mobileOutline=outline?'<details class="guide-toc"><summary>공략 목차</summary>'+outline+'</details>':"";
  const desktopOutline=outline?'<div class="panel guide-toc-desktop"><h2>이 공략에서</h2>'+outline+'</div>':"";
  const facts=readerFacts(v);
- const meta=[v.track==="story"?(v.chapter?"챕터 "+v.chapter+" · 스토리 미션":"프롤로그"):catName(v.category),v.region].filter(Boolean);
+ const meta=[v.track==="story"?(v.chapter?"챕터 "+v.chapter+" · "+(v.progression?.kind||"스토리 미션"):"프롤로그"):catName(v.category),v.region].filter(Boolean);
  const rows=[["해금·접근",facts.condition],["보상 사례",facts.reward],["기본가",facts.cost],["시한·주의",facts.warning]].filter(([,value])=>value);
  const brief=rows.length?'<dl class="entry-facts">'+rows.map(([k,value])=>'<div><dt>'+k+'</dt><dd>'+esc(value)+'</dd></div>').join("")+'</dl>':"";
  const summary=v.summary&&v.summary!==v.title&&v.summary!=="–"?'<p class="lead">'+esc(v.summary)+'</p>':"";
@@ -743,7 +749,7 @@ function mapPage(p){
  const activity=cats.has("P06")?(p.get("activity")||""):"";
  const style=cats.has("V")?(p.get("style")||""):"";
  const undone=p.get("undone")==="1",query=(p.get("q")||"").trim();
- const terms=query.split(/\s+/).filter(Boolean).map(norm);
+ const terms=searchRegionNames(query).split(/\s+/).filter(Boolean).map(norm);
  mapList=mapped.filter(v=>(!region||mapRegion(v.region)===region)&&(!cats.size||cats.has(v.category))&&(!undone||!pinDone(v))&&matchesActivity(v,v.item,cats,activity)&&(!style||v.category!=="V"||vehicleStyles.get(cleanId(v.item))===style)&&terms.every(term=>mapSearchText(v).includes(term)));
  const references=externalMapList(cats,region,style,activity,terms,!mapList.length,undone);
  const wanted=p.get("pin");
