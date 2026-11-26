@@ -21,6 +21,10 @@ VIEWS = (
     ("missions", "/guide/p09"),
     ("mission", "/entry/p09-wy"),
     ("story-detail", "/entry/p01-story-lab-fees"),
+    ("chapter-four", "/guide/p01?track=story&chapter=4"),
+    ("campaign-finale", "/entry/p01-story-the-end-of-the-road"),
+    ("aquarium", "/entry/p09-m-004"),
+    ("shipwreck", "/entry/w22"),
     ("vehicles", "/guide/v"),
     ("weapons", "/guide/p02"),
     ("secret", "/entry/l03"),
@@ -156,6 +160,53 @@ def verify_story(page, base):
     expect(answer.locator("ol")).to_contain_text("0420")
 
 
+
+def verify_campaign(page, base):
+    article = page.locator("article.article")
+    page.goto(base + "#/guide/p01?track=story", wait_until="domcontentloaded")
+    expect(page.locator("main .count")).to_have_text("109개 공략")
+    page.locator('select[data-change="chapter"]').select_option("2")
+    expect(page.locator("main .count")).to_have_text("18개 공략")
+    page.locator('.card a[href="#/entry/p09-m-077"]').first.click()
+    expect(article.locator("h1")).to_contain_text("제이슨")
+    walk = article.get_by_role("navigation", name="스토리 미션 이동")
+    walk.get_by_role("link", name="다음 공략").click()
+    expect(article.locator("h1")).to_be_visible()
+    assert page.url.endswith("#/entry/p01-story-overnight-charges")
+    walk.get_by_text("챕터 2 미션 목록").click()
+    expect(page.locator('select[data-change="chapter"]')).to_have_value("2")
+
+    page.goto(base + "#/search?q=" + quote("Blood Sweat and Gear"), wait_until="domcontentloaded")
+    page.locator('main a[href="#/entry/p01-story-making-gainz"]').first.click()
+    expect(article).to_contain_text("트라우마 플로어")
+    page.goto(base + "#/entry/p01-story-the-end-of-the-road", wait_until="domcontentloaded")
+    ending = article.locator("details.panel").filter(has=page.locator("summary", has_text="다리의 두 선택"))
+    expect(ending.locator("summary")).to_be_visible()
+    expect(ending.locator("ol, p").first).to_be_hidden()
+    assert not page.locator("main iframe").count()
+    ending.locator("summary").click()
+    expect(ending.locator("ol, p").first).to_be_visible()
+
+    page.goto(base + "#/entry/p09-m-004", wait_until="domcontentloaded")
+    expect(article).to_contain_text("크리스털")
+    hero = article.locator(".intro img").first
+    expect(hero).to_be_visible()
+    assert hero.evaluate("im=>im.decode().then(()=>im.naturalWidth>0)")
+    point = article.locator('a.inset[href*="p09-m-004"]').first
+    point.click()
+    expect(page.locator(".selectedpin a[href='#/entry/p09-m-004']").first).to_be_visible()
+
+    page.goto(base + "#/entry/l04", wait_until="domcontentloaded")
+    hint = article.locator("details.panel").filter(has=page.locator("summary", has_text="위층에서 단서"))
+    answer = article.locator("details.panel").filter(has=page.locator("summary", has_text="금고의 정답"))
+    expect(answer.locator("ol")).to_be_hidden()
+    hint.locator("summary").click()
+    expect(hint).not_to_contain_text("955214")
+    expect(answer.locator("ol")).to_be_hidden()
+    answer.locator("summary").click()
+    expect(answer.locator("ol")).to_contain_text("955214")
+
+
 def inspect_views(page, address, output, width):
     samples = []
     for name, path in VIEWS:
@@ -211,9 +262,10 @@ def inspect(base, offline, output):
             verify_merged_entry(page, base)
             verify_shores(page, base, width==390, output)
             verify_story(page, base)
+            verify_campaign(page, base)
             results[width] = inspect_views(page, base, output, width)
             assert not errors, errors
-            print(f"PASS {width}px: legacy URLs, union of save flags, source retention, coastline selection, spoiler-safe images and reader routes", flush=True)
+            print(f"PASS {width}px: legacy URLs, union of save flags, source retention, coastline selection, 109-mission chronology, shared mission IDs, aquarium route, progressive clues, protected endings and reader routes", flush=True)
             ctx.close()
         browser.close()
     if output:

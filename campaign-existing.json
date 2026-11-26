@@ -1,0 +1,467 @@
+{
+  "p01-prologue": {
+    "title": "프롤로그 · 햄릿 교정시설",
+    "summary": "루시아의 첫 조작은 감방에서 시작됩니다. 동료와 상호작용해 면담실로 가고, 회상 장면에서는 카운터와 출구의 지시를 따르면 됩니다.",
+    "replaceSections": {
+      "첫 자유 탐험에서 할 일": {
+        "title": "시작 시점과 위치",
+        "paragraphs": [
+          "새 게임을 시작하면 루시아의 감방에서 바로 조작을 맡습니다."
+        ]
+      }
+    },
+    "sections": [
+      {
+        "title": "첫 목표부터 따라가기",
+        "steps": [
+          "창문에서 돌아서서 같은 방 사람에게 말을 거세요. 문이 열리면 윌슨을 따라가고, 복도에서 통화가 끝날 때까지 기다리세요.",
+          "장면이 전환되면 상점 계산대의 현금을 집으세요. 손님이 다가오면 화면에 뜬 입력을 누르고 표시된 출구로 나가세요."
+        ]
+      },
+      {
+        "title": "이후 진행과 마무리",
+        "steps": [
+          "밖에서는 왼쪽 스틱 버튼으로 달리기를 전환하세요. 도주 거리에 점수 조건은 없습니다. 면담 장면이 끝날 때까지 다음 표식을 따라가세요.",
+          "제이슨의 첫 보트 임무(스토리)로 이어집니다."
+        ],
+        "reveal": "이후 진행"
+      },
+      {
+        "title": "첫 자유 탐험에서 할 일",
+        "places": [
+          "p08-ps5",
+          "p01-save-slots",
+          "p01-c01-guide",
+          "p01-roadmap"
+        ],
+        "steps": [
+          "자막과 진행 알림, 밝기, 조준 보조를 조정하고 이동·시점·상호작용 안내를 따라갑니다.",
+          "안내에 따라 휴대폰, 지도, 아이템 휠을 각각 한 번씩 열어 보세요.",
+          "자유 탐험에서 지도와 수동 저장이 열리면 첫 슬롯을 남기세요.",
+          "키 렌토의 방문 가능한 지역과 지도 표식을 확인한 다음 장비·차량 메뉴가 열릴 때 구매를 결정하세요."
+        ]
+      }
+    ],
+    "related": [
+      "p01-c01-guide"
+    ],
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/prologue"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/prologue/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-prologue-walkthrough/"
+      }
+    ]
+  },
+  "p01-story-gone-fishing": {
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/gone-fishing"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/gone-fishing/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-gone-fishing-walkthrough/"
+      },
+      {
+        "label": "인벤 · 국내 플레이 공략의 한국어 표기",
+        "url": "https://www.inven.co.kr/board/gta6/6587/137"
+      }
+    ],
+    "related": [],
+    "title": "낚으러 가기"
+  },
+  "p01-story-gear-up": {
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/gear-up"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/gear-up/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-gear-up-pick-up-another-gun-walkthrough/"
+      }
+    ],
+    "related": []
+  },
+  "p01-story-lab-fees": {
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/lab-fees"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/lab-fees/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-lab-fees-collect-brians-rent-walkthrough/"
+      }
+    ],
+    "related": []
+  },
+  "p01-story-just-a-scratch": {
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/just-a-scratch"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/just-a-scratch/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-just-a-scratch-fix-your-car-walkthrough/"
+      }
+    ],
+    "related": []
+  },
+  "p09-m-077": {
+    "title": "모텔에서 제이슨 돌보기",
+    "summary": "제이슨을 돌보는 목표는 여러 모텔 방문에 걸쳐 이어집니다. 진통제와 조식 의뢰 중 어디까지 마쳤는지 확인하세요.",
+    "replaceSections": {
+      "보존·마감": {
+        "title": "시작 시점과 위치",
+        "paragraphs": [
+          "가방을 조사한 뒤 지도 메뉴의 스토리 목록에 추가됩니다."
+        ]
+      },
+      "챕터와 확인 범위": {
+        "title": "진행 순서",
+        "steps": [
+          "다른 심부름을 마친 뒤 스타렛 모텔 아이콘이 분홍색으로 바뀔 때 객실로 가세요.",
+          "방에 한 번 들어가는 것으로 끝나지 않습니다. 덩크의 진통제 의뢰를 마치고 조식 의뢰까지 진행하면 돌봄 목표가 함께 닫힙니다."
+        ]
+      }
+    },
+    "sections": [
+      {
+        "title": "보상과 해금",
+        "paragraphs": [
+          "두 주인공의 관계가 상승합니다."
+        ]
+      }
+    ],
+    "related": [
+      "p01-story-slam-dunk",
+      "p01-story-breakfast-run",
+      "p01-c02-motel"
+    ],
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/take-care-of-jason"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/take-care-of-jason/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-take-care-of-jason-walkthrough/"
+      }
+    ]
+  },
+  "p09-m-082": {
+    "title": "포트 겔혼에서 머리 바꾸기",
+    "summary": "포트 겔혼의 미용실에서 루시아의 헤어스타일 한 가지를 실제로 구입하면 끝나는 외형 과제입니다.",
+    "replaceSections": {
+      "보존·마감": {
+        "title": "시작 시점과 위치",
+        "paragraphs": [
+          "비키의 외출 의뢰 뒤 포트 겔혼의 미용실 표식으로 가세요."
+        ]
+      },
+      "챕터와 확인 범위": {
+        "title": "진행 순서",
+        "steps": [
+          "펄 하우스 헤어 살롱 안에서 직원과 대화하고 헤어스타일 메뉴를 여세요.",
+          "예산에 맞는 스타일을 골라 구매를 확정하세요. 미리보기만 하고 나가면 끝나지 않습니다."
+        ]
+      },
+      "기본 정보": {
+        "title": "해당 챕터",
+        "paragraphs": [
+          "챕터 2 · 포트 겔혼"
+        ]
+      }
+    },
+    "sections": [],
+    "related": [
+      "p01-c02-motel"
+    ],
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/new-look"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/new-look/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-new-look-walkthrough/"
+      }
+    ]
+  },
+  "p09-m-081": {
+    "title": "포트 겔혼에서 옷 고르기",
+    "summary": "바겐 월드에서 루시아의 외출복을 맞춥니다. 상의와 하의가 하나씩 필요하며 가격과 스타일은 자유입니다.",
+    "replaceSections": {
+      "보존·마감": {
+        "title": "시작 시점과 위치",
+        "paragraphs": [
+          "비키의 외출 의뢰 뒤 포트 겔혼 남쪽 의류점 표식으로 가세요."
+        ]
+      },
+      "챕터와 확인 범위": {
+        "title": "진행 순서",
+        "steps": [
+          "바겐 월드에서 상의 한 벌을 구매하세요.",
+          "바지 또는 반바지 한 벌도 따로 구매하세요. 두 부위만 충족하면 디자인은 자유입니다."
+        ]
+      },
+      "기본 정보": {
+        "title": "해당 챕터",
+        "paragraphs": [
+          "챕터 2 · 포트 겔혼"
+        ]
+      }
+    },
+    "sections": [],
+    "related": [
+      "p01-c02-motel"
+    ],
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/how-do-i-look"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/how-do-i-look/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-how-do-i-look-walkthrough/"
+      }
+    ]
+  },
+  "p09-m-080": {
+    "title": "덩크의 진통제 연락 기다리기",
+    "summary": "덩크에게 공급책 소식을 듣기까지 기다리는 연락 과제입니다. 겔혼에서 남은 심부름을 하면서 다음 트레일러 표식을 여세요.",
+    "replaceSections": {
+      "보존·마감": {
+        "title": "시작 시점과 위치",
+        "paragraphs": [
+          "비키의 외출 의뢰 뒤 지도 내 스토리 목록에 추가됩니다. 특정 집을 방문하는 과제는 아닙니다."
+        ]
+      },
+      "챕터와 확인 범위": {
+        "title": "진행 순서",
+        "steps": [
+          "기다리는 동안 모제스의 차량 등록, 미용실, 구급차 등 아직 분홍색인 목표를 진행하세요.",
+          "목표가 덩크의 연락 대기로 바뀌면 다른 의뢰를 마무리하세요. 전화가 오면 트레일러에서 다음 진통제 임무를 시작할 수 있습니다."
+        ]
+      },
+      "기본 정보": {
+        "title": "해당 챕터",
+        "paragraphs": [
+          "챕터 2 · 포트 겔혼"
+        ]
+      }
+    },
+    "sections": [],
+    "related": [
+      "p01-story-slam-dunk",
+      "p01-c02-motel"
+    ],
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/painkiller-supplier"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/painkiller-supplier/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-painkiller-supplier-walkthrough/"
+      }
+    ]
+  },
+  "p09-m-078": {
+    "title": "숙박비 $900 납부",
+    "summary": "린다에게 밀린 방값을 현금으로 갚습니다. 계좌에만 돈이 있다면 관리실 안 ATM을 함께 이용하세요.",
+    "replaceSections": {
+      "보존·마감": {
+        "title": "시작 시점과 위치",
+        "paragraphs": [
+          "린다와 처음 상담한 뒤 현금 $900를 준비하세요."
+        ]
+      },
+      "챕터와 확인 범위": {
+        "title": "진행 순서",
+        "steps": [
+          "당좌계좌에 돈이 있다면 관리실 카운터 옆 ATM에서 먼저 인출하세요.",
+          "린다에게 말을 걸어 방값 지불을 고르세요. 담보로 목걸이를 맡겼다면 납부 뒤 회수를 확인하세요."
+        ]
+      }
+    },
+    "sections": [],
+    "related": [
+      "p01-story-overnight-charges",
+      "p01-c02-motel"
+    ],
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/behind-on-payments"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/behind-on-payments/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-behind-on-payments-walkthrough/"
+      }
+    ]
+  },
+  "p01-story-coffee-break": {
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/coffee-break"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/coffee-break/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-coffee-break-walkthrough/"
+      }
+    ],
+    "related": []
+  },
+  "p09-m-037": {
+    "title": "야스마니의 보석 세 점",
+    "summary": "야스마니가 원하는 보석 세 점을 모아 판매합니다. 카사 데 엠페뇨의 첫 목걸이를 일찍 전달하면 다른 두 가게에서 쓸 도구를 받습니다.",
+    "replaceSections": {
+      "보존·마감": {
+        "title": "시작 시점과 위치",
+        "paragraphs": [
+          "부비의 수금 동행 뒤 야스마니가 연락합니다. 두 주인공 모두 시작할 수 있습니다."
+        ]
+      },
+      "챕터와 확인 범위": {
+        "title": "진행 순서",
+        "steps": [
+          "세 매장의 순서는 자유입니다. 뒷문이 없는 카사 데 엠페뇨에서 먼저 목걸이를 가져와 야스마니에게 보여 주면 스냅 건(게임 도구)을 받습니다.",
+          "리처드슨 주얼리와 도너번 뱅크스 앤드 컴퍼니에는 새 도구로 열리는 뒷문이 있습니다. 두 매장에서 지정된 장신구가 체크됐는지 확인하세요.",
+          "가방에 든 물품을 야스마니에게 팔아야 완료됩니다. 지정품 세 점 합계는 $20,000(현금)이며 추가 전리품은 별도입니다."
+        ]
+      }
+    },
+    "sections": [],
+    "related": [
+      "p03-vaults",
+      "p01-c03-guide"
+    ],
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/yasmanis-jewelry-jobs"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/yasmanis-jewelry-jobs/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-yasmanis-jewelry-jobs-walkthrough/"
+      }
+    ]
+  },
+  "p01-story-safe-word": {
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/safe-word"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/safe-word/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-safe-word-steal-the-practice-safe-walkthrough/"
+      },
+      {
+        "label": "인벤 · 국내 플레이 공략의 한국어 표기",
+        "url": "https://www.inven.co.kr/board/gta6/6587/140"
+      }
+    ],
+    "related": [
+      "p02-w-012"
+    ],
+    "title": "세이프 워드"
+  },
+  "p01-story-photo-shoot": {
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/photo-shoot"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/photo-shoot/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-photoshoot-shoot-a-promo-walkthrough/"
+      }
+    ],
+    "related": [
+      "p02-w-042",
+      "p02-w-059"
+    ]
+  },
+  "p01-story-bird-in-the-hand": {
+    "sources": [
+      {
+        "label": "GTA 베이스 · 스토리 정보",
+        "url": "https://www.gtabase.com/gta-6/missions/bird-in-the-hand"
+      },
+      {
+        "label": "GTA 스폿츠 · 장면별 진행",
+        "url": "https://gtaspots.com/gta-6/missions/bird-in-the-hand/"
+      },
+      {
+        "label": "파워픽스 · 목표와 보상",
+        "url": "https://www.powerpyx.com/gta-6-bird-in-the-hand-walkthrough/"
+      }
+    ],
+    "related": []
+  }
+}

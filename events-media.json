@@ -1,0 +1,505 @@
+{
+ "p09-m-004": [
+  {
+   "credit": "GTADB.ORG and contributors · CC BY 4.0 · 게임 화면 © Rockstar Games",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "source": "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L2211,ig.jpg",
+   "originalPhoto": "https://raw.githubusercontent.com/rolux/gtadb.org/main/map/photos/6/L2211,ig.jpg",
+   "typeLabel": "의뢰 장소",
+   "caption": "카탈란 키 바이스 시티 수족관의 원형 수조와 관람석",
+   "src": "media/editorial/events-l2211.webp",
+   "width": 920,
+   "height": 529,
+   "changes": "WebP 변환 및 크기 조정"
+  },
+  {
+   "source": "https://www.powerpyx.com/gta-6-sisters-of-the-sea-help-free-the-orca-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "수족관 정문 간판과 로즈버드의 시위 지점",
+   "originalCaption": "수족관 정문 간판과 로즈버드의 시위 지점",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-sisters-of-the-sea-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-sisters-of-the-sea-help-free-the-orca-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-048": [
+  {
+   "credit": "GTADB.ORG and contributors · CC BY 4.0 · 게임 화면 © Rockstar Games",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "source": "https://github.com/rolux/gtadb.org/blob/main/map/photos/6/L456,ig.jpg",
+   "originalPhoto": "https://raw.githubusercontent.com/rolux/gtadb.org/main/map/photos/6/L456,ig.jpg",
+   "typeLabel": "도착 표지",
+   "caption": "마지막 공항 점프에서 넘어야 하는 바이스 시티 간판",
+   "src": "media/editorial/events-l456.webp",
+   "width": 920,
+   "height": 518,
+   "changes": "WebP 변환 및 크기 조정"
+  },
+  {
+   "source": "https://www.powerpyx.com/gta-6-audacity-stunts-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "돌턴 섬 발판 근처에서 확인하는 스턴트용 바이크",
+   "originalCaption": "돌턴 섬 발판 근처에서 확인하는 스턴트용 바이크",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-audacity-stunts-11.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-audacity-stunts-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-sh": [
+  {
+   "source": "https://gtaspots.com/gta-6/missions/get-shirleys-rum/",
+   "creatorSource": "https://www.youtube.com/watch?v=GV9EGZsri1Q&t=10267s",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "credit": "kBSTRD · CC BY · GTASpots · 게임 화면 © Rockstar Games",
+   "originalPhoto": "https://gtaspots.com/guide-captures/get-shirleys-rum-return-900.webp",
+   "caption": "키 렌토에서 럼을 들고 돌아가는 셜리의 현관",
+   "typeLabel": "첫 의뢰의 도착 장소",
+   "changes": "WebP 크기 조정",
+   "src": "media/editorial/get-shirleys-rum-2.webp",
+   "width": 812,
+   "height": 650
+  }
+ ],
+ "p09-ca": [
+  {
+   "source": "https://gta6guide.info/missions/catch-a-bigger-fish/",
+   "license": "https://creativecommons.org/licenses/by/3.0/",
+   "creatorSource": "https://www.youtube.com/watch?v=uoXsBoG2G6E",
+   "originalPhoto": "https://gta6guide.info/media/gp/mission-catch-a-bigger-fish-1.jpg",
+   "caption": "칼의 낚시 도전에서 잡아 올린 물고기와 기록 표시",
+   "typeLabel": "미션 장면",
+   "credit": "Nippton Games · CC BY 3.0 · GTA 6 Guide · 게임 화면 © Rockstar Games",
+   "src": "media/editorial/events-catch-a-bigger-fish.webp",
+   "width": 920,
+   "height": 518,
+   "changes": "WebP 변환 및 크기 조정"
+  }
+ ],
+ "p09-m-028": [
+  {
+   "source": "https://gta6guide.info/missions/join-a-street-race/",
+   "license": "https://creativecommons.org/licenses/by/3.0/",
+   "creatorSource": "https://www.youtube.com/watch?v=7M6_f24NCBo",
+   "originalPhoto": "https://gta6guide.info/media/gp/mission-join-a-street-race-1.jpg",
+   "caption": "샐턴의 레이스 모임에서 참가자와 차량을 찾는 장면",
+   "typeLabel": "미션 장면",
+   "credit": "Nippton Games · CC BY 3.0 · GTA 6 Guide · 게임 화면 © Rockstar Games",
+   "src": "media/editorial/events-join-a-street-race.webp",
+   "width": 920,
+   "height": 518,
+   "changes": "WebP 변환 및 크기 조정"
+  }
+ ],
+ "p09-m-068": [
+  {
+   "source": "https://gta6guide.info/missions/impounded-vehicle/",
+   "license": "https://creativecommons.org/licenses/by/3.0/",
+   "creatorSource": "https://www.youtube.com/watch?v=tujOTovF9aE",
+   "originalPhoto": "https://gta6guide.info/media/gp/mission-impounded-vehicle-2.jpg",
+   "caption": "어두운 압류장에서 되찾은 루시아의 개인 차량",
+   "typeLabel": "차량 회수 장면",
+   "credit": "How to Everything · CC BY 3.0 · GTA 6 Guide · 게임 화면 © Rockstar Games",
+   "src": "media/editorial/events-impounded-vehicle-field.webp",
+   "width": 920,
+   "height": 518,
+   "changes": "WebP 변환 및 크기 조정"
+  },
+  {
+   "source": "https://gta6guide.info/missions/impounded-vehicle/",
+   "license": "https://creativecommons.org/licenses/by/3.0/",
+   "creatorSource": "https://www.youtube.com/watch?v=LVh4dYknhZE",
+   "originalPhoto": "https://gta6guide.info/media/gp/mission-impounded-vehicle-1.jpg",
+   "caption": "압류 차량 표시를 확인하는 포트 겔혼 경찰서 앞",
+   "typeLabel": "접근 장소",
+   "credit": "Boss Hub · CC BY 3.0 · GTA 6 Guide · 게임 화면 © Rockstar Games",
+   "src": "media/editorial/events-impounded-vehicle.webp",
+   "width": 920,
+   "height": 518,
+   "changes": "WebP 변환 및 크기 조정"
+  }
+ ],
+ "p09-m-074": [
+  {
+   "source": "https://gta6guide.info/missions/meditate-with-lucia/",
+   "license": "https://creativecommons.org/licenses/by/3.0/",
+   "creatorSource": "https://www.youtube.com/watch?v=875YMxxbfVw",
+   "originalPhoto": "https://gta6guide.info/media/gp/mission-meditate-with-lucia-1.jpg",
+   "caption": "명상 의뢰가 열리는 키스 수변의 목재 데크",
+   "typeLabel": "의뢰 장소",
+   "credit": "How to Everything · CC BY 3.0 · GTA 6 Guide · 게임 화면 © Rockstar Games",
+   "src": "media/editorial/events-meditate-with-lucia.webp",
+   "width": 920,
+   "height": 518,
+   "changes": "WebP 변환 및 크기 조정"
+  }
+ ],
+ "p09-m-069": [
+  {
+   "source": "https://gtaspots.com/gta-6/missions/get-your-wheels/",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "credit": "Alitiger · CC BY · GTASpots · 게임 화면 © Rockstar Games",
+   "creatorSource": "https://www.youtube.com/watch?v=JUSYvL1vaVQ&t=2318s",
+   "originalPhoto": "https://gtaspots.com/guide-captures/get-your-wheels-story-map-1280.webp",
+   "typeLabel": "스토리 목표 화면",
+   "caption": "압류 차량 회수와 새 차량 등록 중 하나를 고르는 스토리 탭",
+   "src": "media/editorial/events-get-your-wheels.webp",
+   "width": 920,
+   "height": 518,
+   "changes": "WebP 변환 및 크기 조정"
+  },
+  {
+   "source": "https://www.powerpyx.com/gta-6-get-your-wheels-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "압류 차를 회수할 때 여는 스쿠터 브로스 화면",
+   "originalCaption": "압류 차를 회수할 때 여는 스쿠터 브로스 화면",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta-6-get-your-wheels-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-get-your-wheels-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-mo": [
+  {
+   "source": "https://gtaspots.com/gta-6/missions/moses/",
+   "license": "https://creativecommons.org/licenses/by/4.0/",
+   "credit": "Tonhão da Silva · CC BY · GTASpots · 게임 화면 © Rockstar Games",
+   "creatorSource": "https://www.youtube.com/watch?v=Tmt00X1BK7s&t=22722s",
+   "originalPhoto": "https://gtaspots.com/guide-captures/moses-montagne-tutorial-1280.webp",
+   "typeLabel": "차량 의뢰 시작 장소",
+   "caption": "첫 만남에서 루시아가 모제스 정비소 안 차량을 확인하는 장면",
+   "src": "media/editorial/events-moses-yard.webp",
+   "width": 920,
+   "height": 518,
+   "changes": "WebP 변환 및 크기 조정"
+  },
+  {
+   "source": "https://gta6guide.info/missions/steal-vehicles-for-moses/",
+   "license": "https://creativecommons.org/licenses/by/3.0/",
+   "creatorSource": "https://www.youtube.com/watch?v=pLmjhrv1VVw",
+   "originalPhoto": "https://gta6guide.info/media/gp/mission-steal-vehicles-for-moses-1.jpg",
+   "caption": "모제스의 지정 차량인 디클라스 요세미티 1500을 추적하는 게임 지도",
+   "typeLabel": "차량 추적 화면",
+   "credit": "DPJ · CC BY 3.0 · GTA 6 Guide · 게임 화면 © Rockstar Games",
+   "src": "media/editorial/events-steal-vehicles-for-moses.webp",
+   "width": 920,
+   "height": 518,
+   "changes": "WebP 변환 및 크기 조정"
+  }
+ ],
+ "p09-m-003": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-bring-out-the-chimp-help-save-the-chimps-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "공항 남쪽에서 노아의 시위대와 만나는 곳",
+   "originalCaption": "공항 남쪽에서 노아의 시위대와 만나는 곳",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-bring-out-the-chimp-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-bring-out-the-chimp-help-save-the-chimps-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-005": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-twin-flames-shut-down-the-fracking-site-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "왓슨 베이에서 트럭 옆 동료를 만나는 장면",
+   "originalCaption": "왓슨 베이에서 트럭 옆 동료를 만나는 장면",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-twin-flames-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-twin-flames-shut-down-the-fracking-site-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-006": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-dodo-rise-meet-with-the-dodos-contact-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "에메랄드 스프링스 공원 안의 초록색 길 안내 화살표",
+   "originalCaption": "에메랄드 스프링스 공원 안의 초록색 길 안내 화살표",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-dodo-rise-14.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-dodo-rise-meet-with-the-dodos-contact-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-032": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-climbing-the-cellerichain-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "벨빌에서 앤디를 방문할 때 찾는 집의 진입로",
+   "originalCaption": "벨빌에서 앤디를 방문할 때 찾는 집의 진입로",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta-6-walkthrough-climbing-the-cellerichain-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-climbing-the-cellerichain-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-033": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-pay-the-cellerica-fee-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "벅미에서 셀레리카 참가비를 납부하는 화면",
+   "originalCaption": "벅미에서 셀레리카 참가비를 납부하는 화면",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta-6-walkthrough-pay-cellerica-fee-2.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-pay-the-cellerica-fee-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-034": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-peach-join-the-cellerica-initiation-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "벨빌 단지에서 가입식을 기다리는 벤치",
+   "originalCaption": "벨빌 단지에서 가입식을 기다리는 벤치",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta-6-walkthrough-peach-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-peach-join-the-cellerica-initiation-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-035": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-read-the-label-retrieve-the-cellerica-van-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "바이스 시티 북쪽에서 회수할 셀레리카 밴",
+   "originalCaption": "바이스 시티 북쪽에서 회수할 셀레리카 밴",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta-6-walkthrough-read-the-label-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-read-the-label-retrieve-the-cellerica-van-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-036": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-puff-puff-pass-meet-at-the-warehouse-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "펠릭스와 합류하는 페이퍼 보이스 창고 입구",
+   "originalCaption": "펠릭스와 합류하는 페이퍼 보이스 창고 입구",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta-6-walkthrough-puff-puff-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-puff-puff-pass-meet-at-the-warehouse-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-042": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-all-kitty-litter-lab-locations/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "첫 시설의 트레일러 입구",
+   "originalCaption": "첫 시설의 트레일러 입구",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-kitty-litter-lab-locations-28.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-all-kitty-litter-lab-locations/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-043": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-spin-on-this-shut-down-the-labs-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "그레이슨 외곽 도로에서 보이는 집결지 식당",
+   "originalCaption": "그레이슨 외곽 도로에서 보이는 집결지 식당",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-spin-on-this-5.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-spin-on-this-shut-down-the-labs-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-045": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-the-unknown-stuntman-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "오션 비치 공원에서 흰색 복장의 스턴트맨을 만나는 장소",
+   "originalCaption": "오션 비치 공원에서 흰색 복장의 스턴트맨을 만나는 장소",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-the-unknown-stuntman-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-the-unknown-stuntman-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-046": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-trial-by-tire-meet-the-audacity-engineer-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "라 펄 주차장 아래층의 바이크 시험 코스",
+   "originalCaption": "라 펄 주차장 아래층의 바이크 시험 코스",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-trial-by-tire-4.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-trial-by-tire-meet-the-audacity-engineer-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-047": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-quit-your-job-sell-your-house-help-papa-audacity-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "피콕 베이 콘도의 옥상 헬기장과 출발할 헬기",
+   "originalCaption": "피콕 베이 콘도의 옥상 헬기장과 출발할 헬기",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-quit-your-job-4.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-quit-your-job-sell-your-house-help-papa-audacity-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-049": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-catching-a-whale-help-papa-audacity-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "선다운 비행장에 대기 중인 시범 비행기",
+   "originalCaption": "선다운 비행장에 대기 중인 시범 비행기",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-catching-a-whale-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-catching-a-whale-help-papa-audacity-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-050": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-the-audacity-attend-the-launch-party-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "테퀘스타 행사가 열리는 네오 팔로마 아파트 입구",
+   "originalCaption": "테퀘스타 행사가 열리는 네오 팔로마 아파트 입구",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta6-walkthrough-the-audacity-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-the-audacity-attend-the-launch-party-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-m-066": [
+  {
+   "source": "https://www.powerpyx.com/gta-6-hit-avery-pawn-walkthrough/",
+   "credit": "PowerPyx · 게임 화면 © Rockstar Games",
+   "caption": "에이버리 전당포의 주차장과 출입구",
+   "originalCaption": "에이버리 전당포의 주차장과 출입구",
+   "originalPhoto": "https://www.powerpyx.com/wp-content/uploads/gta-6-walkthrough-hit-avery-pawn-3.jpg",
+   "originalCredit": "PowerPyx",
+   "originalSource": "https://www.powerpyx.com/gta-6-hit-avery-pawn-walkthrough/",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-019": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-019",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "도로의 사고 차량과 주변 현장",
+   "originalCaption": "도로의 사고 차량과 주변 현장",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/random-event-019.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-019",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-031": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-031",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "키 렌토 바다에서 검은 연기를 내는 밀수 보트",
+   "originalCaption": "키 렌토 바다에서 검은 연기를 내는 밀수 보트",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/random-event-031.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-031",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-052": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-052",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "노란 집 앞에서 맨디와 대화하는 장면",
+   "originalCaption": "노란 집 앞에서 맨디와 대화하는 장면",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/random-event-052.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-052",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-053": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-053",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "원더 웨일 고래 조형물 위의 세 사람",
+   "originalCaption": "원더 웨일 고래 조형물 위의 세 사람",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-053.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-053",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-067": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-067",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "밤에 픽업트럭 보닛에 올라선 목격자",
+   "originalCaption": "밤에 픽업트럭 보닛에 올라선 목격자",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-067.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-067",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-102": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-102",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "다리 난간에서 수면을 내려다보는 장면",
+   "originalCaption": "다리 난간에서 수면을 내려다보는 장면",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-102.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-102",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-107": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-107",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "도난 방지 시스템이 작동한 초록색 차의 주행 화면",
+   "originalCaption": "도난 방지 시스템이 작동한 초록색 차의 주행 화면",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-107.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-107",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-157": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-157",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "야간 도로에서 목격된 형체",
+   "originalCaption": "야간 도로에서 목격된 형체",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-157.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-157",
+   "originalLinkLabel": "현장 사진 원본",
+   "originalReveal": true
+  }
+ ],
+ "p09-re-194": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-194",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "체포 현장의 두 순찰차와 용의자",
+   "originalCaption": "체포 현장의 두 순찰차와 용의자",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-194.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-194",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-246": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-246",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "보석상 앞 네 대의 바이크",
+   "originalCaption": "보석상 앞 네 대의 바이크",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-246.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-246",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ],
+ "p09-re-247": [
+  {
+   "source": "https://fbritoferreira.github.io/gta6/?loc=random-event-247",
+   "credit": "Open GTA 6 Map · 게임 화면 © Rockstar Games",
+   "caption": "비프슬랩과 동승한 뒤 도착하는 현장",
+   "originalCaption": "비프슬랩과 동승한 뒤 도착하는 현장",
+   "originalPhoto": "https://fbritoferreira.github.io/gta6/screenshots/gta6-random-event-247.webp",
+   "originalSource": "https://fbritoferreira.github.io/gta6/?loc=random-event-247",
+   "originalLinkLabel": "현장 사진 원본"
+  }
+ ]
+}

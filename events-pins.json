@@ -1,0 +1,112 @@
+[
+ {
+  "id": "p09-m-004/landmark-021",
+  "item": "p09-m-004",
+  "category": "P09",
+  "name": "바이스 시티 수족관 · 시위대가 있는 시설",
+  "region": "카탈란 키",
+  "x": 80.0,
+  "y": -1750.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=landmark-021"
+ },
+ {
+  "id": "p09-m-031/bar-026",
+  "item": "p09-m-031",
+  "category": "P09",
+  "name": "엘 린콘 노토리오 · 야고와 만나는 식당",
+  "region": "리틀 쿠바",
+  "x": -1174.4,
+  "y": 19.2,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=bar-026"
+ },
+ {
+  "id": "p09-m-048/landmark-023",
+  "item": "p09-m-048",
+  "category": "P09",
+  "name": "바이스 시티 간판 · 마지막 점프 목표물",
+  "region": "바이스 시티 국제공항",
+  "x": -3769.6,
+  "y": -457.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=landmark-023"
+ },
+ {
+  "id": "p09-m-049/public-transport-018",
+  "item": "p09-m-049",
+  "category": "P09",
+  "name": "선다운 비행장 · 스턴트 비행 집결지",
+  "region": "워닝 샌즈",
+  "x": -816.0,
+  "y": 4358.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=public-transport-018"
+ },
+ {
+  "id": "p09-m-052/public-transport-018",
+  "item": "p09-m-052",
+  "category": "P09",
+  "name": "선다운 비행장 · 피트의 첫 비행 출발지",
+  "region": "워닝 샌즈",
+  "x": -816.0,
+  "y": 4358.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=public-transport-018"
+ },
+ {
+  "id": "p09-mo/fence-007",
+  "item": "p09-mo",
+  "category": "P09",
+  "name": "모제스의 자동차 부품점 · 차량 납품 장소",
+  "region": "포트 겔혼",
+  "x": -6444.8,
+  "y": 3283.2,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=fence-007"
+ },
+ {
+  "id": "p09-m-020/standout-vehicle-200",
+  "item": "p09-m-020",
+  "category": "P09",
+  "name": "모제스의 술탄 · 의뢰 보상 수령 장소",
+  "region": "포트 겔혼",
+  "x": -6432.9,
+  "y": 3276.0,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=standout-vehicle-200"
+ },
+ {
+  "id": "p09-m-066/smash-n-grab-034",
+  "item": "p09-m-066",
+  "category": "P09",
+  "name": "에이버리 전당포 · 의뢰 장소",
+  "region": "포트 겔혼",
+  "x": -6371.2,
+  "y": 3846.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=smash-n-grab-034"
+ },
+ {
+  "id": "p09-m-067/weapon-spawn-081",
+  "item": "p09-m-067",
+  "category": "P09",
+  "name": "킹핀 볼링장 · 당구대의 고유 산탄총",
+  "region": "포트 겔혼",
+  "x": -6382.0,
+  "y": 3226.0,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=weapon-spawn-081"
+ },
+ {
+  "id": "p09-m-075/food-and-drink-002",
+  "item": "p09-m-075",
+  "category": "P09",
+  "name": "러스티 앵커 · 칼의 의상 수령 장소",
+  "region": "키 렌토",
+  "x": -2252.8,
+  "y": -5273.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=food-and-drink-002"
+ },
+ {
+  "id": "p09-da/bar-040",
+  "item": "p09-da",
+  "category": "P09",
+  "name": "코트야드 바 · 데이트 목적지",
+  "region": "스톡야드",
+  "x": -355.2,
+  "y": 1740.8,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=bar-040"
+ }
+]

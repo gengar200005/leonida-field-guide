@@ -1,0 +1,990 @@
+{
+  "scope": "GTABase에서 번호로 구분한 프롤로그와 5개 챕터의 진행 항목. 동시에 열리는 의뢰의 배열은 유일한 플레이 순서가 아닙니다. PowerPyx가 독립 과제로 세는 통화·송금·대기 목표는 해당 미션 본문이나 기존 연결 공략을 함께 확인합니다. 한국어 이름은 게임 화면 표기가 확보된 경우를 제외하면 내용을 바탕으로 붙인 안내 제목입니다.",
+  "sources": [
+    "https://www.gtabase.com/gta-6/missions/",
+    "https://www.powerpyx.com/gta-6-full-walkthrough-all-missions/",
+    "https://gtaspots.com/gta-6/missions/"
+  ],
+  "missions": [
+    {
+      "id": "p01-prologue",
+      "english": "Prologue",
+      "chapter": 0,
+      "sequence": 1,
+      "slug": "prologue",
+      "spotsSlug": "prologue",
+      "powerUrl": "https://www.powerpyx.com/gta-6-prologue-walkthrough/"
+    },
+    {
+      "id": "p01-story-gone-fishing",
+      "english": "Gone Fishing",
+      "chapter": 1,
+      "sequence": 2,
+      "slug": "gone-fishing",
+      "spotsSlug": "gone-fishing",
+      "powerUrl": "https://www.powerpyx.com/gta-6-gone-fishing-walkthrough/"
+    },
+    {
+      "id": "p01-story-gear-up",
+      "english": "Gear Up",
+      "chapter": 1,
+      "sequence": 3,
+      "slug": "gear-up",
+      "spotsSlug": "gear-up",
+      "powerUrl": "https://www.powerpyx.com/gta-6-gear-up-pick-up-another-gun-walkthrough/"
+    },
+    {
+      "id": "p01-story-unwanted-attention",
+      "english": "Unwanted Attention",
+      "chapter": 1,
+      "sequence": 4,
+      "slug": "unwanted-attention",
+      "spotsSlug": "unwanted-attention",
+      "powerUrl": "https://www.powerpyx.com/gta-6-unwanted-attention-go-see-cal-walkthrough/"
+    },
+    {
+      "id": "p01-story-lab-fees",
+      "english": "Lab Fees",
+      "chapter": 1,
+      "sequence": 5,
+      "slug": "lab-fees",
+      "spotsSlug": "lab-fees",
+      "powerUrl": "https://www.powerpyx.com/gta-6-lab-fees-collect-brians-rent-walkthrough/"
+    },
+    {
+      "id": "p01-story-pipework",
+      "english": "Pipework",
+      "chapter": 1,
+      "sequence": 6,
+      "slug": "pipework",
+      "spotsSlug": "pipework",
+      "powerUrl": "https://www.powerpyx.com/gta-6-pipework-collect-mandys-rent-walkthrough/"
+    },
+    {
+      "id": "p01-story-just-a-scratch",
+      "english": "Just a Scratch",
+      "chapter": 1,
+      "sequence": 7,
+      "slug": "just-a-scratch",
+      "spotsSlug": "just-a-scratch",
+      "powerUrl": "https://www.powerpyx.com/gta-6-just-a-scratch-fix-your-car-walkthrough/"
+    },
+    {
+      "id": "p01-story-hey-arnold",
+      "english": "Hey Arnold!",
+      "chapter": 1,
+      "sequence": 8,
+      "slug": "hey-arnold",
+      "spotsSlug": "hey-arnold",
+      "powerUrl": "https://www.powerpyx.com/gta-6-hey-arnold-meet-brian-walkthrough/"
+    },
+    {
+      "id": "p01-story-island-dreams",
+      "english": "Island Dreams",
+      "chapter": 1,
+      "sequence": 9,
+      "slug": "island-dreams",
+      "spotsSlug": "island-dreams",
+      "powerUrl": "https://www.powerpyx.com/gta-6-island-dreams-work-for-kenton-walkthrough/"
+    },
+    {
+      "id": "p01-story-feng-shui",
+      "english": "Feng Shui",
+      "chapter": 1,
+      "sequence": 10,
+      "slug": "feng-shui",
+      "spotsSlug": "feng-shui",
+      "powerUrl": "https://www.powerpyx.com/gta-6-feng-shui-meet-cal-walkthrough/"
+    },
+    {
+      "id": "p01-story-coming-home",
+      "english": "Coming Home",
+      "chapter": 1,
+      "sequence": 11,
+      "slug": "coming-home",
+      "spotsSlug": "coming-home",
+      "powerUrl": "https://www.powerpyx.com/gta-6-coming-home-lucias-release-walkthrough/"
+    },
+    {
+      "id": "p01-story-clean-up-after-donnie",
+      "english": "Clean Up After Donnie",
+      "chapter": 1,
+      "sequence": 12,
+      "slug": "clean-up-after-donnie",
+      "spotsSlug": "clean-up-after-donnie",
+      "powerUrl": "https://www.powerpyx.com/gta-6-clean-up-after-donnie-donnies-drop-walkthrough/"
+    },
+    {
+      "id": "p01-story-buck-me",
+      "english": "Buck Me",
+      "chapter": 1,
+      "sequence": 13,
+      "slug": "buck-me",
+      "spotsSlug": "buck-me",
+      "powerUrl": "https://www.powerpyx.com/gta-6-buck-me-set-up-bank-account-walkthrough/"
+    },
+    {
+      "id": "p01-story-down-to-earth",
+      "english": "Down to Earth",
+      "chapter": 1,
+      "sequence": 14,
+      "slug": "down-to-earth",
+      "spotsSlug": "down-to-earth",
+      "powerUrl": "https://www.powerpyx.com/gta-6-down-to-earth-walkthrough/"
+    },
+    {
+      "id": "p01-story-deposit-cash-into-buckme",
+      "english": "Deposit Cash Into BuckMe",
+      "chapter": 1,
+      "sequence": 15,
+      "slug": "deposit-cash-into-buckme",
+      "spotsSlug": "deposit-cash-into-buckme",
+      "powerUrl": "https://www.powerpyx.com/gta-6-deposit-cash-into-buckme-walkthrough/"
+    },
+    {
+      "id": "p01-story-save-for-the-future",
+      "english": "Save for the Future",
+      "chapter": 1,
+      "sequence": 16,
+      "slug": "save-for-the-future",
+      "spotsSlug": "save-for-the-future",
+      "powerUrl": "https://www.powerpyx.com/gta-6-save-for-the-future-walkthrough/"
+    },
+    {
+      "id": "p01-story-day-release",
+      "english": "Day Release",
+      "chapter": 1,
+      "sequence": 17,
+      "slug": "day-release",
+      "spotsSlug": "day-release",
+      "powerUrl": "https://www.powerpyx.com/gta-6-day-release-meet-mattia-kat-walkthrough/"
+    },
+    {
+      "id": "p01-story-clear-skies",
+      "english": "Clear Skies",
+      "chapter": 1,
+      "sequence": 18,
+      "slug": "clear-skies",
+      "spotsSlug": "clear-skies",
+      "powerUrl": "https://www.powerpyx.com/gta-6-clear-skies-join-donnie-on-a-job-walkthrough/"
+    },
+    {
+      "id": "p01-story-building-a-life",
+      "english": "Building a Life",
+      "chapter": 1,
+      "sequence": 19,
+      "slug": "building-a-life",
+      "spotsSlug": "building-a-life",
+      "powerUrl": "https://www.powerpyx.com/gta-6-building-a-life-walkthrough/"
+    },
+    {
+      "id": "p01-story-swamped",
+      "english": "Swamped",
+      "chapter": 1,
+      "sequence": 20,
+      "slug": "swamped",
+      "spotsSlug": "swamped",
+      "powerUrl": "https://www.powerpyx.com/gta-6-swamped-walkthrough/"
+    },
+    {
+      "id": "p01-story-don-gone",
+      "english": "Don Gone",
+      "chapter": 1,
+      "sequence": 21,
+      "slug": "don-gone",
+      "spotsSlug": "don-gone",
+      "powerUrl": "https://www.powerpyx.com/gta-6-don-gone-head-to-donnies-trailer-walkthrough/"
+    },
+    {
+      "id": "p01-story-recalibration",
+      "english": "Recalibration",
+      "chapter": 1,
+      "sequence": 22,
+      "slug": "recalibration",
+      "spotsSlug": "recalibration",
+      "powerUrl": "https://www.powerpyx.com/gta-6-recalibration-talk-to-lucia-walkthrough/"
+    },
+    {
+      "id": "p01-story-tourist-trap",
+      "english": "Tourist Trap",
+      "chapter": 1,
+      "sequence": 23,
+      "slug": "tourist-trap",
+      "spotsSlug": "tourist-trap",
+      "powerUrl": "https://www.powerpyx.com/gta-6-tourist-trap-take-up-mattias-offer-walkthrough/"
+    },
+    {
+      "id": "p01-story-home-sweet-home",
+      "english": "Home Sweet Home",
+      "chapter": 1,
+      "sequence": 24,
+      "slug": "home-sweet-home",
+      "spotsSlug": "home-sweet-home",
+      "powerUrl": "https://www.powerpyx.com/gta-6-home-sweet-home-walkthrough/"
+    },
+    {
+      "id": "p01-story-discharge-time",
+      "english": "Discharge Time",
+      "chapter": 1,
+      "sequence": 25,
+      "slug": "discharge-time",
+      "spotsSlug": "discharge-time",
+      "powerUrl": "https://www.powerpyx.com/gta-6-discharge-time-walkthrough/"
+    },
+    {
+      "id": "p01-story-whats-in-the-bag",
+      "english": "What's in the Bag?",
+      "chapter": 2,
+      "sequence": 26,
+      "slug": "whats-in-the-bag",
+      "spotsSlug": "whats-in-the-bag",
+      "powerUrl": "https://www.powerpyx.com/gta-6-whats-in-the-bag-walkthrough/"
+    },
+    {
+      "id": "p01-story-ambulance-chaser",
+      "english": "Ambulance Chaser",
+      "chapter": 2,
+      "sequence": 27,
+      "slug": "ambulance-chaser",
+      "spotsSlug": "ambulance-chaser",
+      "powerUrl": "https://www.powerpyx.com/gta-6-ambulance-chaser-move-the-ambulance-walkthrough/"
+    },
+    {
+      "id": "p09-m-077",
+      "english": "Play Nurse",
+      "chapter": 2,
+      "sequence": 28,
+      "slug": "take-care-of-jason",
+      "spotsSlug": "take-care-of-jason",
+      "powerUrl": "https://www.powerpyx.com/gta-6-take-care-of-jason-walkthrough/"
+    },
+    {
+      "id": "p01-story-overnight-charges",
+      "english": "Overnight Charges",
+      "chapter": 2,
+      "sequence": 29,
+      "slug": "overnight-charges",
+      "spotsSlug": "overnight-charges",
+      "powerUrl": "https://www.powerpyx.com/gta-6-overnight-charges-see-linda-the-manager-walkthrough/"
+    },
+    {
+      "id": "p01-story-just-moved-in",
+      "english": "Just Moved In",
+      "chapter": 2,
+      "sequence": 30,
+      "slug": "just-moved-in",
+      "spotsSlug": "just-moved-in",
+      "powerUrl": "https://www.powerpyx.com/gta-6-just-moved-in-walkthrough/"
+    },
+    {
+      "id": "p01-story-girls-trip",
+      "english": "Girls' Trip",
+      "chapter": 2,
+      "sequence": 31,
+      "slug": "girls-trip",
+      "spotsSlug": "girls-trip",
+      "powerUrl": "https://www.powerpyx.com/gta-6-girls-trip-find-painkillers-walkthrough/"
+    },
+    {
+      "id": "p01-story-moses",
+      "english": "Moses",
+      "chapter": 2,
+      "sequence": 32,
+      "slug": "moses",
+      "spotsSlug": "moses",
+      "powerUrl": "https://www.powerpyx.com/gta-6-moses-take-a-vehicle-to-moses-walkthrough/"
+    },
+    {
+      "id": "p09-m-082",
+      "english": "New Look",
+      "chapter": 2,
+      "sequence": 33,
+      "slug": "new-look",
+      "spotsSlug": "new-look",
+      "powerUrl": "https://www.powerpyx.com/gta-6-new-look-walkthrough/"
+    },
+    {
+      "id": "p09-m-081",
+      "english": "How Do I Look?",
+      "chapter": 2,
+      "sequence": 34,
+      "slug": "how-do-i-look",
+      "spotsSlug": "how-do-i-look",
+      "powerUrl": "https://www.powerpyx.com/gta-6-how-do-i-look-walkthrough/"
+    },
+    {
+      "id": "p09-m-080",
+      "english": "Got Pills?",
+      "chapter": 2,
+      "sequence": 35,
+      "slug": "painkiller-supplier",
+      "spotsSlug": "painkiller-supplier",
+      "powerUrl": "https://www.powerpyx.com/gta-6-painkiller-supplier-walkthrough/"
+    },
+    {
+      "id": "p01-story-daily-driver",
+      "english": "Daily Driver",
+      "chapter": 2,
+      "sequence": 36,
+      "slug": "daily-driver",
+      "spotsSlug": "daily-driver",
+      "powerUrl": "https://www.powerpyx.com/gta-6-daily-driver-steal-the-crawler-for-moses-walkthrough/"
+    },
+    {
+      "id": "p09-m-078",
+      "english": "Behind on Payments",
+      "chapter": 2,
+      "sequence": 37,
+      "slug": "behind-on-payments",
+      "spotsSlug": "behind-on-payments",
+      "powerUrl": "https://www.powerpyx.com/gta-6-behind-on-payments-walkthrough/"
+    },
+    {
+      "id": "p01-story-slam-dunk",
+      "english": "Slam Dunk",
+      "chapter": 2,
+      "sequence": 38,
+      "slug": "slam-dunk",
+      "spotsSlug": "slam-dunk",
+      "powerUrl": "https://www.powerpyx.com/gta-6-slam-dunk-walkthrough/"
+    },
+    {
+      "id": "p01-story-breakfast-run",
+      "english": "Breakfast Run",
+      "chapter": 2,
+      "sequence": 39,
+      "slug": "breakfast-run",
+      "spotsSlug": "breakfast-run",
+      "powerUrl": "https://www.powerpyx.com/gta-6-breakfast-run-check-on-jason-walkthrough/"
+    },
+    {
+      "id": "p01-story-coffee-break",
+      "english": "Coffee Break",
+      "chapter": 2,
+      "sequence": 40,
+      "slug": "coffee-break",
+      "spotsSlug": "coffee-break",
+      "powerUrl": "https://www.powerpyx.com/gta-6-coffee-break-walkthrough/"
+    },
+    {
+      "id": "p01-story-prepare-for-vice-city",
+      "english": "Prepare for Vice City",
+      "chapter": 2,
+      "sequence": 41,
+      "slug": "prepare-for-vice-city",
+      "spotsSlug": "prepare-for-vice-city",
+      "powerUrl": "https://www.powerpyx.com/gta-6-prepare-for-vice-city-walkthrough/"
+    },
+    {
+      "id": "p01-story-afternoon-delight",
+      "english": "Afternoon Delight",
+      "chapter": 2,
+      "sequence": 42,
+      "slug": "afternoon-delight",
+      "spotsSlug": "afternoon-delight",
+      "powerUrl": "https://www.powerpyx.com/gta-6-afternoon-delight-rob-vickis-boss-walkthrough/"
+    },
+    {
+      "id": "p01-story-checking-out",
+      "english": "Checking Out",
+      "chapter": 2,
+      "sequence": 43,
+      "slug": "checking-out",
+      "spotsSlug": "checking-out",
+      "powerUrl": "https://www.powerpyx.com/gta-6-checking-out-move-to-vice-city-walkthrough/"
+    },
+    {
+      "id": "p01-story-welcome-to-vice-city",
+      "english": "Welcome to Vice City",
+      "chapter": 3,
+      "sequence": 44,
+      "slug": "welcome-to-vice-city",
+      "spotsSlug": "welcome-to-vice-city",
+      "powerUrl": "https://www.powerpyx.com/gta-6-welcome-to-vice-city-walkthrough/"
+    },
+    {
+      "id": "p01-story-dealers-choice",
+      "english": "Dealer's Choice",
+      "chapter": 3,
+      "sequence": 45,
+      "slug": "dealers-choice",
+      "spotsSlug": "dealers-choice",
+      "powerUrl": "https://www.powerpyx.com/gta-6-dealers-choice-go-see-drequan-walkthrough/"
+    },
+    {
+      "id": "p01-story-meet-the-heders",
+      "english": "Meet the Heders",
+      "chapter": 3,
+      "sequence": 46,
+      "slug": "meet-the-heders",
+      "spotsSlug": "meet-the-heders",
+      "powerUrl": "https://www.powerpyx.com/gta-6-meet-the-heders-walkthrough/"
+    },
+    {
+      "id": "p01-story-dubious-provenance",
+      "english": "Dubious Provenance",
+      "chapter": 3,
+      "sequence": 47,
+      "slug": "dubious-provenance",
+      "spotsSlug": "dubious-provenance",
+      "powerUrl": "https://www.powerpyx.com/gta-6-dubious-provenance-visit-the-antique-store-walkthrough/"
+    },
+    {
+      "id": "p01-story-mami-knows-best",
+      "english": "Mami Knows Best",
+      "chapter": 3,
+      "sequence": 48,
+      "slug": "mami-knows-best",
+      "spotsSlug": "mami-knows-best",
+      "powerUrl": "https://www.powerpyx.com/gta-6-mami-knows-best-catch-up-with-mia-walkthrough/"
+    },
+    {
+      "id": "p01-story-tyrone",
+      "english": "Tyrone",
+      "chapter": 3,
+      "sequence": 49,
+      "slug": "tyrone",
+      "spotsSlug": "tyrone"
+    },
+    {
+      "id": "p01-story-here-kitty-kitty",
+      "english": "Here, Kitty Kitty",
+      "chapter": 3,
+      "sequence": 50,
+      "slug": "here-kitty-kitty",
+      "spotsSlug": "here-kitty-kitty",
+      "powerUrl": "https://www.powerpyx.com/gta-6-here-kitty-kitty-speak-with-tyrone-walkthrough/"
+    },
+    {
+      "id": "p01-story-send-money-to-lorena",
+      "english": "Send Money to Lorena",
+      "chapter": 3,
+      "sequence": 51,
+      "slug": "send-money-to-lorena",
+      "spotsSlug": "send-money-to-lorena",
+      "powerUrl": "https://www.powerpyx.com/gta-6-send-money-to-lorena-walkthrough/"
+    },
+    {
+      "id": "p01-story-car-service",
+      "english": "Car Service",
+      "chapter": 3,
+      "sequence": 52,
+      "slug": "car-service",
+      "spotsSlug": "car-service",
+      "powerUrl": "https://www.powerpyx.com/gta-6-car-service-steal-the-car-for-raul-walkthrough/"
+    },
+    {
+      "id": "p01-story-send-more-money-to-lorena",
+      "english": "Send More Money to Lorena",
+      "chapter": 3,
+      "sequence": 53,
+      "slug": "send-more-money-to-lorena",
+      "spotsSlug": "send-more-money-to-lorena",
+      "powerUrl": "https://www.powerpyx.com/gta-6-send-more-money-to-lorena-walkthrough/"
+    },
+    {
+      "id": "p01-story-top-billing",
+      "english": "Top Billing",
+      "chapter": 3,
+      "sequence": 54,
+      "slug": "top-billing",
+      "spotsSlug": "top-billing",
+      "powerUrl": "https://www.powerpyx.com/gta-6-top-billing-watch-the-real-dimez-walkthrough/"
+    },
+    {
+      "id": "p01-story-boobie-time",
+      "english": "Boobie Time",
+      "chapter": 3,
+      "sequence": 55,
+      "slug": "boobie-time",
+      "spotsSlug": "boobie-time",
+      "powerUrl": "https://www.powerpyx.com/gta-6-boobie-time-talk-to-boobie-walkthrough/"
+    },
+    {
+      "id": "p09-m-037",
+      "english": "Yasmani's Jewelry Jobs",
+      "chapter": 3,
+      "sequence": 56,
+      "slug": "yasmanis-jewelry-jobs",
+      "spotsSlug": "yasmanis-jewelry-jobs",
+      "powerUrl": "https://www.powerpyx.com/gta-6-yasmanis-jewelry-jobs-walkthrough/"
+    },
+    {
+      "id": "p01-story-first-impressions",
+      "english": "First Impressions",
+      "chapter": 3,
+      "sequence": 57,
+      "slug": "first-impressions",
+      "spotsSlug": "first-impressions",
+      "powerUrl": "https://www.powerpyx.com/gta-6-first-impressions-meeting-with-raul-walkthrough/"
+    },
+    {
+      "id": "p01-story-caught-slipping",
+      "english": "Caught Slipping",
+      "chapter": 3,
+      "sequence": 58,
+      "slug": "caught-slipping",
+      "spotsSlug": "caught-slipping",
+      "powerUrl": "https://www.powerpyx.com/gta-6-caught-slipping-walkthrough/"
+    },
+    {
+      "id": "p01-story-crosstown-traffic",
+      "english": "Crosstown Traffic",
+      "chapter": 3,
+      "sequence": 59,
+      "slug": "crosstown-traffic",
+      "spotsSlug": "crosstown-traffic",
+      "powerUrl": "https://www.powerpyx.com/gta-6-crosstown-traffic-meet-raul-walkthrough/"
+    },
+    {
+      "id": "p01-story-credit-check",
+      "english": "Credit Check",
+      "chapter": 3,
+      "sequence": 60,
+      "slug": "credit-check",
+      "spotsSlug": "credit-check",
+      "powerUrl": "https://www.powerpyx.com/gta-6-credit-check-meet-rauls-crew-walkthrough/"
+    },
+    {
+      "id": "p01-story-steal-the-zorrusso-for-randy",
+      "english": "Clonin' Keys, Makin' Gs",
+      "chapter": 3,
+      "sequence": 61,
+      "slug": "steal-the-zorrusso-for-randy",
+      "spotsSlug": "steal-the-zorrusso-for-randy",
+      "powerUrl": "https://www.powerpyx.com/gta-6-clonin-keys-makin-gs-steal-the-zorrusso-for-randy-walkthrough/"
+    },
+    {
+      "id": "p01-story-sinfrontera-national-bank",
+      "english": "Sinfrontera National Bank",
+      "chapter": 3,
+      "sequence": 62,
+      "slug": "sinfrontera-national-bank",
+      "spotsSlug": "sinfrontera-national-bank",
+      "powerUrl": "https://www.powerpyx.com/gta-6-sinfrontera-national-bank-scope-out-the-bank-walkthrough/"
+    },
+    {
+      "id": "p01-story-security-expert",
+      "english": "Security Expert",
+      "chapter": 3,
+      "sequence": 63,
+      "slug": "security-expert",
+      "spotsSlug": "security-expert",
+      "powerUrl": "https://www.powerpyx.com/gta-6-security-expert-walkthrough/"
+    },
+    {
+      "id": "p01-story-heist-planning",
+      "english": "Heist Planning",
+      "chapter": 3,
+      "sequence": 64,
+      "slug": "heist-planning",
+      "spotsSlug": "heist-planning",
+      "powerUrl": "https://www.powerpyx.com/gta-6-heist-planning-walkthrough/"
+    },
+    {
+      "id": "p01-story-ride-or-die",
+      "english": "Ride or Die",
+      "chapter": 3,
+      "sequence": 65,
+      "slug": "ride-or-die",
+      "spotsSlug": "ride-or-die",
+      "powerUrl": "https://www.powerpyx.com/gta-6-ride-or-die-meet-drequan-walkthrough/"
+    },
+    {
+      "id": "p01-story-company-property",
+      "english": "Company Property",
+      "chapter": 3,
+      "sequence": 66,
+      "slug": "company-property",
+      "spotsSlug": "company-property",
+      "powerUrl": "https://www.powerpyx.com/gta-6-company-property-walkthrough/"
+    },
+    {
+      "id": "p01-story-the-missing-link",
+      "english": "The Missing Link",
+      "chapter": 3,
+      "sequence": 67,
+      "slug": "the-missing-link",
+      "spotsSlug": "the-missing-link",
+      "powerUrl": "https://www.powerpyx.com/gta-6-the-missing-link-meet-andrea-walkthrough/"
+    },
+    {
+      "id": "p01-story-safe-word",
+      "english": "Safe Word",
+      "chapter": 3,
+      "sequence": 68,
+      "slug": "safe-word",
+      "spotsSlug": "safe-word",
+      "powerUrl": "https://www.powerpyx.com/gta-6-safe-word-steal-the-practice-safe-walkthrough/"
+    },
+    {
+      "id": "p01-story-cooties",
+      "english": "Cooties",
+      "chapter": 3,
+      "sequence": 69,
+      "slug": "cooties",
+      "spotsSlug": "cooties",
+      "powerUrl": "https://www.powerpyx.com/gta-6-cooties-shoot-the-music-video-walkthrough/"
+    },
+    {
+      "id": "p01-story-south-leonida-real-estate",
+      "english": "South Leonida Real Estate",
+      "chapter": 3,
+      "sequence": 70,
+      "slug": "south-leonida-real-estate",
+      "spotsSlug": "south-leonida-real-estate",
+      "powerUrl": "https://www.powerpyx.com/gta-6-south-leonida-real-estate-meet-mia-walkthrough/"
+    },
+    {
+      "id": "p01-story-hidden-charges",
+      "english": "Hidden Charges",
+      "chapter": 3,
+      "sequence": 71,
+      "slug": "hidden-charges",
+      "spotsSlug": "hidden-charges",
+      "powerUrl": "https://www.powerpyx.com/gta-6-hidden-charges-walkthrough/"
+    },
+    {
+      "id": "p01-story-bricked-up",
+      "english": "Bricked Up",
+      "chapter": 3,
+      "sequence": 72,
+      "slug": "bricked-up",
+      "spotsSlug": "bricked-up",
+      "powerUrl": "https://www.powerpyx.com/gta-6-bricked-up-return-to-the-apartment-walkthrough/"
+    },
+    {
+      "id": "p01-story-the-cartel-heist",
+      "english": "The Cartel Heist",
+      "chapter": 3,
+      "sequence": 73,
+      "slug": "the-cartel-heist",
+      "spotsSlug": "the-cartel-heist",
+      "powerUrl": "https://www.powerpyx.com/gta-6-the-cartel-heist-walkthrough/"
+    },
+    {
+      "id": "p01-story-ocean-beach",
+      "english": "Ocean Beach",
+      "chapter": 4,
+      "sequence": 74,
+      "slug": "ocean-beach",
+      "spotsSlug": "ocean-beach",
+      "powerUrl": "https://www.powerpyx.com/gta-6-ocean-beach-walkthrough/"
+    },
+    {
+      "id": "p01-story-another-life",
+      "english": "Another Life",
+      "chapter": 4,
+      "sequence": 75,
+      "slug": "another-life",
+      "spotsSlug": "another-life",
+      "powerUrl": "https://www.powerpyx.com/gta-6-another-life-walkthrough/"
+    },
+    {
+      "id": "p01-story-pool-day",
+      "english": "Pool Day",
+      "chapter": 4,
+      "sequence": 76,
+      "slug": "pool-day",
+      "spotsSlug": "pool-day",
+      "powerUrl": "https://www.powerpyx.com/gta-6-pool-day-walkthrough/"
+    },
+    {
+      "id": "p01-story-company-cars",
+      "english": "Company Cars",
+      "chapter": 4,
+      "sequence": 77,
+      "slug": "company-cars",
+      "spotsSlug": "company-cars",
+      "powerUrl": "https://www.powerpyx.com/gta-6-company-cars-speak-to-the-concierge-walkthrough/"
+    },
+    {
+      "id": "p01-story-lawyer-up",
+      "english": "Lawyer Up",
+      "chapter": 4,
+      "sequence": 78,
+      "slug": "lawyer-up",
+      "spotsSlug": "lawyer-up",
+      "powerUrl": "https://www.powerpyx.com/gta-6-lawyer-up-meet-abe-gonzalez-walkthrough/"
+    },
+    {
+      "id": "p01-story-party-hard",
+      "english": "Party Hard",
+      "chapter": 4,
+      "sequence": 79,
+      "slug": "party-hard",
+      "spotsSlug": "party-hard",
+      "powerUrl": "https://www.powerpyx.com/gta-6-party-hard-work-personal-security-walkthrough/"
+    },
+    {
+      "id": "p01-story-heavy-lifting",
+      "english": "Heavy Lifting",
+      "chapter": 4,
+      "sequence": 80,
+      "slug": "heavy-lifting",
+      "spotsSlug": "heavy-lifting",
+      "powerUrl": "https://www.powerpyx.com/gta-6-heavy-lifting-bring-raul-the-hard-drive-walkthrough/"
+    },
+    {
+      "id": "p01-story-photo-shoot",
+      "english": "Photo/Shoot",
+      "chapter": 4,
+      "sequence": 81,
+      "slug": "photo-shoot",
+      "spotsSlug": "photo-shoot",
+      "powerUrl": "https://www.powerpyx.com/gta-6-photoshoot-shoot-a-promo-walkthrough/"
+    },
+    {
+      "id": "p01-story-making-gainz",
+      "english": "Making Gainz",
+      "chapter": 4,
+      "sequence": 82,
+      "slug": "making-gainz",
+      "spotsSlug": "making-gainz",
+      "powerUrl": "https://www.powerpyx.com/gta-6-making-gainz-walkthrough/"
+    },
+    {
+      "id": "p01-story-too-much-baggage",
+      "english": "Too Much Baggage",
+      "chapter": 4,
+      "sequence": 83,
+      "slug": "too-much-baggage",
+      "spotsSlug": "too-much-baggage",
+      "powerUrl": "https://www.powerpyx.com/gta-6-too-much-baggage-scope-out-the-airport-walkthrough/"
+    },
+    {
+      "id": "p01-story-watch-it",
+      "english": "Watch It",
+      "chapter": 4,
+      "sequence": 84,
+      "slug": "watch-it",
+      "spotsSlug": "watch-it",
+      "powerUrl": "https://www.powerpyx.com/gta-6-watch-it-walkthrough/"
+    },
+    {
+      "id": "p01-story-cash-injections",
+      "english": "Cash Injections",
+      "chapter": 4,
+      "sequence": 85,
+      "slug": "cash-injections",
+      "spotsSlug": "cash-injections",
+      "powerUrl": "https://www.powerpyx.com/gta-6-cash-injections-hang-out-with-nate-walkthrough/"
+    },
+    {
+      "id": "p01-story-amateur-hour",
+      "english": "Amateur Hour",
+      "chapter": 4,
+      "sequence": 86,
+      "slug": "amateur-hour",
+      "spotsSlug": "amateur-hour",
+      "powerUrl": "https://www.powerpyx.com/gta-6-amateur-hour-walkthrough/"
+    },
+    {
+      "id": "p01-story-dirty-work",
+      "english": "Dirty Work",
+      "chapter": 4,
+      "sequence": 87,
+      "slug": "dirty-work",
+      "spotsSlug": "dirty-work",
+      "powerUrl": "https://www.powerpyx.com/gta-6-dirty-work-deal-with-raina-walkthrough/"
+    },
+    {
+      "id": "p01-story-adventures-in-babysitting",
+      "english": "Adventures in Babysitting",
+      "chapter": 4,
+      "sequence": 88,
+      "slug": "adventures-in-babysitting",
+      "spotsSlug": "adventures-in-babysitting",
+      "powerUrl": "https://www.powerpyx.com/gta-6-adventures-in-babysitting-work-security-for-andres-walkthrough/"
+    },
+    {
+      "id": "p01-story-fresh-evidence",
+      "english": "Fresh Evidence",
+      "chapter": 4,
+      "sequence": 89,
+      "slug": "fresh-evidence",
+      "spotsSlug": "fresh-evidence",
+      "powerUrl": "https://www.powerpyx.com/gta-6-fresh-evidence-walkthrough/"
+    },
+    {
+      "id": "p01-story-power-play",
+      "english": "Power Play",
+      "chapter": 4,
+      "sequence": 90,
+      "slug": "power-play",
+      "spotsSlug": "power-play",
+      "powerUrl": "https://www.powerpyx.com/gta-6-power-play-help-kordells-crew-walkthrough/"
+    },
+    {
+      "id": "p01-story-childs-play",
+      "english": "Child's Play",
+      "chapter": 4,
+      "sequence": 91,
+      "slug": "childs-play",
+      "spotsSlug": "childs-play",
+      "powerUrl": "https://www.powerpyx.com/gta-6-childs-play-rescue-rafa-from-kidnappers-walkthrough/"
+    },
+    {
+      "id": "p01-story-headliners",
+      "english": "Headliners",
+      "chapter": 4,
+      "sequence": 92,
+      "slug": "headliners",
+      "spotsSlug": "headliners",
+      "powerUrl": "https://www.powerpyx.com/gta-6-headliners-help-with-the-launch-party-walkthrough/"
+    },
+    {
+      "id": "p01-story-close-surveillance",
+      "english": "Close Surveillance",
+      "chapter": 4,
+      "sequence": 93,
+      "slug": "close-surveillance",
+      "spotsSlug": "close-surveillance",
+      "powerUrl": "https://www.powerpyx.com/gta-6-close-surveillance-spy-on-the-bodybuilders-walkthrough/"
+    },
+    {
+      "id": "p01-story-delivery-method",
+      "english": "Delivery Method",
+      "chapter": 4,
+      "sequence": 94,
+      "slug": "delivery-method",
+      "spotsSlug": "delivery-method",
+      "powerUrl": "https://www.powerpyx.com/gta-6-delivery-method-help-andrea-walkthrough/"
+    },
+    {
+      "id": "p01-story-team-building",
+      "english": "Team Building",
+      "chapter": 4,
+      "sequence": 95,
+      "slug": "team-building",
+      "spotsSlug": "team-building",
+      "powerUrl": "https://www.powerpyx.com/gta-6-team-building-meet-kordell-walkthrough/"
+    },
+    {
+      "id": "p01-story-fully-catered",
+      "english": "Fully Catered",
+      "chapter": 4,
+      "sequence": 96,
+      "slug": "fully-catered",
+      "spotsSlug": "fully-catered",
+      "powerUrl": "https://www.powerpyx.com/gta-6-fully-catered-steal-a-catering-truck-walkthrough/"
+    },
+    {
+      "id": "p01-story-vcia-takedown",
+      "english": "VCIA Takedown",
+      "chapter": 4,
+      "sequence": 97,
+      "slug": "vcia-takedown",
+      "spotsSlug": "vcia-takedown",
+      "powerUrl": "https://www.powerpyx.com/gta-6-vcia-takedown-walkthrough/"
+    },
+    {
+      "id": "p01-story-tie-up-loose-ends",
+      "english": "Tie Up Loose Ends",
+      "chapter": 4,
+      "sequence": 98,
+      "slug": "tie-up-loose-ends",
+      "spotsSlug": "tie-up-loose-ends",
+      "powerUrl": "https://www.powerpyx.com/gta-6-tie-up-loose-ends-walkthrough/"
+    },
+    {
+      "id": "p01-story-sunset",
+      "english": "Sunset",
+      "chapter": 4,
+      "sequence": 99,
+      "slug": "sunset",
+      "spotsSlug": "sunset",
+      "powerUrl": "https://www.powerpyx.com/gta-6-sunset-stop-by-the-front-desk-walkthrough/"
+    },
+    {
+      "id": "p01-story-starting-from-zero",
+      "english": "Starting From Zero",
+      "chapter": 4,
+      "sequence": 100,
+      "slug": "starting-from-zero",
+      "spotsSlug": "starting-from-zero",
+      "powerUrl": "https://www.powerpyx.com/gta-6-starting-from-zero-walkthrough/"
+    },
+    {
+      "id": "p01-story-bird-in-the-hand",
+      "english": "Bird in the Hand",
+      "chapter": 5,
+      "sequence": 101,
+      "slug": "bird-in-the-hand",
+      "spotsSlug": "bird-in-the-hand",
+      "powerUrl": "https://www.powerpyx.com/gta-6-bird-in-the-hand-walkthrough/"
+    },
+    {
+      "id": "p01-story-taking-liberties",
+      "english": "Taking Liberties",
+      "chapter": 5,
+      "sequence": 102,
+      "slug": "taking-liberties",
+      "spotsSlug": "taking-liberties",
+      "powerUrl": "https://www.powerpyx.com/gta-6-taking-liberties-walkthrough/"
+    },
+    {
+      "id": "p01-story-doggie-bag",
+      "english": "Doggie Bag",
+      "chapter": 5,
+      "sequence": 103,
+      "slug": "doggie-bag",
+      "spotsSlug": "doggie-bag",
+      "powerUrl": "https://www.powerpyx.com/gta-6-doggie-bag-meet-vinny-walkthrough/"
+    },
+    {
+      "id": "p01-story-vc-baby",
+      "english": "VC Baby",
+      "chapter": 5,
+      "sequence": 104,
+      "slug": "vc-baby",
+      "spotsSlug": "vc-baby",
+      "powerUrl": "https://www.powerpyx.com/gta-6-vc-baby-talk-to-mattia-walkthrough/"
+    },
+    {
+      "id": "p01-story-operation-savage-glory",
+      "english": "Operation Savage Glory",
+      "chapter": 5,
+      "sequence": 105,
+      "slug": "operation-savage-glory",
+      "spotsSlug": "operation-savage-glory",
+      "powerUrl": "https://www.powerpyx.com/gta-6-operation-savage-glory-walkthrough/"
+    },
+    {
+      "id": "p01-story-honest-abe",
+      "english": "Honest Abe",
+      "chapter": 5,
+      "sequence": 106,
+      "slug": "honest-abe",
+      "spotsSlug": "honest-abe",
+      "powerUrl": "https://www.powerpyx.com/gta-6-honest-abe-negotiate-a-deal-with-abe-walkthrough/"
+    },
+    {
+      "id": "p01-story-unfinished-business",
+      "english": "Unfinished Business",
+      "chapter": 5,
+      "sequence": 107,
+      "slug": "unfinished-business",
+      "spotsSlug": "unfinished-business",
+      "powerUrl": "https://www.powerpyx.com/gta-6-unfinished-business-walkthrough/"
+    },
+    {
+      "id": "p01-story-protective-custody",
+      "english": "Protective Custody",
+      "chapter": 5,
+      "sequence": 108,
+      "slug": "protective-custody",
+      "spotsSlug": "protective-custody",
+      "powerUrl": "https://www.powerpyx.com/gta-6-protective-custody-walkthrough/"
+    },
+    {
+      "id": "p01-story-the-end-of-the-road",
+      "english": "The End of the Road",
+      "chapter": 5,
+      "sequence": 109,
+      "slug": "the-end-of-the-road",
+      "spotsSlug": "the-end-of-the-road",
+      "powerUrl": "https://www.powerpyx.com/gta-6-the-end-of-the-road-walkthrough/"
+    }
+  ]
+}

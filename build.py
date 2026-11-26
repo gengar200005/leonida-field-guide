@@ -117,7 +117,7 @@ def prepare_map_titles(data):
     for pin in data["pins"]:
         # Each P04/P07/P09 pin describes the same place or event as its guide.
         fallback = item_titles[pin["item"].lower()] if pin["category"] in {"P04", "P07", "P09"} else pin["name"]
-        pin["mapTitle"] = labels.get(pin["id"], fallback)
+        pin["mapTitle"] = labels.get(pin["id"], pin.get("mapTitle", fallback))
 
 
 def home_markup(data):
@@ -168,14 +168,14 @@ def apply_editorial_guides(data, guides):
                 if item["title"] != value:
                     item["aliases"] = list(dict.fromkeys([*item.get("aliases", []), item["title"]]))
                     item["title"] = value
-            elif field == "summary":
+            elif field in {"summary", "region"}:
                 item[field] = value
             elif field == "replaceSections":
                 titles = [section["title"] for section in item["sections"]]
                 if any(titles.count(title) != 1 for title in value):
                     raise ValueError(f"Ambiguous editorial section on {key}")
                 item["sections"] = [value.get(section["title"], section) for section in item["sections"]]
-            elif field in {"sections", "related", "sources"}:
+            elif field in {"sections", "related", "sources", "aliases"}:
                 result = item.setdefault(field, [])
                 for entry in value:
                     if entry not in result:
@@ -208,6 +208,33 @@ def apply_editorial_photos(data, photographs):
             item.setdefault("gallery", []).extend(gallery)
 
 
+def organize_campaign(data, missions):
+    """Keep one playable entry per numbered objective, including cross-listed tasks."""
+    items = {item["id"].lower(): item for item in data["items"]}
+    keys = [row["id"] for row in missions]
+    if len(set(keys)) != len(keys) or len({row["slug"] for row in missions}) != len(keys):
+        raise ValueError("Duplicate campaign mission")
+    by_chapter = {}
+    for sequence, row in enumerate(missions, start=1):
+        if row["sequence"] != sequence or row["id"] in data["redirects"]:
+            raise ValueError(f"Invalid mission order or noncanonical ID: {row}")
+        item = items[row["id"]]
+        chapter = row["chapter"]
+        by_chapter.setdefault(chapter, []).append(row["id"])
+        item.update(track="story", sequence=sequence, chapter=chapter)
+        aliases = item.setdefault("aliases", [])
+        if row["english"] not in aliases:
+            aliases.append(row["english"])
+        item["sourceTitleIndex"] = aliases.index(row["english"])
+        if item["category"] != "P01" and "P01" not in item.setdefault("alsoCategories", []):
+            item["alsoCategories"].append("P01")
+
+    for item in items.values():
+        for section in item["sections"]:
+            if section["title"] == "이 챕터의 주요 스토리 미션":
+                section.update(title="이 챕터의 스토리 미션", places=by_chapter[item["chapter"]], reveal="목록")
+
+
 def build():
     SITE.mkdir(exist_ok=True)
     data = {
@@ -219,12 +246,20 @@ def build():
         "mapReferenceNames": read("map-reference-names.json"),
         "redirects": read("redirects.json")
     }
+    for file in ("campaign-pins.json", "events-pins.json", "exploration-pins.json"):
+        for point in read(file):
+            point.setdefault("mapTitle", point["name"])
+            data["pins"].append(point)
     localize(data, read("official-names.json"))
     prepare_map_titles(data)
     prepare_reader_names(data, read("reader-names.json"))
     apply_editorial_guides(data, read("editorial-guides.json"))
     apply_merges(data, read("entry-merges.json"))
-    apply_editorial_photos(data, read("editorial-media.json"))
+    for filename in ("campaign-existing.json", "campaign-references.json", "events-final.json", "exploration-final.json"):
+        apply_editorial_guides(data, read(filename))
+    organize_campaign(data, read("campaign-order.json")["missions"])
+    for filename in ("editorial-media.json", "campaign-media.json", "events-media.json", "exploration-media.json"):
+        apply_editorial_photos(data, read(filename))
     ids = {row["id"].lower() for row in data["items"]}
     assert len(ids) == len(data["items"])
     pin_ids = {pin["id"]: pin["item"].lower() for pin in data["pins"]}

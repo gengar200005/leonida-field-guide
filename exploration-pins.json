@@ -1,0 +1,79 @@
+[
+  {
+    "id": "l37/waink-curiosity-001",
+    "item": "l37",
+    "name": "메어분더호 · 북쪽 해안 좌초 선체",
+    "mapTitle": "메어분더호 · 좌초 지점",
+    "category": "P05",
+    "region": "페더스톤 군도",
+    "url": "https://www.gtabase.com/gta-6/map/?feature=waink-curiosity#waink-curiosity-001",
+    "x": -5274.4,
+    "y": 8137.1
+  },
+  {
+    "id": "w05/treasure-002",
+    "item": "w05",
+    "name": "에티카 락사 · 보물 탐색 지점",
+    "mapTitle": "에티카 락사 · 보물 탐색 지점",
+    "category": "P05",
+    "region": "리오나이다 키스",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=treasure-002",
+    "x": -3289.6,
+    "y": -7408.0
+  },
+  {
+    "id": "w06/treasure-001",
+    "item": "w06",
+    "name": "라 노체 · 보물 탐색 지점",
+    "mapTitle": "라 노체 · 보물 탐색 지점",
+    "category": "P05",
+    "region": "리오나이다 키스",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=treasure-001",
+    "x": -2739.2,
+    "y": -7411.2
+  },
+  {
+    "id": "w08/treasure-005",
+    "item": "w08",
+    "name": "루후리오사 · 보물 탐색 지점",
+    "mapTitle": "루후리오사 · 보물 탐색 지점",
+    "category": "P05",
+    "region": "리오나이다 키스",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=treasure-005",
+    "x": -2793.6,
+    "y": -6940.8
+  },
+  {
+    "id": "w09/treasure-004",
+    "item": "w09",
+    "name": "신코 토레스 · 보물 탐색 지점",
+    "mapTitle": "신코 토레스 · 보물 탐색 지점",
+    "category": "P05",
+    "region": "리오나이다 키스",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=treasure-004",
+    "x": -2598.4,
+    "y": -6803.2
+  },
+  {
+    "id": "w11/treasure-003",
+    "item": "w11",
+    "name": "산타 시에라 · 보물 탐색 지점",
+    "mapTitle": "산타 시에라 · 보물 탐색 지점",
+    "category": "P05",
+    "region": "리오나이다 키스",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=treasure-003",
+    "x": -1888,
+    "y": -7011.2
+  },
+  {
+    "id": "l36/luxury-watch-003",
+    "item": "l36",
+    "name": "웨이닝 샌즈 · 보너 호수 주택 시계",
+    "mapTitle": "웨이닝 샌즈 · 보너 호수 주택 시계",
+    "category": "P05",
+    "region": "웨이닝 샌즈",
+    "url": "https://fbritoferreira.github.io/gta6/?loc=luxury-watch-003",
+    "x": -11.0,
+    "y": 3512.0
+  }
+]

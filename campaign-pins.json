@@ -1,0 +1,372 @@
+[
+ {
+  "id": "p01-story-just-a-scratch/vehicle-mod-shop-006",
+  "item": "p01-story-just-a-scratch",
+  "category": "P01",
+  "name": "코스털 오토 케어 · 수리 장소",
+  "region": "키 렌토",
+  "x": -3084.8,
+  "y": -6611.2,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=vehicle-mod-shop-006"
+ },
+ {
+  "id": "p01-story-buck-me/bank-006",
+  "item": "p01-story-buck-me",
+  "category": "P01",
+  "name": "플리카 은행 · 시작 장소",
+  "region": "키 렌토",
+  "x": -2684.8,
+  "y": -6153.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=bank-006"
+ },
+ {
+  "id": "p01-story-day-release/food-and-drink-002",
+  "item": "p01-story-day-release",
+  "category": "P01",
+  "name": "러스티 앵커 · 시작 장소",
+  "region": "키 렌토",
+  "x": -2252.8,
+  "y": -5273.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=food-and-drink-002"
+ },
+ {
+  "id": "p01-story-feng-shui/safehouse-001",
+  "item": "p01-story-feng-shui",
+  "category": "P01",
+  "name": "제이슨의 집 · 시작 장소",
+  "region": "키 렌토",
+  "x": -2355.2,
+  "y": -5532.8,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-001"
+ },
+ {
+  "id": "p01-story-building-a-life/safehouse-001",
+  "item": "p01-story-building-a-life",
+  "category": "P01",
+  "name": "제이슨의 집 · 시작 장소",
+  "region": "키 렌토",
+  "x": -2355.2,
+  "y": -5532.8,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-001"
+ },
+ {
+  "id": "p01-story-recalibration/safehouse-001",
+  "item": "p01-story-recalibration",
+  "category": "P01",
+  "name": "제이슨의 집 · 시작 장소",
+  "region": "키 렌토",
+  "x": -2355.2,
+  "y": -5532.8,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-001"
+ },
+ {
+  "id": "p01-story-whats-in-the-bag/safehouse-003",
+  "item": "p01-story-whats-in-the-bag",
+  "category": "P01",
+  "name": "스타렛 모텔 · 시작 장소",
+  "region": "포트 겔혼",
+  "x": -5353.6,
+  "y": 3462.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-003"
+ },
+ {
+  "id": "p01-story-overnight-charges/safehouse-003",
+  "item": "p01-story-overnight-charges",
+  "category": "P01",
+  "name": "스타렛 모텔 · 시작 장소",
+  "region": "포트 겔혼",
+  "x": -5353.6,
+  "y": 3462.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-003"
+ },
+ {
+  "id": "p01-story-girls-trip/safehouse-003",
+  "item": "p01-story-girls-trip",
+  "category": "P01",
+  "name": "스타렛 모텔 · 시작 장소",
+  "region": "포트 겔혼",
+  "x": -5353.6,
+  "y": 3462.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-003"
+ },
+ {
+  "id": "p01-story-breakfast-run/safehouse-003",
+  "item": "p01-story-breakfast-run",
+  "category": "P01",
+  "name": "스타렛 모텔 · 시작 장소",
+  "region": "포트 겔혼",
+  "x": -5353.6,
+  "y": 3462.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-003"
+ },
+ {
+  "id": "p01-story-coffee-break/safehouse-003",
+  "item": "p01-story-coffee-break",
+  "category": "P01",
+  "name": "스타렛 모텔 · 시작 장소",
+  "region": "포트 겔혼",
+  "x": -5353.6,
+  "y": 3462.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-003"
+ },
+ {
+  "id": "p01-story-checking-out/safehouse-003",
+  "item": "p01-story-checking-out",
+  "category": "P01",
+  "name": "스타렛 모텔 · 시작 장소",
+  "region": "포트 겔혼",
+  "x": -5353.6,
+  "y": 3462.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-003"
+ },
+ {
+  "id": "p01-story-moses/fence-007",
+  "item": "p01-story-moses",
+  "category": "P01",
+  "name": "모제스의 작업장 · 시작 장소",
+  "region": "포트 겔혼",
+  "x": -6444.8,
+  "y": 3283.2,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=fence-007"
+ },
+ {
+  "id": "p09-m-081/clothing-070",
+  "item": "p09-m-081",
+  "category": "P01",
+  "name": "바겐 월드 · 목표 장소",
+  "region": "포트 겔혼",
+  "x": -6358.4,
+  "y": 2780.8,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=clothing-070"
+ },
+ {
+  "id": "p01-story-afternoon-delight/nightclub-002",
+  "item": "p01-story-afternoon-delight",
+  "category": "P01",
+  "name": "딜라이츠 · 시작 장소",
+  "region": "포트 겔혼",
+  "x": -6374.4,
+  "y": 3580.8,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=nightclub-002"
+ },
+ {
+  "id": "p01-story-dealers-choice/nightclub-003",
+  "item": "p01-story-dealers-choice",
+  "category": "P01",
+  "name": "잭 오브 하츠 · 시작 장소",
+  "region": "크로스타운",
+  "x": -672,
+  "y": 1209.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=nightclub-003"
+ },
+ {
+  "id": "p01-story-top-billing/nightclub-003",
+  "item": "p01-story-top-billing",
+  "category": "P01",
+  "name": "잭 오브 하츠 · 시작 장소",
+  "region": "크로스타운",
+  "x": -672,
+  "y": 1209.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=nightclub-003"
+ },
+ {
+  "id": "p01-story-boobie-time/nightclub-003",
+  "item": "p01-story-boobie-time",
+  "category": "P01",
+  "name": "잭 오브 하츠 · 시작 장소",
+  "region": "크로스타운",
+  "x": -672,
+  "y": 1209.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=nightclub-003"
+ },
+ {
+  "id": "p01-story-ride-or-die/nightclub-003",
+  "item": "p01-story-ride-or-die",
+  "category": "P01",
+  "name": "잭 오브 하츠 · 시작 장소",
+  "region": "크로스타운",
+  "x": -672,
+  "y": 1209.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=nightclub-003"
+ },
+ {
+  "id": "p01-story-fresh-evidence/nightclub-003",
+  "item": "p01-story-fresh-evidence",
+  "category": "P01",
+  "name": "잭 오브 하츠 · 시작 장소",
+  "region": "크로스타운",
+  "x": -672,
+  "y": 1209.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=nightclub-003"
+ },
+ {
+  "id": "p01-story-welcome-to-vice-city/nightclub-003",
+  "item": "p01-story-welcome-to-vice-city",
+  "category": "P01",
+  "name": "잭 오브 하츠 · 목표 장소",
+  "region": "크로스타운",
+  "x": -672,
+  "y": 1209.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=nightclub-003"
+ },
+ {
+  "id": "p01-story-dubious-provenance/safehouse-002",
+  "item": "p01-story-dubious-provenance",
+  "category": "P01",
+  "name": "베이사이드 아파트 · 시작 장소",
+  "region": "바이스 시티",
+  "x": -473.6,
+  "y": 1219.2,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-002"
+ },
+ {
+  "id": "p01-story-caught-slipping/safehouse-002",
+  "item": "p01-story-caught-slipping",
+  "category": "P01",
+  "name": "베이사이드 아파트 · 시작 장소",
+  "region": "바이스 시티",
+  "x": -473.6,
+  "y": 1219.2,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-002"
+ },
+ {
+  "id": "p01-story-bricked-up/safehouse-002",
+  "item": "p01-story-bricked-up",
+  "category": "P01",
+  "name": "베이사이드 아파트 · 시작 장소",
+  "region": "바이스 시티",
+  "x": -473.6,
+  "y": 1219.2,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-002"
+ },
+ {
+  "id": "p01-story-ocean-beach/safehouse-002",
+  "item": "p01-story-ocean-beach",
+  "category": "P01",
+  "name": "베이사이드 아파트 · 시작 장소",
+  "region": "바이스 시티",
+  "x": -473.6,
+  "y": 1219.2,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-002"
+ },
+ {
+  "id": "p01-story-ocean-beach/safehouse-004",
+  "item": "p01-story-ocean-beach",
+  "category": "P01",
+  "name": "더 Y 호텔 · 목표 장소",
+  "region": "바이스 비치",
+  "x": 1958.4,
+  "y": 1590.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-004"
+ },
+ {
+  "id": "p01-story-pool-day/safehouse-004",
+  "item": "p01-story-pool-day",
+  "category": "P01",
+  "name": "더 Y 호텔 · 시작 장소",
+  "region": "바이스 비치",
+  "x": 1958.4,
+  "y": 1590.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-004"
+ },
+ {
+  "id": "p01-story-company-cars/safehouse-004",
+  "item": "p01-story-company-cars",
+  "category": "P01",
+  "name": "더 Y 호텔 · 시작 장소",
+  "region": "바이스 비치",
+  "x": 1958.4,
+  "y": 1590.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-004"
+ },
+ {
+  "id": "p01-story-sunset/safehouse-004",
+  "item": "p01-story-sunset",
+  "category": "P01",
+  "name": "더 Y 호텔 · 시작 장소",
+  "region": "바이스 비치",
+  "x": 1958.4,
+  "y": 1590.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=safehouse-004"
+ },
+ {
+  "id": "p01-story-heavy-lifting/gym-001",
+  "item": "p01-story-heavy-lifting",
+  "category": "P01",
+  "name": "아약스 체육관 · 목표 장소",
+  "region": "바이스 비치",
+  "x": 1420.8,
+  "y": 1766.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=gym-001"
+ },
+ {
+  "id": "p01-story-making-gainz/gym-001",
+  "item": "p01-story-making-gainz",
+  "category": "P01",
+  "name": "아약스 체육관 · 목표 장소",
+  "region": "바이스 비치",
+  "x": 1420.8,
+  "y": 1766.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=gym-001"
+ },
+ {
+  "id": "p01-story-team-building/gym-001",
+  "item": "p01-story-team-building",
+  "category": "P01",
+  "name": "아약스 체육관 · 시작 장소",
+  "region": "바이스 비치",
+  "x": 1420.8,
+  "y": 1766.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=gym-001"
+ },
+ {
+  "id": "p01-story-cash-injections/gym-002",
+  "item": "p01-story-cash-injections",
+  "category": "P01",
+  "name": "야외 체육관 · 시작 장소",
+  "region": "바이스 비치",
+  "x": 2025.6,
+  "y": 403.2,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=gym-002"
+ },
+ {
+  "id": "p01-story-childs-play/landmark-012",
+  "item": "p01-story-childs-play",
+  "category": "P01",
+  "name": "메가문도 방송사 · 시작 장소",
+  "region": "다운타운",
+  "x": -470.4,
+  "y": -297.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=landmark-012"
+ },
+ {
+  "id": "p01-story-party-hard/landmark-012",
+  "item": "p01-story-party-hard",
+  "category": "P01",
+  "name": "메가문도 방송사 · 목표 장소",
+  "region": "다운타운",
+  "x": -470.4,
+  "y": -297.6,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=landmark-012"
+ },
+ {
+  "id": "p01-story-adventures-in-babysitting/nightclub-005",
+  "item": "p01-story-adventures-in-babysitting",
+  "category": "P01",
+  "name": "더 볼트 · 목표 장소",
+  "region": "다운타운",
+  "x": -768,
+  "y": 470.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=nightclub-005"
+ },
+ {
+  "id": "p01-story-starting-from-zero/waink-landmark-024",
+  "item": "p01-story-starting-from-zero",
+  "category": "P01",
+  "name": "아쿠아 스타디움 · 목표 장소",
+  "region": "글로리아나 키",
+  "x": 601.6,
+  "y": -1846.4,
+  "url": "https://fbritoferreira.github.io/gta6/?loc=waink-landmark-024"
+ }
+]

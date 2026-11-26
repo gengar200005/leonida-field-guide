@@ -300,7 +300,7 @@ function listPage(page,id,p){
  const chapter=cat==="P01"&&/^[0-6]$/.test(p.get("chapter"))?p.get("chapter"):"";
  if(cat==="P01"){
   if(chapter!=="")all=all.filter(v=>v.chapter===Number(chapter));
-  all=[...all].sort((a,b)=>(a.chapter??9)-(b.chapter??9));
+  all=[...all].sort((a,b)=>(a.chapter??9)-(b.chapter??9)||(a.sequence??0)-(b.sequence??0));
  }
  const region=regionChoices.length>1?'<label>지역 <select data-change="region">'+opt("","전체 지역",filter)+regionChoices.map(r=>opt(r,r,filter)).join("")+'</select></label>':"";
  const searchScope=searchCategories.length?'<label>공략 분류 <select data-change="cat">'+opt("","전체 분류",scope)+Object.keys(categories).filter(c=>searchCategories.includes(c)).map(c=>opt(c,catName(c),scope)).join("")+'</select></label>':"";
@@ -504,15 +504,21 @@ function detail(v){
  const mobileOutline=outline?'<details class="guide-toc"><summary>공략 목차</summary>'+outline+'</details>':"";
  const desktopOutline=outline?'<div class="panel guide-toc-desktop"><h2>이 공략에서</h2>'+outline+'</div>':"";
  const facts=readerFacts(v);
- const meta=[catName(v.category),v.region].filter(Boolean);
+ const meta=[v.track==="story"?(v.chapter?"챕터 "+v.chapter+" · 스토리 미션":"프롤로그"):catName(v.category),v.region].filter(Boolean);
  const rows=[["해금·접근",facts.condition],["보상 사례",facts.reward],["기본가",facts.cost],["시한·주의",facts.warning]].filter(([,value])=>value);
  const brief=rows.length?'<dl class="entry-facts">'+rows.map(([k,value])=>'<div><dt>'+k+'</dt><dd>'+esc(value)+'</dd></div>').join("")+'</dl>':"";
  const summary=v.summary&&v.summary!==v.title&&v.summary!=="–"?'<p class="lead">'+esc(v.summary)+'</p>':"";
  const visual=photoFigure(v);
  const intro='<header class="intro"><div class="intro-content"><p class="kicker">'+esc(meta.join(" · "))+'</p><h1>'+esc(v.title)+'</h1>'+summary+statusText(v)+originalName+brief+'<div class="tools">'+actions+'</div></div>'+visual+'</header>';
+ const chapterMissions=v.track==="story"?categoryItems("P01").filter(i=>i.track==="story"&&i.chapter===v.chapter).sort((a,b)=>a.sequence-b.sequence):[];
+ const position=chapterMissions.indexOf(v);
+ const campaignNav=position<0?"":'<nav class="panel" aria-label="스토리 미션 이동"><div class="links">'+
+  (position>0?'<a href="'+entry(chapterMissions[position-1].id)+'">← 이전 공략</a>':'')+
+  '<a href="#/guide/p01?track=story&amp;chapter='+v.chapter+'">'+(v.chapter?"챕터 "+v.chapter:"프롤로그")+' 미션 목록</a>'+
+  (position+1<chapterMissions.length?'<a href="'+entry(chapterMissions[position+1].id)+'">다음 공략 →</a>':'')+'</div></nav>';
  const sources=links.length?'<details class="panel reference-links"><summary>지도·영상·참고 자료 <small>'+links.length+'</small></summary><div class="links">'+links.map(sourceLink).join("")+'</div></details>':"";
  const relatedPanel=related.length?'<div class="panel"><h2>연관 공략</h2>'+related.slice(0,8).map(relatedLink).join("")+(related.length>8?'<details><summary>전체 '+related.length+'개 보기</summary>'+related.slice(8).map(relatedLink).join("")+'</details>':'')+'</div>':"";
- return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article">'+intro+mobileOutline+(catalogEntry(v)?catDetailFacts(v):"")+entryMap(v)+sections.map(section).join("")+fieldGallery(v)+fieldReferences(v)+videoSection(links)+sources+'</article><aside class="rail">'+desktopOutline+relatedPanel+'</aside></div>';
+ return trail([["공략 도감","#/guides"],[catName(v.category),group(v.category)]])+'<div class="spread"><article class="article">'+intro+mobileOutline+(catalogEntry(v)?catDetailFacts(v):"")+entryMap(v)+sections.map(section).join("")+fieldGallery(v)+fieldReferences(v)+videoSection(links)+campaignNav+sources+'</article><aside class="rail">'+desktopOutline+relatedPanel+'</aside></div>';
 }
 function missing(){return '<h1>공략을 찾을 수 없습니다</h1><p class="lead">이전 판의 주소이거나 통합된 항목일 수 있습니다.</p><a class="btn" href="#/guides">공략 도감 열기</a>'}
 const inBounds=p=>Number.isFinite(p.x)&&Number.isFinite(p.y)&&p.x>=-12288&&p.x<=6144&&p.y>=-10240&&p.y<=12288;
