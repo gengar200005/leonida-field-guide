@@ -308,6 +308,26 @@ def inspect_views(page, address, output, width):
     return samples
 
 
+def verify_quick_search(page, base, mobile):
+    page.goto(base + "#/guide/p02", wait_until="domcontentloaded")
+    page.locator(".quick-search-results").wait_for(state="attached")
+    box = page.locator("#searchbox")
+    box.fill("스크래퍼")
+    result = page.locator(".quick-search-results a").first
+    expect(result).to_contain_text("스크래퍼 VF5C")
+    # A mobile IME can commit text and blur during the tap, before click.
+    result.evaluate("""a => a.addEventListener('pointerdown', () => {
+        const box = document.querySelector('#searchbox');
+        box.dispatchEvent(new CompositionEvent('compositionend'));
+        box.blur();
+    }, {once:true})""")
+    if mobile:
+        result.tap()
+    else:
+        result.click()
+    expect(page.locator("article h1")).to_have_text("스크래퍼 VF5C")
+
+
 def inspect(base, offline, output):
     if output:
         output.mkdir(parents=True, exist_ok=True)
@@ -330,6 +350,7 @@ def inspect(base, offline, output):
             errors = []
             page.on("pageerror", lambda error: errors.append(str(error)))
             verify_merged_entry(page, base)
+            verify_quick_search(page, base, width==390)
             verify_icons(page)
             verify_shores(page, base, width==390, output)
             verify_story(page, base)

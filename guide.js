@@ -1187,9 +1187,12 @@ suggestions.hidden=true;
 suggestions.setAttribute("role","group");
 suggestions.setAttribute("aria-label","바로 열 수 있는 공략");
 quickForm.append(suggestions);
+let renderedQuery;
 function showSuggestions(){
  const q=quickInput.value.trim();
  if(norm(q).length<2){suggestions.hidden=true;return}
+ if(q===renderedQuery){suggestions.hidden=false;return}
+ renderedQuery=q;
  const matches=searchItems(q,true).slice(0,4);
  suggestions.innerHTML=matches.map(v=>'<a href="'+entry(v.id)+'"><strong>'+esc(v.title)+'</strong><small>'+esc(catName(v.category))+'</small></a>').join("")+'<a class="all-search" href="#/search?q='+encodeURIComponent(q)+'">전체 검색 결과 보기 →</a>';
  suggestions.hidden=false;
@@ -1208,9 +1211,12 @@ quickForm.addEventListener("keydown",event=>{
   controls[(controls.indexOf(document.activeElement)+step+controls.length)%controls.length].focus();
  }
 });
-quickForm.addEventListener("focusout",event=>{if(!quickForm.contains(event.relatedTarget))suggestions.hidden=true});
+// iOS may blur the input without a new focus target before dispatching the link click.
+function dismissOutside(event){if(!quickForm.contains(event.target))suggestions.hidden=true}
+document.addEventListener("pointerdown",dismissOutside);
+document.addEventListener("focusin",dismissOutside);
 quickForm.addEventListener("submit",()=>{suggestions.hidden=true});
-suggestions.addEventListener("click",()=>{suggestions.hidden=true});
+suggestions.addEventListener("click",()=>{quickInput.blur();suggestions.hidden=true});
 const dialog=document.querySelector("#lightbox");dialog.querySelector("button").onclick=()=>dialog.close();
 function showPhoto(src,caption,source=""){
  dialog.querySelector("figure").innerHTML='<img src="'+esc(src)+'" alt="'+esc(caption)+'"><figcaption>'+esc(caption)+source+'</figcaption>';
